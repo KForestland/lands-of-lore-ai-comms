@@ -1,0 +1,81 @@
+{
+  "imported_on": "2026-09-23",
+  "source_folder": "new outline 1-6 + cot and cos",
+  "files": [
+    {
+      "file": "CoS_MASTER_OVERVIEW.md",
+      "bytes": 16102,
+      "sha256": "b4ac33ac2498cc62f954aa9260ec0545e6d92c09aa7bb54845fd8a7072e86208"
+    },
+    {
+      "file": "CoT_MASTER_OVERVIEW.md",
+      "bytes": 7664,
+      "sha256": "5b9e637655f116a151df40ec97d8956c4383172013a5bb1af2257954979b6bf5"
+    },
+    {
+      "file": "GAME1_LOL1_CLASSIC_REFERENCE.md",
+      "bytes": 12336,
+      "sha256": "8ccd110e3ad43ec7c7c8c0fb521509b76b0549b5f428ddcdac5c78069758ddb7"
+    },
+    {
+      "file": "GAME2_LOL2_CLASSIC_REFERENCE.md",
+      "bytes": 12039,
+      "sha256": "2bedc114f2f978dea61adc3cdf2e2db2a93979c301bfa3b96439ec6220900dee"
+    },
+    {
+      "file": "GAME3_LOL3_CLASSIC_REFERENCE.md",
+      "bytes": 11064,
+      "sha256": "656d9c7152aea2e2204e6fabb0b3ba982215f5b4d5b51c68c6fe7cf2b3cb1d45"
+    },
+    {
+      "file": "GAME4_LOL4_CLASSIC_REFERENCE.md",
+      "bytes": 19648,
+      "sha256": "eb65e83b5c1628f1d62b70406a78a9f3c5de3423848a2c3fdd34e4c1c10d7f84"
+    },
+    {
+      "file": "GAME4_LOL4_DECISIONS_2026-09-20.md",
+      "bytes": 9223,
+      "sha256": "a3d96fdf0ca577b66ff5c3cdb683a6f4798597b3a262258faabc4ede249a7c86"
+    },
+    {
+      "file": "GAME4_LOL4_HUMAN_REVIEW_2026-09-20.docx",
+      "bytes": 3087219,
+      "sha256": "1ae9f8f486ca597145fbdadea6930587f5d98d5a544d54e8e03a9d607a281c14"
+    },
+    {
+      "file": "GAME5_LOL5_CLASSIC_REFERENCE.md",
+      "bytes": 14166,
+      "sha256": "94342c2b87fbdaba4e2f04fe4a6ef22c35e8c20ad8913badfeae7c8fe7ab35a9"
+    },
+    {
+      "file": "GAME6_LOL6_CLASSIC_REFERENCE.md",
+      "bytes": 16657,
+      "sha256": "9a3c6cfe8cf1eb6c691f10499cc8b70fea6e800c64c09e5f9885f1193f09dfe9"
+    },
+    {
+      "file": "LOCATION_SCOPE_PLAN.md",
+      "bytes": 3712,
+      "sha256": "0d599831d6e55df3c1c93cb708276211c7c6de9c1275adbeffdb20916068dabc"
+    },
+    {
+      "file": "LOL6_GAPS_DRAFT.md",
+      "bytes": 8179,
+      "sha256": "ddff42d77dd58d3fcfdd56c2608630f653c26f4f737aa9a859100d72edd34c54"
+    },
+    {
+      "file": "MASTER_STORY_BIBLE_asynchronia_thread.md",
+      "bytes": 6674,
+      "sha256": "0f77fb11f5c2ae2d5e78e2323372ccf032dc5d0069f835b13fdceed544943aae"
+    },
+    {
+      "file": "PROJECT_ORGANIZATION.md",
+      "bytes": 7062,
+      "sha256": "1199d8af0770dc23f5f834e453a675b487ffc439a9416515bb2428baa18fbaae"
+    },
+    {
+      "file": "STORY_OVERVIEW_STATUS.md",
+      "bytes": 6455,
+      "sha256": "7284d6c7c047f543452505adc7e2ff06672bb4649070d5705b22a99d26c4d834"
+    }
+  ]
+}

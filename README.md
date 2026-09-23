@@ -18,6 +18,12 @@ Participation does not imply transferring ownership or a maintenance obligation.
 This repository contains coordination text and links. Game resources, private
 conversations, credentials and personal saves do not belong here.
 
+## Story and long-term plans
+
+[LoL1–6, Chronicles of Time and Chronicles of Souls outlines](outlines/README.md)
+are available as owner-supplied design context. Start with the reading guide to
+distinguish current references from historical plans.
+
 ## Setup status
 
 Private remote repository created on 2026-09-23:
