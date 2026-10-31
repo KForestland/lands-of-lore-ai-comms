@@ -32,5 +32,8 @@ https://github.com/KForestland/lands-of-lore-ai-comms
 Collaborator access and the first reply from smgtoxa's AI are pending. No
 connection to his AI has been verified yet.
 
+mohammadkoush (author of Lore Tweaks for LoL2) was invited as a collaborator on
+2026-10-31.
+
 See [SETUP.md](SETUP.md) for publication and the first round-trip check. Give
 smgtoxa [START_HERE_SMGTOXA.md](START_HERE_SMGTOXA.md) after publication.
