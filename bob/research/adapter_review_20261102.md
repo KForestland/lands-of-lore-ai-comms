@@ -189,3 +189,45 @@ No printed amount replaces 30. Hosting ambient 344 was not proposed. No simpler 
 `0102-row-2026-10-28-cave-cfall.md`. One row. Region event 2 is the grounded entry adapter: the player's foot inside the region polygon and within its floor range, minus 2 and plus 4. The opcode 18 return, flags `0x0885`, height 0, uses the floor under the native point, found from the walking elevation, and the yaw rule of the Cave arrival. The row calls these shared adapters with the Draracle pedestal and the guard-encounter opcode 18.
 
 This pass did not re-enter opcode 18. The range and the flags stay the row's text. Searches of `brady_guide.txt` and `hintbook.txt` for `0885` and for a floor range returned no line. The printed waterfall sentences already cited for 0100 and 0101 do not print a foot test, a floor band, or a return height. No printed number replaces the range. No simpler native build. The next unopened file is `0103-row-2026-10-28-cave-prop83.md`.
+
+## Slice 3, twentieth file
+
+`0103-row-2026-10-28-cave-prop83.md`. One row. The FLOOD movie is group 146, opcode 21, prop 614, movie 29. The world pauses while it plays, saves and loads are refused, and Escape and Space skip. It plays at the end of sound 956, after the event 20 reward. The row says the remaining group 146 effects already ran at that instant in the port, and that on the native side they follow the blocking movie call. Opcode 9 property 8, opcode 204 materials, and opcode 6 on prop 614 event 1 stay unhosted. The row calls this a presentation adapter of the blocking opcode 21.
+
+This pass did not re-enter opcode 21. G19 names the FLOOD movie as a missing command, separate from the prop 83 shaft lift, and does not give movie 29 or sound 956. Searches of both books for `956` and for movie 29 returned no line. HINTBOOK 2062–2068 says a whack on the stalagmites plays a special video scene of the flood, then names the Halberd. BRADY printed 62 lines 2327–2333 says magic on a stalagmite floods a guard away. Printed 146 lines 6320–6324 says smashing the stalactite floods the Waterfall Grotto. Printed 166 lines 7083–7085 says attacking the stalactite sweeps a pursuer away. Printed 22 lines 776–777 says a brief movie leaves you to relax and enjoy the show. None of those sentences prints a pause, a save refusal, Escape, Space, sound 956, or movie 29. The stalagmite sentences and the stalactite sentences stay unmerged. No simpler native build. The next unopened file is `0104-row-2026-10-28-cave-lever-67.md`.
+
+## Slice 3, twenty-first file
+
+`0104-row-2026-10-28-cave-lever-67.md`. One row. Gate 71's endpoint groups 12556 and 12562 run opcode 197 on region 1143, and the port lets gate 71's collision body stand for those region bits. Lever 67's placement byte 35 is `0x11`. The row says contact tests skip a movable with bit `0x10`, that this was not replayed, and that lever 67 therefore collides as levers 64–66. Its kind-6 value-20 record is not run. The row calls the collision a port body model and calls the flag-site meanings inferred.
+
+This pass did not re-enter `0x64D54`, `0x64D5F`, `0xB25EC`, `0xB26A8`, `0xF6B2E`, or `0xB5448`. G19 names lever 67 / gate 71 as one of the overview's missing groups and does not give the bit test. HINTBOOK 2050–2056 says pull the lever next to the stone bridge, then pick up items. BRADY printed 65 line 2432 says cross the bridge and push open the door. Printed 68 lines 2616–2618 is the Museum south-wall lever and stays off this row. None of those sentences names movable 67, gate 71, region 1143, or byte 35. The bridge lever and the bridge door stay unmerged. No printed number replaces the collision stand-in. No simpler native build. The next unopened file is `0105-row-2026-10-28-museum-torches.md`.
+
+## Slice 3, twenty-second file
+
+`0105-row-2026-10-28-museum-torches.md`. One row. E with an empty hand on wall plate movable 52 stands for the native kind-4 mode-0 click. The 35 torch flames and embers, and the pilot flare, are drawn additively. Animations run at 10 frames a second. Spark hit volumes are sprite-sized because the row says the native template depth would block the corridors.
+
+This pass did not re-enter kind 4 mode 0. HINTBOOK 547–551 says Spark lights torches, orbs, poles, braziers, and oil, and names no museum plate. The museum chapter at 2090–2106 names Spark on the brown blob and names no wall torch. HINTBOOK 3104–3108 and 4357–4359 are the Huline tree torches. BRADY printed 149 line 6459 says the Spark Spell ignites unlit Museum torches. Printed 167 lines 7118–7121 says spark torches on the wall, and spark a pilot light in a Scroll Room compartment to light every Museum torch. Printed 168 lines 7156–7159 says a panel opens to a pilot light, and Spark lights every Museum torch. Printed 33 line 1242 says Rixx's Plasma Staff lights torches. None of those sentences names movable 52, an empty-hand E, 35 flames, 10 frames a second, or a sprite-sized volume. The two pilot-light places stay unmerged. No simpler native build. The next unopened file is `0106-row-2026-10-28-museum-torches.md`.
+
+## Slice 3, twenty-third file
+
+`0106-row-2026-10-28-museum-torches.md`. One row. Unhosted: opcode 6 subcommands 5, 6, 3, and 4, and opcode 9 property 18, which the row calls a likely light radius or intensity. Opcode 208 is the screen shake. The plate travel that resets prop 61 to state 0 is untraced, so the plate is drawn still. Firestorm and fire-crystal hits use mask bit `0x10`, and only Spark charge 1 of 1 is delivered.
+
+This pass did not re-enter opcode 6, opcode 9, or opcode 208. The word "likely" stays the row's word. The Museum torch sentences cited for 0105 name Spark and a pilot light. They print no radius, no intensity, no shake, no prop 61, and no mask bit. HINTBOOK 2767–2771 says click the severed arm to shake it loose. That is the catacomb ring. BRADY printed 131 line 5669 says touching the golden crystal shakes the ground and raises a Netherworld tower. Those shakes stay off this row. No simpler native build. The next unopened file is `0107-row-2026-10-28-museum-long-arm.md`.
+
+## Slice 3, twenty-fourth file
+
+`0107-row-2026-10-28-museum-long-arm.md`. One row. Classic lets the Axe of the Long Arm be taken before the Skeleton Key opens lock 78. The Enhanced Edition keeps the lead's closed-passage refusal behind `--enhanced`. The row names a My Journal hint. The hint script was not opened.
+
+This pass did not re-enter lock 78. HINTBOOK 2093–2106 picks up the skeleton's key in the first hall, and later names the Axe of the Long Arm among the exhibit pickups. It prints no lock. BRADY printed 167 lines 7124–7126 takes the Skeleton's Key at the end of the passageway. Printed 168 lines 7150–7155 says the axe can open another way into the Scroll Room. Printed 149 lines 6465–6466 lists the axe among centerpieces. None of those sentences names lock 78 or a refusal until the key is used. The walk order and the lock stay unjoined. No simpler native build. The next unopened file is `0108-row-2026-10-28-cave-guard-cell.md`.
+
+## Slice 3, twenty-fifth file
+
+`0108-row-2026-10-28-cave-guard-cell.md`. One row. The guard's start is an on-screen point plus a physics ray from the camera. The ray skips spiked-bar gates 70, 71, and 73. The row says the original draws those bars see-through, material 133 index 0, and that Luther watches the guard through closed bars 71. The longplay times 12:10–12:40 stay the row's witness. The video was not opened. The bars use the index-0 cutout and stay solid to walk into.
+
+This pass did not re-enter the draw admission. HINTBOOK 1510 names the guard's room in the Draracle's Caves and names the stolen crossbow. It prints no bars. BRADY printed 146 lines 6316–6318 says peer through a crack and watch Kenneth and a guard. Lines 6343–6348 say you cannot enter the room until Kenneth has escaped. Neither sentence names gates 70, 71, or 73, material 133, or a camera ray. The crack and the closed bars stay unmerged. No simpler native build. The next unopened file is `0109-row-2026-10-28-jungle-kelsrick.md`.
+
+## Slice 3, twenty-sixth file
+
+`0109-row-2026-10-28-jungle-kelsrick.md`. One row. An unwoken Kelsrick uses selector 18 frame 0, the upright arms-crossed stand, instead of selector 0, the knife-out crouch. Selectors 18–24 lie past his 18 action rows. The row says the L4 commands that address actor 64 do not call selector 18, so the native caller stays untraced. The longplay time 61:02 stays the row's witness. The video was not opened.
+
+This pass did not re-walk the L4 commands. HINTBOOK 5682–5685 says killing Kelsrick, then flipping the switch, yields the sword and the Ancients' Stones. BRADY printed 78 lines 3063–3071 names Kelsrick as Anyar's right-hand man, and says killing him and using the switch behind him opens the village gates. Printed 157 lines 6737–6741 says you can find him and you can kill him. None of those sentences prints a stand, a knife, selector 18, or frame 0. No simpler native build. The next unopened file is `0110-row-2026-10-28-jungle-hive-dawn.md`.

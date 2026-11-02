@@ -1332,9 +1332,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": "grok C1: reach Dawn prison/maidens cell by jumping into the middle of the circular green thing (hintbook 4127-4130)."
+   "note": "Earned lower combat1/1 PASS151.63s; spires/Dawn jump/full original maiden release1/1 PASS75.45s; affected039 replay PASS36.63s, all source unchanged. DEVIATIONS0264-0265 flight/book-spire gate explicit adapters. Native reward/callback gaps0262 remain. docs/l13-spires-prisons.md. No seeds/teleports."
   },
   {
    "id": "STORY-041",
@@ -1349,8 +1349,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": "grok C1: a reward from Dawn and the maidens comes before the hallway exit (hintbook 4203-4204; item unnamed - check Brady)."
   },
   {
@@ -1366,8 +1366,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
