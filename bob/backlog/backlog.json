@@ -1349,9 +1349,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": "grok C1: a reward from Dawn and the maidens comes before the hallway exit (hintbook 4203-4204; item unnamed - check Brady)."
+   "note": "READY full earned positive release: actual043Dreamstone ->source54return ->physical elevator down ->walk/jump Dawn ->original500/600fullsequence ->retained same stone/single Bestial Disk ->grounded save-reload PASS source unchanged tmp/regressions/l13_dawn_release_ready/report.json. Productionf88ce2e, returns25592ce/551252a; no seeds. Gift ITEM080effect unhosted."
   },
   {
    "id": "STORY-042",
@@ -1383,9 +1383,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY: earned current Fine Longsword Kit conversion/equipment, stone order and duplicate refusals, physical blade-gate corridor, save/reload1/1 PASS19.06s source unchanged tmp/regressions/l13_altar_probe6/report.json; affected2/2 PASS2.01s/18.03s source unchanged.0269 explicit native Firestorm/Thohan versus Prima adapter; handlers57/60 powers unhosted. Immutable stone save d388d0204d82651270990c17e038177e15e05ac0744583b1dab45489a1e2b33b."
   },
   {
    "id": "STORY-044",
@@ -1400,9 +1400,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "Earned physical lift return ->Kit lock104 insert/commit/retrieve ->native489 L12/2;1/1PASS54.18s source unchanged;0272; tmp/regressions/l13_exit_lock_probe/report.json"
   },
   {
    "id": "STORY-045",
@@ -1417,8 +1417,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": "grok C1: be Human for the floe->niche jump (hintbook 4221); afterwards put ON the obsidian chain mail, a key item (hintbook 4225-4230)."
   },
   {
