@@ -1366,9 +1366,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY: staircase066b14c, bridge90e983f, upper-ring0c87cd4, original movie/approved arena/first HealingIII3f65aa4 PASS21.65s and actual boss40combat PASS17.92s source unchanged tmp/regressions/l13_belial_combat_probe/report.json. No death/item seeds. DEVIATIONS0267/0268."
   },
   {
    "id": "STORY-043",
@@ -1383,8 +1383,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
@@ -4086,8 +4086,8 @@
    "depends": [],
    "phase": "items",
    "acceptance": "Effect from Prima/Brady (page cited) or a decode; routed through item_handlers.gd; focused headless test for use/equip/on-hit; no invented magnitude (unknown numbers = logged adapter with a source or left out).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
