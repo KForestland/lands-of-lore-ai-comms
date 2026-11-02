@@ -1,0 +1,122 @@
+[
+  {
+    "x": 88,
+    "y": 1815,
+    "label": "Brady226-11 Blood bowl",
+    "color": "limegreen",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 239 is template 5 Blood bowl at (88,1815,h-55). Twelve more Blood bowl props sit in the same room, x -323..318 and y 1774..2007, all at height -55. The book room is Blood Bowl Room. The book fountain count was not the placement count. Prima's fountain sentence has no coordinate.",
+    "grade": "HINTBOOK+BRADY+DECODED"
+  },
+  {
+    "x": 1583,
+    "y": 3618,
+    "label": "Brady226-12 Summoning disk",
+    "color": "limegreen",
+    "source": "grade HINTBOOK+BRADY+DECODED. Control 56 is the only Summoning disk, template 10, at (1583,3618,h55). The book room is Summoning Chamber. That arrival label stays unbound and was not attached here. Sewer door movable 71 is (1622,3609,h0) and Switch control 55 is (1584,3683,h180). Neither was renamed. The ten Skull props are at x -800 on the spare lattice. None sits on this disk.",
+    "grade": "HINTBOOK+BRADY+DECODED"
+  },
+  {
+    "x": 162,
+    "y": 1607,
+    "label": "Golden Door",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 137 is template 1 Golden Door at (162,1607,h70). All 16 Golden Door controls sit in this one cluster, x -262..255 and y 1606..1608. Printed 228 checklist steps 6 and 7 name two golden-door clicks. Those two clicks were not split across this one cluster.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 1405,
+    "y": 1253,
+    "label": "arrival selector 0",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 0 is (1405,1253) region 1691, centroid (1400,1231), floor -130. Its label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 84,
+    "y": -305,
+    "label": "arrival selector 1",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 1 is (84,-305) region 25, centroid (89,-296), floor -10. It sits by the south St Belial homes. It was not numbered as Begin. Adjacent labels Hive Caverns, Birthing Chamber, and Summoning Chamber stay unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 3201,
+    "y": 872,
+    "label": "arrival selector 2",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 2 is (3201,872) region 2365, centroid (3215,872), floor -975. It was not named the exit. The label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 1260,
+    "y": 1431,
+    "label": "arrival selector 3",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 3 is (1260,1431) region 1715, centroid (1238,1417), floor -120. Its label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 3321,
+    "y": 875,
+    "label": "region 2369 level change",
+    "color": "orange",
+    "source": "grade DECODED. Region 2369 centroid is (3321,875), floor -975. It owns group 15784 and group 15790. The bodies are 020100001c34 and 020100001c54. Byte 5 stays unread on both. They were not merged. Point 14 was not written onto this region.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 25,
+    "y": -302,
+    "label": "St Belial's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor homes (25,-302) and (9,-304) are region 26, centroid (18,-296), floor -10. The actor name is St Belial. Gateway Room and Statue of Belial were not written onto it. The third home is a different marker.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 2810,
+    "y": -590,
+    "label": "St Belial's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (2810,-590) region 2820, centroid (2782,-611), floor 0. It was not joined to the south pair. Dawn Evil's Home is the next marker.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 2814,
+    "y": -605,
+    "label": "Dawn Evil's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (2814,-605) region 2820, centroid (2782,-611), floor 0. The prop name Dawn good is a different set. Evil Dawn in the blood bowl room was not written onto this home.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 1888,
+    "y": 891,
+    "label": "Dawn's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (1888,891) region 2221, centroid (1883,883), floor -125. Prop template 19 Dawn good has ten placements, all on the spare lattice from (-928,2976) through (-928,3552). Those props were not joined to this home.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 2143,
+    "y": 890,
+    "label": "Dawn's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (2143,890) region 2276, centroid (2139,905), floor -145. It was not merged with the other Dawn's Home.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 2423,
+    "y": 1646,
+    "label": "Imp's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (2423,1646). The editor region is empty. It was not joined to the Summoning disk. Belial's Imp was not written onto this name.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 1241,
+    "y": 1448,
+    "label": "Imp's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (1241,1448) region 1706, centroid (1238,1465), floor -120. It was not merged with the other Imp's Home and was not joined to the Summoning disk.",
+    "grade": "DECODED"
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "x": -4577,
+    "y": -1168,
+    "label": "Brady175-1 Begin arrival 1 r2359",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 175 point 1. Arrival selector 1, region 2359, the L4_HJ to L8_SJ entry already joined in the continuity walk. Editor marker From Huline Jungle is (-5243,-437), region 72. Regions 2352, 2353, and 2360, centroids near (-4698,-1180), own opcode-2 body 020100001ce4. Byte5 228 stays unread.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -7554,
+    "y": 1652,
+    "label": "Brady175-2 Bane River Bank",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 175 point 2. Editor marker Bane River Bank, flags 0, region none. Arrival selector 5 is (-4292,1623), region 66. The adjacent label Bane River stays unbound, so selector 5 is not given this name.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -4400,
+    "y": 1400,
+    "label": "river fish props p1062-p1070",
+    "color": "orange",
+    "source": "grade HINTBOOK+DECODED. Props 1068-1070 are template 0 Jumping Fish and props 1062-1067 are template 1 Fish 2, all height -15, spread from (-4580,1771) to (-4294,1118). Item row 51 slot 113-Brook flou is (-4384,1604,h-15), region 61. Prima printed 89 names a lake fish. No editor marker is named lake. These props sit on the river coordinates.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -15
+  },
+  {
+    "x": 1725,
+    "y": -2959,
+    "label": "Brady175-3 south exit arrival 7 r3574",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 175 point 3, the south passage to the Huline Temple. Arrival selector 7 is (1725,-2959), region 3574. Regions 3569, 3570, and 3573, centroids (1703,-3048), (1621,-3036), and (1664,-3040), own opcode-2 body 020100001c49. Byte5 73 stays unread. The adjacent label Huline Temple stays unbound.",
+    "grade": "BRADY+DECODED",
+    "height": -50
+  },
+  {
+    "x": 2781,
+    "y": 4283,
+    "label": "Brady175-4 Wild One Settlement",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 175 point 4. Editor marker Wild One Settlement, flags 0, region 3414. Shaman's Home id61 is (2842,4530), region 3799. Daniel's Home id59 is (510,4648), region 1022. WW Hut Guard's home is (390,4588), region 2156.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3972,
+    "y": 2482,
+    "label": "Brady175-5 east exit arrival 2 r911",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 175 point 5, entrance to the Dracoid Cemetery. Arrival selector 2, region 911. Region 908 centroid (4026,2667) owns opcode-2 body 020100001c2a, byte5 42, unread. No editor marker is named Cemetery. The adjacent label Dracoid Cemetary stays unbound.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 1431,
+    "y": 971,
+    "label": "Brady175-6 Dracoid Ruins marker",
+    "color": "green",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 175 point 6 and Prima's Savage Jungle pit, printed 100 and 110. Editor marker Dracoid Ruins, flags 0, region 427. Region 3132 centroid (1245,1392), floor -500, owns opcode-2 body 020100001c29, byte5 41, unread.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -500
+  },
+  {
+    "x": -1460,
+    "y": 2705,
+    "label": "Brady175-7 cache circlet row49 h222",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 176, the Shaman's Treasure Cache, drawn as point 7 on printed 175. Item row 49 slot 49-Kierans circ, region 3740, height 222, dormant bit set. Row 50 slot 15-War blade is (-1465,2708,h230), same region, dormant bit set. Row 29 R-Mindcl (-1425,2690,h270) and row 30 R-Warcl (-1647,2681,h270) sit with them. A set dormant bit is not a visibility grade. Amaranth row 26 is not in this cluster.",
+    "grade": "BRADY+DECODED",
+    "height": 222
+  },
+  {
+    "x": 1638,
+    "y": 4429,
+    "label": "Amaranth serum row26 h0",
+    "color": "orange",
+    "source": "grade BRADY+DECODED. Brady printed 176 lists Amaranth Serum inside the cache. Item row 26 slot 117-Amaranth sr is (1638,4429), region 3781, near the settlement marker and not at the circlet cluster. The two places were not merged. Prop 99 template 81 Amaranth is (-1570,2553,h250), nearer the circlet cluster.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2690,
+    "y": -3494,
+    "label": "Brady175-8 Lamplight sac p121 h-50",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 175 point 8, the Lamplight Lairs. Props 121-125 are template 80 Lamplight sac, height -50, from (2690,-3494) to (3493,-3465). Queen-path editor markers run through (2656,-3871), (3107,-3183), and (3375,-3863). Lamplight Queen's Home is a different marker at (8266,1002).",
+    "grade": "BRADY+DECODED",
+    "height": -50
+  },
+  {
+    "x": 8266,
+    "y": 1002,
+    "label": "Lamplight Queen's Home",
+    "color": "purple",
+    "source": "grade BRADY+DECODED. Editor marker Lamplight Queen's Home, flags 1025, region none. Brady's queen is inside the lairs. This coordinate is not the south mouth at point 8.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2063,
+    "y": 2326,
+    "label": "arrival selector 6 r3539",
+    "color": "gray",
+    "source": "grade DECODED. Arrival record selector 6, region 3539. Brady printed 175 point 9 is Teleport from Dracoid Ruins. The adjacent label Teleport from Ruins stays unbound, so this record does not receive that name. No prop template is named teleport.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": 4650,
+    "y": -1188,
+    "label": "Brady175-11 Larkhon",
+    "color": "green",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 175 point 11. Editor marker Larkhon, flags 12, region 3268. Lahrkon's Home rows include (4665,-783). Prima spells it Larkan and Larkon. The staged name on the marker is Larkhon.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": 6420,
+    "y": -888,
+    "label": "Brady175-11 Claw Mountains passage",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 175 point 11, the exit. Editor marker Claw Mountains Passage, flags 12. Region 3277 centroid (7404,-2010) owns opcode-2 body 020100001c2c, byte5 44, unread. Arrival selector 4 is (7152,-2236), region 3449. The adjacent label Claw Mountains stays unbound.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3200,
+    "y": -573,
+    "label": "Baccata rope p532 h170",
+    "color": "purple",
+    "source": "grade HINTBOOK+DECODED. Prima's hung Baccata, printed 90. Props 532, 533, 769, and 1118 are template 34 Baccatta's Rope at (3200,-573,h170), (4442,-829,h170), (-1903,-10,h170), and (4410,903,h0). Which rope is the trap was not chosen.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 170
+  },
+  {
+    "x": 4549,
+    "y": 1006,
+    "label": "Baccata props p100-p101 p1117-p1122",
+    "color": "purple",
+    "source": "grade HINTBOOK+DECODED. Props 100 and 1122 are the standing Baccata templates 32 and 31, and props 101 and 1117 are the hanging templates 30 and 33, all at (4549,1006,h100) except the recorded height on that shared point. Enemy and friend variants share the coordinate.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 100
+  },
+  {
+    "x": -3540,
+    "y": 1685,
+    "label": "Bracers row25 h0",
+    "color": "orange",
+    "source": "grade DECODED. Item row 25 slot 58-Br dead, region 3782. Dawn's Home markers include (-3351,1685) and (-3510,1674), region 3782. The ruins bracers are the L9 row, not this row.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -1885,
+    "y": -577,
+    "label": "Ancients stones rows 32-34",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 176, Ancients' Stones, and printed 178's tunnel cache. Rows 32, 33, and 34, slot 66-Ancients stn, sit at (-1885,-577), (-1875,-577), and (-1889,-559). Rows 44, 45, and 46 are the same slot at (1911,-1251), (1797,-1307), and (1841,-1285). Two clusters. The book does not say which is the cache.",
+    "grade": "BRADY+DECODED",
+    "height": 70
+  },
+  {
+    "x": -3830,
+    "y": 1441,
+    "label": "Control token row23 dormant",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 176, Control Charms. Item row 23 slot 74-Control tokn, region 67, dormant bit set. Row 31 is the same slot at (-1621,-938,h50), region 2934, bit clear. Dampen Charm is also on that Brady list. Editor marker Cat/Dampen is (-2410,-1288). The token was not renamed to the charm.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -2410,
+    "y": -1288,
+    "label": "editor Cat/Dampen",
+    "color": "gray",
+    "source": "grade BRADY+DECODED. Editor marker Cat/Dampen, flags 0. Brady's Dampen Charm has this name beside it. No item row is named Dampen.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -276,
+    "y": -2395,
+    "label": "Lamplight egg row10",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 10 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -199,
+    "y": -1659,
+    "label": "Lamplight egg row11",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 11 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -611,
+    "y": -668,
+    "label": "Lamplight egg row12",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 12 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2598,
+    "y": -736,
+    "label": "Lamplight egg row13",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 13 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 1707,
+    "y": 48,
+    "label": "Lamplight egg row14",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 14 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 647,
+    "y": 1638,
+    "label": "Lamplight egg row15",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 15 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 669,
+    "y": 1654,
+    "label": "Lamplight egg row16",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 16 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 170,
+    "y": 918,
+    "label": "Lamplight egg row17",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 17 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -561,
+    "y": 584,
+    "label": "Lamplight egg row18",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 18 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 584,
+    "y": -726,
+    "label": "Lamplight egg row19",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 19 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -2374,
+    "y": -137,
+    "label": "Lamplight egg row20",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 20 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 4777,
+    "y": 1718,
+    "label": "Lamplight egg row21",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 21 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  }
+]

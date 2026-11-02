@@ -1,0 +1,334 @@
+[
+  {
+    "x": -3344,
+    "y": -6564,
+    "label": "Brady193-1 Begin arrival 0",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Arrival selector 0 is (-3344,-6564) region 488. Selector 1 is (-3260,-6631) region 487. Both sit at the south mouth. Adjacent labels Claw Mountains, The Great Forge, and Egg Chamber stay unbound. Region 489 centroid (-3265,-6787) floor 0 owns group 706. That group is the one opcode-2 body 020100001c4c. Byte 5 stays unread.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -3068,
+    "y": -6908,
+    "label": "Crystal1 p253",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 253 Crystal1 (-3068,-6908,h0) at the south mouth. Not a Brady number. Prop 253 also owns opcode-2 bodies that are not the 020100001c shape. Those were not read as destinations.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -3379,
+    "y": -6658,
+    "label": "Light p0 at the mouth",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 0 Light (-3379,-6658,h70). Other Light props are 188 (-1985,2669,h-1090), 305 (-4288,128,h60), and 364 (-2170,-4166,h195). Brady's globe and Prima's globe were not renamed onto Light.",
+    "grade": "DECODED",
+    "height": 70
+  },
+  {
+    "x": -3263,
+    "y": -6700,
+    "label": "Bone Fence c105",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 105 Bone Fence (-3263,-6700,h0) at the mouth.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -3224,
+    "y": -6807,
+    "label": "plasma platform c85",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Controls 85 through 89, from (-3224,-6807) to (-3261,-6641), height 0. The name is plasma platform. Brady Plasma Steps and the plasma bridge were not joined to this cluster.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -3391,
+    "y": -6670,
+    "label": "Brady193-8 teleporter c104",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Control 104 is the only teleporter (-3391,-6670,h70). Brady point 8 and the entrance share this mouth. Prima's teleporter back upstairs is this same placement. Brady's green-pool disk is a second teleporter sentence and has no second placement. Group 8870 on this control contains 020100001800, which is not the level-change shape.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 70
+  },
+  {
+    "x": -3395,
+    "y": -6669,
+    "label": "Attack Block c0",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 0 Attack Block (-3395,-6669,h72) sits on the teleporter. The names stay separate.",
+    "grade": "DECODED",
+    "height": 72
+  },
+  {
+    "x": -2428,
+    "y": -4894,
+    "label": "Brady193-4 Stuff n birth",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Editor Stuff n birth (-2428,-4894). Brady point 4 and Prima say Egg Chamber. That name is not a template or a region. The arrival label Egg Chamber stays unbound, so this coordinate was not taken from that label. Switch prop 420 (-3254,-5330,h0) is the generic name Switch and was not renamed Orb.",
+    "grade": "BRADY+HINTBOOK+DECODED"
+  },
+  {
+    "x": -2342,
+    "y": -4259,
+    "label": "Puape p406",
+    "color": "darkorchid",
+    "source": "grade DECODED. Nine Puape props at height -70: 269 (-2130,-3976) and 404 through 411, from (-2360,-4113) to (-1965,-4362). Not named Egg Chamber.",
+    "grade": "DECODED",
+    "height": -70
+  },
+  {
+    "x": -3263,
+    "y": -4909,
+    "label": "Brady193-15 Iris 1 c106",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 106 is the only Iris 1 (-3263,-4909,h-45). Iris 2 and Iris 3 have no placement. Editor Final door (-4511,12) and Final door switch (-7724,2651) stay separate and were not numbered 15. Prima's door into the center was not joined to Iris.",
+    "grade": "BRADY+DECODED",
+    "height": -45
+  },
+  {
+    "x": -2057,
+    "y": 2719,
+    "label": "Brady193-6 Silo elevator m50",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Movable 50 Silo elevator (-2057,2719,h-1140). Movables 50 through 68 are the same template, x -2064 to -1924, y 2521 to 2825, height -1140. The command stays unread. Brady's brain inside the elevator was not joined to a Brain switch. Prima's globe in the elevator was not renamed onto Light.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -1140
+  },
+  {
+    "x": -2838,
+    "y": -251,
+    "label": "Silo Cover stack c55",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Controls 55 through 75 are Silo Cover around x -2838 to -3076, y -242 to -350, heights -10 down to -1010. Representative control 55 is (-2838,-251,h-60). Not numbered as point 5 or point 13.",
+    "grade": "DECODED",
+    "height": -60
+  },
+  {
+    "x": -3207,
+    "y": 129,
+    "label": "Silo Cover row c90",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Controls 90 through 100 are Silo Cover at y 130, height 12, x -3207 to -3850. Beside the launcher band. Not numbered.",
+    "grade": "DECODED",
+    "height": 12
+  },
+  {
+    "x": -6117,
+    "y": 3315,
+    "label": "Brady193-11 Dawn",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Editor Dawn (-6117,3315). Front Door control 51 is (-6251,3061,h-1045). Brady Dawn's Prison Cell and Prima Dawn's prison stay the book words. No template is named force field. Dreamstone template 3 has no placement. Prima says the dreamstone releases her. That use was not read from a command.",
+    "grade": "BRADY+HINTBOOK+DECODED"
+  },
+  {
+    "x": -4547,
+    "y": 3140,
+    "label": "Brady193-12 Prisoner",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Editor Prisoner (-4547,3140). Brady Slave Women's Cell and Prima maiden's cell stay the book words. Girl is a different template and is not on this marker.",
+    "grade": "BRADY+HINTBOOK+DECODED"
+  },
+  {
+    "x": -4056,
+    "y": 1033,
+    "label": "Girl p194",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 194 Girl (-4056,1033,h-1190) and prop 195 (-4181,-1178,h-1200). Two placements. Not renamed to slave woman or maiden.",
+    "grade": "DECODED",
+    "height": -1190
+  },
+  {
+    "x": -2498,
+    "y": 89,
+    "label": "Brady193-14 Plasma launcher",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Editor Plasma launcher (-2498,89). The template name is Plas Launcher. Brady says Plasma Cannon. Those stay three words. Prima's automatic missile weapons were not joined here.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -3106,
+    "y": 130,
+    "label": "Plas Launcher p306",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 306 Plas Launcher (-3106,130,h10). Prop 189 is the other one.",
+    "grade": "DECODED",
+    "height": 10
+  },
+  {
+    "x": -3147,
+    "y": -344,
+    "label": "Plas Launcher p189",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 189 Plas Launcher (-3147,-344,h-1040). Ceiling plasma prop 191 (-3147,-343,h410) and Sphere prop 190 (-3149,-343,h-940) sit on this spot and keep their names.",
+    "grade": "DECODED",
+    "height": -1040
+  },
+  {
+    "x": -2892,
+    "y": 1420,
+    "label": "Plasma switch",
+    "color": "orange",
+    "source": "grade DECODED. Editor Plasma switch (-2892,1420). Brady point 9 says an Eyeball Switch activates the Plasma Cannon. That command stays unread. No template is named Eyeball Switch.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -3054,
+    "y": 1348,
+    "label": "Eye switch p193",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 193 Eye switch (-3054,1348,h-1040). Prop 363 is the other. Brady points 3 and 10 were not split between them.",
+    "grade": "DECODED",
+    "height": -1040
+  },
+  {
+    "x": -3270,
+    "y": -4210,
+    "label": "Eye switch p363",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 363 Eye switch (-3270,-4210,h-70), near the cliff climb switch.",
+    "grade": "DECODED",
+    "height": -70
+  },
+  {
+    "x": -5828,
+    "y": 1107,
+    "label": "Brain switch p244",
+    "color": "darkorchid",
+    "source": "grade DECODED. Ten Brain switch props. Eight at height -1040: 243 (-3944,1008), 244 (-5828,1107), 245 (-4713,1384), 246 (-3380,532), 247 (-3739,-148), 248 (-4283,-874), 249 (-4107,-1108), 250 (-4534,-1767). Also 304 (-5682,2421,h-995) and 362 (-4781,-2981,h-40). Brady Orb Switch and Eyeball Switch are not these names. None was chosen as the elevator brain, the egg-chamber switch, or the switch outside Dawn's cell.",
+    "grade": "DECODED",
+    "height": -1040
+  },
+  {
+    "x": -5940,
+    "y": 1227,
+    "label": "Dream Stone Lock c76",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Controls 76 through 83 Dream Stone Lock at height -1040, paired with Track movables 77 through 84 and snow movables 69 through 76. The eight sites run from (-5940,1227) through (-4476,-1666). Not named Slave Caverns. Brady point 7 has no region of that name.",
+    "grade": "DECODED",
+    "height": -1040
+  },
+  {
+    "x": -2735,
+    "y": 5137,
+    "label": "Brady193-16 Great forge",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Editor Great forge (-2735,5137). Arrival selector 2 is (-2336,4192) region 636, floor -1080, centroid (-2345,4180). Its adjacent label stays unbound, so the selector was not named from the string The Great Forge. Front Door control 54 is (-2347,3828,h-1049).",
+    "grade": "BRADY+HINTBOOK+DECODED"
+  },
+  {
+    "x": -2440,
+    "y": 2334,
+    "label": "HiveLord 1 home",
+    "color": "orange",
+    "source": "grade BRADY+HINTBOOK+DECODED. Editor HiveLord 1's Home (-2440,2334) region 1388. Brady point 16 also names the Hive Lord. Prima's fight is the same book beat. The home and the forge stay two markers.",
+    "grade": "BRADY+HINTBOOK+DECODED"
+  },
+  {
+    "x": -2344,
+    "y": 4535,
+    "label": "Thohan's Sword p174",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 174 is the only Thohan's Sword (-2344,4535,h-990). Brady says the altar enchants it into Thohan's Enchanted Sword. That second name has no template. Prima's broken sword was not renamed onto this prop.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -990
+  },
+  {
+    "x": -2344,
+    "y": 4535,
+    "label": "Firestorm p175",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 175 is the only Firestorm, on the same point as the sword, height -990. Brady says it becomes Darkstorm. Prima says the Dark Sword. Those result names have no template. Which prop is the altar was not chosen.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -990
+  },
+  {
+    "x": -2710,
+    "y": 4183,
+    "label": "Dreamstone Pedestal p326",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 326 is the only Dreamstone Pedestal (-2710,4183,h-1050). Dreamstone template 3 has no placement. No item row is named dreamstone. Both books say to enchant the weapon before taking the stone. That order was not read from a command.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -1050
+  },
+  {
+    "x": -2343,
+    "y": 4538,
+    "label": "Pedestal p325",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 325 Pedestal (-2343,4538,h-1050), beside the sword and Firestorm. Prop 1 Pedestal is (-7063,-2477,h0), at editor Ruloi's Home region 1273. The name Pedestal was not renamed to altar.",
+    "grade": "DECODED",
+    "height": -1050
+  },
+  {
+    "x": -2936,
+    "y": -475,
+    "label": "Cliff climb",
+    "color": "orange",
+    "source": "grade DECODED. Editor Cliff climb (-2936,-475). Not renamed to Plasma Steps.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -1365,
+    "y": -4160,
+    "label": "Cliff climb switch",
+    "color": "orange",
+    "source": "grade DECODED. Editor Cliff climb switch (-1365,-4160). Arrival selector 3 is (-2176,-4160) region 323, centroid (-2135,-4176), floor -70. Green Vent prop 265 is (-2171,-4165,h102). Charge pod is a different template and was not renamed.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2874,
+    "y": -4189,
+    "label": "Web 1 c107",
+    "color": "deepskyblue",
+    "source": "grade BRADY+DECODED. Control 107 Web 1 (-2874,-4189,h-45). The other two are control 84 (-3897,134,h5) and control 108 (-3653,-4188,h-45). Brady's web-like door was not joined to one of the three.",
+    "grade": "BRADY+DECODED",
+    "height": -45
+  },
+  {
+    "x": -4090,
+    "y": 2833,
+    "label": "Front Door c52",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 52 Front Door (-4090,2833,h-1045). Control 53 is (-4955,-1711,h-899). These two were not given a Brady number. Controls 51 and 54 are on the Dawn and forge markers.",
+    "grade": "DECODED",
+    "height": -1045
+  },
+  {
+    "x": -3312,
+    "y": 455,
+    "label": "Stone cube row 3",
+    "color": "gold",
+    "source": "grade DECODED. Seventeen 59-Stone cube rows and three 57a-Fire crstl rows sit in region 315, centroid (-3294,486), floor -1240. Row 3 is (-3312,455,h-1230). Fire crystal row 25 is (-3263,488,h-1230). The dormant bit is clear on all twenty. Brady's pharmacopoeia hoard was not renamed onto these slots.",
+    "grade": "DECODED",
+    "height": -1230
+  },
+  {
+    "x": -4354,
+    "y": -954,
+    "label": "Lamplt eggs row 70",
+    "color": "gold",
+    "source": "grade DECODED. Rows 70 through 77, 112-Lamplt eggs, region 830 centroid (-4360,-974), floor -1140, height -1120. The dormant bit is clear. Not the Egg Chamber.",
+    "grade": "DECODED",
+    "height": -1120
+  },
+  {
+    "x": -3902,
+    "y": -504,
+    "label": "Rain sulph row 109",
+    "color": "gold",
+    "source": "grade DECODED. Thirty-six 119-Rain sulph rows. Row 109 is (-3902,-504,h-1040) region 431. The dormant bit is set on all thirty-six, which is not a visibility grade. Prop template 22 is Rainbow sulphite, thirty-six props at height -1040. Prop 197 is (-4073,-1323,h-1040). Brady says rainbow sulfite. Those stay three names.",
+    "grade": "DECODED",
+    "height": -1040
+  },
+  {
+    "x": -3091,
+    "y": 2679,
+    "label": "template 0 c101",
+    "color": "dimgray",
+    "source": "grade DECODED. Controls 101 (-3091,2679,h-1148), 102 (-4839,-2305,h-1045), and 103 (-5482,155,h4) use template 0. The name-table slot is not a clean string. No English name was given.",
+    "grade": "DECODED",
+    "height": -1148
+  }
+]

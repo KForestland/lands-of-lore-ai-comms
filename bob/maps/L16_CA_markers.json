@@ -1,0 +1,125 @@
+[
+  {
+    "x": -4032,
+    "y": -2157,
+    "label": "Enters city",
+    "color": "orange",
+    "source": "grade DECODED. Editor Enters city (-4032,-2157). Brady printed 219 point 1 says Elevator Door. That name is not a template. This editor note was not numbered 1.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -3860,
+    "y": 1341,
+    "label": "arrival selector 1",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 1 (-3860,1341) region 137, centroid (-3879,1343), floor 0. Selector 0 is (5575,-9185) region 9655, centroid (5519,-9225), floor 0. Adjacent labels Start, Hive Caverns, and Hive Caverns stay unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 13273,
+    "y": -6464,
+    "label": "Tower p615",
+    "color": "darkorchid",
+    "source": "grade HINTBOOK+DECODED. Prop 615 is the only Tower (13273,-6464,h-999). Four Tower Pylon props sit around it: 489 (14872,-6468), 490 (13228,-4877), 491 (11619,-6485), and 492 (13236,-8104), all height 0. Prop 595 is a fifth pylon at (2293,171,h0). Prima says four corner towers and a tower raised in the center. Brady point 2 says Obsidian Tower, drawn four times, and point 9 says Grand Tower. Obsidian and Grand are not template names. The one Tower was not numbered 2 or 9.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -999
+  },
+  {
+    "x": -4111,
+    "y": -15457,
+    "label": "Brady219-7 Fountain p626",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Prop 626 is the only Fountain (-4111,-15457,h90). Brady point 7 says Water Fountain. Water was not added to the template name.",
+    "grade": "BRADY+DECODED",
+    "height": 90
+  },
+  {
+    "x": -2818,
+    "y": -12978,
+    "label": "Brady219-6 Wall o Fire c185",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 185 Wall o Fire (-2818,-12978,h-5). Controls 185 through 189 sit from there to (-2715,-12848). Brady point 6 says Firewall Puzzle. FireWall Door is a different template and has many clusters, including movables 86 through 169. Those doors were not numbered 6. Fire door movable 98 is (684,-12855,h155) and keeps that name.",
+    "grade": "BRADY+DECODED",
+    "height": -5
+  },
+  {
+    "x": 2287,
+    "y": 593,
+    "label": "Brady219-12 Silverleaf plate c75",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 75 Silverleaf plate (2287,593,h4). Prop 605 Silverleaf Pyramid is (2287,599,h-15). Brady point 12 says Silverleaf passage. Passage is not the template name.",
+    "grade": "BRADY+DECODED",
+    "height": 4
+  },
+  {
+    "x": -12466,
+    "y": -8269,
+    "label": "Ivory Chip Block c0",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 0 Ivory Chip Block (-12466,-8269,h60) and control 95 (-12444,-8269,h60). Other blocks: control 70 (2168,-7670,h15), and controls 173 through 176 from (-10089,-12935) to (-9505,-12936). Brady point 11 is drawn three times. These clusters were not split into the three dots.",
+    "grade": "DECODED",
+    "height": 60
+  },
+  {
+    "x": -2283,
+    "y": -11613,
+    "label": "Chip c72",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 72 Chip (-2283,-11613,h165). The name is Chip, not Ivory Chip Block.",
+    "grade": "DECODED",
+    "height": 165
+  },
+  {
+    "x": -4406,
+    "y": -1537,
+    "label": "Ivory Chip Gargoyle p223",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 223 Ivory Chip Gargoyle (-4406,-1537,h50). Prop 399 is (-9653,-3160,h150) and prop 400 is (-7544,-3171,h150). Not numbered as one of the three point-11 dots.",
+    "grade": "DECODED",
+    "height": 50
+  },
+  {
+    "x": 1826,
+    "y": 223,
+    "label": "Watergate c123",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 123 Watergate (1826,223,h77). Controls 123 through 134 and 163 and 164 are the same template, two bands from y 223 to 985. The control name Cannal has no placement. Brady point 8 says Canal. That spelling was not put on Watergate. Puddle pooling controls 148 through 162 sit in the same bands and keep that name.",
+    "grade": "DECODED",
+    "height": 77
+  },
+  {
+    "x": 2100,
+    "y": -4296,
+    "label": "Telepad c74",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 74 Telepad (2100,-4296,h15) owns group 42056. The body is 020100001c31. Byte 5 stays unread. Arrival selector 2 is (2107,-4183) region 9603, centroid (2120,-4174), floor 15. Its label stays unbound, so it was not named Belial's Caverns or Hive Caverns.",
+    "grade": "DECODED",
+    "height": 15
+  },
+  {
+    "x": -7778,
+    "y": -10788,
+    "label": "region 9822 level change",
+    "color": "orange",
+    "source": "grade DECODED. Region 9822 centroid (-7778,-10788), floor -530, owns group 7268. The body is 020100001c71. Byte 5 stays unread. Arrival selector 3 is (-7820,-10696) region 9824, centroid (-7826,-10695), floor -530. Brady point 10 says Exit to Belial's Caverns. Belial is not the unbound label. This region was not numbered 10.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -5641,
+    "y": -4771,
+    "label": "Force Field m79",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Movable 79 is the only Force Field (-5641,-4771,h-70). Not a Brady number on printed 219.",
+    "grade": "DECODED",
+    "height": -70
+  },
+  {
+    "x": -11770,
+    "y": -8215,
+    "label": "crystal wall c98",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 98 crystal wall (-11770,-8215,h30). Control 172 is (-9795,-13206,h0). Brady point 5 says Crystal Cylinder Puzzle. Cylinder is not a template name. These walls were not numbered 5.",
+    "grade": "DECODED",
+    "height": 30
+  }
+]

@@ -1,0 +1,23 @@
+[
+ {
+  "x": -2352,
+  "y": 7609,
+  "label": "owner 10-26-06: flute at pit lip (HIVE-FLUTE-SUMMON fixed)",
+  "color": "green",
+  "source": "grok hive_flute_coordinate_card"
+ },
+ {
+  "x": -1940,
+  "y": 7616,
+  "label": "native flute arming trigger 282 (hall)",
+  "color": "blue",
+  "source": "hive_elevator.json"
+ },
+ {
+  "x": -2439,
+  "y": 7822,
+  "label": "control 83 (opcode 6, lower storey) \u2014 near owner 10-26-38 lift bridge",
+  "color": "orange",
+  "source": "grok card"
+ }
+]

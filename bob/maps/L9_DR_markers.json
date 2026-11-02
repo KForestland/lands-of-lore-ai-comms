@@ -1,0 +1,461 @@
+[
+  {
+    "x": 81,
+    "y": -603,
+    "label": "Brady179-1 Begin arrival 1 r1343",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 179 point 1. Arrival selector 1, region 1343. This is the southern arrival. Adjacent labels stay unbound.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 139,
+    "y": -424,
+    "label": "Brady179-2 Stone Squid home id68",
+    "color": "red",
+    "source": "grade BRADY+DECODED. Brady printed 179 point 2, the cavern guarded by Ssar and Stone Squids. Editor marker Stone Squid's Home id68 is (139,-424), region 4941, next to the begin arrival. Further homes: id65 (200,378), L Ssar id60 (305,1290), Stone Squid id59 (519,1298) and id61 (-695,1280).",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1364,
+    "y": 1803,
+    "label": "Brady179-3 Magic Bridge c466 h13",
+    "color": "green",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 179 point 3, Dragon's Orb and Bridge. Prima's word for the orb is black. Controls 466 and 467 are template 29 Magic Bridge at (-1364,1803) and (-1586,1802), height 13. The nearest prop named Drac Orb is prop 1086 at (-1888,1267,h0). The command that would connect them was not read.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 13
+  },
+  {
+    "x": -1923,
+    "y": 1344,
+    "label": "teleport door m65 h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Movable 65 template 100 Telporter Door at (-1923,1344). Movable 66 is (-1981,1389). Control 88 template 93 To teleport room is (-1613,1011,h20). Brady printed 179 draws two teleport chambers, points 4 and 7. This cluster is the one next to the bridge. The template names do not say Palace. Destination bytes stay unread.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -3530,
+    "y": 1256,
+    "label": "Brady179-5 tower arrival 4 r3704",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 179 point 5, the Mage's Tower, and printed 180 point 8, the level-1 exit. Arrival selector 4 is (-3530,1256), region 3704, about 400 units from the white altar. The adjacent label Dracoid Mage Tower stays unbound.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -3656,
+    "y": 833,
+    "label": "Brady180-5 white altar p1094 h150",
+    "color": "purple",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 180 point 5 and printed 179's tower. Prop 1094 template 64 Charger Station. White identity 999167110 stays Astra's 17:58 join. Prima calls this the white charger in the Mage's Tower.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 150
+  },
+  {
+    "x": -3764,
+    "y": 802,
+    "label": "Brady180-7 bracers row55 h430",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 180 point 7, Bracers of the Dead, level 3. Item row 55 slot 58-Br dead, region 4722, height 430, dormant bit clear. No template is named niche.",
+    "grade": "BRADY+DECODED",
+    "height": 430
+  },
+  {
+    "x": -3629,
+    "y": 1112,
+    "label": "Brady180-6 Ssar Priest p1201 h377",
+    "color": "purple",
+    "source": "grade BRADY+DECODED. Brady printed 180 point 6, the Ssar Priest on level 3. Prop 1201 template 39 Dead Ssar Priest, height 377. Living Ssar Priest is prop template 38 and is not this row. Editor Ssar Priest homes are separate spawns.",
+    "grade": "BRADY+DECODED",
+    "height": 377
+  },
+  {
+    "x": -3820,
+    "y": 1037,
+    "label": "tower Green Drac Orb p1087 h270",
+    "color": "blue",
+    "source": "grade BRADY+DECODED. Props 1087 (-3820,1037,h270), 1088 (-3750,1126,h130), 1089 (-3793,1093,h400), and 1090 (-3661,863,h0) are template 12 Green Drac Orb, beside the altar. Brady printed 180 points 1 and 2 name a Dragon's Orb for the stairs and for the force field. Assembly template 101 Forcefield has no placement. These orbs were not renamed to that field, and no template is named Stair.",
+    "grade": "BRADY+DECODED",
+    "height": 270
+  },
+  {
+    "x": -3257,
+    "y": 1028,
+    "label": "Gauntlets row53 h-110",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 181, Gauntlets of Might in the Mage's Tower. Item row 53 slot 48-Gau Might, region 3995, height -110. Printed 180 point 4 is the basement inset. Height -110 is below the altar. The inset was not measured as this row.",
+    "grade": "BRADY+DECODED",
+    "height": -110
+  },
+  {
+    "x": -2842,
+    "y": 7556,
+    "label": "Brady179-6 Palace Door m67 h250",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 179 point 6. Movable 67 template 8 Palace Door at (-2842,7556,h250). Movable 68 is (-2841,7632). More template-8 doors sit in this north-west building. The building outline was not traced.",
+    "grade": "BRADY+DECODED",
+    "height": 250
+  },
+  {
+    "x": -3027,
+    "y": 8372,
+    "label": "palace teleport c154 h200",
+    "color": "green",
+    "source": "grade DECODED. Control 154 template 91 Teleport to Ruins at (-3027,8372,h200). Controls 304 and 305 are template 92 Teleport to 10 at (-3215,8228) and (-3026,8069), height 200. Region 2299 owns opcode-2 body 020100001c4a. Region 2301 owns 020100001cc8. Byte5 stays unread. These are the north teleport meshes, not a decoded palace destination.",
+    "grade": "DECODED",
+    "height": 200
+  },
+  {
+    "x": -3021,
+    "y": 7938,
+    "label": "Ax Traitor row54 h280",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 181, War Axe Traitor in a compartment in the Emperor's Bedroom. Item row 54 slot 16-Ax Traitor, region 3466, height 280. The gargoyle click was not read.",
+    "grade": "BRADY+DECODED",
+    "height": 280
+  },
+  {
+    "x": -674,
+    "y": 8033,
+    "label": "Ring of Regen row17 h41",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 181, Ring of Regeneration behind the thrones. Item row 17 slot 64-Rng regen, region 5326, height 41.",
+    "grade": "BRADY+DECODED",
+    "height": 41
+  },
+  {
+    "x": 4316,
+    "y": 1848,
+    "label": "Iron Rod row2 h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 182, an iron rod in ruined houses toward the southeast. Item row 2 slot 90-Iron Rod, region 6680.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 5702,
+    "y": 1009,
+    "label": "Stone of the Cobra row3 h75",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 182, the Stone of the Cobra up high behind crates. Item row 3 slot 81-St of cobra, region 6676, height 75. The crate push was not read.",
+    "grade": "BRADY+DECODED",
+    "height": 75
+  },
+  {
+    "x": 2647,
+    "y": 9595,
+    "label": "Brady179-10 lake water fog c104",
+    "color": "blue",
+    "source": "grade BRADY+DECODED. Brady printed 179 point 10, the lake. Control 104 template 115 Water fog at (2647,9595,h-17). Control 99 template 118 Little Bridge is (3006,9845,h32). Movable 56 template 116 is (3007,9325,h225). The worm-path markers are further south, around (2165,5810), and are not this lake.",
+    "grade": "BRADY+DECODED",
+    "height": -17
+  },
+  {
+    "x": 10882,
+    "y": 12569,
+    "label": "Brady179-11 Funeral Pyre c301 h140",
+    "color": "red",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 179 point 11, the cave with the priest's body, and the cremation steps. Control 301 template 59 Funeral Pyre. Controls 299 and 300 are Fire for Pyre. Controls 236 and 237 are More Fire for Pyre. Prop 2406 Dead Priest is (10538,12996,h140). Brown Drac Orb props 1205 and 1206 are (10737,12586) and (10871,12711). Item row 0 Fullurn is (11129,12729,h0).",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 140
+  },
+  {
+    "x": 4135,
+    "y": 10151,
+    "label": "Brady179-12 Statue home",
+    "color": "purple",
+    "source": "grade BRADY+DECODED. Brady printed 179 point 12, Statue of Belial. Editor marker Statue's Home id11, region 5945. No template is named bowl or remains. Prop 104 template 32 Inviso Light at (2672,10506,h10) owns opcode-2 body 020100001ca8. That prop is not a bowl.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3078,
+    "y": -738,
+    "label": "Executioner home id87",
+    "color": "red",
+    "source": "grade BRADY+DECODED. Brady printed 183, the arena Executioner after the first Ssar defeat. Editor homes: id87 (3078,-738) region 5721, id92 (3077,-1234), id54 (-1244,2374) region 4359. Arena doors are movables 59 and 60, templates 111 and 110, at (-1509,2799,h-30) and (-2803,2521,h-30). Which home is the arena fight was not chosen.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2165,
+    "y": 5810,
+    "label": "Worm path marker id0",
+    "color": "purple",
+    "source": "grade BRADY+DECODED. Editor Worm Path id0 (2165,5810) region 2796. The path continues through id1 (1777,5814) and id2 (1942,6387). Brady's giant worm is the fight after the statue walks. The path was not played.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 7316,
+    "y": 1785,
+    "label": "east level-change r5340",
+    "color": "gray",
+    "source": "grade DECODED. Region 5340 centroid (7316,1785), floor 10, owns opcode-2 body 020100001ce8. Arrival selector 2 is (7221,1736), region 5338. Byte5 232 stays unread. No Brady number was assigned.",
+    "grade": "DECODED",
+    "height": 10
+  },
+  {
+    "x": -649,
+    "y": 1596,
+    "label": "Stone cube 0 h-9",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": -9
+  },
+  {
+    "x": -669,
+    "y": 1557,
+    "label": "Stone cube 1 h-9",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": -9
+  },
+  {
+    "x": 1052,
+    "y": -540,
+    "label": "Stone cube 2 h0",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1674,
+    "y": 1163,
+    "label": "Stone cube 3 h0",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1912,
+    "y": 2940,
+    "label": "Stone cube 4 h30",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 30
+  },
+  {
+    "x": -2198,
+    "y": 2988,
+    "label": "Stone cube 5 h30",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 30
+  },
+  {
+    "x": -2767,
+    "y": 5419,
+    "label": "Stone cube 6 h0",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -3413,
+    "y": 5414,
+    "label": "Stone cube 7 h0",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 544,
+    "y": 7961,
+    "label": "Stone cube 8 h0",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2026,
+    "y": 6349,
+    "label": "Stone cube 9 h-3",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": -3
+  },
+  {
+    "x": 1106,
+    "y": 5585,
+    "label": "Stone cube 10 h0",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2786,
+    "y": 5425,
+    "label": "Stone cube 11 h0",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2574,
+    "y": 2669,
+    "label": "Stone cube 12 h70",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 70
+  },
+  {
+    "x": 2551,
+    "y": 2635,
+    "label": "Stone cube 13 h70",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 70
+  },
+  {
+    "x": 904,
+    "y": 1465,
+    "label": "Stone cube 14 h20",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 20
+  },
+  {
+    "x": 1082,
+    "y": 1465,
+    "label": "Stone cube 15 h20",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 20
+  },
+  {
+    "x": 1082,
+    "y": 1465,
+    "label": "Stone cube 16 h20",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 20
+  },
+  {
+    "x": 2431,
+    "y": 1662,
+    "label": "Stone cube 17 h10",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": 2434,
+    "y": 1613,
+    "label": "Stone cube 18 h10",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": 2405,
+    "y": 1654,
+    "label": "Stone cube 19 h10",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Brady printed 181 lists Stone Cube among the things on this level. Slot 59-Stone cube. Twenty rows are placed. A row is not a puzzle by itself.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": 601,
+    "y": -434,
+    "label": "87-G Beozar row1 h25",
+    "color": "brown",
+    "source": "grade DECODED. Item row 1 slot 87-G Beozar, region 6688, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "DECODED",
+    "height": 25
+  },
+  {
+    "x": 2303,
+    "y": 4944,
+    "label": "147-SumScrl row5 h143",
+    "color": "brown",
+    "source": "grade DECODED. Item row 5 slot 147-SumScrl, region 3158, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "DECODED",
+    "height": 143
+  },
+  {
+    "x": -1162,
+    "y": 8547,
+    "label": "Cocos Cap row9 h20",
+    "color": "brown",
+    "source": "grade DECODED. Item row 9 slot Cocos Cap, region 6527, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "DECODED",
+    "height": 20
+  },
+  {
+    "x": 1985,
+    "y": 3083,
+    "label": "26-Net of Exile row10 h140",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Item row 10 slot 26-Net of Exile, region 1855, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "BRADY+DECODED",
+    "height": 140
+  },
+  {
+    "x": 1488,
+    "y": 2817,
+    "label": "26-Net of Exile row11 h140",
+    "color": "brown",
+    "source": "grade BRADY+DECODED. Item row 11 slot 26-Net of Exile, region 1956, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "BRADY+DECODED",
+    "height": 140
+  },
+  {
+    "x": 2482,
+    "y": 2748,
+    "label": "149-Prsmscrl row12 h110",
+    "color": "brown",
+    "source": "grade DECODED. Item row 12 slot 149-Prsmscrl, region 2007, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "DECODED",
+    "height": 110
+  },
+  {
+    "x": 1853,
+    "y": 4990,
+    "label": "146-HlScrl row15 h-110",
+    "color": "brown",
+    "source": "grade DECODED. Item row 15 slot 146-HlScrl, region 3514, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "DECODED",
+    "height": -110
+  },
+  {
+    "x": 1614,
+    "y": 3178,
+    "label": "146-HlScrl row16 h140",
+    "color": "brown",
+    "source": "grade DECODED. Item row 16 slot 146-HlScrl, region 1887, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "DECODED",
+    "height": 140
+  },
+  {
+    "x": 2483,
+    "y": 2759,
+    "label": "149-Prsmscrl row20 h110",
+    "color": "brown",
+    "source": "grade DECODED. Item row 20 slot 149-Prsmscrl, region 2007, dormant bit clear. Brady printed 183 names a Net of Exile on the Executioner. The other slots are placed items and were not given a Brady point number.",
+    "grade": "DECODED",
+    "height": 110
+  }
+]

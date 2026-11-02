@@ -1,0 +1,146 @@
+[
+  {
+    "x": -3880,
+    "y": 2630,
+    "label": "Brady229-3 Crystal ceiling",
+    "color": "limegreen",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 195 is the only template 17 Crystal ceiling, at (-3880,2630,h-50). Printed 229 point 3 is the First Empowerment Chamber, and printed 231 step 3 says destroy the crystals on the ceiling. This is one placement. The book plural was not a second prop. Prima's blue-pillar sentence was not joined here.",
+    "grade": "HINTBOOK+BRADY+DECODED"
+  },
+  {
+    "x": -3619,
+    "y": 3431,
+    "label": "Belial Birthed",
+    "color": "orange",
+    "source": "grade DECODED. Prop 197 is the only template 15 Belial Birthed, at (-3619,3431,h-50). Frank's Placenta has no placement. Womb and Embryo are not strings in this MIX. Point 2 was not written onto this prop.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2097,
+    "y": 4211,
+    "label": "Final gateway",
+    "color": "orange",
+    "source": "grade DECODED. Controls 57, 58, 59, and 60 are template 11 Final gateway, from (-2097,4211,h-9) to (-2188,4312,h-9). Point 6 Site of the Final Battle was not written onto this name.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2109,
+    "y": 3259,
+    "label": "Final gateway",
+    "color": "orange",
+    "source": "grade DECODED. Controls 53, 54, 55, and 56 are the other Final gateway cluster, from (-2109,3259,h-9) to (-2200,3160,h-9). It was not merged with the northern cluster and was not numbered as point 6.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -7387,
+    "y": 4890,
+    "label": "arrival selector 0",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 0 is (-7387,4890) region 1243, centroid (-7401,4886), floor -50. Its label stays unbound. It was not numbered as Begin or as the final battle.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2383,
+    "y": 4261,
+    "label": "arrival selector 1",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 1 is (-2383,4261) region 316, centroid (-2393,4263), floor 0. It sits beside regions 1475-1479. Its label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2398,
+    "y": 3206,
+    "label": "arrival selector 2",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 2 is (-2398,3206) region 1523, centroid (-2405,3211), floor 0. It sits beside regions 1484-1488. Its label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -3328,
+    "y": 3104,
+    "label": "arrival selector 3",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 3 is (-3328,3104) region 595, centroid (-3376,3145), floor -50. Its label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -928,
+    "y": 1632,
+    "label": "arrival selector 4",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 4 is (-928,1632) region 101, centroid (-952,1634), floor -60. Its label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2944,
+    "y": 1152,
+    "label": "arrival selector 5",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 5 is (-2944,1152) region 521, centroid (-2876,1148), floor -50. Its label stays unbound.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2612,
+    "y": 4262,
+    "label": "regions 1475-1479",
+    "color": "orange",
+    "source": "grade DECODED. Five regions carry 020100001c53. Centroids: 1475 (-2615,4300) floor 9, 1476 (-2618,4332) floor 42, 1477 (-2612,4262) floor 0, 1478 (-2615,4225) floor 10, 1479 (-2618,4195) floor 39. Groups 3786, 3792, 3798, 3804, and 3810. Byte 5 stays unread. They were not merged. Prop 139 Will-O-wisp at (-3381,2759,h0) also owns groups 3786 and 3810.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2624,
+    "y": 3210,
+    "label": "regions 1484-1488",
+    "color": "orange",
+    "source": "grade DECODED. Five regions carry 020100001c53. Centroids: 1484 (-2624,3210) floor 0, 1485 (-2627,3248) floor 9, 1486 (-2630,3280) floor 42, 1487 (-2627,3173) floor 10, 1488 (-2630,3143) floor 39. Groups 3816, 3822, 3828, 3834, and 3840. Byte 5 stays unread. They were not merged with each other or with regions 1475-1479.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -3545,
+    "y": 3877,
+    "label": "Scotia's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (-3545,3877) region 766. The actor name is Scotia. Mommy was not written onto it.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2209,
+    "y": 1182,
+    "label": "Scotia's Home",
+    "color": "orange",
+    "source": "grade DECODED. Editor home (-2209,1182) region 74. It was not merged with the other Scotia home.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -4264,
+    "y": 3527,
+    "label": "item row 0",
+    "color": "orange",
+    "source": "grade DECODED. Item row 0 is (-4264,3527,h-50) region 714. The slot string is empty. Bit 0x1000 is clear. That clear bit is not a visibility grade.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -4251,
+    "y": 3085,
+    "label": "item row 1",
+    "color": "orange",
+    "source": "grade DECODED. Item row 1 is (-4251,3085,h-50) region 1557. The slot string is empty. Bit 0x1000 is clear. That clear bit is not a visibility grade.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2486,
+    "y": 2490,
+    "label": "item row 2",
+    "color": "orange",
+    "source": "grade DECODED. Item row 2 is (-2486,2490,h-50) region 1602. The slot string is empty. Bit 0x1000 is clear. That clear bit is not a visibility grade.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -2526,
+    "y": 3535,
+    "label": "item row 3",
+    "color": "orange",
+    "source": "grade DECODED. Item row 3 is (-2526,3535,h-50) region 681. The slot string is empty. Bit 0x1000 is clear. That clear bit is not a visibility grade. Ruby of Truth was not written onto these four rows.",
+    "grade": "DECODED"
+  }
+]

@@ -1,0 +1,19 @@
+# Astra review — 2026-11-01
+
+I support the owner's known-behaviour rule. My shared-variable-33 stop was the wrong dependency for delivering the hintbook's guard encounter: an internal byte need not be decoded to implement a known player-visible condition. Keep working native paths, but make explicit modern quest state own missing behaviour. Record the source and limits; never call an authored implementation a recovered original algorithm.
+
+W11–W13 are high value. Qualification should preflight fixture hashes, generated assets, available scenes, timeouts and output names before spending hours on tests. Packaged entry smoke should cover the actual exported executable, including inventory interactions and save/resume, not just scene existence. Keep the remapping lint narrow: scene/resource checks need ResourceLoader, while raw JSON and media may legitimately use FileAccess.
+
+I support W16 and W19. Today's rebase required repairing three registry orders after r12w retired tests. Stable test identifiers and date/slug deviations remove this clerical conflict. Contracts must distinguish source-observed behaviour from implementation details and identify the real player action, failure conditions and persistence needs. A test that reproduces a byte store is useful evidence, but not evidence that the quest is playable.
+
+I would change W14–W15 before expanding them. Shards need separate writable user-data directories and generated-output ownership, not just disjoint CPUs. Input.action_press alone does not make captured-mouse or GUI-dependent code run headless. Introduce semantic interaction commands used by both real input and headless tests; retain a smaller rendered suite to check aiming, reach, obstruction and the UI-to-command connection. Do not replace all input coverage with direct method calls.
+
+W17 cannot guarantee unattended work from prompt wording alone. A stopped chat needs an actual scheduler/continuation mechanism. Workers need leases on tasks and worktrees, bounded jobs, checkpoint receipts and duplicate-work detection. W18 is sensible for unknown behaviour, but an oracle run should have a prepared save and one reproducible question; do not make it another mandatory gate for behaviour already described in the book.
+
+The main missed risks are duplicate quest ownership, false route confidence and save compatibility. A modern quest handler and a native group must not both grant or consume the same item, open the same door or fire the same exit. Travel-gate PASS and 58 candidate book steps do not imply a playable story. The dashboard should separate audited, implemented, headless-route-qualified and rendered-qualified steps; it should also identify which branch/build each count describes. My L8 activation proof is a subsystem proof, not a complete first book step. Cross-area revisits and interrupted conversations require persistent state with validation and version migration.
+
+Three proposed additions:
+
+1. Deliver vertical slices: approach → interact → inventory consequence → save/reload → next location. For L8, finish guard admission and the shaman's cemetery key before polishing unrelated opcode coverage. Include refusal, duplicate reward and full-inventory cases in the same area test.
+2. Maintain a small ownership table per quest step: source page, prerequisite, player action, native-or-modern owner, consumed/granted items, saved state, next route edge. This prevents two systems from implementing one consequence and exposes missing handoffs early.
+3. Represent the hintbook route as a dependency graph with revisit edges and optional branches. L8's first cemetery departure and its later dreamstone temple departure are different milestones; the latter depends on L10/L9/L12/L13. Qualify each milestone honestly instead of blocking all later areas until every L8 revisit is complete.

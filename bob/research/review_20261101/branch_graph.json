@@ -1,0 +1,1595 @@
+{
+ "census": "opcode 206 signed add or opcode 199 set, global index byte 0, in the 15 r12w native_scripts level exports",
+ "tree": "~/opus_work/lol2_r12w",
+ "read_only": true,
+ "row_count": 83,
+ "sets": 0,
+ "levels_with_none": [
+  "L9_DR",
+  "L10_DC",
+  "L13_RC",
+  "L14_HT",
+  "L16_CA",
+  "L17_HC"
+ ],
+ "note": "Index 0 is GV_LUTHERS_SOUL in the existing GLOBAL record-0 decode and in the level source maps already used by the Rix and window cards. This file does not assign an English action to a row. Room WOM scripts are not in these 15 files.",
+ "rows": [
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 4336,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9825432,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 30,
+     "ref": "actor:30",
+     "kind": 9,
+     "value": 0,
+     "predicate": 30
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 4658,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 9825736,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "actor",
+     "index": 30,
+     "ref": "actor:30",
+     "kind": 6,
+     "value": 20,
+     "predicate": 254
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 4906,
+   "op": "add",
+   "delta": 3,
+   "file_offset": 9826038,
+   "raw_hex": "ce0000000003",
+   "events": [
+    {
+     "table": "actor",
+     "index": 31,
+     "ref": "actor:31",
+     "kind": 4,
+     "value": 6,
+     "predicate": 20
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 5092,
+   "op": "add",
+   "delta": -2,
+   "file_offset": 9826176,
+   "raw_hex": "ce00000000fe",
+   "events": [
+    {
+     "table": "actor",
+     "index": 31,
+     "ref": "actor:31",
+     "kind": 9,
+     "value": 0,
+     "predicate": 22
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 5388,
+   "op": "add",
+   "delta": 3,
+   "file_offset": 9826520,
+   "raw_hex": "ce0000000003",
+   "events": [
+    {
+     "table": "actor",
+     "index": 31,
+     "ref": "actor:31",
+     "kind": 4,
+     "value": 6,
+     "predicate": 49
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 5728,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9826812,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 35,
+     "ref": "actor:35",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 5990,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 9827068,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "actor",
+     "index": 35,
+     "ref": "actor:35",
+     "kind": 6,
+     "value": 0,
+     "predicate": 216
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6288,
+   "op": "add",
+   "delta": -2,
+   "file_offset": 9827372,
+   "raw_hex": "ce00000000fe",
+   "events": [
+    {
+     "table": "actor",
+     "index": 36,
+     "ref": "actor:36",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6642,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827726,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 38,
+     "ref": "actor:38",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6668,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827752,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 39,
+     "ref": "actor:39",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6694,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827778,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 40,
+     "ref": "actor:40",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6720,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827804,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 41,
+     "ref": "actor:41",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6746,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827830,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 42,
+     "ref": "actor:42",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6772,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827856,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 43,
+     "ref": "actor:43",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6798,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827882,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 44,
+     "ref": "actor:44",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L12_CM",
+   "stream": 1,
+   "group": 6824,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 9827908,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 45,
+     "ref": "actor:45",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L19_BC",
+   "stream": 1,
+   "group": 1500,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 6147957,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 78,
+     "ref": "prop:78",
+     "kind": 6,
+     "value": 0,
+     "predicate": 211
+    }
+   ]
+  },
+  {
+   "level": "L1_DC",
+   "stream": 1,
+   "group": 11004,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 7243881,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 136,
+     "ref": "control:136",
+     "kind": 9,
+     "value": 0,
+     "predicate": 60
+    }
+   ]
+  },
+  {
+   "level": "L1_DC",
+   "stream": 1,
+   "group": 11068,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 7243945,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 136,
+     "ref": "control:136",
+     "kind": 9,
+     "value": 0,
+     "predicate": 59
+    }
+   ]
+  },
+  {
+   "level": "L20_BB",
+   "stream": 1,
+   "group": 304,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 15491097,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "prop",
+     "index": 15,
+     "ref": "prop:15",
+     "kind": 6,
+     "value": 20,
+     "predicate": 2
+    }
+   ]
+  },
+  {
+   "level": "L20_BB",
+   "stream": 1,
+   "group": 310,
+   "op": "add",
+   "delta": -2,
+   "file_offset": 15491103,
+   "raw_hex": "ce00000000fe",
+   "events": [
+    {
+     "table": "prop",
+     "index": 15,
+     "ref": "prop:15",
+     "kind": 6,
+     "value": 20,
+     "predicate": 3
+    }
+   ]
+  },
+  {
+   "level": "L20_BB",
+   "stream": 1,
+   "group": 7350,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 15498143,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "prop",
+     "index": 239,
+     "ref": "prop:239",
+     "kind": 6,
+     "value": 20,
+     "predicate": 4
+    }
+   ]
+  },
+  {
+   "level": "L20_BB",
+   "stream": 1,
+   "group": 7356,
+   "op": "add",
+   "delta": -2,
+   "file_offset": 15498149,
+   "raw_hex": "ce00000000fe",
+   "events": [
+    {
+     "table": "prop",
+     "index": 239,
+     "ref": "prop:239",
+     "kind": 6,
+     "value": 20,
+     "predicate": 5
+    }
+   ]
+  },
+  {
+   "level": "L3_DH",
+   "stream": 0,
+   "group": 1364,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 5883570,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "region",
+     "index": 1174,
+     "ref": "region:1174",
+     "kind": 12,
+     "value": 0,
+     "predicate": 45
+    }
+   ]
+  },
+  {
+   "level": "L3_DH",
+   "stream": 0,
+   "group": 1724,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 5883930,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "region",
+     "index": 1419,
+     "ref": "region:1419",
+     "kind": 12,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 0,
+   "group": 3926,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13026910,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "region",
+     "index": 1921,
+     "ref": "region:1921",
+     "kind": 12,
+     "value": 0,
+     "predicate": 152
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 10816,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 12739126,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "prop",
+     "index": 552,
+     "ref": "prop:552",
+     "kind": 4,
+     "value": 0,
+     "predicate": 39
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 11072,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12739412,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 552,
+     "ref": "prop:552",
+     "kind": 9,
+     "value": 0,
+     "predicate": 42
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 13136,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12741446,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 553,
+     "ref": "prop:553",
+     "kind": 9,
+     "value": 0,
+     "predicate": 107
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 14086,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12742396,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 561,
+     "ref": "prop:561",
+     "kind": 6,
+     "value": 2,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 18204,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12746514,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 0,
+     "ref": "control:0",
+     "kind": 5,
+     "value": 2,
+     "predicate": 206
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 18280,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12746590,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 0,
+     "ref": "control:0",
+     "kind": 5,
+     "value": 20,
+     "predicate": 206
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 18356,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12746666,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 0,
+     "ref": "control:0",
+     "kind": 9,
+     "value": 0,
+     "predicate": 206
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 18470,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12746786,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 0,
+     "ref": "control:0",
+     "kind": 5,
+     "value": 2,
+     "predicate": 207
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 18546,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12746862,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 0,
+     "ref": "control:0",
+     "kind": 5,
+     "value": 20,
+     "predicate": 207
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 18622,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12746938,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 0,
+     "ref": "control:0",
+     "kind": 9,
+     "value": 0,
+     "predicate": 207
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 19112,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12747422,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 83,
+     "ref": "control:83",
+     "kind": 5,
+     "value": 2,
+     "predicate": 206
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 19188,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12747498,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 83,
+     "ref": "control:83",
+     "kind": 5,
+     "value": 20,
+     "predicate": 206
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 19264,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12747574,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 83,
+     "ref": "control:83",
+     "kind": 9,
+     "value": 0,
+     "predicate": 206
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 19378,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12747694,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 83,
+     "ref": "control:83",
+     "kind": 5,
+     "value": 2,
+     "predicate": 207
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 19454,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12747770,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 83,
+     "ref": "control:83",
+     "kind": 5,
+     "value": 20,
+     "predicate": 207
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 19530,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12747846,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 83,
+     "ref": "control:83",
+     "kind": 9,
+     "value": 0,
+     "predicate": 207
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 19674,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12748022,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 85,
+     "ref": "control:85",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 21222,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12749550,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 99,
+     "ref": "control:99",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 25382,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12753704,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 110,
+     "ref": "control:110",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 25584,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 12753894,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "control",
+     "index": 112,
+     "ref": "control:112",
+     "kind": 6,
+     "value": 0,
+     "predicate": 208
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 25628,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12753950,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 112,
+     "ref": "control:112",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 25802,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12754130,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 123,
+     "ref": "control:123",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 26072,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12754382,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 137,
+     "ref": "control:137",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 26290,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12754600,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 138,
+     "ref": "control:138",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 26702,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12755012,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 186,
+     "ref": "control:186",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 27014,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12755324,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "control",
+     "index": 215,
+     "ref": "control:215",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 27172,
+   "op": "add",
+   "delta": -2,
+   "file_offset": 12755494,
+   "raw_hex": "ce00000000fe",
+   "events": [
+    {
+     "table": "control",
+     "index": 216,
+     "ref": "control:216",
+     "kind": 2,
+     "value": 48,
+     "predicate": 192
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 29704,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 12758014,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "actor",
+     "index": 63,
+     "ref": "actor:63",
+     "kind": 4,
+     "value": 3,
+     "predicate": 23
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 30266,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12758576,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 63,
+     "ref": "actor:63",
+     "kind": 9,
+     "value": 0,
+     "predicate": 160
+    }
+   ]
+  },
+  {
+   "level": "L4_HJ",
+   "stream": 1,
+   "group": 31122,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 12759438,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 64,
+     "ref": "actor:64",
+     "kind": 6,
+     "value": 11,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L5_HC",
+   "stream": 1,
+   "group": 5932,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 5898269,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "control",
+     "index": 75,
+     "ref": "control:75",
+     "kind": 6,
+     "value": 0,
+     "predicate": 212
+    }
+   ]
+  },
+  {
+   "level": "L5_HC",
+   "stream": 1,
+   "group": 10024,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 5902361,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 20,
+     "ref": "actor:20",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L5_HC",
+   "stream": 1,
+   "group": 10224,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 5902561,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "actor",
+     "index": 20,
+     "ref": "actor:20",
+     "kind": 6,
+     "value": 0,
+     "predicate": 216
+    }
+   ]
+  },
+  {
+   "level": "L7_DH",
+   "stream": 1,
+   "group": 2082,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 4862495,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "prop",
+     "index": 242,
+     "ref": "prop:242",
+     "kind": 8,
+     "value": 34,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L7_DH",
+   "stream": 1,
+   "group": 14330,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 4874749,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "actor",
+     "index": 57,
+     "ref": "actor:57",
+     "kind": 6,
+     "value": 0,
+     "predicate": 211
+    }
+   ]
+  },
+  {
+   "level": "L7_DH",
+   "stream": 1,
+   "group": 14414,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 4874833,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 57,
+     "ref": "actor:57",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 186,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13440680,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "prop",
+     "index": 0,
+     "ref": "prop:0",
+     "kind": 4,
+     "value": 3,
+     "predicate": 189
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 578,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 13441114,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 0,
+     "ref": "prop:0",
+     "kind": 9,
+     "value": 0,
+     "predicate": 134
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 660,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 13441148,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 0,
+     "ref": "prop:0",
+     "kind": 9,
+     "value": 0,
+     "predicate": 138
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 908,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13441396,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "prop",
+     "index": 0,
+     "ref": "prop:0",
+     "kind": 4,
+     "value": 3,
+     "predicate": 188
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 1220,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13441708,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "prop",
+     "index": 0,
+     "ref": "prop:0",
+     "kind": 4,
+     "value": 3,
+     "predicate": 187
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 1968,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13442456,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "prop",
+     "index": 30,
+     "ref": "prop:30",
+     "kind": 6,
+     "value": 20,
+     "predicate": 120
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 2022,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13442516,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "prop",
+     "index": 30,
+     "ref": "prop:30",
+     "kind": 6,
+     "value": 20,
+     "predicate": 121
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 2076,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 13442570,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "prop",
+     "index": 30,
+     "ref": "prop:30",
+     "kind": 6,
+     "value": 20,
+     "predicate": 122
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 2130,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 13442624,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "prop",
+     "index": 30,
+     "ref": "prop:30",
+     "kind": 6,
+     "value": 20,
+     "predicate": 123
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 3140,
+   "op": "add",
+   "delta": -2,
+   "file_offset": 13443628,
+   "raw_hex": "ce00000000fe",
+   "events": [
+    {
+     "table": "prop",
+     "index": 100,
+     "ref": "prop:100",
+     "kind": 9,
+     "value": 0,
+     "predicate": 96
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 3712,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 13444206,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 101,
+     "ref": "prop:101",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 7864,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 13448358,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "prop",
+     "index": 556,
+     "ref": "prop:556",
+     "kind": 6,
+     "value": 20,
+     "predicate": 206
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 7888,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 13448384,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "prop",
+     "index": 630,
+     "ref": "prop:630",
+     "kind": 6,
+     "value": 20,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 13602,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13454096,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "actor",
+     "index": 20,
+     "ref": "actor:20",
+     "kind": 4,
+     "value": 3,
+     "predicate": 52
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 13994,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 13454530,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 20,
+     "ref": "actor:20",
+     "kind": 9,
+     "value": 0,
+     "predicate": 134
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 14076,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 13454564,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 20,
+     "ref": "actor:20",
+     "kind": 9,
+     "value": 0,
+     "predicate": 138
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 14324,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13454812,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "actor",
+     "index": 20,
+     "ref": "actor:20",
+     "kind": 4,
+     "value": 3,
+     "predicate": 100
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 14644,
+   "op": "add",
+   "delta": 2,
+   "file_offset": 13455132,
+   "raw_hex": "ce0000000002",
+   "events": [
+    {
+     "table": "actor",
+     "index": 20,
+     "ref": "actor:20",
+     "kind": 4,
+     "value": 3,
+     "predicate": 187
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 18734,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 13459228,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "actor",
+     "index": 93,
+     "ref": "actor:93",
+     "kind": 4,
+     "value": 3,
+     "predicate": 67
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 19750,
+   "op": "add",
+   "delta": -1,
+   "file_offset": 13460244,
+   "raw_hex": "ce00000000ff",
+   "events": [
+    {
+     "table": "actor",
+     "index": 113,
+     "ref": "actor:113",
+     "kind": 9,
+     "value": 0,
+     "predicate": null
+    }
+   ]
+  },
+  {
+   "level": "L8_SJ",
+   "stream": 1,
+   "group": 20320,
+   "op": "add",
+   "delta": 1,
+   "file_offset": 13460808,
+   "raw_hex": "ce0000000001",
+   "events": [
+    {
+     "table": "actor",
+     "index": 113,
+     "ref": "actor:113",
+     "kind": 4,
+     "value": 3,
+     "predicate": 51
+    }
+   ]
+  }
+ ]
+}

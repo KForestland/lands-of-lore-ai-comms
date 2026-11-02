@@ -1,0 +1,42 @@
+[
+  {
+    "x": 1434,
+    "y": 7075,
+    "label": "Brady223-1 Begin arrival 1",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Arrival selector 1 is (1434,7075) region 131, centroid (1433,7079), floor 0. Editor Level Start is (2286,6846). Movable 50 Teleport circle is (1439,7256,h135) and owns group 3896. That body is 020100001c50. Byte 5 stays unread. Adjacent labels City of the Ancients, Belial's Chamber, and City of the Ancients stay unbound.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -4721,
+    "y": -6700,
+    "label": "arrival selector 0",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 0 (-4721,-6700) region 109, centroid (-4729,-6730), floor 0. Its label stays unbound. Not numbered as the Hive Mother entrance.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -5732,
+    "y": -5829,
+    "label": "arrival selector 2",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 2 (-5732,-5829) region 1311, centroid (-5771,-5849), floor 0. Region 1312 centroid (-5436,-5803) and region 1313 centroid (-5435,-5849) each own a group, 1632 and 1638. Both bodies are 020100001c33. Byte 5 stays unread on both. Not named Belial's Chambers.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 8089,
+    "y": -2128,
+    "label": "arrival selector 3",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 3 (8089,-2128) region 1315, centroid (8133,-2144), floor -30. Region 1318 centroid (8335,-2238), floor -30, owns group 1644. The body is 020100001c70. Byte 5 stays unread. Not numbered as point 3.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -3096,
+    "y": -4437,
+    "label": "Level Finish",
+    "color": "orange",
+    "source": "grade DECODED. Editor Level Finish (-3096,-4437). Brady point 3 says Exit to Belial's Chambers. That name is not a template. The unbound label Belial's Chamber was not attached to this marker.",
+    "grade": "DECODED"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "level": "L10_DC",
+    "prop": 247,
+    "color": "yellow",
+    "x": 1152,
+    "y": 3632,
+    "height": -121,
+    "output_group": 11462,
+    "output_identity": 1133383814,
+    "book_printed_page": 185,
+    "placement_file_offset": 13127934,
+    "source": {
+      "file": "DAT/L10_DC.MIX",
+      "geometry_entry_offset": 12769321,
+      "geometry_entry_size": 989312,
+      "geometry_key": 3260615568,
+      "geometry_sha256": "ef89467deb4073f6d60e70baa45bd5ec55b422f1d28b518b16f7cab86434d5e3",
+      "sha256": "543c86c4fdd425cac166d9a1d371aa856b7070d4fded983a8733c473e48341f9"
+    },
+    "offer_groups": [
+      11372
+    ]
+  },
+  {
+    "level": "L10_DC",
+    "prop": 242,
+    "color": "blue",
+    "x": -1456,
+    "y": 4959,
+    "height": -121,
+    "output_group": 11234,
+    "output_identity": 3884849287,
+    "book_printed_page": 185,
+    "placement_file_offset": 13127749,
+    "source": {
+      "file": "DAT/L10_DC.MIX",
+      "geometry_entry_offset": 12769321,
+      "geometry_entry_size": 989312,
+      "geometry_key": 3260615568,
+      "geometry_sha256": "ef89467deb4073f6d60e70baa45bd5ec55b422f1d28b518b16f7cab86434d5e3",
+      "sha256": "543c86c4fdd425cac166d9a1d371aa856b7070d4fded983a8733c473e48341f9"
+    },
+    "offer_groups": [
+      11144
+    ]
+  },
+  {
+    "level": "L9_DR",
+    "prop": 1094,
+    "color": "white",
+    "x": -3656,
+    "y": 833,
+    "height": 150,
+    "output_group": 9348,
+    "output_identity": 999167110,
+    "book_printed_page": 180,
+    "placement_file_offset": 23291766,
+    "source": {
+      "file": "DAT/L9_DR.MIX",
+      "geometry_entry_offset": 22719810,
+      "geometry_entry_size": 823367,
+      "geometry_key": 3511575868,
+      "geometry_sha256": "bfb777c68921591ff1f1f6dd47a7f2aa858de939da55c913eccd4a6615180692",
+      "sha256": "700300d0cdf7df0af9471f3476c4e6ba473a603fa89e3a6e1855037d70be09c7"
+    },
+    "offer_groups": [
+      9264
+    ]
+  }
+]

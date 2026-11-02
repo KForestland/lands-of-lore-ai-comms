@@ -1,0 +1,446 @@
+[
+  {
+    "x": -347,
+    "y": 5603,
+    "label": "Brady190-1 Begin arrival 1",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Arrival selector 1 is (-347,5603) region 735. South level-change region 734 centroid (-99,5618) floor -80 owns group 0. That group contains 020100001c88. Byte 5 stays unread. Adjacent labels Savage Jungle and Citadel stay unbound.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -207,
+    "y": 11723,
+    "label": "Brady190-2 village gate m52",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Movable 52 village gate (-207,11723,h80) and movable 53 (-151,11753,h80). Brady printed 190 point 2 says Barbarian Village. Prima printed chapter 11 says a primitive village. Editor homes say Ape. Those three names stay three names.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 80
+  },
+  {
+    "x": 331,
+    "y": 10873,
+    "label": "Ape-O home",
+    "color": "orange",
+    "source": "grade DECODED. Editor Gnt Ape-O's Home (331,10873) region 185. Other ape homes run from Ape1 (-112,10281) through Ape8 (2,11428). Not renamed to Barbarian.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 3670,
+    "y": 13233,
+    "label": "Brady190-3 Ice Bridge c81",
+    "color": "deepskyblue",
+    "source": "grade BRADY+DECODED. Control 81 Ice Bridge (3670,13233,h-1130). The same template continues as controls 78-85, y 12313 to 13389, height -1130, north of the village gates. The height-40 bridges beside Kenneth and the bridges at y 14200 and y 19300 are other crossings and are not this number.",
+    "grade": "BRADY+DECODED",
+    "height": -1130
+  },
+  {
+    "x": 3432,
+    "y": 6695,
+    "label": "Brady190-4 Snow Tiger den",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Editor Snow Tiger's Den (3432,6695) region 2849, floor -250. Snow Tiger's Home is (3356,6586) region 2862. Brady printed 190 says Ice Tiger's Lair. Snow and Ice stay two names.",
+    "grade": "BRADY+DECODED",
+    "height": -250
+  },
+  {
+    "x": 3029,
+    "y": 6797,
+    "label": "tiger-tunnel switch p193",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 193 Anc switch (3029,6797,h-250). Prima says light the globe in the lizard tunnel and a square rises from the lake. Brady printed 107 says a switch in the Snow Tiger's Lair raises a tower. The command was not read. Globe and switch stay two words.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": -250
+  },
+  {
+    "x": 3724,
+    "y": 8791,
+    "label": "Brady190-5 Anc Tower p182",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Prop 182 Anc Tower (3724,8791,h-325). Props 183, 184, and 185 share that point within 160 units, height -325.",
+    "grade": "BRADY+DECODED",
+    "height": -325
+  },
+  {
+    "x": 3738,
+    "y": 8712,
+    "label": "19-Blizzard row 12",
+    "color": "gold",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 12 slot 19-Blizzard (3738,8712,h-275) region 1901. The dormant bit is set. A set bit is not a visibility grade. Brady printed 107 says Great Axe Blizzard. Prima says an axe on top of the risen square. Great Axe, axe, and 19-Blizzard stay three names.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -275
+  },
+  {
+    "x": 3643,
+    "y": 8427,
+    "label": "lake ice floe m58",
+    "color": "deepskyblue",
+    "source": "grade HINTBOOK+DECODED. Movable 58 ice floe (3643,8427,h-275) is the floe nearest the Blizzard row. Eleven ice floe movables, 56 through 66, sit around y 7917 to 9305. Which floe is the jump was not chosen.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -275
+  },
+  {
+    "x": 3038,
+    "y": 13708,
+    "label": "Brady190-6 avalanche c91",
+    "color": "red",
+    "source": "grade BRADY+HINTBOOK+DECODED. Control 91 avalanche 1 (3038,13708,h-1090). Brady printed 190 point 6 is the Plateau. Prima says stay on the right wall or the entry starts the avalanche. The plateau outline was not traced. The trigger command was not read.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 3658,
+    "y": 15078,
+    "label": "Brady190-7 ice ledge c95",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Control 95 Ice Ledge (3658,15078,h-1030). Ledges 95-101 and 105 run from (3519,15102) to (4468,14091). Brady point 7 is Ice Caves. Prima says the caves open onto a ledge over the river. No template is named Ice Cave.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -1030
+  },
+  {
+    "x": -377,
+    "y": 8690,
+    "label": "Brady190-8 Kenneth home",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Editor Sir Kenneth's Home (-377,8690) region 3121, floor 80. Brady point 8 is the Ice Chasm and River. Prima says search him and throw the picture. Templates Kenneth E199 and Kenneth E200 have no placement. The picture command was not read.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 80
+  },
+  {
+    "x": -366,
+    "y": 7895,
+    "label": "chasm ice bridge c110",
+    "color": "deepskyblue",
+    "source": "grade BRADY+DECODED. Control 110 Ice Bridge (-366,7895,h40), one of controls 106-113 at height 40 beside Kenneth. These are the platforms next to the chasm home. They are not the village bridge and not the north bridge.",
+    "grade": "BRADY+DECODED",
+    "height": 40
+  },
+  {
+    "x": 3211,
+    "y": 18903,
+    "label": "Brady190-9 arrival 2",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Arrival selector 2 (3211,18903) region 3642, floor -1230. Brady point 9 is the exit to the Ru-Loi Citadel. The adjacent labels stay unbound, so this record is not named Citadel.",
+    "grade": "BRADY+DECODED",
+    "height": -1230
+  },
+  {
+    "x": 3684,
+    "y": 19361,
+    "label": "north Ice Bridge c74",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 74 Ice Bridge (3684,19361,h-1292) owns group 2808. That group contains 020100001c2d. Byte 5 stays unread. Controls 75 and 76 share this north crossing.",
+    "grade": "DECODED",
+    "height": -1292
+  },
+  {
+    "x": 2852,
+    "y": 18168,
+    "label": "Baccata homes",
+    "color": "orange",
+    "source": "grade HINTBOOK+DECODED. Editor Good Bacattas and Evil Bacattas share (2852,18168) region 2438. Prima says listen to Baccata after the river. Which of the two homes speaks was not chosen. A third editor home, Bacatta's Home, is (4659,4429) and was not merged with these.",
+    "grade": "HINTBOOK+DECODED"
+  },
+  {
+    "x": 1357,
+    "y": 3899,
+    "label": "Dawn home south",
+    "color": "orange",
+    "source": "grade BRADY+DECODED. Editor Dawn's Home (1357,3899) region 2882. A second Dawn's Home is (4636,4429) region 3573. Brady says Dawn is met in the mountains. Which home is that meeting was not chosen.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 4636,
+    "y": 4429,
+    "label": "Dawn home west",
+    "color": "orange",
+    "source": "grade DECODED. Editor Dawn's Home (4636,4429) region 3573, the second of the two. Not chosen as the meeting.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 1684,
+    "y": 3777,
+    "label": "south guard home",
+    "color": "orange",
+    "source": "grade BRADY+DECODED. Editor Guard's Home (1684,3777) region 2973. More guard homes sit from (1665,3556) to (1866,3744). Brady printed 107 says guards near the entrance on the return, and only if Dawn is unfriendly. The attack command was not read.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 1052,
+    "y": 11000,
+    "label": "50-Br valor row 13",
+    "color": "gold",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 13 slot 50-Br valor (1052,11000,h100) region 344. The dormant bit is clear. A clear bit is not a visibility grade. Movable 54 shutter is (1036,11000,h100). Brady says behind shutters. Prima says a shelf. Shutter and shelf stay two words.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 100
+  },
+  {
+    "x": 3555,
+    "y": 11552,
+    "label": "log climb c52",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Control 52 Log 1 (3555,11552,h-633). Log 1 and Log 2 controls 52-74 run down to (2883,11762,h-1077). Brady printed 108 says wooden logs up the ice cliff. Prima says the logs are for the return. Which log is the first step was not chosen.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": -633
+  },
+  {
+    "x": 3381,
+    "y": 14629,
+    "label": "Melt man c89",
+    "color": "red",
+    "source": "grade BRADY+DECODED. Control 89 Melt man (3381,14629,h-1110). Brady printed 108 says spark a frozen body. The spark command was not read.",
+    "grade": "BRADY+DECODED",
+    "height": -1110
+  },
+  {
+    "x": 3356,
+    "y": 14610,
+    "label": "32-Shard row 36",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 36 slot 32-Shard (3356,14610,h-1090) region 2734, beside Melt man. The dormant bit is set. Brady says an artifact. Shard and artifact stay two names.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 3001,
+    "y": 6800,
+    "label": "66-Ancients stn row 2",
+    "color": "gold",
+    "source": "grade DECODED. Item rows 2 and 3, slot 66-Ancients stn, (3001,6800) and (3009,6785), height -250, region 3038, beside the Anc switch. Prima says take whatever is in the tunnel. The book does not name these stones.",
+    "grade": "DECODED",
+    "height": -250
+  },
+  {
+    "x": 203,
+    "y": 12080,
+    "label": "118-Tar crystal 14",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 14 slot 118-Tar crystal (203,12080,h80) region 710. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 123,
+    "y": 12153,
+    "label": "118-Tar crystal 15",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 15 slot 118-Tar crystal (123,12153,h80) region 710. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 102,
+    "y": 12210,
+    "label": "118-Tar crystal 16",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 16 slot 118-Tar crystal (102,12210,h80) region 710. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 37,
+    "y": 12297,
+    "label": "118-Tar crystal 17",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 17 slot 118-Tar crystal (37,12297,h80) region 710. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 130,
+    "y": 12391,
+    "label": "118-Tar crystal 18",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 18 slot 118-Tar crystal (130,12391,h80) region 710. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 224,
+    "y": 12297,
+    "label": "118-Tar crystal 19",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 19 slot 118-Tar crystal (224,12297,h80) region 710. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 715,
+    "y": 12203,
+    "label": "118-Tar crystal 20",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 20 slot 118-Tar crystal (715,12203,h80) region 704. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 643,
+    "y": 12131,
+    "label": "118-Tar crystal 21",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 21 slot 118-Tar crystal (643,12131,h80) region 704. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 744,
+    "y": 12016,
+    "label": "118-Tar crystal 22",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 22 slot 118-Tar crystal (744,12016,h80) region 702. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 997,
+    "y": 11922,
+    "label": "118-Tar crystal 23",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 23 slot 118-Tar crystal (997,11922,h80) region 6. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 1047,
+    "y": 11987,
+    "label": "118-Tar crystal 24",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 24 slot 118-Tar crystal (1047,11987,h80) region 6. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 1091,
+    "y": 11806,
+    "label": "118-Tar crystal 25",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 25 slot 118-Tar crystal (1091,11806,h80) region 7. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 1184,
+    "y": 11878,
+    "label": "118-Tar crystal 26",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 26 slot 118-Tar crystal (1184,11878,h80) region 7. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 1184,
+    "y": 11958,
+    "label": "118-Tar crystal 27",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 27 slot 118-Tar crystal (1184,11958,h80) region 7. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 2592,
+    "y": 12806,
+    "label": "118-Tar crystal 28",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 28 slot 118-Tar crystal (2592,12806,h-1090) region 774. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 2640,
+    "y": 12827,
+    "label": "118-Tar crystal 29",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 29 slot 118-Tar crystal (2640,12827,h-1090) region 774. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 2718,
+    "y": 12724,
+    "label": "118-Tar crystal 30",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 30 slot 118-Tar crystal (2718,12724,h-1090) region 774. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 2667,
+    "y": 12654,
+    "label": "118-Tar crystal 31",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 31 slot 118-Tar crystal (2667,12654,h-1090) region 774. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 2610,
+    "y": 12643,
+    "label": "118-Tar crystal 32",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 32 slot 118-Tar crystal (2610,12643,h-1090) region 775. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 2546,
+    "y": 12688,
+    "label": "118-Tar crystal 33",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 33 slot 118-Tar crystal (2546,12688,h-1090) region 775. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 2519,
+    "y": 12744,
+    "label": "118-Tar crystal 34",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 34 slot 118-Tar crystal (2519,12744,h-1090) region 775. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 2598,
+    "y": 12836,
+    "label": "118-Tar crystal 35",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 35 slot 118-Tar crystal (2598,12836,h-1090) region 774. The dormant bit is clear. Brady printed 107 says Tar Crystals in the bubbling pools. A crystal row is not by itself a pool. Tar Pool controls are 86, 87, 88, and 90.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  },
+  {
+    "x": 124,
+    "y": 12304,
+    "label": "Tar Pool c86",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Control 86 Tar Pool (124,12304,h80). Brady says bubbling pools. The name slot is Tar Pool.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 1099,
+    "y": 11893,
+    "label": "Tar Pool c87",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Control 87 Tar Pool (1099,11893,h80). Brady says bubbling pools. The name slot is Tar Pool.",
+    "grade": "BRADY+DECODED",
+    "height": 80
+  },
+  {
+    "x": 731,
+    "y": 12117,
+    "label": "Tar Pool c88",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Control 88 Tar Pool (731,12117,h81). Brady says bubbling pools. The name slot is Tar Pool.",
+    "grade": "BRADY+DECODED",
+    "height": 81
+  },
+  {
+    "x": 2620,
+    "y": 12731,
+    "label": "Tar Pool c90",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Control 90 Tar Pool (2620,12731,h-1090). Brady says bubbling pools. The name slot is Tar Pool.",
+    "grade": "BRADY+DECODED",
+    "height": -1090
+  }
+]

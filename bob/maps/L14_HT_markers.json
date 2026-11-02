@@ -1,0 +1,243 @@
+[
+  {
+    "x": 2447,
+    "y": 3027,
+    "label": "Brady197-1 Main Doors m92",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Movable 92 Main Doors (2447,3027,h0) and movable 93 (2376,3027,h0). Brady point 1 is Entrance. Arrival selector 0 is (2576,3181) region 796, centroid (2570,3167), floor 0. Arrival selector 1 is (2411,2413) region 864. Adjacent labels Savage Jungle, Chamber of Voices, and Savage Jungle stay unbound. Region 863 centroid (2417,2307) floor 0 owns group 1462. That body is 020100001c68. Byte 5 stays unread.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": 606,
+    "y": 3464,
+    "label": "Dreamstone Slot m72",
+    "color": "deepskyblue",
+    "source": "grade BRADY+DECODED. Movable 72 Dreamstone Slot (606,3464,h30). Brady says click the Dreamstone on the receptacle to raise the stair. That command stays unread. The item row is a different point.",
+    "grade": "BRADY+DECODED",
+    "height": 30
+  },
+  {
+    "x": 3264,
+    "y": 2664,
+    "label": "Dreamstone row 1",
+    "color": "gold",
+    "source": "grade DECODED. Item row 1 slot 134-Dreamstone (3264,2664,h-96) region 4073. The dormant bit is clear. Not the Dreamstone Slot.",
+    "grade": "DECODED",
+    "height": -96
+  },
+  {
+    "x": 2413,
+    "y": 3299,
+    "label": "Brady197-2 altar pieces c165",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 165 altar pieces (2413,3299,h0) and control 166 (2413,3350,h0), just north of the doors. Brady point 2 says First Altar Room. That room name is not a template. The word First was not read as an order.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3138,
+    "y": 4138,
+    "label": "Brady197-3 Pew c128",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 128 Pew (3138,4138,h0). Pews 128 through 135 run from (2938,4137) to (3139,4407). Brady point 3 says Chapel. That name is not a template.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2176,
+    "y": 4269,
+    "label": "Special Book c125",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 125 Special Book (2176,4269,h61). No template is named Library. Brady's secret library was not joined to this control.",
+    "grade": "DECODED",
+    "height": 61
+  },
+  {
+    "x": 1737,
+    "y": 6192,
+    "label": "Brady197-4 Little Life c89",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Control 89 Little Life (1737,6192,h140) and control 88 Little Death (1430,6192,h140). Bowls props 200 and 201 are (1504,6217,h122) and (1663,6218,h122). Life Block control 65 and Death Block control 66 sit on the same pair. Two more Bowls pairs were not ordered with this one: props 284 and 285 at (3030,4507) and (3059,4507), and props 369 and 370 at (2441,3691) and (2375,3691). Brady says Altars of Life and Death and God of Life and God of Death. Prima says a western bowl and an eastern bowl. Those words were not split across the three sites. Life Idol and Goddess of Life0 at (7620,2095) were not numbered 4.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 140
+  },
+  {
+    "x": 1585,
+    "y": 6172,
+    "label": "Cat ring row 66",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 66 slot 89-Cat ring (1585,6172,h140) region 2900, on the Little Life pair. The dormant bit is set, which is not a visibility grade. Brady says a secret shelf reveals a Catring. No template is named shelf. The spellings Cat ring and Catring stay two spellings.",
+    "grade": "BRADY+DECODED",
+    "height": 140
+  },
+  {
+    "x": 1584,
+    "y": 6235,
+    "label": "Item Taker Table m69",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Movable 69 Item Taker Table (1584,6235,h130). Justice Door movable 68 is (1585,6198,h130). Justice was not renamed Balance.",
+    "grade": "DECODED",
+    "height": 130
+  },
+  {
+    "x": 1075,
+    "y": 3453,
+    "label": "Balance p275",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 275 Balance (1075,3453,h30), near the Dreamstone Slot. Other Balance props: 153 (1662,3167) and 154 (1662,3741) by the doors; 179 (-1068,1244); 180 through 185 around (-930,-5466) to (-733,-5445). Brady point 5 says Altar of Balance. That name is not a template, so none of these was numbered 5. Justice Scale prop 372 is (-38,-3209,h210). Justice Tap controls are 140 (-8,-943,h-20338) and 141 (-43,-3303,h190). Justice and Balance stay two words.",
+    "grade": "DECODED",
+    "height": 30
+  },
+  {
+    "x": 2403,
+    "y": 3617,
+    "label": "Caretaker corpse p187",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 187 Caretaker's corpse (2403,3617,h-75). Prop 274 is the other (2493,2856,h0). Grinder Mechanism control 77 is (2669,3615,h-69). Blood Trough control 75 is (2785,3615,h-80). Examining Table control 73 is (2150,3906,h-80). Brady says Caretaker. Prima says the Huline priest. Those stay two words. Neither corpse was chosen as the table body. Priest's Room is not a template.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -75
+  },
+  {
+    "x": 1193,
+    "y": 5038,
+    "label": "Brady197-7 Lunch Table c157",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 157 Lunch Table (1193,5038,h25) and control 158 (1202,5243,h25). Brady point 7 says Kitchen. That name is not a template. Cauldron props 236 and 237 are (-322,-6520,h300) and (417,-6533,h300). They were not called the kitchen.",
+    "grade": "BRADY+DECODED",
+    "height": 25
+  },
+  {
+    "x": 770,
+    "y": 3654,
+    "label": "Statuette row 0",
+    "color": "gold",
+    "source": "grade DECODED. Item row 0 slot 101-Statuette (770,3654,h0) region 4274. The dormant bit is clear. Row 6 is (3242,2711,h-96) region 4073, bit clear. Row 65 is (3325,3617,h-54) region 3901, bit set, which is not a visibility grade. The Statuette prop template has no placement. Brady point 9, Statuette Room, was not outlined.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -65,
+    "y": 5377,
+    "label": "Burn statuette note",
+    "color": "orange",
+    "source": "grade DECODED. Editor note Burn statuette for item (-65,5377). Nearby editor notes are 2nd lvl give statuettes (-21,5125), for placement (55,4895), and might destroy their key (110,4743). They were not renamed to Statuette Room. The numbered editor marks 1 through 23 sit near y -6000 and are a different cluster.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 1182,
+    "y": 3604,
+    "label": "Invisible Door m70",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Movable 70 Invisible Door (1182,3604,h20) and movable 71 (1182,3307,h20). Brady point 10 is drawn three times and says secret entrance to the lower halls. These two doors were not split into those three dots. Cry shard rows 7 through 11 sit at (1226,3605) and rows 12 through 16 at (1230,3307). Their dormant bit is set, which is not a visibility grade.",
+    "grade": "DECODED",
+    "height": 20
+  },
+  {
+    "x": 2271,
+    "y": 4620,
+    "label": "Sec Cath Dor m64",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Movable 64 Sec Cath Dor (2271,4620,h0) and movable 91 (2857,4604,h3). Movables 80 and 81 are (-51,-580,h140) and (-62,413,h140). The name was not expanded, and none of the four was numbered as point 10.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": 2950,
+    "y": 4609,
+    "label": "Aloe row 68",
+    "color": "gold",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 68 slot 107-Aloe (2950,4609,h10) region 140. The dormant bit is clear. Brady says Aloe Leaf. Prima says aloe. Prop 82 Aloe plant is (607,4139,h0). Those stay three names. Pois paint row 72 is the neighbour (3114,4592,h10) region 138, bit clear. The slot string is 123-Pois paint. Brady says Poison Paint. Prima says poison. Those spellings stay separate.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 10
+  },
+  {
+    "x": 1229,
+    "y": 3556,
+    "label": "Iron flute row 77",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 77 slot 94-Iron flute (1229,3556,h-98) region 219. The dormant bit is clear. Brady says an iron flute in an open coffin. No template is named coffin. Flute Deco movable 76 is (-114,1516,h180). That deco was not renamed to the flute.",
+    "grade": "BRADY+DECODED",
+    "height": -98
+  },
+  {
+    "x": -844,
+    "y": -3803,
+    "label": "Brady197-11 MovingStair c90",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Control 90 MovingStair (-844,-3803,h150). Controls 90 through 103 curve from there through (-142,-4342,h270) to (979,-3797,h159). Brady point 11 and Prima say a spiral staircase. That name is not a template. Elevator Top control 63 is (41,-5919,h301) and was not called the spiral stair.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 150
+  },
+  {
+    "x": 688,
+    "y": -10873,
+    "label": "Chamber of Voice door c78",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Control 78 Chamber of Voice door (688,-10873,h0) and control 79 (638,-10752,h0). Arrival selector 2 is (789,-10774) region 2282, centroid (830,-10748), floor 0. The adjacent label Chamber of Voices stays unbound, so the door was not named from that label.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -1336,
+    "y": -11466,
+    "label": "arrival selector 3",
+    "color": "orange",
+    "source": "grade DECODED. Arrival selector 3 (-1336,-11466) region 4176, centroid (-1330,-11456), floor 40. That region owns group 3836. The body is 020100001c68, the same bytes as region 863. Byte 5 stays unread on both, and the two were not merged. Prop 170 Side Deco (1080,-11330,h0) owns group 9210, body 020100001c30. That byte 5 stays unread too.",
+    "grade": "DECODED"
+  },
+  {
+    "x": 2845,
+    "y": 3913,
+    "label": "Goldbar Door m75",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Movable 75 Goldbar Door (2845,3913,h40). Stone Door movables 73 and 74 are (2704,3891,h-24) and (2677,3891,h-24). Temp Wall Hole control 126 is (2854,3913,h20). None was numbered as a secret entrance.",
+    "grade": "DECODED",
+    "height": 40
+  },
+  {
+    "x": 88,
+    "y": 89,
+    "label": "Brady199-21 Knife Trap m94",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Movable 94 Knife Trap (88,89,h160). Movables 94 through 103 run from (92,257) and (-26,264) down through (-24,-412). Brady printed 199 point 21 says Whirling Blades. Prima says spinning blades. Those words were not the template name.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 160
+  },
+  {
+    "x": 29,
+    "y": -2726,
+    "label": "Brady199-23 Boulder trap m79",
+    "color": "limegreen",
+    "source": "grade BRADY+HINTBOOK+DECODED. Movable 79 is the only Boulder trap (29,-2726,h290). Brady point 23 says Rolling Boulder Trap. Prima says a large boulder. Those words were not the template name. The button command stays unread.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 290
+  },
+  {
+    "x": 154,
+    "y": -3556,
+    "label": "Brady199-24 Idol Case m85",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Movable 85 Idol Case (154,-3556,h395), movable 86 (19,-3637,h395), and movable 87 (-119,-3549,h395). Three cases. Brady point 24 says Three Niches. Brady also says Jkar Idol. Neither of those is the template name. The numbered editor marks near y -6000 were not called these cases.",
+    "grade": "BRADY+DECODED",
+    "height": 395
+  },
+  {
+    "x": 41,
+    "y": -5919,
+    "label": "Brady199-25 Elevator Top c63",
+    "color": "limegreen",
+    "source": "grade BRADY+DECODED. Control 63 Elevator Top (41,-5919,h301). Brady point 25 says Elevator Room. That room name is not a template. MovingStair stays point 11 and was not called this elevator.",
+    "grade": "BRADY+DECODED",
+    "height": 301
+  },
+  {
+    "x": 228,
+    "y": 1232,
+    "label": "Oil pit cover m77",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Movable 77 Oil pit cover (228,1232,h135) and movable 78 (228,976,h135). Oil Puddle and Oil pit have no placement. Brady point 20 says Oil Pool. That name was not joined to the covers. The iron-flute command stays unread.",
+    "grade": "DECODED",
+    "height": 135
+  }
+]

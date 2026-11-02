@@ -1,0 +1,461 @@
+[
+  {
+    "x": 1152,
+    "y": 3632,
+    "label": "Brady185-3 yellow altar p247 h-121",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Brady printed 185 point 3. Prop 247 template 61 Charge Station. Empty-globe event and yellow identity 1133383814 stay Astra's 17:58 join.",
+    "grade": "BRADY+DECODED",
+    "height": -121
+  },
+  {
+    "x": -1456,
+    "y": 4959,
+    "label": "Brady185-4 blue altar p242 h-121",
+    "color": "blue",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 185 point 4. Prop 242 template 61 Charge Station. Blue identity 3884849287 stays Astra's join. Prima calls this charger gold's partner, the blue one, printed 102.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -121
+  },
+  {
+    "x": -125,
+    "y": 1019,
+    "label": "Brady184-4 sigil gate c70 Gate Lock h14",
+    "color": "green",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 184 point 4 and printed 187 must-step 1. Control 70 template 45 Gate Lock. Movables 70 and 71 are template 26 Gate at (-184,1025) and (-65,1025). Movables 72 and 73 are the right and left latches. Prima printed 97 calls the item a key. Consumption stays unread.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 14
+  },
+  {
+    "x": -154,
+    "y": 29,
+    "label": "Brady184-1 entrance c65 Cemetary Gates h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 184 point 1. Control 65 template 57 Cemetary Gates. Region 0 centroid (-152,66) owns opcode-2 body 020100001c48, byte5 72, no predicate. Arrival selector 1 is (-150,221) region 5. Adjacent label Savage Jungle stays unbound. No control, movable, or prop template is named Stair.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -627,
+    "y": 842,
+    "label": "Brady184-2 courtyard brazier c113 h29",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 184 point 2. Control 113 template 42 Brazier for Maus. The pair is control 114 at (-534,935), same template, height 29. These two are the courtyard braziers. Prop template 23 Bone Brazier is a different table and sits on the lower floors.",
+    "grade": "BRADY+DECODED",
+    "height": 29
+  },
+  {
+    "x": -646,
+    "y": 953,
+    "label": "Brady184-3 courtyard level-change r42",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 184 point 3, the teleport sketch west of the gate. Region 42 centroid (-646,953) floor 30 owns opcode-2 body 020100001c69, byte5 105, predicate 63. The destination byte and the predicate stay unread. The note string Is_teleport_to_Ruins_active is not this command.",
+    "grade": "BRADY+DECODED",
+    "height": 30
+  },
+  {
+    "x": -1428,
+    "y": 2946,
+    "label": "Brady184-6 west white door c112 h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 184 point 6, the northwest mausoleum, and printed 189's northern west mausoleum. Control 112 template 22 Cool Door. Control 69 template 50 White Designator is at (-1514,2877). Control 61 template 59 Caretaker's Switch is at (-1515,2992,h25). The switch-to-door command was not read.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1440,
+    "y": 1950,
+    "label": "Brady184-7 oil barrel c176 h50",
+    "color": "red",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 184 point 7 and printed 208 steps 29-31. Control 176 template 13 Rolling Barrel. Control 177 template 12 Falling Barrel is at (-1445,1966,h50). Prop 477 template 8 Side Barrel is at (-1458,1952,h50). Movable 74 template 54 Caretaker's Door is at (-1443,2010,h50). Prima printed 174 (PDF 186) names the barrel that will not tip. That bug is the book's sentence at this object. The tip command was not read.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 50
+  },
+  {
+    "x": -835,
+    "y": 3064,
+    "label": "Brady184-8 Statue of Belial p279 h-35",
+    "color": "purple",
+    "source": "grade BRADY+DECODED. Brady printed 184 point 8. Prop 279 template 26 Statue of Belial. Props 81 and 82 are the same template at (3544,1398) and (2831,1404), height -50, inside the emperor cluster, and they are not this surface point.",
+    "grade": "BRADY+DECODED",
+    "height": -35
+  },
+  {
+    "x": 911,
+    "y": 3125,
+    "label": "Brady184-9 Dracoid Statue p329 h10",
+    "color": "purple",
+    "source": "grade BRADY+DECODED. Brady printed 184 point 9, the central statue. Prop 329 template 21 Dracoid Statue. The second placed statue is prop 340 at (1800,1749,h10).",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": 1800,
+    "y": 1749,
+    "label": "Brady184-9 Dracoid Statue p340 h10",
+    "color": "purple",
+    "source": "grade BRADY+DECODED. Brady printed 184 point 9, the second statue on the sketch. Prop 340 template 21 Dracoid Statue.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": 3396,
+    "y": 3010,
+    "label": "Brady184-10 priest p158 h20",
+    "color": "purple",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 184 point 10 and printed 187. Prop 158 template 34 Priest. Props 155, 156, and 157 are Priest w/o ashes, Priest w/ ashes, and Garbled priest at the same point. Blue door control 155 template 22 is at (3002,3005). Control 68 template 49 Blue Designator is at (2959,2942). Prima printed 102 calls him the dead priest. Bracer condition stays the book sentence.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 20
+  },
+  {
+    "x": 3205,
+    "y": 1327,
+    "label": "Brady184-11 Emperor door c175 h-50",
+    "color": "green",
+    "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 184 point 11 and printed 189 step 5. Control 175 template 16 Emperor's Door. Control 143 template 29 Holy Door is at (3206,1268,h-50). Control 124 template 37 Emperor's shield is at (3205,1359,h50). White, yellow, and blue orb controls 127, 126, and 125 are at (3017,1574), (3208,1571), and (3378,1571), height -55. Placed-orb controls 123, 121, and 122 share those three points. Prima printed 103 names the boxes gold, white, blue.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -50
+  },
+  {
+    "x": 2039,
+    "y": 2513,
+    "label": "Brady185-2 summon scroll row34 h-135",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 185 point 2. Item row 34, slot 147-SumScrl, region 4013. Row 35 is the same slot at (2011,2541,h-135), same region. The chamber walls are not a named template.",
+    "grade": "BRADY+DECODED",
+    "height": -135
+  },
+  {
+    "x": 2506,
+    "y": 2265,
+    "label": "Prima Valkyrie row32 h65",
+    "color": "orange",
+    "source": "grade HINTBOOK+DECODED. Prima printed 102, the crossbow behind a third blue globe. Item row 32 slot 34-Valkryie, region 3696. Brady's must-steps on the checked cemetery pages do not name it.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 65
+  },
+  {
+    "x": 2469,
+    "y": 3004,
+    "label": "Brady reflective plate row40 h100",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 186 things-to-get, Reflective Plate Mail. Item row 40 slot 46-Reflective p, region 831.",
+    "grade": "BRADY+DECODED",
+    "height": 100
+  },
+  {
+    "x": -450,
+    "y": 2631,
+    "label": "Drag Blood rows 23-24 h60",
+    "color": "orange",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item rows 23 and 24, slot Drag Blood, region 4193. Rows 25-27 are the same slot at (-398,2347), (-388,2333), (-401,2331), region 1536. Prima printed 101 and Brady printed 208 step 31 name dragon's blood in the oil. Which row is that use stays unread.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 60
+  },
+  {
+    "x": -728,
+    "y": 2534,
+    "label": "E Globe row8 h0",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 8 slot 96-E Globe, region 1015. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1801,
+    "y": 1668,
+    "label": "E Globe row9 h50",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 9 slot 96-E Globe, region 4290. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 50
+  },
+  {
+    "x": -1195,
+    "y": 2406,
+    "label": "E Globe row42 h-120",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 42 slot 96-E Globe, region 2900. dormant bit set Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -120
+  },
+  {
+    "x": -1430,
+    "y": 4849,
+    "label": "E Globe row43 h-157",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 43 slot 96-E Globe, region 3964. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -157
+  },
+  {
+    "x": 1078,
+    "y": 3530,
+    "label": "E Globe row44 h-157",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 44 slot 96-E Globe, region 3326. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -157
+  },
+  {
+    "x": -1539,
+    "y": 3081,
+    "label": "E Globe row45 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 45 slot 96-E Globe, region 1619. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": -537,
+    "y": 4079,
+    "label": "E Globe row46 h0",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 46 slot 96-E Globe, region 1492. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": 188,
+    "y": 3756,
+    "label": "E Globe row47 h0",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 47 slot 96-E Globe, region 1125. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": 1281,
+    "y": 3358,
+    "label": "E Globe row48 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 48 slot 96-E Globe, region 527. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 1524,
+    "y": 4178,
+    "label": "E Globe row49 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 49 slot 96-E Globe, region 1349. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 2018,
+    "y": 3646,
+    "label": "E Globe row50 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 50 slot 96-E Globe, region 1237. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 3101,
+    "y": 3836,
+    "label": "E Globe row51 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 51 slot 96-E Globe, region 1304. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 2459,
+    "y": 3126,
+    "label": "E Globe row52 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 52 slot 96-E Globe, region 2355. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 2503,
+    "y": 2109,
+    "label": "E Globe row53 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 53 slot 96-E Globe, region 3612. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 2534,
+    "y": 1385,
+    "label": "E Globe row54 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 54 slot 96-E Globe, region 436. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 1272,
+    "y": 1853,
+    "label": "E Globe row55 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 55 slot 96-E Globe, region 589. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": -251,
+    "y": 2527,
+    "label": "E Globe row56 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 56 slot 96-E Globe, region 736. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 368,
+    "y": 2218,
+    "label": "E Globe row57 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 57 slot 96-E Globe, region 656. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": -635,
+    "y": 1592,
+    "label": "E Globe row58 h15",
+    "color": "brown",
+    "source": "grade BRADY+HINTBOOK+DECODED. Item row 58 slot 96-E Globe, region 3426. Prima printed 97 warns that sword globes are decoys. No L10 item row uses a sword-globe name. Brady printed 186 says collect empty orbs.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 1921,
+    "y": 2342,
+    "label": "Silverleaf p159 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 159 template name Silverleaf Bush, region 2441. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3786,
+    "y": 3150,
+    "label": "Silverleaf p160 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 160 template name Silverleaf Bush, region 1911. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2827,
+    "y": 1621,
+    "label": "Silverleaf p161 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 161 template name Silverleaf Bush, region 956. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3444,
+    "y": 3955,
+    "label": "Silverleaf p162 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 162 template name Silverleaf Bush, region 146. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1142,
+    "y": 2786,
+    "label": "Silverleaf p163 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 163 template name Silverleaf Bush, region 982. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 716,
+    "y": 3630,
+    "label": "Silverleaf p164 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 164 template name Silverleaf Bush, region 955. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1891,
+    "y": 2086,
+    "label": "Silverleaf p165 h50",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 165 template name Silverleaf Bush, region 4311. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 50
+  },
+  {
+    "x": 485,
+    "y": 1410,
+    "label": "Silverleaf p166 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 166 template name Silverleaf Bush, region 2418. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -145,
+    "y": 4170,
+    "label": "Silverleaf p167 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 167 template name Silverleaf Bush, region 136. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1556,
+    "y": 1314,
+    "label": "Silverleaf p168 h50",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 168 template name Silverleaf Bush, region 4301. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 50
+  },
+  {
+    "x": -1,
+    "y": 2049,
+    "label": "Silverleaf p169 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 169 template name Silverleaf Bush, region 990. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 1696,
+    "y": 3700,
+    "label": "Silverleaf p170 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 170 template name Silverleaf Bush, region 2376. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3201,
+    "y": 1942,
+    "label": "Silverleaf p254 h-100",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 254 template name Silver leaf Bush, region 3898. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": -100
+  },
+  {
+    "x": 3204,
+    "y": 2060,
+    "label": "Silverleaf p263 h0",
+    "color": "orange",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 263 template name Silver leaf Bush, region 1880. Prima printed 103 says pick nine after the flood. Brady printed 210 says gather as many as you can and keep one. The note Grow_bush_on_exit_from_emperor_WOM was not executed. Twelve template-9 bushes plus two template-55 bushes are placed. The counts were not merged.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 3200,
+    "y": 2995,
+    "label": "arrival selector 0 r3782",
+    "color": "gray",
+    "source": "grade DECODED. Arrival record selector 0, region 3782. Adjacent labels stay unbound, so this record is not named Savage Jungle or the ruins teleport.",
+    "grade": "DECODED",
+    "height": 0
+  }
+]
