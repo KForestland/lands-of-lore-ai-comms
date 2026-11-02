@@ -1247,9 +1247,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY:4/4 source-unchanged PASS tmp/regressions/l8_larkhon_ready/report.json; full earned milestone2 -> actual Human river jump -> inventory Kit recipe/activation -> original115 chest dose/sleep/reload -> nativeL12/1, no seeds. DEVIATIONS0256: recipe/activation/guardian/clock/pose adapters; facade111 no-solid-box collision correction."
   },
   {
    "id": "STORY-036",
@@ -1264,8 +1264,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
