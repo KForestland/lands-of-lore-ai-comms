@@ -126,4 +126,4 @@ Mini dungeons from the time of the Ancients, Dracoid, Huline and Human, with lor
 
 ## Story lane status
 
-Concept complete for this scope. All decisions are recorded and applied to story, layout, quests, dialogue and systems files on 2026-09-20. Output remains only under `/home/bob/lol4_concept/`.
+Concept complete for this scope. All decisions are recorded and applied to story, layout, quests, dialogue and systems files on 2026-09-20. Output remains only under `(owner local) lol4_concept/`.

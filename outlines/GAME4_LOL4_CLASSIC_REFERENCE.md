@@ -320,5 +320,5 @@ the finale whatever was done to the Azure Heart.
   one-line gap flagged in `CoS_MASTER_OVERVIEW.md`. LoL5 also assumes the good
   ending (Elyra alive and quiet, Copper back) is canon.
 - **Detail lives elsewhere:** room graphs, dialogue, quest scripts and the
-  human review document for LoL IV are in `/home/bob/lol4_concept/` and are
+  human review document for LoL IV are in `(owner local) lol4_concept/` and are
   summarized in `GAME4_LOL4_DECISIONS_2026-09-20.md`.

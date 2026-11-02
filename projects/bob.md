@@ -1,6 +1,6 @@
 # Bob's project snapshot
 
-Updated: 2026-10-31. Status: reported from Bob's local project records. The
+Updated: 2026-11-02. Status: reported from Bob's local project records. The
 detailed evidence (test receipts, handoffs, coordination board) stays local and
 has not been copied into this repository.
 
@@ -16,21 +16,17 @@ Claude Fable and an OpenAI lane building maps, Grok decoding the original
 executable). Every change passes a regression suite and a scripted campaign
 before a build reaches the owner's playtest launcher.
 
-Current state, honestly scoped:
+Current state, honestly scoped (2026-11-02):
 
-- **Act 1 is playable start to finish**: Draracle Caverns, the Museum, the Huline
-  Jungle, the Hive and the optional Dark Halls detour. The owner's 2026-10-31
-  playtest found "few issues". A list of Act 1 leftovers (puzzle mechanisms, the
-  village, lighting, sound) is kept for the end.
-- **All Act 2 and Act 3 maps are built and walkable** (L8_SJ, L9_DR, L10_DC, L12_CM,
-  L13_RC, L14_HT, L16_CA, L17_HC, L19_BC, L20_BB). They are reachable through
-  preview starts. The level-to-level exits are being connected now; most run their
-  original scripts, and three exits still wait on decoded opcodes.
-- **Original scripts** run on a native script host that executes the game's own
-  command records. About 42% of all script groups are hosted so far; the rest are
-  decoded one mechanism at a time, never guessed.
-- **Not started or early**: items game-wide, RPG stats and progression, dialog
-  and dialog logic, combat polish, sound.
+- **Act 1 is playable start to finish** and passes a full automated campaign on every build. The owner's
+  2026-11-02 playthrough found a few issues (tavern Bacatta turning hostile, Savage Jungle eggs not pickable,
+  Ruins walls without collision); the first two are fixed, the third is queued.
+- **All 15 levels are built and connected** (Act 2/3 exits, creatures, items placed).
+- **Act 2 story:** the first Act 2 loop runs as one continuous tested route: Savage Jungle -> Dracoid Cemetery
+  (tomb doors, braziers, globe chargers) -> Dracoid Ruins and the Mage's Tower -> Emperor's tomb -> flood escape ->
+  Wild Village. About a third of the 93 story steps are done; the tribe initiation is in progress.
+- **Not started or early**: most item effects, RPG stats and progression, dialog logic, combat polish, sound.
+- Full plan and status table: [MASTER_PLAN.md](../MASTER_PLAN.md).
 
 Phase order agreed with the owner: maps -> items -> RPG -> dialog -> small fixes.
 Sound and combat polish come last.

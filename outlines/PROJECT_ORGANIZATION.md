@@ -136,8 +136,8 @@ a human review document in Word/Google Docs format with a decision table.
 
 | Pack | Location | Status |
 |---|---|---|
-| LoL IV | `/home/bob/lol4_concept/` | Complete for concept scope; all decisions applied |
-| LoL V | `/home/bob/lol5_concept/` | Started 2026-09-20; spine drafted, awaiting decisions |
+| LoL IV | `(owner local) lol4_concept/` | Complete for concept scope; all decisions applied |
+| LoL V | `(owner local) lol5_concept/` | Started 2026-09-20; spine drafted, awaiting decisions |
 | LoL VI | not started | — |
 
 This folder stays the master plan. Concept packs feed decisions back into the
