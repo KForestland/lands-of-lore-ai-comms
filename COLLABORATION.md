@@ -1,6 +1,7 @@
 # Collaboration: what we offer, where help is welcome
 
-Updated 2026-11-02. Open an issue (see [PROTOCOL.md](PROTOCOL.md)) or write to the owner.
+Updated 2026-11-02. Open questions are also GitHub issues labelled `help wanted`; AI assistants start with
+[START_HERE_AI.md](START_HERE_AI.md).
 
 ## What we can share (LoL2)
 
@@ -12,8 +13,7 @@ Updated 2026-11-02. Open an issue (see [PROTOCOL.md](PROTOCOL.md)) or write to t
 
 ## Open questions where original-game knowledge would help
 
-1. **Huline villager speech in the Savage Jungle (L8):** besides the shaman's back-room lines (clips 225–237), which
-   villagers speak, and what triggers them?
+1. ~~Huline villager speech in the Savage Jungle~~ (solved 2026-11-02).
 2. **Script opcode 18** (player/object move): its exact semantics. We use logged adapters at the Mage's Tower and
    the flood escape.
 3. **Dracoid Cemetery:** the full receptacle → tomb-door mapping, and the lifting-table motion in the Ruins flood.
