@@ -128,4 +128,64 @@ This pass did not enter either address. Ambient 338 was not joined to a clip. Th
 
 This pass did not trace that draw call, did not recount 164, and did not open the video. The 6:12 time stays the row's witness. Searches of `brady_guide.txt` and `hintbook.txt` for an inventory-icon size returned no line. No printed size replaces 24. The untraced picker stays the row's own gap. No simpler native build.
 
-Slice 3 files posted this session: 0214, 0115, 0087, 0088, 0090, 0089, 0086, 0091, 0092, 0093, 0094, 0095, 0096, 0097. The next unopened file after 0097 is `0098-row-2026-10-28-all.md`. Files named in the earlier sections were not reopened. r12y remains `56812f9`.
+Slice 3 files posted this session: 0214, 0115, 0087, 0088, 0090, 0089, 0086, 0091, 0092, 0093, 0094, 0095, 0096, 0097. Files named in the earlier sections were not reopened. r12y remains `56812f9`.
+
+## Slice 3, fifteenth file
+
+`0098-row-2026-10-28-all.md`. One row. The HUD weapon ring shows the weapon's inventory icon in colour. The row says the original likely draws a dark silhouette of it, cites longplay 6:12 for the sword and 12:45 for the axe, and says that remap is not traced. The earlier picture was the ground sprite, in the same picture family as the inventory.
+
+This pass did not open the video. Those two times stay the row's witness. The word "likely" stays the row's word.
+
+BRADY printed 18, `brady_guide.txt` lines 601–602, marker PDF page 19. The sentence says to right-click poison over the silhouette of an edged weapon in the Attack Button. That names a silhouette on the Attack Button. It does not print a colour, a dark remap, or the two longplay times. This pass does not treat the name Attack Button as proof that it is the row's weapon ring.
+
+BRADY printed 19, lines 661–662, marker PDF page 20. The Equipment Screen sentence says one melee space has the silhouette of a sword and one ranged space has the silhouette of a how. That "how" stays the OCR. Those are empty-slot pictures. They stay separate from the equipped-weapon ring.
+
+HINTBOOK line 1192 says to use the poison recipe on the weapon circle. It does not name a silhouette or a colour. It does not replace the ring picture. That line was already used for deviation 0087 and that file was not reopened.
+
+`G23_hud_silhouette/REPORT.md` was read this pass. It was not re-disassembled. The report says the ring builder does not read a 0x48E inventory icon and states no dark-grey formula. It leaves the live directory pointer UNKNOWN. This pass did not re-enter `0x83214`. No formula read here replaces the coloured icon. No simpler native build.
+
+## Slice 3, sixteenth file
+
+`0099-row-2026-10-28-all.md`. One row. One picture per carried identity. A Fire crystal keeps its definition's icon whatever its charges: `57b-Fire brnt` for the Museum crystals, `57a-Fire crstl` for the shop and burrow ones. The row says the original likely swaps 57a and 57b. The unidentified cavern sample `draracle/prop/1108/sample` has no source definition and still shows no picture. Charge state is said to live outside the catalog.
+
+BRADY printed 149, `brady_guide.txt` lines 6472–6475, marker PDF page 150. Attack the Last Stone of Bezor to break off three Fire Crystals. Charge them by putting them in the flames. The flames can charge dead crystals. That is a charge sentence. It does not name 57a, 57b, an icon, or a picture swap. The count three stays on that page. It is not copied onto the hintbook sentence.
+
+BRADY printed 58, line 2152, already in `rpg_tables.md`: a Fire Crystal creates a Fireball. No icon.
+
+HINTBOOK lines 2107–2108: bash the blue gem that is too large to carry to split off some fire crystals. "Some" stays that sentence. It does not print three, a burnt name, or a picture swap. The two book counts stay unmerged.
+
+HINTBOOK lines 4118–4119 say globes summon platforms bearing samples of ingredients. That is not `draracle/prop/1108/sample`. A search of `brady_guide.txt` for "sample" returned no line. The sample's missing picture stays the row's gap.
+
+`item_effects.md` lists `57a-Fire crstl` and `57b-Fire brnt` with both handlers unread. Those handlers were not entered. The row's "likely" stays the row's word. No printed icon rule replaces one picture per identity. No simpler native build.
+
+## Slice 3, seventeenth file
+
+`0100-row-2026-10-28-cave-cfall.md`. One row. Waterfall room CFALL, room 32. The world is paused while the room is open, and saves and loads are refused by the host's video_overlay gate. Back and Escape send message 8, only between cue lines, as the other hosted rooms do. The three speaker-2 cues play as audio only. Enter skips the cue that is playing. The row calls these presentation adapters for the native room loop.
+
+This pass did not re-enter the room archive or the gate. Message 8, the three cues, and the Enter skip were not re-read.
+
+BRADY printed 72, `brady_guide.txt` lines 2815–2817, marker before PDF page 74. Entering the waterfall west of the middle river plays a short movie. That sentence is the river waterfall. It does not name room 32. It does not print a pause, a save refusal, message 8, an audio-only cue, or an Enter skip.
+
+BRADY printed 146, lines 6320–6324, marker PDF page 147. In the Waterfall Grotto, smash the stalactite above a waterfall to cause a flood. That is the flood sentence. It does not print the room-loop rules. It was not joined to room 32.
+
+HINTBOOK lines 2309–2327 are the jungle shrine waterfall. The same paragraph says saving and reloading seems to work for a form bug. That is not a cave-room save refusal, and it is not this row.
+
+No printed sentence replaces the pause, the save refusal, message 8, the audio-only cues, or the Enter skip. No simpler native build.
+
+## Slice 3, eighteenth file
+
+`0101-row-2026-10-28-cave-cfall.md`. One row. Not hosted: ambient 344 at volume 130, started by callback 9 and stopped by callback 2, with no ambient bank staged, and the cursor. The pool heal uses the port maximum of 30, the same cap as the Morgan orb heal and the same native `D6A08` routine, and it treats player byte +0x229 bit 1 as clear.
+
+This pass did not enter `D6A08`, did not read player byte +0x229, and did not enter the ambient callbacks. The 30 stays the row's port maximum. It is not copied into `rpg_tables.md`. `formula_finished` stays false.
+
+BRADY printed 63, `brady_guide.txt` line 2339, marker PDF page 64. A pool beyond the waterfall heals you if you click on it after being injured. That sentence prints no amount, no ambient, and no bit. The printed-62 flood sentence on the page before it was not joined to this heal.
+
+HINTBOOK lines 2250–2252 are a jungle pool that reveals a Lightning Crystal. That is not this heal.
+
+No printed amount replaces 30. Hosting ambient 344 was not proposed. No simpler native build.
+
+## Slice 3, nineteenth file
+
+`0102-row-2026-10-28-cave-cfall.md`. One row. Region event 2 is the grounded entry adapter: the player's foot inside the region polygon and within its floor range, minus 2 and plus 4. The opcode 18 return, flags `0x0885`, height 0, uses the floor under the native point, found from the walking elevation, and the yaw rule of the Cave arrival. The row calls these shared adapters with the Draracle pedestal and the guard-encounter opcode 18.
+
+This pass did not re-enter opcode 18. The range and the flags stay the row's text. Searches of `brady_guide.txt` and `hintbook.txt` for `0885` and for a floor range returned no line. The printed waterfall sentences already cited for 0100 and 0101 do not print a foot test, a floor band, or a return height. No printed number replaces the range. No simpler native build. The next unopened file is `0103-row-2026-10-28-cave-prop83.md`.

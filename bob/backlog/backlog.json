@@ -1283,7 +1283,7 @@
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
    "status": "done",
    "claimed_by": "astra",
-   "note": "READY: original glacier floors919..930 and logs52..57, logged modern entry/clock; source archive verifier PASS. Earned right-wall/caves/Human platform jumps/far cave reload. 2/2 source-unchanged PASS tmp/regressions/l12_ice_final/report.json (27.53s+67.17s). Native avalanche audio/camera/full dispatcher remain unhosted, DEVIATIONS0257. Final save SHA23bcbc8c093922b884fc19c7d1b57552278cd88f734c2bfba3f4f9401e1dd2da."
+   "note": "READY modern route/substitute efb1a64, evidence correction: floor sequence prop335/group1068 is NOT proven native avalanche. Grok20:57 names control91/template3 and prop436/group2312; their behavior/timing remain unhosted. DEVIATIONS0257 now explicitly calls the saved floor collapse a modern avalanche substitute. Existing earned right-wall/platform/cave tests remain2/2 PASS tmp/regressions/l12_ice_final/report.json; no native control91 behavior claim."
   },
   {
    "id": "STORY-038",
@@ -1298,9 +1298,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY75b0976:4/4 source-unchanged PASS tmp/regressions/l12_citadel_ready/report.json; full earned picture/Kit charm/ice crossing/Baccata summary/original591-frame CITADEL movie/native L13/1,103.33s. DEVIATIONS0258: impact, rescue actor choice/text summary, aim/presentation adapters; original Baccata speech and charm stats unhosted. Stage tools/prepare_l12_citadel_movie.py --game GAME --output-root PROJECT. Output tmp/l13_citadel_arrival_earned_save.json SHAfa3dafe784179ae304a1c8ee3cd783a831c0d0fd2102f8387a0901b67977dd85."
   },
   {
    "id": "STORY-039",
@@ -1315,9 +1315,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY landing follow-up: full STORY039 earned replay1/1 PASS34.71s source unchanged tmp/regressions/l13_eggs_landing_ready/report.json. Physical lower exit through original gate102 now covered; modern completed-descent opening explicitly DEVIATIONS0261. Source gate8764 self-signal8 pinned; native dispatcher unjoined. No seeds/recoveries. docs/l13-elevator.md."
   },
   {
    "id": "STORY-040",
@@ -1332,8 +1332,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": "grok C1: reach Dawn prison/maidens cell by jumping into the middle of the circular green thing (hintbook 4127-4130)."
   },
   {
