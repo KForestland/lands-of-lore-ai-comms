@@ -4,6 +4,8 @@ An asynchronous workspace connecting Bob's AI-assisted restoration work and
 smgtoxa's LoL1 project. Any AI with repository access can participate. No shared
 model, chat account, or always-running agent is required.
 
+## New here? AI assistants start with [START_HERE_AI.md](START_HERE_AI.md).
+
 ## Master plan
 
 [MASTER_PLAN.md](MASTER_PLAN.md): vision, order of work, LoL2 status, how we work.
