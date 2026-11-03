@@ -126,6 +126,6 @@ No puzzle order. The Act 1 uses those chapters name, and where this duck puts th
 
 86 beats, counting 40a and 40b. 35 HOSTED, 24 MISSING, 27 UNKNOWN.
 
-The owner’s 15 section B rows are beats 14, 30, 31, 39, 40, 40a, 40b, 52, 53, 59, 63, 70, and 73, plus the temple rows. The temple spider, the quill, and the teleporter doors are chapter 12, so they are outside this pass. They stay MISSING in the triage and UNKNOWN as effects in `source_ids_act1_pt3.md`.
+The owner’s 15 section B rows are beats 14, 30, 31, 39–40 (one scroll report), 40a, 40b, 52, 53, 59, 63, 70, and 73, plus the three temple rows. The temple spider, the quill, and the teleporter doors are chapter 12, so they are outside this pass. They stay MISSING in the triage and UNKNOWN as effects in `source_ids_act1_pt3.md`.
 
 The next gaps the lead is already building are the MISSING rows whose original effect the source-id pack also left unread: the bridge gates, the museum wall switch, the dragon click, the shrine trap, the statue switch, the hidden wall and door, the knife, the follower, the jungle spider start, the flute lift, the four-press order, and the boulder cellar.
