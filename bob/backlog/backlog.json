@@ -1706,9 +1706,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": "grok C3: blade trap bypass via the passage on the right (hintbook 4585-4586); flute slot here: owner made the Hive flute vanish -> use fire-trap route (lead note)."
+   "note": "READY e7cbd3c: either earned flute Kit + physical central oilcovers PASS12.65s; actual original81/80 door/blade bypass24.19s; actual central boulder death/moving-save/pause/earnedreload/safe side17.34s; affected middle full130.73s/return36.39s; onward idolroom22.25s, all source stable. Reports l14_flute_cover_owner, l14_blade_doors_probe, l14_boulder_motion_verified, l14_flute_full_affected. Adapters0300-0301; immutable idolroom222f13ddfeba61e4bef15544cf167e19c21a76558a850a3b81c3df9230998655. Owner either-flute ruling supersedes stale note. Headless only."
   },
   {
    "id": "STORY-063",
@@ -1723,9 +1723,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY HEAD: three distinct earned idols Kit into original85/86/87, original14MovingStair parts assemble; actual farfloor281 crossing/save17.59s, affectedincomingroute20.50s source stable tmp/regressions/l14_idol_stairs_verified/report.json. Wrong/full/paused/duplicate/moving-save checked. Adapter0302,18objects12groups sourceverified. Immutable76eac7615e4d04cd559a1af9757124c4da735d98a1e7013eb80a45df7411afae. No seeds/teleport."
   },
   {
    "id": "STORY-064",
@@ -1740,9 +1740,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY HEAD: originalfive91..95 actualcombat/settledcorpses/uniquepickups/save34.87s; actualcarryreturn/off-platform Kit5bodies/Humanstep/physical300->-70ride/pause/moving-save16.50s; affectedidol17.58/gallery15.63 source stable. Reports l14_hopper_corpses_verified, l14_hopper_platform_probe1, l14_hopper_affected.0303/source11objects62groups. Immutable f594ccfa6a5c7526b4be0d2a74ab6d1e125f8ea0288dcb2494d23e3f91e670d6. Reproduce original corpse icon: python3 tools/prepare_l14_hopper_corpse.py. No seeded deaths/items/teleport.065 exit/fight not claimed."
   },
   {
    "id": "STORY-065",
@@ -1757,8 +1757,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
