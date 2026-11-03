@@ -214,3 +214,27 @@ Pedestal 2 and Pedestal 3 have zero placements. The placed pedestals are all hei
 Those regions also hold the placed reagent and scroll rows, items 13 through 21 and 25 through 28, all height 200, event 0. Examples: item 14 `R-Manafoil` (13189, 1768) region 8827; item 16 `R-Pyrapod` (13442, -1449) region 7484; item 26 `148-MoDScrl` (12609, 1485) region 8828. None of those identities is the ivory chip. The ivory items are the three rows in STORY-073, and none of them is height 200 in this pedestal band.
 
 The four pylon regions and their Iris Door controls are the table in STORY-069. No fifth Iris Door was in the static-name selection. Prop 615, the center Tower at (13273, -6464), event 0, remains the only template-Tower row. Which of the four pylons is southwest was not derived. No axis was read from the MIX.
+
+## Resolved
+
+JSON pass over L14_HT.json and L16_CA.json. Both sha256 values match the header. Command bytes in this section come from those exports and were not re-read from the MIX, so they stay LIKELY. Opcode 2 was classified only by the level-change shape `020100001c`. Opcode 3, opcode 9, opcode 18, opcode 21, opcode 196, and opcode 198 were not entered. Placement numbers are placement_hex: signed words at bytes 0 and 2, height at byte 6, flags at byte 8, region at byte 10. A prop template is the u16 at byte 32. A movable static is the byte at byte 32. No axis was read. No museum save was read. The grades above stay as written.
+
+STORY-066. Dreamstone identity 0xCE20AEE3 is stored as opcode 3, byte +8 = 4, on two rows. Prop 137, template u16 2, stored (1615, -195), height 0, flags 0x0402, region 4072, stream 1 group 7066, holds that identity once among 16 opcode 3 commands. The same group holds flute identity 0xB40E38C4 once and identity 0x1200015E three times. The other identities in the group were not named. Its opcode 2 commands are `020100000e14` and `020100000d14`. Kind 2 group 7292 is opcode 2 `020100003d28`. All three sit outside the level-change shape. Movable 72, static byte 36, stored (606, 3464), height 30, flags 0x0502, region 2490, stream 1 group 19666, holds the dreamstone identity once. The grant stays LIKELY. Props 0 and 384, the Death Idol rows, are template u16 17 in this export. Movables 65 and 66, the chamber doors, are static byte 67. Prop 137 and movable 72 are the other indexes, in regions 4072 and 2490. Across all 1062 groups, opcode 198 writes slot 4 Idol_Count zero times, slot 20 Open_Death_Door zero times, and slot 22 go_to_level_16 zero times. The level-change commands remain the three already listed. A chalice object, a destroyed idol, and the city resurfacing stay UNKNOWN.
+
+STORY-067. Across all 2136 L16 groups, opcode 198 writes slot 0 Star_Elevator zero times. Region 233's opcode 21 byte 4 remains 27 and was not read as a filename. The ride stays UNKNOWN.
+
+STORY-068. Slot 16 remains the one opcode 198 write on prop 626 group 40538, and it stays unbound. Prop 219, template u16 0, stored (-2403, -16035), height 0, flags 0x0482, region 9659, stream 1 group 4834, starts with opcode 9 on u16 626, byte 4 = 8. U16 626 fits only a prop. The other opcode 9 commands on that index are prop 626's own two, byte 4 = 16. Props 600 through 603 are template u16 61. Prop 219 is template u16 0, in region 9659. The southern fountain, a ball above it, and the book's nine stay UNKNOWN. Fourteen remains the placed lichen count.
+
+STORY-069. Opcode 198 writes slots 6, 7, 8, and 9 zero times. The iris opcode 18 words in the export match the stored numbers in the table above. A southwest tower, an order, a box, and a shimmering disk stay UNKNOWN.
+
+STORY-070. Opcode 198 byte 4 = 4 is 28 commands in 28 groups. Those groups belong to the 14 puddle controls already listed, 148 through 158 and 160 through 162. Each control has byte 5 = 1 and byte 5 = 0. The slot stays unbound. Opcode 198 writes slot 2 Hourglass_on zero times. A yellow figure, an hourglass-opens-tower effect, and which plots are watered stay UNKNOWN.
+
+STORY-071. Slot 11 remains the one opcode 198 write on prop 392 group 14558. The export has zero opcode 3 commands of identity 0xD58C34FE. A head statue, burning oil, and a blue bow stay UNKNOWN.
+
+STORY-072. A spinning brick, a blue bow, and which object is the white ball stay UNKNOWN. U16 88, 89, and 90 still fit more than one table.
+
+STORY-073. The export's ivory opcode 3 owners are the rows already tabulated, including four commands in prop 592 group 36430 and control 72 with byte +8 = 1. Opcode 198 writes slot 5 How_many_tower_keys_have_been_placed zero times. Four chips, and two chips carried from the museum, stay UNKNOWN.
+
+STORY-074. Opcode 198 writes slot 10 How_may_orbs_have_been_charged zero times. Slot 15, slot 16, and slot 22 remain the single writes on props 419, 626, and 399. Sparked globes, a straight walk, freezing the fountain, and a collapsing room stay UNKNOWN.
+
+STORY-075. Four chips on four pedestals, a last tower, and a disk that opens stay UNKNOWN. Which of the four pylons is southwest was not derived.
