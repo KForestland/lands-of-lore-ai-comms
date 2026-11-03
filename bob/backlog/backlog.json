@@ -10095,16 +10095,68 @@
    "status": "todo"
   },
   {
-   "id": "ENH-QUICK-BELT",
-   "type": "IDEA",
+   "id": "UI-QUICK-BELT",
+   "type": "UI",
    "area": "playtest",
-   "title": "Owner idea 2026-11-03: 5-slot quick-use belt with icons in the middle of the screen (confirm Classic vs Enhanced)",
+   "title": "Quick-use belt: 5 slots with icons at the bottom/middle of the screen, in BOTH Classic and Enhanced (owner 2026-11-03: substitute for not having mouse+inventory always on; controls are not reworked otherwise)",
    "source": "playtest_feedback_20261023/TRIAGE_20261103.md",
    "lane": "any",
-   "priority": 3,
+   "priority": 2,
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
+   "status": "todo"
+  },
+  {
+   "id": "CLEANUP-BUILDS-KEEP3",
+   "type": "CLEANUP",
+   "area": "workspace",
+   "title": "Keep the last 3 qualified builds (r13, r12z, r12x fallback) in opus_work/builds; archive the rest to Arikv; move their old launchers to oct23/old_launchers (owner 2026-11-03)",
+   "source": "Questions page 2026-11-03",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "workflow",
+   "acceptance": "owner confirms",
+   "status": "todo"
+  },
+  {
+   "id": "CLEANUP-MEDIA-DEDUP",
+   "type": "CLEANUP",
+   "area": "workspace",
+   "title": "Remove ~/Videos and ~/Pictures files that are byte-identical (sha256) to copies on the Arikv disk; keep everything else (owner 2026-11-03)",
+   "source": "Questions page 2026-11-03",
+   "lane": "lead",
+   "priority": 2,
+   "depends": [],
+   "phase": "workflow",
+   "acceptance": "owner confirms",
+   "status": "todo"
+  },
+  {
+   "id": "CLEANUP-ARCHIVE-ORGANIZE",
+   "type": "CLEANUP",
+   "area": "workspace",
+   "title": "Organise the Arikv archive into folders: old/history vs a workspace the owner can modify (owner 2026-11-03)",
+   "source": "Questions page 2026-11-03",
+   "lane": "lead",
+   "priority": 2,
+   "depends": [],
+   "phase": "workflow",
+   "acceptance": "owner confirms",
+   "status": "todo"
+  },
+  {
+   "id": "PLAN-MASTER-REMAKE",
+   "type": "PLAN",
+   "area": "workspace",
+   "title": "Remake the master plan with the owner (questions via the Questions page first): series order LoL2 C -> LoL3 C -> LoL1 C (Godot, smgtoxa+mohammadkoush material, last) -> Enhanced LoL1/2/3, Gladstone 3 eras, Asynchronia, LoL4 as mod (owner 2026-11-03)",
+   "source": "Questions page 2026-11-03",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "workflow",
+   "acceptance": "owner confirms",
    "status": "todo"
   }
  ]
