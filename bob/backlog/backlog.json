@@ -1757,9 +1757,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY2497228: physical earned five-corpse elevator trigger, source-backed chamber admission, actual Beast melee defeat, optional-return guard and save/reload. Mandatory354 runnable headless PASS/complete/source-stable/zero skips: tmp/regressions/lead_repaired_full_headless/report.json; tested fc1b45c.263 rendered/12 chain-driver entries explicitly excluded. Adapter0305 limitations retained. Pack-up checkpoint; no066 started."
   },
   {
    "id": "STORY-066",
