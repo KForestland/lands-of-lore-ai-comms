@@ -77,3 +77,71 @@ Archive SHA-256 identifiers:
 The two L14 destinations match the coordinates discussed for the Belial approach in the mirrored coordination board; their 0x0004 flag supports direct relocation without overwriting height. The L16 destination matches the discussed arrival relocation. These scene associations rely on the existing project research, not an independent trigger walk. L9 contains both direct and gradual records; the selected records do not by themselves establish which is the Tower or flood trigger. Owner-event/group mapping and live scene checks remain required.
 
 Scene-association reference: [coordination board at bef2bdf](https://github.com/KForestland/lands-of-lore-ai-comms/blob/bef2bdf/bob/board/COORDINATION.txt), entries dated 2026-11-03 05:25 and 06:51 UTC.
+
+## Follow-up: Tower owners and gradual control flow
+
+The local L9 export was regenerated with the published exporter at revision `fe134c268f9c5e0e89e3b8a11148a84fef982f1b`. `tools/summarize_opcode18_owners.py` reduces that local export to decoded fields and matching event-owner metadata. It does not infer kind-11 links or gameplay reachability.
+
+### Tower region-event witnesses
+
+All 19 rows below are stream 0, region record kind 12, event 2, value 0, with no predicate trailer. Each has kind 1 / target 0. Flags all contain 0x0004 and none contains 0x0100: the verified direct branch writes horizontal position and heading but preserves the object height field. Floor reconciliation elsewhere in the engine remains untraced; a scene host must not assume the command height word forces height zero.
+
+| Region owner | Group | Command offset | Archive offset | Destination words | Flags | Heading |
+|---|---|---|---|---|---|---|
+| region:2300 | 554 | 554 | 23384454 | [-1627, 1046, 0] | 0x0c04 | 63169 |
+| region:3609 | 4634 | 4646 | 23388546 | [-3321, 1187, 0] | 0x0804 | 57344 |
+| region:3611 | 4664 | 4676 | 23388576 | [-3321, 1187, 0] | 0x0804 | 57344 |
+| region:3612 | 4694 | 4706 | 23388606 | [-3321, 1187, 0] | 0x0804 | 57344 |
+| region:3613 | 4724 | 4736 | 23388636 | [-3321, 1187, 0] | 0x0804 | 57344 |
+| region:3640 | 4754 | 4754 | 23388654 | [-3027, 8232, 0] | 0x0404 | 16384 |
+| region:3641 | 4772 | 4772 | 23388672 | [-3027, 8232, 0] | 0x0404 | 16384 |
+| region:3642 | 4790 | 4790 | 23388690 | [-3027, 8232, 0] | 0x0404 | 16384 |
+| region:3643 | 4808 | 4808 | 23388708 | [-3027, 8232, 0] | 0x0404 | 16384 |
+| region:3644 | 4826 | 4826 | 23388726 | [-3027, 8232, 0] | 0x0404 | 16384 |
+| region:3655 | 4844 | 4844 | 23388744 | [-3027, 8232, 0] | 0x0404 | 16384 |
+| region:3948 | 4972 | 4972 | 23388872 | [-2891, 1142, 0] | 0x0c04 | 23665 |
+| region:3949 | 4990 | 4990 | 23388890 | [-2891, 1142, 0] | 0x0c04 | 23665 |
+| region:3950 | 5008 | 5008 | 23388908 | [-2891, 1142, 0] | 0x0c04 | 23665 |
+| region:3951 | 5026 | 5026 | 23388926 | [-2891, 1142, 0] | 0x0c04 | 23665 |
+| region:4461 | 5164 | 5182 | 23389082 | [-3321, 1187, 0] | 0x0804 | 57344 |
+| region:4466 | 5200 | 5212 | 23389112 | [-3321, 1187, 0] | 0x0804 | 57344 |
+| region:4467 | 5230 | 5242 | 23389142 | [-3321, 1187, 0] | 0x0804 | 57344 |
+| region:4468 | 5260 | 5278 | 23389178 | [-3321, 1187, 0] | 0x0804 | 57344 |
+
+These match the project board's Tower approach/reverse mapping (2026-11-02 04:10 UTC) and upper/return mapping (04:49 UTC). The serialized links and words were independently checked; named scenes and destination floor regions are still credited to those board entries. This does not establish that a player can naturally trigger every row.
+
+### Flood-stage distinction
+
+The project board (2026-11-02 15:53 and 16:11 UTC) identifies props/regions in the flood cascade and names movable tables 121/122. In this exact L9 archive:
+
+- Prop 1015 has a kind-6 record, value 20, no predicate, at archive offset 23242890, referencing stream-1 group 5556.
+- Group 5556 begins at archive offset 23225890. Its four commands are opcode 204 targeting region 5958, then opcode 208 targeting 6014, 5958, and 5958. There is no opcode 18 in this group.
+- Movable 121 and movable 122 have empty serialized event lists. No command in either stream uses kind 0x20 with target 121 or 122. This rules out that particular direct serialized command reference, not indirect motion through region changes or other runtime behavior.
+- Descriptor 501 contains kind-11 records at archive offsets 23393366 and 23393374; descriptor 507 contains one at 23393394. The exporter does not resolve these as group links. Their runtime interpretation was not verified in this pass.
+
+Consequently the flood table lift cannot be presented as solved by opcode 18's movement flags. The next source task is the region-change callback and opcode-208 motion path, with table-to-region binding and a runtime observation. Other L9 opcode-18 records remain separately present; this is not a claim that the entire flood sequence has none.
+
+### Gradual control-flow checks
+
+Run `python tools/check_opcode18_gradual.py <path-to-your-LOLG.DAT>` with Unicorn installed. It requires the same exact executable hash and executes the original 65BB0 control flow. Four calls are deliberately substituted: 111C34 (direction/distance output), 1118F4 (step output), 1366EA (height-angle output), and DD8F4 (height-step output). Unexpected execution outside the routine and these four entry addresses fails immediately. These checks do **not** prove the substituted helpers' math or the full engine's motion.
+
+Ten cases passed:
+
+| Case | Observed control-flow result |
+|---|---|
+| Speed ramp up | Current parameter 8, target byte 10, accumulator 1 passes 9 to step helper |
+| Speed ramp down | Current 12, target 10, accumulator 1 passes 11 |
+| Flag 0x0080 | Passes target byte 10 directly |
+| Accumulator overflow | 250 + tick byte 10 saturates to 255; ramp reaches target 10 |
+| Flag 0x0008 | Preserves heading while unfinished |
+| Flags 0x0808 | 0x0800 forces heading despite 0x0008 |
+| Path-facing turn | Without heading flags, heading advances toward supplied path direction |
+| Arrival with 0x0008 | Returns 1, sets 0x0020, snaps horizontal destination, preserves heading |
+| Arrival with matching heading | Returns 1 and retains requested final heading |
+| Height outstanding | With 0x0100 and a nonzero height delta, returns 0 and does not mark complete |
+
+These distinguish unfinished motion output from direct coordinate writes: the tested unfinished paths leave object coordinates unchanged while producing movement output for the caller. They are not repeated-frame travel simulations.
+
+Static branch boundaries: speed selection 65CCF–65D27; distance/step handling 65D27–65E3F; vertical handling 65E3F–65F0E; heading 65F0E–6601B; auxiliary adjustment 6601B–66088; completion 66088–660EF. In particular the close-distance condition at 65DF8 compares against 0x20000 (two 16.16 units), but it is reached only after the preceding distance/step and height branches. It is not an unconditional two-unit arrival radius.
+
+Combined validation is six direct/reset cases plus ten gradual control-flow cases. No live DOSBox run, collision test, original-save replay, full movement-math verification, or cross-build equivalence check has been completed. The precise speed units, all flag combinations, downstream floor adjustment, and flood table physics remain open. Issue 3 should remain open.
