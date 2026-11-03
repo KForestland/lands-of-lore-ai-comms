@@ -9841,7 +9841,7 @@
    "acceptance": "design note + tests; owner confirms where visible",
    "status": "claimed",
    "claimed_by": "lead",
-   "note": "Manifest pins input-save SHA, producing test + commit, and required persistent identities (astra)"
+   "note": "Manifest pins input-save SHA, producing test + commit, and required persistent identities (astra) | READY 378bd47 (branch engine-playtest-starts, lol2_starts): F2 / \"Playtest starts\" button, 11 Act 1 earned starts via the gate normal resume, sha+provenance+identity pins; affected 519/0/12; exported build NOT yet verified (r13 qualification will)."
   },
   {
    "id": "ENGINE-AREA-HOST",
@@ -9949,6 +9949,19 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "tool + test; lanes confirm it removes a question round",
+   "status": "todo"
+  },
+  {
+   "id": "ENGINE-PLAYTEST-STARTS-ACT2",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "Act 2 playtest starts: gate resume branch for map saves (act2_save.gd + the map own load path), 'map' kind in playtest_starts.gd + producer, entries from astra *_qualified_save.json (sha, test, commit, input sha, identities)",
+   "source": "start-points agent report 2026-11-03",
+   "lane": "lead",
+   "priority": 0,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "Act 2 starts in the F2 list resume headless + one rendered; owner uses them",
    "status": "todo"
   }
  ]
