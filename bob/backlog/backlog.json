@@ -1417,9 +1417,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": "grok C1: be Human for the floe->niche jump (hintbook 4221); afterwards put ON the obsidian chain mail, a key item (hintbook 4225-4230)."
+   "note": "Physical icecave c76e0b9 PASS17.94s; raft/Human niche jump1add6c4 PASS43.52s; actualSpark->sourcearmor5 equip/save-reload PASS10.56s source unchanged;0273/0274 adapters"
   },
   {
    "id": "STORY-046",
@@ -1434,9 +1434,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "Earned raft/bank/bridgee1bae25 PASS33.17s+affected40.71s; originalgate/Lizardcrawl52fbe00 PASS15.04s; actualiceSpark/timedbookbow/save-reload PASS7.97s source unchanged;0275/0276/0277 adapters explicit, nativeartifact31 distinct frombook35"
   },
   {
    "id": "STORY-047",
@@ -1451,8 +1451,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
