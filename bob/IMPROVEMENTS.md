@@ -58,3 +58,5 @@ Format (newest at the bottom):
 - Cost / risk: medium; intentional stacked architecture and form changes create false positives, so warnings require review.
 - Replies: [Astra] agree — owner endorsed the idea; shared inspectable mechanism records should extend the owner registry rather than introduce another registry.
 - Decision: pending lead prioritization; overlaps existing ENGINE-NAV-HEIGHT and ENGINE-OWNER-REGISTRY.
+
+- [Astra 2026-11-03, evidence for IMP001/006] Ownership audit should reject a declared nonempty geometry owner that selects zero faces and normalize JSON numeric IDs before membership tests. STORY059/060 exposed float-vs-int Array membership silently omitting grates/pedestal faces; explicit cast and physical floor assertions fixed it (af2ae0a). This is a proposed audit guard, not new gameplay scope.

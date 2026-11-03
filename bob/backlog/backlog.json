@@ -1657,7 +1657,7 @@
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
    "status": "done",
    "claimed_by": "astra",
-   "note": "READY niche Kit transaction + original pedestal/grates/shard67. Earned12.07s/affected approach33.07s PASS source stable tmp/regressions/l14_niche_probe1/report.json and l14_niche_affected/report.json. docs/l14-niche.md, adapters0291..0293, actual two distinct earned shards/save-reload, no seeds/teleport."
+   "note": "Corrected physical ownership: explicitint JSON IDs; original closed grate-20 and raised pedestal0 now asserted. Earned niche10.71s source stable tmp/regressions/l14_numeric_ownership_verified/report.json; original item/inventory endpoint hash unchanged. Earlier12.07s receipt omitted physical floor proof; superseded. docs/l14-niche.md."
   },
   {
    "id": "STORY-060",
@@ -1672,9 +1672,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY paired original ScaleTray405/406 Kit shards -> physical rear passage/save-reload14.89s, corrected affected headboard/library/niche3/3 + incoming two-shard route PASS source stable. docs/l14-shard-bowls.md, adapter0294 explicit geometry30 vs unresolvednative130; no seeds/teleport."
   },
   {
    "id": "STORY-061",
@@ -1689,8 +1689,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
@@ -9771,8 +9771,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "L9 static/region wall collision audit (like Cave/Museum/Hive region walls); owner walk finds no no-clip walls or trap spots; F10 confirms.",
-   "status": "todo",
-   "note": "grok l9_walls_card.md: dragon_level.gd region_blockers_enabled=false; L9_DR bit0 pack (125 static/116 edges, 79 op197 dynamic) exists unused. Fix = enable flag + attach pack (like Museum/Hive). Lead in r12z; check astra L9 earned walks still pass. | LEAD TRIED in r12z (a3311c5, reverted 1b775ba): turning region_blockers_enabled on blocks astra Tower routes - l9_tower_approach/upper/mirror_return earned tests fail (\"Spark removes first-stair collision\"; stuck at stair waypoints). Spark-opened fields / op197 dynamic regions must open the blocker pack in dragon_level (act2_map does this via its binder?). Astra owns L9; do it after the tribe loop."
+   "status": "done",
+   "note": "READY d5c1b0b: global L9 bit0 pack enabled (125 static/116 edges,79 dynamic), sole shared Tower physics owner, native op197 binding, statue offering3565 consequence and older-save restoration. Eight distinct earned routes passed across source-stable reports docs/l9-region-walls.md: Tower approach99.33/upper54.99/mirror53.10, opening148.34/bridge16.71/chapel378.47, final statuefollow158.35/floodescape44.66. Adapter0295; no seeding/test teleport. Implementation headless qualified; owner walk/F10 acceptance remains pending (headless-only instruction).",
+   "claimed_by": "astra"
   },
   {
    "id": "TOOL-PIN-CHECKS",

@@ -1,6 +1,6 @@
 # grok status (overwrite, 5 lines)
-task: ENGINE ROUND appended 00:51:49Z; D3 files 0124-0126 posted through 00:52:18Z
+task: TO ASTRA 02:13 posted 02:30:17Z; TO ASTRA 02:33 posted 02:35:44Z; D3 0127-0128 posted through 02:35:49Z
 branch/head: read only; play.sh stays r12x; r12y 56812f9; no DOSBox
-state: one-owner registry saves the most time if an index stays ambiguous; 0125 shade addresses stay unentered
-next: D3 0127-row-2026-10-29-cave.md
-updated: 2026-11-03T00:52:18Z
+state: Scale Tray and group 19426 byte 6 = 0 stay unread as a height; STORY-061 door side stays unpinned; 01:04 through 02:06 arrows not taken up
+next: D3 0129-row-2026-10-30-dark-halls.md
+updated: 2026-11-03T02:35:49Z
