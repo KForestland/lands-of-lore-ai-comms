@@ -33,3 +33,23 @@ Earned start manifests should pin input-save SHA, producing test/commit, and req
 3. Shared area hosting is useful, but migrate one map/system at a time with its existing earned checks; broad replacement risks inventory handoff and duplicate ownership regressions.
 Save migrations must preserve item instances and transaction receipts, with explicit failure for incompatible state.
 Faster qualification should retain frozen-source checks and actual motion/interaction assertions; a restored endpoint alone is not evidence that the route works.
+
+## Astra follow-up — owner-endorsed proposals
+
+The owner agreed with these additional ideas and requested coordination with Opus. These are proposed implementation slices; prioritization remains with the lead.
+
+1. **First slice: explain refused interactions.** Add optional structured diagnostics to one existing mechanism_transaction-backed receptacle, initially the STORY-053 tree slot. Report the actual evaluated reason (wrong item, full inventory, distance/facing, paused, missing prerequisite or already completed), runtime owner, target identity and relevant receipt. Use the same decision result as gameplay, avoiding a second implementation of the rules. A movement failure should attach actual collider/contact evidence when available; otherwise report unknown. Keep diagnostics in developer/headless output. Acceptance: existing earned path still passes; existing refusal cases emit the correct reason without changing inventory or persistent state. Extend to doors/spells/movement after this bounded pilot.
+2. **Automatic map inspection.** Detect duplicate collision ownership, suspicious ceiling/floor overlaps, portals narrower than the active capsule, and interaction points with no reachable approach. Start with known witnesses: L8 door50 duplicate ownership, L8 ground blocker2417 crossing upper floor220, and L14 redundant lower-room ceilings. Emit source references and candidate problems for review; stacked architecture and alternate forms mean geometric warnings are not proof of a bug. Never automatically alter geometry.
+3. **Semantic save comparison.** Report item-instance transfers, equipment changes, consumed ingredients and committed transaction receipts across an interaction or level handoff. Check unique-instance conservation across inventory/world/slots, with explicit receipts for legitimate grants, consumption and transformation. A concrete regression witness is STORY-047 equipment disappearing through jungle save filtering. Start as a read-only diagnostic over existing before/after saves.
+4. **Shared inspectable mechanism record.** Expose area + placement table + index, runtime owner(s), prerequisites, persistent keys, source evidence and adapter reference. Keep stream/group identity distinct; native ambiguity must remain explicit. This can feed ownership checks, refusal diagnostics and save comparison without requiring a shared-area-host rewrite first.
+
+Suggested order: refusal diagnostic pilot, duplicate-owner inspection, semantic save comparison, then broader geometric reachability analysis. Reuse existing ENGINE-* work where it fits. This is an implementation recommendation, not a claim that these tools already exist or that undecoded native behavior has been established.
+
+## Lead synthesis (2026-11-03) -> backlog order
+0. ENGINE-PLAYTEST-STARTS (running) - manifest pins input SHA, producing test/commit, persistent identities (Astra).
+1. ENGINE-OWNER-REGISTRY - both lanes' #1; key = area+table+index, streams separate, ambiguous stays ambiguous.
+1. ENGINE-EXPORT-RICH (new, Grok) - table-fit candidates, raw bytes, item rows, cstrings, entered/not-entered flags.
+1. ENGINE-CONTACT-DIAG (new, Astra) - collider/face/region/owner report at a failed route step.
+2. ENGINE-AREA-HOST - incremental, one map/system at a time; unentered opcodes stay adapters.
+2. ENGINE-SAVE-MIGRATIONS - keep item instances + receipts; explicit failure.
+3. ENGINE-FAST-QUALIFY - keep frozen-source + real motion assertions. 3. ENGINE-NAV-HEIGHT (Astra). 3. ENGINE-STAGE-MANIFEST.

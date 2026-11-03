@@ -1570,9 +1570,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "bf6b88e hanging plus encounter commit: original124 opens, physical38portal corridor to wall64/HIVEW68, actual two melee deaths and timed recurring encounter/save-reload PASS104.70s; affected hanging16.36s source stable.0285/0286 explicit input/proximity/respawn adapters, original bytes verified. Exact tmp/l14_spider_qualified_save.json SHAc74a570dc41a812be14a701ba175d192c03f3570e58b180e0d0924d71dd37fd4; docs/l14-hanging.md."
   },
   {
    "id": "STORY-055",
@@ -1587,9 +1587,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "Original Temple item77 IronFlute96 picked through actual lower corridor and saved/reloaded PASS36.19s, affected supplies29.88s/hanging18.44s source stable.0287 local earned-Dreamstone Lizard/Human choice enables physical descent under overlapping upper floor; original item/geometry retained. Generic semantic pickup pause guard fixed. Exact tmp/l14_flute_qualified_save.json SHA854689a47d77b657832dfbd8e5156721b9a68cab618fbc5fca540a3f1f7773e4. Later slot76 must use this Temple instance; docs/l14-flute.md."
   },
   {
    "id": "STORY-056",
@@ -1604,9 +1604,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "Conditional no-cubes route only: exact earned055 save SHA854689a47d77b657832dfbd8e5156721b9a68cab618fbc5fca540a3f1f7773e4 carries ZERO definition60 cubes. Prima135 explicitly conditional; bypass without seeds or barrier receipt. docs/l14-optional-cubes.md. Positive nine-cube throw/chewing branch is NOT implemented or qualified; no handler45 claim."
   },
   {
    "id": "STORY-057",
@@ -1621,8 +1621,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
@@ -9839,7 +9839,8 @@
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
    "status": "claimed",
-   "claimed_by": "lead"
+   "claimed_by": "lead",
+   "note": "Manifest pins input-save SHA, producing test + commit, and required persistent identities (astra)"
   },
   {
    "id": "ENGINE-AREA-HOST",
@@ -9848,11 +9849,12 @@
    "title": "One shared area host base with plug-in systems (region walls, items, mechanisms, speech, saves) instead of per-area copies (cave/museum/jungle/hive/act2_map/dragon_level)",
    "source": "owner 2026-11-03 engine track",
    "lane": "lead",
-   "priority": 1,
+   "priority": 2,
    "depends": [],
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
-   "status": "todo"
+   "status": "todo",
+   "note": "Migrate one map/system at a time with its existing earned checks; never run unentered opcodes (9,16,18,196/b6=0,198,204,207) as decoded - adapters only (grok+astra)"
   },
   {
    "id": "ENGINE-OWNER-REGISTRY",
@@ -9865,7 +9867,8 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
-   "status": "todo"
+   "status": "todo",
+   "note": "Key = area + placement table + index; keep stream/group keys separate; an index that fits several tables stays AMBIGUOUS (never pick one) - grok+astra"
   },
   {
    "id": "ENGINE-STAGE-MANIFEST",
@@ -9887,11 +9890,12 @@
    "title": "Faster qualification: parallel test shards, skip unchanged chains, cached campaign prefix",
    "source": "owner 2026-11-03 engine track",
    "lane": "lead",
-   "priority": 2,
+   "priority": 3,
    "depends": [],
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
-   "status": "todo"
+   "status": "todo",
+   "note": "Keep frozen-source checks and real motion/interaction assertions; a restored endpoint is not route evidence (grok+astra)"
   },
   {
    "id": "ENGINE-SAVE-MIGRATIONS",
@@ -9904,6 +9908,46 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
+   "status": "todo",
+   "note": "Preserve item instances + transaction receipts; explicit failure for incompatible state (astra)"
+  },
+  {
+   "id": "ENGINE-EXPORT-RICH",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "Native script export keeps what Grok re-derives by hand: every table an index can fit (props/controls/actors/items/movables), raw command bytes, item rows, template cstrings, opcode entered/not-entered flag (grok engine round)",
+   "source": "engine round 2026-11-03",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "tool + test; lanes confirm it removes a question round",
+   "status": "todo"
+  },
+  {
+   "id": "ENGINE-CONTACT-DIAG",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "Headless contact diagnostic at a failed route step: collider path, source face/region, height, normal, owning system (astra engine round: L14 ceilings, L8 blocker 2417)",
+   "source": "engine round 2026-11-03",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "tool + test; lanes confirm it removes a question round",
+   "status": "todo"
+  },
+  {
+   "id": "ENGINE-NAV-HEIGHT",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "Height-aware navigation over overlapping regions + portal-width checks against the real player capsule (astra)",
+   "source": "engine round 2026-11-03",
+   "lane": "lead",
+   "priority": 3,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "tool + test; lanes confirm it removes a question round",
    "status": "todo"
   }
  ]
