@@ -112,14 +112,14 @@ These match the project board's Tower approach/reverse mapping (2026-11-02 04:10
 
 ### Flood-stage distinction
 
-The project board (2026-11-02 15:53 and 16:11 UTC) identifies props/regions in the flood cascade and names movable tables 121/122. In this exact L9 archive:
+The project board (2026-11-02 15:53 and 16:11 UTC) identifies props/regions in the flood cascade and names tables 121/122. Correction: these are controls, not movables; the first follow-up conflated these namespaces. In this exact L9 archive:
 
 - Prop 1015 has a kind-6 record, value 20, no predicate, at archive offset 23242890, referencing stream-1 group 5556.
 - Group 5556 begins at archive offset 23225890. Its four commands are opcode 204 targeting region 5958, then opcode 208 targeting 6014, 5958, and 5958. There is no opcode 18 in this group.
-- Movable 121 and movable 122 have empty serialized event lists. No command in either stream uses kind 0x20 with target 121 or 122. This rules out that particular direct serialized command reference, not indirect motion through region changes or other runtime behavior.
+- Controls 121/122 have event records and state/sound commands (see the corrected bindings below). Movables with the same indices are different objects in different regions; their empty event lists are not evidence about the flood tables.
 - Descriptor 501 contains kind-11 records at archive offsets 23393366 and 23393374; descriptor 507 contains one at 23393394. The exporter does not resolve these as group links. Their runtime interpretation was not verified in this pass.
 
-Consequently the flood table lift cannot be presented as solved by opcode 18's movement flags. The next source task is the region-change callback and opcode-208 motion path, with table-to-region binding and a runtime observation. Other L9 opcode-18 records remain separately present; this is not a claim that the entire flood sequence has none.
+Consequently the flood table lift cannot be presented as solved by opcode 18's movement flags. The next source task is the region-change callback and opcode-208 motion path, with runtime object binding and a runtime observation; serialized control-to-region binding is now recorded below. Other L9 opcode-18 records remain separately present; this is not a claim that the entire flood sequence has none.
 
 ### Gradual control-flow checks
 
@@ -145,3 +145,51 @@ These distinguish unfinished motion output from direct coordinate writes: the te
 Static branch boundaries: speed selection 65CCF–65D27; distance/step handling 65D27–65E3F; vertical handling 65E3F–65F0E; heading 65F0E–6601B; auxiliary adjustment 6601B–66088; completion 66088–660EF. In particular the close-distance condition at 65DF8 compares against 0x20000 (two 16.16 units), but it is reached only after the preceding distance/step and height branches. It is not an unconditional two-unit arrival radius.
 
 Combined validation is six direct/reset cases plus ten gradual control-flow cases. No live DOSBox run, collision test, original-save replay, full movement-math verification, or cross-build equivalence check has been completed. The precise speed units, all flag combinations, downstream floor adjustment, and flood table physics remain open. Issue 3 should remain open.
+
+## Height and flood follow-up: caller chain and namespace correction
+
+### Tower height reconciliation
+
+Static original-code chain on the pinned executable:
+
+1. Opcode-18 routine 65BB0 returns 2 on direct relocation.
+2. Caller B2ACA clears the pending pointer. Its four-entry return table selects B2AF4 for return 2: `object.vtable[0x18](object, 1)`. Return 1 selects B2AE2 with argument 0.
+3. Player constructor CF924 stores vtable offset 5C20 at CF972. In the bound image, the inner MZ starts at file 39024, its header points to LE at 3BCB4, and the initialized data object starts at file 1C1024. Vtable slot +18 at file 1C6C5C has code-relative value 771E0, yielding D0204 with the published +59024 code adjustment. Slot 0 yields D6B1C, which returns type 1. This is static binding, not a live vtable capture.
+4. D0204 clears player flag 0x10 at +227 when the argument is nonzero and calls AF260 with the same argument.
+5. AF260 calls AF0E0 to rebind/resolve the region. With a nonzero argument, AF389–AF418 adjusts height: on a flat region, `object.z = (signed16(region+0x14) - unsigned8(region+0x27)) << 16`; on a floor-slope region (flag 4 at +1C), it calls F4614 with selector 1 instead. It clears object byte +24 and flag 0x40 at +16. Later collision processing remains separate.
+
+This explains why reading only the opcode handler misses a subsequent height change. The arithmetic is no longer unknown, but choosing the actual region through AF0E0 and subsequent collision is not verified by the supplied-region tests.
+
+The original L9 candidate destination records have floor/byte+27 values: region 1203 = 0/0, 3618 = 0/0, 2306 = 200/0, 3656 = 20/0. None has floor-slope bit 4. The flat formula therefore gives 0, 0, 200, and 20 **if these are the regions selected at runtime**. A separate planar polygon check found multiple overlapping regions at the approach point (-3321,1187): 1203,1246,3775,3817,3937,3992. Coordinates alone do not prove runtime selection of 1203. The other three named destination points had unique planar matches in this scan.
+
+### Corrected flood-table identities
+
+The previous follow-up incorrectly called tables 121/122 movables. The serialized objects matching the project's cited regions are **controls**:
+
+| Object | Placement archive offset | Native planar position | Region word +10 | Event record offset | Kind/event/value | Stream-1 group | Predicate |
+|---|---|---|---|---|---|---|---|
+| control 121 | 23355625 | 2433,8630 | 5984 | 23248872 | 5 / 4 / 0 | 15580 | 6 |
+| control 122 | 23355658 | 2440,9260 | 5978 | 23248884 | 5 / 4 / 0 | 15602 | 6 |
+
+Predicate 6's evaluator semantics were not traced. Group 15580 (archive 23235914) contains opcode 16 setting control 121 state to 1, then opcode 20 sound request 221; group 15602 (23235936) does the same for control 122. Neither group contains opcode 18. Runtime behavior after the state change remains untraced.
+
+For comparison only, movable 121 is at (-2029,8588), region word 2169; movable 122 is at (-2643,8324), region word 2268. Their empty event lists do not describe the flood tables. The earlier issue comment's namespace inference is withdrawn.
+
+Regions 5984 and 5978 both have descriptor 501, floor 0, ceiling 400, flags 0x0200, byte+27 zero in the source archive. This binds the controls to the documented later flood region set, but does not prove their runtime float/carry mechanism.
+
+### Opcode 208 and changed-region handling
+
+Dispatcher 64770 routes opcode 208 to 65518. Mode byte +4 = 1 selects the region-height path. It indexes 44-byte regions from global 22D0C using target word +2, then follows the target region's descriptor word +18 into the 42-byte descriptor array at 22D10. That descriptor supplies the starting region index and byte +17 count.
+
+The inspected equal-initial-floor branch computes an increment from `unsigned8(command+5) * clock_value / 60`, with signed integer division. Command +6 is a signed height limit. Clock setup and multi-region unequal-height cases are not fully tested. Before storing height, F3A5C marks bit 0x20 at region +28 and propagates changed flags to neighbors, recursively for selected region flags. It does not itself move a table.
+
+Other source paths include preset routine F44CC -> B861C -> per-object callback B6D98 plus F4FD0's additional region list. B6D98 has mode/flag/region-identity gates and, in one accepted branch at B70A6, adds a fixed-point delta to object +1A. That is not a direct write to object position +8; downstream consumption and which branch applies to controls 121/122 remain unresolved. These call relationships are static, not a reproduced table lift.
+
+### New execution checks
+
+`python tools/check_height_flood.py <path-to-your-LOLG.DAT>` passed 11 cases:
+
+- Six player-height cases: upward and downward floor snapping, nonzero region byte+27, negative resulting height, argument-0 preservation, and slope-helper routing. Original D0204/AF260 instructions run with supplied region binding and substituted slope/collision/scratch helpers; slope math and collision are not tested.
+- Five opcode-208 cases: rate 3 with supplied clock values 20 and 60 gives increments 1 and 3; a step from height 69 toward limit 70 with increment 3 is rejected and returns complete without snapping to 70; an already-at-limit case also returns complete; an increment rounded to zero returns unfinished. These paths execute the original 65518 and F3A5C instructions without helper substitutions, using a synthetic one-region descriptor and already-initialized clock state. They check height, region byte+27, changed flag, return value, and stack balance.
+
+Do not generalize the rejected-overshoot case to every opcode-208 mode or clock schedule. No live DOSBox or full gameplay proof is claimed. The next unresolved steps are actual AF0E0 destination-region selection, control-state/float update and object +1A consumption, followed by an observed flood-table lift.
