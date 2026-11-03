@@ -1689,9 +1689,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY: spiral d93234e, left91ef2f3, middle3e6e415, right HEAD; three original trial idols earned and physically returned. Right outbound86.65s source stable tmp/regressions/l14_fire_gate_probe3/report.json; return90.02s + affectedmiddle35.58s stable tmp/regressions/l14_fire_return_probe1/report.json. Immutable final0c758145b0c91ed3969beb1df66c19c2e6f43e8e467f08518efa08a8d52993b7. Adapters0296..0299, source21objects53groups verified. Headless only; no seeds/teleport."
   },
   {
    "id": "STORY-062",
@@ -1706,8 +1706,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": "grok C3: blade trap bypass via the passage on the right (hintbook 4585-4586); flute slot here: owner made the Hive flute vanish -> use fire-trap route (lead note)."
   },
   {
