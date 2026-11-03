@@ -238,3 +238,7 @@ STORY-073. The export's ivory opcode 3 owners are the rows already tabulated, in
 STORY-074. Opcode 198 writes slot 10 How_may_orbs_have_been_charged zero times. Slot 15, slot 16, and slot 22 remain the single writes on props 419, 626, and 399. Sparked globes, a straight walk, freezing the fountain, and a collapsing room stay UNKNOWN.
 
 STORY-075. Four chips on four pedestals, a last tower, and a disk that opens stay UNKNOWN. Which of the four pylons is southwest was not derived.
+
+Name-at-index stays LIKELY. The same MIX files as the header, metadata marker 18 then dword 516. L14 metadata key 3634209736: the 38-byte template table starts at 9592, count 66. Index 2 is `Tripod`, index 10 is `Side Deco`, index 17 is `Death Idol`. The 30-byte static run at 31148, count 96, is the longer valid run (summed length 993). Index 36 is `Dreamstone Slot`. Index 67 is `Chamber of Voice door`. The run at 31150 is the shorter alignment and was not used. L16 metadata key 3302822778: the template table starts at 19958, count 136. Index 0 is `Altar`, index 55 is `Fountain`, index 61 is `Ball O Smoke`.
+
+Prop 137 is template Tripod. Movable 72 is static Dreamstone Slot. Prop 219 is template Altar. None of those three cstrings is chalice, box, brick, disk, bow, or yellow. The chalice object, the destroyed idol, the city, the ride, the ball, and the other UNKNOWN sentences above stay UNKNOWN.

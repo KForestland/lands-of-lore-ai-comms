@@ -49,3 +49,19 @@ No new PROPOSE line. Rows 1 through 14 already exist in `ORIGINAL_BUGS_TO_FIX.md
 ## Recheck for task 16
 
 The r12y deviations directory still has 228 markdown files. A search for the waterfall-lizard failure, the Daniel softlock, the Tohani statue line, a barrel that will not tip, the temple-bowl lockout, a curse that continues after it is expelled, the Storm Crystal freeze, a stationary Ssar, and a no-drop rule still does not add a deviation title. Rows 1, 8, and 9 remain the ones named by 0161, 0169, and 0155. The ledger was not edited.
+
+## Recheck 2026-11-03, r13
+
+`~/opus_work/lol2_r13` at `71d6c73` has 309 deviation files. The ledger and `ORIGINAL_BUGS_TO_FIX.md` were not edited. Nearby new titles are a different subject.
+
+| ORIGINAL_BUGS | r13 row that is not this bug |
+|---|---|
+| 2 Waterfall lizard change can fail | `0100` is the CFALL room presentation. `0049` remains gorge wall drawing. |
+| 3 Daniel sword softlock | `0208` and `0209` remain the first departure. `0252`, `0253`, and `0255` are initiation, the serum trade, and speech. None names a guard who blocks after the Wild Ones leave. |
+| 6 Cemetery barrel fails to tip | `0228` is the Huline caretaker barrel, STORY-015, and it tips. It is not the Dracoid Cemetery failure. |
+| 7 Temple bowl feeds aloe early | `0236` is the ruins statue bowl, STORY-024. `0294` is the temple shard bowls. Neither names the Caretaker zap lockout. |
+| 10 Curse still transforms after expulsion | `0018` remains the first curse duration. |
+| 11 Storm Crystal freeze on Dawn | `0058` remains the jungle Storm pickup. |
+| 13 Ghost or Silver Leaf missed | `0221`, `0225`, and `0239` remain Silverleaf use and the dead bracers. `0250` and `0251` are silverleaf growth and harvest. |
+
+Rows 4, 12, and 14 still have no title match: no Tohani statue line, no stationary Ssar or Skeletal Guardian death failure, and no quest-item no-drop rule. The word softlock in `0305` is the temple return guard. Rows 1, 8, and 9 stay on `0161`, `0169`, and `0155`. No new PROPOSE line.
