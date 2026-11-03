@@ -1553,9 +1553,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "14c5b41 (+6558138 native return): actual five Spark torches/stairs, Kit same-shard insert/retrieve, upper room and physical Temple return/save-reload. Linked earned checks PASS29.43/47.36/8.25/46.36s; final affected Temple27.67s/tree47.94s/blockers10.49s source stable. Adapter0284, source bytes verified; docs/l8-tree.md receipts. Final immutable tmp/act2_temple_tree_loop_qualified_save.json SHAecf444a845abbb932d11af55d883bb4ef99a0688997dffe9a8c491ba90457846. No seeds or teleport."
   },
   {
    "id": "STORY-054",
@@ -9826,6 +9826,85 @@
    "acceptance": "pack folder documented; mapping track->area; absent pack = original music; repo/build audit shows no pack files",
    "status": "todo",
    "note": "Owner 2026-11-02: new music inspired by the tone of the remasters is OK only as ORIGINAL compositions (Enhanced soundtrack candidate, credit as inspiration); re-recorded original melodies stay out of the repo; Classic plays the original music from the user game files."
+  },
+  {
+   "id": "ENGINE-PLAYTEST-STARTS",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "Owner playtest start points: a menu in the build listing earned saves per story step (Act 1 areas, Act 2 STORY checkpoints) so the owner can start any step without replaying",
+   "source": "owner 2026-11-03 engine track",
+   "lane": "lead",
+   "priority": 0,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "design note + tests; owner confirms where visible",
+   "status": "claimed",
+   "claimed_by": "lead"
+  },
+  {
+   "id": "ENGINE-AREA-HOST",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "One shared area host base with plug-in systems (region walls, items, mechanisms, speech, saves) instead of per-area copies (cave/museum/jungle/hive/act2_map/dragon_level)",
+   "source": "owner 2026-11-03 engine track",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "design note + tests; owner confirms where visible",
+   "status": "todo"
+  },
+  {
+   "id": "ENGINE-OWNER-REGISTRY",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "One owner per placed object: load-time registry refuses a second system placing the same item/door/mechanism (egg twin class)",
+   "source": "owner 2026-11-03 engine track",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "design note + tests; owner confirms where visible",
+   "status": "todo"
+  },
+  {
+   "id": "ENGINE-STAGE-MANIFEST",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "One-command build staging with a per-producer output hash manifest; tests refuse missing/stale generated media",
+   "source": "owner 2026-11-03 engine track",
+   "lane": "lead",
+   "priority": 2,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "design note + tests; owner confirms where visible",
+   "status": "todo"
+  },
+  {
+   "id": "ENGINE-FAST-QUALIFY",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "Faster qualification: parallel test shards, skip unchanged chains, cached campaign prefix",
+   "source": "owner 2026-11-03 engine track",
+   "lane": "lead",
+   "priority": 2,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "design note + tests; owner confirms where visible",
+   "status": "todo"
+  },
+  {
+   "id": "ENGINE-SAVE-MIGRATIONS",
+   "type": "ENGINE",
+   "area": "engine",
+   "title": "Save versioning with defined migrations when story state rules change (e.g. Bacatta relationship)",
+   "source": "owner 2026-11-03 engine track",
+   "lane": "lead",
+   "priority": 2,
+   "depends": [],
+   "phase": "engine",
+   "acceptance": "design note + tests; owner confirms where visible",
+   "status": "todo"
   }
  ]
 }
