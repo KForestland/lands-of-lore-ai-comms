@@ -237,3 +237,81 @@ This pass did not re-walk the L4 commands. HINTBOOK 5682–5685 says killing Kel
 `0110-row-2026-10-28-jungle-hive-dawn.md`. One row. Dawn's jungle and hive bodies use BODY_SCALE 0.282, written as 0.6 times the shared 0.47 humanoid adapter, so the figure is about 44 units against a player of about 46 instead of about 73. CLIP_SCALE is half of BODY_SCALE. The capsule stays radius 16 and height 56. Guards, Bacatta, and the Museum skeletons stay at 0.47. The row says the native world scale of creature sprites is not traced. The witness is the owner's F10 line on r12l, 2026-10-28 15:30:39.
 
 This pass did not open `jungle_dawn.gd` or `hive_dawn20.gd`, and did not trace the native sprite scale. r12y remains `56812f9`. A text search of `hintbook.txt` and `brady_guide.txt` found no Dawn body-height sentence and no meter figure. The line-broken "thief" at hintbook 2340 is not a height. The 3 meters, the 1.5 meters, 0.282, 0.47, 44, 46, and 73 stay the row's figures. No simpler native build. The next unopened file is `0111-row-2026-10-28-cave-prop1333.md`.
+
+## Slice 3, twenty-eighth file
+
+`0111-row-2026-10-28-cave-prop1333.md`. One row. While the beast rock rests it has a corridor-side face: FACE_RADIUS 48, centred FACE_OFFSET 24 back from the rock toward the corridor, against the group 9470 slide axis. A body coming down the corridor stops at the drawn rock, 64 wide each side, instead of walking 40 units into it. Touching the face counts as bumping the rock. The 24 centre solid and the r12k neck walls stay as they were, because a 48 solid at the centre filled the neck exits. The cited test says the lizard then crossed exit 870 to 774. The face belongs to the player-only neck body. Creatures walk as before. On the rock's scenery body it cut guard 39's route. The face moves with the rock. The row says the native prop radius is untraced. The witness is the owner's F10 on r12l, 2026-10-28 15:16:36 and 15:17:55.
+
+This pass did not open the cave boulder test or the creature navigation test, and did not trace a native prop radius. r12y remains `56812f9`. The 48, the 24, the 64, the 40, exits 870 and 774, guard 39, and the owner's "ca 0.5" stay the row's figures.
+
+HINTBOOK lines 2021–2024 say to follow the will o' wisps north, then "bump" the rock out of the way to the north as the Beast. That sentence names the beast bump. It prints no radius and no offset.
+
+BRADY printed 61, `brady_guide.txt` lines 2284–2290, marker PDF page 62. A large boulder blocks the path, and the right-hand tunnel is the first morph. A beast goes back and pushes the boulder aside. A lizard keeps going through the low-ceilinged tunnel or goes around. The line breaks stay the OCR.
+
+BRADY printed 166, lines 7076–7078, marker PDF page 167. In the low-ceiling passageway Luther morphs into a lizard or a beast. A lizard keeps going or returns to the boulder and goes around it. A beast goes back and shoves the boulder aside.
+
+The three book sentences agree that the beast moves this boulder and that the lizard uses the low way. They stay three sentences. None of them prints 48, 24, 64, or 40. The jungle shrine boulder at hintbook 2310 stays off this row. This cave rock stays off the L14 boulder card. No simpler native build. The next unopened file is `0112-row-2026-10-28-cave-roaches.md`.
+
+## Slice 3, twenty-ninth file
+
+`0112-row-2026-10-28-cave-roaches.md`. One row. Crate-room spawns of actors 33 and 34 lie inside the port's crate solids, crates 122 and 96. The row says they were hidden and still in biting reach. A fresh game starts them at the nearest free spot, 12 and 16 units away, in `cave_roach_population_state.gd` SPAWN_CLEAR. Saves made before that keep the stored positions. Whether native crates block creatures is untraced. The crates are named as native movables, and drag and stack stay unhosted. The witness is the owner's F10 on r12l, 2026-10-28 15:20:52, and a capture that showed roaches 33 and 34 overlapping Solid122 and Solid96.
+
+This pass did not open that script, did not recount 12 and 16, and did not trace a native crate block. r12y remains `56812f9`. Those distances, actors 33 and 34, and crates 122 and 96 stay the row's figures.
+
+HINTBOOK lines 2032–2048 say to beware the giant cockroaches in the sunken round room, and to stack the boxes in the other chamber to reach a mace. The print says boxes, and "old ore" stays the OCR. It names no actor and no crate id.
+
+BRADY printed 64, `brady_guide.txt` lines 2395–2406, marker PDF page 65. Click and drag the crates. They move. Stack them under the ledge and jump up. Two orc maces and a shield are up there. Lines 2420–2426, same printed page, call the fire-cave bug a cockroach the size of a living room sofa and say to run through or to use the orc mace.
+
+BRADY printed 146, lines 6314–6315 and 6336–6339, marker PDF page 147. Cockroaches might steal aloe. A giant cockroach is in a tunnel to the Fire Pit, and another is in the Fire Pit.
+
+The box sentence, the crate-drag sentence, and the cockroach sentences stay separate. None of them prints actors 33 or 34, crates 122 or 96, or a 12 or 16 unit clear. The printed drag hint does not replace the unhosted drag, and it does not decide whether a crate blocks a creature. No simpler native build. The next unopened file is `0113-row-2026-10-29-all.md`.
+
+## Slice 3, thirtieth file
+
+`0113-row-2026-10-29-all.md`. One row. J opens a My Journal page on the shared interface sheet. The notes are JOURNAL_HINTS, shown in discovery order, with the notice "A new note in My Journal (J)." The ids are saved in `item_effects.journal`. The row says LoL2 has no journal, and that 4 of 13 notes have their moment wired. The witness is the owner rule of 2026-10-27.
+
+This pass did not open `my_journal.gd`. r12y remains `56812f9`. `docs/my-journal.md` in that tree says 13 notes and "Wired moments (11 of 13)", and it names two moments as not wired. The row's 4 and the doc's 11 stay two figures. A search of `hintbook.txt` and `brady_guide.txt` found no journal sentence. The doc's claim that the original files contain no journal text was not re-scanned. No simpler native build. The next unopened file is `0114-row-2026-10-29-museum.md`.
+
+## Slice 3, thirty-first file
+
+`0114-row-2026-10-29-museum.md`. One row. Duct-room niche scrolls, original placements 12 through 16, two Spark, two Healing, and one Summon, are hosted as pickups. E takes them into the inventory, with distinct ids and saved taken and consumed receipts. No scroll spell is cast. The handlers stay untraced. Ground sprites use the original 31 by 16 images with the Museum half-pixel adapter, 15.5 by 8 units, bottom at the settled height 30.
+
+This pass did not open `museum_scroll_state.gd` and did not enter the scroll handlers. r12y remains `56812f9`. The five placements, 31 by 16, 15.5 by 8, and height 30 stay the row's figures.
+
+HINTBOOK lines 1594–1600 say there are many scrolls, that the first scroll of a new group adds that group, and that a scroll of a group Luther already has casts the spell. That section names no museum niche and no count of two, two, and one.
+
+BRADY printed 68, `brady_guide.txt` lines 2613–2619, marker PDF page 69. As a lizard, a west path leads into a small room behind the orb. Several magical scrolls are in the niches on the north wall. Take them to add new spells. Pull the lever on the south wall. "Several" stays the book's word. It was not counted as five, and it was not split into two Spark, two Healing, and one Summon.
+
+The cast the books describe stays unhosted on this row. No simpler native build. `0115-row-2026-10-29-museum-cave-jungle.md` is already the second file of this slice. The next unopened file is `0116-row-2026-10-29-jungle.md`.
+
+## Slice 3, thirty-second file
+
+`0116-row-2026-10-29-jungle.md`. One row. Sixty-one further Jungle world-item rows are hosted through the existing world-item controller at their settled positions. Rows 58 through 62 stay unhosted as elevated, and row 82 stays unhosted on flag `0x402`, until the support reader and the flag reader are traced. The Guard shield, row 15, takes the offhand slot the way the Cave guard shields of definition 37 do. The billboard pickup stays the existing adapter. The witness is the owner rule of 2026-10-27.
+
+This pass did not open the settling source and did not trace either reader. r12y remains `56812f9`. The 61, rows 58–62, row 82, flag `0x402`, and row 15 stay the row's figures. The earlier flag check left the `0x0400` reader unentered, so this pass does not grade `0x402` as hidden.
+
+A search of `hintbook.txt` and `brady_guide.txt` found no count of 61 Jungle world rows and no offhand slot. BRADY printed 62, lines 2320–2322, marker PDF page 63, says a killed cave guard's body yields a short sword and a shield. That sentence names no Jungle row. The ore-shield, Deathstroke, and Coward's Shield sentences stay off this row. No simpler native build. The next unopened file is `0117-row-2026-10-28-cave-roaches.md`.
+
+## Slice 3, thirty-third file
+
+`0117-row-2026-10-28-cave-roaches.md`. One row. The 23 population Roaches choose a goal each step from a temporary bank. Form conditions are 19, 20, and 21. Human or beast Luther leads to Wander, with no pursuit and no bite. Lizard leads to Destroy, the existing pursue and bite adapter. Perception stays the 180-unit sight adapter. Unbound conditions are not evaluated. The witness is the owner line that most are not hostile, and the behaviour decode named in the row.
+
+This pass did not open that decode and did not re-enter the goal picker. r12y remains `56812f9`. The 23, the form rows, and the 180 stay the row's figures. HINTBOOK 2035–2048 and BRADY printed 64 and printed 146, already cited for file 0112, say to beware the cockroaches, to fight them, or to run through. They print no form row and no 180. Those attack sentences stay off this Wander choice. No simpler native build. The next unopened file is `0118-row-2026-10-28-cave-roaches.md`.
+
+## Slice 3, thirty-fourth file
+
+`0118-row-2026-10-28-cave-roaches.md`. One row. Wander and scurry movement is an adapter. Native action-0 movement is untraced. The row uses random-heading legs of 0.8 to 2.4 seconds at pursuit speed 42, pauses of 0.5 to 1.5 seconds, a seed per actor, and a 160-unit leash. Flee moves straight away from the player. Legs are not saved. The witness is the owner's "scurrying around".
+
+This pass did not trace action 0. r12y remains `56812f9`. Those times, the 42, and the 160 stay the row's figures. No book sentence opened this pass prints a scurry time or a leash. No simpler native build. The next unopened file is `0119-row-2026-10-29-cave-roaches.md`.
+
+## Slice 3, thirty-fifth file
+
+`0119-row-2026-10-29-cave-roaches.md`. One row. The row says it was withdrawn the same day. The owner override that skipped native lizard form row 19 is removed, so form rows 19, 20, and 21 all apply. A perceiving Roach chooses Destroy against a lizard and Wander against a human or a beast. The row says this is no longer a deviation and is kept for history. The witness is the 2026-10-29 line that an attack on the lizard is acceptable.
+
+This pass did not reopen the override. r12y remains `56812f9`. The form rows stay the row's numbers. No book sentence prints them. Nothing in this withdrawn row asks for a new build. The next unopened file is `0120-row-2026-10-29-cave-roaches.md`.
+
+## Slice 3, thirty-sixth file
+
+`0120-row-2026-10-29-cave-roaches.md`. One row. Wander movement scurries away from a sensed player. It is an adapter for untraced native Wander movement, action 0. A Roach on a non-hostile goal that perceives the player, through the same 180-unit sight adapter, picks legs within 60 degrees of straight away and does not pause. A leg or a pause that does not lead away ends at once. Outside the 160-unit leash, a scared leg keeps only the part toward the spawn. Legs stay seeded per actor and unsaved. The witness is the owner direction of 2026-10-29, "the roaches are walking around and scared of the player".
+
+This pass did not trace action 0. r12y remains `56812f9`. The 60 degrees, the 180, and the 160 stay the row's figures. The cockroach attack sentences already cited for 0112 and 0117 print none of those figures. No simpler native build. The next unopened file is `0121-row-2026-10-29-hive.md`.

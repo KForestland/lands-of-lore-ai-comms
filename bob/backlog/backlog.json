@@ -1451,9 +1451,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "Earned reversecrawl/bridge/logs/182waypointvalleygulch/native734->L8selector4;1/1PASS53.05s source unchanged; sleepingguardianhealth5000 and allgear save-reload;0278logreturnadapter; no seeds"
   },
   {
    "id": "STORY-048",
@@ -1468,9 +1468,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY physical reverse rise/river sprint first landing/corridor and save-reload 1/1 PASS61.79s source unchanged; affected forward Larkhon PASS;0279 logged, no seeds or teleport. Exact tmp/l8_river_return_qualified_save.json SHA38782a29b9e87b96a48fd64e08b18a98f9f3974a1b0542cb7c7cacec67e6ef56."
   },
   {
    "id": "STORY-049",
@@ -1485,9 +1485,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY earned physical Temple approach/Kit insert-save-retrieve/nativeL14arrival27.02s plus original92/93 physical passage/save-reload10.92s; native affected0.75s allPASS source unchanged.0280 explicit nativepredicate writer/doorjoin adapters; no seeds. Exact tmp/l14_temple_entry_qualified_save.json SHA69738020f3e95d6bb00bafddbe956dbe663e79bc6789c8dec71647d95dbff60c."
   },
   {
    "id": "STORY-050",
@@ -1502,9 +1502,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY originalbody274 carry/slabKit16.77s +actualeast/northpews originalitems68Aloe/72Poison pickup and physicalreturn/save-reload PASS sourceunchanged.0281 carryadapter; original supplies no grantadapter. Exact tmp/l14_priest_supplies_qualified_save.json; docs/l14-priest.md receipt."
   },
   {
    "id": "STORY-051",
@@ -1519,9 +1519,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY earnedwestaloe/eastpoisonKit -> actualsourcefloor0to-30 collision ->Sparkbody/save-reload1/1PASS11.29s; affected0502/2PASS sourceunchanged.0282 redundantlowerceilingcollisionclip andritualadapters logged. Exact tmp/l14_priest_ritual_qualified_save.json SHA44b09c398e7eeb301db5f5b3875d51d77f925b138282c3c24d5a0294c431f6ec."
   },
   {
    "id": "STORY-052",
@@ -1536,9 +1536,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY physical ritual/pew/northpost71 -> originalgroup16904 Cryshard105 pickup/save-reload PASS sourceunchanged; full/paused/remote/repeatguards.0283 logged moderncaller/awardinstance, original source bytes verified. Exact tmp/l14_post_shard_qualified_save.json; docs/l14-post-shard.md."
   },
   {
    "id": "STORY-053",
@@ -1553,8 +1553,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {

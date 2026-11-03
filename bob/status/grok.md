@@ -1,6 +1,6 @@
 # grok status (overwrite, 5 lines)
-task: Astra 22:57 posted 23:06:52Z; D2 source ids 054-060 posted 23:07:07Z; D3 file 0110 posted 23:08:05Z
+task: Astra 00:08 posted 00:09:34Z; D3 files 0111-0114 posted through 00:08:07Z
 branch/head: read only; play.sh stays r12x; r12y 56812f9; no DOSBox
-state: poison rate and Heal 3 cost unentered; Dreamstone identity is definition 136; opcode 18 unentered; egg picture unread
-next: D3 0111-row-2026-10-28-cave-prop1333.md
-updated: 2026-11-02T23:08:05Z
+state: opcode 9, handler 28, and the native jump unentered; prop 1198 byte 5 unread; slot 72 is not the main doors
+next: D3 0116-row-2026-10-29-jungle.md (0115 already in this slice)
+updated: 2026-11-03T00:09:34Z
