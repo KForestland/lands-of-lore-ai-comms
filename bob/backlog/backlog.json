@@ -1655,9 +1655,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "READY niche Kit transaction + original pedestal/grates/shard67. Earned12.07s/affected approach33.07s PASS source stable tmp/regressions/l14_niche_probe1/report.json and l14_niche_affected/report.json. docs/l14-niche.md, adapters0291..0293, actual two distinct earned shards/save-reload, no seeds/teleport."
   },
   {
    "id": "STORY-060",
@@ -1672,8 +1672,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
