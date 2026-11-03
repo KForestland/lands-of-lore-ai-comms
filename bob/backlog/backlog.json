@@ -1621,9 +1621,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "astra",
-   "note": ""
+   "note": "Actual original table72/73 -> original world trough75 carry/Kit long-edge-first insertion -> physical back route -> actual original dormant statuette65 catch/Human/save-reload PASS40.59s; affected055 PASS source stable.0288 logs body/timing/low-viewpoint adapters; source bytes verified. Exact tmp/l14_machines_qualified_save.json SHA473695d0556b9f34c35c57832db75d70bbeb84bf4fc25f1060284e9ca9cb7cb0. docs/l14-machines.md."
   },
   {
    "id": "STORY-058",
@@ -1638,9 +1638,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "astra",
+   "note": "READY original bedroom/headboard/Lizard crack/buttons146-147/library crossing; commits8e3a704,e6ae24a plus current library commit. Earned library22.36s/affected crack13.76s PASS source stable tmp/regressions/l14_library_verified/report.json; adapters0289/0290 explicit, no seeds or teleport. docs/l14-bedroom.md; exit148 next059 approach."
   },
   {
    "id": "STORY-059",
@@ -1655,8 +1655,8 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "astra",
    "note": ""
   },
   {
