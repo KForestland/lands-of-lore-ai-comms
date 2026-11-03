@@ -42,6 +42,8 @@ def replay(data, flags, entry=0x65bb0, kind=2):
                 state=list(vm.mem_read(CMD + 16, 2)))
 
 def main():
+    if not __debug__:
+        raise SystemExit("Run without -O: assertions are the verification checks.")
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument('executable', type=Path)
     a = ap.parse_args()
@@ -73,4 +75,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
