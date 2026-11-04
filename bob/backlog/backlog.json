@@ -1810,7 +1810,7 @@
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
    "status": "todo",
    "claimed_by": "",
-   "note": ""
+   "note": "lead 2026-11-05: first build used prop 602 (wrong: NE greenhouse fireball); withdrawn d9fc8da; ball unidentified -> grok H22"
   },
   {
    "id": "STORY-069",
@@ -1842,9 +1842,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": "grok C3: without a silverleaf the greenhouse pyramid still needs one; the floorless city room grows one (hintbook 4882-4904, 5075-5109). | grok proposal: hintbook 4882-4904/5075-5109 if no silverleaf, the floorless city room grows one after an ivory chip; greenhouse pyramid still needs one (softlock guard)."
+   "status": "done",
+   "claimed_by": "lead",
+   "note": "act3-story 70ce5a0; l16_greenhouse_earned_test PASS"
   },
   {
    "id": "STORY-071",

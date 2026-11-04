@@ -29,3 +29,12 @@ H18 Temple L14 (owner 18:02:30 / 18:04:58 / 18:10:50): spider burrows the floor,
 H19 Ruins no-clip spots the owner mentioned (r13/r14 notes): find the reports and the wall faces involved.
 H20 A-to-Z walk: rubber-duck the WHOLE game start->end as a player in 1 page per act; list every step the current
     r14 build cannot do yet (use the duck table + story cards + board), ordered by "blocks finishing the game".
+H21 (lead, 2026-11-05) Decode opcode 14 arm 5 (handler 0xB59BF -> 0xB47B4, arms 3..6; host comment in native_script_host.gd
+    _op_fourteen). 474 uses over 11 levels (L19 355). The lead runs it as an L16-only no-op adapter for the city gates
+    (groups 672/698/3004: '0e20020005000000' then opcode 1 gates 1/2 = 100). What does arm 5 store? Is no-op safe?
+H22 (lead, 2026-11-05, P1 - blocks STORY-068) Identify the "ball floating over the southern dry fountain" in L16_CA (hintbook
+    4800-4815: south end of the street, raised area, dry fountain in the center; destroying the ball releases water and black
+    lichen grows in lumps). NOT props 600-603 (tower fireballs) and NOT the greenhouse (region 6098). Prop 626 (Fountain,
+    (-4111,-15457) h90, region 4900, local16 Ice_fountain_trigger) looks like STORY-074's freeze-and-break fountain - confirm.
+    Give: the ball's ref/position, its hit/destroy event + group, what the group writes (water/local), where the black lichen
+    then appears (which grants / identity 0xCA4DEBCC outside the 14 greenhouse rows), plus a longplay frame if visible.
