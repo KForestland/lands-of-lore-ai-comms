@@ -1774,9 +1774,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "lead",
+   "note": "act3-story ac79bcc; l14_chamber_voices_earned_test PASS (tmp/regressions/chv4)"
   },
   {
    "id": "STORY-067",
@@ -1791,9 +1791,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "lead",
+   "note": "act3-story 5435c13; l16_arrival_elevator_earned_test PASS"
   },
   {
    "id": "STORY-068",
