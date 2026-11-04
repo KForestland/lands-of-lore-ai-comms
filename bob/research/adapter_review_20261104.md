@@ -115,3 +115,23 @@ Same bytes in both trees. These fourteen files were opened as their table text. 
 0149 is the shared later-map producer. 0150, 0151, and 0152 are preview starts. Each row says the level-change destination byte stays undecoded, so the chosen selector is an adapter. 0150 cites longplay 137:10 and 137:40 for the L10 dungeon arrival and keeps the export spelling "Dracoid Cemetary". 0151's "Ruloi caverns" label cites a HUD counter at about 202:30. 0152 writes 136 neighbour-65535 records as 65535. No destination level is named from byte 5.
 
 Grade for this slice: DECODED for the row text and the byte match. No simpler native build.
+
+## Slice 5, rows 0154 through 0170
+
+Same bytes in both trees. These seventeen files were opened in full. No opcode callee was entered. No hintbook or Brady sentence was opened. Longplay times stay the rows' citations. The frames were not opened.
+
+0154 stops source-wall collision on the later maps. The row says native movement is region-based and wall records never block. That claim stays the row's. 0155 builds a projectile wall on the same faces and says stopping every bolt is the port's rule. The original selective passage stays the bug-list sentence the row cites. The projectile host is marked not built.
+
+0156 through 0160 stage opcode 21, 8, 6, 14, and 9 as host fields. Each row already marks the play meaning UNKNOWN or the play loop LIKELY. Arms the rows mark refused stay refused. The nested opcode 9 fire stays the host's reading. Native queue timing was not modelled, as 0160 says.
+
+0161 applies the landsoflore.de predicate change 208 to 207 on the exorcism trailer so it can be selected. The row says groups 14102 and 14234 still open with opcode 2 arm 0x26, which stays undecoded. The opcode 16 cell identity stays LIKELY. The archive is not changed.
+
+0162 reads opcode 2 arm 0x1C byte 5 as selector and level. The row calls that split the port's reading of two stores. This pass does not name a destination from byte 5. The cited L14 body `020100001c30` stays the row's example. 0163 hosts opcode 197. Arms 6, 7, and 10 stay the adapters the row names. The reported opcode 198 write of local 11 was not entered, so the slot stays unbound here. 0164 seeds local 52 with 0 on a preview start only. The row says that 0 is not a proven initial state. Classic leaves the local open.
+
+0165 rebuilds blocker edges when opcode 197 arms 0-5 change bit 0. The height floor-64 through ceiling+1024 stays the port adapter. Maps without a binder keep the static set.
+
+0166 is the open preview note for L9, L12, L14, L17, and L20. Arrival selector 0 is a preview choice. Heading conversion stays the existing linear adapter. Blockers stay disabled pending walk evidence. L17 has no decoded DEFAULT panorama. Neighbours the note calls absent stay omitted. They were not renamed.
+
+0167 draws the fruit-garden bed with grass material 97 and the plants on their last frame. The row cites longplay 81:30 and says the opcode 14 growth is not traced. 0168's ghost tint and alpha stay the port's reading of flag 0x18. 0169 lifts roaches 50 and 51 off the slope. The other 21 stay at the source height. 0170 quantises the dying-orc movie to the nearest Cave palette index. The row says that choice is not the native blit.
+
+Grade for this slice: DECODED for the row text and the byte match. No simpler native build.

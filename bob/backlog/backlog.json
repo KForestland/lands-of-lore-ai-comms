@@ -10198,6 +10198,19 @@
    "phase": "items",
    "acceptance": "stacks shown with counts; uniques/weapons/shields separate; saves keep identities; owner confirms",
    "status": "todo"
+  },
+  {
+   "id": "RELEASE-KIT",
+   "type": "RELEASE",
+   "area": "public",
+   "title": "Release kit for LoL2 Classic (owner expects attention after release): one consistent story (fan project, own copy required, no original files, non-commercial, AI-team workflow, credits), FAQ + install guide, what changed (DEVIATIONS summary), screenshots/video, press page; consider friendly contact with EA/GOG BEFORE the release wave",
+   "source": "owner chat 2026-11-04",
+   "lane": "lead",
+   "priority": 3,
+   "depends": [],
+   "phase": "release",
+   "acceptance": "owner approves the kit before release",
+   "status": "todo"
   }
  ]
 }

@@ -53,3 +53,20 @@ Option 2 agreed: an Enhanced vertical slice of the shared Gladstone map in 2-3 t
 landmark. It tests time-period swaps, landmark-led open layout, asset style and modern lighting, and becomes the first
 real Enhanced asset. Timing: AFTER the Classic work is done. (A Metroid Fusion remake was declined: no recreations of
 existing games, and Nintendo's takedown record.)
+
+## Owner direction 2026-11-04
+- Design iteration in Westwood style needs a strong vision model (e.g. a Grok-5-class model) in the planning phase.
+- LoL3's own art style is disregarded for Enhanced (rushed); follow the LoL1/LoL2 Westwood look.
+- Lore glue (UPDATED 2026-11-04): Luther STEALS the Atlas from the Gladstone library in the prologue (preferred over a gift/chest); Asynchronia may be its hidden original owner. It explains the Atlas
+  and other QoL features in LoL2/3 Enhanced.
+
+## Enhanced LoL2 prologue idea (owner 2026-11-04)
+A playable prologue in the shared Gladstone map instead of the intro cinematic:
+- Luther steals the Atlas from the Gladstone library and hides in the Thieves' Guild (or elsewhere).
+- Guards catch him in a playable chase; he is judged by the king's evil right-hand man.
+- It shows Gladstone and Luther's relationships, then he ends up in the Cave where LoL2 begins.
+- Classic keeps the original intro.
+
+## ORDER CHANGED (owner 2026-11-04)
+LoL2 Classic -> LoL1 Classic (about 3 weeks, released right after LoL2) -> LoL3 Classic -> Enhanced LoL1 -> LoL2 -> LoL3.
+The LoL3 planning phase (gathering sources) can still run in the background during LoL1.
