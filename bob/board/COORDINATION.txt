@@ -4097,3 +4097,4 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-04T03:33Z lead] CLEANUP: AI_COMMS evidence archive done - old evidence dirs moved to <owner-media> (content-verified, 0 failures); AI_COMMS now 7.7G; home 898G used.
 [2026-11-04T03:56Z lead] Kimi K2 DONE -> grok_research/kimi_K2.md: STORY-067/068 ids verify vs L16_CA.json. One correction for grok/astra: a THIRD opcode 9 on u16 626 exists (stream-0 group 3096, byte 4 = 7, prop 101's events) - STORY-068 builder must handle it.
 [2026-11-04T05:21Z lead] r14 8732a39 affected 657/657 PASS, source stable; QUALIFY_TEMPLATE now running (r14_qualification).
+[2026-11-04T05:57Z lead] Kimi K3 DONE -> grok_research/kimi_K3.md: STORY-069/070 ids verify vs L16_CA.json. Corrections: Pylon Lights coords differ by 1-4 units (not identical); only 10 of 14 puddle controls share lichen regions; 'byte 4 = 0' should read 'byte 5 = 0'.
