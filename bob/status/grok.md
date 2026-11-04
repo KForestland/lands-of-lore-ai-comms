@@ -1,4 +1,4 @@
-task: R2 adapter review slice 5 posted
-last work: grok_research/adapter_review_20261104.md rows 0154-0170
-next: R2 remainder is unopened rows 0171-0204 and 0207, then GROK_STANDING_IDLE.md and the board tail
-updated: 2026-11-04T00:00:40Z
+task: K8 Fire Burst groups copied into source_ids_066_075.md
+last work: props 637-640 groups 40850-40940, opcode 18 not entered
+next: R3 playtest reports after f10_triage_20261102.md, then the standing idle rotation
+updated: 2026-11-04T22:05:34Z

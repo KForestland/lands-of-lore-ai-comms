@@ -11,8 +11,8 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 G = Path('~/AI_COMMS/grok_backlog_20261028/backlog_20261031I')
-R12W = Path('~/opus_work/lol2_r12w')
-CENSUS = Path('~/AI_COMMS/act1_completion_20261017/item_census/item_census.json')
+R12W = Path('~/opus_work/lol2_r14')  # current integrated tree (was lol2_r12w, archived)
+CENSUS = Path('~/AI_COMMS/act1_completion_20261017/item_census.json')
 BUGS = Path('~/AI_COMMS/reference_hintbook/Lands_of_Lore_Bugs_and_Complaints_AI_Reference.md')
 
 ACCEPT = {
@@ -196,6 +196,7 @@ def branch_tasks():
 
 
 def main():
+    # WARNING (lead 2026-11-04): main() rebuilds from generators and DROPS hand-added tasks (CITADEL-*, ENGINE-*, CLEANUP-* ...). Do not run without merging them first.
     tasks = story_tasks() + branch_tasks() + kit_and_infra() + act1_tasks() + item_tasks() + spell_tasks() + creature_tasks() + npc_tasks() + bug_tasks()
     ids = [t['id'] for t in tasks]
     dup = {i for i in ids if ids.count(i) > 1}

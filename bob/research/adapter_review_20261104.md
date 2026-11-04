@@ -135,3 +135,41 @@ Same bytes in both trees. These seventeen files were opened in full. No opcode c
 0167 draws the fruit-garden bed with grass material 97 and the plants on their last frame. The row cites longplay 81:30 and says the opcode 14 growth is not traced. 0168's ghost tint and alpha stay the port's reading of flag 0x18. 0169 lifts roaches 50 and 51 off the slope. The other 21 stay at the source height. 0170 quantises the dying-orc movie to the nearest Cave palette index. The row says that choice is not the native blit.
 
 Grade for this slice: DECODED for the row text and the byte match. No simpler native build.
+
+## Slice 6, rows 0171 through 0204 and 0207
+
+Same bytes in r12y `56812f9`, r13 `71d6c73`, and r14 `8732a39`. These thirty-five files were opened in full. No opcode callee was entered. Row 0200 is an empty heading table. Longplay times in 0186 and 0199 stay the rows' citations. The frames were not opened.
+
+0171 through 0180 and 0183 stage entered stores or a logged request. The callees each row names as unentered stay unentered: 0171's 0x151DAE path, 0172's kind switch, 0173's 0x12415C, 0174's three calls, 0176's slot lookup, 0177's play effects, 0179's vtable +0x80, 0180's cell readers, and 0183's 0x79310. 0175's actor stores stay PROVEN behind an unread +0xA8, taken as not 0x0F. 0178 keeps slot `0xb7d5e` empty at start. This pass did not enter 0xB2A54 or 0x65BB0. The later note `opcode18_b27a3534.md` read that call on b27a3534. The host still stages the slot. 0181 stays the row's one-record correction. 0182's L16 selector 1 stays the witnessed start. Caller byte 0x14 stays untraced.
+
+0184 still takes region 1422 out of the static blocked set. The opcode-197 arm-10 opener stays UNKNOWN. 0185 turns Act 1 bit0 blockers on. Dynamic opcode-197 regions stay as the data leaves them. 0186 scales L8 colour by the shade-table RGB ratios and assigns assembly sectors from the standing region. Ratios 0.92, 0.44, 0.10, 0.07, and 0 stay the row's. 0187's look-up limit is the panorama's 0.656 rad. The same limit downward stays the adapter.
+
+0188 through 0195 leave the continuations unmodelled: opcode 1 motion, the kind-2 tick, arm 0x18's old pointer, opcode 3 slot +0x6C, opcode 12's room gates, opcode 210's word readers, and arm 0x3C's unread gates. 0195's return of 1 stays the PROVEN no-store path. The hosts still supply the kind-4 identity. 0199's 60 Hz reading of counters 300 and 120 stays that file's clock. It does not enter 0189's tick.
+
+0196 hosts 17 world-item rows with the modern E pickup. The rows the file leaves out stay out. 0197 chamfers portal corners because the capsule is 30 wide and the native mover is a point. The cut-triangle leak stays the row's. 0198's five drowning adapters stay. The row's Cave clock sentence says 12 s under, and the measured LIMIT is 15 s.
+
+HINTBOOK lines 2225–2229. Luther can drown in the jungle streams and the large river. The giant fish eats him there. The lines print no seconds. Lines 4865–4868. The city canal is deep and Luther can drown. The upper water is shallow. Row 0198 leaves act2_map untouched, so that canal stays unhosted. Those lines print no surface height.
+
+BRADY lines 2754–2755, printed page 71. Wade shallow streams. Drown if you go in over your head. That sentence agrees with the Human head test. It prints neither 46 nor 15 seconds nor the bank surface. Lines 5898–5900. Move fast before the lizard drowns in the blood canal. That liquid stays outside 0198's water class.
+
+0199's six exit seeds stay invented port inputs. The local writers stay UNKNOWN. Arrival clearance, the E reach, facing 0.7, health 30, attack base 15, and the geometry slide stay the file's adapters. 0201 through 0204 use each area's own shade-table RGB ratios. Per-pixel indexed shading stays unreproduced. 0207's slot 0, opcode 9 arm 3, and kind-4 mode 1 stores stay the row's PROVEN bytes. An unknown +0xA8 still uses the 0175 gate. 0xAF0E0, 0xB4130, and 0x5C9D0 stay unstaged.
+
+Grade for this slice: HINTBOOK for lines 2225–2229 and 4865–4868. BRADY for lines 2754–2755 and 5898–5900. DECODED for the row text and the three-tree byte match. No simpler native build.
+
+## Slice 7, r14 rows 0306 through 0308
+
+These six rows are in r14 `8732a39` and absent from r13. The opcode-18 text also numbered 0306 matches astraprogression `6986998` byte for byte and stays the 2026-11-03 review. It was not reopened. No opcode callee was entered.
+
+0306 guidance. HINTBOOK lines 3075–3077, 3107, and 3151–3157. The shaman gives a potion for a silverleaf. The spark raises new steps after the stairs are climbed and the torches are lit. The activated potion is right-clicked on the Larkon's upper chest. The lines print no radius and no torch count. The journal lines and the 600-unit and 420-unit radii stay the presentation adapter. Line 3105 says to visit the platform after the first green shard. That order stays the book's.
+
+0306 fall text draws one status line. No book sentence was opened. The fall wording stays the row's.
+
+0307 journal. HINTBOOK line 2253, chapter 6. Go south to the Armorer's Glen. The new note names Kit'yara there. The Confidante gate stays the row's native gate. The "before the Hive" order stays the row's. This pass did not re-read a Hive sentence.
+
+0307 sleep. HINTBOOK lines 3177–3178 and 4256–4258. The Larkon wakes after the exit, or after some distance, and a return needs another potion. Lines 3119–3122. The tree-room slots make that second potion. The port keeps the guardian asleep and does not host that supply. The printed wake stays unhosted. The 60-second clock stays a frame clock.
+
+0308 serum. BRADY line 1556, printed page 42. Amaranth serum has no effect by itself. The shaman serum is refused and stays carried. Other definition 119 serums still take handler 98. HINTBOOK lines 3163–3165 say to reload a flung potion. Item 26 stays unverified, as the row says.
+
+0308 voices. Unit size 300 stays the port loudness adapter. Native attenuation stays untraced. No book sentence was opened.
+
+Grade for this slice: HINTBOOK for lines 2253, 3075–3077, 3105–3107, 3119–3122, 3151–3157, 3163–3165, 3177–3178, and 4256–4258. BRADY for line 1556. DECODED for the r14 row text and for the opcode-18 text match. No simpler native build.

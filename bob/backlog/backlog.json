@@ -9786,7 +9786,9 @@
    "depends": [],
    "phase": "tooling",
    "acceptance": "check_registry flags l10_tomb_crossing_earned_test without its needs block; pins derive from generator lists; full registry PASS",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "ENH-L8-EGG-NIGHTVISION",
@@ -9799,7 +9801,9 @@
    "depends": [],
    "phase": "items",
    "acceptance": "owner confirms in playtest",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "POLISH-DROWNING-ANIM",
@@ -9812,7 +9816,9 @@
    "depends": [],
    "phase": "polish",
    "acceptance": "owner confirms in playtest",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "SOUND-MUSIC-PACK",
@@ -9826,7 +9832,8 @@
    "phase": "sound",
    "acceptance": "pack folder documented; mapping track->area; absent pack = original music; repo/build audit shows no pack files",
    "status": "todo",
-   "note": "Owner 2026-11-02: new music inspired by the tone of the remasters is OK only as ORIGINAL compositions (Enhanced soundtrack candidate, credit as inspiration); re-recorded original melodies stay out of the repo; Classic plays the original music from the user game files."
+   "note": "Owner 2026-11-02: new music inspired by the tone of the remasters is OK only as ORIGINAL compositions (Enhanced soundtrack candidate, credit as inspiration); re-recorded original melodies stay out of the repo; Classic plays the original music from the user game files.",
+   "claimed_by": ""
   },
   {
    "id": "ENGINE-PLAYTEST-STARTS",
@@ -9855,7 +9862,8 @@
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
    "status": "todo",
-   "note": "Migrate one map/system at a time with its existing earned checks; never run unentered opcodes (9,16,18,196/b6=0,198,204,207) as decoded - adapters only (grok+astra)"
+   "note": "Migrate one map/system at a time with its existing earned checks; never run unentered opcodes (9,16,18,196/b6=0,198,204,207) as decoded - adapters only (grok+astra)",
+   "claimed_by": ""
   },
   {
    "id": "ENGINE-OWNER-REGISTRY",
@@ -9869,7 +9877,8 @@
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
    "status": "todo",
-   "note": "Key = area + placement table + index; keep stream/group keys separate; an index that fits several tables stays AMBIGUOUS (never pick one) - grok+astra"
+   "note": "Key = area + placement table + index; keep stream/group keys separate; an index that fits several tables stays AMBIGUOUS (never pick one) - grok+astra",
+   "claimed_by": ""
   },
   {
    "id": "ENGINE-STAGE-MANIFEST",
@@ -9882,7 +9891,9 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "ENGINE-FAST-QUALIFY",
@@ -9896,7 +9907,8 @@
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
    "status": "todo",
-   "note": "Keep frozen-source checks and real motion/interaction assertions; a restored endpoint is not route evidence (grok+astra)"
+   "note": "Keep frozen-source checks and real motion/interaction assertions; a restored endpoint is not route evidence (grok+astra)",
+   "claimed_by": ""
   },
   {
    "id": "ENGINE-SAVE-MIGRATIONS",
@@ -9910,7 +9922,8 @@
    "phase": "engine",
    "acceptance": "design note + tests; owner confirms where visible",
    "status": "todo",
-   "note": "Preserve item instances + transaction receipts; explicit failure for incompatible state (astra)"
+   "note": "Preserve item instances + transaction receipts; explicit failure for incompatible state (astra)",
+   "claimed_by": ""
   },
   {
    "id": "ENGINE-EXPORT-RICH",
@@ -9923,7 +9936,9 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "tool + test; lanes confirm it removes a question round",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "ENGINE-CONTACT-DIAG",
@@ -9936,7 +9951,9 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "tool + test; lanes confirm it removes a question round",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "ENGINE-NAV-HEIGHT",
@@ -9949,7 +9966,9 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "tool + test; lanes confirm it removes a question round",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "ENGINE-PLAYTEST-STARTS-ACT2",
@@ -9962,7 +9981,9 @@
    "depends": [],
    "phase": "engine",
    "acceptance": "Act 2 starts in the F2 list resume headless + one rendered; owner uses them",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-JUNGLE-PASSWORD-GUY",
@@ -9975,7 +9996,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-L8-LARKHON-SLEEP",
@@ -9988,7 +10011,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-L8-PLATFORM",
@@ -10001,7 +10026,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-UI-FALL-TEXT-OVERLAP",
@@ -10014,7 +10041,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-ACT1-MECHANICS",
@@ -10027,7 +10056,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-L14-TEMPLE",
@@ -10040,7 +10071,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-NPC-AUDIO-SCALE",
@@ -10053,7 +10086,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-CLIPPING",
@@ -10066,7 +10101,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-VISUALS",
@@ -10079,7 +10116,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PT3-CROUCH-MUSEUM",
@@ -10092,7 +10131,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "UI-QUICK-BELT",
@@ -10105,7 +10146,9 @@
    "depends": [],
    "phase": "playtest",
    "acceptance": "owner F10 confirms in the next playthrough",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "CLEANUP-BUILDS-KEEP3",
@@ -10118,7 +10161,9 @@
    "depends": [],
    "phase": "workflow",
    "acceptance": "owner confirms",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "CLEANUP-MEDIA-DEDUP",
@@ -10131,7 +10176,9 @@
    "depends": [],
    "phase": "workflow",
    "acceptance": "owner confirms",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "CLEANUP-ARCHIVE-ORGANIZE",
@@ -10144,7 +10191,9 @@
    "depends": [],
    "phase": "workflow",
    "acceptance": "owner confirms",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "PLAN-MASTER-REMAKE",
@@ -10157,7 +10206,9 @@
    "depends": [],
    "phase": "workflow",
    "acceptance": "owner confirms",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "UI-KEY-ITEMS-ATLAS",
@@ -10171,7 +10222,8 @@
    "phase": "items",
    "acceptance": "no key item can be lost/blocked by a full inventory; City chips + Belial stalagmites still work; owner confirms",
    "status": "todo",
-   "note": "Owner 2026-11-04: BOTH editions. ONLY single story keys go in the Atlas; MULTI-ITEMS (several of one item: ivory chips, stalagmites, etc.) STAY in the inventory. The inventory is enlarged a lot instead (UI-INVENTORY-SIZE)."
+   "note": "Owner 2026-11-04: BOTH editions. ONLY single story keys go in the Atlas; MULTI-ITEMS (several of one item: ivory chips, stalagmites, etc.) STAY in the inventory. The inventory is enlarged a lot instead (UI-INVENTORY-SIZE).",
+   "claimed_by": ""
   },
   {
    "id": "UI-INVENTORY-SIZE",
@@ -10184,7 +10236,9 @@
    "depends": [],
    "phase": "items",
    "acceptance": "no full-inventory refusal on the A-to-Z path; old saves still load",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "UI-ITEM-STACKS",
@@ -10197,7 +10251,9 @@
    "depends": [],
    "phase": "items",
    "acceptance": "stacks shown with counts; uniques/weapons/shields separate; saves keep identities; owner confirms",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "RELEASE-KIT",
@@ -10210,7 +10266,9 @@
    "depends": [],
    "phase": "release",
    "acceptance": "owner approves the kit before release",
-   "status": "todo"
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   },
   {
    "id": "CITADEL-BRAIN-CLICK",
@@ -10226,6 +10284,51 @@
    "status": "todo",
    "claimed_by": null,
    "note": "lead decision: presentation adapter (native click), no owner question needed"
+  },
+  {
+   "depends": [],
+   "phase": "maps-a-to-z",
+   "status": "todo",
+   "id": "HIVE-4-BUTTONS-RESEARCH",
+   "type": "research",
+   "area": "Hive",
+   "title": "Hive lock puzzle L1,L1,L3,L2: who writes local 8, what region 760/Spout_2 do, glyph clue 117-120, required or optional",
+   "source": "owner F10 2026-11-03 17:43:48; GROK_TASKS_G_20261104.md G1",
+   "lane": "grok",
+   "priority": "P1",
+   "acceptance": "grok_research/hive_buttons_g1.md answers (a)-(e)",
+   "claimed_by": "",
+   "note": ""
+  },
+  {
+   "depends": [],
+   "phase": "maps-a-to-z",
+   "status": "todo",
+   "id": "HIVE-BOULDER-CELLAR-RESEARCH",
+   "type": "research",
+   "area": "Hive",
+   "title": "Boulder falls from the wall, breaks the floor, opens a hidden cellar: native records, longplay time, contents, required?",
+   "source": "owner F10 2026-11-03 17:45:07/36; GROK_TASKS_G_20261104.md G2",
+   "lane": "grok",
+   "priority": "P1",
+   "acceptance": "grok_research/hive_boulder_cellar_g2.md",
+   "claimed_by": "",
+   "note": ""
+  },
+  {
+   "depends": [],
+   "phase": "details",
+   "status": "todo",
+   "id": "MUSEUM-NICHE-LEVEL",
+   "type": "build",
+   "area": "Museum",
+   "title": "Lid 52 wall niche: click opens it, one strike on prop61 gives +1 magic level (op2 arm 0x10 = D88CD/D8B94)",
+   "source": "lead decode 2026-11-04 (board); owner F10 17:09:20",
+   "lane": "lead",
+   "priority": "P3",
+   "acceptance": "click lid, strike once -> +1 magic level, once only; test",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }
