@@ -33,3 +33,7 @@ The lines below are task C3. They are gaps in STORY-054 through STORY-093, writt
 PROPOSE temple blade bypass | hintbook.txt 4585-4586 says do not walk into the blades and take the passage on the right to bypass that trap | STORY-062 names the angled flute slot and the off-center walk past the boulder and does not name the blade passage
 PROPOSE armory fireball ledge | hintbook.txt 5513-5518 says that on the way into the Armory you jump onto the side ledge so the corridor fireball trap does not operate | STORY-090 starts inside the Armory and does not name that ledge
 PROPOSE city silverleaf | hintbook.txt 4882-4904 and 5075-5109 say that if you have no silverleaf, the greenhouse pyramid still needs one, and the city room without a floor grows one after an ivory chip is set in the gold-bar pedestal and the left-hand ball of light is followed | STORY-070 names putting a silverleaf in the pyramid and does not name that room. The step is conditional on holding none. A different light chase in the secret storeroom takes the right branch, hintbook.txt 4991-4993, and is not this room
+
+The line below is the 2026-11-04 adapter review. It is the one simpler descent in rows 0227 through 0279.
+
+PROPOSE citadel elevator click | brady_guide.txt 4636-4638, 7984-7985, 8051, and 8574-8575 say click the Brain Switch to lower the elevator | r13 row 0261 binds both Spark and nearby Human E. The simpler descent is the click. The 60 Hz clock stays. Rows 0263 and 0271 are not those sentences

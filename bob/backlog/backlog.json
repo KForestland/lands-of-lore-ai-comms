@@ -10158,6 +10158,46 @@
    "phase": "workflow",
    "acceptance": "owner confirms",
    "status": "todo"
+  },
+  {
+   "id": "UI-KEY-ITEMS-ATLAS",
+   "type": "UI",
+   "area": "items",
+   "title": "Key items in the Atlas (owner idea 2026-11-04): story keys live in an Atlas key-item section; E at a receptacle offers them from the Atlas (mechanism_transaction source = atlas); hold/throw/wield items go to hand on use and return to the Atlas if dropped; tools (Belial-chamber stalagmites, pushable boxes) stay normal items. Edition per Questions page q008.",
+   "source": "owner chat 2026-11-04",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "items",
+   "acceptance": "no key item can be lost/blocked by a full inventory; City chips + Belial stalagmites still work; owner confirms",
+   "status": "todo",
+   "note": "Owner 2026-11-04: BOTH editions. ONLY single story keys go in the Atlas; MULTI-ITEMS (several of one item: ivory chips, stalagmites, etc.) STAY in the inventory. The inventory is enlarged a lot instead (UI-INVENTORY-SIZE)."
+  },
+  {
+   "id": "UI-INVENTORY-SIZE",
+   "type": "UI",
+   "area": "items",
+   "title": "Enlarge the inventory 'a lot' (owner 2026-11-04) so multi-items never block progress; today Catalog.MAX_CARRIED = 64 (item_catalog.gd:55) - also the inventory UI pages/scroll and save validation (validate_carried) must follow",
+   "source": "owner chat 2026-11-04",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "items",
+   "acceptance": "no full-inventory refusal on the A-to-Z path; old saves still load",
+   "status": "todo"
+  },
+  {
+   "id": "UI-ITEM-STACKS",
+   "type": "UI",
+   "area": "items",
+   "title": "Item stacking (owner 2026-11-04): stackable items (aloe, sap, silverleaf, eggs, potions, amber, wax, other consumables and multi-items) stack up to 64 per slot (owner recalls ~9 in the original); unique items, weapons, shields and armour never stack. Today the port has NO stacking (each harvested item is its own identity) - keep the per-item identities in saves, group them in the inventory UI; use/give consumes one from the stack",
+   "source": "owner chat 2026-11-04",
+   "lane": "lead",
+   "priority": 1,
+   "depends": [],
+   "phase": "items",
+   "acceptance": "stacks shown with counts; uniques/weapons/shields separate; saves keep identities; owner confirms",
+   "status": "todo"
   }
  ]
 }
