@@ -121,5 +121,95 @@
     "source": "grade DECODED. Control 98 crystal wall (-11770,-8215,h30). Control 172 is (-9795,-13206,h0). Brady point 5 says Crystal Cylinder Puzzle. Cylinder is not a template name. These walls were not numbered 5.",
     "grade": "DECODED",
     "height": 30
+  },
+  {
+    "x": 2242,
+    "y": 2947,
+    "label": "NE FireWall door m92",
+    "color": "tomato",
+    "source": "grade DECODED. Movables 92, 93, and 94 are slot 44 FireWall Door at (2242,2947), (2342,2947), and (2292,2947), regions 3017, 3016, and 3018. Name-at-index stays LIKELY. The walk from ball 602 was not one polyline.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -9896,
+    "y": 899,
+    "label": "NW Ball O Smoke p600",
+    "color": "gold",
+    "source": "grade HINTBOOK+DECODED. Prop 600 slot 61 Ball O Smoke (-9896,899,h115) region 5484. Pyramid 641 is (-9897,841). Opcode 18 flags 0x0812, bit 0x0004 clear. Hintbook 4835-4841 is the NW fireball. The release was not entered.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 115
+  },
+  {
+    "x": -9797,
+    "y": -13070,
+    "label": "SW Ball O Smoke p601",
+    "color": "gold",
+    "source": "grade HINTBOOK+DECODED. Prop 601 slot 61 (-9797,-13070,h15) region 6960. Pyramid 604 is (-9793,-12994). Opcode 18 flags 0x0812. Hintbook 4948-4950 is the SW fireball. Name-at-index stays LIKELY.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 15
+  },
+  {
+    "x": 2289,
+    "y": 648,
+    "label": "NE Ball O Smoke p602",
+    "color": "gold",
+    "source": "grade DECODED. Prop 602 slot 61 (2289,648,h18) region 6098. Silverleaf pyramid 605 is (2287,599). Opcode 18 words (2290,2951,0), flags 0x0812. The NE door row is movables 92-94. The walk stays open.",
+    "grade": "DECODED",
+    "height": 18
+  },
+  {
+    "x": 429,
+    "y": -12857,
+    "label": "SE Ball O Smoke p603",
+    "color": "gold",
+    "source": "grade HINTBOOK+DECODED. Prop 603 slot 61 (429,-12857,h22) region 6775. Pyramid 606 is (370,-12854). Opcode 18 flags 0x0812. Hintbook 4917-4920 is the SE retreat and does not say fireball.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 22
+  },
+  {
+    "x": -9653,
+    "y": -3160,
+    "label": "Ivory Chip Gargoyle p399",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Prop 399 slot 96 Ivory Chip Gargoyle (-9653,-3160,h150) region 8510. Prop 400 is (-7544,-3171,h150) region 8626. Name-at-index stays LIKELY. Not one of the three Brady point-11 dots.",
+    "grade": "DECODED",
+    "height": 150
+  },
+  {
+    "x": -6426,
+    "y": -560,
+    "label": "Sleepytime Goblet p418",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 418 slot 89 Sleepytime Goblet (-6426,-560,h105) region 4784. Its opcode 18 words are not a level change. Name-at-index stays LIKELY.",
+    "grade": "DECODED",
+    "height": 105
+  },
+  {
+    "x": -5214,
+    "y": -1470,
+    "label": "Push/Pull c71",
+    "color": "orange",
+    "source": "grade DECODED. Control 71 slot 53 Push/Pull object (-5214,-1470,h20) region 8028. Control 108 is (-5250,-1641,h-30) region 8121. Name-at-index stays LIKELY. Opcode 18 bit 0x0004 is set on both.",
+    "grade": "DECODED",
+    "height": 20
+  },
+  {
+    "x": 5520,
+    "y": -5494,
+    "label": "Null Front Gate c79",
+    "color": "orange",
+    "source": "grade DECODED. Control 79 slot 63 Null Front Gate (5520,-5494) region 244. Control 80 is (-3920,-7760,h-259) region 7831. Each opcode 18 with bit 0x0004 points at the other's neighborhood. Name-at-index stays LIKELY.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": 15948,
+    "y": -4005,
+    "label": "Key Object c119",
+    "color": "gold",
+    "source": "grade DECODED. Controls 119 and 120 are slot 50 Key Object at (15948,-4005,h100) and (10666,-3970,h100). Controls 121 and 122 are (15892,-9211,h100) and (10605,-9187,h100). Name-at-index stays LIKELY.",
+    "grade": "DECODED",
+    "height": 100
   }
 ]

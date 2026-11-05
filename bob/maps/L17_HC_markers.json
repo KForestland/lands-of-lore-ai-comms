@@ -38,5 +38,29 @@
     "color": "orange",
     "source": "grade DECODED. Editor Level Finish (-3096,-4437). Brady point 3 says Exit to Belial's Chambers. That name is not a template. The unbound label Belial's Chamber was not attached to this marker.",
     "grade": "DECODED"
+  },
+  {
+    "x": 1561,
+    "y": 7144,
+    "label": "Yellow Crystal p310",
+    "color": "gold",
+    "source": "grade DECODED. Prop 310 template slot 11 Yellow Crystal (1561,7144) region 121. Props 309, 308, and 307 are Red, Green, and Purple on the metadata alignment. Name-at-index stays LIKELY. Not the Brady valve.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -6243,
+    "y": -5890,
+    "label": "Wide guts p99",
+    "color": "tomato",
+    "source": "grade DECODED. Prop 99 template slot 6 Wide guts (-6243,-5890) region 1302. Not a strand or a frond cstring.",
+    "grade": "DECODED"
+  },
+  {
+    "x": -4993,
+    "y": -7063,
+    "label": "Hive Duct p153",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 153 template slot 17 Hive Duct (-4993,-7063) region 79. The level-change byte 5 stays unread, so this prop was not marked as the exit.",
+    "grade": "DECODED"
   }
 ]

@@ -118,5 +118,59 @@
     "color": "orange",
     "source": "grade DECODED. Editor home (1241,1448) region 1706, centroid (1238,1465), floor -120. It was not merged with the other Imp's Home and was not joined to the Summoning disk.",
     "grade": "DECODED"
+  },
+  {
+    "x": 2802,
+    "y": 882,
+    "label": "Dawn good p78",
+    "color": "gold",
+    "source": "grade DECODED. Prop 78 template 16 Dawn good (2802,882,h-1000) region 1461, floor -1000. Group 1566 stores opcode 3 identity 0xFBF884D7, byte +8 = 0. The grant stays LIKELY. Name-at-index stays LIKELY.",
+    "grade": "DECODED",
+    "height": -1000
+  },
+  {
+    "x": 1939,
+    "y": 891,
+    "label": "actor 39 def 5376",
+    "color": "orange",
+    "source": "grade DECODED. Actor 39 definition u16 5376 (1939,891,h-125) region 2182. Not region 1461. DAWNL19 was not joined.",
+    "grade": "DECODED",
+    "height": -125
+  },
+  {
+    "x": 120,
+    "y": -525,
+    "label": "Ooze pipe p222",
+    "color": "limegreen",
+    "source": "grade DECODED. Prop 222 template 9 Ooze pipe (120,-525) region 687. Opcode 3 identity 0x0CBE2C90, byte +8 = 1. Definition 22's name slot is 23-Hrn Belial. The grant stays LIKELY. No Baccata placement.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -323,
+    "y": 2124,
+    "label": "Switch m74",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Movables 74, 75, and 76 are slot byte 3 Switch at (-323,2124), (-304,2124), and (-281,2124), height 42. Controls 74, 75, and 76 are a different trio. Opcode 196 byte 6 is 0. Current floors were not read, so this is not the book's rise.",
+    "grade": "DECODED",
+    "height": 42
+  },
+  {
+    "x": 2550,
+    "y": 854,
+    "label": "Golden Door m51",
+    "color": "gold",
+    "source": "grade DECODED. Movables 51 and 52 share region 1931 at about (2550,884), floor -100. The neighbor chain splits. The book's right-right-south-east run is not one polyline.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": 1451,
+    "y": 1131,
+    "label": "Skull p67",
+    "color": "darkorchid",
+    "source": "grade HINTBOOK+DECODED. Props 67, 69, 68, and 70 are Skull at the corners, height -60. Light 65's opcode 18 flags are 0x0112. Bit 0x0004 is clear. The gather stays the book.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -60
   }
 ]

@@ -24,7 +24,7 @@ Three ice pillars stand on y 4462..4463: 62 (−3400, 4463) region 800, 63 (−3
 
 ## The two def-12 actors
 
-Actor 48, definition u16 12, is (−3539, 3877), height −50, region 766, flags 0x7582. Godot (−3539, −3877). Region 766 is x −3632..−3508, y 3794..4082, floor −50, ceiling 205. Actor 47, definition u16 1, shares that region at (−3576, 3986). Actor 65, the other definition 12, is (−2207, 1180), region 74. Godot (−2207, −1180). The cstring `SCOTIA` is in the MIX. It was not joined to definition 12.
+Actor 48 is (−3539, 3877), height −50, region 766, flags 0x7582. The definition field is the u16 at byte 32, and that u16 is 1292 (bytes `0c 05`). The low byte is 12. Godot (−3539, −3877). Region 766 is x −3632..−3508, y 3794..4082, floor −50, ceiling 205. Actor 47, definition u16 1, shares that region at (−3576, 3986). Actor 65 stores the same u16, 1292, and is (−2207, 1180), region 74. Godot (−2207, −1180). The cstring `SCOTIA` is in the MIX. It was not joined to definition 12.
 
 Actor 48's groups are opcode 2 `020100002700` and `020230000600`, opcode 8, opcode 13, opcode 9, opcode 20, and one opcode 1 `012034006400` (u16 52, byte 4 = 100). U16 52 fits an actor, a prop, a control, and movable 52. No opcode 3 on L20 contains `d9cd0de5`. That dword is definition 7. The name slot at GLOBAL file 6015177 is `8-Prism`. The name stays LIKELY. Trinity stays the book.
 

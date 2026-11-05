@@ -1,18 +1,19 @@
 [
   {
-    "x": -3880,
-    "y": 2630,
-    "label": "Brady229-3 Crystal ceiling",
+    "x": -1383,
+    "y": 1700,
+    "label": "Crystal ceiling p144",
     "color": "limegreen",
-    "source": "grade HINTBOOK+BRADY+DECODED. Prop 195 is the only template 17 Crystal ceiling, at (-3880,2630,h-50). Printed 229 point 3 is the First Empowerment Chamber, and printed 231 step 3 says destroy the crystals on the ceiling. This is one placement. The book plural was not a second prop. Prima's blue-pillar sentence was not joined here.",
-    "grade": "HINTBOOK+BRADY+DECODED"
+    "source": "grade DECODED. Props 144, 145, 146, 153, 154, and 155 are template 12 Crystal ceiling: (-1383,1700,h94), (-1213,1719,h96), (-1038,1700,h98), (-861,1697,h96), (-698,1697,h97), (-536,1697,h94). The earlier marker put this name on prop 195. Prop 195 is template 17 Phy source. Name-at-index stays LIKELY. Printed 229 point 3 was not re-joined.",
+    "grade": "DECODED",
+    "height": 94
   },
   {
     "x": -3619,
     "y": 3431,
-    "label": "Belial Birthed",
+    "label": "Fire source p197",
     "color": "orange",
-    "source": "grade DECODED. Prop 197 is the only template 15 Belial Birthed, at (-3619,3431,h-50). Frank's Placenta has no placement. Womb and Embryo are not strings in this MIX. Point 2 was not written onto this prop.",
+    "source": "grade DECODED. Prop 197 is template 15 Fire source at (-3619,3431,h-50). The earlier Belial Birthed label used that index. Template 10 Belial Birthed has zero placements. Name-at-index stays LIKELY.",
     "grade": "DECODED"
   },
   {
@@ -142,5 +143,59 @@
     "color": "orange",
     "source": "grade DECODED. Item row 3 is (-2526,3535,h-50) region 681. The slot string is empty. Bit 0x1000 is clear. That clear bit is not a visibility grade. Ruby of Truth was not written onto these four rows.",
     "grade": "DECODED"
+  },
+  {
+    "x": -3880,
+    "y": 2630,
+    "label": "Phy source p195",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 195 template 17 Phy source (-3880,2630,h-50) region 636. Opcode 196 byte 6 is 1, so the floor formula stays off. Name-at-index stays LIKELY. Not joined to the book's left-hand stone.",
+    "grade": "DECODED",
+    "height": -50
+  },
+  {
+    "x": -2650,
+    "y": 2924,
+    "label": "Ice source p196",
+    "color": "deepskyblue",
+    "source": "grade DECODED. Prop 196 template 16 Ice source (-2650,2924,h-50) region 1540. Its groups opcode 9 every Ice pillar index, byte 4 = 21. The effect was not entered.",
+    "grade": "DECODED",
+    "height": -50
+  },
+  {
+    "x": -1160,
+    "y": 4258,
+    "label": "Frank's Placenta p242",
+    "color": "orange",
+    "source": "grade DECODED. Prop 242 template 9 Frank's Placenta (-1160,4258,h-20) region 262. The birth cast stays the book. placenta.vqa was not joined to this prop.",
+    "grade": "DECODED",
+    "height": -20
+  },
+  {
+    "x": -1375,
+    "y": 1719,
+    "label": "Block c62",
+    "color": "gold",
+    "source": "grade DECODED. Controls 62 through 67 are static slot 8 Block, y 1718..1729, x -1375 to -547, height -110. Each stores one opcode 20. Opcode 20 was not entered.",
+    "grade": "DECODED",
+    "height": -110
+  },
+  {
+    "x": -6921,
+    "y": 4828,
+    "label": "actor 46 def 1280",
+    "color": "tomato",
+    "source": "grade DECODED. Actor 46 definition u16 1280 (-6921,4828,h-50) region 1272. No opcode 3. The DRARACLE cstring was not joined.",
+    "grade": "DECODED",
+    "height": -50
+  },
+  {
+    "x": -1238,
+    "y": 3207,
+    "label": "actor 75 def 1282",
+    "color": "tomato",
+    "source": "grade DECODED. Actor 75 definition u16 1282 (-1238,3207,h-10) region 177. It opcode 1s u16 55 and 99. The fight weapons stay the books.",
+    "grade": "DECODED",
+    "height": -10
   }
 ]
