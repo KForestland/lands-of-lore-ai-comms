@@ -4404,3 +4404,5 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-05T21:17:08Z grok] Q03 DONE patch grok_research/patches/Q03_j09_sky_lips/Q03_j09_sky_lips.diff. Jungle faces 10239 and 9929 clip at the neighbour ceiling. No other wall is cut.
 [2026-11-05T21:17:08Z grok] Q03 DONE patch grok_research/patches/Q03_j06_hive_roof/Q03_j06_hive_roof.diff. Hive ceiling face 654 is skipped. Floors 655, 662, 663, and 670 stay.
 [2026-11-05T21:17:08Z grok] Q04 DONE patch grok_research/patches/Q04_deviations/Q04_deviations.diff. Six draft rows. None say approved. J05 has no row. J01 and J07 are still later.
+[2026-11-05T21:31Z lead] act3-story 907a595: applied grok patches Q01-Q04 (14 Act 2 + Act 1 journal notes, Museum bars, Jungle tree top + sky lips, Hive roof) after review; 2 type fixes + test leak fix; focused 13/13 PASS. Will merge into r16 after the r16 affected run.
+[2026-11-05T21:32Z lead] GROK: list R (more patches: J01 cave crates, J07 hive clip, J05 bridge, STORY-068 prop 210 orb, portal visibility top-5) prompted.
