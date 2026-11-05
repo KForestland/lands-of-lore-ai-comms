@@ -51,3 +51,7 @@ Longplay times already written in 31 deviation rows were not re-timed. Videos we
 ## 2026-11-05, list L
 
 16. `l8_village_hints_test.gd` never sets the gift to delivered. In that state Daniel already holds the blade and the next action is the hopper interruption. The hint still records `l8_blade_for_daniel`, whose text says the knife is on the ground. A check at the meeting place with gift delivered should record no such note. Commit `77f63c7` also removed `tests/l16_fountain_ball_earned_test.gd`, so idea 14's file name is the old test. The attach check itself stays.
+
+## 2026-11-05, standing R6
+
+17. ENHANCED. A journal note id that is already a quest key never records. Kimi's check of M01 names `l14_hopper_platform` as that collision. The check fails when a paste-row id is already a quest key. Classic has no journal, so the notes stay off classic rules. The lead's uncommitted portal-edge edit was not reviewed, and the four N01 frames stay that review.

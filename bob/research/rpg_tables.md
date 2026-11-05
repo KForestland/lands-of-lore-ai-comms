@@ -226,3 +226,9 @@ No Godot was run. No handler was entered. `formula_finished` stays false. These 
 | 1668–1670 | War Blade | Daniel's gift from his mother. Give it to him. | Printed 33: from Kityara after the wax, or from her body, and required for the Second Sphere. |
 
 Lines 1531–1532 say the silver mail should be swapped for platemail. Lines 1539–1540 call the Obsidian Chainmail the best armor and hide it in the Claw Mountains. Lines 1548–1549 put the platemail breastplate in the executioner's nest. No percent is printed on those lines. Brady line 2477 says a suit of chain mail and a fine long sword only go so far. That sentence was not given a percent either. Printed 50 says the Mists fifth level, Lich, turns Luther into an invulnerable undead lich for a few moments. No count. The fifth-level names already in the spell table are not repeated.
+
+## Form sentences, no amounts, 2026-11-05
+
+No Godot was run. No handler was entered. `formula_finished` stays false. HINTBOOK lines 1864–1900. The Lizard is tiny, frail, the fastest runner, and the best jumper, and a jump injures him more easily. Tiny tunnels are his. Changing out of the Lizard inside a small space is instant death. He is short and cannot see into drawers or upstairs. The Human moves reasonably fast, jumps well enough, and crouches. The Beast is tall and slow, reaches what is far up, and fights well, and by the end Luther's sword is more effective than the Beast's claws. None of those sentences prints a speed, a height, or a hit-point number.
+
+BRADY lines 912–990, markers PDF PAGE 26–27 = printed 25–26, name the First Sphere places and print no form stat. They were not copied into the item table. The spell-name rows already filed are not repeated.

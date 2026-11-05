@@ -1,4 +1,4 @@
-task: list N complete
-last work: N05 standing idle R1. STORY-068 is the first open story. Cards for 069, 071, 072, 073, and 074 stay on disk.
-next: standing idle R2 when the grok queue is empty
-updated: 2026-11-05T12:47:10Z
+task: list O, O01 posted, O02 next
+last work: O01 master open list of 280 owner reports. Open maps and the password man lead.
+next: O02 portal-visibility candidates beyond L9/L10/L14
+updated: 2026-11-05T13:59:01Z

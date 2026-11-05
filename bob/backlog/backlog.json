@@ -10560,6 +10560,21 @@
    "status": "todo",
    "claimed_by": "",
    "note": ""
+  },
+  {
+   "id": "TOOL-JOURNAL-ID-CHECK",
+   "type": "build",
+   "area": "All",
+   "title": "Test: no My Journal note id equals a quest_state key (grok proposal 2026-11-05 after kimi K18)",
+   "source": "grok_research/proposals.md",
+   "lane": "lead",
+   "priority": "P3",
+   "depends": [],
+   "phase": "details",
+   "acceptance": "my_journal_test fails on a colliding id",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }
