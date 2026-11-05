@@ -1,6 +1,6 @@
 # Lands of Lore — Master Plan
 
-Owner: Kjetil (KForestland). Updated: 2026-11-02.
+Owner: Kjetil (KForestland). Updated: 2026-11-05.
 Fan project, non-commercial. Lands of Lore is © Westwood Studios / Electronic Arts. No original game files are
 distributed: the remakes read the data from the player's own copy of the games.
 
@@ -29,33 +29,52 @@ effort ("if it takes 10 years, we will do it").
 | 5 | LoL1 Enhanced, then the other Enhanced editions | After LoL2 and LoL3 are finished |
 | 6 | 3D characters/items/creatures for the Enhanced editions | Not before 1–2 years from now; LoL1 assets first |
 
-## LoL2 Classic: phases and status (2026-11-02)
+## LoL2 Classic: phases and status (2026-11-05)
 
-Phase order: **maps → story progression → items → RPG → dialog → small fixes**. Sound and combat polish come last.
-Quality comes before speed; the estimates below are for orientation, not deadlines.
+Phase order (owner, 2026-11-05): **maps to 100% → quest chains complete (from the guides) → Act 3 story → items → RPG →
+dialog → small fixes**. Sound and combat polish come last. Quality comes before speed; estimates are for orientation.
 
 | Area | Done | Notes |
 |---|---|---|
-| Maps / world | ~95% | All 15 levels built and connected (exits, creatures, items placed) |
-| Act 1 | ~85% | Playable start to finish; passes full automated campaign runs on every build |
-| Act 2–3 story | ~35% | First Act 2 loop complete and tested in one continuous run (Savage Jungle → Dracoid Cemetery → Dracoid Ruins / Mage's Tower → flood escape → Wild Village); tribe initiation in progress |
-| Items | ~25% | All 170 original items placed and carriable; effects being hosted one by one |
-| Creatures / combat / spells / RPG | ~10% | Act 1 combat works; printed creature/spell tables collected |
-| NPCs / dialog | ~15% | Act 1 conversations; first Act 2 encounters |
+| Maps / world | ~90% | All 15 levels built and connected. Open: Huline Temple portal doors and overlapping rooms, texture/clipping reports. Atlas v2 (floor slices, explored-only) planned |
+| Act 1 | ~90% | Playable start to finish; owner confirmed the Bacatta escort, the Confidante route and the cat-lady knife (r14). Next build adds the dragon picture click, Hive flute lift, lever/talk prompts |
+| Act 2 story | ~70% | Story steps 7–65 built and tested in earned runs; owner playtest found quest-chain gaps (village admission → Dracoid quest → serum → Larkhon) being fixed |
+| Act 3 story | ~10% | 3 of 28 steps built (Chamber of Voices → city rises, Ancient City arrival elevator, north-east greenhouse fireball) |
+| Items | ~25% | All 170 original items placed and carriable; effects hosted one by one |
+| Creatures / combat / spells / RPG | ~10% | Act 1 combat works; creature/spell tables collected |
+| NPCs / dialog | ~20% | Act 1 conversations, first Act 2 encounters; speech volume fixed after owner report |
 | Sound / music | ~20% | Act 1 mostly |
-| Polish / Enhanced | ~5% | Ideas collected |
+| Polish / Enhanced | ~5% | Plan approved (below) |
 
-Rough estimate to a complete, playable LoL2 Classic with all systems: **2–3 months**, depending on AI usage limits
-and playtest findings.
+Overall LoL2 Classic: **about 55–60%**.
+
+Rough timeline (orientation only; depends on AI usage limits and playtests):
+- Classic maps at 100%: 1–2 weeks.
+- Classic playable A to Z (every story step, start to end): mid-December 2026.
+- Classic with all systems (items, creatures, spells, RPG, dialog, sound): February–March 2027.
+- Gray-box version (same quest chain, box geometry and box characters): early 2027, right after the A-to-Z chain.
+- Enhanced art pass: aiming for summer 2027.
+
+### New workflow for Enhanced (approved 2026-11-05)
+
+One story, one save, one quest logic for every edition. Tools ("pipes") run on all levels at once:
+1. Gray-box generator: decoded level geometry → simple box levels.
+2. Box people: every quest character/creature/prop as a labelled box with the same id.
+3. Quest walk: the existing automated walk tests run on the gray box too, proving the chain end to end.
+4. Art import: AI-generated 3D models replace gray boxes by id with one import rule.
+5. Owner playtests stay the final check.
+Then refine → test → refine, level by level: textures, tessellation, lighting, and sightlines that show places and
+hidden areas so the hint system can be lighter. Rules and tools evolve by iteration on what works.
 
 ## How the work is done
 
 - The owner makes the design calls and playtests every build; he does not write code.
 - Several AI "lanes" share the work through this repository and a local coordination board:
   - Claude Opus is the lead and integrator.
-  - Astra (OpenAI) builds the story progression.
+  - Astra (OpenAI) builds the story progression (away until ~2026-11-09; the lead builds Act 3 meanwhile).
   - Grok researches the original game and the strategy guides.
   - Claude Fable is a second builder.
+  - Kimi runs small verification tasks on a timer.
 - **Evidence order:** the original game's own data and scripts, then the printed guides (Prima, Brady), then the
   owner's longplay video, then the owner's memory. When a detail is hard to trace, a logged adapter that matches the
   original's visible behaviour is allowed, and every such deviation is recorded in the ledger.
