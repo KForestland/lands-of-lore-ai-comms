@@ -10329,6 +10329,51 @@
    "acceptance": "click lid, strike once -> +1 magic level, once only; test",
    "claimed_by": "",
    "note": ""
+  },
+  {
+   "depends": [],
+   "phase": "maps-a-to-z",
+   "status": "todo",
+   "claimed_by": "",
+   "note": "",
+   "lane": "lead",
+   "type": "build",
+   "area": "L8_SJ",
+   "id": "L8-CACHE-LADDER",
+   "priority": "P2",
+   "title": "Ladder up to the Shaman's Treasure Cache (Brady 175 pt 7, h222) does not climb (owner F10 2026-11-04 23:20:29)",
+   "source": "TRIAGE_20261104.md",
+   "acceptance": "player climbs the ladder to the cache room; test"
+  },
+  {
+   "depends": [],
+   "phase": "maps-a-to-z",
+   "status": "todo",
+   "claimed_by": "",
+   "note": "",
+   "lane": "lead",
+   "type": "build",
+   "area": "L8_SJ",
+   "id": "L8-TREE-BRIDGE",
+   "priority": "P2",
+   "title": "Knock over the tree to bridge the chasm on the way to the Larkhon (Brady step 51; owner F10 23:23:53)",
+   "source": "TRIAGE_20261104.md",
+   "acceptance": "strike tree -> log bridge; walk across; test"
+  },
+  {
+   "id": "TEMPLE-PORTALS",
+   "type": "build",
+   "area": "L14_HT",
+   "title": "Huline Temple cleanup: doors are portals/teleports into separate rooms; room geometry and textures clip into the main map (owner F10 2026-11-03 18:01-18:10, owner 2026-11-05 'huge mess')",
+   "source": "owner 2026-11-05; TRIAGE_20261103.md",
+   "lane": "lead",
+   "priority": "P1",
+   "depends": [],
+   "phase": "maps-a-to-z",
+   "acceptance": "portal doors move the player to their room; rooms do not draw or collide inside the main temple; owner walk-through",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }

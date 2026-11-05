@@ -1,4 +1,4 @@
-task: H09 Library bookcase into the Dark Halls
-last work: H08 Dawn rune and Power Orb in grok_research/H08_dawn_rune_orb.md
-next: H09 stack boxes, strike the bookcase, native bookcase and crate records
-updated: 2026-11-04T22:54:20Z
+task: H11 Prism scroll in a Dark Halls bookcase
+last work: H10 shelves in grok_research/H10_dark_halls_bookcases.md
+next: H11 post, then H12 crystal crate and steel door
+updated: 2026-11-04T23:52:03Z
