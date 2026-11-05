@@ -65,3 +65,7 @@ The r12y deviations directory still has 228 markdown files. A search for the wat
 | 13 Ghost or Silver Leaf missed | `0221`, `0225`, and `0239` remain Silverleaf use and the dead bracers. `0250` and `0251` are silverleaf growth and harvest. |
 
 Rows 4, 12, and 14 still have no title match: no Tohani statue line, no stationary Ssar or Skeletal Guardian death failure, and no quest-item no-drop rule. The word softlock in `0305` is the temple return guard. Rows 1, 8, and 9 stay on `0161`, `0169`, and `0155`. No new PROPOSE line.
+
+## Recheck 2026-11-05, r15 campaign 2
+
+`~/opus_work/lol2_r15_campaign2` at `f6a5aa4` has 316 deviation files. The tree was not edited. Highest prefix is 0308. Rows 1, 8, and 9 stay on `0161`, `0169`, and `0155`. Rows 2, 3, 4, 6, 7, 10, 11, 12, 13, and 14 still have no title that states the bug. The new 0306–0308 files are Larkhon guidance, opcode 18 text, the confidante journal line, the Larkhon staying asleep, the shaman serum refusal, and talker voice reach. HINTBOOK 5551–5568 suspects the finale chasm ending. PATCH.TXT has no ending sentence, so it was not added as a fifteenth bug. No new PROPOSE line. Detail is `K11_original_bugs_r4.md`.
