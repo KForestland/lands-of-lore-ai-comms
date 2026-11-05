@@ -48,3 +48,7 @@ The line below is the list L idle pass. It is the delivered-gift note from commi
 
 PROPOSE delivered gift does not record the dropped-blade note | l8_village_hints.gd returns l8_blade_for_daniel while the gift is delivered; K09 is unoffered or dropped only | Standing at the meeting place with gift delivered does not put l8_blade_for_daniel in the journal.
 PROPOSE journal id is not a quest key | kimi_K18.md: note id l14_hopper_platform collides with the quest key | The check fails when a journal paste id is already a quest key. Classic has no journal.
+
+The line below is the 2026-11-05 fork of rows 0024 through 0085.
+
+PROPOSE Retire the 0056 off-switch | jungle_walkthrough.gd sets region_blockers_enabled true, and row 0057 is the live on-switch | Acceptance is 0056 marked historical and 0057 left as the live blocker row.

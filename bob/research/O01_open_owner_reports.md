@@ -1,12 +1,12 @@
 # O01 master open list, 2026-11-05
 
-No Godot was run. Heads at this check: r15 `f6a5aa4`, act3-story `75597f2`. act3-story also has an uncommitted edit in `scripts/lol2/region_visibility.gd`. That file is not a commit, so it is not a fix in this table. The newest owner file is still `TRIAGE_20261104.md`.
+No Godot was run. Heads at this check: r15 `f6a5aa4`, act3-story `d9e3aaf` (parent `75597f2`). `d9e3aaf` commits the shared-edge walk in `scripts/lol2/region_visibility.gd`. The walk stays on L9, L10, and L14. It leaves doorway textures as they are. The newest owner file is still `TRIAGE_20261104.md`. The 13:59:01Z table stands. This paragraph is the 16:26Z recheck.
 
 The window is 280 reports from 2026-10-23 through 2026-11-04. Two reports on 2026-10-22 sit outside it: Jungle "no wall here", and Hive "the rocks did not fall".
 
 A row is fixed on a tree only when the code commit is an ancestor of that head. Three hashes the older triages cited are ancestors and are not the code: `72d256e` is the CFALL docs page, `4ad7358` is the icon docs page, and `f45de3d` is a registry line. `b89397d` is not an ancestor of r15 or of act3-story.
 
-On act3-story and not on r15: `1c33ac0` (talk with no distance fade, and the Larkhon journal note), `db5efe5` (mid-river drown, Bacatta leaves, louder escort voices), `44a6d98` (L14 doorway cull), `75597f2` (L9 and L10 doorway cull, and the delivered-gift hint).
+On act3-story and not on r15: `1c33ac0` (talk with no distance fade, and the Larkhon journal note), `db5efe5` (mid-river drown, Bacatta leaves, louder escort voices), `44a6d98` (L14 doorway cull), `75597f2` (L9 and L10 doorway cull, and the delivered-gift hint), `d9e3aaf` (shared-edge walk on L9, L10, and L14).
 
 On r15 and not on act3-story: `330b027` and `f6a5aa4` (Hive lift waits at the bottom, flute on the return), `91db679` (dragon picture travel), `85d1b31` (E prompt at the sleeping Bacatta), `3642265` (Cave lever hint says Pull lever).
 
@@ -42,7 +42,7 @@ Owner order is maps, then quest, then presentation, then other. One table.
 | M-dust | maps | Museum dust pile draws on the ceiling. | Open on both. | 10-30 09-27-28, 10-29 19-57-54 |
 | M-pillars | maps | Museum pillars the owner remembers are missing. | Open on both. One report, not re-checked against the pack. | 10-31 11-48-56 |
 | M-l14 | maps | Textures and geometry wrong. The report area field says Jungle. The Nov 3 triage places the coordinates in Temple L14. | Open on both. MAP_GAP 18-01-10. Portal cull does not retile this. | 11-03 18-01-44, 11-03 18-01-36, 11-03 18-01-10 |
-| M-l14-portal | maps | Temple doors are teleporters and their textures clip into the main map. Report area field says Jungle. Triage places it at L14 (-310,-2304). | r15 open. act3-story has the doorway cull 44a6d98. 75597f2 is the L9/L10 cull and is also act3-only. The shared-edge edit in region_visibility.gd is not committed. | 11-03 18-10-50 |
+| M-l14-portal | maps | Temple doors are teleporters and their textures clip into the main map. Report area field says Jungle. Triage places it at L14 (-310,-2304). | r15 open. act3-story has the doorway cull 44a6d98. 75597f2 is the L9/L10 cull and is also act3-only. d9e3aaf commits the shared-edge walk on L14, L10, and L9. The doorway textures stay as reported. | 11-03 18-10-50 |
 | M-ladder | maps | Darker Jungle ladder under the cache does not work. | Open on both. No ladder commit. MAP_GAP L8-CACHE-LADDER. | 11-04 23-20-29 |
 | M-log | maps | Knock a tree down to make a bridge. | Open on both. No knock commit. MAP_GAP L8-TREE-BRIDGE. The owner reached the Larkhon without it. | 11-04 23-23-53 |
 | M-dh | maps | Dark Halls: bookcases, explosive crates, barrels, locked door, slots, chain, fruit, and the puzzle exit. Also 'quest bugged, no clue how to save Rix'. | Open on both. No bookcase or blowout commit. 0986d4b hosts Rix as a hostile fighter. That is not the save-Rix puzzle. | 10-30 10-18-53, 10-30 10-14-31, 10-24 18-47-32, 10-26 13-00-17, 10-30 10-12-30, 10-30 10-16-31, 10-30 10-15-04, 10-26 12-55-30, 10-24 18-51-14, 10-30 10-16-12, 10-26 12-59-39, 10-24 18-45-34, 10-30 10-10-26, 10-30 10-17-38, 10-30 10-11-42, 10-26 13-00-32, 10-24 18-47-11, 10-26 12-59-19 |
@@ -146,4 +146,4 @@ Owner order is maps, then quest, then presentation, then other. One table.
 
 The maps that are still open on both heads are the crate drag and the crate-room clip, the Hive clip and the flute bridge, the Jungle faces filed after the see-through commits, the Museum gate colour, plank, blocks, and ceiling dust, the Temple texture and geometry, the cache ladder, the knock-down tree, and the Dark Halls puzzle. The quests still open on both heads are the password man, the unfinished Dracoid step, the quill tunnel, the imp-scroll floor, the statue switch, the hidden door, the bramble and the tar, the poison gland, the spider-attack start, the Hive door, the four-button order, and the boulder cellar.
 
-L9 and L10 portal visibility is `75597f2` on act3-story only. r15 does not have it. This list does not review that commit again.
+L9 and L10 portal visibility is `75597f2` on act3-story only, and `d9e3aaf` extends that walk across every shared edge on L9, L10, and L14. r15 has neither commit. This list does not review those commits again.

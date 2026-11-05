@@ -10575,6 +10575,21 @@
    "status": "todo",
    "claimed_by": "",
    "note": ""
+  },
+  {
+   "id": "DOC-DEV-0056-HISTORICAL",
+   "type": "docs",
+   "area": "Jungle",
+   "title": "Mark DEVIATIONS row 0056 (r11 blocker off-switch) historical; 0057 is the live on-switch (grok R2 proposal 2026-11-05)",
+   "source": "grok_research/proposals.md",
+   "lane": "lead",
+   "priority": "P3",
+   "depends": [],
+   "phase": "details",
+   "acceptance": "row 0056 says historical, superseded by 0057",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }

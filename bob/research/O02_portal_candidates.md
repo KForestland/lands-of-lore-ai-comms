@@ -1,6 +1,6 @@
 # O02 portal-visibility candidates beyond L9, L10, and L14
 
-No Godot was run. J11 pair counts were not recounted. L9, L10, and L14 stay the areas already named by the portal commits (`75597f2` for L9 and L10, `44a6d98` for L14). This list is the other hosts the task names.
+No Godot was run. J11 pair counts were not recounted. L9, L10, and L14 stay the areas already named by the portal commits (`75597f2` for L9 and L10, `44a6d98` for L14, `d9e3aaf` for the shared-edge walk on those three). `PORTAL_VISIBILITY_AREAS` is still `L14_HT`, `L10_DC`, and `L9_DR`. This list is the other hosts the task names. The top 5 below are unchanged on the 16:26Z recheck.
 
 A frame time is `6580 + (N-1) * 30` seconds, the same clock as K10. Frames opened this pass are LONGPLAY. A camera was not bound to a region. None of these frames is an owner F10 shot.
 

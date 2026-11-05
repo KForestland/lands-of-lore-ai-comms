@@ -1,6 +1,6 @@
 # O04 Ten beats that still block a finished game
 
-No Godot was run. The duck (`act1_completeness_duck.md`) graded r13 plus `TRIAGE_20261103.md` and is stale. This pass read r15 `f6a5aa4` (the play build, clean), act3-story `75597f2` (dirty only in `region_visibility.gd`, not reviewed), and act1m `e3bbf68`. Newest owner file is still `TRIAGE_20261104.md`. Rank is what stops the campaign. Optional loot is not in the ten.
+No Godot was run. The duck (`act1_completeness_duck.md`) graded r13 plus `TRIAGE_20261103.md` and is stale. This pass read r15 `f6a5aa4` (the play build, clean), act3-story `d9e3aaf` (parent `75597f2`, clean), and act1m `e3bbf68`. The ten below are unchanged on the 16:26Z recheck. Newest owner file is still `TRIAGE_20261104.md`. Rank is what stops the campaign. Optional loot is not in the ten.
 
 A fix below is safe only when the effect is already in a file. An unread opcode is named and not given a motion.
 
@@ -124,7 +124,7 @@ Earned test. On r15, the dragon click still changes level. A test that movable 7
 
 ### 9. Hive flute lift, story tree only
 
-Duck beat 63. HINTBOOK 2665–2668: the flute calls the pit elevator. r15 `f6a5aa4` waits at the bottom and plays the flute on the return. act1m `e3bbf68` is that commit's twin. Neither hash is an ancestor of act3 `75597f2`, so the story tree still starts the lift wrong.
+Duck beat 63. HINTBOOK 2665–2668: the flute calls the pit elevator. r15 `f6a5aa4` waits at the bottom and plays the flute on the return. act1m `e3bbf68` is that commit's twin. Neither hash is an ancestor of act3 `d9e3aaf`, so the story tree still starts the lift wrong.
 
 Trigger and effect. The ones already in `f6a5aa4`. This pass did not reopen that diff.
 

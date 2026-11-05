@@ -60,17 +60,21 @@ The pit entry and the Spark light stay the row. The crystal stays the owner's ex
 
 `0045-row-2026-10-24-all-areas.md` matches r12y and stays pending. `walk_feel.gd` matches r12y. F4 in `museum_interface.gd` toggles it. The saved key is `walk/modern_feel`, off when missing. `museum_interface.gd` differs on the magic button. The F4 block is the same in r12y.
 
-DECODED: accelerate 0.12 s, stop 0.06 s, bob constants 0.9 and 1.5, step constants 1.9 and 2.6. Shift run at 144 uses 0.8 of that span, amplitude 1.38 and about 2.46 steps per second. The offset is `Camera3D.v_offset` only. Cave, Museum, Jungle, Hive, and Dark Halls call this bob. Hive and Dark Halls inherit the Jungle mover. The Cave interface extends the Museum interface. Jump launch on the Museum and Jungle paths stays 200. The Cave jump stays 96.
+DECODED: accelerate 0.12 s, stop 0.06 s, bob constants 0.9 and 1.5, step constants 1.9 and 2.6. Shift run at 144 uses 0.8 of that span, amplitude 1.38 and about 2.46 steps per second. The offset is `Camera3D.v_offset` only.
 
-LONGPLAY 22:07 Museum and 34:00 Jungle stay the row's witness that the horizon stays level. Books print no such number. Off is the simpler original feel. The opt-in stays the row. Open: native easing, which the row already leaves unproven.
+Cave, Museum, Jungle, Hive, and Dark Halls call this bob. Hive and Dark Halls inherit the Jungle mover. The Cave interface extends the Museum interface. Jump launch on the Museum and Jungle paths stays 200. The Cave jump stays 96.
+
+LONGPLAY 22:07 Museum and 34:00 Jungle stay the row's witness that the horizon stays level. Books print no such number. Off is the simpler original feel. The opt-in stays the row. The camera node, the aim rays, and the collision body stay put, as the row says. Open: native easing, which the row already leaves unproven.
 
 ## 0046 museum jungle hive dark halls
 
 `0046-row-2026-10-24-museum-jungle-hive-dark-halls.md` matches r12y and stays pending. `walk_feel.gd` matches r12y.
 
-DECODED: walk 80 and run 144. The Cave reads them from `original_walk_review.gd`. The Museum reads them from `museum_review.gd`. Jungle, Hive, and Dark Halls read them from `jungle_review.gd`. No 120 walk speed remains in the scripts. The row's earlier Museum-only walk and the 120 run stay the row's history. A running jump keeps the horizontal speed. Launch speed stays 200 on those paths. The row leaves jumps for later.
+DECODED: walk 80 and run 144. The Cave reads them from `original_walk_review.gd`. The Museum reads them from `museum_review.gd`. Jungle, Hive, and Dark Halls read them from `jungle_review.gd`. No 120 walk speed remains in the scripts.
 
-Books print no such number. Native speeds stay untraced, as the row says. The one pair stays the row. No printed speed is more faithful.
+The row's earlier Museum-only walk and the 120 run stay the row's history. A running jump keeps the horizontal speed. Launch speed stays 200 on those paths. The row leaves jumps for later.
+
+Books print no such number. Native speeds stay untraced, as the row says, and the row says the longplay cannot measure them reliably. The one pair stays the row. No printed speed is more faithful. A per-area speed split would be the older build the row replaced.
 
 ## 0047 jungle
 
