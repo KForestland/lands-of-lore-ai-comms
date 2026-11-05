@@ -52,10 +52,9 @@ Rough timeline (orientation only; depends on AI usage limits and playtests):
 - Classic maps at 100%: 1–2 weeks.
 - Classic playable A to Z (every story step, start to end): mid-December 2026.
 - Classic with all systems (items, creatures, spells, RPG, dialog, sound): February–March 2027.
-- Gray-box version (same quest chain, box geometry and box characters): early 2027, right after the A-to-Z chain.
-- Enhanced art pass: aiming for summer 2027.
+- Enhanced editions (gray box first, then art): after LoL1 and LoL3 Classic, see the order of work above.
 
-### New workflow for Enhanced (approved 2026-11-05)
+### Future workflow for the Enhanced editions (approved 2026-11-05; starts after LoL3 Classic)
 
 One story, one save, one quest logic for every edition. Tools ("pipes") run on all levels at once:
 1. Gray-box generator: decoded level geometry → simple box levels.
