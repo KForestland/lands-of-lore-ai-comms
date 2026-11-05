@@ -1808,9 +1808,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": "lead 2026-11-05: first build used prop 602 (wrong: NE greenhouse fireball); withdrawn d9fc8da; ball unidentified -> grok H22"
+   "status": "done",
+   "claimed_by": "lead",
+   "note": "act3-story 2a3f407; grok R04 patch; l16_dry_fountain_earned_test PASS"
   },
   {
    "id": "STORY-069",
