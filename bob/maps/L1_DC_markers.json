@@ -1,1 +1,65 @@
-[]
+[
+  {
+    "x": -210,
+    "y": 4656,
+    "label": "Brady145-3 Waterfall c88 h4",
+    "color": "blue",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 3 and printed 146 lines 6320-6324. Control 88 static slot 36 Waterfall, region 1297. Sm Waterfall controls 58, 86, 87 sit at y 4432-4752. The flood command was not re-read.",
+    "grade": "BRADY+DECODED",
+    "height": 4
+  },
+  {
+    "x": -442,
+    "y": 10758,
+    "label": "Brady145-4 Push box c0 h-220",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 4 and must-step 3 on printed 147. Controls 0 and 1 are static slot 43 Push box at (-442,10758) and (-512,10759), region 1952, height -220. The move command was not re-read.",
+    "grade": "BRADY+DECODED",
+    "height": -220
+  },
+  {
+    "x": 564,
+    "y": 12367,
+    "label": "Brady145-6 crates c121 h-215",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 6. Small crate controls 94 and 95 and Medium Crate controls 96, 97, 112, 121, 122, all height -215 around y 12218-12367. H16: these rows have no events. Mace records sit above them.",
+    "grade": "BRADY+DECODED",
+    "height": -215
+  },
+  {
+    "x": -292,
+    "y": 11145,
+    "label": "Brady147 Box stack c5 h-190",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Brady printed 147: stack boxes in the orc lair to reach the maces. Controls 2-5 are slots 60, 59, 58, 57 (Box4, Box3, Box2, Box) around x -656..-292, y 11017-11145, height -190. The orc actor was not named.",
+    "grade": "BRADY+DECODED",
+    "height": -190
+  },
+  {
+    "x": -187,
+    "y": 14830,
+    "label": "Brady145-7 Immolation c92 h-270",
+    "color": "red",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 7 is the fire pit, listed after the crates and before the bridge. Controls 92 and 93 are static slot 40 Immolation cover at (-187,14830) and (-183,14799), height -270. An earlier pair, controls 76 and 77, is at y 7679-7710 and is not this legend step.",
+    "grade": "BRADY+DECODED",
+    "height": -270
+  },
+  {
+    "x": -67,
+    "y": 16782,
+    "label": "Brady145-8 Bridge m56 h-295",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 8. Movables 56-61 are static slot 49 Bridge, x about -65, y 16782, 16937, 17092, 17247, 17401, 17554, height -295.",
+    "grade": "BRADY+DECODED",
+    "height": -295
+  },
+  {
+    "x": 150,
+    "y": 16648,
+    "label": "Brady145-9 Port Door m68 h-175",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 9 and must-step 4 on printed 147. Movables 68 and 69 are static slot 37 Port Door at (150,16648) and (242,16513). Movables 70, 71, and 73 are static slot 33 Iron Gate at y 16430-16651. Which one opens the chamber was not re-read.",
+    "grade": "BRADY+DECODED",
+    "height": -175
+  }
+]

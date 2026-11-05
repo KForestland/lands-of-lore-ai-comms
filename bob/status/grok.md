@@ -1,4 +1,4 @@
-task: H11 Prism scroll in a Dark Halls bookcase
-last work: H10 shelves in grok_research/H10_dark_halls_bookcases.md
-next: H11 post, then H12 crystal crate and steel door
-updated: 2026-11-04T23:52:03Z
+task: MAP-MARK L1_DC
+last work: I00 temple portals in grok_research/I00_temple_portals.md
+next: MAP-MARK L1_DC, then L3, L4, L5, L7, then the map gap list
+updated: 2026-11-05T00:24:15Z
