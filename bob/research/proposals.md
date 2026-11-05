@@ -43,3 +43,7 @@ PROPOSE Read opcode 18 flag 0x0812 for a native speed | I29 and act3 DEVIATIONS 
 The line below is the 2026-11-05 idle pass. It is the detached fountain test from K06.
 
 PROPOSE earned node is attached | K06: l16_fountain_ball_earned_test.gd calls get_node("L16FountainBall") and act2_map.gd does not add that node | The check fails when an earned test's node name is missing from the area map's attach list. Prop 602 stays the greenhouse fireball.
+
+The line below is the list L idle pass. It is the delivered-gift note from commit 77f63c7.
+
+PROPOSE delivered gift does not record the dropped-blade note | l8_village_hints.gd returns l8_blade_for_daniel while the gift is delivered; K09 is unoffered or dropped only | Standing at the meeting place with gift delivered does not put l8_blade_for_daniel in the journal.

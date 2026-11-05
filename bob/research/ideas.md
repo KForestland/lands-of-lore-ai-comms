@@ -47,3 +47,7 @@ Longplay times already written in 31 deviation rows were not re-timed. Videos we
 14. An earned test that calls `get_node` should fail when the area map does not attach that node. `l16_fountain_ball_earned_test.gd` still asks for `L16FountainBall` while `act2_map.gd` never adds it, and the test header still breaks prop 602. K06 is that break. The check is the node's name against the map's attach list.
 
 15. ENHANCED. The twenty-four Luther lines in `K09_journal_hints.md` are the journal adapter, which Classic does not have. They stay off classic rules. The five Larkhon notes already in the adapter are not part of this idea.
+
+## 2026-11-05, list L
+
+16. `l8_village_hints_test.gd` never sets the gift to delivered. In that state Daniel already holds the blade and the next action is the hopper interruption. The hint still records `l8_blade_for_daniel`, whose text says the knife is on the ground. A check at the meeting place with gift delivered should record no such note. Commit `77f63c7` also removed `tests/l16_fountain_ball_earned_test.gd`, so idea 14's file name is the old test. The attach check itself stays.
