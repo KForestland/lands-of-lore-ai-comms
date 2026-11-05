@@ -10545,6 +10545,21 @@
    "status": "todo",
    "claimed_by": "",
    "note": ""
+  },
+  {
+   "id": "TOOL-EARNED-NODE-CHECK",
+   "type": "build",
+   "area": "All",
+   "title": "Check that every node an earned test get_node()s is attached by the area map (grok proposal 2026-11-05); delete stale l16_fountain_ball_earned_test.gd",
+   "source": "grok_research/proposals.md 2026-11-05",
+   "lane": "lead",
+   "priority": "P3",
+   "depends": [],
+   "phase": "details",
+   "acceptance": "godot_check-style tool fails on a detached earned node",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }

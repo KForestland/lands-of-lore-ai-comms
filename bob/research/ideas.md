@@ -39,3 +39,11 @@ Classic stays the original game. These three are comfort, from owner F10 notes t
 ## Left alone
 
 Longplay times already written in 31 deviation rows were not re-timed. Videos were not opened. Spark damage, crouch size, and bowl index stay unread, so none of them becomes an idea.
+
+## 2026-11-05, after list K
+
+13. A done-line search must look for ` grok] K10 DONE`, with the space before grok. The stamp sits inside the same brackets, so `[grok] K10 DONE` matches neither a grok line nor, by itself, the Kimi line that already says `K10 DONE`. The K05 append check used the bracket form and treated a successful write as a miss.
+
+14. An earned test that calls `get_node` should fail when the area map does not attach that node. `l16_fountain_ball_earned_test.gd` still asks for `L16FountainBall` while `act2_map.gd` never adds it, and the test header still breaks prop 602. K06 is that break. The check is the node's name against the map's attach list.
+
+15. ENHANCED. The twenty-four Luther lines in `K09_journal_hints.md` are the journal adapter, which Classic does not have. They stay off classic rules. The five Larkhon notes already in the adapter are not part of this idea.

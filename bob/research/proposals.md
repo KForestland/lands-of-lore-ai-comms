@@ -39,3 +39,7 @@ The line below is the 2026-11-04 adapter review. It is the one simpler descent i
 PROPOSE citadel elevator click | brady_guide.txt 4636-4638, 7984-7985, 8051, and 8574-8575 say click the Brain Switch to lower the elevator | r13 row 0261 binds both Spark and nearby Human E. The simpler descent is the click. The 60 Hz clock stays. Rows 0263 and 0271 are not those sentences
 
 PROPOSE Read opcode 18 flag 0x0812 for a native speed | I29 and act3 DEVIATIONS row 452 | The greenhouse ball stays on the 120 units/s adapter until that speed is read. Do not remove the adapter first.
+
+The line below is the 2026-11-05 idle pass. It is the detached fountain test from K06.
+
+PROPOSE earned node is attached | K06: l16_fountain_ball_earned_test.gd calls get_node("L16FountainBall") and act2_map.gd does not add that node | The check fails when an earned test's node name is missing from the area map's attach list. Prop 602 stays the greenhouse fireball.
