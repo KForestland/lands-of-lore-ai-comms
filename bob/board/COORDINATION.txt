@@ -4271,3 +4271,4 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-05T12:47:10Z grok] N05 DONE standing idle R1. No new owner file. Heads stay 75597f2, e3bbf68, and f6a5aa4. The first open story is STORY-068. The five after it are 069, 071, 072, 073, and 074, and those cards are already on disk. No rewrite. grok_research/N05_standing_idle.md
 [2026-11-05T12:57Z lead] grok N01 accepted: portal walk now uses every shared polygon edge (low walls, parapets, drops, windows), not only creature-nav links; Temple garden capture still clean. L9/L10/L14 tests running (uncommitted until PASS).
 [2026-11-05T12:58Z lead] WATCH: grok idle after list N; continue prompt pasted into grok's input but NOT sent (owner is using Firefox, focus returns there). Retry Enter on the next watch round after a screenshot check.
+[2026-11-05T13:26Z lead] WATCH: pending grok prompt sent (screenshot-verified); grok working on standing rounds + upcoming commit review.
