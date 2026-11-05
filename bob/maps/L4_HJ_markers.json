@@ -1,1 +1,326 @@
-[]
+[
+  {
+    "x": 2078,
+    "y": 4017,
+    "height": -58,
+    "label": "Cave aloe item 1 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 7, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2054,
+    "y": 4046,
+    "height": -58,
+    "label": "Cave aloe item 2 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 8, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2074,
+    "y": 4051,
+    "height": -58,
+    "label": "Cave aloe item 3 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 9, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2054,
+    "y": 4061,
+    "height": -58,
+    "label": "Cave aloe item 4 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 10, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2043,
+    "y": 4077,
+    "height": -58,
+    "label": "Cave aloe item 5 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 11, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2053,
+    "y": 4084,
+    "height": -58,
+    "label": "Cave aloe item 6 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 12, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2074,
+    "y": 4034,
+    "height": -58,
+    "label": "Cave aloe item 7 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 13, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2070,
+    "y": 4065,
+    "height": -58,
+    "label": "Cave aloe item 8 h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 14, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2202,
+    "y": 4586,
+    "height": 70,
+    "label": "Cave aloe item 9 h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 63, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2215,
+    "y": 4605,
+    "height": 70,
+    "label": "Cave aloe item 10 h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 64, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2201,
+    "y": 4601,
+    "height": 70,
+    "label": "Cave aloe item 11 h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 65, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2211,
+    "y": 4585,
+    "height": 70,
+    "label": "Cave aloe item 12 h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 66, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2212,
+    "y": 4600,
+    "height": 70,
+    "label": "Cave aloe item 13 h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 67, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -6169,
+    "y": -2975,
+    "height": -80,
+    "label": "Cave aloe item 14 h-80",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 77, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -6289,
+    "y": -2922,
+    "height": 8112,
+    "label": "Cave aloe item 15 h8112",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 78, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -6374,
+    "y": -3007,
+    "height": -80,
+    "label": "Cave aloe item 16 h-80",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 79, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -6274,
+    "y": -3117,
+    "height": -80,
+    "label": "Cave aloe item 17 h-80",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 80, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -6348,
+    "y": -3115,
+    "height": -80,
+    "label": "Cave aloe item 18 h-80",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather aloe in the jungle. Geometry item row 81, identity item19 index 110 Cave aloe. Name LIKELY. One of 18.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2214,
+    "y": 4662,
+    "height": 70,
+    "label": "Ironwood sap item h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: gather ironwood sap. Item row 52, identity 109-Ironwod sap. The other row is (-2123,4647) height 70. Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2123,
+    "y": 4647,
+    "height": 70,
+    "label": "Ironwood sap item 2 h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item row 53, same ironwood identity. Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -1764,
+    "y": 5033,
+    "height": 0,
+    "label": "Wax item h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: wax from the beehives. Item row 50, identity 71-Wax. Name LIKELY. The beehive prop was not separated from this row.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 3015,
+    "y": 4178,
+    "height": -118,
+    "label": "Imp shrine Summon scroll h-118",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Brady printed 153 prose: Imp Shrine with a Summon Scroll. Item row 82, identity 147-SumScrl. Region 3329 center (3016,4098) stores local 5 Imp_shrine. Control 136 sits on this xy. Owner R78 is (3010,4135). Names LIKELY. Kind 12 fire time was not entered.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -3765,
+    "y": 2551,
+    "height": -14,
+    "label": "Kityara orb control 83",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Brady printed 153: find Kityara. Control 83 stores local 23 Kityara_Given_Orb and local 41 kityara_gave_knife. Props 66 and 67 are at (-3518,2606) and (-3745,2560). Has_Kityara regions 892 and 899 are centered near (-3887,2394). The actor definition was not joined. Local names LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 808,
+    "y": 1802,
+    "height": -14,
+    "label": "Kityara orb control 0",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Control 0 also stores Kityara_Given_Orb and kityara_gave_knife. Props 64 and 65 are at (837,1786) and (511,1986). Second site, not named as a second NPC.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 3592,
+    "y": 4145,
+    "height": -15,
+    "label": "Bacatta trigger p552",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Brady printed 153: find Baccata. Prop 552 stores local 51 Trigger_Bacatta and local 37 Bacatta_accompany. Actor 61 definition 1541 is at (3550,4152) and was not named from that definition. Local names LIKELY. The book spells him Baccata.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 61,
+    "y": 4135,
+    "height": 0,
+    "label": "Approach Bacatta p553",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Prop 553 stores local 2 Approach_Baccatta. Actor 65 is at (35,4135). Region 577 center is (362,4348). Local name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -5710,
+    "y": -3937,
+    "height": -100,
+    "label": "Dawn runes actor 63",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Brady printed 153 step 5: Dawn translates the runes. Actor 63 stores local 17 Gave_Dawn_Runes. Owner R72 is (-5761,-4004). Region 2842 center (-5838,-4106) stores local 19 Has_Dawn_been_triggered. Definition 9480 was not named. Local names LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 5683,
+    "y": 4197,
+    "height": -124,
+    "label": "Bane bridge p4648",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Brady printed 153 step 7, seen on the hive map page: cross the Bane River. Prop 4648 stores local 43 Bane_Bridge_destroyed. Owner R76 is (5905,3834). Local name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 1466,
+    "y": -1205,
+    "height": -90,
+    "label": "Quicksand bridge c210",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Brady printed 155 prose sits on the jungle page before the hive map: a beast can collapse the quicksand bridge. Control 210 stores local 50 quicksand_bridge_destroyed. Local name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 1889,
+    "y": 3855,
+    "height": -60,
+    "label": "Lightning crystals shop pile",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: a lightning crystal. Item rows 22 and 23, both at y 3855, x 1889 and 1884, in the same pile as the shop scrolls. Name LIKELY. A separate waterfall crystal was not found.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2046,
+    "y": 4041,
+    "height": -58,
+    "label": "Storm crystal h-58",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153 Storm Crystal. Item row 1. The other is row 68 at (-3834,3888). Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -3834,
+    "y": 3888,
+    "height": -70,
+    "label": "Storm crystal 2 h-70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item row 68, same storm identity. Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2066,
+    "y": 4032,
+    "height": -58,
+    "label": "Ancients stones shop",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 153: stock Ancients stones. Item rows 2 and 3 at (2066,4032) and (2060,4049). Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -3964,
+    "y": 3975,
+    "height": -70,
+    "label": "Ancients stones west",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item rows 69-71 around (-3964,3975). Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2005,
+    "y": 5741,
+    "height": -10,
+    "label": "Ancients stones north",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item rows 83-87 around (-2005,5741). Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -1629,
+    "y": 4932,
+    "height": 70,
+    "label": "Placed dagger h70",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item row 51, identity 10-Th Dagger, near the wax. Brady's dagger is from Kityara. This row was not joined to the knife-grant props. Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  }
+]

@@ -1,1 +1,227 @@
-[]
+[
+  {
+    "x": -4222,
+    "y": 1095,
+    "label": "Brady148-1 outer room sword h50",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 148 point 1. Item row 11 is the fine longsword at (-4222,1095) height 50. Mail shirt row 10 is (-4213,1164). Champion stones rows 8 and 9 are (-4223,1200) and (-4262,1224). Prop 107 Skeleton Sword is at (-3913,944). Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 50
+  },
+  {
+    "x": -3977,
+    "y": 1296,
+    "label": "Brady148-2 Shining Path switch m0",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 148 point 2 and printed 149: the switch lowers the bars. Movable 0 static slot 41 Switch at (-3977,1296), two events. Static name LIKELY. The command body was not re-read.",
+    "grade": "BRADY+DECODED",
+    "height": 65
+  },
+  {
+    "x": -4091,
+    "y": 1337,
+    "label": "Brady148-3 Shining Path bars m56",
+    "color": "blue",
+    "source": "grade BRADY+DECODED. Printed 148 point 3. Movables 56-61 are static slot 55 Bar along x -4091..-4027, y 1337, height -20. The room cstring Shining Path is one of three 30-byte names at file 5882110. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -20
+  },
+  {
+    "x": -3820,
+    "y": 1084,
+    "label": "Brady148-4 Battle Tapestry c81",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 148 point 4. Control 81 static slot 60 Battle Tapestry, region 1176, eight events. Owner R22 is (-3872,1003). Static name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 1
+  },
+  {
+    "x": -2288,
+    "y": 1016,
+    "label": "Brady148-5 Skeleton key c87",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 148 point 5. Control 87 opcode 3 identity item19 index 94 Sk key. Owner R6 is (-2271,1061). Control 78 at (-2104,1085) grants the same identity. Sixteen key-plate controls also do. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 45
+  },
+  {
+    "x": -2048,
+    "y": 1085,
+    "label": "Brady148-6 Museum orb p154",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 148 point 6. Prop 154 template 32 Sphere, 14 events. Owner R5 is (-2073,1133). The switch beside it is movable 79 at (-1948,1017). Template name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 19
+  },
+  {
+    "x": -1749,
+    "y": 1663,
+    "label": "Brady148-7 Great Worm p163",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 148 point 7. Prop 163 template 31 Worm-o, region 1074. Owner R14 is (-1749,1856). Urns 128-130 sit at y 1865. Template name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -75
+  },
+  {
+    "x": -1141,
+    "y": 2207,
+    "label": "Brady148-8 Dragon Heart p216",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 148 point 8. Prop 216 template 27 Dragon Heart, region 395, three events. The dragon gem item row 25 is at (-1154,2185). Owner R13 is (-1217,2072). Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 347,
+    "y": 3423,
+    "label": "Brady148-9 Belial p214",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 148 point 9 and printed 149: touch the corpse and it vanishes. Prop 214 template 29 Belial Corpse, region 978, four events. Owner R12 is (344,3283). Template name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -50
+  },
+  {
+    "x": 981,
+    "y": 2552,
+    "label": "Brady148-10 Thohan sword c181",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 148 point 10. Control 181 is the only opcode 3 of item19 index 11 Tho Broken. That name is the broken sword, not a separate Great Sword cstring. Name LIKELY. Prop 107 Skeleton Sword is in the outer room, not here.",
+    "grade": "BRADY+DECODED",
+    "height": 15
+  },
+  {
+    "x": 2324,
+    "y": 3413,
+    "label": "Brady148-11 Prism sword p280",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 148 point 11. Prop 280 template 21 Prism sword, region 454. It opcode 3s item19 index 7 Prism. Owner R11 is (2323,3394) and R17 is (2325,3340). Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -30
+  },
+  {
+    "x": -729,
+    "y": 1132,
+    "label": "Brady148-13 Long arm p153",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 148 point 13. Prop 153 template 33 Axe. It opcode 3s item19 index 6 Long arm. Owner R18 is (-728,1088). Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 75
+  },
+  {
+    "x": -1305,
+    "y": 722,
+    "label": "Brady148-14 Bezoar p297",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 148 point 14 and printed 149: break off three fire crystals. Prop 297 template 18 Gem, region 866, seven events. Item rows 4-6 are burnt fire crystals at (-1306,724), (-1313,715), and (-1300,716). Template name is Gem, not Bezoar. No Bezoar cstring in the MIX.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": -1433,
+    "y": 432,
+    "label": "Fire-crystal flame ring c117",
+    "color": "red",
+    "source": "grade BRADY+DECODED. Printed 149: charge the crystals in the flames. Controls 117-139 each opcode 3 item19 index 57 Fire crstl. They arc from (-1617,775) through (-981,771) to (-1433,432). Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 32
+  },
+  {
+    "x": 32,
+    "y": 724,
+    "label": "Brady148-15 ivory chip h10",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 148 point 15 and printed 150: two chips. Item row 17, identity item19 index 107 Ivory chip. Urn prop 189 is at (57,753). Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": 232,
+    "y": 1646,
+    "label": "Brady148-15 ivory chip 2 h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item row 18, same ivory-chip identity. Urn prop 195 is at (250,1609). Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 431,
+    "y": 1416,
+    "label": "Brady148-16 Lightning crystal h5",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 148 point 16. Item row 7, identity item19 index 55 Ltng cr. Brick controls 64 and 69-72 and skel-block controls 66-68 sit at x 405-514, y 1284-1401. Owner R9 is (472,1350). Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 5
+  },
+  {
+    "x": 1696,
+    "y": 1367,
+    "label": "Brady148-17 Art gallery c161",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 148 point 17. Control 161 is static slot 23 Thohan Portrait. Controls 159-164 are the portrait row at x 1506-1869, y 1367-1540. Key plates 145-151 share that room. Static names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 35
+  },
+  {
+    "x": 1972,
+    "y": 1457,
+    "label": "Gladstone switch m53",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 150: a switch behind the Gladstone painting if the key is lost. Movable 53 slot 41 Switch is at (1972,1457). Movable 54 slot 28 GladStone is at (1958,1454). Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 65
+  },
+  {
+    "x": 1332,
+    "y": 663,
+    "label": "Brady148-19 Hourglass p226",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 148 points 18 and 19. Prop 226 template 25 hourglass, region 680, 14 events. HourGlassFrame controls 152-155 sit at y 246 and y 610. Local 16 is Bash_Hourglass and local 9 is Pass_the_hourglass. The store was not re-read. Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": -1957,
+    "y": 1470,
+    "label": "Brady148-20 secret passage r1089",
+    "color": "blue",
+    "source": "grade DECODED. Printed 148 point 20. Region 1089 center (-1957,1469.5), floor 0, ceiling 81. Kind 12 group 1332 stores 1 at local 15 Hidden_room. Kind 12 fire time was not entered. Local name LIKELY.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": 3151,
+    "y": 643,
+    "label": "Brady148-21 Dragon blood h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 148 point 21. Item rows 1-3 are Drag Blood at (3151,643), (3135,624), and (3140,636). Dragon Door movable 82 is at (3048,834). Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": 1377,
+    "y": 227,
+    "label": "Coco's Cap item h10",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 150 things to get. Item row 0, identity item19 index 167 Cocos Cap. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 10
+  },
+  {
+    "x": -1399,
+    "y": 1096,
+    "label": "Cave aloe item h-180",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item rows 19 and 20, Cave aloe at (-1399,1096) height -180 and (-1585,1102) height -170. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -180
+  },
+  {
+    "x": -1937,
+    "y": 1168,
+    "label": "Niche scrolls h8070",
+    "color": "green",
+    "source": "grade DECODED. Item rows 12-16 at x -1937..-1870, y 1168, stored height 8070: two Spark scrolls, two Heal scrolls, one Summon scroll. Not a printed-148 point. The height word was not interpreted. Names LIKELY.",
+    "grade": "DECODED",
+    "height": 8070
+  }
+]

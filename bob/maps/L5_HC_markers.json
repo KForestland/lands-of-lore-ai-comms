@@ -1,23 +1,104 @@
 [
- {
-  "x": -2352,
-  "y": 7609,
-  "label": "owner 10-26-06: flute at pit lip (HIVE-FLUTE-SUMMON fixed)",
-  "color": "green",
-  "source": "grok hive_flute_coordinate_card"
- },
- {
-  "x": -1940,
-  "y": 7616,
-  "label": "native flute arming trigger 282 (hall)",
-  "color": "blue",
-  "source": "hive_elevator.json"
- },
- {
-  "x": -2439,
-  "y": 7822,
-  "label": "control 83 (opcode 6, lower storey) \u2014 near owner 10-26-38 lift bridge",
-  "color": "orange",
-  "source": "grok card"
- }
+  {
+    "x": -2352,
+    "y": 7609,
+    "label": "owner 10-26-06: flute at pit lip (HIVE-FLUTE-SUMMON fixed)",
+    "color": "green",
+    "source": "grok hive_flute_coordinate_card"
+  },
+  {
+    "x": -1940,
+    "y": 7616,
+    "label": "native flute arming trigger 282 (hall)",
+    "color": "blue",
+    "source": "hive_elevator.json"
+  },
+  {
+    "x": -2439,
+    "y": 7822,
+    "label": "control 83 (opcode 6, lower storey) \u2014 near owner 10-26-38 lift bridge",
+    "color": "orange",
+    "source": "grok card"
+  },
+  {
+    "x": -1489,
+    "y": 6489,
+    "height": -1674,
+    "label": "Brady154-3 Boulder fall r473",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 154 point 3, chasm with boulders overhead. Region 473 center (-1489,6489), floor -1674, ceiling -1446. It stores local 5 Boulder_Fall. Kind 12 fire time was not entered. Local name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -1119,
+    "y": 6114,
+    "height": -1769,
+    "label": "Brady154-4 Lizard collapse c124",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 154 point 4, lizard tunnel around the chasm. Control 124 stores local 4 Lizard_Collapse. Local name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -642,
+    "y": 6462,
+    "height": -235,
+    "label": "Brady154-2 Executioner travel a36",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 154 point 2, the Executioner's Nest. Actor 36 stores local 6 Exec_Travel. Regions 839 (-915,6994) and 1066 (-554,8143) also store it, floor -235. The actor definition 1281 was not named. Local name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 1527,
+    "y": 7529,
+    "height": -235,
+    "label": "Brady154-9 Reaver c121",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 154 point 9 and printed 155: Reaver of the Great Orc. Control 121 opcode 3 identity item19 index 17 Reaver of GO. Name LIKELY. The cave-in local was not joined.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 437,
+    "y": 5131,
+    "height": -140,
+    "label": "Brady154-10 Amber deposit",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 154 point 10 Amber Cave, and printed 155 Amber. Six item rows of identity 110-Amber sit around x -180..437, y 4762..5302. Other amber rows are at y 8291-8677, at (1661,4375), and three at (-3098,8228). Which cluster is the one cave was not chosen. Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -2640,
+    "y": 7652,
+    "height": -235,
+    "label": "Brady154-6 Elevator level c125",
+    "color": "blue",
+    "source": "grade BRADY+DECODED. Printed 154 point 6, elevator to the Huline Ruins. Control 125 stores local 20 El_Level. The flute markers already at (-2352,7609) and (-2439,7822) are the neighboring lift. Local 29 Elevator_Noise has no opcode 198 store. Local name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -189,
+    "y": 6654,
+    "height": -167,
+    "label": "Brady155 lava spout p278",
+    "color": "red",
+    "source": "grade BRADY+DECODED. Printed 155: smash steam vents in the lava lake. Prop 278 stores local 15 Spout_1. Spout_2 stores are control 115 (-3454,7148) and prop 293 (138,6535). Local names LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -3031,
+    "y": 6108,
+    "height": 0,
+    "label": "Wax runes item h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item row 1, identity 72-Wax runes. Brady printed 153 says the wax impressions come from runes in the Huline Ruins. This row is on the hive. A wax row is also at (-3716,6949). Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -3716,
+    "y": 6949,
+    "height": -951,
+    "label": "Wax item h-951",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Item row 0, identity 71-Wax, and row 2 is another wax at (-3003,6129). Name LIKELY.",
+    "grade": "BRADY+DECODED"
+  }
 ]

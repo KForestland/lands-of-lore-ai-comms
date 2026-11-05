@@ -1,1 +1,83 @@
-[]
+[
+  {
+    "x": 1780,
+    "y": 2946,
+    "label": "Brady84 Vel fruit h435",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 84: click the chain and collect Vel's Fruit. Item rows 6-14 and 16-21 are identity 82-Vels fruit around x 1608..1978, y 2928..3248, heights 435..490. Row 15 at (1700,3048) stores height -8846 and was not treated as a floor. Owner R20 is (1695,2949). Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 435
+  },
+  {
+    "x": 1878,
+    "y": 3621,
+    "label": "Arboretum chain c252 h420",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 84: the chain opens the ceiling, a second click closes it, a third breaks it. Control 252 at (1878,3621), one event. Owner R19 is (1697,3438). The three clicks were not re-read. Movables 52-55 at the fruit are slot 38.",
+    "grade": "BRADY+DECODED",
+    "height": 420
+  },
+  {
+    "x": -2528,
+    "y": 3892,
+    "label": "Bookshelf m59 h85",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Printed 84: a bookshelf past the third stair opens the Arboretum. Movable 59 at (-2528,3892). Controls 965 (-2673,3891) and 968 (-2809,3891) sit with it. Owner R3 is (-2616,3992) and R8 is (-2540,3975). The open command was not re-read.",
+    "grade": "BRADY+DECODED",
+    "height": 85
+  },
+  {
+    "x": -1249,
+    "y": -50,
+    "label": "Explosive crates c451 h750",
+    "color": "red",
+    "source": "grade BRADY+DECODED. Printed 84: crates hold explosives and a spark detonates them. Controls 56 and 445-453 are slot 20 around x -1277..-1208, y -50..393, height 750. Owner R9 is (-1238,549) and R10 is (-1247,227). Slot name was not read.",
+    "grade": "BRADY+DECODED",
+    "height": 750
+  },
+  {
+    "x": 3242,
+    "y": 634,
+    "label": "Rixx actor 57 h530",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Printed 85: Rixx is possessed here and a blind spell frees him, or his plasma staff drops if he dies. Actor 57 definition 2 at (3242,634), 19 events. Owner R22 is (3227,616). A home cstring says Rix Encounter. That cstring was not joined to definition 2. Control 890 is at (3221,568).",
+    "grade": "BRADY+DECODED",
+    "height": 530
+  },
+  {
+    "x": 2128,
+    "y": 1049,
+    "label": "Light crossbow item h420",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 85: the secret room past the crack holds a crossbow and a shield. Item row 1, identity 29-Lt crosbow, at (2128,1049). A second crossbow row is at (-1877,2071). Name LIKELY. The crack prop was not found.",
+    "grade": "BRADY+DECODED",
+    "height": 420
+  },
+  {
+    "x": -2635,
+    "y": 2129,
+    "label": "Guard shield item h85",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 85 shield in that secret room. Item row 0, identity 38-Guard shield. It is not beside the crossbow row. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 85
+  },
+  {
+    "x": -2077,
+    "y": 1682,
+    "label": "Amulet item h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Printed 85: a bookcase hides a magical amulet. Item row 30, identity 85-Colims amult, at (-2077,1682), with the mail shirt and three ancients stones. The y-3891 bookshelf is a different place. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1328,
+    "y": 950,
+    "label": "SS6 scroll item h750",
+    "color": "green",
+    "source": "grade DECODED. Printed 84: the first storeroom has a prism scroll. Item row 4 is identity 139-SS6 at (-1328,950) height 750, beside Gaunt strike row 5 at (-1125,969). SS6 was not renamed to prism scroll. Name LIKELY.",
+    "grade": "DECODED",
+    "height": 750
+  }
+]

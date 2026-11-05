@@ -4,7 +4,7 @@
     "y": 4656,
     "label": "Brady145-3 Waterfall c88 h4",
     "color": "blue",
-    "source": "grade BRADY+DECODED. Brady printed 145 point 3 and printed 146 lines 6320-6324. Control 88 static slot 36 Waterfall, region 1297. Sm Waterfall controls 58, 86, 87 sit at y 4432-4752. The flood command was not re-read.",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 3. Control 88 static slot 36 Waterfall, region 1297. Sm Waterfall controls 58, 86, 87 sit at y 4432-4752. The flood command was not re-read. Static name LIKELY.",
     "grade": "BRADY+DECODED",
     "height": 4
   },
@@ -13,7 +13,7 @@
     "y": 10758,
     "label": "Brady145-4 Push box c0 h-220",
     "color": "darkorange",
-    "source": "grade BRADY+DECODED. Brady printed 145 point 4 and must-step 3 on printed 147. Controls 0 and 1 are static slot 43 Push box at (-442,10758) and (-512,10759), region 1952, height -220. The move command was not re-read.",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 4 and must-step 3. Controls 0 and 1 are static slot 43 Push box at (-442,10758) and (-512,10759), region 1952, height -220. The move command was not re-read. Static name LIKELY.",
     "grade": "BRADY+DECODED",
     "height": -220
   },
@@ -22,16 +22,16 @@
     "y": 12367,
     "label": "Brady145-6 crates c121 h-215",
     "color": "darkorange",
-    "source": "grade BRADY+DECODED. Brady printed 145 point 6. Small crate controls 94 and 95 and Medium Crate controls 96, 97, 112, 121, 122, all height -215 around y 12218-12367. H16: these rows have no events. Mace records sit above them.",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 6. Small crate controls 94 and 95 and Medium Crate controls 96, 97, 112, 121, 122, all height -215 around y 12218-12367. H16: these rows have no events. The climb items sit above them.",
     "grade": "BRADY+DECODED",
     "height": -215
   },
   {
     "x": -292,
     "y": 11145,
-    "label": "Brady147 Box stack c5 h-190",
+    "label": "Brady147 box stack c5 h-190",
     "color": "darkorange",
-    "source": "grade BRADY+DECODED. Brady printed 147: stack boxes in the orc lair to reach the maces. Controls 2-5 are slots 60, 59, 58, 57 (Box4, Box3, Box2, Box) around x -656..-292, y 11017-11145, height -190. The orc actor was not named.",
+    "source": "grade BRADY+DECODED. Controls 2-5 are slots 60, 59, 58, 57 (Box4 through Box) around x -656..-292, y 11017-11145, height -190. Geometry item rows on these pads are the valkyrie crossbow, obsidian chain, Deathstroke, and Thohan enchant, not the orc maces. Static names LIKELY.",
     "grade": "BRADY+DECODED",
     "height": -190
   },
@@ -40,7 +40,7 @@
     "y": 14830,
     "label": "Brady145-7 Immolation c92 h-270",
     "color": "red",
-    "source": "grade BRADY+DECODED. Brady printed 145 point 7 is the fire pit, listed after the crates and before the bridge. Controls 92 and 93 are static slot 40 Immolation cover at (-187,14830) and (-183,14799), height -270. An earlier pair, controls 76 and 77, is at y 7679-7710 and is not this legend step.",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 7. Controls 92 and 93 are static slot 40 Immolation cover at (-187,14830) and (-183,14799), height -270. Controls 76 and 77 at y 7679-7710 are an earlier pair. The giant cockroach was not named.",
     "grade": "BRADY+DECODED",
     "height": -270
   },
@@ -49,7 +49,7 @@
     "y": 16782,
     "label": "Brady145-8 Bridge m56 h-295",
     "color": "green",
-    "source": "grade BRADY+DECODED. Brady printed 145 point 8. Movables 56-61 are static slot 49 Bridge, x about -65, y 16782, 16937, 17092, 17247, 17401, 17554, height -295.",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 8. Movables 56-61 are static slot 49 Bridge, x about -65, y 16782 through 17554, height -295.",
     "grade": "BRADY+DECODED",
     "height": -295
   },
@@ -58,8 +58,251 @@
     "y": 16648,
     "label": "Brady145-9 Port Door m68 h-175",
     "color": "green",
-    "source": "grade BRADY+DECODED. Brady printed 145 point 9 and must-step 4 on printed 147. Movables 68 and 69 are static slot 37 Port Door at (150,16648) and (242,16513). Movables 70, 71, and 73 are static slot 33 Iron Gate at y 16430-16651. Which one opens the chamber was not re-read.",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 9 and must-step 4. Movables 68 and 69 are static slot 37 Port Door. Movables 70, 71, and 73 are static slot 33 Iron Gate. Which command opens the chamber was not re-read.",
     "grade": "BRADY+DECODED",
     "height": -175
+  },
+  {
+    "x": 1452,
+    "y": 12257,
+    "label": "Brady145-5 Old Orc c136 h-216",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Brady printed 145 point 5. Control 136 static slot 20 Orc Die, region 850, height -216. Its groups store local 51 Orc_Conv and local 3 Orc_Dead. Actor 53 definition 2 at (159,12009) is a different object and was not named. Static and local names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -216
+  },
+  {
+    "x": -521,
+    "y": 6093,
+    "label": "Brady147 must-2 First_morph r631",
+    "color": "blue",
+    "source": "grade BRADY+DECODED. Must-step 2. Region 631 center (-521,6093), floor 0, ceiling 128. Kind 12 group 256 stores 1 at local 4 First_morph when predicate 0003040000 (local 4 == 0). Owner R7 is (-550,6084). Kind 12 fire time was not entered. Local name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1225,
+    "y": 6410,
+    "label": "Lizard_Trigger regions 769/772/775",
+    "color": "blue",
+    "source": "grade DECODED. Regions 769, 772, and 775, centers (-1358,6536), (-1103,6261), (-1225,6410), each store local 34 Lizard_Trigger. Predicate 0604310432 was not entered. Slot 39 Lizard Tunnel has no placement. This is the lizard side of must-step 2.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -1051,
+    "y": 5874,
+    "label": "Morph React p533 h0",
+    "color": "blue",
+    "source": "grade DECODED. Prop 533 template 78 Morph React, region 960, beside actor 39. Template name LIKELY. Not the region 631 pad.",
+    "grade": "DECODED",
+    "height": 0
+  },
+  {
+    "x": -441,
+    "y": 4351,
+    "label": "Cave aloe p791 h30",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 Cave Aloe, some at the entrance. Prop 791 template 63 aloe. Opcode 3 identity 0xDE73C93C, item19 index 110 Cave aloe, name LIKELY. Props 792 and 793 are the other two plants.",
+    "grade": "BRADY+DECODED",
+    "height": 30
+  },
+  {
+    "x": -405,
+    "y": 7253,
+    "label": "Cave aloe p792 h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 792 template 63 aloe, region 658. Same opcode 3 identity 0xDE73C93C. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1527,
+    "y": 12643,
+    "label": "Cave aloe p793 h-260",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 793 template 63 aloe. Same opcode 3 identity 0xDE73C93C. Name LIKELY. Prop 343 also grants this identity and is the debug kit, not a plant.",
+    "grade": "BRADY+DECODED",
+    "height": -260
+  },
+  {
+    "x": 1216,
+    "y": 11501,
+    "label": "Orc Door p544 h-195",
+    "color": "darkorange",
+    "source": "grade BRADY+DECODED. Brady printed 146: locked door in the orc lair. Prop 544 template 77 Orc Door, region 799, 10 events. The chain-break command was not isolated. Template name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -195
+  },
+  {
+    "x": 1356,
+    "y": 11738,
+    "label": "Ancients stone p1050 h-215",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 Stone of Ancient Magic, secret chamber in the orc lair. Prop 1050 template 53, region 751. It owns an opcode 3 whose identity is item19 index 68 Ancients stn (0xE0649CBA). Name LIKELY. Other ancients grants are prop 343 and unowned groups.",
+    "grade": "BRADY+DECODED",
+    "height": -215
+  },
+  {
+    "x": 417,
+    "y": 12444,
+    "label": "Orc mace item h-130",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147: maces in the upper chamber after stacking boxes. Geometry item row 17, identity item19 index 1 Br Mace, height -130, above the height -215 crates. A second Br Mace is item row 20 at (471,12480). Names LIKELY. Word +10 was not called a region.",
+    "grade": "BRADY+DECODED",
+    "height": -130
+  },
+  {
+    "x": 421,
+    "y": 12480,
+    "label": "Orc shield item h-130",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 orc shield in that upper chamber. Geometry item row 19, identity item19 index 38 Orc shield, height -130. The broken orc shield is item row 18 at (529,12342), height -215, on the crate floor. Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -130
+  },
+  {
+    "x": 209,
+    "y": 10691,
+    "label": "Mana foil plank c75 h-1000",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 146 and 147: Mana Foil on a plank after the flood. Control 75 static slot 46 Plank. Group 9768 is opcode 3 identity 0xC221EB6B, item19 index 133 Mana foil. Nine other opcode 3s of that identity are unowned and were not placed. Template 93 Mana foil has zero props. Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -1000
+  },
+  {
+    "x": 113,
+    "y": 10489,
+    "label": "Halberd item h-265",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147: halberd in the grotto after the flood. Geometry item row 24, identity item19 index 2 Halberd. The north waterfall control is at y 4656. This row sits by the plank puzzle. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -265
+  },
+  {
+    "x": 308,
+    "y": 10718,
+    "label": "Hand axe item h-275",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 hand axe with the halberd. Geometry item row 25, identity item19 index 3 Hand axe. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -275
+  },
+  {
+    "x": 88,
+    "y": 10740,
+    "label": "Guard shield item h-270",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 shield with the halberd. Geometry item row 23, identity item19 index 37 Guard shield. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -270
+  },
+  {
+    "x": 329,
+    "y": 16631,
+    "label": "Pyra pod item h-235",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147: secret room before the bridge. Geometry item row 6, identity item19 index 132 Pyra pod, height -235. Item row 5 is a Br Mace at the same xy, height -285. Switches are movables 64-67 at x 404. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -235
+  },
+  {
+    "x": 297,
+    "y": 16702,
+    "label": "Guardian orb item h-235",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 Guardian Sphere in that room. Geometry item row 7, identity item19 index 62 Guardian orb. The opcode 3 of this identity is only on debug prop 343. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -235
+  },
+  {
+    "x": 311,
+    "y": 16717,
+    "label": "Light crossbow item h-235",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 Light Crossbow in that room. Geometry item row 8, identity item19 index 28 Lt crosbow. A second row of the same identity is at (186,18223), height 0, near the south exit. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -235
+  },
+  {
+    "x": 158,
+    "y": 16640,
+    "label": "Kenneth Speech p456 h-285",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Brady printed 146: confrontation with Kenneth before the bridge. Prop 456 template 83 Kenneth Speech, region 1148, 13 events. Actors 1 and 2 (definitions 770 and 769) stand beside it and were not named from those definition numbers. Template name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -285
+  },
+  {
+    "x": -288,
+    "y": 15166,
+    "label": "Short sword item h-270",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147: short swords off the guards. Geometry item row 21, identity item19 index 4 Short swd, in the fire pit. Opcode 3s of this identity also sit on actor 54, actor 56, and four props. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -270
+  },
+  {
+    "x": -500,
+    "y": 11580,
+    "label": "Stalagmite grant p144 h-215",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 147 Green Crystal Stalagmites. Props 144, 145, 146, 147, 148, 149, and 641 are template 67 breakoff and each opcode 3 identity item19 index 0 Stalagmite (92534515). The 160 stalagmite-column props are scenery and were not marked. Names LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -215
+  },
+  {
+    "x": -714,
+    "y": 7761,
+    "label": "Stalagmite grant p145 h-10",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 145, template 67, same stalagmite identity. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -10
+  },
+  {
+    "x": -313,
+    "y": 14283,
+    "label": "Stalagmite grant p146 h-265",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 146, template 67, same stalagmite identity. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -265
+  },
+  {
+    "x": -937,
+    "y": 12870,
+    "label": "Stalagmite grant p147 h-265",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 147, template 67, region 1397, same stalagmite identity. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": -265
+  },
+  {
+    "x": -147,
+    "y": 7159,
+    "label": "Stalagmite grant p148 h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 148, template 67, region 658, same stalagmite identity. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1667,
+    "y": 5935,
+    "label": "Stalagmite grant p149 h0",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 149, template 67, region 966, same stalagmite identity. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 0
+  },
+  {
+    "x": -1067,
+    "y": 4601,
+    "label": "Stalagmite grant p641 h32",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Prop 641, template 67, region 1261, same stalagmite identity. Near the north entrance. Name LIKELY.",
+    "grade": "BRADY+DECODED",
+    "height": 32
   }
 ]
