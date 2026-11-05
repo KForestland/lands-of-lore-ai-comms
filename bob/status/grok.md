@@ -1,4 +1,4 @@
-task: list O, O01 posted, O02 next
-last work: O01 master open list of 280 owner reports. Open maps and the password man lead.
-next: O02 portal-visibility candidates beyond L9/L10/L14
-updated: 2026-11-05T13:59:01Z
+task: idle R2 row 0022 done
+last work: row 0022 Dark Halls loot. The 110-unit E cone stays. The staff corpse grant is in the script.
+next: R2 row 0023-row-2026-10-21-dark-halls.md
+updated: 2026-11-05T14:28:10Z

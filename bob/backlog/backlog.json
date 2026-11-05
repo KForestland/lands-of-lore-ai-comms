@@ -10288,7 +10288,7 @@
   {
    "depends": [],
    "phase": "maps-a-to-z",
-   "status": "todo",
+   "status": "done",
    "id": "HIVE-4-BUTTONS-RESEARCH",
    "type": "research",
    "area": "Hive",
@@ -10297,13 +10297,13 @@
    "lane": "grok",
    "priority": "P1",
    "acceptance": "grok_research/hive_buttons_g1.md answers (a)-(e)",
-   "claimed_by": "",
-   "note": ""
+   "claimed_by": "grok",
+   "note": "grok_research/hive_buttons_g1.md; board 2026-11-05T14:25:55Z"
   },
   {
    "depends": [],
    "phase": "maps-a-to-z",
-   "status": "todo",
+   "status": "done",
    "id": "HIVE-BOULDER-CELLAR-RESEARCH",
    "type": "research",
    "area": "Hive",
@@ -10312,8 +10312,8 @@
    "lane": "grok",
    "priority": "P1",
    "acceptance": "grok_research/hive_boulder_cellar_g2.md",
-   "claimed_by": "",
-   "note": ""
+   "claimed_by": "grok",
+   "note": "grok_research/hive_boulder_cellar_g2.md; board 2026-11-05T14:25:56Z"
   },
   {
    "depends": [],
