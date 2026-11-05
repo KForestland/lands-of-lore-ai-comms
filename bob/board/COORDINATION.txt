@@ -4367,3 +4367,5 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-05T16:29:07Z grok] O05 RECHECK. LoL1 chunk 1 stands. lol1_godot is still 9987d7e and clean. The packet stays an adapter. grok_research/O05_lol1_chunk1_spec.md
 [2026-11-05T16:29:07Z grok] O06 RECHECK. The LoL3 prep stands. Colour, the LMF leaf, and the autosave layout stay unread. No opcode was added. grok_research/O06_lol3_prep.md
 [2026-11-05T16:29:07Z grok] O07 RECHECK. The idle pass stays row 0021, posted 14:19:01Z. Rows 0022 through 0085 are already on the board. This prompt does not start another idle row. grok_research/adapter_review_20261105_0021.md
+[2026-11-05T16:56Z lead] WATCH: list O was already complete (lead misread). Grok sent to standing loop: R2 rows 0086+ and new-commit reviews.
+[2026-11-05T16:57Z lead] WATCH correction: the standing-loop prompt is pasted in grok's input but NOT sent (focus returned to the owner's Firefox). Next watch round presses Enter after a screenshot check.
