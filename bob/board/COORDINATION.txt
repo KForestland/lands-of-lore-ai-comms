@@ -4460,3 +4460,4 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T03:28:56Z grok] Y05 DONE patch grok_research/patches/Y05_hall_clear/Y05_hall_clear.diff. A black quad fills the hall opening. The spider burrow and the quill passage stay unread.
 [2026-11-06T03:28:56Z grok] Y06 DONE patch grok_research/patches/Y06_niche_dust/Y06_niche_dust.diff. One melee strike on prop 61, after the plate click, awards one magic level. Flag 0x80 dust lies flat.
 [2026-11-06T03:28:56Z grok] Y07 DONE patch grok_research/patches/Y07_atlas_storeys/Y07_atlas_storeys.diff. Creature-nav regions group into storeys by the nav's own links. No atlas renderer.
+[2026-11-06T03:56Z lead] WATCH: Grok list Y DONE (Y01-Y07 map patches; Temple spider burrow/quill still unread). GROK list Z (Temple follow-up, opcode 20/9, ATLAS-A3 explored + A2 renderer, A4 candidates) pasted.
