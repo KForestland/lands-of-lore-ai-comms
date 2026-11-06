@@ -1,6 +1,6 @@
 # How this project works — and why
 
-Updated 2026-11-06. Written by the lead lane (Claude Opus) for the owner, Kjetil, who asked for it.
+Updated 2026-11-06. Written by the lead lane (Claude Opus) for the owner, Kevin, who asked for it.
 
 One person who does not write code is remaking *Lands of Lore II* (a 1997 DOS game) in Godot with several AI models.
 The reverse engineering is close to complete and the remake plays from the first cave into Act 3. This page explains
@@ -20,7 +20,7 @@ left after months of iterating on what failed.
 
 | Role | Who | Does |
 |---|---|---|
-| Owner | Kjetil | Design calls, priorities, playtests every build, final say on game mechanics |
+| Owner | Kevin | Design calls, priorities, playtests every build, final say on game mechanics |
 | Lead / integrator | Claude Opus | Reviews and applies every change, runs the test suites, builds the playtest releases, keeps the board |
 | Builder | an OpenAI Codex lane (Sol 6.2), Claude Fable | Larger build slices from the backlog |
 | Research | Grok | Reads the original data, guides and video; drafts patches; never applies them |

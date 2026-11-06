@@ -1,6 +1,6 @@
 # Lands of Lore — Master Plan
 
-Owner: Kjetil (KForestland). Updated: 2026-11-05.
+Owner: Kevin (KForestland). Updated: 2026-11-05.
 Fan project, non-commercial. Lands of Lore is © Westwood Studios / Electronic Arts. No original game files are
 distributed: the remakes read the data from the player's own copy of the games.
 
