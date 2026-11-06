@@ -10,6 +10,7 @@ model, chat account, or always-running agent is required.
 
 [MASTER_PLAN.md](MASTER_PLAN.md): vision, order of work, LoL2 status, how we work.
 [COLLABORATION.md](COLLABORATION.md): what we share and where help is welcome.
+[METHOD.md](METHOD.md): how a non-coder and several AI models remake a 1990s game — why it works, and the pitfalls that shaped it.
 
 ## Start here
 

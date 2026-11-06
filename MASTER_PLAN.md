@@ -23,33 +23,42 @@ effort ("if it takes 10 years, we will do it").
 | Step | Game | State |
 |---|---|---|
 | 1 | LoL1 reverse engineering | **Done and published** ([lands-of-lore-1-re](https://github.com/KForestland/lands-of-lore-1-re)) |
-| 2 | LoL2 reverse engineering | Largely done, published ([lands-of-lore-2-re](https://github.com/KForestland/lands-of-lore-2-re)) |
+| 2 | LoL2 reverse engineering | **Almost fully understood** (2026-11-06), published ([lands-of-lore-2-re](https://github.com/KForestland/lands-of-lore-2-re), [November summary](https://github.com/KForestland/lands-of-lore-2-re/blob/main/docs/lol2-understanding-2026-11.md)) |
 | 3 | **LoL2 Classic in Godot** | **In progress, main project** (details below) |
 | 4 | LoL3 Classic | After LoL2 is finished |
 | 5 | LoL1 Enhanced, then the other Enhanced editions | After LoL2 and LoL3 are finished |
 | 6 | 3D characters/items/creatures for the Enhanced editions | Not before 1–2 years from now; LoL1 assets first |
 
-## LoL2 Classic: phases and status (2026-11-05)
+## LoL2 Classic: phases and status (2026-11-06)
 
-Phase order (owner, 2026-11-05): **maps to 100% → quest chains complete (from the guides) → Act 3 story → items → RPG →
-dialog → small fixes**. Sound and combat polish come last. Quality comes before speed; estimates are for orientation.
+Order (owner, 2026-11-06): **maps → the main quest chain complete A to Z → then refine until the full game** (edge
+cases, scene order, puzzle nuance, items, RPG, dialog, sound). Refinement does not start before the chain is complete.
+A passing test is not a cleared area: only the owner's playtest clears one. Quality comes before speed; estimates are
+for orientation.
 
 | Area | Done | Notes |
 |---|---|---|
-| Maps / world | ~90% | All 15 levels built and connected. Open: Huline Temple portal doors and overlapping rooms, texture/clipping reports. Atlas v2 (floor slices, explored-only) planned |
-| Act 1 | ~90% | Playable start to finish; owner confirmed the Bacatta escort, the Confidante route and the cat-lady knife (r14). Next build adds the dragon picture click, Hive flute lift, lever/talk prompts |
-| Act 2 story | ~70% | Story steps 7–65 built and tested in earned runs; owner playtest found quest-chain gaps (village admission → Dracoid quest → serum → Larkhon) being fixed |
-| Act 3 story | ~10% | 3 of 28 steps built (Chamber of Voices → city rises, Ancient City arrival elevator, north-east greenhouse fireball) |
-| Items | ~25% | All 170 original items placed and carriable; effects hosted one by one |
+| Maps / world | ~93% | Every Brady/Prima map point in 14 areas checked against the original data and the longplay: nothing the original shows is missing. "Draw only what can be seen through doorways" (like the original engine) fixed most clipping; owner: Huline Jungle "much better" (r16). Open: the Huline Temple interior (parked for the next builder lane), L8 ladder/tree bridge/platform and Museum crouch/niche in the next build |
+| Act 1 | ~92% | Playable start to finish, certified as one campaign chain. Owner playtests r14/r16 confirmed escort, routes, drowning, voices |
+| Act 2 story | ~75% | Steps 7–65 built and tested; owner r16 playtest found the first Huline Temple scene must trigger by walking in (book), not by a button: fix in the next build |
+| Act 3 story | ~25% | 4 of 28 steps built; all 28 drafted as one save chain from the greenhouse to the final scene, under review and test |
+| Good/evil branches | drafted | All branches drafted with both outcomes, under review |
+| Items | ~25% | All 170 original items placed and carriable; effects hosted one by one; Luther's book (Items/Creatures/Characters/Lore) data generated |
 | Creatures / combat / spells / RPG | ~10% | Act 1 combat works; creature/spell tables collected |
-| NPCs / dialog | ~20% | Act 1 conversations, first Act 2 encounters; speech volume fixed after owner report |
+| NPCs / dialog | ~20% | Act 1 conversations, first Act 2 encounters |
 | Sound / music | ~20% | Act 1 mostly |
 | Polish / Enhanced | ~5% | Plan approved (below) |
 
-Overall LoL2 Classic: **about 55–60%**.
+Overall LoL2 Classic: **about 60%**. Latest playtest build: r16 (2026-11-06).
+
+Other projects:
+- **LoL1 Classic in Godot**: a full draft of the game in nine chunks (save/load, hero select, combat, opening, the keep
+  to the burned nests, the mine, the White Tower and Cimmeria to the ending, sound) exists; ten draft tests pass in the
+  research lane's run. Lead review and owner playtests come after LoL2's chain.
+- **LoL3 Classic**: research done (walkthroughs per guild path, story cards, known bugs and patches, longplay index, a
+  first build plan); texture colour decoding is the main open blocker.
 
 Rough timeline (orientation only; depends on AI usage limits and playtests):
-- Classic maps at 100%: 1–2 weeks.
 - Classic playable A to Z (every story step, start to end): mid-December 2026.
 - Classic with all systems (items, creatures, spells, RPG, dialog, sound): February–March 2027.
 - Enhanced editions (gray box first, then art): after LoL1 and LoL3 Classic, see the order of work above.
@@ -70,10 +79,11 @@ hidden areas so the hint system can be lighter. Rules and tools evolve by iterat
 - The owner makes the design calls and playtests every build; he does not write code.
 - Several AI "lanes" share the work through this repository and a local coordination board:
   - Claude Opus is the lead and integrator.
-  - Astra (OpenAI) builds the story progression (away until ~2026-11-09; the lead builds Act 3 meanwhile).
+  - An OpenAI Codex lane builds the story progression (moving from Astra 6 to Sol 6.2; back ~2026-11-08).
   - Grok researches the original game and the strategy guides.
   - Claude Fable is a second builder.
-  - Kimi runs small verification tasks on a timer.
+  - Kimi runs small verification tasks on a timer: it checks other lanes' claims against the data.
+- **How and why this works, and what went wrong before:** see [METHOD.md](METHOD.md).
 - **Evidence order:** the original game's own data and scripts, then the printed guides (Prima, Brady), then the
   owner's longplay video, then the owner's memory. When a detail is hard to trace, a logged adapter that matches the
   original's visible behaviour is allowed, and every such deviation is recorded in the ledger.
