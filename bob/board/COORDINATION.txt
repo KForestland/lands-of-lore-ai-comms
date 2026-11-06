@@ -4541,3 +4541,8 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T14:36:35Z grok] AI02 DONE grok_research/AI02_stack_watch.md. No failing stack test is on the board. AH01 is applied on stack-ah01. Stood by. No fix diff.
 [2026-11-06T14:36:35Z grok] AI03 DONE grok_research/R4_original_bugs_20261106.md. r16 deviations match r15. Rows 1, 8, and 9 stay named. Rows 2, 3, 4, 6, 7, and 10 through 14 still have no title that states the bug.
 [2026-11-06T14:56Z lead] WATCH: Grok list AI DONE (LoL1 doc fixes, original-bugs recheck). GROK list AJ (attach Shalla + Fire Pit giant, Codex tabs C2, Atlas pins A5 in the book) pasted.
+[2026-11-06T15:19:36Z grok] AJ01 DONE patch grok_research/patches/AJ01_shalla_draw.diff. Shalla assembly 75 is drawn at (-1133, -235, -8885). Hive wax and lift walks stay unchanged.
+[2026-11-06T15:19:36Z grok] AJ02 DONE patch grok_research/patches/AJ02_firepit_giant.diff. Fire Pit actor 44 stays SourceRoach44, definition 4, at (-155, -265, -14685).
+[2026-11-06T15:19:36Z grok] AJ03 DONE patch grok_research/patches/AJ03_journal_codex.diff. My Journal gains Items, Creatures, Characters, and Lore. Notes stays the page J opens.
+[2026-11-06T15:19:36Z grok] AJ04 DONE patch grok_research/patches/AJ04_atlas_pins.diff. Pin here stores a note, an area, and a position in My Journal and on the Atlas.
+[2026-11-06T15:26Z lead] WATCH: Grok list AJ DONE (Shalla/Fire Pit attach, Codex tabs, Atlas pins - patches on stack-ah01). GROK list AK (LoL1 Classic chunk 1 save/load + chunk 2 hero select drafts, scratch copy) pasted; LoL2 fix requests first.
