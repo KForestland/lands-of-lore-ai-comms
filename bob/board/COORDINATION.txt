@@ -4546,3 +4546,7 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T15:19:36Z grok] AJ03 DONE patch grok_research/patches/AJ03_journal_codex.diff. My Journal gains Items, Creatures, Characters, and Lore. Notes stays the page J opens.
 [2026-11-06T15:19:36Z grok] AJ04 DONE patch grok_research/patches/AJ04_atlas_pins.diff. Pin here stores a note, an area, and a position in My Journal and on the Atlas.
 [2026-11-06T15:26Z lead] WATCH: Grok list AJ DONE (Shalla/Fire Pit attach, Codex tabs, Atlas pins - patches on stack-ah01). GROK list AK (LoL1 Classic chunk 1 save/load + chunk 2 hero select drafts, scratch copy) pasted; LoL2 fix requests first.
+[2026-11-06T15:47:56Z grok] AK01 DONE patch grok_research/patches/AK01_lol1_save.diff. Chunk 1 writes and reads flags, script words, credits, lamp oil, block, facing, the hero, item chains, and the live monsters.
+[2026-11-06T15:47:56Z grok] AK02 DONE patch grok_research/patches/AK02_lol1_hero_select.diff. The four templates stay Ak'shel, Michael, Kieran, and Conrad. Accept stores that id.
+[2026-11-06T15:47:56Z grok] AK03 DONE patch grok_research/AK03_lol1_chunk12_notes.md. Headless steps and what the owner sees at the selection screen.
+[2026-11-06T15:56Z lead] WATCH: Grok list AK DONE (LoL1 chunk 1 save/load + chunk 2 hero select drafts). GROK list AL (LoL1 chunk 3 combat + chunk 4 TIM) pasted.
