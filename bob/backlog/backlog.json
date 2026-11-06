@@ -10373,7 +10373,7 @@
    "acceptance": "portal doors move the player to their room; rooms do not draw or collide inside the main temple; owner walk-through",
    "status": "todo",
    "claimed_by": "",
-   "note": ""
+   "note": "Owner 2026-11-06 r16 F10 21-05-00: still clipping; PARK until Sol 6.2 / Fable are back."
   },
   {
    "depends": [],
@@ -10770,6 +10770,51 @@
    "status": "done",
    "claimed_by": "grok",
    "note": "AF01. Expel Curse Here is X01 at Frank's Placenta p242. Chambers, blue pillars, blue orbs, and moving platforms stay open (c). No patch. grok_research/AF01_L19_L20_map_gaps.md"
+  },
+  {
+   "id": "BUG-DROWN-JUMP-RESET",
+   "type": "BUG",
+   "area": "L4_HJ",
+   "title": "Jumping in deep water resets the 15 s drowning clock (owner F10 2026-11-06 21-00-51)",
+   "source": "owner r16 playtest TRIAGE_20261106.md",
+   "lane": "any",
+   "priority": 0,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Clock resets only out of the water region / standing above the surface; jump loop in mid-river still drowns ~15 s; test.",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
+  },
+  {
+   "id": "ACT2-MAP-REVIEW",
+   "type": "MAP",
+   "area": "act2",
+   "title": "Owner 2026-11-06: review the Act 2 maps later (with Sol/Fable); start from the L8 journey report 21-12-26 and the Temple 21-05-00",
+   "source": "owner r16 playtest TRIAGE_20261106.md",
+   "lane": "any",
+   "priority": 1,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Owner-led review pass; findings to TRIAGE.",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
+  },
+  {
+   "id": "L8-TEMPLE-HINT-CLEARER",
+   "type": "UI",
+   "area": "L8_SJ",
+   "title": "l8_see_temple_first note says 'east of the road'; owner did not find the temple (map X 758, Y 2046, far south of the village)",
+   "source": "owner r16 playtest TRIAGE_20261106.md",
+   "lane": "any",
+   "priority": 1,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Note names the direction from the village and the entry; owner finds it.",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }
