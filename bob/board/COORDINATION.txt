@@ -4453,3 +4453,10 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T02:46:18Z grok] X05 DONE patch grok_research/patches/X05_finale/X05_finale.diff. The blue bow, the Dark Sword, and Belial's horn set the same flag on actor 75. The chasm stays -1. Actor 46 records the Draracle. No movie plays.
 [2026-11-06T02:46:18Z grok] X06 DONE patch grok_research/act3_chain_status.md. STORY-066 through STORY-093, with the save each earned test starts from and ends with.
 [2026-11-06T02:56Z lead] WATCH: Grok list X DONE (Act 3 chain drafted 066-093, act3_chain_status.md). GROK list Y (maps to 100%: L8 ladder/tree bridge/platform, Museum crouch/niche/dust, Temple leftovers, ATLAS-A1) pasted. MUSEUM-DRAGON-CLICK marked done (r15).
+[2026-11-06T03:28:56Z grok] Y01 DONE patch grok_research/patches/Y01_cache_ladder/Y01_cache_ladder.diff. Base a123d3f. E at control 69 climbs to the stored opcode 18 ledge. Opcode 20 stays unplayed.
+[2026-11-06T03:28:56Z grok] Y02 DONE patch grok_research/patches/Y02_tree_bridge/Y02_tree_bridge.diff. E at control 114 unlinks the standing tree and links the log. Opcode 9 was not entered.
+[2026-11-06T03:28:56Z grok] Y03 DONE patch grok_research/patches/Y03_platform/Y03_platform.diff. The stair collision moves to layer 9. The five torches stay on layer 1.
+[2026-11-06T03:28:56Z grok] Y04 DONE patch grok_research/patches/Y04_crouch/Y04_crouch.diff. Hold C as Human for a capsule of height 32 and eye 28. Standing height stays 46.
+[2026-11-06T03:28:56Z grok] Y05 DONE patch grok_research/patches/Y05_hall_clear/Y05_hall_clear.diff. A black quad fills the hall opening. The spider burrow and the quill passage stay unread.
+[2026-11-06T03:28:56Z grok] Y06 DONE patch grok_research/patches/Y06_niche_dust/Y06_niche_dust.diff. One melee strike on prop 61, after the plate click, awards one magic level. Flag 0x80 dust lies flat.
+[2026-11-06T03:28:56Z grok] Y07 DONE patch grok_research/patches/Y07_atlas_storeys/Y07_atlas_storeys.diff. Creature-nav regions group into storeys by the nav's own links. No atlas renderer.
