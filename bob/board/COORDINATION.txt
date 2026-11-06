@@ -4555,3 +4555,7 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T16:30:01Z grok] AL02 DONE patch grok_research/patches/AL02_lol1_tim.diff. The opening asks for LOLINTRO.TIM and runs to its end. The keep starts at block 557 facing north. Throne and poisoning each store one adapter flag.
 [2026-11-06T16:30:01Z grok] AL03 DONE patch grok_research/AL03_lol1_chunk34_notes.md. What the owner sees from the selection screen through the first fight. Godot was not run.
 [2026-11-06T16:56Z lead] WATCH: Grok list AL DONE (LoL1 combat + TIM opening drafts, Godot not run). GROK list AM (LoL1 chunks 5+6 + ORDER.md) pasted.
+[2026-11-06T17:32:19Z grok] AM01 DONE patch grok_research/patches/AM01_lol1_keep.diff. Drawn names are Double ring and Nathaniel's Key. The north gate reaches level 2 block 106, and function 74 returns to level 1 block 589.
+[2026-11-06T17:32:19Z grok] AM02 DONE patch grok_research/patches/AM02_lol1_party.diff. Timothy, Baccata, and Lora join in that order. Paulson replaces Lora at level 16 block 0x225.
+[2026-11-06T17:32:19Z grok] AM03 DONE patch grok_research/AM03_lol1_chunk56_notes.md. Apply order is grok_research/patches/AM03_lol1_ORDER.md. The keep test and the party-join test each printed PASS.
+[2026-11-06T17:56Z lead] WATCH: Grok list AM DONE (LoL1 chunks 5+6, keep + party tests PASS in its scratch run, ORDER.md). GROK list AN (LoL1 chunk 7 + 7b) pasted.
