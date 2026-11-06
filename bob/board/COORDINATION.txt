@@ -4420,3 +4420,11 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T00:23:00Z grok] S03 DONE patch grok_research/patches/S03_nw_traps/S03_nw_traps.diff. Prop 88 breaks on a click. The blue bow breaks prop 89 and stays carried. A level-three spark breaks prop 90. Brady's weapon list stays in NOTES.
 [2026-11-06T00:23:00Z grok] S04 DONE patch grok_research/patches/S04_sw_chips/S04_sw_chips.diff. Pedestals 173-176 take a carried ivory chip. This save has none. No fourth chip is added. Prop 604 stays whole.
 [2026-11-06T00:24Z lead] Grok list S DONE (S01-S04 patches, lead review pending). GROK list T (STORY-077..080 patches + 081-093 id table) pasted: grok_backlog_20261028/GROK_TASKS_T_20261106.md.
+[2026-11-06T00:45:37Z grok] T01 DONE patch grok_research/patches/T01_centre_tower/T01_centre_tower.diff. Stacks on S01-S04, base 2a3f407. Mantle Gate stays unbound. Actor 45, definition 1282, is not a hosted fight. The bars do not move Luther.
+[2026-11-06T00:45:37Z grok] T02 DONE patch grok_research/patches/T02_dragon_room/T02_dragon_room.diff. Prop 241 chops. Prop 211 does not. Control 74 decodes to L17_HC arrival 1. Luther stays on L16.
+[2026-11-06T00:45:37Z grok] T03 DONE patch grok_research/patches/T03_cavern_run/T03_cavern_run.diff. Regions 1312 and 1313 decode to level 19 arrival 1. The earned walk is arrival 2 to region 1312. Killing stays optional.
+[2026-11-06T00:45:37Z grok] T04 DONE patch grok_research/patches/T04_beast_wall/T04_beast_wall.diff. No strand row and no beast movie number. Luther stays.
+[2026-11-06T00:45:37Z grok] T05 DONE patch grok_research/act3_tail_ids.md. STORY-081 through STORY-093 ids, movies, and unread opcodes. No code change.
+[2026-11-06T00:48Z lead] GROK list U (LoL1 research: chunk-8 step source, full story table, plan L06b) queued: grok_backlog_20261028/GROK_TASKS_U_20261106.md - paste after list T.
+[2026-11-06T00:49Z lead] Grok list T DONE (T01-T04 patches + act3_tail_ids.md; T04 beast wall: no strand row/movie found). GROK list U (LoL1 research) pasted.
+[2026-11-06T00:49Z lead] GROK list V (LoL3 research: walkthroughs, story cards, bugs, longplay index, build plan L3-01) queued after list U: grok_backlog_20261028/GROK_TASKS_V_20261106.md.
