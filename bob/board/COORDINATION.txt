@@ -4550,3 +4550,7 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T15:47:56Z grok] AK02 DONE patch grok_research/patches/AK02_lol1_hero_select.diff. The four templates stay Ak'shel, Michael, Kieran, and Conrad. Accept stores that id.
 [2026-11-06T15:47:56Z grok] AK03 DONE patch grok_research/AK03_lol1_chunk12_notes.md. Headless steps and what the owner sees at the selection screen.
 [2026-11-06T15:56Z lead] WATCH: Grok list AK DONE (LoL1 chunk 1 save/load + chunk 2 hero select drafts). GROK list AL (LoL1 chunk 3 combat + chunk 4 TIM) pasted.
+[2026-11-06T16:17Z lead] Kimi K22 DONE -> grok_research/kimi_K22.md: WHATS_NEW_r16 claims verify; one overstatement fixed (Act 1 notes = two stuck points). 'Qualified' doubt was a false alarm (qualification record is in AI_COMMS r16_qualification).
+[2026-11-06T16:30:01Z grok] AL01 DONE patch grok_research/patches/AL01_lol1_combat.diff. Modes 0 through 14 follow the original cases. A party hit uses the supplied damage. Large fireballs ask for width 63. Sounds 0 and 255 place the monster and start nothing.
+[2026-11-06T16:30:01Z grok] AL02 DONE patch grok_research/patches/AL02_lol1_tim.diff. The opening asks for LOLINTRO.TIM and runs to its end. The keep starts at block 557 facing north. Throne and poisoning each store one adapter flag.
+[2026-11-06T16:30:01Z grok] AL03 DONE patch grok_research/AL03_lol1_chunk34_notes.md. What the owner sees from the selection screen through the first fight. Godot was not run.
