@@ -92,7 +92,7 @@
     "y": -4296,
     "label": "Telepad c74",
     "color": "deepskyblue",
-    "source": "grade DECODED. Control 74 Telepad (2100,-4296,h15) owns group 42056. The body is 020100001c31. Byte 5 stays unread. Arrival selector 2 is (2107,-4183) region 9603, centroid (2120,-4174), floor 15. Its label stays unbound, so it was not named Belial's Caverns or Hive Caverns.",
+    "source": "grade DECODED. Control 74 Telepad (2100,-4296,h15) owns group 42056. The body is 020100001c31. Travel reads it as level 17 selector 1. Arrival selector 2 is (2107,-4183) region 9603, centroid (2120,-4174), floor 15. Its label stays unbound, so it was not named Belial's Caverns or Hive Caverns.",
     "grade": "DECODED",
     "height": 15
   },
@@ -101,7 +101,7 @@
     "y": -10788,
     "label": "region 9822 level change",
     "color": "orange",
-    "source": "grade DECODED. Region 9822 centroid (-7778,-10788), floor -530, owns group 7268. The body is 020100001c71. Byte 5 stays unread. Arrival selector 3 is (-7820,-10696) region 9824, centroid (-7826,-10695), floor -530. Brady point 10 says Exit to Belial's Caverns. Belial is not the unbound label. This region was not numbered 10.",
+    "source": "grade DECODED. Region 9822 centroid (-7778,-10788), floor -530, owns group 7268. The body is 020100001c71. Travel reads it as level 17 selector 3. Arrival selector 3 is (-7820,-10696) region 9824, centroid (-7826,-10695), floor -530. Brady point 10 says Exit to Belial's Caverns. Belial is not the unbound label. This region was not numbered 10.",
     "grade": "DECODED"
   },
   {
@@ -211,5 +211,41 @@
     "source": "grade DECODED. Controls 119 and 120 are slot 50 Key Object at (15948,-4005,h100) and (10666,-3970,h100). Controls 121 and 122 are (15892,-9211,h100) and (10605,-9187,h100). Name-at-index stays LIKELY.",
     "grade": "DECODED",
     "height": 100
+  },
+  {
+    "x": -3848,
+    "y": 1201,
+    "label": "Arrival elevator plate c78",
+    "color": "orange",
+    "source": "grade HINTBOOK+DECODED. Control 78 Trigger plate (-3848,1201,h1). Host l16_arrival_elevator.gd. Destination native (-3797,-2291). Hintbook 4666-4668 is the elevator ride. Brady printed 123 says an elevator door opens. Elevator Door is not the template name. This plate was not numbered as point 1. Arrival selector 1 stays its own marker.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 1
+  },
+  {
+    "x": 440,
+    "y": -10438,
+    "label": "Dry fountain orb p210",
+    "color": "gold",
+    "source": "grade HINTBOOK+DECODED. Prop 210 template 5 (440,-10438,h85) region 9806. Host l16_dry_fountain.gd. Hintbook 4788-4814 says any attack destroys the ball and nine black lichen clumps grow. Brady printed 124 says freeze the sphere, then shatter it with a sword. Those two procedures stay separate. Prop 602 stays the NE greenhouse Ball O Smoke. Prop 626 stays the marked fountain.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 85
+  },
+  {
+    "x": 2293,
+    "y": 1070,
+    "label": "Hourglass p627",
+    "color": "gold",
+    "source": "grade HINTBOOK+DECODED. Prop 627 (2293,1070,h45). Host l16_greenhouse.gd. The aim point in that host uses Vector3 y 75. Hintbook 4873-4894 and Brady printed 125 both say click the hourglass. The silverleaf plate marker stays control 75.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 45
+  },
+  {
+    "x": 2230,
+    "y": -6116,
+    "label": "Scarab item11",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 11 label Scarab, definition 93, name 91-Scarab, (2230,-6116,h55) region 10332. Name-at-index stays LIKELY. Host act2_world_items.gd. Brady printed 132 says a Jeweled Scarab in the first dragon-orb room on the right. Jeweled was not added to the label. The hintbook city chapter has no Scarab sentence.",
+    "grade": "BRADY+DECODED",
+    "height": 55
   }
 ]

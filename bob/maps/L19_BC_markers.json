@@ -138,6 +138,15 @@
     "height": -125
   },
   {
+    "x": 18,
+    "y": 596,
+    "label": "BELSTAT a32",
+    "color": "orange",
+    "source": "grade DECODED. Actor 32 definition 3 name BELSTAT (18,596,h-10). present is false. The placement_hex in native_scripts matches the population row. Brady's Statue of Belial and Prima's Baccata opening stay off this label.",
+    "grade": "DECODED",
+    "height": -10
+  },
+  {
     "x": 120,
     "y": -525,
     "label": "Ooze pipe p222",

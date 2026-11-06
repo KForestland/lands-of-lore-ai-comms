@@ -127,5 +127,14 @@
     "color": "blue",
     "grade": "BRADY+DECODED",
     "source": "grade BRADY+DECODED. Brady printed 154 point 11. Region 835 centroid (3057, 5813), floor -235, ceiling -215. Body 020100001c84, level 4 selector 4, paired with jungle region 2604. Host hive_route.gd. Test hive_small_route_test.gd."
+  },
+  {
+    "x": -1133,
+    "y": 8885,
+    "height": -235,
+    "label": "Brady154-8 Shalla c75 h-235",
+    "color": "green",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady printed 154 point 8 and printed 75. Static-assembly template 6 name Shalla is control 75 at (-1133, 8885), height -235, flags 0x5402. Actor 20 stays Dawn at (-3063, 6333). Host is the unapplied hive_shalla_state.gd. The cry groups are not run."
   }
 ]

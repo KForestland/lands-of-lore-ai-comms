@@ -94,7 +94,7 @@
     "y": 3617,
     "label": "Caretaker corpse p187",
     "color": "darkorchid",
-    "source": "grade BRADY+HINTBOOK+DECODED. Prop 187 Caretaker's corpse (2403,3617,h-75). Prop 274 is the other (2493,2856,h0). Grinder Mechanism control 77 is (2669,3615,h-69). Blood Trough control 75 is (2785,3615,h-80). Examining Table control 73 is (2150,3906,h-80). Brady says Caretaker. Prima says the Huline priest. Those stay two words. Neither corpse was chosen as the table body. Priest's Room is not a template.",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 187 Caretaker's corpse (2403,3617,h-75). Prop 274 is the other (2493,2856,h0). Grinder Mechanism control 77 is (2669,3615,h-69). Blood Trough control 75 is (2785,3615,h-80). Examining Table control 73 is (2150,3906,h-80). Brady says Caretaker. Prima says the Huline priest. Those stay two words. The priest-body host uses prop 274, now its own pin. This pin stays prop 187. Priest's Room is not a template.",
     "grade": "BRADY+HINTBOOK+DECODED",
     "height": -75
   },
@@ -239,5 +239,165 @@
     "source": "grade DECODED. Movable 77 Oil pit cover (228,1232,h135) and movable 78 (228,976,h135). Oil Puddle and Oil pit have no placement. Brady point 20 says Oil Pool. That name was not joined to the covers. The iron-flute command stays unread.",
     "grade": "DECODED",
     "height": 135
+  },
+  {
+    "x": 2493,
+    "y": 2856,
+    "label": "Caretaker corpse p274",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 274 Caretaker's corpse (2493,2856,h0). Host l14_priest_body.gd carries this prop. Brady says Caretaker. Prima says the Huline priest. Those stay two words. Prop 187 stays the other corpse.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": 2441,
+    "y": 3691,
+    "label": "Bowls p369",
+    "color": "darkorchid",
+    "source": "grade HINTBOOK+DECODED. Prop 369 Bowls (2441,3691). Host l14_priest_ritual.gd puts item 72 on this prop. Prima says a western bowl and an eastern bowl. Those directions were not read from this coordinate.",
+    "grade": "HINTBOOK+DECODED"
+  },
+  {
+    "x": 2375,
+    "y": 3691,
+    "label": "Bowls p370",
+    "color": "darkorchid",
+    "source": "grade HINTBOOK+DECODED. Prop 370 Bowls (2375,3691). Host l14_priest_ritual.gd puts item 68 on this prop. West and east stay unread.",
+    "grade": "HINTBOOK+DECODED"
+  },
+  {
+    "x": 1176,
+    "y": 3307,
+    "label": "Scale Tray p405",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 405 template Scale Tray (1176,3307,h35). Host reach is that plan point. Brady and Prima say bowls of the balance. Bowls stays a different template.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 35
+  },
+  {
+    "x": 1181,
+    "y": 3601,
+    "label": "Scale Tray p406",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 406 template Scale Tray (1181,3601,h35). Host reach is that plan point. The pair host is l14_shard_bowls.gd.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 35
+  },
+  {
+    "x": 3043,
+    "y": 5684,
+    "label": "post shard c71",
+    "color": "gold",
+    "source": "grade BRADY+HINTBOOK+DECODED. act2_items_catalog.gd duplicates item 67 and sets this pickup to (3043,5684,h30). Control 71 is the same plan point at height 0. Item 67 stays (2691,3887,h-70). Host l14_post_shard.gd. Brady and Prima say the healing-pool shard. Cry shard row 4 stays a different point.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 30
+  },
+  {
+    "x": -114,
+    "y": 1516,
+    "label": "Flute Deco m76",
+    "color": "deepskyblue",
+    "source": "grade BRADY+DECODED. Movable 76 Flute Deco (-114,1516,h180). Host l14_flute_slot.gd reaches height 190. The item pin stays row 77. Brady says the recess. No template is named coffin.",
+    "grade": "BRADY+DECODED",
+    "height": 180
+  },
+  {
+    "x": 7620,
+    "y": 2095,
+    "label": "Life Idol p371",
+    "color": "darkorchid",
+    "source": "grade DECODED. Catalog position (7620,2095,h310) for prop 371. Host l14_trials.gd. NOTES also names Goddess of Life0 at this plan point. Item definition 108 is the Jkar idol reward. Those stay three names.",
+    "grade": "DECODED",
+    "height": 310
+  },
+  {
+    "x": -38,
+    "y": -3209,
+    "label": "Justice Scale p372",
+    "color": "darkorchid",
+    "source": "grade DECODED. Prop 372 Justice Scale (-38,-3209,h210). Host l14_trials.gd takes the second trial idol here. Jkar idol stays a different name. Brady point 5 was not numbered onto this prop.",
+    "grade": "DECODED",
+    "height": 210
+  },
+  {
+    "x": -1701,
+    "y": 3170,
+    "label": "prop 384",
+    "color": "darkorchid",
+    "source": "grade DECODED. Catalog position (-1701,3170,h220) for prop 384, group 15378. Host l14_trials.gd takes the third trial idol here. No template string was re-read for this prop. Death God stays an unmatched name.",
+    "grade": "DECODED",
+    "height": 220
+  },
+  {
+    "x": -167,
+    "y": -3367,
+    "label": "110-Amber row 24",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 24 slot 110-Amber (-167,-3367,h190) region 2299. Brady printed 201 says Amber. Ten rows share that slot name.",
+    "grade": "BRADY+DECODED",
+    "height": 190
+  },
+  {
+    "x": 97,
+    "y": -3363,
+    "label": "114-Gorgonite row 34",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 34 slot 114-Gorgonite (97,-3363,h190) region 2299. Brady says Gorgonite Nodules. Those stay two names.",
+    "grade": "BRADY+DECODED",
+    "height": 190
+  },
+  {
+    "x": 2325,
+    "y": 5234,
+    "label": "66-Ancients stn row 2",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 2 slot 66-Ancients stn (2325,5234,h140) region 4188. Brady says Ancient Magic Stones. Those stay two names.",
+    "grade": "BRADY+DECODED",
+    "height": 140
+  },
+  {
+    "x": 1934,
+    "y": 1223,
+    "label": "148-MoDScrl row 20",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 20 slot 148-MoDScrl (1934,1223,h-125) region 3670. Brady says Mists of Doom Spells. Those stay two names.",
+    "grade": "BRADY+DECODED",
+    "height": -125
+  },
+  {
+    "x": 7617,
+    "y": 2013,
+    "label": "146-HlScrl row 50",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 50 slot 146-HlScrl (7617,2013,h290) region 2386. Brady says Healing Spells. Those stay two names.",
+    "grade": "BRADY+DECODED",
+    "height": 290
+  },
+  {
+    "x": 3211,
+    "y": 2681,
+    "label": "103-Cry shard row 4",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 4 slot 103-Cry shard (3211,2681,h-96) region 4073. The dormant cry-shard rows stay on the Invisible Door pin. Brady says Crystal Shards. Those stay two names.",
+    "grade": "BRADY+DECODED",
+    "height": -96
+  },
+  {
+    "x": 3212,
+    "y": 2731,
+    "label": "106-Jkar idol row 5",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 5 slot 106-Jkar idol (3212,2731,h-96) region 4073. The trial props and the Idol Case movables stay other pins. Brady says Jkar Idols.",
+    "grade": "BRADY+DECODED",
+    "height": -96
+  },
+  {
+    "x": 1439,
+    "y": 479,
+    "label": "65a-Storm row 17",
+    "color": "gold",
+    "source": "grade HINTBOOK+DECODED. Item row 17 slot 65a-Storm (1439,479,h-100) region 3727. Prima says storm crystal. Those stay two names. Brady printed 201 does not list this slot.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -100
   }
 ]

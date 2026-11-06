@@ -196,7 +196,7 @@
     "y": 1107,
     "label": "Brain switch p244",
     "color": "darkorchid",
-    "source": "grade DECODED. Ten Brain switch props. Eight at height -1040: 243 (-3944,1008), 244 (-5828,1107), 245 (-4713,1384), 246 (-3380,532), 247 (-3739,-148), 248 (-4283,-874), 249 (-4107,-1108), 250 (-4534,-1767). Also 304 (-5682,2421,h-995) and 362 (-4781,-2981,h-40). Brady Orb Switch and Eyeball Switch are not these names. None was chosen as the elevator brain, the egg-chamber switch, or the switch outside Dawn's cell.",
+    "source": "grade DECODED. Ten Brain switch props. Eight at height -1040: 243 (-3944,1008), 244 (-5828,1107), 245 (-4713,1384), 246 (-3380,532), 247 (-3739,-148), 248 (-4283,-874), 249 (-4107,-1108), 250 (-4534,-1767). Also 304 (-5682,2421,h-995) and 362 (-4781,-2981,h-40). Brady Orb Switch and Eyeball Switch are not these names. The elevator host is prop 362, now its own pin. None of the other nine was chosen as the egg-chamber switch or the switch outside Dawn's cell.",
     "grade": "DECODED",
     "height": -1040
   },
@@ -330,5 +330,95 @@
     "source": "grade DECODED. Controls 101 (-3091,2679,h-1148), 102 (-4839,-2305,h-1045), and 103 (-5482,155,h4) use template 0. The name-table slot is not a clean string. No English name was given.",
     "grade": "DECODED",
     "height": -1148
+  },
+  {
+    "x": -3254,
+    "y": -5330,
+    "label": "Switch p420",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 420 Switch (-3254,-5330,h0). Host l13_egg_door.gd sparks this prop and opens control 106. Brady says Orb Switch. Prima says globe. Those stay three words.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": -2171,
+    "y": -4165,
+    "label": "Green Vent p265",
+    "color": "darkorchid",
+    "source": "grade BRADY+HINTBOOK+DECODED. Prop 265 Green Vent (-2171,-4165,h102). Host l13_eggs.gd strikes this vent. Light prop 364 is (-2170,-4166,h195). Brady says central light vent. Prima says light fixture. Those stay three words.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": 102
+  },
+  {
+    "x": -2493,
+    "y": -4270,
+    "label": "51-Cowards sh row 145",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Dormant row 145 (-2493,-4270,h-70) region 331. Catalog name 51-Cowards sh, definition 50. Host l13_eggs.gd after the drain. Brady says Coward's Shield. Prima names no basin weapon. Those stay separate.",
+    "grade": "BRADY+DECODED",
+    "height": -70
+  },
+  {
+    "x": -2080,
+    "y": -4111,
+    "label": "33-Myriad row 146",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Dormant row 146 (-2080,-4111,h-70) region 323. Catalog name 33-Myriad, definition 32. Brady says Crossbow Myriad. That longer name stays separate.",
+    "grade": "BRADY+DECODED",
+    "height": -70
+  },
+  {
+    "x": -1996,
+    "y": -4405,
+    "label": "20-Bastion row 147",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Dormant row 147 (-1996,-4405,h-70) region 330. Catalog name 20-Bastion, definition 19. Brady says Halberd Bastion. That longer name stays separate.",
+    "grade": "BRADY+DECODED",
+    "height": -70
+  },
+  {
+    "x": -4781,
+    "y": -2981,
+    "label": "Brain switch p362",
+    "color": "darkorchid",
+    "source": "grade BRADY+DECODED. Prop 362 Brain switch (-4781,-2981,h-40). Host l13_elevator.gd sparks this prop. Brady says the brain inside the elevator. Prima says a globe in the elevator. Those stay separate from this template.",
+    "grade": "BRADY+DECODED",
+    "height": -40
+  },
+  {
+    "x": -2431,
+    "y": 2688,
+    "label": "HL1 actor 40",
+    "color": "orange",
+    "source": "grade DECODED. Population actor 40 definition 0 name HL1 (-2431,2688,h-1180). l13_altar.gd gates the pedestal on this actor. Editor HiveLord 1's Home stays (-2440,2334). Brady says Hive Lord. Prima says Belial's spawn. Those stay four words.",
+    "grade": "DECODED",
+    "height": -1180
+  },
+  {
+    "x": -5482,
+    "y": 155,
+    "label": "template 0 c103",
+    "color": "dimgray",
+    "source": "grade DECODED. Control 103 template 0 (-5482,155,h4). Host l13_belial.gd enters at this control. The name-table slot is not a clean string. Web 1 stays controls 84, 107, and 108. Brady's web-like door was not renamed onto this control.",
+    "grade": "DECODED",
+    "height": 4
+  },
+  {
+    "x": -3826,
+    "y": -174,
+    "label": "116-Mandrake row 53",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 53 slot 116-Mandrake (-3826,-174,h-1120) region 311. Brady says Mandrake Root. Those stay two spellings.",
+    "grade": "BRADY+DECODED",
+    "height": -1120
+  },
+  {
+    "x": -5958,
+    "y": 1128,
+    "label": "111-Venom sac row 78",
+    "color": "gold",
+    "source": "grade BRADY+DECODED. Item row 78 slot 111-Venom sac (-5958,1128,h-1120) region 187. Brady says Venom Sacs. Those stay two spellings.",
+    "grade": "BRADY+DECODED",
+    "height": -1120
   }
 ]

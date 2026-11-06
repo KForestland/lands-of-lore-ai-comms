@@ -331,5 +331,14 @@
     "color": "red",
     "grade": "BRADY+DECODED",
     "source": "grade BRADY+DECODED. Brady printed 147: one giant cockroach in a tunnel toward the Fire Pit. Actor 0 is definition 5, source name ROACH, source health 100, at (177, 10282), height -250. Host cave_wild_roach.gd. The host name stays ROACH. Test cave_wild_roach_state_test.gd."
+  },
+  {
+    "x": -155,
+    "y": 14685,
+    "height": -265,
+    "label": "Fire Pit roach a44 def4 h-265",
+    "color": "red",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady PDF page 65 (printed 64) names one sofa-sized cockroach in the pit. PDF page 147 (printed 146) names another Giant Cockroach in the Fire Pit. Actor 44 is definition byte 4, health 10, at (-155, 14685), height -265. Host cave_roach_population.gd. The definition stays 4. Test cave_firepit_roach_state_test.gd in the unapplied AE01 patch."
   }
 ]

@@ -286,5 +286,23 @@
     "source": "grade BRADY+DECODED. Brady printed 177, kill the Lamplight Queen and take her eggs. Item row 21 slot 112-Lamplt eggs. Twelve rows are placed across the level. The queen home is a separate marker.",
     "grade": "BRADY+DECODED",
     "height": 0
+  },
+  {
+    "x": -1791,
+    "y": -1068,
+    "label": "WILD a21",
+    "color": "green",
+    "source": "grade HINTBOOK+DECODED. Actor 21 definition 1 name WILD, present false, (-1791,-1068), height 0. Host l8_clubhouse.gd speaks to actor 21. Prima's clubhouse guard stays that host sentence. Movables 51 and 52 are (-1741,-976) and (-1781,-976). Tuani Hut stays off this marker.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 0
+  },
+  {
+    "x": 5096,
+    "y": -1916,
+    "label": "Brady210 tree c114",
+    "color": "green",
+    "source": "grade BRADY+DECODED. Brady printed 210 step 51, knock over a tree. Control 114 is (5096,-1916), height 0. Control 116 is (5252,-1908), height 0. Prima printed 92 says jump the river. That sentence stays off this control.",
+    "grade": "BRADY+DECODED",
+    "height": 0
   }
 ]
