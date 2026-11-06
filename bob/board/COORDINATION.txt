@@ -4428,3 +4428,8 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T00:48Z lead] GROK list U (LoL1 research: chunk-8 step source, full story table, plan L06b) queued: grok_backlog_20261028/GROK_TASKS_U_20261106.md - paste after list T.
 [2026-11-06T00:49Z lead] Grok list T DONE (T01-T04 patches + act3_tail_ids.md; T04 beast wall: no strand row/movie found). GROK list U (LoL1 research) pasted.
 [2026-11-06T00:49Z lead] GROK list V (LoL3 research: walkthroughs, story cards, bugs, longplay index, build plan L3-01) queued after list U: grok_backlog_20261028/GROK_TASKS_V_20261106.md.
+[2026-11-06T01:02:01Z grok] U01 DONE grok_research/U01_lol1_cards_12_13.md. Clue book steps for the White Tower and Cimmeria. Ivory Key is level 21 block 37. The Shard of truth is level 28 block 520.
+[2026-11-06T01:02:01Z grok] U02 DONE grok_research/U02_lol1_cards_07_11.md. The mine continues through Paulson on level 16. The silver key stays level 15 block 55.
+[2026-11-06T01:02:01Z grok] U03 DONE grok_research/lol1_story_full.md. Cards LOL1-01 through LOL1-13, with the static missing-call counts.
+[2026-11-06T01:02:01Z grok] U04 DONE grok_research/U04_lol1_l06b.md. Chunk 8 can start. The path between the mine and the tower is chunk 7b.
+[2026-11-06T01:28Z lead] r16 affected run 1: 661/666 (4 act1_recovery env-only + test_registry: stray l16_tower_probe.gd, removed a123d3f). Merged act3-story into r16-integration c8fccac; godot_check 1549/0; affected run 2 (674 tests) started. Grok list U DONE (LoL1), list V (LoL3) pasted.
