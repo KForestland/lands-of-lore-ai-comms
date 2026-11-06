@@ -2643,9 +2643,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "Owner-reported Act 1 gap fixed; test at the owner coordinates; F10/playtest confirms.",
-   "status": "todo",
+   "status": "done",
    "claimed_by": "",
-   "note": ""
+   "note": "DONE r15 (act1-missing museum_walkthrough click_dragon)."
   },
   {
    "id": "SOUL-ADDS-L12_CM",
