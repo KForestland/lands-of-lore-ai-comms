@@ -39,7 +39,7 @@ The witch doctor is point 18. Clicking the riddle scroll on him writes one of th
 
 The Computer Show sentence gives the chieftain a brass helmet. M03 says Lands has no brass-helmet item name. That sentence stays. The clue book says the Hurzels stole the ceremonial mask, one Hurzel carries it, and the chieftain trades the Ruby of Truth and the trident Mantis for it. Stealing the ruby and attacking the chieftain are the other two choices, and either one sets the tribe to war.
 
-Ceremonial Mask is type 259. `LEVEL11.INF` function 45 calls `makeItem` on type 259. Ruby of Truth is type 220. Function 132 calls `giveItem` and `makeItem` on type 220. Neither call carries a floor block. Grade LIKELY, because this pass did not walk every branch above those calls. The mask block stays UNKNOWN.
+Ceremonial Mask is type 259. `LEVEL11.INF` function 45 calls `makeItem` on type 259. Ruby of Truth is type 220. Label `L_132` calls `giveItem` and `makeItem` on type 220. Functions 281 and 653 jump to that label. Function 45 calls `createHandItem` on type 220. The `giveItem` later in function 45 pushes type 125. None of the ruby calls carries a floor block. Grade DECODED for those call sites. The mask block stays UNKNOWN.
 
 The same sinkholes are later an elixir step. With an empty vial, swamp water is taken from a frozen hole. Swamp Vial is type 212. That use is after the ruby. It does not change the card's acceptance.
 
@@ -47,7 +47,7 @@ The same sinkholes are later an elixir step. With an empty vial, swamp water is 
 
 Acceptance stays the pyramid key carried, as P06 wrote it from the Computer Show text. That text says Dawn gives empty flasks and the pyramid key after she is shown the ruby and the riddle.
 
-The clue book names four pyramid keys: Dawn's, Geron's, Nathaniel's, and Paulson's. Dawn's Key is type 198. Empty flask is type 211. The constant flask creates this pass found are still the cave ones in `LEVEL8.INI` functions 0 and 1, on blocks 117 and 469. M03 left those separate from Dawn's gift. They stay separate.
+The clue book names four pyramid keys: Dawn's, Geron's, Nathaniel's, and Paulson's. Dawn's Key is type 198. Empty flask is type 211. The constant flask creates this pass found are both in `LEVEL8.INI` function 1, on blocks 117 and 469. Function 0 does not create them. M03 left those separate from Dawn's gift. They stay separate.
 
 No constant `giveItem` of type 198 was found on level 10. The wagon's give block stays UNKNOWN. `LEVEL24.INF` function 846 places type 198 on level 29 block 1021. The clue book says a key handed to Scotia in Yvel Woods is found again on Cimmeria level 3. Grade LIKELY for the placement call. The woods loss and the level 29 block stay unmerged until a branch read joins them.
 
@@ -77,7 +77,7 @@ Clue book order after the skull is in hand:
 
 Silver key is type 173. `LEVEL15.INI` function 1 places it on level 15 block 55, offset 0,128. The marker grades that DECODED. That matches the Computer Show "level 3" sentence and the English name Mines Level 3.
 
-Bloodstone is type 273. `LEVEL16.INI` function 18 calls `makeItem` on it. No block argument. Grade LIKELY. The rock-beast sentence and this call stay unmerged.
+Bloodstone is type 273. `LEVEL16.INI` has functions 0 and 1. Label `L_18`, reached by `jmp` from function 1, calls `makeItem` on type 273 and then `giveItemToMonster`. No block argument. Grade DECODED for that call. The rock-beast sentence and this call stay unmerged.
 
 Vaelan's Cube is type 264. `LEVEL16.INF` function 517 places it on level 16 block 611. The same function calls `addRemoveCharacter(6)`. Id 6 is Paulson. The function tests game flags, including flag 230 and flag 78, before those calls. Grade LIKELY. The level 16 markers on block 611 are other INI items, chain mail type 134 and a great helm type 140 among them. The cube shares the block number with those rows.
 

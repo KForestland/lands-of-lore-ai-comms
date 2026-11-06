@@ -88,9 +88,10 @@ Grade DECODED for the cave names, one Lora call, the sledge, and one riddle-scro
 | Sapphire Eye | 223, shape 48 | type exists; no placement call was concrete |
 | Red key | 170, shape 61 | type exists; no placement call was concrete |
 | Bezel ring | 225, shape 116, type word 1536 | type exists; no placement call was concrete |
-| Riddle Scroll | 241, shape 34 | LEVEL8.INF function 335, `giveItem`, taint 0 |
+| Freeze scroll | 234, shape 34 | LEVEL8.INF function 335, `createLevelItem`, block 368 |
+| Riddle Scroll | 241, shape 34 | type stays 241; function 335 does not place it |
 
-The item name is Sledge, not sledgehammer. Type word 5 is the weapon-slot value in the Vaelan comment in `olol_setItemProperty`. Empty flask, type 211, is created by LEVEL8.INI functions 0 and 1. The walkthrough says Dawn gives the flasks later. Those two sentences stay separate. The elixir-in-a-tower sentence has no script id here.
+The item name is Sledge, not sledgehammer. Type word 5 is the weapon-slot value in the Vaelan comment in `olol_setItemProperty`. Empty flask, type 211, is created by LEVEL8.INI function 1, on blocks 117 and 469. Function 0 does not create it. The walkthrough says Dawn gives the flasks later. Those two sentences stay separate. The elixir-in-a-tower sentence has no script id here.
 
 ## LOL1-07
 
