@@ -104,9 +104,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP01_branch_01_mantle.diff. branch_01_mantle_test PASS. branch_01_mantle_earned_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-02a",
@@ -121,9 +121,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP02_branch_02_statue.diff. nice sets movie. branch_02_statue_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-02b",
@@ -138,9 +138,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP02_branch_02_statue.diff. attacked sets fight_alone. branch_02_statue_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-03",
@@ -155,9 +155,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP03_branch_03_05.diff. brady tempts then tries to kill. prima sets dawn_absent. branch_03_05_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-04",
@@ -172,9 +172,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP03_branch_03_05.diff. brady_clicks 3 offers the ruby. prima_conversation stays uncounted. branch_03_05_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-05",
@@ -189,9 +189,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP03_branch_03_05.diff. ruby, invisibility, and trinity level 5. branch_03_05_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-06a",
@@ -206,9 +206,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP04_branch_06_07.diff. image_gone when the ruby is held. killed stays false. branch_06_07_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-06b",
@@ -223,9 +223,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP04_branch_06_07.diff. meets and not_happy after Belial. branch_06_07_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-07",
@@ -240,9 +240,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP04_branch_06_07.diff. one video sentence. soul_test stays false. branch_06_07_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-08a",
@@ -257,9 +257,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP05_branch_08_village.diff. guild path gives the sword then the king's stones. branch_08_village_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-08b",
@@ -274,9 +274,9 @@
    ],
    "phase": "story",
    "acceptance": "Player does the step in the production scene via the semantic interaction path; inventory/world change persists over save/reload; wrong item / full inventory refused without loss; joins the earned route test; one owner (act2_quest_ownership.json).",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "AP05_branch_08_village.diff. flood path. stones_given stays false. dam_method stays empty. branch_08_village_test PASS. Board 2026-11-06T19:13:24Z."
   },
   {
    "id": "BRANCH-STEPS",
