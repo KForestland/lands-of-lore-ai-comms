@@ -19,3 +19,5 @@ Item rows are the geometry section at file 4704936. Count 31. Offset 239778. Str
 | Storeroom scroll | item row SS6 (−1328, 950). Not renamed to the prism scroll. |
 
 Still open: the candle peepholes, the crack in the wall, the iron door and its explosive shove, the prism-scroll name, and the plasma staff drop. No frame was opened. Map.png was not regenerated.
+
+AC05 close: markers.json is 12 rows. The Gaunt strike row, one Ancients' stone row, and peephole control 237 were added. The gap list is grok_research/AC05_L7_DH_map_mark.md.

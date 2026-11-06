@@ -322,5 +322,41 @@
     "color": "green",
     "source": "grade BRADY+DECODED. Item row 51, identity 10-Th Dagger, near the wax. Brady's dagger is from Kityara. This row was not joined to the knife-grant props. Name LIKELY.",
     "grade": "BRADY+DECODED"
+  },
+  {
+    "x": 2648,
+    "y": 4316,
+    "height": 0,
+    "label": "Beehive p251 h0",
+    "color": "green",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Prop 251 at (2648, 4316), height 0, region 1918. Host jungle_beehives.gd. The wax item at (-1764, 5033) is a different row."
+  },
+  {
+    "x": -1816,
+    "y": 2660,
+    "height": 0,
+    "label": "Beehive p252 h0",
+    "color": "green",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Prop 252 at (-1816, 2660), height 0, region 1640. Host jungle_beehives.gd."
+  },
+  {
+    "x": 862,
+    "y": -2269,
+    "height": 20,
+    "label": "Beehive p253 h20",
+    "color": "green",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Prop 253 at (862, -2269), height 20, region 55. Host jungle_beehives.gd."
+  },
+  {
+    "x": -6491,
+    "y": -4878,
+    "height": -100,
+    "label": "Brady153 SW hive exit r2809",
+    "color": "blue",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Printed 153: the southwestern maze into the Hive. Region 2809 centroid (-6491, -4878), floor -100, inside the southwest corner of the jungle bounds. Opcode 2 body 020100001c25, byte5 37, level 5 selector 1. The maze mesh was not read."
   }
 ]

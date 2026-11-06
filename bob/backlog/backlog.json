@@ -539,9 +539,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "13 markers MAPS/L5_HC/markers.json; Hive Warrior a33 added; entrance, Shalla, and tunnel out unmatched; map.png not regenerated"
   },
   {
    "id": "MAP-MARK-L8_SJ",
@@ -2553,9 +2553,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "35 markers MAPS/L1_DC/markers.json; north exit r1190 added; south exit and cockroach unmatched; map.png not regenerated"
   },
   {
    "id": "MAP-MARK-L20_BB",
@@ -2583,9 +2583,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "25 markers MAPS/L3_DH/markers.json; no rows added; speaking stone unmatched; map.png not regenerated"
   },
   {
    "id": "MAP-MARK-L4_HJ",
@@ -2598,9 +2598,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "40 markers MAPS/L4_HJ/markers.json; beehives 251-253 and r2809 added; speaking stones and waterfall crystal unmatched; map.png not regenerated"
   },
   {
    "id": "MAP-MARK-L7_DH",
@@ -2613,9 +2613,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "12 markers MAPS/L7_DH/markers.json; Gaunt strike, ancients row 27, peephole c237 added; iron door and prism name unmatched; map.png not regenerated"
   },
   {
    "id": "MAP-V2",

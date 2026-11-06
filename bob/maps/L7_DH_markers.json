@@ -79,5 +79,32 @@
     "source": "grade DECODED. Printed 84: the first storeroom has a prism scroll. Item row 4 is identity 139-SS6 at (-1328,950) height 750, beside Gaunt strike row 5 at (-1125,969). SS6 was not renamed to prism scroll. Name LIKELY.",
     "grade": "DECODED",
     "height": 750
+  },
+  {
+    "x": -1125,
+    "y": 969,
+    "height": 750,
+    "label": "Gaunt strike item row 5 h750",
+    "color": "green",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Prima folio 70 names Gauntlets of Might past the steel door. Item row 5 slot 13-Gaunt strike is (-1125, 969), height 750, region 1576, and area_world_items_state.gd hosts it. The two names were not merged."
+  },
+  {
+    "x": -2077,
+    "y": 1672,
+    "height": 0,
+    "label": "Ancients stone item row 27 h0",
+    "color": "green",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Prima folio 70 names Ancients' Stones in the bedroom. Item row 27 slot 66-Ancients stn is (-2077, 1672), height 0, region 1353, beside the amulet. Rows 2 and 3 are the same slot at height 310. Which sentence owns which row was not chosen."
+  },
+  {
+    "x": -1468,
+    "y": 571,
+    "height": 785,
+    "label": "Peephole slides c237 h785",
+    "color": "darkorange",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Brady printed 84: metal slides are peepholes, and one shows candles. Controls 237-251 sit on a ring at height 785. This row is control 237 at (-1468, 571). The candle slide was not singled out."
   }
 ]

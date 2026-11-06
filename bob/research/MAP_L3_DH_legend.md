@@ -34,3 +34,5 @@ Item rows are the geometry section at file 5717016. Count at +0x6C is 26. Offset
 Also marked: Coco's Cap, two cave-aloe rows, the flame ring that grants live fire crystals (controls 117–139), the Gladstone switch, and the five niche scrolls whose stored height is 8070.
 
 Still open: speaking-stone exhibit, kind 12 fire time, the tapestry and shining-path command bodies, and whether Tho Broken is the exhibit sword Brady calls Thohan's Great Sword. No frame was opened. Map.png was not regenerated.
+
+AC02 close: markers.json stays 25 rows. The gap list is grok_research/AC02_L3_DH_map_mark.md.

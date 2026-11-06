@@ -304,5 +304,14 @@
     "source": "grade BRADY+DECODED. Prop 641, template 67, region 1261, same stalagmite identity. Near the north entrance. Name LIKELY.",
     "grade": "BRADY+DECODED",
     "height": 32
+  },
+  {
+    "x": 24,
+    "y": 18318,
+    "height": -295,
+    "label": "Brady147 north exit r1190",
+    "color": "blue",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Must-step 1 leaves north. Region 1190 centroid (24, 18318), floor -295. Opcode 2 body 020100001c23, byte5 35, level 3 selector 1. The same body is on prop 447 and regions 1217-1224. The south-exit death sentence has no separate level change."
   }
 ]

@@ -30,3 +30,5 @@ Item rows are the geometry section at the L1 geometry entry file 7091978. Count 
 Actor 53, definition 2, at (159, 12009) is not the orc. Prop 343 grants a kit (aloe, halberd, guardian orb, pyra pod, light crossbow, ancients stone) and was not marked. Nine mana-foil opcode 3s have no object owner. Template 93 `Mana foil` has no prop.
 
 Still open: the waterfall flood command, the push-box move command, which door command opens the chamber, kind 12 fire time, the orc-door chain command, the giant cockroach's name, and actor definitions 769 and 770. No longplay frame was opened. Placements were read from the JSON and from the geometry item rows. They were not re-matched against a second copy of the MIX.
+
+AC01 close: markers.json is 35 rows. The north exit is region 1190. The gap list is grok_research/AC01_L1_DC_map_mark.md. Map.png was not regenerated.

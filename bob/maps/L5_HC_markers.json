@@ -100,5 +100,14 @@
     "color": "green",
     "source": "grade BRADY+DECODED. Item row 0, identity 71-Wax, and row 2 is another wax at (-3003,6129). Name LIKELY.",
     "grade": "BRADY+DECODED"
+  },
+  {
+    "x": -4796,
+    "y": 6374,
+    "height": -3000,
+    "label": "Brady154-7 Hive Warrior a33",
+    "color": "red",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady printed 155 names the Hive Warrior. Actor 33 at (-4796, 6374), height -3000, region 444. hive_ambush.gd arms actor 33 in region 444 and labels that id Hive Warrior. Actor 35 is the Executioner."
   }
 ]

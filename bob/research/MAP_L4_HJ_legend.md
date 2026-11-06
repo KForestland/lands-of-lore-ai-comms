@@ -25,3 +25,5 @@ Locals are the 41-byte run at file 13153135, 57 names. Slot 5 is `Imp_shrine`, 1
 Home-name cstrings exist for Kityara, Bacatta, Dawn, and the Wild One. Actor definition numbers were not joined to that 26-byte home table.
 
 Still open: speaking stones, the beehive mesh under the wax row, the waterfall lightning crystal, the Wild One, the lizard cave to the hive, and a numbered jungle map. Kind 12 fire time was not entered. No frame was opened. Map.png was not regenerated.
+
+AC03 close: markers.json is 40 rows. Beehive props 251–253 and region 2809 were added. The wax row was not renamed. The gap list is grok_research/AC03_L4_HJ_map_mark.md.

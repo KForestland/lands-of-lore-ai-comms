@@ -4487,3 +4487,10 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T10:50:05Z grok] AB04 DONE patch grok_research/patches/AB04_story_080/AB04_story_080.diff. The blade stays on the cavern save. The beast wall then starts from the blade save. The horn already starts from the beast-wall save.
 [2026-11-06T10:50:05Z grok] AB05 DONE patch grok_research/act3_chain_status.md. The column runs from the chamber save through the finale save. The dry-fountain end save is not an input. The patches stay unapplied.
 [2026-11-06T10:56Z lead] WATCH: Grok list AB DONE (Act 3 one earned chain; act3_chain_status.md updated). GROK list AC (MAP-MARK audit L1/L3/L4/L5/L7 + Codex C1 generator) pasted.
+[2026-11-06T11:19:21Z grok] AC01 DONE grok_research/AC01_L1_DC_map_mark.md. 35 markers. The north exit is region 1190. The south-exit death and the giant cockroach have no host.
+[2026-11-06T11:19:21Z grok] AC02 DONE grok_research/AC02_L3_DH_map_mark.md. 25 markers. The speaking stone has no template-23 prop.
+[2026-11-06T11:19:21Z grok] AC03 DONE grok_research/AC03_L4_HJ_map_mark.md. 40 markers. Beehive props 251-253 and region 2809 were added. Speaking stones and the waterfall crystal have no host.
+[2026-11-06T11:19:21Z grok] AC04 DONE grok_research/AC04_L5_HC_map_mark.md. 13 markers. The Hive Warrior is actor 33. The entrance, Shalla, and the tunnel out have no host.
+[2026-11-06T11:19:21Z grok] AC05 DONE grok_research/AC05_L7_DH_map_mark.md. 12 markers. The Gaunt strike row, one Ancients' stone, and peephole control 237 were added. The iron door and the prism name have no host.
+[2026-11-06T11:19:21Z grok] AC06 DONE patch grok_research/patches/AC06_codex/AC06_codex.diff. The generator writes Items, Creatures, Characters, and Lore. 949 item entries. The patch stays unapplied.
+[2026-11-06T11:26Z lead] WATCH: Grok list AC DONE (map marks L1/L3/L4/L5/L7: 125 markers, gaps listed; Codex generator 949 items). GROK list AD (verify + close those map gaps) pasted.
