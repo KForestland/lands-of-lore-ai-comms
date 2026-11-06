@@ -247,5 +247,14 @@
     "source": "grade BRADY+DECODED. Item row 11 label Scarab, definition 93, name 91-Scarab, (2230,-6116,h55) region 10332. Name-at-index stays LIKELY. Host act2_world_items.gd. Brady printed 132 says a Jeweled Scarab in the first dragon-orb room on the right. Jeweled was not added to the label. The hintbook city chapter has no Scarab sentence.",
     "grade": "BRADY+DECODED",
     "height": 55
+  },
+  {
+    "x": -2546,
+    "y": -12858,
+    "height": -5,
+    "label": "36-Darkbow row24",
+    "color": "gold",
+    "grade": "DECODED",
+    "source": "grade DECODED. Excluded row 24, identity 3582735614, flags 4098, region 3663, native (-2546,-12858), height -5. The catalog name is 36-Darkbow. The book name Dark Bow stays off this label. Prop 392 at (-2201,-12864) stays its own prop."
   }
 ]

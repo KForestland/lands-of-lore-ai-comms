@@ -475,5 +475,14 @@
     "source": "grade BRADY+HINTBOOK+DECODED. Brady printed 183 and printed 210 name a table. Prima printed 115 names two tables. Control 122, template 19, is (2440,9260), height 0. l9_escape.gd hosts this control. Control 121 is the same template at (2433,8630) and has no host. Brady's wooden platform and Prima's wooden grate stay off this control.",
     "grade": "BRADY+HINTBOOK+DECODED",
     "height": 0
+  },
+  {
+    "x": 2804,
+    "y": 10762,
+    "height": 530,
+    "label": "raft c82 h530",
+    "color": "deepskyblue",
+    "grade": "DECODED",
+    "source": "grade DECODED. Control 82, template 123, is (2804,10762), height 530. l9_escape.gd calls it a raft. Brady's wooden platform and Prima's wooden grate stay off this label."
   }
 ]

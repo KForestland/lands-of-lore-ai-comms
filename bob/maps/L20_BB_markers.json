@@ -167,7 +167,7 @@
     "y": 4258,
     "label": "Frank's Placenta p242",
     "color": "orange",
-    "source": "grade DECODED. Prop 242 template 9 Frank's Placenta (-1160,4258,h-20) region 262. The birth cast stays the book. placenta.vqa was not joined to this prop.",
+    "source": "grade DECODED. Prop 242 template 9 Frank's Placenta (-1160,4258,h-20) region 262. X01 records a level-5 cast at this prop. No curse command is stored. Expel Curse stays the spell name. placenta.vqa stays unplayed.",
     "grade": "DECODED",
     "height": -20
   },

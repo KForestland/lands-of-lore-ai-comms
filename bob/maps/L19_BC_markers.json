@@ -124,7 +124,7 @@
     "y": 882,
     "label": "Dawn good p78",
     "color": "gold",
-    "source": "grade DECODED. Prop 78 template 16 Dawn good (2802,882,h-1000) region 1461, floor -1000. Group 1566 stores opcode 3 identity 0xFBF884D7, byte +8 = 0. The grant stays LIKELY. Name-at-index stays LIKELY.",
+    "source": "grade DECODED. Prop 78 template 16 Dawn good (2802,882,h-1000) region 1461, floor -1000. Group 1566 stores opcode 3 identity 4227368151, which is 0xFBF884D7. That identity is definition 69, name 67-Ruby of trth. The grant stays LIKELY. X01 records the offer and does not grant definition 69.",
     "grade": "DECODED",
     "height": -1000
   },

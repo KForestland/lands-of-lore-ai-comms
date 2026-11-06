@@ -367,5 +367,14 @@
     "color": "green",
     "grade": "BRADY+DECODED",
     "source": "grade BRADY+DECODED. Item row 72, name 136-SS3, at (-3811, 3899), height -70, region 2743. Host jungle_river_dam.gd keeps it in the drained-river burrow. Brady printed 153 lists Speaking Stones. The source name stays SS3. Test jungle_river_dam_all_items_test.gd takes the seven burrow rows."
+  },
+  {
+    "x": -1947,
+    "y": 5487,
+    "height": 35,
+    "label": "Water Button c97",
+    "color": "deepskyblue",
+    "grade": "DECODED",
+    "source": "grade DECODED. Control 97 Water Button (-1947,5487,h35). Groups 21102 and 21120 are opcode 198, then opcode 5 on fountain prop 427. The lightning crystal has no item row. Shop rows 22 and 23 stay the shop pile."
   }
 ]

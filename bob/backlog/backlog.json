@@ -10647,9 +10647,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF04. Shard, Dampen, and sigil are name-only. Tuani Hut, scroll, dagger, lizard seal, and War Blade stay open (c). No patch. grok_research/AF04_L9_L8_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L9_DR",
@@ -10662,9 +10662,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF04. Raft control 82 marked. Gorgonite, hotel, and path names stay open (c). No patch. grok_research/AF04_L9_L8_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L12_CM",
@@ -10677,9 +10677,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF03. Dreamstone is the carried L13 id. Ice Seeds stay open (c). No patch. grok_research/AF03_L13_L12_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L13_RC",
@@ -10692,9 +10692,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF03. Maiden switch is the screen button. Second teleporter, Slave Caverns, herb names, and Ru-Loi count stay open (c). No patch. grok_research/AF03_L13_L12_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L14_HT",
@@ -10707,9 +10707,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF05. Bowl, oil covers, and the chalice frame are name-only. Venom Sacs, Death God, Bowl 1, and Bowl 2 stay open (c). No patch. grok_research/AF05_L14_L16_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L16_CA",
@@ -10722,9 +10722,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF05. 36-Darkbow row 24 marked. The yellow figure and the other book objects stay open (c). No patch. grok_research/AF05_L14_L16_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L17_HC",
@@ -10737,9 +10737,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF02. Exit quads are name-only. Hive Mother, columns, valve, and organ stay open (c). No patch. grok_research/AF02_L17_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L19_BC",
@@ -10752,9 +10752,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF01. Ruby is definition 69 on Dawn good p78. Room names stay open (c). No patch. grok_research/AF01_L19_L20_map_gaps.md"
   },
   {
    "id": "MAP-GAP-AE14-L20_BB",
@@ -10767,9 +10767,9 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Every AE14 row for the area is either linked to its in-game record (marker) or hosted with a test / DEVIATIONS adapter.",
-   "status": "claimed",
+   "status": "done",
    "claimed_by": "grok",
-   "note": ""
+   "note": "AF01. Expel Curse Here is X01 at Frank's Placenta p242. Chambers, blue pillars, blue orbs, and moving platforms stay open (c). No patch. grok_research/AF01_L19_L20_map_gaps.md"
   }
  ]
 }
