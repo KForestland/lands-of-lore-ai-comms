@@ -59,6 +59,8 @@ Other projects:
   first build plan); texture colour decoding is the main open blocker.
 
 Rough timeline (orientation only; depends on AI usage limits and playtests):
+- Next playtest build r17: about 1–2 days (L8 ladder/tree bridge/platform, the first Huline Temple scene on walk-in, drowning
+  feedback, Atlas improvements, the first Act 3 chain pieces).
 - Classic playable A to Z (every story step, start to end): mid-December 2026.
 - Classic with all systems (items, creatures, spells, RPG, dialog, sound): February–March 2027.
 - Enhanced editions (gray box first, then art): after LoL1 and LoL3 Classic, see the order of work above.
