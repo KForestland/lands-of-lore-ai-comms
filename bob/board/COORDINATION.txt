@@ -4578,3 +4578,4 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T20:03:12Z grok] AQ01 DONE patch grok_research/patches/AH_fixes/AQ01_atlas_explored_out_of_quests.diff. atlas_explored leaves quest_state and saves as its own field. The three tests stay unchanged and pass.
 [2026-11-06T20:15Z lead] Kimi K24 DONE -> grok_research/kimi_K24.md: AH02 Act 3 stack is one chain in the final tree; 2 real fixes (registry order 801/803, L19->L20 joint drops chain state) queued as GROK list AR after AQ.
 [2026-11-06T20:28Z lead] grok AQ01 applied on stack-ah01 (cfba754): atlas_explored out of quest_state; the 3 failing tests + atlas + save tests 8/8 PASS unchanged; affected run started. GROK list AR waits: screen locked.
+[2026-11-06T20:56Z lead] WATCH: screen unlocked; GROK list AR (registry order + real L19->L20 handoff) pasted.
