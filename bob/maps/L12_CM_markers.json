@@ -442,5 +442,59 @@
     "source": "grade BRADY+DECODED. Control 90 Tar Pool (2620,12731,h-1090). Brady says bubbling pools. The name slot is Tar Pool.",
     "grade": "BRADY+DECODED",
     "height": -1090
+  },
+  {
+    "x": 2013,
+    "y": 11512,
+    "label": "Big ole Ice raft m50 h-1190",
+    "color": "cyan",
+    "source": "grade HINTBOOK+DECODED. Movable 50 template 15 Big ole Ice raft. Host l12_river_rafts.gd owns movables 50, 51, and 55. l12_river_niche_earned_test.gd waits for a source raft. Prima printed 127 says an ice floe. Template 7 ice floe stays movable 58. The two template names stay two names.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -1190
+  },
+  {
+    "x": 4369,
+    "y": 13935,
+    "label": "Big ole Ice raft m51 h-1190",
+    "color": "cyan",
+    "source": "grade HINTBOOK+DECODED. Movable 51 template 15 Big ole Ice raft. Host l12_river_rafts.gd owns movables 50, 51, and 55. Prima printed 127 says an ice floe. Template 7 ice floe stays movable 58. The two template names stay two names.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -1190
+  },
+  {
+    "x": 2007,
+    "y": 15690,
+    "label": "Big ole Ice raft m55 h-1190",
+    "color": "cyan",
+    "source": "grade HINTBOOK+DECODED. Movable 55 template 15 Big ole Ice raft. Host l12_river_rafts.gd owns movables 50, 51, and 55. Prima printed 127 says an ice floe. Template 7 ice floe stays movable 58. The two template names stay two names.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -1190
+  },
+  {
+    "x": -55,
+    "y": 14164,
+    "label": "Tentburn p136 h-1170",
+    "color": "brown",
+    "source": "grade DECODED. Prop 136 template 5 Tentburn. Catalog grade for act2:L12_CM:item5 names prop136 as the Spark reveal adapter. l12_niche_armor_earned_test.gd walks to niche original prop136. Prima printed 127 says a tripod. Tentburn, the adapter phrase, and tripod stay three names.",
+    "grade": "DECODED",
+    "height": -1170
+  },
+  {
+    "x": -59,
+    "y": 14165,
+    "label": "55-Obs chain row5 h-1170",
+    "color": "silver",
+    "source": "grade BRADY+HINTBOOK+DECODED. Excluded item row 5, identity 1902058752, region 3026. Catalog name 55-Obs chain, label Obsidian Chain Mail, id act2:L12_CM:item5. Host l12_niche_armor.gd. Brady printed 191 says Obsidian Chainmail. Prima printed 127 says obsidian chain mail. The spellings stay as cited.",
+    "grade": "BRADY+HINTBOOK+DECODED",
+    "height": -1170
+  },
+  {
+    "x": 4599,
+    "y": 14076,
+    "label": "Kenneth p4 h-590",
+    "color": "darkviolet",
+    "source": "grade HINTBOOK+BRADY+DECODED. Prop 4 template 52 Kenneth. Host l12_citadel.gd BODY is the same native point, height -590. l12_citadel_earned_test.gd searches him. Prima printed 121 says search him for the picture. Brady printed 191 says a picture of Kenneth's girlfriend. The picture and the charm have no source row. Sir Kenneth's Home stays (-377, 8690).",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": -590
   }
 ]

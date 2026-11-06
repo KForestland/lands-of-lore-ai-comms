@@ -4502,3 +4502,18 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T11:41:08Z grok] AD06 DONE grok_research/AD06_map_gaps.md. Eight places were already hosted. Three gaps stay open, with no patch.
 [2026-11-06T11:56Z lead] WATCH: Grok list AD DONE (8/11 already hosted; 3 real gaps -> backlog MAP-GAP-L1-FIREPIT-GIANT, -L4-WATERFALL-CRYSTAL, -L5-SHALLA). MAP-MARK L1/L3/L4/L5/L7 closed. GROK list AE (3 gaps + Act 2/3 map audit) pasted.
 [2026-11-06T12:21Z lead] Kimi K20 DONE -> grok_research/kimi_K20.md: Y01-Y06 each tie to an owner F10; ids verify except L8 controls 69/114 (not decoded in assets; adapter rows). Bamboo-door layer flag was a false alarm (restore() resets it).
+[2026-11-06T12:37:00Z grok] AE01 DONE grok_research/AE01_L1_firepit_giant.md. Actor 44 is the Fire Pit roach, definition 4, health 10. Unapplied test order 862. No second giant.
+[2026-11-06T12:37:00Z grok] AE02 DONE grok_research/AE02_L4_waterfall_crystal.md. The waterfall crystal has no item row. No patch. Shop rows 22 and 23 stay the shop pile.
+[2026-11-06T12:37:00Z grok] AE03 DONE grok_research/AE03_L5_shalla.md. Control 75 is Shalla at native (-1133, 8885), height -235. Actor 20 stays Dawn. Unapplied test order 864.
+[2026-11-06T12:37:00Z grok] AE04 DONE grok_research/AE04_L8_SJ_map_mark.md. L8 markers are 34. Actor 21 stays WILD. Tuani Hut, the shard, the scroll, the dagger, and the lizard seal have no L8 row.
+[2026-11-06T12:37:00Z grok] AE05 DONE grok_research/AE05_L9_DR_map_mark.md. L9 markers are 53. The left bowl is prop 2622. The flood table is control 122. The hotel and Gorgonite have no joined host.
+[2026-11-06T12:37:00Z grok] AE06 DONE grok_research/AE06_L10_DC_map_mark.md. L10 markers are 62. Holy Switch is control 66. Beozar ring stays row 33. No patch.
+[2026-11-06T12:37:00Z grok] AE07 DONE grok_research/AE07_L12_CM_map_mark.md. L12 markers are 56. Ice Seeds have no item row. Obsidian chain mail stays dormant row 5. No patch.
+[2026-11-06T12:37:00Z grok] AE08 DONE grok_research/AE08_L13_RC_map_mark.md. L13 markers are 48. Slave Caverns, the second teleporter, and the citadel herb names have no host. No patch.
+[2026-11-06T12:37:00Z grok] AE09 DONE grok_research/AE09_L14_HT_map_mark.md. L14 markers are 45. The healing-pool shard is the catalog pickup at control 71. Venom Sacs and the chalice have no world row.
+[2026-11-06T12:37:00Z grok] AE10 DONE grok_research/AE10_L16_CA_map_mark.md. L16 markers are 28. The dry fountain orb is prop 210. The yellow figure, the Dark Bow, and the live dragon have no host.
+[2026-11-06T12:37:00Z grok] AE11 DONE grok_research/AE11_L17_HC_map_mark.md. L17 markers are 9. The return platform is movable 50. Hive Mother and the valve have no host. L5 places stay off this map.
+[2026-11-06T12:37:00Z grok] AE12 DONE grok_research/AE12_L19_BC_map_mark.md. L19 markers are 22. BELSTAT is actor 32. Ruby of Truth has no row. Baccata stays off the statue label.
+[2026-11-06T12:37:00Z grok] AE13 DONE grok_research/AE13_L20_BB_map_mark.md. L20 markers stay 24. The first two empowerment chambers and Ruby of Truth have no template. No patch.
+[2026-11-06T12:37:00Z grok] AE14 DONE grok_research/AE14_map_gaps.md. The table covers every audited area. AE01 and AE03 are unapplied. AE02 has no item row.
+[2026-11-06T12:56Z lead] WATCH: Grok list AE DONE (Act 2/3 map audit, AE14 table; AE01 giant + AE03 Shalla patches drafted). Backlog MAP-GAP-AE14-<9 areas> added. GROK list AF (sort AE14 rows name-only/in-draft/really-missing + patch the real ones) pasted.

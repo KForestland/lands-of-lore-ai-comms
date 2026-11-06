@@ -457,5 +457,104 @@
     "source": "grade DECODED. Arrival record selector 0, region 3782. Adjacent labels stay unbound, so this record is not named Savage Jungle or the ruins teleport.",
     "grade": "DECODED",
     "height": 0
+  },
+  {
+    "x": -1316,
+    "y": 2963,
+    "label": "Railing c74 h-90",
+    "color": "saddlebrown",
+    "source": "grade HINTBOOK+BRADY+DECODED. Control 74 template 17 Railing. Host l10_fences.gd owns 74, 75, and 174. Prima printed 99 says one-way low fences. Brady printed 208 says boards. The three names stay three names.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": -90
+  },
+  {
+    "x": -408,
+    "y": 3434,
+    "label": "Railing c75 h-91",
+    "color": "saddlebrown",
+    "source": "grade HINTBOOK+BRADY+DECODED. Control 75 template 17 Railing. Host l10_fences.gd owns 74, 75, and 174. Prima printed 99 says one-way low fences. Brady printed 208 says boards. The three names stay three names.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": -91
+  },
+  {
+    "x": 1589,
+    "y": 2054,
+    "label": "Railing c174 h-120",
+    "color": "saddlebrown",
+    "source": "grade HINTBOOK+BRADY+DECODED. Control 174 template 17 Railing. Host l10_fences.gd owns 74, 75, and 174. l10_fence_earned_test.gd walks this control. Prima printed 99 says one-way low fences. Brady printed 208 says boards. The three names stay three names.",
+    "grade": "HINTBOOK+BRADY+DECODED",
+    "height": -120
+  },
+  {
+    "x": 3207,
+    "y": 2319,
+    "label": "Holy Switch c66 h30",
+    "color": "purple",
+    "source": "grade HINTBOOK+DECODED. Control 66 template 56 Holy Switch. Host l10_emperor_entry.gd owns source_index 66. SLAB_AIM is native (3207, 2321) height 45. Prima printed 103 names the stone slab beside the priest. Brady printed 101 names a switch inside a mausoleum. Control 61 Caretaker's Switch stays on the white-door marker. Holy Switch c66 stays the emperor-entry control.",
+    "grade": "HINTBOOK+DECODED",
+    "height": 30
+  },
+  {
+    "x": -667,
+    "y": 979,
+    "label": "Dragangel c150 h30",
+    "color": "crimson",
+    "source": "grade BRADY+DECODED. Control 150 template 27 Dragangel. native_host_op197_test.gd and l10_progression_test.gd run its kind-6 event, group 19732, opcode 197 arm 10, and local 11 = 1. Brady printed 104 says Death Angel Statue. Prima chapter 9 says an ugly-winged statue. The three names stay three names. Region 42 at (-646, 953) stays the courtyard level-change marker.",
+    "grade": "BRADY+DECODED",
+    "height": 30
+  },
+  {
+    "x": 914,
+    "y": 3989,
+    "label": "Bone Brazier p234 h-150",
+    "color": "chocolate",
+    "source": "grade HINTBOOK+DECODED. Prop 234 template 23 Bone Brazier. Host l10_braziers.gd owns template 23. l10_catacomb_earned_test.gd lights 235 and 234. Prima printed 99 says light the big braziers. Courtyard controls 113 and 114 stay template 42.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -150
+  },
+  {
+    "x": 1650,
+    "y": 3014,
+    "label": "Bone Brazier p235 h-150",
+    "color": "chocolate",
+    "source": "grade HINTBOOK+DECODED. Prop 235 template 23 Bone Brazier. Host l10_braziers.gd owns template 23. l10_catacomb_earned_test.gd lights 235 and 234. Prima printed 99 says light the big braziers. Courtyard controls 113 and 114 stay template 42.",
+    "grade": "HINTBOOK+DECODED",
+    "height": -150
+  },
+  {
+    "x": -410,
+    "y": 3726,
+    "label": "86-Beozar ring row33 h35",
+    "color": "goldenrod",
+    "source": "grade BRADY+DECODED. Item row 33 slot 86-Beozar ring, label Beozar ring, id act2:L10_DC:item33, region 1424. Host act2_world_items.gd places active rows. Brady printed 104 says a Bezoar Ring inside one of the tombs. Brady printed 191 Greater Bezoar's Ring stays the Claw slot 87-G Beozar.",
+    "grade": "BRADY+DECODED",
+    "height": 35
+  },
+  {
+    "x": 2069,
+    "y": 2995,
+    "label": "66-Ancients stn row37 h100",
+    "color": "yellowgreen",
+    "source": "grade DECODED. Item row 37 slot 66-Ancients stn, id act2:L10_DC:item37, region 78. Host act2_world_items.gd places active rows. Rows 38 and 39 share the slot and the region. Brady printed 104 says Ancient Magic Stones in a lizard entrance. That room name stays off region 78. Grade of the room join is LIKELY.",
+    "grade": "DECODED",
+    "height": 100
+  },
+  {
+    "x": 2098,
+    "y": 3011,
+    "label": "66-Ancients stn row38 h100",
+    "color": "yellowgreen",
+    "source": "grade DECODED. Item row 38 slot 66-Ancients stn, id act2:L10_DC:item38, region 78. Host act2_world_items.gd places active rows. Brady printed 104 says Ancient Magic Stones in a lizard entrance. That room name stays off region 78. Grade of the room join is LIKELY.",
+    "grade": "DECODED",
+    "height": 100
+  },
+  {
+    "x": 2061,
+    "y": 3022,
+    "label": "66-Ancients stn row39 h100",
+    "color": "yellowgreen",
+    "source": "grade DECODED. Item row 39 slot 66-Ancients stn, id act2:L10_DC:item39, region 78. Host act2_world_items.gd places active rows. Brady printed 104 says Ancient Magic Stones in a lizard entrance. That room name stays off region 78. Grade of the room join is LIKELY.",
+    "grade": "DECODED",
+    "height": 100
   }
 ]
