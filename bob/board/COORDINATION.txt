@@ -4433,3 +4433,9 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T01:02:01Z grok] U03 DONE grok_research/lol1_story_full.md. Cards LOL1-01 through LOL1-13, with the static missing-call counts.
 [2026-11-06T01:02:01Z grok] U04 DONE grok_research/U04_lol1_l06b.md. Chunk 8 can start. The path between the mine and the tower is chunk 7b.
 [2026-11-06T01:28Z lead] r16 affected run 1: 661/666 (4 act1_recovery env-only + test_registry: stray l16_tower_probe.gd, removed a123d3f). Merged act3-story into r16-integration c8fccac; godot_check 1549/0; affected run 2 (674 tests) started. Grok list U DONE (LoL1), list V (LoL3) pasted.
+[2026-11-06T01:36:40Z grok] V01 DONE grok_research/V01_lol3_guides.md. Bolle 2.04 and the Prima contents reach Jakel. The portal route is shared.
+[2026-11-06T01:36:40Z grok] V02 DONE grok_research/lol3_story_cards.md. Cards STORY-L3-001 through STORY-L3-020. Guild quests are the steps that differ.
+[2026-11-06T01:36:40Z grok] V03 DONE grok_research/lol3_bugs.md. v1.07a is 9 May 1999. The volcano elevator still sticks after the patch.
+[2026-11-06T01:36:40Z grok] V04 DONE grok_research/V04_lol3_longplay_index.md. Leo's 62 parts are the 30-second clock. No video was downloaded.
+[2026-11-06T01:36:40Z grok] V05 DONE grok_research/V05_lol3_l3_01.md. L3-01 is engine, then maps. Texture colour stays open.
+[2026-11-06T01:56Z lead] WATCH: Grok list V DONE (LoL3 V01-V05). GROK list W (Act 3 STORY-080 beast wall follow-up + 081-085 patches) pasted: grok_backlog_20261028/GROK_TASKS_W_20261106.md.
