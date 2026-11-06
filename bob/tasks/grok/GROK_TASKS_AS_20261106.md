@@ -18,3 +18,9 @@ AS02 Drowning feedback (owner idea): water creeping up the screen while the 15 s
 AS03 l8_see_temple_first journal text: say where the temple is (east of the entry on the far side of the map, per the book)
      and that a scene plays there when you arrive.
 "[grok] AS<NN> DONE patch <file>" board line each.
+AS04 Owner r16 F10 21-35-51 Jungle (-4603,-3412) h -8 "texture transparent/gap here": a stream bed shows the jungle backdrop
+     through a gap at mid-height and has no water drawn. F10 21-36-45 Jungle (-3408,-4454) h -38 (Lizard under water) "need
+     water texture there, transparent/gap here": below the surface the sides are open to the backdrop. Find the regions,
+     check their native walls/water (liquid surfaces were propagated for bank-less regions 11-05; side walls under the
+     surface may be missing or culled by portal visibility), compare with the longplay; patch + a capture test (both
+     screenshots are in AI_COMMS/playtest_feedback_20261023/report_2026-11-06T21-3*/screenshot.png).
