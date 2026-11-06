@@ -313,5 +313,23 @@
     "color": "blue",
     "grade": "BRADY+DECODED",
     "source": "grade BRADY+DECODED. Must-step 1 leaves north. Region 1190 centroid (24, 18318), floor -295. Opcode 2 body 020100001c23, byte5 35, level 3 selector 1. The same body is on prop 447 and regions 1217-1224. The south-exit death sentence has no separate level change."
+  },
+  {
+    "x": -1453,
+    "y": 3144,
+    "height": 83,
+    "label": "Brady147 south-exit death c135 h83",
+    "color": "red",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady printed 147: the south exit kills you. Control 135 is the cave-mouth plate at native (-1453, 3144), height 83. Host cave_entrance_death.gd. Opcode 2 sub 0x39 kills the player and opcode 21 plays the form movie. Test cave_entrance_death_test.gd."
+  },
+  {
+    "x": 177,
+    "y": 10282,
+    "height": -250,
+    "label": "Brady147 tunnel roach a0 h-250",
+    "color": "red",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady printed 147: one giant cockroach in a tunnel toward the Fire Pit. Actor 0 is definition 5, source name ROACH, source health 100, at (177, 10282), height -250. Host cave_wild_roach.gd. The host name stays ROACH. Test cave_wild_roach_state_test.gd."
   }
 ]

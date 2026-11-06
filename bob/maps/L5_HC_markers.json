@@ -109,5 +109,23 @@
     "color": "red",
     "grade": "BRADY+DECODED",
     "source": "grade BRADY+DECODED. Brady printed 155 names the Hive Warrior. Actor 33 at (-4796, 6374), height -3000, region 444. hive_ambush.gd arms actor 33 in region 444 and labels that id Hive Warrior. Actor 35 is the Executioner."
+  },
+  {
+    "x": 848,
+    "y": 4447,
+    "height": 24,
+    "label": "Brady154-1 Entrance arrival 1",
+    "color": "blue",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady printed 154 point 1. Hive route arrival 1 is (848, 4447), height 24, from jungle region 2809. The return polygon is region 460, body 020100001c64, level 4 selector 3. Host hive_route.gd. Test hive_route_test.gd."
+  },
+  {
+    "x": 3057,
+    "y": 5813,
+    "height": -235,
+    "label": "Brady154-11 lizard tunnel r835",
+    "color": "blue",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady printed 154 point 11. Region 835 centroid (3057, 5813), floor -235, ceiling -215. Body 020100001c84, level 4 selector 4, paired with jungle region 2604. Host hive_route.gd. Test hive_small_route_test.gd."
   }
 ]

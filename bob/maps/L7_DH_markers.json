@@ -106,5 +106,32 @@
     "color": "darkorange",
     "grade": "HINTBOOK+DECODED",
     "source": "grade HINTBOOK+DECODED. Brady printed 84: metal slides are peepholes, and one shows candles. Controls 237-251 sit on a ring at height 785. This row is control 237 at (-1468, 571). The candle slide was not singled out."
+  },
+  {
+    "x": -1243,
+    "y": 614,
+    "height": 750,
+    "label": "Iron Door c84 h750",
+    "color": "darkorange",
+    "grade": "DECODED",
+    "source": "grade DECODED. Control 84 at (-1243, 614), height 750. H12 reads static slot 40 as Iron Door. The 2026-10-21 Dark Halls deviation leaves that door walk-through. The Spark motion stays unread. SS6 stays its own row."
+  },
+  {
+    "x": -2595,
+    "y": 3634,
+    "height": 85,
+    "label": "Prism scroll c971 h85",
+    "color": "green",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Hintbook 2486 hides the Prism scroll in a bookcase. Control 971 grants 149-Prsmscrl at (-2595, 3634), height 85. Host dark_halls_items.gd. The SS6 row stays 139-SS6."
+  },
+  {
+    "x": -2331,
+    "y": 2393,
+    "height": 55,
+    "label": "Prism scroll c975 h55",
+    "color": "green",
+    "grade": "HINTBOOK+DECODED",
+    "source": "grade HINTBOOK+DECODED. Control 975 grants 149-Prsmscrl twice at (-2331, 2393), height 55. Host dark_halls_items.gd. Which bookcase the hintbook means stays unread. The SS6 row stays 139-SS6."
   }
 ]

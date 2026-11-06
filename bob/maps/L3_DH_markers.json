@@ -223,5 +223,14 @@
     "source": "grade DECODED. Item rows 12-16 at x -1937..-1870, y 1168, stored height 8070: two Spark scrolls, two Heal scrolls, one Summon scroll. Not a printed-148 point. The height word was not interpreted. Names LIKELY.",
     "grade": "DECODED",
     "height": 8070
+  },
+  {
+    "x": 853,
+    "y": 1919,
+    "height": 255,
+    "label": "Brady148-12 Speaking Stone m55 h255",
+    "color": "green",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Brady printed 148 point 12, the Speaking Stone Exhibit. Movable 55, template 40, grants 68-SS1 at (853, 1919), stored height 255. Host museum_key_locks.gd draws the panel at adapter height 40. The source name stays SS1. Test museum_key_locks_live_test.gd."
   }
 ]

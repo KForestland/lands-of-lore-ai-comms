@@ -541,7 +541,7 @@
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
    "status": "done",
    "claimed_by": "grok",
-   "note": "13 markers MAPS/L5_HC/markers.json; Hive Warrior a33 added; entrance, Shalla, and tunnel out unmatched; map.png not regenerated"
+   "note": "grok_research/AC0x_L5_HC_map_mark.md + AD06"
   },
   {
    "id": "MAP-MARK-L8_SJ",
@@ -2555,7 +2555,7 @@
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
    "status": "done",
    "claimed_by": "grok",
-   "note": "35 markers MAPS/L1_DC/markers.json; north exit r1190 added; south exit and cockroach unmatched; map.png not regenerated"
+   "note": "grok_research/AC0x_L1_DC_map_mark.md + AD06"
   },
   {
    "id": "MAP-MARK-L20_BB",
@@ -2585,7 +2585,7 @@
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
    "status": "done",
    "claimed_by": "grok",
-   "note": "25 markers MAPS/L3_DH/markers.json; no rows added; speaking stone unmatched; map.png not regenerated"
+   "note": "grok_research/AC0x_L3_DH_map_mark.md + AD06"
   },
   {
    "id": "MAP-MARK-L4_HJ",
@@ -2600,7 +2600,7 @@
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
    "status": "done",
    "claimed_by": "grok",
-   "note": "40 markers MAPS/L4_HJ/markers.json; beehives 251-253 and r2809 added; speaking stones and waterfall crystal unmatched; map.png not regenerated"
+   "note": "grok_research/AC0x_L4_HJ_map_mark.md + AD06"
   },
   {
    "id": "MAP-MARK-L7_DH",
@@ -2615,7 +2615,7 @@
    "acceptance": "Ordered steps for the area written as STORY tasks (pages, prerequisites, consequences); joins the route graph.",
    "status": "done",
    "claimed_by": "grok",
-   "note": "12 markers MAPS/L7_DH/markers.json; Gaunt strike, ancients row 27, peephole c237 added; iron door and prism name unmatched; map.png not regenerated"
+   "note": "grok_research/AC0x_L7_DH_map_mark.md + AD06"
   },
   {
    "id": "MAP-V2",
@@ -10589,6 +10589,51 @@
    "acceptance": "row 0056 says historical, superseded by 0057",
    "status": "todo",
    "claimed_by": "",
+   "note": ""
+  },
+  {
+   "id": "MAP-GAP-L1-FIREPIT-GIANT",
+   "type": "MAP",
+   "area": "L1_DC",
+   "title": "Cave Fire Pit giant cockroach is not placed (population actor 44 is a normal roach); Brady/Prima place a giant there",
+   "source": "grok AD06_map_gaps.md (2026-11-06)",
+   "lane": "any",
+   "priority": 1,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Hosted from the native record (or a DEVIATIONS adapter matching the longplay) + a test; marker in MAPS/<AREA>/markers.json.",
+   "status": "claimed",
+   "claimed_by": "grok",
+   "note": ""
+  },
+  {
+   "id": "MAP-GAP-L4-WATERFALL-CRYSTAL",
+   "type": "MAP",
+   "area": "L4_HJ",
+   "title": "Huline Jungle waterfall crystal: the pool click is not hosted (shop rows 22/23 stay the shop pile)",
+   "source": "grok AD06_map_gaps.md (2026-11-06)",
+   "lane": "any",
+   "priority": 1,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Hosted from the native record (or a DEVIATIONS adapter matching the longplay) + a test; marker in MAPS/<AREA>/markers.json.",
+   "status": "claimed",
+   "claimed_by": "grok",
+   "note": ""
+  },
+  {
+   "id": "MAP-GAP-L5-SHALLA",
+   "type": "MAP",
+   "area": "L5_HC",
+   "title": "Hive: Shalla has no placement (actor 20 is Dawn); confirm the native record and place her",
+   "source": "grok AD06_map_gaps.md (2026-11-06)",
+   "lane": "any",
+   "priority": 1,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Hosted from the native record (or a DEVIATIONS adapter matching the longplay) + a test; marker in MAPS/<AREA>/markers.json.",
+   "status": "claimed",
+   "claimed_by": "grok",
    "note": ""
   }
  ]

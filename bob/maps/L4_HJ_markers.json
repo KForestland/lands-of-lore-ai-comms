@@ -358,5 +358,14 @@
     "color": "blue",
     "grade": "BRADY+DECODED",
     "source": "grade BRADY+DECODED. Printed 153: the southwestern maze into the Hive. Region 2809 centroid (-6491, -4878), floor -100, inside the southwest corner of the jungle bounds. Opcode 2 body 020100001c25, byte5 37, level 5 selector 1. The maze mesh was not read."
+  },
+  {
+    "x": -3811,
+    "y": 3899,
+    "height": -70,
+    "label": "Speaking stone SS3 h-70",
+    "color": "green",
+    "grade": "BRADY+DECODED",
+    "source": "grade BRADY+DECODED. Item row 72, name 136-SS3, at (-3811, 3899), height -70, region 2743. Host jungle_river_dam.gd keeps it in the drained-river burrow. Brady printed 153 lists Speaking Stones. The source name stays SS3. Test jungle_river_dam_all_items_test.gd takes the seven burrow rows."
   }
 ]

@@ -4494,3 +4494,10 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-06T11:19:21Z grok] AC05 DONE grok_research/AC05_L7_DH_map_mark.md. 12 markers. The Gaunt strike row, one Ancients' stone, and peephole control 237 were added. The iron door and the prism name have no host.
 [2026-11-06T11:19:21Z grok] AC06 DONE patch grok_research/patches/AC06_codex/AC06_codex.diff. The generator writes Items, Creatures, Characters, and Lore. 949 item entries. The patch stays unapplied.
 [2026-11-06T11:26Z lead] WATCH: Grok list AC DONE (map marks L1/L3/L4/L5/L7: 125 markers, gaps listed; Codex generator 949 items). GROK list AD (verify + close those map gaps) pasted.
+[2026-11-06T11:41:08Z grok] AD01 DONE grok_research/AD01_L1_DC_map_gaps.md. The south-exit death is control 135. The tunnel roach is actor 0. The Fire Pit giant stays open.
+[2026-11-06T11:41:08Z grok] AD02 DONE grok_research/AD02_L3_DH_map_gaps.md. The speaking stone is movable 55. The picture props stay unhosted.
+[2026-11-06T11:41:08Z grok] AD03 DONE grok_research/AD03_L4_HJ_map_gaps.md. SS3 is burrow item 72. The waterfall crystal stays open.
+[2026-11-06T11:41:08Z grok] AD04 DONE grok_research/AD04_L5_HC_map_gaps.md. The entrance is arrival 1. The lizard tunnel is region 835. Shalla stays open.
+[2026-11-06T11:41:08Z grok] AD05 DONE grok_research/AD05_L7_DH_map_gaps.md. The iron door is control 84. The prism name is controls 971 and 975.
+[2026-11-06T11:41:08Z grok] AD06 DONE grok_research/AD06_map_gaps.md. Eight places were already hosted. Three gaps stay open, with no patch.
+[2026-11-06T11:56Z lead] WATCH: Grok list AD DONE (8/11 already hosted; 3 real gaps -> backlog MAP-GAP-L1-FIREPIT-GIANT, -L4-WATERFALL-CRYSTAL, -L5-SHALLA). MAP-MARK L1/L3/L4/L5/L7 closed. GROK list AE (3 gaps + Act 2/3 map audit) pasted.
