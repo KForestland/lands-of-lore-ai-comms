@@ -1,6 +1,6 @@
 # AX03 Act joins
 
-Same check as AX01, for the two Act 2 to Act 3 joins and the Act 3 to ending join. Base is live `stack-ah01` `381b841` plus the unapplied AH02 stack and AR01 and AR02. Grades stay separate: HINTBOOK is `reference_hintbook/hintbook.txt`, FRAME is `grok_research/I33_act3_frames.md`, DECODED is `scripts/lol2/act2_travel.json`.
+Same check as AX01, for the two Act 2 to Act 3 joins and the Act 3 to ending join. The runs used a detached `381b841` plus the unapplied AH02 stack and AR01 and AR02. Live `stack-ah01` is `4d3db38` at posting, and that stack still applies there. Grades stay separate: HINTBOOK is `reference_hintbook/hintbook.txt`, FRAME is `grok_research/I33_act3_frames.md`, DECODED is `scripts/lol2/act2_travel.json`.
 
 A walk-past is a step the original starts by entering a place, while the port waits for E, so a player can stroll through and the chain never arms. Click, item, dialog, and spark steps can be skipped by leaving the hotspot. That skip matches the book.
 

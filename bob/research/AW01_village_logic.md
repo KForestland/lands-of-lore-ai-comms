@@ -126,7 +126,8 @@ HINTBOOK 2337–2341: hear a password, then find the door. The diversion is not 
 | DEN-tunnel | hotspot 0 | flag 18 set | clear 18, room TINTTRAN, place the tunnel point | outside |
 | DEN-price | hotspot 0 | flag 18 clear, alert set | movies 554, 556, 557, flag 19, price timer | he wants payment |
 | DEN-pay-price | offer a magic item | flag 19 set, holding a magic item | take the item, clear 19, movies 558 and 560, tunnel | outside |
-| DEN-offer-else | offer a non-magic item, or offer while flag 19 is clear | in TINT | movie 504 or 505, or handled 0 | stay |
+| DEN-offer-else | offer a non-magic item, or an empty hand | in TINT | movie 504, or handled 0 when the item is not magic and the state bit is clear | stay |
+| DEN-offer-magic-early | offer a magic item while flag 19 is clear | in TINT | take the item, movie 505 only | stay; the item is lost |
 | DEN-attack | spell or weapon | flag 27 clear | flag 27, movies 993 and 994, damage −1 | dead |
 | DEN-leave | Back | in TINT | sets the first clear flag among 23, 24, 25, then back to TCEL | visit counter |
 
@@ -148,7 +149,7 @@ The soul writer in `jungle_kelsrick.gd` stores `GV_LUTHERS_SOUL` clamped to 0..1
 
 ## The drunk, LIZ, the gate Bacatta, the cantina
 
-The drunk is control 110 (`jungle_drunk.gd`). The live script is a sight, a reach, a movie, and a voice. No choice function was found. HINTBOOK 2343: talk to him for humor. Alarm local 7 is named `Has_Luther_had_drunken_encounter` and is not written by the drunk script read here.
+The drunk is control 110 (`jungle_drunk.gd`). The live script is a sight, a reach, a movie, and a voice. No choice function was found. HINTBOOK 2343: talk to him for humor. Alarm local 7 is named `Has_Luther_had_drunken_encounter`. The drunk script writes it. `jungle_drunk_state.gd` emits a local-7 effect for an opcode-198 command whose target is local 7, and `jungle_drunk.gd` stores that value on the alarm locals. The drunk source holds 13 of those commands: `c60000000701` on the encounter and `c60000000702` at retirement.
 
 LIZ (`liz_room_responses.gd`): hotspots 1–4 each fire once per visit. The line is one unused entry of 56, 21, 27, 58, 26, 33, 57, 20. A full mask clears the low eight bits. No soul write in `liz_room_source.json`.
 
@@ -186,7 +187,7 @@ Journal note `village_hostile_gate_shut` (den flag 18): Mauri's tunnel is the wa
 | Alarm group 27172 | 206 add | 0 | −2 | `GV_LUTHERS_SOUL` |
 | Kelsrick group 31122 | 206 add | 0 | −1 | `GV_LUTHERS_SOUL` |
 | Kityara kill records (117 and the repeats counted with it) | 206 add | 0 | −1 | `GV_LUTHERS_SOUL`, and shared 25 `GV_KITYARA_DEAD` |
-| Bacatta prop 552 group 3926 | 206 add | 0 | +2 | `GV_LUTHERS_SOUL` |
+| Bacatta region 1921 group 3926 | 206 add | 0 | +2 | `GV_LUTHERS_SOUL` |
 | Bacatta prop 552 group 10816 | 206 add | 0 and 13 | +1 and +1 | soul and `GV_BACATTA_RELATIONSHIP` |
 | Bacatta prop 552 group 11072 | 206 add, then 199 set | 0, 12, 13 | −1, −1, set 0 | soul, `GV_DAWN_RELATIONSHIP`, `GV_BACATTA_RELATIONSHIP` |
 | Bacatta65 record 79 | 206 add | 0 and 13 | −1 and −1 | soul and relationship |

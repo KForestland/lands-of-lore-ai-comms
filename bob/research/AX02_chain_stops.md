@@ -30,7 +30,7 @@ Headless module tests on the detached `381b841` scratch, with AH02, AR01, and AR
 - `l20_pillars_scotia_test`, `l20_armory_test`, `l20_faux_draracle_test`, `l20_finale_test`
 - `act3_journal_hints_test`, `l16_dry_fountain_test`
 
-No player script changed. The diff is `patches/AX_fixes/AX02_ne_tower_view.diff`. It applies on the end of AH02 plus AR01 and AR02.
+No player script changed. The diff is `patches/AX_fixes/AX02_ne_tower_view.diff`. It applies on the end of AH02 plus AR01 and AR02, including on live `4d3db38`. The earned lines below were printed on the detached `381b841` scratch.
 
 Earned runs that printed PASS:
 
