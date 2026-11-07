@@ -9,3 +9,7 @@ Exact: heads 67, 69, 68, 70, imp 31, switches 74-76, door 77, horn definition 22
 Approximate: no circle, fountain, bar, or gutter placement. Those shapes are adapters. BARS, GUTTER, DEMON, PLATE, FOUNTAIN, and STONE stay -1. The Ancients' Stone is not granted here. The horn caption is the book's link, not a decoded flag.
 
 Proof: the heads test must show the token on the circle. The sewer test must show the leaf up and the gutter entered, with three switches saved. The horn test must show the caption and the item still in the pack.
+
+Printed: PASS earned four ghostly heads and the token on the circle
+Printed: PASS earned sewer bars, the gutter, and switches 74, 75, and 76
+Printed: PASS earned Belial's Horn, with Baccata named and no death flag

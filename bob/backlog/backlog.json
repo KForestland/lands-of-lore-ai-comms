@@ -10842,9 +10842,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned greenhouse -> region 6079 -> the lift adapter reaches the upper floor"
   },
   {
    "id": "ACT3-PLAYABLE-SE-ROUTE",
@@ -10857,9 +10857,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned NE tower save -> prop 392 burns, the drain opens, Dark Bow taken, blue bow stays"
   },
   {
    "id": "ACT3-PLAYABLE-SW-FIELD",
@@ -10872,9 +10872,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned NW trap save -> empty pedestals hide the field, four chips show it, pyramid stays whole"
   },
   {
    "id": "ACT3-PLAYABLE-CENTRE",
@@ -10887,9 +10887,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned SW pedestal save -> actor 45 falls, the Mantle Gate opens, and Luther stays"
   },
   {
    "id": "ACT3-PLAYABLE-L17-MOVIE",
@@ -10902,9 +10902,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned west-wall blade shows the hw01.vqa card and Luther stays"
   },
   {
    "id": "ACT3-PLAYABLE-BEAST-WALL",
@@ -10917,9 +10917,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned blade save -> region 1312 -> L19 arrival 1, Luther steps through the strands"
   },
   {
    "id": "ACT3-PLAYABLE-HORN",
@@ -10932,9 +10932,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned Belial's Horn, with Baccata named and no death flag"
   },
   {
    "id": "ACT3-PLAYABLE-SEWER-FORMS",
@@ -10947,9 +10947,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned sewer bars, the gutter, and switches 74, 75, and 76"
   },
   {
    "id": "ACT3-PLAYABLE-HEADS",
@@ -10962,9 +10962,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned four ghostly heads and the token on the circle"
   },
   {
    "id": "ACT3-PLAYABLE-MOTHER",
@@ -10977,9 +10977,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned Dawn's ruby, the birth card, and the demons. Mother lives."
   },
   {
    "id": "ACT3-PLAYABLE-PILLARS",
@@ -10992,9 +10992,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned fire pillars, Scotia falls, and the path opens"
   },
   {
    "id": "ACT3-PLAYABLE-ARMORY",
@@ -11007,9 +11007,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned westernmost block breaks the sources and stops the pillars"
   },
   {
    "id": "ACT3-PLAYABLE-FAUX-DRARACLE",
@@ -11022,9 +11022,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned actor 46 falls, keys 0, 1, and 2, and the door leaf rises"
   },
   {
    "id": "ACT3-PLAYABLE-ENDING",
@@ -11037,9 +11037,9 @@
    "depends": [],
    "phase": "story",
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
-   "note": ""
+   "status": "done",
+   "claimed_by": "grok",
+   "note": "PASS earned final fight, the chasm, and the game is finished"
   }
  ]
 }

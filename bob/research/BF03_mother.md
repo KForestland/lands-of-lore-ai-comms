@@ -11,3 +11,5 @@ Exact: definition 69, identity 4227368151, handler 101, level 5, prop 242, actor
 Approximate: placenta.vqa is not in the movie table. The card says Belial's birth and does not claim the file played. The demon wave and the door are adapters. DEMONS and DOOR stay -1. Luther is not moved. The seven-key save is unchanged. demons_killed is legal only after the glob, so the pillars test can still read glob_entered.
 
 Proof: the earned test must show the ruby in the pack, the birth card, the living mother, and the demons down.
+
+Printed: PASS earned Dawn's ruby, the birth card, and the demons

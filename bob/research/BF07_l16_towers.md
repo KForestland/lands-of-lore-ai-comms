@@ -9,3 +9,8 @@ Exact: doors 92-94, arrival words (16082, 100, 3886), prop 392, doors 80/81/98, 
 Approximate: the NE rise contradicts that decode and is logged as an adapter. The drain mouth, the force field, the gargoyle, the ice fountain, the ceiling, the foe, and the Mantle Gate leaf have no placements. foe_down is an optional fourth key so a size-3 save still loads. The dragon room is not edited. It already calls use_exit on this base.
 
 Proof: each earned test must show its visible result. The centre save must still carry at_bars and seen_actor for the dragon test. The SE burn flag must still be true for the NW chain. The SW save must still have empty pedestals.
+
+Printed: PASS earned greenhouse -> region 6079 -> the lift adapter reaches the upper floor
+Printed: PASS earned NE tower save -> prop 392 burns, the drain opens, Dark Bow taken, blue bow stays
+Printed: PASS earned NW trap save -> empty pedestals hide the field, four chips show it, pyramid stays whole
+Printed: PASS earned SW pedestal save -> actor 45 falls, the Mantle Gate opens, and Luther stays

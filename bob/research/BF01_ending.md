@@ -13,3 +13,5 @@ Approximate: e224e.vqa is not in movie_table.json and there is no ogv. The card 
 Cheapest patch: one blow, then one flag per frame. moves_player stays false. The stage label is what the earned test reads.
 
 Proof: the earned finale test must print the finished line before this beat is marked done.
+
+Printed: PASS earned final fight, the chasm, and the game is finished

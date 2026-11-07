@@ -9,3 +9,6 @@ Exact: the stored name is hw01.vqa at file offset 652134. It is the nearest of t
 Approximate: the strand, the frond, and both cards are adapters. The step is to (84, 22, 80), which is not a decoded arrival. The L17 cut does not relocate Luther. The cavern save still needs exit region 1312, and the blade save still needs cut.
 
 Proof: the beast-wall earned test must show Luther at the step with both meshes visible. The blade earned test must show the card and Luther still on the west edge.
+
+Printed: PASS earned west-wall blade shows the hw01.vqa card and Luther stays
+Printed: PASS earned blade save -> region 1312 -> L19 arrival 1, Luther steps through the strands
