@@ -32,7 +32,7 @@ The lead window says the city is about g_00296..g_00344 and the finale is g_0034
 | 089 | L20 | none | no moving pillars | the stairs were not on screen |
 | 090 | L20 | g_00385 | a yellow burst in a rock passage | not bound to the armory trio |
 | 091 | L20 | none | no door being forced | the faux-Draracle was not named by the picture |
-| 092 | L20 | g_00389, g_00390 at 304:10 | the horned figure in fire, then a dark figure over a patterned floor | no chasm and no slump |
+| 092 | L20 | g_00389 at 303:40, g_00390 at 304:10 | the horned figure in fire, then a dark figure over a patterned floor | no chasm and no slump |
 | 093 | L20 | none | the last frames are the fire | Dawn with Luther, and a vanishing figure, were not on screen |
 
 Other opened frames that stay unbound: g_00297 inventory, g_00298 a robed figure, g_00300 a dark cross on a ledge, g_00306 a patterned passage, g_00310 a room with blue water, g_00312 stairs and double doors, g_00316 the outdoor towers, g_00320 and g_00329 three yellow panels, g_00326 horned-face doors, g_00327 a giant red face over a void walkway, g_00348 a stone room with a horned banner.
