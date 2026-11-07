@@ -7,7 +7,7 @@ existing earned test so it proves the VISIBLE result (movie played, actor killed
 Rules: typed vars, free test Nodes, PASS lines, registry json, ledger rows as docs/deviations pieces (NOT direct DEVIATIONS.md edits:
 run tools/build_deviations.py build), RUN the tests.
 Order (the end of the game first, so the game can finish):
-BF01 ACT3-PLAYABLE-ENDING (final fight resolves: chasm/slump; ending movie/sequence; the game finishes)
+BF01 ACT3-PLAYABLE-ENDING (final fight resolves: chasm/slump; ending movie/sequence; the game finishes). START FROM Kimi K32 (grok_research/kimi_K32.md): intent, contract, EXACT/APPROX and a 5-step plan are done.
 BF02 ACT3-PLAYABLE-FAUX-DRARACLE (can be killed; speech)
 BF03 ACT3-PLAYABLE-MOTHER (ruby granted, placenta.vqa plays, mother dies)
 BF04 ACT3-PLAYABLE-PILLARS + ARMORY
