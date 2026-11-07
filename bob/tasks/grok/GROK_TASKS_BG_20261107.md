@@ -11,6 +11,7 @@ BG03 BF06 beast wall: the Luther step must fire only on the beast-wall arrival (
      not on any first L19 entry.
 BG04 BF01 ending: pace the beats in seconds (chasm -> vow -> slump -> Dawn -> Draracle -> vanish), place a chasm prop, set a
      game_finished flag that survives save/load, and show an end screen (credits stub) after the last card.
+BG00 FIRST (owner blocker 17-53-55): at the L8 village tree without the temple visit, make the guard (or a clear on-screen line) say to visit the Huline Temple first (east of the entry, far side of the map); earned test from gift=recovered/temple_visited=false. Then BG01..
 BG05 Then the owner's r17 playtest fixes from AI_COMMS/playtest_feedback_20261023/TRIAGE_20261107.md (Cave crates can't be
      pushed; the door before the Draracle) and any further rows the lead adds there.
 "[grok] BG<NN> DONE patch <file>" board line each.
