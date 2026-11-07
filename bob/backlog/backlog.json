@@ -11052,8 +11052,8 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Original behaviour per book/longplay (meta duck first); earned test; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "sol",
    "note": ""
   },
   {
@@ -11067,8 +11067,8 @@
    "depends": [],
    "phase": "maps",
    "acceptance": "Original behaviour per book/longplay (meta duck first); earned test; owner playtest.",
-   "status": "todo",
-   "claimed_by": "",
+   "status": "claimed",
+   "claimed_by": "sol",
    "note": ""
   }
  ]

@@ -4676,3 +4676,17 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-07T18:25Z lead] OWNER meta duck on water: underwater/drowning on the PLAYER side (tint + fog + muffle, slow sink, slide on death), no skirt walls; only the r16 stream-bed surface as a scoped world change -> BG06.
 [2026-11-07T18:26Z lead] OWNER r17 playthrough done (55+ reports, TRIAGE_20261107). Y01 ladder + Y02 tree bridge fail in real play (probe tests) -> BG00a FIRST. GROK list BG pasted (owner game closed).
 [2026-11-07T18:27Z lead] Kimi K35 DONE -> grok_research/kimi_K35.md: Dark Halls = 12 original puzzles mapped; slides, bookcase doors, crouch, crates, escape blast, atrium, orb machine unhosted or adapter-only. GROK list BH queued after BG.
+[2026-11-07T18:42Z lead] FABLE task ready: fable_lane/FABLE_TASK_20261107.md (Huline Temple interior as visibility islands, meta duck).
+[2026-11-07T18:45Z lead] SOL start file ready: sol_lane/SOL_START_20261107.md (Dark Halls puzzles slice from Kimi K35; own worktree from act3-chain). If Sol starts, Grok skips BH.
+
+[sol] CHECKPOINT c9295da START: claimed DARKHALLS-PUZZLES + CROUCH-ALL-AREAS; isolated worktree ~/opus_work/lol2_sol_dark_halls branch sol/dark-halls-20261107 from act3-chain. Generated assets/native scripts/tmp copied excluding regressions/userdata; launcher uses private XDG_DATA_HOME. P3 wall slides first, P4 bookcases next, P5 shared crouch. Grok BH belongs to Sol. No implementation or puzzle PASS claimed.
+[2026-11-07T18:46Z lead] ALL LANES UP (owner): Sol = Dark Halls puzzles; Fable = Temple islands; Grok = BG; Kimi = timer; lead = review/integration toward r18.
+[2026-11-07T18:48Z lead] Correction (owner): the Sol lane runs Sol 6.1, not 6.2.
+
+[sol] CHECKPOINT c9295da P3 WIP in ~/opus_work/lol2_sol_dark_halls: six native wall-slide toggles + strict saves; component PASS; pinned r17 monastery -> cellar clicks -> 109-waypoint live-combat walk -> slide1015 E/open/close/disk reload PASS (129.49s, source stable), captures inspected and aperture reveals adjoining room. godot_check 5/0, ledger --check PASS. Remaining five approaches/original comparison + prop465/416 rendering open; K35 opcode6 selector claim corrected. Affected676 selected, not run yet. NOT handover/cleared; both claims stay active. Next P4 bookcase doors, then P5 crouch.
+
+[sol] CHECKPOINT 0c55d92 CORRECTION: preceding P3 WIP line named baseline c9295da because first commit failed on missing Git author identity. This is the actual P3 WIP commit (per-command Sol identity, no shared config change); proof/scope unchanged.
+[2026-11-07T18:57:00Z grok] BG00a DONE patch grok_research/patches/ACT3P2/BG00a_l8_bridge_ladder.patch. PASS earned L8 tree bridge: Human walked up, chopped with a weapon, and crossed the log; the cache ladder climb stayed on the ledge. Unapplied.
+
+[sol] CHECKPOINT 3ac59da P4 WIP: bookcases51/58/59 now solid closed, native kind4 opens;58 toggles,51/59 stay open. Component+slides2/2 PASS; earned59 PASS/source stable68.39s from pinned r17 monastery via actual cellar clicks/live enemies/W/E, crosses opened threshold, F5/reload; three captures inspected. godot_check8/0; ledger PASS.51/58 earned approaches + original motion comparison + affected sweep remain open; not handover/owner cleared. P5 shared crouch next.
+[2026-11-07T18:59:25Z grok] BG00 DONE patch grok_research/patches/ACT3P2/BG00_village_temple_first.patch. PASS earned L8 village: the guard says to visit the Huline Temple first, and the blade is not admitted. Unapplied.

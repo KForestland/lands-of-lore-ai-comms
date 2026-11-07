@@ -1,4 +1,5 @@
 # GROK list BH (lead: Opus), 2026-11-07 — Dark Halls puzzles (backlog DARKHALLS-PUZZLES + CROUCH-ALL-AREAS). After list BG.
+> 2026-11-07: if Sol takes this list (owner checking Sol availability), Grok skips BH. See sol_lane/SOL_START_20261107.md.
 Brief: grok_research/kimi_K35.md (per-puzzle intent, contract, hosted/unhosted, native ids, smallest plan, owner report map).
 Base: lol2_act3 act3-chain HEAD after BG. Every fix: meta duck line, earned walk that does it like a player, ledger piece +
 tools/build_deviations.py build, typed vars, PASS lines, registry json. RUN the tests.
