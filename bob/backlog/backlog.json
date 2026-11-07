@@ -11040,6 +11040,36 @@
    "status": "done",
    "claimed_by": "grok",
    "note": "PASS earned final fight, the chasm, and the game is finished"
+  },
+  {
+   "id": "DARKHALLS-PUZZLES",
+   "type": "MAP",
+   "area": "L3_DH",
+   "title": "Dark Halls original puzzles (owner r17 F10 17:06-17:22): wall slots, bookcase doors, two-spirit trap, roof/sunlight bell fruit, explosive boxes (spark), ghost orb room; book + longplay 73:18-89:58",
+   "source": "owner r17 playtest TRIAGE_20261107.md",
+   "lane": "any",
+   "priority": 1,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Original behaviour per book/longplay (meta duck first); earned test; owner playtest.",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
+  },
+  {
+   "id": "CROUCH-ALL-AREAS",
+   "type": "MAP",
+   "area": "all",
+   "title": "Crouch (hold C as Human) works only in the Museum; owner needs it in the Dark Halls (17-07-18) and elsewhere",
+   "source": "owner r17 playtest TRIAGE_20261107.md",
+   "lane": "any",
+   "priority": 1,
+   "depends": [],
+   "phase": "maps",
+   "acceptance": "Original behaviour per book/longplay (meta duck first); earned test; owner playtest.",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }
