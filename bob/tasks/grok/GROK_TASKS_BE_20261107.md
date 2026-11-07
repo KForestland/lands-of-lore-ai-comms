@@ -9,3 +9,8 @@ BE01 Find why the W04 short-path walk falls (route point off the floor? the drai
      fix the route or the map (not the check), RUN the chain from l19_drain_path through l20_finale in order. Diff in
      grok_research/patches/ACT3C_fixes/BE01_drain_walk.diff on top of act3-chain HEAD.
 "[grok] BE01 DONE patch <file>" board line.
+Lead first look: the reset is jungle_review.gd:400-402 (player.position.y < fall_reset_height -> resets += 1, reset_position()), i.e. Luther
+falls through/below the floor, not a gameplay death. The test places him at L19DrainPath.DOOR_AT (2550,-100,-854) and the walk to
+WALK[0] (2557,-883.5) prints y -114 then resets. Check: the floor/collision under DOOR_AT and along y -883.5 (drain region 1943 and its
+neighbours; static collision vs movables 51/52 'open-movables' prefix; any face excluded by portal visibility or the liquid pass), and
+fall_reset_height for L19_BC.
