@@ -1,6 +1,6 @@
 # AW01 — Act 1 Huline village as a state machine
 
-Live scripts on `stack-ah01` `cfba754`. Unapplied AV, AU, AS, and AR diffs are not in this tree. Grades: DECODED for an opcode or flag read out of a source JSON or the GDScript that interprets it this pass; HINTBOOK for `reference_hintbook/hintbook.txt`; the tavern sentences are the existing `docs/bacatta-rooms.md` and `docs/tavern-return.md` audits, not a new DLL read. No WOM line was opened. No Godot run.
+Live scripts on `stack-ah01` `cfba754` when this note was first posted. Three sentences were corrected after K27: the drunk writes alarm local 7, group 3926 belongs to region 1921, and a magic item offered at the den before flag 19 is taken and only movie 505 plays. Unapplied AV, AU, AS, and AR diffs are not in this tree. Grades: DECODED for an opcode or flag read out of a source JSON or the GDScript that interprets it this pass; HINTBOOK for `reference_hintbook/hintbook.txt`; the tavern sentences are the existing `docs/bacatta-rooms.md` and `docs/tavern-return.md` audits, not a new DLL read. No WOM line was opened. No Godot run.
 
 ## What the village is for
 
