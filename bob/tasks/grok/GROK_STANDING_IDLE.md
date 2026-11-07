@@ -21,3 +21,6 @@ Rules: read-only on game code, no Godot, no DOSBox unless the lead grants the re
 status of other lanes. Proposed new tasks go as "PROPOSE <title> | source | acceptance" lines in grok_research/proposals.md;
 the lead turns them into backlog tasks. Grade every claim HINTBOOK / BRADY / LONGPLAY / DECODED / GUESS. Keep status/grok.md
 current. A real backlog task or Astra question always takes priority over the idle loop.
+
+## Added 2026-11-07: blocked on LoL2?
+See AI_COMMS/BLOCKER_RULE_20261107.md: post the blocker, meta-duck it once, then take a LoL1 (or LoL3) lane until it clears.

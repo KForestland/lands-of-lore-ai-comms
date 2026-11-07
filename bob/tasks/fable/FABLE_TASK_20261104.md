@@ -16,3 +16,9 @@ Order (time-box about 60 min each, log what stays open, move on):
 Also look at D-section Hive wall clipping (17-42-38/43-05/43-17) if it is in the same rooms.
 
 Gates: godot_check, affected_tests vs 8732a39, affected set PASS headless; one earned walk test per beat. Then READY on the board + status/fable.md + a handoff. The lead integrates into r15.
+
+## Added 2026-11-07: meta duck
+For any hard map problem (the Huline Temple interior first), use AI_COMMS/META_DUCK_METHOD_20261107.md before decoding more.
+
+## Added 2026-11-07: blocked on LoL2?
+See AI_COMMS/BLOCKER_RULE_20261107.md: post the blocker, meta-duck it once, then take a LoL1 (or LoL3) lane until it clears.
