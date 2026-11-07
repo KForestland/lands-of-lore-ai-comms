@@ -10970,7 +10970,7 @@
    "id": "ACT3-PLAYABLE-MOTHER",
    "type": "STORY",
    "area": "L19_BC",
-   "title": "Dawn/mother: ruby granted; cast the curse at ancient-magic level 5 into the mother (she must NOT be killed - book); purple glob + birth (placenta.vqa); demons are the real kills; door opens (Kimi K33)",
+   "title": "Dawn/mother: ruby granted; the player casts the curse at ancient-magic level 5 INTO the mother (player does not kill her); birth of Belial (placenta.vqa); the mother DIES after the birth (scripted); the spiders/monsters of that area are gone for the rest of the game; door opens",
    "source": "Kimi K31 (2026-11-07): Act 3 beat is record-only in act3-chain",
    "lane": "any",
    "priority": 1,
@@ -10979,7 +10979,7 @@
    "acceptance": "The player sees/does the beat as the book/longplay show (meta duck first); earned walk proves it; ledger row; owner playtest.",
    "status": "done",
    "claimed_by": "grok",
-   "note": "PASS earned Dawn's ruby, the birth card, and the demons. Mother lives."
+   "note": "PASS earned Dawn's ruby, the birth card, and the demons. Mother lives. Owner 2026-11-07: 'the mother beast dies after birthing Belial; the rest of the spiders/monsters the player does not see for the rest of the game.'"
   },
   {
    "id": "ACT3-PLAYABLE-PILLARS",

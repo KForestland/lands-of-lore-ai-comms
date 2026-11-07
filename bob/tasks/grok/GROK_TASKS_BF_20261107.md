@@ -16,3 +16,7 @@ BF06 ACT3-PLAYABLE-BEAST-WALL + L17-MOVIE
 BF07 ACT3-PLAYABLE-NE-LIFT + SE-ROUTE + SW-FIELD + CENTRE
 "[grok] BF<NN> DONE patch <file>" board line each; mark the backlog task done with backlog.py (lane grok) only when the earned test
 proves the visible result.
+
+OWNER 2026-11-07 on BF03 (overrides the earlier "she must not die" wording): the player does NOT kill the mother (the curse is
+expelled into her), but she DIES after birthing Belial (scripted, after the birth); the spiders/monsters of that area are not
+seen again for the rest of the game. Lead will check BF03 against this; a fix-up may be requested.
