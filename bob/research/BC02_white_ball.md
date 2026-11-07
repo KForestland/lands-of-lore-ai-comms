@@ -20,7 +20,7 @@ Hintbook 4831–4832, counted by newline (the file contains form-feeds; Python `
 
 Keep the adapter. Do not fake a level-3 imp or a pyrapod fireball. The header comment names the missing pieces. The ledger row dated 2026-11-07, "L16 white ball (STORY-072)", records the same limit. The 2026-11-06 charge-3 row stays as history.
 
-Unit check already printed, headless: `PASS l16_nw_traps_test: three props, blue bow only`. The earned NW-traps test still expects `receive_spark_level(1)` false and `receive_spark_level(3)` true. Its result is filled in when the chain prints it.
+The scratch chain on private display :2 printed `PASS l16_nw_traps_test: three props, blue bow only` and `PASS earned SE oil save -> brick, blue bow, level-three spark`. `break_ice` still returns false below charge 3. That earned line is the charge adapter, not an imp and not a pyrapod. The patch is unapplied. Apply it after BC01 so the ledger hunk matches.
 
 ## Owner question
 

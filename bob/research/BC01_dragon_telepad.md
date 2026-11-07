@@ -48,9 +48,11 @@ The applied-tree sentence in AX01 STORY-078 still describes the tree at `e21eb43
 
 The earned test loads the centre-tower save, chops prop 241, stands at (2100, 47, 4351) which is outside the 40 radius, then calls `move_grounded` toward the pad with no KEY_E. It requires a level-17 selector-1 request while the area is still L16_CA, writes `l16_dragon_room_earned_save.json` before the scene change, reloads that L16 save, then changes scene and requires L17 arrival 1 within 2 of (1434, 32, -7075).
 
-Earned walk result: not printed yet. This note is updated when the isolated run prints the PASS line, or when it prints the failure position. A placed last step is not called a walk.
+The certifying run was the scratch chain on private display :2, source stable, 11/11 passed. The dragon earned log printed:
 
-Unit check already printed, headless, before the chain: `PASS l16_dragon_room_test: chop 241, not 211, level 17 arrival 1`.
+`PASS earned centre save -> chop of prop 241 -> walk onto control 74 without E -> L17 arrival 1`
+
+The headless unit log printed `PASS l16_dragon_room_test: chop 241, not 211, level 17 arrival 1`. The cavern earned test then loaded the L16 save and passed, so the save stayed an L16 save. No KEY_E was sent. The patch is unapplied.
 
 ## 8. Where it is written
 

@@ -10815,6 +10815,21 @@
    "status": "todo",
    "claimed_by": "",
    "note": ""
+  },
+  {
+   "id": "SPELL-L16-WHITE-BALL",
+   "type": "SPELL",
+   "area": "L16_CA",
+   "title": "STORY-072 white (ice) ball: book 4831-4832 = a 3rd-level summoned imp or a pyrapod-altered spark fireball; port accepts any spark >= 3 until the imp/pyrapod spells are hosted (adapter, grok BC02)",
+   "source": "Kimi K28 + grok BC02 (2026-11-07)",
+   "lane": "any",
+   "priority": 2,
+   "depends": [],
+   "phase": "spells",
+   "acceptance": "With imp + pyrapod hosted, only those break the ball; adapter row retired; owner OK if the adapter stays.",
+   "status": "todo",
+   "claimed_by": "",
+   "note": ""
   }
  ]
 }
