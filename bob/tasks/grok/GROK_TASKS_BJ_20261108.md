@@ -4,6 +4,16 @@ Gap audit: grok_research/kimi_K45.md (backlog statuses may be stale -> PROVE eac
 Method: one owner-like EARNED WALK first, fix what it hits, in order. Base: r19-work (or r19 when built). Rules as always
 (meta duck line, like a player, ledger pieces, typed vars, registry, affected tests PASS).
 
+BJ00 (grok, FIRST after BI10 - owner 2026-11-08): the owner skips Act 1 and tests from Act 2 (F2 playtest start "darker"),
+  aiming for the Claw Mountains. Owner: "the temple is closed since the priest is killed beforehand". WATCH THE LONGPLAY and
+  draw conclusions: frames every 30 s from 109:40 in ~/lol2_original_screens/longplay_frames_act2plus/g_N.jpg
+  (index notes: memory lol2-act2plus-survey; full video on Arikv, see reference-lol2-longplay-video). Write the original L8 route
+  as the player sees it, step by step with frame numbers: arrival -> Huline Temple (what happens to the priest, is the temple
+  open or shut afterwards, what opens next) -> village -> Larkhon -> the way to the Claw Mountains (L12). Then compare with our
+  build (r19-work) from the "darker" playtest start: where does our flow differ or dead-end (is the temple shut before the visit
+  ran? does the village still need the visit?). Report on the board + grok_research/l8_longplay_route.md; then fix the first
+  dead end (BJ01 continues from there). Mechanics changes -> lead/owner.
+
 BJ01 (grok): L8 main-chain earned walk, from the Act 1 departure save into L8 to the exit to Claw Mountains:
   arrival -> Daniel's blade -> Huline Temple visit -> village admitted (guard) -> shaman / cache / tree bridge / platform ->
   Larkhon put to sleep -> passage to L12. Save/reload at each step. The FIRST place it stops = a finding (report on the board

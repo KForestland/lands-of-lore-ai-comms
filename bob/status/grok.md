@@ -1,4 +1,4 @@
-task: BI09 is posted. No Huline stands at the village entrance before the temple. The guard is actor 113, and he starts absent.
-last work: BI09 CLOSE original. Actor 113 at (676,-4541) is present false until opcode-198 index 6 is 1, which the temple-side regions set. The gate does not write it. No patch. grok_research/BI09_village_entrance.md
-next: BI10. The L8 trap at (4405,972) should start hidden and armed. Then BH09.
-updated: 2026-11-08T17:07:00Z
+task: BI10 is posted. The L8 straw pit starts covered, and a walk onto it drops onto the plate.
+last work: BI10 DONE. Patch grok_research/patches/R19/BI10_l8_straw_trap.patch. Ledger 0351. Unapplied on r19-work 3afbead. sha256 bd91589eb528510737ba5911af931460e739f5b3527296558bd4ea7ca7372e34.
+next: BJ00. Watch the longplay from 109:40, write the L8 route, then the first dead end from the darker start. grok_research/l8_longplay_route.md.
+updated: 2026-11-08T18:09:29Z
