@@ -41,3 +41,11 @@ BJ07 (grok): from L12 selector 2 (BJ06 output) walk the return leg: ice cave -> 
 BJ08 (fable): L14 Huline Temple main chain from the L14 arrival to STORY-066 (dreamstone into the chalice, it is destroyed,
   the city resurfaces) -> L16 arrival. STORY-066 is still 'todo' in the backlog (Kimi K45 #2, the Act 2 -> 3 hinge): find
   whether it is hosted; walk; fix the first stop. Temple islands/lighting are yours already.
+
+BJ07 (grok) + BJ08 (fable) DONE 2026-11-08 ~22:40Z: the main chain is walked from the F2 'darker' start through L8, L12,
+L13, back through L12/L8 and the whole L14 temple, STORY-066 chalice -> L16 arrival. Act 3 next, same method:
+BJ09 (grok): L16 City of the Ancients from the L16 arrival (tmp/l16_arrival_earned_save.json) along STORY-067..078 (arrival
+  elevator, dry fountain, greenhouse, oil fountain, NW traps, ivory pedestals, towers, centre tower / Mantle Gate, dragon room)
+  to the next level. Known holes (Kimi K45): Mantle Gate has zero placements, tower saves load each other. First stop = finding.
+BJ10 (fable): L17 Subterranean Caverns -> L19 Belial's Chamber -> L20 finale from their arrivals (BF01-BF07 hosts) to the
+  ending sequence. Find the first stop on each; walk like a player; fix presentation, list mechanics for the lead.
