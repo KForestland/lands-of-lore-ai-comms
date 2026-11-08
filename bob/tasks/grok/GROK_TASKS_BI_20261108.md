@@ -39,3 +39,10 @@ BI06 (grok): Dawn's walk-in talk trigger in the Jungle (F10 15-24-21 at (669,-15
 BI07 (grok): Baccata cannot be heard in the Jungle (F10 15-26-05 at (3539,-4154)). Check his voice player (bus, unit size /
   max distance, source on his body like BG23 Dawn) and make the line audible at talk range; earned test that the player is in
   range when it plays.
+BI08 (grok, priority: may strand the player): L8 cache ladder works only once (F10 15-30-40 at (-1092,-2627), BG00a
+  l8_cache_ladder.gd). Climbing must work every time, both ways; earned walk up, down, up again, save/reload between.
+BI09 (grok, research first): "no cat person here to enter the village" (F10 15-32-38 at (508,-4484); journal
+  l8_see_temple_first set = temple not yet visited). Is there a native Huline at the village entrance before the temple
+  visit (actor ids, presence flags; BG25 used actor 113 at the tree (554,-3929))? Answer on the board with evidence.
+BI10 (grok): L8 trap at (4405,972) shows as not set (F10 15-45-37): it should be hidden and armed so a player who walks in
+  gets trapped. Find the trap control (native state/selector) and start it armed; earned walk into it.
