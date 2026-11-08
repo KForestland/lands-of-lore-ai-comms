@@ -25,3 +25,10 @@ BJ04 (grok, research): L8 soul changes (21 native opcode-206 writes unhosted, SO
   chain; host the ones on the main path so later branches read a real value.
 Then Act 2 (L10/L9/L12/L13) and Act 3 (L14 STORY-066 hinge, L16, L17/L19/L20) the same way: one earned walk per act, fix in
 order. Lead writes those lists after BJ01 reaches L12.
+
+BJ01 DONE 2026-11-08 21:08Z: the darker start reaches native L12/1 by an earned walk (BJ01_l8_chain_l12.patch).
+BJ06 (grok, in parallel with Fable's BJ05 on L12): L13 Ruloi Citadel earned walk from the L13 arrival (tmp/l13_citadel_arrival_
+  earned_save.json, or Fable's BJ05 output when it lands) along the main chain: globes/egg basin -> elevator -> maidens ->
+  Dawn -> pink steps -> bridge -> first Belial -> Dark Sword altar -> Dreamstone -> wall slot + exit lock -> back into L12
+  (selector 2). Map from grok_research/kimi_K50.md rows 7-8 (hosts l13_*.gd, all adapters). First stop = finding, fix,
+  repeat. Then BJ04 (L8/L12 soul writes on the walked path).
