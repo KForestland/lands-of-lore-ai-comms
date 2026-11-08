@@ -1,4 +1,4 @@
-task: BJ07 is posted. L12 return leg reached the L14 Temple arrival. No new gameplay stop.
-last work: BJ07 DONE. Patch grok_research/patches/R19/BJ07_l12_return_l14.patch. No ledger row. Apply-checked on r19-work c611100 (BJ06 + BJ05 merged). sha256 14aba92a930f47c831b5e9f81efae91a8272b3e31dfb49d2988b56cd6315a0e6.
-next: BJ04. L8/L12 soul writes on the walked path. BJ08 is Fable's.
-updated: 2026-11-08T22:40:37Z
+task: BJ04 is posted. The boarding-retry reason is posted as a comment on the merged raft test.
+last work: BJ04 DONE, piece 0358, patch BJ04_l8_shore_soul.patch, sha256 c8544ffbac60450fe180cb52b7707c051347e3a166a4eb407fa3da6d2c6d0957. Then the BJ07 boarding comment, patch BJ07_boarding_reason.patch, sha256 0688f3c09d0f231accf679c102c0a005863820988bc26ee00baf9a66030ccb6f. Both apply-checked on dd8feec.
+next: No further grok row is named. BJ08 is Fable's and is already merged.
+updated: 2026-11-08T23:06:48Z

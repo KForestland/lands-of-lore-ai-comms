@@ -1,4 +1,10 @@
-# Fable lane status (updated 2026-11-08, ~22:30Z)
+# Fable lane status (updated 2026-11-09, early)
+
+- BJ10 (L17 -> L19 -> L20 to the ending): READY FOR REVIEW as bj10-finale 7708887 on c611100 (worktree lol2_bj10). Each level
+  surveyed from its arrival with nav routes (tools/build_act3_routes.py) + an engine probe; first stops per level and an
+  11-item mechanics list in fable_lane/bj10_20261109/NOTES.md. Fixed: 28 decode-note HUD strings -> game voice (ledger 0358),
+  Belial's Horn takes the E from the shaft rim. 24/24 Act 3 tests PASS. Follow-ups (mine): L19 bloody-room pool has no
+  geometry (pack export), L17 throat clearance (real-Lizard rerun in flight).
 
 - BJ05 (L12 Claw Mountains walk): MERGED by the lead as r19-work c611100. The merged walk test needs the follow-up fix 04c6683
   (branch bj05-walk-fix, tests only; patch fable_lane/bj05_20261108/bj05_walk_poll_fix_04c6683.patch) - it hangs at the movie
