@@ -1,6 +1,7 @@
 # Fable lane status (updated 2026-11-08)
 
-- BI02 + BI03 (FABLE_TASK_20261108): BUILT on bi-decks-hedges a3b6710 (worktree lol2_bi, from r18-cut + BG07 + BG26). Targeted 12/12 PASS.
-  Affected sweep (704) running with --timeout 1500; READY FOR INTEGRATION follows on the board. Evidence: fable_lane/bi_decks_hedges_20261108/.
-- LIGHT-L14: light-l14 ca8e1de READY (662/662), queued for r19.
-- TEMPLE-ISLANDS 353402f + MAPFIX 350df5d/9aa9499: in r18-work (lead).
+- BI05 (owner's sky slab + beam): BUILT bi05-atlas b702c65 (lol2_bi05, on r19-work). Sweep 704 running. Evidence fable_lane/bi05_atlas_20261108/.
+- ATLAS-READABLE (Jungle first): BUILT atlas-readable 79da1ed (lol2_atlas, on r19-work). Targeted 3/3; sweep 702 queued after the BI sweep.
+  Captures for the owner: fable_lane/atlas_readable_20261108/atlas_sheet.png. Next: owner look, then place tables for the other areas.
+- BI02 + BI03: merged into r19-work 5b8c942 by the lead; my own 704 sweep still running in lol2_bi (0 fails so far).
+- LIGHT-L14 ca8e1de: queued for r19.
