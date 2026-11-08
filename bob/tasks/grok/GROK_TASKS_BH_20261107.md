@@ -14,3 +14,4 @@ BH06 P7 atrium: chains -> roof opens -> sunlight -> bell fruit grows.
 BH07 P10 orb machine (region 1596 -> orb rises -> shades pulled -> pit floor).
 BH08 P6 trap hardening + P2 door bashing/lockouts.
 "[grok] BH<NN> DONE patch <file>" board line each.
+BH09 (from Kimi K41, after BH07/BH08): P9 make the blasted window WALKABLE (jump through the hole into region 1413 as the book says; owner 17-17-34); P7 sunlight kills shades in the atrium; the crate blast damages creatures in its radius (Rules.eligible/recipient_cases already exist); earned walks from the Dark Halls entry, not placed at the puzzle.
