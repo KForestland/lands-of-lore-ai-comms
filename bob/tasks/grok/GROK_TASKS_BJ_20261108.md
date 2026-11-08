@@ -32,3 +32,12 @@ BJ06 (grok, in parallel with Fable's BJ05 on L12): L13 Ruloi Citadel earned walk
   Dawn -> pink steps -> bridge -> first Belial -> Dark Sword altar -> Dreamstone -> wall slot + exit lock -> back into L12
   (selector 2). Map from grok_research/kimi_K50.md rows 7-8 (hosts l13_*.gd, all adapters). First stop = finding, fix,
   repeat. Then BJ04 (L8/L12 soul writes on the walked path).
+
+BJ05 (fable) + BJ06 (grok) DONE 2026-11-08: L12 Claw Mountains and L13 Ruloi Citadel walked end to end, no gameplay stop.
+Next stretch = the Act 2 -> Act 3 hinge (owner goal: keep the main chain playable onward):
+BJ07 (grok): from L12 selector 2 (BJ06 output) walk the return leg: ice cave -> raft/floe -> niche armour (optional) ->
+  floe bank jump -> crevasse (Lizard) -> blue bow -> glacier logs -> gulch -> region 734 -> L8 selector 4 -> river return
+  jump -> the L8 Temple entrance with the Dreamstone (place, enter, take back) -> L14 arrival. First stop = finding, fix, repeat.
+BJ08 (fable): L14 Huline Temple main chain from the L14 arrival to STORY-066 (dreamstone into the chalice, it is destroyed,
+  the city resurfaces) -> L16 arrival. STORY-066 is still 'todo' in the backlog (Kimi K45 #2, the Act 2 -> 3 hinge): find
+  whether it is hosted; walk; fix the first stop. Temple islands/lighting are yours already.
