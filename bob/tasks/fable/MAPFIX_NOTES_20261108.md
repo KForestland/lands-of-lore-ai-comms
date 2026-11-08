@@ -19,7 +19,9 @@ that names the pack face under five screen points). Evidence folder: fable_lane/
   their region records carry word16/17 = region+1, undecoded). They were drawn in the placeholder grey-green; the r16 ROOF_SKIP
   excluded one of them (654). FIX: jungle_review `fill_untextured_surfaces` (Hive on): such a floor/ceiling takes the nearest
   textured same-kind face at the same height (the Jungle floorless rule extended to ceilings); ROOF_SKIP no longer excluded.
-  Result: the roof is drawn again (its neighbours' material; here the animated lava ceiling material 21 that region 282 uses).
+  Result: the roof is drawn again with its neighbours' material (the animated lava ceiling 21 that region 282 carries in the
+  pack; whether the original's roof there is lava-lit rock or dark rock is for the owner: longplay 40:40-43:40 shows dark
+  rock ceilings over lava floors). After 9aa9499 the formerly hidden step strips (ornament 234) also show along the roof edge.
 - 17-30-51 "green texture in the lava": region 188's floor was unbound -> now the lava (material 21) like regions 187/221;
   the river is continuous as in longplay 41:00 (f_00493).
 - 17-32-57 "looks wrong": the plane under the slab was unbound floor 1446 (region 506) -> now its neighbour's rock.
@@ -39,14 +41,17 @@ that names the pack face under five screen points). Evidence folder: fable_lane/
   Not fixed (a world/collision change; the owner's rule puts player-side first). -> list for the lead: blocker gap at (1842,2500).
 
 ## L10 (MapL10_DC)
-- 17-55-17 "lacks this texture": a radial fan of orange/red/tan stripes fills the sunken square between the two sarcophagi
-  (regions 39-42, floors at 20-31, material 521/530; the player stands on it, h 61, looking down 78 degrees). Ruled OUT by
-  captures at the owner's pose: the oil pit (it is at (-1300,-3300); a UV-basis change there was tried and reverted), sector
-  lighting (persists with it off), the sector-light shader (persists with every ShaderMaterial swapped for a plain
-  StandardMaterial3D), the prop billboards (hidden: unchanged), the static assemblies (hidden: unchanged). From the side
-  (-500,-830) the same thing is a flat orange "pool" with horizontal bands. No mesh over the square binds an orange texture
-  (tex dump of all 14 meshes covering it: stone, tomb doors, gate, 521/530 floors). Open: a hide-one-group sweep
-  (MultiMesh, Sprite3D, world items, creatures, chargers, braziers, tombs, fences, all MeshInstance3D) is running to name it.
+- 17-55-17 "lacks this texture" RESOLVED (commit 9aa9499): the player stood on a stair step (regions 61-63, faces 68-70,
+  record_role floor_subdivision) whose nav regions have NO polygon; region_visibility.clusters() gave each a one-region
+  cluster with no edges, the view walk never reached it, so the step's floor was never drawn and the sky panorama's nadir
+  showed through the hole as a fan of stretched stripes. Proof chain (captures at the owner's pose): oil pit no, sector light
+  no, shader no (plain materials), props no, assemblies no, ALL meshes hidden -> the fan stays (= the sky), portal
+  visibility off -> the floor is there. Fix: polygon-less regions stay out of the clusters and are always drawn (28 in L10,
+  283 in the Hive, 110 in L13). Test region_visibility_clusters_test PASS; ledger 0321. The same fix draws the Hive's
+  missing step strips (lava river banks, slab room seam).
+- Side note, not applied: act2_map allows looking down 80 degrees (pitch_limit 1.4) where the original's view is limited
+  (darker_jungle uses the panorama's 37.6 degrees); at steep angles the panorama's nadir is a stripe fan wherever a floor
+  is missing. A native look limit for the Act 2/3 hosts would hide such holes and match the original -> owner/lead call.
 - 18-14-46 "a lot of work": the great hall; nothing specific to fix from one line -> ACT2-MAP-REVIEW stays.
 
 ## L12 / DragonLevel (18-22-43)
