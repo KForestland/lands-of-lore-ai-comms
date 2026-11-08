@@ -22,3 +22,20 @@ BI03 (BG26 boundary hedges, fable or grok): boundary_edges.json makes 2906 L8 so
   to what the owner reported (hedge material 276 on neighbour-less edges, or narrower), prove the pit/tree walks still pass,
   and update l8_map's bound with the reason.
 "[grok] BI<NN> DONE patch <file>" board line each (patches into grok_research/patches/R19/).
+
+## Added 2026-11-08 from the owner's r18 playtest (TRIAGE_20261108.md)
+BI04 (grok, research first): Cave guard vanishes when spoken to. F10 14-39-43 at (1366,-12223): after the talk the HUD says
+  "Guard defeated." and he is gone. F10 14-41-19 at (40,-16654): "same issue; after speaking the wall comes down, then the
+  switch opens at the bridge" (caged guard behind bars, Lizard form). Find the native talk outcome for these guards (dialog
+  script / actor flags): does the original guard stay, walk away, or die? Is the wall/switch order right? Answer on the board
+  with evidence (longplay frame + script ids) before patching; a mechanics change goes to the owner.
+BI05 (fable or grok): Jungle green rectangle. F10 14-55-28 and 14-55-48 at (-741,-4356) / (-782,-4370): a large flat
+  rectangle with the forest-floor texture stands up in the view ("looks like forest floor"). Identify the face or assembly
+  (screenshots in the report folders) and fix its material/orientation or hide it if it is an exporter artefact.
+  + F10 15-18-02 at (-4667,-459): a dark plank/beam floats against the sky above the canopy - include it in BI05.
+BI06 (grok): Dawn's walk-in talk trigger in the Jungle (F10 15-24-21 at (669,-1590)): the owner walked past it and only a jump
+  fired it. Widen/raise the volume so walking up to her fires it (presentation adapter, approved by default; ledger piece);
+  earned walk that walks (no jump) into it.
+BI07 (grok): Baccata cannot be heard in the Jungle (F10 15-26-05 at (3539,-4154)). Check his voice player (bus, unit size /
+  max distance, source on his body like BG23 Dawn) and make the line audible at talk range; earned test that the player is in
+  range when it plays.
