@@ -8,4 +8,6 @@ DECODED. The trunk in the shot is prop record 5211 at (111, 0, −4261), dead ah
 
 The crown is selector 2, descriptor 729 (`prop_729.png`, a leafy top on a short trunk). Selector 1, descriptor 728, is a shorter stub. Nothing in L4 selects either. J03 already left the selector alone at the other chopped tree.
 
-LONGPLAY f_00470 at 39:05 shows crowned palms. That frame was not matched to record 5211, so the crown was not added. Smallest adapter, not applied: draw descriptor 729 on these selector-0 trunks. That would be a state the file does not store.
+LONGPLAY. f_00394 at 32:45 is a palm path. f_00442 at 36:45 shows tall trunks whose tops leave the frame, and it is not this record. The 38:14 meadow (t_0203) and the cat ladies at 38:34–39:05 (f_00470) are crowned palms about 800 units west, at the women's spot, not record 5211. No longplay frame shows a crown on this trunk.
+
+The nearest other prop is 42 units away. Selector 2, descriptor 729, is the crown, and no L4 placement selects it. The original picture for this record is the bare trunk, so this stays original. No patch.
