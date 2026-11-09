@@ -49,3 +49,10 @@ BK00e (grok, from Kimi K61 problem 1, BEFORE retiring any pose adapter): the 0xB
   command but cleared only by player poses; per your own decode the native reader (0xB2ACA) clears after EVERY command. Clear
   the slot on every consumed command (player or not) so later native player poses still fire; unit test with a non-player
   op18 followed by a player op18.
+BK00f (grok, FIRST - r19-bk sweep regressions from BK00a, Kimi K61 problem 4): claim_moving_floors turns the floor faces of
+  EVERY opcode-196-targeted region into deck meshes in every binder level at load. The r19-bk sweep (bksh_*) fails:
+  l10_progression_test ("all source mover + tomb-door faces left the static mesh (588 vs 578)"), l10_emperor_earned_test and
+  l10_silverleaf_growth_earned_test (stop at (3202.7,-18,-1310.1) toward goal (3207,0,-1270), EMPT trigger 3789),
+  l9_statue_earned_test + l9_statue_question_earned_test (STAT alcove 3185 point 98 at (2554.9,32,-5960.3)). Fix: claim a
+  region as a deck only when a 196 group targeting it actually runs (lazy claim at first motion), or keep the static face +
+  collision until then; prove the five tests pass again on r19-bk plus your fix.

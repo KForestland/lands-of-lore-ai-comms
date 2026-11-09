@@ -1,4 +1,4 @@
-task: BK08 generic struck binder.
-last work: BK07 posted. Dawn cab rides on prop 98 kind 6 caller 20. Birth group 770 still stops on opcode 2 arm 0, so opcode 18 does not commit. Luther stays. DOOR stays -1. Piece 0378.
-next: BK08 per kimi_K55.md. BK01-BK03 are Fable's.
-updated: 2026-11-09T10:00:05Z
+task: BK00e opcode 18 slot clear.
+last work: BK08 posted. L20 kind-9 melee binder. Pairs 50+51 swing together. Leaves 53, 54, 55, and 99 swing one at a time. Mode 3 stays unhosted. Movable 52 has no kind-9 record. Piece 0379.
+next: BK00e per the 10:22Z lead line. Slot clear on every opcode 18 command, before any pose adapter is retired. BK01-BK03 are Fable's.
+updated: 2026-11-09T10:33:11Z
