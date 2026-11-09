@@ -1,4 +1,4 @@
-task: BK05 L19 bars and gutter (STORY-082).
-last work: BK04 posted. Opcode 18 words land in region 1259. The pocket cut poses region 1292 and the walk reaches region 1312. Piece 0371. Patch BK04_l17_beast_carry.patch apply-checked on 0603225.
-next: BK05. Movable 77, the gutter volume, and the Lizard form change. BK01-BK03 are Fable's. BK06-BK10 follow later. BK08 and BK13 stay put.
-updated: 2026-11-09T06:05:07Z
+task: BK00c opcode 199 gate write.
+last work: BK00b posted. Opcode 207 adds signed byte 5 to the opcode-198 byte at slot byte 4. L19 group 5906 adds 1 to slot 0. Piece 0373. Patch BK00b_opcode207_counter.patch apply-checked on 0603225 after BK00a.
+next: BK00c. The L19 to L20 gate write 0x26E58 index 52. Then BK00d. BK05 waits until BK00a-d are posted. BK01-BK03 are Fable's.
+updated: 2026-11-09T07:23:32Z
