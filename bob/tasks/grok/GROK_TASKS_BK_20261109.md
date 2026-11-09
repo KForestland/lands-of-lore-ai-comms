@@ -45,3 +45,7 @@ BK00d: an opcode-18 PLAYER consumer: when a staged opcode-18 targets the player 
   L16 centre pads, the birth relocation group 770). Keep each existing adapter until its walk passes on the native path.
 Each: unit test of the handler + the affected earned walks re-run; ledger rows (native, not adapter). Then BK05/BK06/BK07 per
 grok_research/kimi_K60.md (bow-shot binding on movables 74-76 is the only genuinely new mechanic there).
+BK00e (grok, from Kimi K61 problem 1, BEFORE retiring any pose adapter): the 0xB7D5E opcode-18 slot is filled by any opcode-18
+  command but cleared only by player poses; per your own decode the native reader (0xB2ACA) clears after EVERY command. Clear
+  the slot on every consumed command (player or not) so later native player poses still fire; unit test with a non-player
+  op18 followed by a player op18.
