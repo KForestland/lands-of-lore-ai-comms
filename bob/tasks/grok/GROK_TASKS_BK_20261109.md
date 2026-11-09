@@ -71,3 +71,9 @@ BJ11 (fable, from 2026-11-09 afternoon): with r19-bk 8601810 (engine handlers + 
   doors -> blue pillars (grok BK09) -> moving pillars -> armory -> faux Draracle -> Belial -> ending. First stop = finding,
   fix (presentation/geometry yours; mechanics -> lead), repeat. Base: ~/opus_work/lol2_r18 branch r19-bk (read-only;
   your own worktree from it).
+BK08c (grok, FIRST, blocks the r19-bk merge): on r19-bk 8601810 the L9/L10/L17/L19/L20 suite is 124/125; l19_bars_strike_test now
+  FAILS ("a Human strike runs the bars; region 40 rises to -20 and Luther rises (y -8.0); region 61 rises") - it passed on
+  0f098a7 before BK07/BK08/Fable 0001-0003 were added. Likely the BK08 struck binder consumes the left click on movable 77
+  (or Fable's region-aware collision on L19 changes the strike ray). Make the bars strike and the struck binder coexist
+  (one handler per hit; bespoke L19 bars host wins for movable 77 like the bramble/dam exclusions), rerun l19_bars_strike_test,
+  l20_struck_doors_test and the L19 suite on r19-bk.
