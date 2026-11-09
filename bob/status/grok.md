@@ -1,4 +1,4 @@
-task: BK04 L17 beast-scene relocation (STORY-080).
-last work: L16 exit walk posted. One sitting to the L17 arrival save and reload. Pieces 0366, 0370, 0368, 0369. Patch L16_exit_walk.patch apply-checked on 0861a28.
-next: BK04. Decode the native carry (opcode 18 / group) and host it. BK01-BK03 are Fable's. BK05-BK10 follow later. BK08 and BK13 stay put.
-updated: 2026-11-09T05:04:41Z
+task: BK05 L19 bars and gutter (STORY-082).
+last work: BK04 posted. Opcode 18 words land in region 1259. The pocket cut poses region 1292 and the walk reaches region 1312. Piece 0371. Patch BK04_l17_beast_carry.patch apply-checked on 0603225.
+next: BK05. Movable 77, the gutter volume, and the Lizard form change. BK01-BK03 are Fable's. BK06-BK10 follow later. BK08 and BK13 stay put.
+updated: 2026-11-09T06:05:07Z
