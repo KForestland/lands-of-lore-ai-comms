@@ -83,4 +83,24 @@ The two bytes are the bytes the experience adders 0xD8A1C and 0xD8B94 increment.
 
 ## What is not hosted
 
-There is no seconds constant in 0x67A87 or in the submerged test at 0xD6781. Slot +0x4C has several indirect callers. Which of them runs once per frame was not closed. A 0.5 s mana timer or a 4 s health timer would be an invented period. The smallest adapter is the one already in the tree: the drain stays unhosted, `l19_guck_test` still stands a Human in the guck and expects health not to drop, and piece 0364 stays the liquid row. Material 265 is not given a drain. Classic drowning LIMIT 15 is a different mechanic and is not this arm.
+There is no seconds constant in 0x67A87 or in the submerged test at 0xD6781. The callers entered in the cadence section below still do not supply one. A 0.5 s mana timer or a 4 s health timer would be an invented period. The smallest adapter is the one already in the tree: the drain stays unhosted, `l19_guck_test` still stands a Human in the guck and expects health not to drop, and piece 0364 stays the liquid row. Material 265 is not given a drain. Classic drowning LIMIT 15 is a different mechanic and is not this arm.
+
+## Cadence
+
+complete false. Same LOLG.DAT sha256. No seconds constant was entered. No host change.
+
+Direct `E8` targets of 0x67820 are four. 0xD6794 is the one already inside slot +0x4C. The other three are 0xD37EB, 0xB2FC9, and 0xB0844.
+
+0xD26B0 is the player path that was entered. Its only caller is 0xB30AC, at file bytes `68 74 25 02 00 E8 B2 F4 01 00` (push 0x22574, call 0xD26B0). That call sits after the list walk and is not under a compare. Inside 0xD26B0, 0xD37AA takes the high word of a dword minus the high word of `[ebx+8]`. A negative difference jumps to 0xD37F3. Otherwise the byte at `[[ebp+0x76]+0x20]` must not be 0xFF. The kind is the high byte of the dword at `[0x22D44 + index*8 + 0x13]`, the same preset byte 22 the switch already uses. The call pushes that kind, ebx, the low byte of the difference, and 1. There is no compare with a tick count in that window.
+
+0xB30AC is called from the loop at 0x14F185. The call site is 0x14F61E (`E8 89 3A F6 FF`). The loop returns by `E9 50 FA FF FF` at 0x14F730. A bit test of the dword at 0x22CDC can jump from 0x14F1B5 to 0x14F707 and skip 0xB30AC. Those bits were not named. On the path that does not take that jump, 0xB30AC runs once per iteration and therefore calls 0xD26B0 on the player once. No wait instruction sits between 0x14F185 and the jump back. The sample at 0x14FA79 updates a counter at 0x223B8 and does not gate 0xB30AC. The period of one iteration is not a constant in these bytes.
+
+0xB286C calls 0x67820 at 0xB2FC9. The kind there is the high byte of the dword at `[[0xB7D1D]+0x13]`. 0xB30AC calls 0xB286C once per object on the list at 0xB7D6C, before the player call. Whether the player is on that list was not entered, so this site is not a second proven player call.
+
+0xAF9A4 clears the dword at 0xB7CD5 (`31 C0` at 0xAFA86, then `A3 D5 7C 0B 00` at 0xAFA89) and later reads it at 0xB0828. A nonzero value would call 0x67820 at 0xB0844 with the high byte of `[pointer+0x23]`, which is not preset byte 22. A writer that stores a nonzero pointer before that read was not entered, so this site stays open.
+
+Slot +0x4C of player vtable 0x5C20 is still 0xD651C (file 0x1C6C90 raw `F8 D4 07 00`). It has no direct `E8`. Two virtual sites are not the format calls. The loop's own `[eax+0x4C]` sites push 0x86F30 or 0x86F50 on the object at `[0xE890]`. Those are a different slot. 0xB0535, inside 0xAF9A4, calls `[ebx+0x28]+0x4C` when esi is nonzero. For the player that slot is 0xD651C. esi is set to 1 on two branches and is also loaded as a pointer at entry, so the gate was not reduced. 0x5DB78 is slot +0x4C of vtable 0x5484 (file 0x1C64F4 raw `54 4B 00 00`, slot 0 returns 0x10) and of vtable 0x55B4 (file 0x1C6624, same raw, slot 0 returns 0x20). It walks the list at 0x273FC and calls slot +0x4C when the class byte has bits 0x70 clear. The player slot returns 1, so the player is included. How often a class 0x10 or class 0x20 object enters 0x5DB78 was not reduced to a count.
+
+The dword at 0xB7D35 is compared with `[ebx+8]` at 0xB04F1 after the movement code writes it. That is a height, not a tick. No `out 0x43` timer divisor was entered on this path.
+
+The per-call period stays unknown. The drain stays unhosted. No timer was added.
