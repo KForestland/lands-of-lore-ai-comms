@@ -82,3 +82,10 @@ BK08d (grok, FIRST): Fable's probe (board 2026-11-09 BJ11 for @grok BK08c, tmp/p
   strike_from_camera()/shot_from_camera() directly. On r19-bk d4d0a42 (BK08c applied) prove the real click path: the tests
   must send an InputEventMouseButton through the viewport (like a player) for the bars strike AND the three bow shots; fix the
   input routing (struck binder / _unhandled_input order / set_input_as_handled) so the hosts receive the click.
+BK09b (grok, from Fable BJ11 2026-11-09): the five fire shots are recorded on E near AT_57..AT_61 on the WEST side, but the player
+  arrives on the EAST lip (region 1477, x -2776) and cannot reach them before the deck exists (the earned test teleports to
+  AT_57). Book: "shoot the blue pillars to create a path" from where you stand. Give each pillar a shot hit receiver
+  (shot_from_camera, like the L19 switches) reachable from the east lip; earned test without the teleport.
+BK08e (grok): L20 doorways: (a) movable 52 sits between 53 and 54 and has no kind-9 record - how does it open natively? (b) the
+  50/51 doorway still stops the walk after both leaves travel - check the open pose/collision of the leaves and any blocker
+  region. Fable's probe notes in the BJ11 round-4 board line.
