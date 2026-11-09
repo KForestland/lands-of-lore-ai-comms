@@ -77,3 +77,8 @@ BK08c (grok, FIRST, blocks the r19-bk merge): on r19-bk 8601810 the L9/L10/L17/L
   (or Fable's region-aware collision on L19 changes the strike ray). Make the bars strike and the struck binder coexist
   (one handler per hit; bespoke L19 bars host wins for movable 77 like the bramble/dam exclusions), rerun l19_bars_strike_test,
   l20_struck_doors_test and the L19 suite on r19-bk.
+BK08d (grok, FIRST): Fable's probe (board 2026-11-09 BJ11 for @grok BK08c, tmp/probe_shot.gd in lol2_bj11) shows the PLAYER's real
+  left click reaches neither the L19 bars (77) nor the switches 74-76 on 8601810; the tests only pass because they call
+  strike_from_camera()/shot_from_camera() directly. On r19-bk d4d0a42 (BK08c applied) prove the real click path: the tests
+  must send an InputEventMouseButton through the viewport (like a player) for the bars strike AND the three bow shots; fix the
+  input routing (struck binder / _unhandled_input order / set_input_as_handled) so the hosts receive the click.
