@@ -19,3 +19,4 @@
   Evidence fable_lane/bj08_20261108/.
 - Sweeps from earlier lanes: bi 692/692 PASS; bi05 finished (check report); bj03/atlas8/atlas/claw still running.
 - LIGHT-L14 ca8e1de: queued for r19.
+- 2026-11-09 BK01-03 follow-up: region-aware collision (L17/L19) + guck drain removed, commit 047dda2 in lol2_bk (bk-act3-geometry); l17_throat_walk_test arrival->pocket PASS; gate bk2_targeted (29 L17/L19 tests) + bk2_affected running; READY after the gate. Patches: fable_lane/bk_20261109/0001-0002.
