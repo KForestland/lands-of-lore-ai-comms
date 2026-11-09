@@ -1,4 +1,4 @@
-task: L16 walk from the oil chain on to the L17 exit.
-last work: Terrace lip posted 2026-11-09T03:22:58Z. Ten link prisms at 40 degrees. Piece 0367. Patch L16_terrace_lips.patch. The oil-chain walk still reaches region 4946.
-next: The rest of the L16 walk, then BK04. BK04 not started. BK01-BK03 are Fable's. BK12 stays with Kimi. Fable has reserved ledger 0363-0365 and registry 983-986.
-updated: 2026-11-09T03:23:19Z
+task: L16 dragon-mouth blocker (movable 103). The walk to the L17 exit is stopped there.
+last work: Blocker posted 2026-11-09T04:11:46Z. Movable 103, static slot 59 Door, stays shut. Note grok_research/l16_dragon_mouth_20261109.md. No patch.
+next: Lead decision on the mouth door, then the rest of the L16 walk, then BK04. BK04 not started. BK01-BK03 are Fable's. BK12 is merged. Fable has reserved ledger 0363-0365 and registry 983-986.
+updated: 2026-11-09T04:11:46Z
