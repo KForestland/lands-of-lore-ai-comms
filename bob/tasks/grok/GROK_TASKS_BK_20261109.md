@@ -98,3 +98,13 @@ BK08f (grok, before BK08e merges; Kimi K69 problem 1): _apply_open_bit drops mov
 BK14 (grok, next): L20 after the birth: prop 87's caller-20 group 770 moves Luther (opcode 18 kind 1 target 0, words (-1382,3213),
   flags 0x0085) and plays movie 65 bb_brth (now staged). With BK00d's player consumer that should run natively - prove it with
   an earned birth walk (no pose adapter), and fire actor:46's caller-0x0B record (group 12398) on its death like 47/48.
+
+## From the lead's decisions after Fable 5.2's review (lead_notes/DECISIONS_AFTER_FABLE52_REVIEW_20261109.md)
+BK15 (grok, after BK14): L19 liquid follows moved floors - after the flood the body floats over the raised channel deck and stalls
+  at (651,-3,-2081) before region 133; make the liquid surface/bed follow the live region floor (or drop raised regions from
+  the liquid set while raised). Earned walk through the flooded channel.
+BK16 (grok): BK14 + save-validator fix for creatures a host clears ("Absent creature has live state" after the birth); add save +
+  reload after the birth and at the cab bottom to the L20/L19 earned chains.
+BK17 (grok, research then fix): list every L16-L20 main-chain group whose fire status is unhosted/rejected (opcode 7, opcode 22
+  beyond the stub, opcode 2 arms 0x23/0x25/0x35, ...), ranked by chain order; fix or adapter-bind in that order.
+Your number block from now: ledger 0500-0549, registry 1200-1249.
