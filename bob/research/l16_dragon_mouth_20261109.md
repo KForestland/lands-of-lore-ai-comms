@@ -1,6 +1,6 @@
 # L16 dragon-room mouth — movable 103
 
-Place L16_CA. The walk log is `/tmp/l16exit-act3/tmp/regressions/l16walk3/l16_exit_earned_test.log`. No new Godot run this pass. The scratch `/tmp/l16exit-act3` is left as-is. Name-at-index stays LIKELY. Opcode 197 arms 6/7 were already hosted as bit 2 of byte +0x19, not the movement-drop bits.
+Place L16_CA. Walk 3 stopped on movable 103 (`/tmp/l16exit-act3/tmp/regressions/l16walk3/l16_exit_earned_test.log`). Walk 4 crossed that mouth and stopped on the tapestry plane (`l16walk4`). Name-at-index stays LIKELY. Opcode 197 arms 6/7 were already hosted as bit 2 of byte +0x19, not the movement-drop bits.
 
 ## Duck
 
@@ -44,6 +44,14 @@ Movable 73, the same static slot, at native (−9801, −13277), has the same th
 
 Prop 241 and control 73 do not name movable 103. Region 8456's kind 12 group 6868 starts a timer on prop 421. Region 9622's group 7126 stops it. Prop 421's kind 2 group is opcode 15 on the side pillars 433–442, not the door.
 
-## Not applied
+## Frames
 
-No travel-100 write. No collision edit. No pose. BK04 not started.
+g_00319 at 4:28:40 looks down an open hall at the winged mural. g_00321 at 4:29:40 is inside, beside that mural and a gold column. No opened frame shows the slab swinging. Hintbook 5278-5288 says the door that opens is behind the dragon, after the blood. Grade LONGPLAY for the open hall and the interior. Grade HINTBOOK for the blood door.
+
+## Adapter
+
+Collision on movable 103 only is removed. The drawn faces stay. Region 9622 is unchanged. Piece 0368. Walk 4 logged `MOUTH 103 collision dropped, meshes 3` and entered region 8457.
+
+## Tapestry plane
+
+Walk 4 then stood at about (1623, 62, 5196), region 8457, short of fixture point (1623, 5180). The collider is face 30077, static assembly 92, one quad x 1560-1680, y 30-130, z 5181, material 425. Movable 92 is the north-east FireWall at Godot z -2947 and is not this face. Control 92 shares the tapestry placement. Kind 4 does not clear the solid bit. Kind 6 value 2 (group 42286) runs opcode 9 arm 8, which does. The control-event caller is not known, so that event is not hosted. g_00319 and g_00321 already show the player inside at the mural, and no opened frame shows this plane swinging. Collision on static assembly 92 only is omitted. The drawn face stays. Piece 0369. The earned walk is the check. BK04 waits on that walk.
