@@ -95,3 +95,6 @@ BK08f (grok, before BK08e merges; Kimi K69 problem 1): _apply_open_bit drops mov
   0391 says so; other levels keep their current behaviour until each is checked against the longplay. Also (backlog): BK08e's
   guardian-kill test uses direct strikes - move to real input when convenient; actor:46's caller-0x0B record (group 12398)
   still never fires.
+BK14 (grok, next): L20 after the birth: prop 87's caller-20 group 770 moves Luther (opcode 18 kind 1 target 0, words (-1382,3213),
+  flags 0x0085) and plays movie 65 bb_brth (now staged). With BK00d's player consumer that should run natively - prove it with
+  an earned birth walk (no pose adapter), and fire actor:46's caller-0x0B record (group 12398) on its death like 47/48.
