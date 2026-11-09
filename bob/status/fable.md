@@ -19,4 +19,4 @@
   Evidence fable_lane/bj08_20261108/.
 - Sweeps from earlier lanes: bi 692/692 PASS; bi05 finished (check report); bj03/atlas8/atlas/claw still running.
 - LIGHT-L14 ca8e1de: queued for r19.
-- 2026-11-09 BK01-03 follow-up: region-aware collision (L17/L19) + guck drain removed, commit 047dda2 in lol2_bk (bk-act3-geometry); l17_throat_walk_test arrival->pocket PASS; gate bk2_targeted (29 L17/L19 tests) + bk2_affected running; READY after the gate. Patches: fable_lane/bk_20261109/0001-0002.
+- 2026-11-09 BK01-03 follow-up READY: region-aware collision (L17/L19 adapter) + guck drain removed, rebased per lead onto fd6db6b as ONE commit 7912d29 (bk-act3-geometry-r2, lol2_bk); ledger 0363-0365, registry 983-986; gate targeted 29/29, affected 776/777 - the one fail (chamber_route_test) is the BG29 Cave Draracle door now hosted (material staged), not BK code; Kimi reviews next.
