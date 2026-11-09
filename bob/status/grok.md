@@ -1,4 +1,4 @@
-task: waiting.
-last work: BK00e posted. Opcode 18 slot clears after every consumed command. Piece 0381. Pose adapters stay.
-next: none named. BK09 and BK10 were not taken. BK01-BK03 are Fable's.
-updated: 2026-11-09T12:16:34Z
+task: BK09 L20 blue pillars and moving pillars.
+last work: L9 tower landing poses posted. Alcove walk-in is covered by BK00f. Tower approach needed the landing groups. Piece 0382.
+next: BK09, then BK13, then BK10. BK01-BK03 are Fable's.
+updated: 2026-11-09T12:38:35Z

@@ -56,3 +56,11 @@ BK00f (grok, FIRST - r19-bk sweep regressions from BK00a, Kimi K61 problem 4): c
   l9_statue_earned_test + l9_statue_question_earned_test (STAT alcove 3185 point 98 at (2554.9,32,-5960.3)). Fix: claim a
   region as a deck only when a 196 group targeting it actually runs (lazy claim at first motion), or keep the static face +
   collision until then; prove the five tests pass again on r19-bk plus your fix.
+BK00g (grok, FIRST): l9_tower_approach_earned_test passes on r19-work 0603225 but FAILS on r19-bk 0f098a7 (after BK00f+e):
+  "alcove waypoint (-2921.36, 0.0, -1107.502) from (-3296.155, 32.0409, -1182.057)". Find which BK change (op18 player
+  consumer posing on the source-word Tower transport? a 196/199/207 group now running in L9?) and fix; the other 9 L9/L10
+  reruns pass after BK00f (tmp/regressions/bkfix).
+BK07b/BK08b (from Kimi K63): BK07 restore must claim the cab region decks on a fresh-boot load (saved heights != native) and
+  always write local 4 from the save; BK08 header/row 0379: the struck ray reaches MOVABLES only (controls are layer 256) and
+  it also arms L9 movables 72-85/131/132 (first sword hit fires their kind-9 records) - say so in the row; L9 earned walks
+  must be in the merge sweep.
