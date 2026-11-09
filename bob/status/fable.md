@@ -1,5 +1,8 @@
 # Fable lane status (updated 2026-11-09, early)
 
+- BK01-03 (Act 3 geometry): READY FOR REVIEW as bk-act3-geometry a1468af on dd8feec (worktree lol2_bk): region-edge rule
+  (L17 region 1236's wall across corridor 562 dropped; L19 pool rim blocks), L19 guck as liquid + drain adapter, blockers skip
+  liquid regions. BK01 remainder: overlapping corridor layouts need region-aware collision (lead decision). Gate running.
 - BJ10 (L17 -> L19 -> L20 to the ending): READY FOR REVIEW as bj10-finale 7708887 on c611100 (worktree lol2_bj10). Each level
   surveyed from its arrival with nav routes (tools/build_act3_routes.py) + an engine probe; first stops per level and an
   11-item mechanics list in fable_lane/bj10_20261109/NOTES.md. Fixed: 28 decode-note HUD strings -> game voice (ledger 0358),

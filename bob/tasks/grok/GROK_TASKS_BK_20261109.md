@@ -32,3 +32,4 @@ BK12 (grok): L16 box, disk and yellow figure have zero placements, and the Mantl
   native placement/presence (or the event that spawns them) and bind the Mantle Gate to its native door; adapter only where
   the data has nothing, logged.
 Order for Grok: BK11 -> BK12 -> (BJ09 walk on to the L17 exit) -> BK04 ...
+BK13 (grok, research, when free): decode the L19 guck effect on the player (liquid materials 211/265: damage? mana drain? rate per tick?) so Fable's guck host can use native values (lead removed the invented 1 mana/0.5 s + 1 health/4 s).
