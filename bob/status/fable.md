@@ -20,3 +20,4 @@
 - Sweeps from earlier lanes: bi 692/692 PASS; bi05 finished (check report); bj03/atlas8/atlas/claw still running.
 - LIGHT-L14 ca8e1de: queued for r19.
 - 2026-11-09 BK01-03 follow-up READY: region-aware collision (L17/L19 adapter) + guck drain removed, rebased per lead onto fd6db6b as ONE commit 7912d29 (bk-act3-geometry-r2, lol2_bk); ledger 0363-0365, registry 983-986; gate targeted 29/29, affected 776/777 - the one fail (chamber_route_test) is the BG29 Cave Draracle door now hosted (material staged), not BK code; Kimi reviews next.
+- 2026-11-09 K62 follow-ups 62466d1 (saved collision region) + 42d9c2c (chamber_route_test opens the Draracle leaves) gate: targeted 32/32, affected 778/778 - merged by the lead on r19-bk 8601810. BJ11 (Act 3 player walk) in lol2_bj11r on c6a7b8e: sitting A PASS, L19/L20 stop lists posted, gate running.
