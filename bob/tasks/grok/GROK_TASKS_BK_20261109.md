@@ -33,3 +33,15 @@ BK12 (grok): L16 box, disk and yellow figure have zero placements, and the Mantl
   the data has nothing, logged.
 Order for Grok: BK11 -> BK12 -> (BJ09 walk on to the L17 exit) -> BK04 ...
 BK13 (grok, research, when free): decode the L19 guck effect on the player (liquid materials 211/265: damage? mana drain? rate per tick?) so Fable's guck host can use native values (lead removed the invented 1 mana/0.5 s + 1 health/4 s).
+
+## LEAD DECISION 2026-11-09 (from Kimi K60): build the missing NATIVE ENGINE pieces first, then BK05-BK07 mostly run from data
+BK00a (grok, before finishing BK05): opcode 196 handler (region floor motion: word +2 region, word +4 target height, byte 7
+  rate; stage like 197, world side animates the region floors and carries the player) - G97 step4_op196 REPORT.md has the
+  proven store list.
+BK00b: opcode 207 handler (local counter add: signed byte 5 onto local slot byte 4; H13 note).
+BK00c: opcode 199 handler (the L19->L20 gate write 0x26E58[52]; retire the preview seed act2_progression.gd:28-30).
+BK00d: an opcode-18 PLAYER consumer: when a staged opcode-18 targets the player (kind 1, target 0, flags 0x0004 absolute
+  horizontal words, 0x0100 height), move Luther there with the heading - this retires pose adapters (BK04 region 1293, the
+  L16 centre pads, the birth relocation group 770). Keep each existing adapter until its walk passes on the native path.
+Each: unit test of the handler + the affected earned walks re-run; ledger rows (native, not adapter). Then BK05/BK06/BK07 per
+grok_research/kimi_K60.md (bow-shot binding on movables 74-76 is the only genuinely new mechanic there).
