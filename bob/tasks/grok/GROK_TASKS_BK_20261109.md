@@ -89,3 +89,9 @@ BK09b (grok, from Fable BJ11 2026-11-09): the five fire shots are recorded on E 
 BK08e (grok): L20 doorways: (a) movable 52 sits between 53 and 54 and has no kind-9 record - how does it open natively? (b) the
   50/51 doorway still stops the walk after both leaves travel - check the open pose/collision of the leaves and any blocker
   region. Fable's probe notes in the BJ11 round-4 board line.
+BK08f (grok, before BK08e merges; Kimi K69 problem 1): _apply_open_bit drops mover collision for EVERY movable whose +0x15 bit
+  0x80 is set, so hosted E-use/enqueue/region-entry groups in L9 (55/58/59), L14 (85/86/87, 58-63), L16 (66) and L19 (61/62)
+  now make visually closed doors walk-through. Scope the collision drop to L20 movables 50/51 (the decided adapter), ledger row
+  0391 says so; other levels keep their current behaviour until each is checked against the longplay. Also (backlog): BK08e's
+  guardian-kill test uses direct strikes - move to real input when convenient; actor:46's caller-0x0B record (group 12398)
+  still never fires.
