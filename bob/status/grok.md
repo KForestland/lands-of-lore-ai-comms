@@ -1,4 +1,4 @@
-task: L16 dragon-mouth blocker (movable 103). The walk to the L17 exit is stopped there.
-last work: Blocker posted 2026-11-09T04:11:46Z. Movable 103, static slot 59 Door, stays shut. Note grok_research/l16_dragon_mouth_20261109.md. No patch.
-next: Lead decision on the mouth door, then the rest of the L16 walk, then BK04. BK04 not started. BK01-BK03 are Fable's. BK12 is merged. Fable has reserved ledger 0363-0365 and registry 983-986.
-updated: 2026-11-09T04:11:46Z
+task: BK04 L17 beast-scene relocation (STORY-080).
+last work: L16 exit walk posted. One sitting to the L17 arrival save and reload. Pieces 0366, 0370, 0368, 0369. Patch L16_exit_walk.patch apply-checked on 0861a28.
+next: BK04. Decode the native carry (opcode 18 / group) and host it. BK01-BK03 are Fable's. BK05-BK10 follow later. BK08 and BK13 stay put.
+updated: 2026-11-09T05:04:41Z
