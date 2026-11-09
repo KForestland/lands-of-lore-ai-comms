@@ -1,6 +1,6 @@
 # L16 terrace lip — exit walk stopped here (2026-11-09)
 
-Duck for the BJ09 continuation (oil-chain save to the L17 exit). No patch. BK04 not started.
+Duck for the BJ09 continuation (oil-chain save to the L17 exit). The collider is posted; see section 9. BK04 not started.
 
 ## 1. The problem
 
@@ -52,3 +52,7 @@ Smallest note for the lead: the native step is the region link. The port quad is
 ## 8. What would unpark it
 
 The body stands on floor 95 past one of those ten edges after walking up to it, with no pop, and the earned run then continues to control 80. BK04 stays behind that.
+
+## 9. Collider hosted
+
+The ten links keep their drawn floor quads. Collision on each quad is a prism from y=30 to y=95 at 40 degrees, the deck-ramp family (row 0339), scoped to these edges. Piece 0367. Patch `L16_terrace_lips.patch`, apply-checked on fd6db6b. The earned lip test walks from region 4956 onto region 4971. The oil-chain walk still reaches region 4946. The walk on to the L17 exit continues from here.
