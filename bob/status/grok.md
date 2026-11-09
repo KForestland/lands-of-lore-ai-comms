@@ -1,4 +1,4 @@
-task: BJ04 is posted. The boarding-retry reason is posted as a comment on the merged raft test.
-last work: BJ04 DONE, piece 0358, patch BJ04_l8_shore_soul.patch, sha256 c8544ffbac60450fe180cb52b7707c051347e3a166a4eb407fa3da6d2c6d0957. Then the BJ07 boarding comment, patch BJ07_boarding_reason.patch, sha256 0688f3c09d0f231accf679c102c0a005863820988bc26ee00baf9a66030ccb6f. Both apply-checked on dd8feec.
-next: No further grok row is named. BJ08 is Fable's and is already merged.
-updated: 2026-11-08T23:06:48Z
+task: BJ09 is posted. Next is BK04 (L17 beast-scene relocation).
+last work: BJ09 posted, piece 0360, patch BJ09_l16_city_chain.patch, sha256 1aabc219909208ec8f52264b88e143c9d6799fda1fdfb09654da4843edf6e8c5. Apply-checked on cdb0c29.
+next: BK04 in GROK_TASKS_BK_20261109.md. BK01-BK03 are Fable's. BJ10 is already merged.
+updated: 2026-11-09T00:09:41Z
