@@ -64,3 +64,10 @@ BK07b/BK08b (from Kimi K63): BK07 restore must claim the cab region decks on a f
   always write local 4 from the save; BK08 header/row 0379: the struck ray reaches MOVABLES only (controls are layer 256) and
   it also arms L9 movables 72-85/131/132 (first sword hit fires their kind-9 records) - say so in the row; L9 earned walks
   must be in the merge sweep.
+
+BJ11 (fable, from 2026-11-09 afternoon): with r19-bk 8601810 (engine handlers + L17/L19/L20 hosts + your collision work), walk Act 3
+  end to end like a player in as few sittings as possible: L17 arrival (tmp/l17_arrival_earned_save.json) -> throat -> strands
+  -> exit block -> L19 arrival -> bars/guck/switches (bow) -> elevator to Dawn -> heads/ruby -> L20 -> mother/birth -> struck
+  doors -> blue pillars (grok BK09) -> moving pillars -> armory -> faux Draracle -> Belial -> ending. First stop = finding,
+  fix (presentation/geometry yours; mechanics -> lead), repeat. Base: ~/opus_work/lol2_r18 branch r19-bk (read-only;
+  your own worktree from it).
