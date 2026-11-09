@@ -1,4 +1,4 @@
-task: BK00d opcode 18 player consumer.
-last work: BK00c posted. Opcode 199 stores byte 5 at 0x26E58 plus byte 4 when the value is 0, 1, or 2. The L19 preview seed is retired. Piece 0374. Patch BK00c_opcode199_gate.patch apply-checked on 0603225 after BK00a and BK00b.
-next: BK00d. Retire each pose adapter only after its walk passes on the native path. Then BK05-BK07 per kimi_K60.md. BK01-BK03 are Fable's.
-updated: 2026-11-09T07:45:53Z
+task: BK05 L19 bars, gutter, and the Lizard form.
+last work: BK00d posted. Opcode 18 kind 1 target 0 with flag 0x0004 poses Luther. The height word is written only when flag 0x0100 is set. The centre pads, the BK04 pose, and the birth relocation stay. Piece 0375.
+next: BK05 per kimi_K60.md, then BK06, then BK07. BK01-BK03 are Fable's.
+updated: 2026-11-09T08:26:33Z
