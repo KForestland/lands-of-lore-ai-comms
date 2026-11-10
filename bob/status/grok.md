@@ -1,4 +1,4 @@
-task: BK18. Real stops in chain order. Group 6384 is posted. The later real rows stay blocked.
-last work: L16 prop 241 group 6384 hosted and posted. Patch grok_research/patches/R19/BK18_dragon_chop.patch sha256 44319ed5e1d9325dc5b1ff27687e12167a6c436587da600c0ed38ec864203094 applies on 97dce7e. Ledger 0505 and 0506. Registry 1203. Test bk18_dragon_chop_test PASS. Operator 3 is proven setge (file 0x9DC7F) and does not unblock group 2778: local 9 and e58[13] are unread. Arm 0x23 at 0xD81E2 needs byte +0x1AB and then 0xD6B20, which was not entered.
-next: Do not seed locals 2, 3, or 9, e58[13], or index 52. Do not guess opcode 2 arms 0x23/0x25/0x35 or opcode 13 index 4. Arm 0x10 and group 37776 stay deferred. A proven value of player byte +0x1AB, or an entered opcode 13 index 4 arm, is the next native read. Ledger 0507-0549 and registry 1204-1249 are still free. _l20_death_sent on load is a separate low-priority note.
-updated: 2026-11-10T05:20:13Z
+task: BK18 real stops, paused for F-09. Opcode 17 is proven and not hosted.
+last work: F-09. Opcode 17 at file 0xECA76 adds signed command byte 4 to the resolved object's byte +0x25 and clamps to 0..255. Native 0x645E0 is the length walker and returns 6. 66 groups listed. Note grok_research/F09_opcode17_20261110.md. Board post 2026-11-10T06:25Z.
+next: BK18 rows after group 6384 stay blocked (unread locals, opcode 2 arm 0x23, opcode 13 index 4). Do not seed. On the next patch, clear act2_creatures.gd `_l20_death_sent` on load (K73). Ledger 0507-0549 and registry 1204-1249 remain. BK18 is merged; do not edit lol2_r18.
+updated: 2026-11-10T06:25:00Z
