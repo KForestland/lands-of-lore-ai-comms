@@ -3,7 +3,9 @@
 Fable 5.2, 2026-11-10, from `MASTER_PLAN_TASK_20261110.md`. Plan only; no game code was changed and nothing was run for it.
 
 Companion files:
-- `fable_lane/master_tasks.json` — 124 proposed tasks in the requested shape.
+- `fable_lane/master_tasks.json` — 127 proposed tasks in the requested shape.
+
+**Updated 2026-11-10 after the owner's answers** (`lead_notes/OWNER_DECISIONS_MASTER_PLAN_20261110.md`). Section 5 now records the answers; section 2.5 is new; tasks F-18, I-17 and U-07 are new; F-06, U-03, U-05, U-06, A-01, A-02, I-02, M-20, C-15, R-04, S-07, X-04, X-06 and X-09 changed. Nothing else was touched.
 - `fable_lane/master_backlog_triage.json` — one line for each of the 574 open backlog rows (566 todo + 8 claimed): keep, merge into which task, close after a check, or drop, with the reason.
 
 **How this was made.** I read the inputs named in the brief and the tree `lol2_bj12` (= r19-work `b3e384e` + the two BJ12 commits). Five read-only survey agents each read one part of the code and reported with file and line; I measured the test suite and the ledger myself. Nothing here comes from task counts. The tree is one day behind r19-work (BK14-BK18, Sol 3b/3c are not in it), so Act 3 lines may be slightly pessimistic.
@@ -131,7 +133,7 @@ Machine limit is memory: Sol 6 Godot, Grok 2, Fable 2, lead as needed, with 10 G
 | **Grok** native data and decode | Host opcodes, L19/L20 rows, L16 | Act 2 side areas, item behaviours | Branches, soul census, movies, rooms | Music decode (starts early) |
 | **Fable** plans, surveys, checks | Player survey sittings L9-L14, L20 | Plans per batch; item acceptance sweep | Plans; route tests review | Release candidate review |
 | **Kimi** review | Prep traces, merge reviews | Ledger review (282 rows) | Provisional-number audit | — |
-| **Owner** | r19/r20 playtests, decisions D1-D5 | Level sign-offs | Balance playtests | Beta, 1.0 |
+| **Owner** | r19/r20 playtests, decision D9 | Level sign-offs | Balance playtests | Beta, 1.0 |
 
 ### 2.4 What I would change in how we work
 
@@ -141,26 +143,39 @@ Machine limit is memory: Sol 6 Godot, Grok 2, Fable 2, lead as needed, with 10 G
 4. **Declare every shortcut in a test.** Teleports and test aids are counted in the registry and checked by a tool. Today two rows declare any.
 5. **Plan, then build** (the trial the owner started with BJ13). One lane writes the contract, the data facts, the files and the test; another builds. The plan found the native slots and the "second potion" fact before any code was written. Use it for every batch of size L.
 6. **Cut the cost of a gate.** A lane change should select tens of tests, not 797. The lead runs the full sweep nightly. This is the cheapest speed-up available.
-7. **One backlog, in batches.** 124 tasks replace 574 rows. A row per item or per spell hides the real unit of work, which is the shared mechanism.
+7. **One backlog, in batches.** 127 tasks replace 574 rows. A row per item or per spell hides the real unit of work, which is the shared mechanism.
 8. **Stop the backlog and the docs going stale.** `act2_route.md` says "not hosted" for 58 rows that mostly are; 25 STORY rows say "todo" for work that exists; BRANCH rows say "done" for work that is not in the tree. A task closes only with the commit and the sitting that prove it.
-9. **A weekly owner build with a short "please test" list** tied to the phase exit, instead of a build per fix. His playtests are the scarcest input in the project.
+9. **A weekly owner build with a short "please test" list** tied to the phase exit, instead of a build per fix. His playtests are the scarcest input in the project. **Decided (D15): one build a week.** A fix that unblocks the owner mid-week still goes out as a patch build; it does not replace the weekly one.
 10. **One staging command for worktrees.** Missing inputs caused 3 of 7 failures in my first BJ12 gate and 14 of 16 in the second.
+
+### 2.5 How R recovery goes away (owner decision D6)
+
+The owner chose game over with a reload option and no R setting. Today "R" revives Luther in the Cave (blows, lava, roaches), on the shared creature host, and since BJ12 after drowning (`liquid_drowning.gd`, ledger 0552). Removing R before a reload exists would bring back the stuck player BJ12 fixed, so the order is fixed:
+
+1. **F-06, then F-18.** The whole-game save and the autosave (every 10 minutes of play and on entering a map). The autosave never records a dead, drowning or falling Luther.
+2. **U-05, the game-over screen.** Every death, whatever the cause, goes through the one health owner (F-15) to one screen: "Load last save" and "Load autosave". It does not need the title menu; "Quit to title" is added when U-01 exists.
+3. **R is removed host by host in that same task**, drowned-R included. Each host's test is rewritten to death, game over, load. `l8_lake_bank_earned_test` becomes: walk off the bank, drown, game over, R does nothing, Load autosave, alive on dry ground.
+4. **Ledger:** row 0552 and the older R-recovery rows are marked superseded by the game-over row. The `last_dry` position in `liquid_drowning.gd` has no other user and goes with it.
+
+Until step 2 lands, the drowned-R stays exactly as BJ12 left it. The rescue for falling out of the world is not a death and stays. With reload a drowned player loses at most ten minutes, which is the cost of the owner's choice and should be said in WHATS_NEW when it ships.
+
+U-05 can be built as soon as F-15 and F-18 are in; it does not have to wait for the rest of the shell, and I recommend it lands before the first build that goes to outside testers.
 
 ---
 
 ## 3. Every task
 
-`master_tasks.json` holds all 124 with dependencies, lane, size, classic-or-modern call, fallback and acceptance. Summary by phase:
+`master_tasks.json` holds all 127 with dependencies, lane, size, classic-or-modern call, fallback and acceptance. Summary by phase:
 
 | Phase | Tasks | What is in it |
 |---|---|---|
-| P0 Foundations | 17 (F-01..F-17) | Golden-path gate and STOP table; test honesty; staging; headless input rule; smaller gates; whole-game save with native state; item grant API; opcodes 17 and 206; region events 1/4; game-wide unhosted-opcode table; backlog rewrite; one strike module; one health owner; area host base; per-level smoke |
+| P0 Foundations | 18 (F-01..F-18) | Golden-path gate and STOP table; test honesty; staging; headless input rule; smaller gates; whole-game save with native state and 10 slots; autosave; item grant API; opcodes 17 and 206; region events 1/4; game-wide unhosted-opcode table; backlog rewrite; one strike module; one health owner; area host base; per-level smoke |
 | P1 Chain | 16 (C-01..C-16) | BJ13; Act 1 golden path by real input; owner retest of r19; survey sittings L10/L9, L12, L13, L14; L16 main line; L17; L19 body, liquid and native rows; L20 walk and chain rows; Act 2/3 playtest starts; r20 |
 | P2 Maps and side | 20 (M-01..M-20) | Per Act 1 area: missing puzzles and look; L8 tunnels and real village views; L10/L9, L12, L13, L14, L16, L19/L20 side content; Act 2/3 map review; lighting; Atlas v2; ledger review; movement rules |
-| P3 Items | 16 (I-01..I-16) | Unified core; inventory UI; numbers decode; 10 behaviour batches; placements; containers and shops; book tabs; acceptance sweep |
+| P3 Items | 17 (I-01..I-17) | Unified core; drop item; inventory UI; numbers decode; 10 behaviour batches; placements; containers and shops; book tabs; acceptance sweep |
 | P4 RPG | 20 (R-01..R-20) | Combat model; creature units; ranged attack; spell core and five school batches; story casts; creature families and three act batches; bosses; loot; forms; provisional numbers; balance playtest |
 | P5 Story and dialog | 16 (S-01..S-24) | Speech host; speech census; three NPC passes; Bacatta; subtitles; NPC bodies; branches; soul census; endings; movie audit and playback; special scenes; room archives; original bugs |
-| P6 Shell and sound | 10 (U-01..U-06, A-01..A-04) | Title and menus; intro; save slots; options; game over and credits; dev keys hidden; music decode and playback; ambience and effects; audio buses |
+| P6 Shell and sound | 11 (U-01..U-07, A-01..A-04) | Title and menus; intro; save slots; options; game over with reload and the end of R recovery; credits; debug mode for testers; music decode and playback (required for 1.0); ambience and effects; audio buses |
 | P7 Release | 9 (X-01..X-09) | No-media distribution and first-run converter; producer chain; slimming; Windows; release kit; closed beta; orphan tests; stability; release candidate |
 
 **Work that was missing from the backlog** (no row, or one tangential row): the whole game shell; music and general sound; the distribution model and converter; a whole-game save with slots; native script state in the save; a generic item grant path; the combat model; a player ranged attack; subtitles; a speech census; a movie audit; branches actually built; region events 1/4; opcode 17 and 206 in the host; every Act 1 story step (there are no Act 1 STORY rows at all); a real-input Act 1 run; player surveys of L9-L14 and L20; the L16 tower design; test honesty tooling.
@@ -185,7 +200,7 @@ Per row in `master_backlog_triage.json`. In summary:
 
 ## 4. Classic or modern
 
-Classic is the default for every task. The call per task is in `master_tasks.json`: 38 are classic outright, 57 are classic with a named modern fallback, 29 are modern by nature (tools, shell, release, owner-approved aids).
+Classic is the default for every task. The call per task is in `master_tasks.json`: 39 are classic outright, 58 are classic with a named modern fallback, 30 are modern by nature (tools, shell, release, owner-approved aids).
 
 ### 4.1 When something counts as "too hard"
 
@@ -195,7 +210,7 @@ A classic attempt has a time-box set by task size, counted in working lane-days 
 |---|---|
 | S | half a day |
 | M | one day |
-| L | two days (three for the combat formula and the music archive) |
+| L | two days (three for the combat formula and the music archive; for music the box ends in escalation, not in a fallback, see A-01) |
 
 At the end of the box the lane posts **evidence**, not a feeling:
 1. where the native record, opcode or table is, or proof that it is not in the data;
@@ -215,33 +230,33 @@ If an unknown remains, the fallback named in the task is built at once. Nobody w
 ### 4.3 Things that are modern from the start
 
 - Where the original data has nothing: L16's box, disk and yellow figure; the Mantle gate; the L20 room door.
-- Player aids the owner already approved: Journal, Atlas, quick belt, larger pack and stacks, R recovery, F2 starts.
+- Player aids the owner already approved: Journal, Atlas, quick belt, larger pack and stacks, the 10-minute autosave (D3). R recovery is no longer one of them (D6); F2 starts move into debug mode (D12).
 - Everything a 1997 game got from DOS and a CD: the shell's options, save slots, the installer and converter.
 - Original bugs: fixed in both editions by the owner's rule.
 
 ---
 
-## 5. Decisions only the owner can make
+## 5. Owner decisions
 
-Each with my recommendation. D1 to D5 are needed in the next two weeks; the rest can wait for their phase.
+Answered on 2026-11-10 (`lead_notes/OWNER_DECISIONS_MASTER_PLAN_20261110.md`). One is still open (D9).
 
-| # | Decision | Recommendation |
-|---|---|---|
-| D1 | **Combat scale.** Use the decoded original model for health, attack and defence, or one deliberate rescale? | Decoded model first, three-day time-box on the damage formula. If it does not decode, one rescale table that you approve once. Not per-creature tuning. |
-| D2 | **How the game is shipped.** | The release holds no original media. The player points it at their own copy and a converter builds the rest. Anything else cannot be published. |
-| D3 | **Saves.** Whole-game save with slots and autosave on level change? | Yes. The original had slots; per-area quicksaves cannot carry a full playthrough. |
-| D4 | **Scope of 1.0.** Everything in the hint book, or the main chain plus major side content? | Everything that has data in the original. Things the books mention but the data lacks are listed, not invented. |
-| D5 | **L16 towers.** No native rows were found for the box, disk and figure. Build from the book and longplay as one adapter? | Yes, after Grok spends one more day looking. It is the largest stand-in in the game, so it should be your call. |
-| D6 | **Death.** Keep "R recovers" in Classic, or the original game-over and load? | Game-over screen with Load and "last autosave"; keep R as an option in settings. |
-| D7 | **Subtitles**, which the original lacked. | Yes, optional. |
-| D8 | **Scenes with no reel in the archives** (the L17 beast scene). In-engine staging that matches the longplay, or a card? | Staging, logged as an adapter. |
-| D9 | **Guck drain rate** and other rates that do not decode. | You pick the value from the longplay once; it is logged. |
-| D10 | **Music fallback** if the archive does not decode in three days. | Ship the optional user music folder and say so plainly; keep trying in the background. |
-| D11 | **Second Larkhon potion.** The Larkhon never wakes in the port, so it has no use. | Leave it as an item with no use. Do not make the Larkhon wake again. |
-| D12 | **Developer keys and F2 starts in the release.** | Hidden behind a flag; F2 starts become "chapter start" only if you want them public. |
-| D13 | **Platforms for 1.0.** | Linux and Windows. |
-| D14 | **Closed beta** with outside players before 1.0. | Yes: Amy Schmidt, mohammadkoush, Kolec76 if they agree. |
-| D15 | **Weekly build rhythm** instead of a build per fix. | Yes, one build a week with a short test list. |
+| # | Decision | Owner's answer | Where it lands |
+|---|---|---|---|
+| D1 | Combat numbers | The original, unless it leads to problems; then a workaround | R-01, R-02: decoded model first, three-day box, workaround logged |
+| D2 | Shipping | Agreed: point at LOLG.EXE and unpack | X-01, X-02: no original media in the release |
+| D3 | Saves | 10 slots; autosave every 10 minutes and on entering a map | F-06 (slots in the format), F-18 (autosave, new), U-03 (UI). The timer is an owner-set modern feature with a ledger row |
+| D4 | Scope of 1.0 | As recommended | Everything with data in the original; the rest listed, not invented |
+| D5 | L16 towers | As recommended | M-15: Grok one more day, then book and longplay as one adapter |
+| D6 | Death | Game over with a reload option; no R setting | U-05 rewritten; section 2.5 says how R, including BJ12's drowned-R, goes away |
+| D7 | Subtitles | Yes | S-07, optional setting |
+| D8 | Scenes with no video | Agreed; owner playtests whether it fits | S-22, in-engine staging, logged adapter |
+| D9 | Guck drain rate | **Open**: the owner asked what it is; the lead answers | M-16 unchanged; no value is set until he picks |
+| D10 | Music | Not needed for playtests; required in the final version | A-01, A-02: the user-folder fallback is removed; music is a 1.0 gate (X-09 already depends on A-02) |
+| D11 | Second Larkhon potion | An extra can be dropped | I-17 (new): a general drop-item feature |
+| D12 | Debug keys | A debug mode for other playtesters or a beta | U-06 rewritten; the beta (X-06) now depends on it |
+| D13 | Platforms | Linux and Windows; Mac only if it costs nothing | X-04: Mac is an untested export or nothing, never a gate |
+| D14 | Closed beta | Yes | X-06; the lead asks through the owner |
+| D15 | Build rhythm | Left to the lead and Fable; lead decided one build a week | Section 2.4 point 9 |
 
 Standing gameplay matters that also need you when they arise: any creature damage change, any change to curse timing, any puzzle solved differently from the book.
 
@@ -255,15 +270,15 @@ In lane-weeks: one building lane working a normal week inside its usage limits. 
 
 | Phase | Lane-weeks | Main uncertainty |
 |---|---|---|
-| P0 Foundations | 5 to 8 | How entangled the Act 1 hosts are with the strike and save code |
+| P0 Foundations | 5.5 to 8.5 | How entangled the Act 1 hosts are with the strike and save code |
 | P1 Chain | 5 to 10 | L19/L20 unread locals; what the L9-L14 surveys find |
 | P2 Maps and side | 10 to 18 | Hive and Jungle puzzles; L16 towers; how many map defects the owner finds |
 | P3 Items | 8 to 14 | Whether the item numbers decode |
 | P4 RPG | 14 to 24 | The combat formula; 26 spell levels; boss fights |
 | P5 Story and dialog | 10 to 18 | How many lines and movies are not yet triggered; the census will say |
-| P6 Shell and sound | 6 to 12 | Music archive format |
+| P6 Shell and sound | 7 to 13 | Music archive format; music is now required |
 | P7 Release | 8 to 14 | Converter on Windows; what beta players find |
-| **Total** | **66 to 118** | |
+| **Total** | **67.5 to 119.5** | |
 
 ### 6.2 Finish date
 
@@ -276,22 +291,22 @@ With three building lanes that is 22 to 39 calendar weeks of pure work. Add owne
 Checkpoints that will tell us early which it is:
 - **r20, a player finishes the game** (P1 exit): if this is not in hand by mid-December, add a month to everything.
 - **Combat model decided** (R-01, R-02): by the end of January.
-- **Music decoded or fallback chosen** (A-01): research can answer this before Christmas.
+- **Music decoded, or the escalation of A-01 started** (A-01): research can answer this before Christmas. Since D10 there is no fallback to choose.
 - **Converter runs on a second machine** (X-01, X-02): by the end of February.
 
 This estimate rests on the pace I can see: 820 commits in 23 days, and ten levels of owner-scripted chain in about ten days. That pace built things; it did not prove them for a player, and proving is slower. I could be wrong by a wide margin in either direction, and the range above is honest rather than precise.
+
+**After the owner's decisions (2026-11-10):** the range above does not move. The new and changed work adds about 1.5 lane-weeks to a total of 66 to 118. What changes is the shape of the late risk: music can no longer be dropped to save the date, so an unreadable music archive would delay 1.0 rather than thin it.
 
 ### 6.3 What would move the date
 
 Earlier:
 - Smaller gates (F-05). Every lane gains from the first week.
-- The owner answering D1 to D5 soon.
 - A fourth building lane once P0 is in, because P2 to P5 split well by area and by batch.
-- Cutting 1.0 scope to the main chain plus major side content (D4) would save roughly 8 to 15 lane-weeks.
 
 Later:
 - Finding that Act 2 creature numbers are not hit points and the damage formula does not decode.
-- A music format nobody has decoded.
+- A music format nobody has decoded. Since D10 this no longer costs a feature; it holds 1.0 until solved.
 - The Windows converter.
 - Owner playtests more than a week apart.
 
@@ -302,7 +317,7 @@ Later:
 3. **A full playthrough save.** State changes during development break testers' saves, and native state may not be saved at all. Mitigation: F-06/F-07 before content.
 4. **Unknown player stops on six levels.** Nobody has surveyed L9, L10, L12, L13, L14 or L20 as a player. Mitigation: C-04 to C-07 and C-13 early; they are cheap.
 5. **L19/L20 native rows that will not decode.** Mitigation: the adapter rule of 4.2, a day per row.
-6. **Music.** No code, no decoder, one tangential backlog row. Mitigation: research now, fallback named.
+6. **Music.** No code, no decoder, one tangential backlog row, and required for 1.0 (D10). Mitigation: A-01 starts now, not in P6; outside modders with MIX tools are asked early; the owner decides only if the archive stays unreadable.
 7. **Gate cost and memory.** A 3 to 4 hour gate with a hard cap on parallel runs slows everything. Mitigation: F-05, nightly sweeps.
 8. **Stale status.** Backlog and docs disagree with the tree in both directions. Mitigation: F-13 and the closing rule.
 9. **Owner time.** He is the only real player and works full time. Mitigation: weekly builds, short lists, outside beta players.
