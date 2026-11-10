@@ -5042,3 +5042,57 @@ Status: cause of THIS owner's blockage remains unconfirmed without full save; co
 [2026-11-10T02:53Z lead] OWNER: DOSBox truth run dropped, no recording; owner takes screenshots from a YouTube video instead. The no-paste rule for the DOSBox window is lifted. Sol resumed Task3b (6 Godot, 20 GiB free at 02:53Z); owner asked the lead to watch RAM closely.
 
 [sol] 2026-11-10T02:53:41.527742+00:00 Second-restart Task3b resumed: preserved691 PASS +12chain skips, including room producer/restart already terminal. ONLY105 unfinished cases in existingv0-v5; new tmp/task3_second_retry via qualification_manifest.retries. Candidate77962ee/Gamebcee966 unchanged. Single guard max6 host-counted Godot/10GiB admission/Dummy/LP1. Preflight pair assertion corrected to preserve the already-passed pair; no engine launched on failed preflight. No desktop/focus changes. READY remains held for final audit/captures.
+
+[fable] 2026-11-10T03:13Z BJ12 back after the second restart (lol2_bj12, branch bj12-l8-quests on b3e384e, uncommitted work kept and read). STOP list, the L8 chain as a player from the F2 darker start (survey walk + K71), in chain order:
+STOP 1 village first: walking to the great tree before Daniel/temple = no prompt, no guard, no note (target suppressed, guard 113 absent). FIX built: the village always answers ("E — Speak with the village guard"), the guard steps out when Luther is near, panel + Journal note l8_guard_wants_blade_back say he wants Daniel's blade.
+STOP 2 "the point to click": one flat panel at the guard did everything; nothing named the shaman, the key or the cemetery. FIX built: the panel is the scene's views (clearing -> herbalist's / shaman's / Daniel's treehouse, "Step back"), "Speak with the shaman until he gives the cemetery sigil", and the clearing text says the next step from earned state.
+STOP 3 after the key: nothing said where the sigil belongs. FIX built: Journal note + Atlas marker l8_cemetery_gate_east (gate east of the village), cleared when L10 main gate opens.
+STOP 4 leaves in the pack, no word what for. FIX built: Journal note l8_leaves_for_the_tribe; clearing offers "Present a Silverleaf — the initiation begins".
+STOP 5 after the bout: "E — Return to the village" showed everywhere but only worked with Daniel in the crosshair within 180. FIX built: E answers anywhere in the arena.
+STOP 6 serum "not accessible": the trade closed the panel and the mix lived only behind a pack button, hint only beside the Larkhon. FIX built: the trade stays at the shaman's table with "Mix the Amaranth Serum with a Silverleaf"; Journal notes for serum-needs-leaf and the vapors' use as soon as they are carried.
+STOP 7 lake/gorge F10 (5372,2889) H -486: the water DOES kill on the 15 s clock in this tree (probe: dead at clock 15.0), but R revived in place on the -550 bed -> drowned again = "stuck". FIX built: R returns Luther to the last dry ground; notice says so. Geometry note for the lead: the gorge (regions 3287-3345, floor -550) has rim regions 3324/3325/3322/3327 with no nav links; no missing floor found - it is a 600-deep liquid column by the data.
+Tests by real input (E / Enter / Esc / R keys, real mouse clicks on the panel buttons, on foot): l8_tribe_serum_earned_test PASS, l8_lake_bank_earned_test PASS (2 TELEPORT, declared), l8_village_views_earned_test running (F2 start -> village first -> Daniel -> temple -> village views -> on foot into L10 -> E opens the gate). Harness finding: headless root window is 64x64, so pushed mouse clicks on a panel miss until the test sets root.size (cost me one debugging round; worth a line in the test guide). Creature finding for @grok/lead: the eight WILD Hulines (actors 52-59) follow the player and stand stacked on ONE point (494,-4080), a nav midpoint north of the village, on the way out - no separation. Ledger pieces 0550-0552, registry orders 1250-1252. Targeted gate (39 L8/L10/drowning tests) running, max 2 Godot, Dummy audio, MemAvailable guard in my wrapper. READY lines per fix follow with the commits.
+
+[sol] 2026-11-10T03:15:08.988317+00:00 Task3b second-restart progress713 terminal/provisional PASS +12chain skips;83 remaining. Clean-profile Cave recovery terminal1/1PASS/source_stable resolves interrupted-profile original_game.cfg auto-start failure, no Game/test change (main/tmp/task3_clean_recovery_retry/report.json). Raw lift retry failed unchanged60ms audio-seek check with69ms residual; preserved for bounded same-source retry after current run. Original negative is not waived. Frozen77962ee/Gamebcee966, ownmax6 Godot/Dummy/LP1 and10GiB admission guard maintained; available memory currently~17GiB. No desktop/focus changes; noREADY.
+
+[2026-11-10T03:23:31Z grok] BK17 main chain. Two host fires of L16, L17, L19, and L20, adapters on, STORY-067 through STORY-093. First fire stops=60 ran=54. After pieces 0502 (prop +0x25 = 0), 0503 (predicate type 4), and 0504 (adapter opcode7_movable_records): stops=39 ran=75. Twenty-one groups now run, including L19 group 5836. Group 7704 still stops on opcode 2 byte 4 = 35 and does not write index 52. Group 770 stays rejected while +0x25 is 0. x,z below are Godot stand points (stored word 0, minus stored word 2). Region 2369 uses the AE12 mark (3321, 875) with that negation. List: grok_research/BK17_main_chain_stops_20261110.md. Raw lines: grok_research/BK17_chain_fire_20261110.txt. Patch grok_research/patches/R19/BK17_main_chain_stops.patch sha256 c77ae156ddbe7933b06ddeb98ca41d2724a8ef8995794f1f68cbc1e967431118, apply-checked on b3e384e. Registry 1202. Kimi traces the first three. Named tests passed: native_script_host_test, l8_activation_test, native_host_op199_test, bk17_host_stops_test, dark_halls_doors_native_test, act2_exit_blockers_test, deviations_ledger_test, test_registry_test. godot_check 5 scripts, 0 failed. Dummy audio, one Godot at a time.
+STOP L16 -4111,15457 4900 prop 626 group 40510 unhosted opcode 9 arm 0x10 kimi
+STOP L16 2289,-648 6098 prop 602 group 37776 unhosted kind 10 matcher kimi
+STOP L16 1625,4417 9476 prop 241 group 6384 unhosted opcode 7 index 10 (+0x37 not held) kimi
+STOP L19 120,525 687 prop 222 group 2778 unhosted local 9 grok
+STOP L19 120,525 687 prop 222 group 2814 unhosted local 9 grok
+STOP L19 120,525 687 prop 222 group 2850 unhosted local 9 grok
+STOP L19 -323,-2124 36 movable 74 group 5930 unhosted local 0 grok
+STOP L19 -304,-2124 34 movable 75 group 6602 rejected predicate 0 (left 1, right 2) grok
+STOP L19 1535,-3282 213 movable 50 group 3762 unhosted local 2 grok
+STOP L19 1535,-3282 213 movable 50 group 3808 unhosted local 2 grok
+STOP L19 1622,-3609 609 movable 71 group 5652 unhosted local 2 grok
+STOP L19 1622,-3609 609 movable 71 group 5698 unhosted local 2 grok
+STOP L19 1629,-3246 606 movable 72 group 5744 unhosted local 2 grok
+STOP L19 1629,-3246 606 movable 72 group 5790 unhosted local 2 grok
+STOP L19 2550,-854 1931 movable 51 group 3998 rejected predicate 207 (left 0, right 1) grok
+STOP L19 1306,-1444 1706 prop 65 group 66 unhosted local 11 grok
+STOP L19 2802,-882 1461 prop 78 group 1230 rejected predicate 207 (left 0, right 1) grok
+STOP L19 2802,-882 1461 prop 78 group 1250 rejected predicate 208 (left 0, right 2) grok
+STOP L19 2802,-882 1461 prop 78 group 1500 rejected predicate 211 (left 0, right 5) grok
+STOP L19 2802,-882 1461 prop 78 group 1544 rejected predicate 209 (left 0, right 3) grok
+STOP L19 2802,-882 1461 prop 78 group 1566 rejected predicate 226 (left 0, right 20) grok
+STOP L19 2802,-882 1461 prop 78 group 1672 rejected predicate 231 (left 0, right 25) grok
+STOP L19 1939,-891 2182 actor 39 group 8150 rejected predicate 207 (left 0, right 1) grok
+STOP L19 1939,-891 2182 actor 39 group 8170 rejected predicate 208 (left 0, right 2) grok
+STOP L19 1939,-891 2182 actor 39 group 8290 rejected predicate 211 (left 0, right 5) grok
+STOP L19 2616,-774 1933 prop 98 group 1964 rejected predicate 8 (left 0, right 1) grok
+STOP L19 3321,-875 2369 region 2369 group 15790 rejected predicate 205 (left 0, right 1) grok
+STOP L20 -1160,-4258 262 prop 242 group 7704 unhosted opcode 2 byte 4 35; index 52 not written grok
+STOP L20 -1496,-4268 291 prop 87 group 770 rejected predicate 219 (left 0, right 13) grok
+STOP L20 -3340,-4299 780 movable 57 group 9768 unhosted local 3 grok
+STOP L20 -3404,-4299 782 movable 58 group 9800 unhosted local 3 grok
+STOP L20 -3482,-4299 784 movable 59 group 9832 unhosted local 3 grok
+STOP L20 -3559,-4299 788 movable 60 group 9864 unhosted local 3 grok
+STOP L20 -3636,-4299 788 movable 61 group 9896 unhosted local 3 grok
+STOP L20 -6921,-4828 1272 actor 46 group 12052 unhosted opcode 13 index 4 grok
+STOP L20 -1238,-3207 177 actor 75 group 29496 unhosted opcode 13 index 4 grok
+STOP L20 -6921,-4828 1272 actor 46 group 12152 rejected predicate 208 (left 0, right 2) grok
+STOP L20 -6921,-4828 1272 actor 46 group 12196 rejected predicate 209 (left 0, right 3) grok
+STOP L20 -6921,-4828 1272 actor 46 group 12240 rejected predicate 210 (left 0, right 4) grok
+READY BK17. Remainder published, not adapted further this pass. No grok-lane backlog row is ready. Next is standing idle R1. [grok]

@@ -1,4 +1,4 @@
-task: BK15 flood ceiling posted. Next is BK17, the L16-L20 unhosted group list.
-last work: BK15 flood ceiling. Low L19 ceilings ride the flood deck so the Human walks the raised channel.
-next: BK17. Rank unhosted and rejected groups on the L16-L20 main chain, then fix in that order.
-updated: 2026-11-10T00:12:54Z
+task: BK17 main-chain list posted. Next is standing idle R1.
+last work: BK17. Second fire stops=39 ran=75. Pieces 0502-0504. Patch BK17_main_chain_stops.patch sha256 c77ae156ddbe7933b06ddeb98ca41d2724a8ef8995794f1f68cbc1e967431118.
+next: Standing idle R1, ahead-of-Astra cards. No grok-lane backlog row is ready.
+updated: 2026-11-10T03:23:31Z
