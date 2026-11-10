@@ -3,9 +3,11 @@
 Fable 5.2, 2026-11-10, from `MASTER_PLAN_TASK_20261110.md`. Plan only; no game code was changed and nothing was run for it.
 
 Companion files:
-- `fable_lane/master_tasks.json` — 127 proposed tasks in the requested shape.
+- `fable_lane/master_tasks.json` — 137 proposed tasks in the requested shape.
 
 **Updated 2026-11-10 after the owner's answers** (`lead_notes/OWNER_DECISIONS_MASTER_PLAN_20261110.md`). Section 5 now records the answers; section 2.5 is new; tasks F-18, I-17 and U-07 are new; F-06, U-03, U-05, U-06, A-01, A-02, I-02, M-20, C-15, R-04, S-07, X-04, X-06 and X-09 changed. Nothing else was touched.
+
+**Updated again 2026-11-10 after the gap audit** (`fable_lane/MASTER_PLAN_GAP_AUDIT_20261110.md`, evidence in `grok_research/kimi_K78.md` and `kimi_K79.md`). Section 3.2 is new and lists every change; section 4.4 is new and assigns the reverse-engineering jobs; D9, D10 and D16 are recorded in section 5; the effort table and the date text in section 6 are redone. Ten tasks are new (F-19, F-20, F-21, M-21, M-22, M-23, R-21, R-22, U-08, X-10), which makes 137.
 - `fable_lane/master_backlog_triage.json` — one line for each of the 574 open backlog rows (566 todo + 8 claimed): keep, merge into which task, close after a check, or drop, with the reason.
 
 **How this was made.** I read the inputs named in the brief and the tree `lol2_bj12` (= r19-work `b3e384e` + the two BJ12 commits). Five read-only survey agents each read one part of the code and reported with file and line; I measured the test suite and the ledger myself. Nothing here comes from task counts. The tree is one day behind r19-work (BK14-BK18, Sol 3b/3c are not in it), so Act 3 lines may be slightly pessimistic.
@@ -64,7 +66,7 @@ Two statements that sound alike and are not:
 | System | Built | Player gets | Missing for a finished Classic |
 |---|---|---|---|
 | Movement, forms, drowning, crouch | Yes | Yes | Same rules in every area; body versus tight native passages (Sol 3c). |
-| Native script host | 15 levels load their original scripts; about 30 opcodes hosted | Indirectly | L8-L14 are 82 of 86 hand-written owners, not native. Missing game-wide: opcode 17 (counters), opcode 206 (soul), region events 1 and 4, several arms on the Act 3 chain. |
+| Native script host | 15 levels load their original scripts; about 30 opcodes hosted | Indirectly | L8-L14 are 82 of 86 hand-written owners, not native. Missing game-wide: opcode 17 (counters), opcode 206 (soul), region events other than 2 (bytes 0, 1, 3, 4, 5, 7 and 9 all occur; see F-11), native timers and form events (F-19, F-20), several arms on the Act 3 chain. |
 | Saves | F5/F9, one quicksave per area, about 13 formats, strict validators | Partly | No slots, no save UI, no migration (`version == 1` only). Other levels' native state LIKELY lives only in session memory, so quit-and-load in Act 2/3 can lose it. No resume for Act 2/3 saves from the opening screen. |
 | Items | 170 definitions carried and shown; 20 have behaviour | Partly | 103 definitions answer "not hosted". No per-weapon damage, no rings, no throwing, no scroll reading, no recipes, no stacks, no drop, no containers. No generic path from a script's "give item" to the pack: 25 files append by hand. Two catalogs. |
 | Combat | Flat adapter: 30 health, armed blow 8 | Yes, but not as a game | Decoded progression is computed and then ignored by combat. Act 2 creature health is 200 to 10,000 against 8 per blow. No ranged attack at all. Strike code is copied in about 12 hosts; health has three owners. |
@@ -116,8 +118,8 @@ The bars show order and overlap, not promised dates (section 6).
 
 - **P0 first, because three pieces of debt multiply every later task.** Twelve copies of the strike code make each RPG task twelve tasks. Hand-rolled item grants make each item task a per-level task. Per-area saves make every state change a save-breaking change. Paying these once is cheaper than paying them 200 times.
 - **P1 before P2, as the owner said (chain before refine).** A finished chain is also the test bed for everything else.
-- **Items before RPG, as the owner said.** Weapons, ammunition, scrolls and tokens are what combat and spells consume. One exception: the item *numbers* decode (I-03) and the combat model decision (R-01) inform each other, so both start in P3.
-- **Three spells are on the main chain** (level-1 Mist at the heads, level-5 Expel at the mother, level-5 Trinity at Scotia) and one side puzzle needs a level-3 imp. P1 keeps them as prompts; P4 replaces them. That is why L16's towers (M-15) wait for Summon (R-10).
+- **Items before RPG, as the owner said.** Weapons, ammunition, scrolls and tokens are what combat and spells consume. One exception: the item *numbers* decode (I-03) and the combat model decision (R-01) inform each other, so both start in P3. Since the gap audit the order is fixed: I-03 decodes the numbers, I-04 loads and shows them, R-01 proves them in a fight. Scrolls (I-07) and missiles (I-10) are built with the spell and ranged systems in P4, and the item sweep (I-16) follows them.
+- **Three spells are on the main chain** (level-1 Mist at the heads, level-5 Expel at the mother, level-5 Trinity at Scotia) and one side puzzle needs a level-3 imp. P1 keeps them as prompts; P4 replaces them. L16's towers (M-15) no longer wait for Summon: the white ball is broken by the pyrapod's spark there, and the imp way is proven in R-10 (changed in the gap audit).
 - **Dialog after RPG, as the owner said.** But the branch scenes need the soul value, and the soul handler is a small host task, so it sits in P0.
 - **Sound and shell are late for integration but their unknowns start now.** Whether the music archive decodes is a research risk. Research is cheap to start and expensive to discover late.
 - **The release converter starts now too.** It is the one item that decides whether the game can be released at all, and it gets harder with every new producer tool.
@@ -133,7 +135,7 @@ Machine limit is memory: Sol 6 Godot, Grok 2, Fable 2, lead as needed, with 10 G
 | **Grok** native data and decode | Host opcodes, L19/L20 rows, L16 | Act 2 side areas, item behaviours | Branches, soul census, movies, rooms | Music decode (starts early) |
 | **Fable** plans, surveys, checks | Player survey sittings L9-L14, L20 | Plans per batch; item acceptance sweep | Plans; route tests review | Release candidate review |
 | **Kimi** review | Prep traces, merge reviews | Ledger review (282 rows) | Provisional-number audit | — |
-| **Owner** | r19/r20 playtests, decision D9 | Level sign-offs | Balance playtests | Beta, 1.0 |
+| **Owner** | r19/r20 playtests, DOSBox check of the imp altar drain (M-23) | Level sign-offs | One short balance playtest per act (D16) | Beta, 1.0 |
 
 ### 2.4 What I would change in how we work
 
@@ -143,7 +145,7 @@ Machine limit is memory: Sol 6 Godot, Grok 2, Fable 2, lead as needed, with 10 G
 4. **Declare every shortcut in a test.** Teleports and test aids are counted in the registry and checked by a tool. Today two rows declare any.
 5. **Plan, then build** (the trial the owner started with BJ13). One lane writes the contract, the data facts, the files and the test; another builds. The plan found the native slots and the "second potion" fact before any code was written. Use it for every batch of size L.
 6. **Cut the cost of a gate.** A lane change should select tens of tests, not 797. The lead runs the full sweep nightly. This is the cheapest speed-up available.
-7. **One backlog, in batches.** 127 tasks replace 574 rows. A row per item or per spell hides the real unit of work, which is the shared mechanism.
+7. **One backlog, in batches.** 137 tasks replace 574 rows. A row per item or per spell hides the real unit of work, which is the shared mechanism.
 8. **Stop the backlog and the docs going stale.** `act2_route.md` says "not hosted" for 58 rows that mostly are; 25 STORY rows say "todo" for work that exists; BRANCH rows say "done" for work that is not in the tree. A task closes only with the commit and the sitting that prove it.
 9. **A weekly owner build with a short "please test" list** tied to the phase exit, instead of a build per fix. His playtests are the scarcest input in the project. **Decided (D15): one build a week.** A fix that unblocks the owner mid-week still goes out as a patch build; it does not replace the weekly one.
 10. **One staging command for worktrees.** Missing inputs caused 3 of 7 failures in my first BJ12 gate and 14 of 16 in the second.
@@ -165,20 +167,20 @@ U-05 can be built as soon as F-15 and F-18 are in; it does not have to wait for 
 
 ## 3. Every task
 
-`master_tasks.json` holds all 127 with dependencies, lane, size, classic-or-modern call, fallback and acceptance. Summary by phase:
+`master_tasks.json` holds all 137 with dependencies, lane, size, classic-or-modern call, fallback and acceptance. Summary by phase:
 
 | Phase | Tasks | What is in it |
 |---|---|---|
-| P0 Foundations | 18 (F-01..F-18) | Golden-path gate and STOP table; test honesty; staging; headless input rule; smaller gates; whole-game save with native state and 10 slots; autosave; item grant API; opcodes 17 and 206; region events 1/4; game-wide unhosted-opcode table; backlog rewrite; one strike module; one health owner; area host base; per-level smoke |
+| P0 Foundations | 22 (F-01..F-21, S-20) | Golden-path gate and STOP table; test honesty; staging; headless input rule; smaller gates; whole-game save with native state and 10 slots; autosave; item grant API; opcodes 17 and 206; region-event census and full dispatch (all event bytes); native timer and event-producer decode and service; OPTTEXT/ERRTEXT string tables; movie audit (moved here); game-wide unhosted-opcode table; backlog rewrite; one strike module; one health owner; area host base; per-level smoke |
 | P1 Chain | 16 (C-01..C-16) | BJ13; Act 1 golden path by real input; owner retest of r19; survey sittings L10/L9, L12, L13, L14; L16 main line; L17; L19 body, liquid and native rows; L20 walk and chain rows; Act 2/3 playtest starts; r20 |
-| P2 Maps and side | 20 (M-01..M-20) | Per Act 1 area: missing puzzles and look; L8 tunnels and real village views; L10/L9, L12, L13, L14, L16, L19/L20 side content; Act 2/3 map review; lighting; Atlas v2; ledger review; movement rules |
-| P3 Items | 17 (I-01..I-17) | Unified core; drop item; inventory UI; numbers decode; 10 behaviour batches; placements; containers and shops; book tabs; acceptance sweep |
-| P4 RPG | 20 (R-01..R-20) | Combat model; creature units; ranged attack; spell core and five school batches; story casts; creature families and three act batches; bosses; loot; forms; provisional numbers; balance playtest |
-| P5 Story and dialog | 16 (S-01..S-24) | Speech host; speech census; three NPC passes; Bacatta; subtitles; NPC bodies; branches; soul census; endings; movie audit and playback; special scenes; room archives; original bugs |
-| P6 Shell and sound | 11 (U-01..U-07, A-01..A-04) | Title and menus; intro; save slots; options; game over with reload and the end of R recovery; credits; debug mode for testers; music decode and playback (required for 1.0); ambience and effects; audio buses |
-| P7 Release | 9 (X-01..X-09) | No-media distribution and first-run converter; producer chain; slimming; Windows; release kit; closed beta; orphan tests; stability; release candidate |
+| P2 Maps and side | 23 (M-01..M-23) | Per Act 1 area: missing puzzles and look; L8 tunnels and real village views; L10/L9, L12, L13, L14, L16, L19/L20 side content; L16 side rooms and chip quests; L9 door rafting and ruin secrets; imp altar drain; Act 2/3 map review with fog and distance shading; lighting; Atlas v2; ledger review; movement rules |
+| P3 Items | 14 (I-01..I-17 less I-07, I-10, I-16) | Unified core; drop item; inventory UI; numbers decode; 8 behaviour batches; placements; containers and shops; book tabs |
+| P4 RPG | 25 (R-01..R-22, I-07, I-10, I-16) | Combat model at one difficulty level; creature units; ranged attack with the missile items; spell core, level-5 charge gating and fizzle, scrolls and tokens, five school batches; story casts; creature families and three act batches; Saar capture room; bosses; loot; forms; provisional numbers; item acceptance sweep; a small balance playtest |
+| P5 Story and dialog | 15 (S-01..S-24 less S-20) | Speech host; speech census; three NPC passes; Bacatta; subtitles; NPC bodies; branches; soul census; endings; movie playback; special scenes; room archives; original bugs |
+| P6 Shell and sound | 12 (U-01..U-08, A-01..A-04) | Title and menus with Extras replay; intro; save slots; options with gamma, mouse sensitivity and bobbing; game over with reload and the end of R recovery; credits; debug mode for testers; HUD compass; music decode (digital and MIDI paths) and playback (required for 1.0); ambience and effects; audio buses |
+| P7 Release | 10 (X-01..X-10) | No-media distribution and first-run converter; producer chain including the music producer; slimming; Windows; release kit; closed beta; orphan tests; stability; failure surfaces; release candidate |
 
-**Work that was missing from the backlog** (no row, or one tangential row): the whole game shell; music and general sound; the distribution model and converter; a whole-game save with slots; native script state in the save; a generic item grant path; the combat model; a player ranged attack; subtitles; a speech census; a movie audit; branches actually built; region events 1/4; opcode 17 and 206 in the host; every Act 1 story step (there are no Act 1 STORY rows at all); a real-input Act 1 run; player surveys of L9-L14 and L20; the L16 tower design; test honesty tooling.
+**Work that was missing from the backlog** (no row, or one tangential row): the whole game shell; music and general sound; the distribution model and converter; a whole-game save with slots; native script state in the save; a generic item grant path; the combat model; a player ranged attack; subtitles; a speech census; a movie audit; branches actually built; region events other than 2; native timers and form events; L16 side rooms; L9 door rafting; level-5 charge gating; the compass; failure messages; opcode 17 and 206 in the host; every Act 1 story step (there are no Act 1 STORY rows at all); a real-input Act 1 run; player surveys of L9-L14 and L20; the L16 tower design; test honesty tooling.
 
 ### 3.1 Backlog triage
 
@@ -196,11 +198,47 @@ Per row in `master_backlog_triage.json`. In summary:
 | Dropped: 2 | `INFRA-W17` (superseded by the 11-09 decision that lanes pull their own next task) and `PLAN-MASTER-REMAKE` (this plan replaces it for LoL2 Classic). |
 | Kept as they are: 4 | Three workspace clean-ups and the drowning animation polish. |
 
+### 3.2 Gap audit, folded in 2026-11-10
+
+Two Kimi audits (K78 content against the hint book, K79 systems) found 13 gaps; 12 are folded in and one is dropped by the owner. The lead's mechanical check found six tasks that depended on a later phase.
+
+| Gap | What was missing | Where it is now |
+|---|---|---|
+| K78-1 | L16 side rooms: storeroom, chalice dream, transformation exhibits, Silverleaf chasm, four chip quests | **M-21** (new, Grok, L). Same adapter rule as the towers (D5) |
+| K78-2 | L9 door rafting; the book's three ruin secrets; the Saar death-match room | **M-22** (new, Grok, M) for rafting and secrets; **R-21** (new, Sol, M) for the Saar room, which needs the Saar fight. It is the one defeat that is not a game over |
+| K78-3 | Level-5 spells cost an Ancients' Stone charge; a spell with no target fizzles | **R-22** (new, Grok, M); R-11 now depends on it |
+| K79-1 | Three difficulty levels | **Dropped (owner D16):** one level only. R-01 and R-02 still decode what the difficulty byte scales, so the original Medium numbers are used |
+| K79-2 | Region events 0, 3, 5, 7, 9 had no owner | **F-11** widened to a census and full dispatch of all event bytes; M to L |
+| K79-3 | No clock or dispatch service for native timers and form events | **F-19** (new, Grok, decode) and **F-20** (new, Sol, service); F-12 depends on F-19 |
+| K79-4 | Gamma, mouse sensitivity, bobbing | **U-04** widened |
+| K79-5 | Compass | **U-08** (new, Grok, S) |
+| K79-6 | MIDI/HMI music path; music not in the converter chain | **A-01** widened; **X-02** now depends on A-01 |
+| K79-7 | Imp altar drain | **M-23** (new, Grok, S); the owner checks it in DOSBox |
+| K79-8 | What the player sees when something is broken | **X-10** (new, Sol, S); X-09 depends on it |
+| K79-9 | Fog and distance shading | **M-17** widened |
+| K79-10 | Extras menu replay | **U-01** widened (depends on S-20) |
+| K79 list 12 | OPTTEXT.TRR and ERRTEXT.TRR | **F-21** (new, Grok, S); feeds U-04 and X-10 |
+
+The six cross-phase dependencies, each reordered rather than excused:
+
+| Was | Change | Reason |
+|---|---|---|
+| M-10 (P2) on S-20 (P5) | S-20 moved to P0 | It is an audit with no dependencies; four tasks wait on it |
+| M-15 (P2) on R-10 (P4) | Edge removed; R-10 now depends on M-15 | The book gives two ways to break the white ball; the pyrapod needs no spell |
+| I-04 (P3) on R-01 (P4) | Edge turned round: R-01 depends on I-04 | I-04 loads and shows the numbers; R-01 proves them in a fight |
+| I-07 (P3) on R-06 (P4) | I-07 moved to P4 | A scroll cannot teach before the spell system exists |
+| I-10 (P3) on R-03 (P4) | I-10 moved to P4 | Missiles are the ammunition of the ranged attack |
+| U-06 (P6) on X-01 (P7) | Edge replaced by U-01 | Testers need the debug switch before the converter ships |
+
+Moving I-07 and I-10 put the item acceptance sweep I-16 behind them, so it moved to P4 as well. After the changes no task depends on a later phase, every dependency resolves, and there is no cycle (checked by script).
+
+Also changed: M-16 carries the owner's guck value (D9); R-20 is S instead of M (D16).
+
 ---
 
 ## 4. Classic or modern
 
-Classic is the default for every task. The call per task is in `master_tasks.json`: 39 are classic outright, 58 are classic with a named modern fallback, 30 are modern by nature (tools, shell, release, owner-approved aids).
+Classic is the default for every task. The call per task is in `master_tasks.json`: 42 are classic outright, 64 are classic with a named modern fallback, 31 are modern by nature (tools, shell, release, owner-approved aids).
 
 ### 4.1 When something counts as "too hard"
 
@@ -234,11 +272,34 @@ If an unknown remains, the fallback named in the task is built at once. Nobody w
 - Everything a 1997 game got from DOS and a CD: the shell's options, save slots, the installer and converter.
 - Original bugs: fixed in both editions by the owner's rule.
 
+### 4.4 Reverse-engineering jobs, each with an owner (from K79's ranked list)
+
+Ranked by how much later work each blocks. Grok decodes; Sol builds the engine side.
+
+| # | Job | Task | Lane | Starts |
+|---|---|---|---|---|
+| 1 | Combat damage formula, creature-health units, what difficulty byte `0xB7FB2` scales | R-02, then R-01 | Grok decode, lead build | Now; blocks all of P4 |
+| 2 | Music: DMUSIC.MIX format, the HMI/MIDI path and its .BNK banks, per-area triggers | A-01 | Grok | Now; 1.0 gate |
+| 3 | Event-dispatch census: region event bytes 0/1/3/4/5/7/9, what raises each | F-11 | Grok, then Sol for the binder part | P0 |
+| 4 | Kind-2 timer expiry walk (`0xB8BA0`) and the clock; kind-5 form and kind-6 producers | F-19, then F-20 | Grok, then Sol | P0 |
+| 5 | Opcode remainder in chain order, opcodes 17 and 206 confirmed | F-09, F-10, F-12 | Grok | P0 (already tasked) |
+| 6 | L19/L20 unread locals and chain predicates | C-12, C-14 | Grok | P1 (already tasked) |
+| 7 | Item numbers: the 21 undecoded definition bytes | I-03 | Grok | Before I-04 (already tasked) |
+| 8 | L16 towers, one more day on the native rows; then the side rooms | M-15, then M-21 | Grok | P2 |
+| 9 | Movie and room-archive audits | S-20 (now P0), S-23 | Grok | P0 |
+| 10 | Imp altar drain | M-23 | Grok, with the owner's DOSBox check | Any gap in Grok's queue |
+| 11 | Compass native action | U-08 | Grok | Any gap |
+| 12 | OPTTEXT.TRR and ERRTEXT.TRR string tables | F-21 | Grok | Any gap |
+| + | Level-5 charge cost and fizzle sites | R-22 | Grok | Before R-11 |
+| + | L9 door-buoyancy records, Saar defeat redirect | M-22, R-21 | Grok for the rows, Sol for the Saar room | P2, P4 |
+
+Jobs 1 to 4 and 9 have no dependencies and can all sit in Grok's queue today.
+
 ---
 
 ## 5. Owner decisions
 
-Answered on 2026-11-10 (`lead_notes/OWNER_DECISIONS_MASTER_PLAN_20261110.md`). One is still open (D9).
+Answered on 2026-11-10 (`lead_notes/OWNER_DECISIONS_MASTER_PLAN_20261110.md`). D9, D10 and D16 were added or completed on the same day after the gap audit.
 
 | # | Decision | Owner's answer | Where it lands |
 |---|---|---|---|
@@ -250,13 +311,14 @@ Answered on 2026-11-10 (`lead_notes/OWNER_DECISIONS_MASTER_PLAN_20261110.md`). O
 | D6 | Death | Game over with a reload option; no R setting | U-05 rewritten; section 2.5 says how R, including BJ12's drowned-R, goes away |
 | D7 | Subtitles | Yes | S-07, optional setting |
 | D8 | Scenes with no video | Agreed; owner playtests whether it fits | S-22, in-engine staging, logged adapter |
-| D9 | Guck drain rate | **Open**: the owner asked what it is; the lead answers | M-16 unchanged; no value is set until he picks |
-| D10 | Music | Not needed for playtests; required in the final version | A-01, A-02: the user-folder fallback is removed; music is a 1.0 gate (X-09 already depends on A-02) |
+| D9 | Guck drain rate | Very slow: about 5 minutes of wading to be fully drained. The imp altar drain is a separate thing he will check in DOSBox | M-16 carries the value as owner-set; M-23 (new) identifies the altar drain |
+| D10 | Music | Not needed for playtests; required in the final version. Order: decode; else rip the CD music from the player's own copy; the YouTube OST only as a stand-in for private playtests | A-01, A-02: music is a 1.0 gate (X-09 depends on A-02); the CD rip is the second path inside the converter |
 | D11 | Second Larkhon potion | An extra can be dropped | I-17 (new): a general drop-item feature |
 | D12 | Debug keys | A debug mode for other playtesters or a beta | U-06 rewritten; the beta (X-06) now depends on it |
 | D13 | Platforms | Linux and Windows; Mac only if it costs nothing | X-04: Mac is an untested export or nothing, never a gate |
 | D14 | Closed beta | Yes | X-06; the lead asks through the owner |
 | D15 | Build rhythm | Left to the lead and Fable; lead decided one build a week | Section 2.4 point 9 |
+| D16 | Difficulty | One difficulty level only. Items are strong, everything can be kited including the last boss, the only real danger is plasma; keep combat balance work small | No Easy/Hard option. R-01 and R-02 decode the difficulty byte only to use the original Medium numbers; R-20 shrinks to S |
 
 Standing gameplay matters that also need you when they arise: any creature damage change, any change to curse timing, any puzzle solved differently from the book.
 
@@ -270,33 +332,37 @@ In lane-weeks: one building lane working a normal week inside its usage limits. 
 
 | Phase | Lane-weeks | Main uncertainty |
 |---|---|---|
-| P0 Foundations | 5.5 to 8.5 | How entangled the Act 1 hosts are with the strike and save code |
+| P0 Foundations | 8 to 12.5 | How entangled the Act 1 hosts are with the strike and save code; what the event census finds |
 | P1 Chain | 5 to 10 | L19/L20 unread locals; what the L9-L14 surveys find |
-| P2 Maps and side | 10 to 18 | Hive and Jungle puzzles; L16 towers; how many map defects the owner finds |
-| P3 Items | 8 to 14 | Whether the item numbers decode |
-| P4 RPG | 14 to 24 | The combat formula; 26 spell levels; boss fights |
-| P5 Story and dialog | 10 to 18 | How many lines and movies are not yet triggered; the census will say |
-| P6 Shell and sound | 7 to 13 | Music archive format; music is now required |
-| P7 Release | 8 to 14 | Converter on Windows; what beta players find |
-| **Total** | **67.5 to 119.5** | |
+| P2 Maps and side | 12 to 21.5 | Hive and Jungle puzzles; L16 towers and side rooms; how many map defects the owner finds |
+| P3 Items | 6.5 to 11 | Whether the item numbers decode |
+| P4 RPG | 16.5 to 28.5 | The combat formula; 26 spell levels; boss fights |
+| P5 Story and dialog | 9.5 to 17 | How many lines and movies are not yet triggered; the census will say |
+| P6 Shell and sound | 8 to 14.5 | Music archive format; music is required |
+| P7 Release | 8.5 to 14.5 | Converter on Windows; what beta players find |
+| **Total** | **74 to 129.5** | |
+
+The gap audit added 6.5 to 10 lane-weeks: ten new tasks, four widened ones, less a little for the smaller balance pass. Items lost three tasks to P4 and P5 lost one to P0, so those two rows fell and P0 and P4 rose by more than the new work alone.
 
 ### 6.2 Finish date
 
-With three building lanes that is 22 to 39 calendar weeks of pure work. Add owner playtest turnaround, lane usage limits, gate time and holidays, and overlap gives some back.
+With three building lanes that is 25 to 43 calendar weeks of pure work. Add owner playtest turnaround, lane usage limits, gate time and holidays, and overlap gives some back.
 
-- **Earliest I can defend: April 2027.** Needs the item numbers and the combat formula to decode quickly, the music archive to be a known format, and the surveys of L9-L14 to find little.
-- **Most likely: June to July 2027.**
+- **Earliest I can defend: late April 2027.** Needs the item numbers and the combat formula to decode quickly, the music archive to be a known format, and the surveys of L9-L14 to find little.
+- **Most likely: July 2027.**
 - **If two of the large unknowns go badly: August 2027 or later.**
 
 Checkpoints that will tell us early which it is:
 - **r20, a player finishes the game** (P1 exit): if this is not in hand by mid-December, add a month to everything.
 - **Combat model decided** (R-01, R-02): by the end of January.
-- **Music decoded, or the escalation of A-01 started** (A-01): research can answer this before Christmas. Since D10 there is no fallback to choose.
+- **Music decoded, or the escalation of A-01 started** (A-01): research can answer this before Christmas. Since D10 the fallbacks are fixed in order: decode, then a CD rip from the player's own copy.
 - **Converter runs on a second machine** (X-01, X-02): by the end of February.
 
 This estimate rests on the pace I can see: 820 commits in 23 days, and ten levels of owner-scripted chain in about ten days. That pace built things; it did not prove them for a player, and proving is slower. I could be wrong by a wide margin in either direction, and the range above is honest rather than precise.
 
-**After the owner's decisions (2026-11-10):** the range above does not move. The new and changed work adds about 1.5 lane-weeks to a total of 66 to 118. What changes is the shape of the late risk: music can no longer be dropped to save the date, so an unreadable music archive would delay 1.0 rather than thin it.
+**After the gap audit (2026-11-10):** the range stays April to August 2027, but it tightens at the early end. The added work is two to three and a half calendar weeks with three lanes. The earliest date moves from April to late April, the most likely from "June to July" to July, and "August or later" stands. Most of the new work is Grok's and has no dependencies, so it can run now beside the chain work; if Grok's queue is kept full, less than the full two weeks is lost.
+
+**After the owner's decisions (2026-11-10):** the range above does not move. The new and changed work added about 1.5 lane-weeks at that time. What changes is the shape of the late risk: music can no longer be dropped to save the date, so an unreadable music archive would delay 1.0 rather than thin it.
 
 ### 6.3 What would move the date
 
@@ -306,18 +372,18 @@ Earlier:
 
 Later:
 - Finding that Act 2 creature numbers are not hit points and the damage formula does not decode.
-- A music format nobody has decoded. Since D10 this no longer costs a feature; it holds 1.0 until solved.
+- A music format nobody has decoded and a copy with no CD audio to rip. Since D10 this no longer costs a feature; it holds 1.0 until solved.
 - The Windows converter.
 - Owner playtests more than a week apart.
 
 ### 6.4 Top risks
 
 1. **The game cannot be shipped in its present form.** Every build embeds converted original media. Mitigation: X-01 starts in P0, not at the end.
-2. **Combat scale.** If creature health and weapon damage do not come from data, balance becomes a design job that needs the owner's time. Mitigation: R-02 first, D1 decided in advance.
+2. **Combat scale.** If creature health and weapon damage do not come from data, balance becomes a design job that needs the owner's time. Mitigation: R-02 first, D1 decided in advance. D16 lowers this risk: one difficulty level, and the owner expects strong items and kiting to carry the player, so balance stays a short pass. BJ14 showed the other side of it: until the model lands, a 30-health Luther cannot cross the Jungle, so an interim scale may be needed for playtests (owner call, BJ14 F9).
 3. **A full playthrough save.** State changes during development break testers' saves, and native state may not be saved at all. Mitigation: F-06/F-07 before content.
 4. **Unknown player stops on six levels.** Nobody has surveyed L9, L10, L12, L13, L14 or L20 as a player. Mitigation: C-04 to C-07 and C-13 early; they are cheap.
 5. **L19/L20 native rows that will not decode.** Mitigation: the adapter rule of 4.2, a day per row.
-6. **Music.** No code, no decoder, one tangential backlog row, and required for 1.0 (D10). Mitigation: A-01 starts now, not in P6; outside modders with MIX tools are asked early; the owner decides only if the archive stays unreadable.
+6. **Music.** No code, no decoder, one tangential backlog row, and required for 1.0 (D10). Mitigation: A-01 starts now, not in P6; outside modders with MIX tools are asked early; if the archive stays unreadable the converter rips the CD music from the player's own copy (D10).
 7. **Gate cost and memory.** A 3 to 4 hour gate with a hard cap on parallel runs slows everything. Mitigation: F-05, nightly sweeps.
 8. **Stale status.** Backlog and docs disagree with the tree in both directions. Mitigation: F-13 and the closing rule.
 9. **Owner time.** He is the only real player and works full time. Mitigation: weekly builds, short lists, outside beta players.
@@ -326,6 +392,8 @@ Later:
 ### 6.5 What I could not confirm
 
 - Whether Act 2 creature health values are hit points or another unit.
+- The gap-audit counts (region event bytes, kind-2 and kind-5 records, the HMI files in the install) are Kimi's, cited from K78 and K79. I did not recount them.
+- Whether the L16 side rooms, the Saar room and the L9 secrets have data in the archives at all. If they do not, D4 lists them as absent.
 - Whether level changes lose other levels' native script state on quit (LIKELY, not traced to the end).
 - What format `DMUSIC.MIX` is. It is 81 MB, which suggests recorded audio rather than MIDI, but I did not open it.
 - How many original speech lines and movies exist against how many play. Only the converted counts are known (716 WAV, 39 reels).
