@@ -1,4 +1,4 @@
-task: BK16 birth save posted. Next is BK15, the L19 liquid follows the moved floors.
-last work: BK16 birth save. A cleared source-present creature may keep its fight state. The earned chain saves on the cab bottom and after the birth.
-next: BK15. L19 liquid follows the moved floors after the flood.
-updated: 2026-11-09T23:43:11Z
+task: BK15 flood ceiling posted. Next is BK17, the L16-L20 unhosted group list.
+last work: BK15 flood ceiling. Low L19 ceilings ride the flood deck so the Human walks the raised channel.
+next: BK17. Rank unhosted and rejected groups on the L16-L20 main chain, then fix in that order.
+updated: 2026-11-10T00:12:54Z
