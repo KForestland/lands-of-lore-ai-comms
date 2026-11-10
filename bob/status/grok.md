@@ -1,4 +1,4 @@
-task: BK14 birth walk posted. Movie 65 is requested and the reel stays unstaged.
-last work: BK14 birth walk. Group 770 commits through the opcode-18 consumer. Actor 46 death fires caller 11.
-next: lead queue. BK01-BK03 are Fable's. Qualification stays with the lead.
-updated: 2026-11-09T22:51:13Z
+task: BK16 birth save posted. Next is BK15, the L19 liquid follows the moved floors.
+last work: BK16 birth save. A cleared source-present creature may keep its fight state. The earned chain saves on the cab bottom and after the birth.
+next: BK15. L19 liquid follows the moved floors after the flood.
+updated: 2026-11-09T23:43:11Z
