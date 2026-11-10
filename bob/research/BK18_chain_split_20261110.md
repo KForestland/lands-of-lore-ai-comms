@@ -28,7 +28,7 @@ Counts: 2 deferred, 14 real, 23 unearned.
 | # | story | group | entry | stop |
 | --- | --- | --- | --- | --- |
 | 3 | 078 | L16 6384 prop 241 | pred 206 passed | opcode 7 index 10, `0703f1000a08`. Log: `prop slot +0xB4 index 10 is not decoded`. |
-| 4 | 081 | L19 2778 prop 222 | pred 34 = `(local 9 == 0) both (e58[13] operator 3 literal 1)` | local 9 is not known. Operator 3 is not decoded. |
+| 4 | 081 | L19 2778 prop 222 | pred 34 = `(local 9 == 0) both (e58[13] >= 1)` | local 9 is not known. e58[13] is not known. Operator 3 is `setge` (file 0x9DC7F). |
 | 5 | 081 | L19 2814 prop 222 | pred 33 = `(local 9 == 0) both (e58[13] == 0)` | local 9 is not known. No L19 opcode 199 writes `e58[13]`. |
 | 9 | 083 | L19 3762 movable 50 | pred 4 `local 2 == 0` | local 2 is not known. First throw. |
 | 11 | 083 | L19 5652 movable 71 | pred 4 `local 2 == 0` | same |
@@ -46,10 +46,10 @@ L19 local names, from the decoded cstrings: 0 `Sewer_block_1`, 2 `Drop_down_sewe
 
 What blocks a seed or a guessed adapter:
 
-- Group 6384's next command after index 10 is opcode 7 index 2 (`0703f1000200`), which calls `0xF2814`, then index 0 (`0703f1000000`), which ORs `0x05` into `+0x36`. Hosting index 10 alone still rolls the group back at index 2. G67 proved `0xF282E` stores the requested index at `+0x31`, or 0 when the index is above `+0x32`. G48's constructor note stores template byte `0x30 & 0x0F` at `+0x37`. Those notes are not yet checked against this prop, so the row stays open.
-- Groups 2778 and 2814 want local 9 == 0 on the first click. They themselves are the only opcode 198 writers, and they store 1. A proven zero of local 9 still leaves 2778 on operator 3 and 2814 on `e58[13]`, which no L19 group writes. Do not seed local 9.
+- Group 6384 is posted. Index 10 stores `(+0x37 & 0xF0) | byte 5` (file 0x129282). Index 2 pushes 0, and file 0x12982E stores 0 at `+0x31`, then calls `0xB3B8C` (adapter `opcode7_prop_frame`). Index 0 ORs `0x05` into `+0x36`.
+- Groups 2778 and 2814 want local 9 == 0 on the first click. They themselves are the only opcode 198 writers, and they store 1. Predicate 32 is `03020d0001`: operator 3, e58[13], literal 1. Operator 3 at file 0x9DC7F is `cmp ebx, esi; setge al`. Left type 2 and right type 0 zero-extend the bytes, so this is e58[13] >= 1. Predicate 31 is `00020d0000`, e58[13] == 0. Predicate 34 is predicate 29 and predicate 32. Predicate 33 is predicate 29 and predicate 31. No L19 opcode 199 writes e58[13]. A proven zero would reject 2778 and pass 2814. Do not seed local 9 or e58[13].
 - Locals 2 and 3. The only writers of L19 local 2 are the six toggle groups: the `== 0` groups store 1 (`3762`, `5652`, `5744`) and the `== 1` groups store 0. The only writers of L20 local 3 are prop 197 group 6406 (store 1, predicate local 3 == 0) and group 6476 (store 0, predicate local 3 == 1). The probe did not fire prop 197, and the switch predicate wants 0, so this is the fresh read, not a raised value. Opcode 207's "unread slot starts at 0" did not re-enter the callee. A global unread-as-0 would move Dark Halls region 83 predicate 19, which nests to local 6, from unhosted to rejected. Do not seed local 2 or local 3 until a constructor or level-load zero is proven.
-- Group 7704. Arms `0x23`, `0x25`, and `0x35` have no host arm. The opcode 199 that would store `e58[52] = 1` is later in the same group and does not run. Do not seed index 52.
+- Group 7704. Command `020100002300` is opcode 2 arm 0x23 at 0xD81E2. Byte 5 is 0. Byte +0x1AB of the 0x22574 object is not held: 0 returns 1 with no store, and a nonzero byte clears bit 0x20 of +0x228 and calls 0xD6B20(object, 0, 0). That callee branches on +0x229, +0x1D6, and +0x1F2 and calls 0xDB2B0, 0x84184, and 0xD6D2C. Those were not entered. Arms 0x25 and 0x35 follow in the same group and do not run. Do not guess the arm. Do not seed index 52.
 - Opcode 13 index 4. G97 step4: actor slot `+0xAC` index 10 (command byte 0 == 13) indexes a further table, and those arm bodies stay UNKNOWN. Do not invent index 4.
 
 BK14, BK15, and BK16 do not host these commands. BK14's actor 46 caller `0x0B` is group 12398, which already ran.
@@ -88,4 +88,4 @@ The sewer switches show the difference. Movable 76 group 7274 has the same predi
 
 ## Fix order
 
-First real row is group 6384. Native data before any adapter. Opcode 9 arm `0x10` and group 37776 stay deferred. No local, no index 52, and no `+0x25` counter is seeded to hide an unearned row.
+Group 6384 is posted. The next real rows stay blocked on unread locals, on arm 0x23's unentered callee, or on opcode 13 index 4. Opcode 9 arm `0x10` and group 37776 stay deferred. No local, no index 52, and no `+0x25` counter is seeded to hide an unearned row.
