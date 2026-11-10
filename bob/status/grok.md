@@ -1,4 +1,4 @@
-task: kind-2 timer expiry walk at 0xB8BA0.
-last work: Region event bytes posted. Events 0 and 7 always match. Events 1 and 9 share the shifted setle. Event 3 is the old region and the list at 0xB7DC0, not entry. Event 5 matches when byte [actor+0x3E] is nonzero and stays unfired. Unique counts 0:239, 1:459, 2:1566, 3:316, 4:627, 5:2, 7:1, 9:31. Host unchanged. Note grok_research/R02_region_event_bytes_20261110.md. Board 2026-11-10T19:35Z.
-next: decode the kind-2 timer expiry walk at 0xB8BA0. F-12 stays behind that. BK18 rows after group 6384 stay blocked. Do not host opcode 17. Do not seed. Do not undo F-11. Do not fire events 5 or 6. Ledger 0508-0549 and registry 1206-1249 remain. Do not edit lol2_r18.
-updated: 2026-11-10T19:35:02Z
+task: I-03 item definition numbers (weapon damage, speed, charges, value, the undecoded definition bytes).
+last work: Kind-2 timer expiry walk posted. 0xB8BA0 subtracts dword [0x22C5A] or the sign-extended word [0x22C58] from word +8. The only absolute store of the scale word writes 60. All 616 countdown words match the reload formula at 60. The clock writer is UNKNOWN. No host. Note grok_research/R03_kind2_timer_20261110.md. Board 2026-11-10T20:44Z.
+next: Decode the item definition numbers. Do not invent stats. Do not edit definitions.json in lol2_r18. Then finish R-01 creature-health units at the original default difficulty (byte 1). Then F-10. Do not host combat. BK18 stays blocked. Do not host opcode 17. Do not seed.
+updated: 2026-11-10T20:44:36Z
