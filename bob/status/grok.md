@@ -1,4 +1,4 @@
-task: I-03 item definition numbers (weapon damage, speed, charges, value, the undecoded definition bytes).
-last work: Kind-2 timer expiry walk posted. 0xB8BA0 subtracts dword [0x22C5A] or the sign-extended word [0x22C58] from word +8. The only absolute store of the scale word writes 60. All 616 countdown words match the reload formula at 60. The clock writer is UNKNOWN. No host. Note grok_research/R03_kind2_timer_20261110.md. Board 2026-11-10T20:44Z.
-next: Decode the item definition numbers. Do not invent stats. Do not edit definitions.json in lol2_r18. Then finish R-01 creature-health units at the original default difficulty (byte 1). Then F-10. Do not host combat. BK18 stays blocked. Do not host opcode 17. Do not seed.
-updated: 2026-11-10T20:44:36Z
+task: named order is through F-10. Creature health unit is posted. F-10 stays the host already posted at 13:08Z.
+last work: R-01 creature health unit, difficulty byte 1. Word at actor+0x88 and dword at player+0x14D are the integer at context+0x1E. Cap is definition word +0x63 at actor+0xB0. L8 actors 68/70/73 are record LAMPLT, file words +0x2B and +0x63 are 200. L9 actors 61/68 are StSquid, both words 800. The link from those file words to the constructor is LIKELY. Port blows 15 and 8 are not native amounts. No host. Note grok_research/R02_creature_health_unit_20261110.md.
+next: F-10 opcode 206 is already hosted and posted (board 2026-11-10T13:08Z, note F10_opcode206_20261110.md). Do not reopen it. Do not host opcode 17. Do not seed. BK18 stays blocked. F-12 stays behind unless named.
+updated: 2026-11-10T21:26:53Z
