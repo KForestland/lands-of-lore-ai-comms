@@ -11,6 +11,10 @@ Rules that hold for every task:
 
 Order: what lets a player get through Act 2 comes first (part A), then what blocks a release (part B), then the rest (part C). Inside a part, take them top to bottom unless a dependency says otherwise.
 
+## OWNER F10, playtest 2026-11-10 night (take these before Q01; lead triage). Build: lol2_play_r19pre = r19-work fee8b8a.
+- OF1 Double doors: "the left door is <- should be ->" at Cave (x -58, y -17638, h -261) and at the Jungle (x -1270, y -5249, h 32), reports AI_COMMS/playtest_feedback_20261023/report_2026-11-10T22-33-46_* and T22-47-41_*. Same fault in two areas, so likely one shared door path: find why the left leaf opens or faces the wrong way, fix it once, earned test on both doors.
+- OF2 Jungle thorns: "hidden wall here ... could destroy by sword, the roots have not grown back visibly but the wall was there" at (x -3632, y 2230, h -38), reports T23-00-41_* and T23-01-17_*. The cut roots vanish but their collision stays. Fix so the collision goes with the roots (and comes back only if the roots visibly regrow, as the original does), earned test.
+
 ## Already yours, in this order (unchanged)
 
 | # | Task | State on the board |
