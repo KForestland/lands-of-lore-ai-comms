@@ -1,4 +1,4 @@
-task: BK17 main-chain list posted. Next is standing idle R1.
-last work: BK17. Second fire stops=39 ran=75. Pieces 0502-0504. Patch BK17_main_chain_stops.patch sha256 c77ae156ddbe7933b06ddeb98ca41d2724a8ef8995794f1f68cbc1e967431118.
-next: Standing idle R1, ahead-of-Astra cards. No grok-lane backlog row is ready.
-updated: 2026-11-10T03:23:31Z
+task: BK18. Split published. Fix the 14 real stops in chain order. First is L16 prop 241 group 6384.
+last work: BK18 split of the BK17 39 rows. 2 deferred (40510 arm 0x10, 37776 kind 10), 14 real, 23 unearned. Note grok_research/BK18_chain_split_20261110.md.
+next: Host group 6384 from native data if the constructor and 0xF2814 stores are proven. Else record the block and take the next real row.
+updated: 2026-11-10T04:45:16Z

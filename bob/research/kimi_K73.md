@@ -1,0 +1,30 @@
+• # Pre-merge review: BK14, BK15, BK16 on r19-work `b3e384e`
+
+  Verified base tree is `r19-work` @ `b3e384e`, clean except pre-existing untracked assets. Review was static (no Godot launched); patch application was verified mechanically on throwaway copies of `git archive HEAD` outside the project tree.
+
+  ## Application and coexistence (the explicit question)
+
+  BK14 + BK16 + BK15 were applied to a pristine `b3e384e` copy in both orders (BK14→BK16→BK15 and BK16→BK14→BK15). Every `git apply --check` passed in both orders, and the two final trees are byte-identical (`diff -r` clean). In `tests/l19_dawn_curse_earned_test.gd` the hunks are disjoint: BK14 rewrites the level-5 cast block (base lines ~185–196), BK16 adds the cab-ride helper/constants up front, the cab ride after the heads check (~line 99 merged), and the pursue-mode save/reload checks after the mother dies (merged lines 257–279). They truly coexist.
+
+  ## Stated risk: BK16 loosening the save validator
+
+  Checked hard against `scripts/lol2/scripted_creature_state.gd:58-105`, `creature_live_rules.gd:44-56`, `save_value_rules.gd`, and the load path (`scripted_creature_population.gd:114-125`, `act2_save.gd:7-51` — the validator gates both write and load).
+
+  - **Truly corrupt state still rejected.** Health is still bounded to `[0, source max]` by `Values.integer`; death/rise clocks still range-checked; `Live.validate` still rejects idle-with-clock, impact-before-frame, elapsed-past-clip; "Dormant or rising creature is active" still gates any health>0 non-ready actor with a non-IDLE mode. A source-placed, host-removed creature with health>0 may carry a live mode only if it is woken and fully risen — i.e. the state must still be a self-consistent mid-fight snapshot.
+  - **Unplaced creatures keep the old rule.** The strict "Absent creature has live state." check still fires when `source_present == false`. Verified against data: L20 actor 14 (`present: false`, health 3000) and cave guard 54 (`present: false`, health 150 — so the test's wound of 10 can't accidentally equal max). `tests/l20_birth_save_test.gd` covers both directions.
+  - **Removed creature does not come back after reload.** `restore()` → `canonical()` preserves `present=false`; `present()` hides the body and drops its collision; `ready_to_fight`, `advance_clocks`, `advance_live` all skip absent actors. L20_BB.json has no controls, no conditional wakes, and no region spawn lists, and saved region history means `contact()` won't re-run spawns. On top of that, `act2_creatures._birth_area_quiet()` (base, `act2_creatures.gd:9-21`) force-clears `present` every tick once `creatures_cleared` is set. The `canonical()` legacy path that defaults a missing `present` key to the source flag predates BK16 and only affects pre-presence saves — checked, dropped.
+  - Minor residual, dropped as inert: on the sanitized path a leftover `cooldown` on a removed dead creature is erased before validation, so a corrupt cooldown value would pass — but absent actors never advance live state, so it can never be consumed.
+
+  ## BK14 / BK15 checks
+
+  - `_op_two_arm0` matches `_stage_bit`/`use_adapter` semantics (`native_script_host.gd:418-423, 1051-1053`): unknown bit + adapter on → ran with adapter recorded; known clear → ran, no adapter; known set → unhosted. Base-test helpers `one(host, hex, group)` and `fresh(area, d4)` already accept the args BK14's new scan uses. No other test asserts group 770's old "does not commit" behavior (only the two tests BK14 updates referenced it).
+  - `movie_request(index, name, byte5)` exists and is emitted for movie effects (`native_script_host.gd:47, 978`); `ROOM_MOUTH_POSES` has no L20 entry, so the group-770 pose is genuinely consumed; `progression` is created before `l19_dawn_curse.attach` (`act2_map.gd:199` vs `296/300`), so the `_ready` connect is safe.
+  - BK15: `_claim_region_floor`'s only other caller is the elevator (`l19_dawn_elevator.gd:101`), which passes one argument and hits the `target == 2147483647` sentinel, so the cab never triggers the ceiling ride — as ORDER.md claims. `FormBody.HEIGHTS[0]` is 46.0, matching the Human capsule the deviation row cites. The follow condition (clearance under 46 after the write, at least 46 before) is consistent with the test's expectations (region 133 rides, region 100 doesn't). `_strip_static_floor` operates on vertex keys, kind-agnostic, so stripping ceiling/lintel triangles works. A region whose *first* opcode 196 lowers the floor would claim floor-only and a later rise wouldn't pick up the ceiling — checked, dropped: no such L19 sequence exists (the flood is the first 196 for those regions).
+
+  ## Finding (low severity, not blocking)
+
+  **BK14 `_l20_death_sent` latch is not reset on save load** (`scripts/lol2/act2_creatures.gd`, new `var _l20_death_sent` and `_l20_death_caller`; `restore()` in `scripted_creature_population.gd:114-125` clears `net_holds`/`prism_blinds` but nothing clears the latch, and `Act2Creatures` survives `apply_save`/`restore_from_quests`). Failing scenario: kill actor 46 (latch set, group 12398 fires) → quickload a pre-kill L20 save in the same session → actor 46 alive again → kill it again → `_l20_death_caller` returns early on the latch, group 12398 does not fire, so its enqueue of prop 4 group 62 / movie-73 request never happens on the replayed kill. The latch is redundant within one life (base `receive_damage` returns false at health ≤ 0, `scripted_creature_population.gd:339`), so this reload-replay case is the only behavior it produces. Impact today is nil — per the 0392 row the chain commits nothing observable (movie 73 unplayed, group 5424 stops on opcode 2) — and ORDER.md documents the latch as a deliberate session latch, so I treat this as a latent inconsistency, not a merge blocker.
+
+  Everything else I probed (validator hole, resurrection path, patch ordering, registry orders 1200/1201 vs BK17's 1202, helper signatures, signal arities, deck-offset math) checked out or was dropped as above.
+
+  APPROVE
