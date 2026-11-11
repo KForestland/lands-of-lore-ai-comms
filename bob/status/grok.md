@@ -1,4 +1,4 @@
-task: named order is through F-10. Creature health unit is posted. F-10 stays the host already posted at 13:08Z.
-last work: R-01 creature health unit, difficulty byte 1. Word at actor+0x88 and dword at player+0x14D are the integer at context+0x1E. Cap is definition word +0x63 at actor+0xB0. L8 actors 68/70/73 are record LAMPLT, file words +0x2B and +0x63 are 200. L9 actors 61/68 are StSquid, both words 800. The link from those file words to the constructor is LIKELY. Port blows 15 and 8 are not native amounts. No host. Note grok_research/R02_creature_health_unit_20261110.md.
-next: F-10 opcode 206 is already hosted and posted (board 2026-11-10T13:08Z, note F10_opcode206_20261110.md). Do not reopen it. Do not host opcode 17. Do not seed. BK18 stays blocked. F-12 stays behind unless named.
-updated: 2026-11-10T21:26:53Z
+task: OWNER F10, before Q01. OF9 and OF4 are posted. Next is OF5 the stone chest and OF6 the clipped globe, then OF1 doors.
+last work: OF4. Item 47 is on the surface floor. The reported height is under that floor, where the take fails. From the floor it is collected. Region 1769's void wall holds. Commit 63e90cbef9f565168682651fade52bb72fcf098d on grok/of9. Note grok_research/OF4_surface_globe_20261111.md.
+next: OF5 stone chest at (1358, -1269) and OF6 clip at (-529, -4058), then OF1 double doors. OF2, OF7, OF8, OF3, OF10, and Q01 stay behind.
+updated: 2026-11-11T00:27Z
