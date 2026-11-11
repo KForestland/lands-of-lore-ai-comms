@@ -1,0 +1,17 @@
+• Review complete. I traced every contract element of Plan 2 (F-16) against the diff `323aec5..4cfd4f8` and hunted specifically for missing/duplicate/mis-ordered/wrong-level/mis-keyed owners. Findings:
+
+  **Attach coverage and order — holds.** All 115 registrations across the ten list files reproduce the legacy attach lines exactly, level for level, in legacy order, including: L8 journey `factory: "new"` (same `new()` + `host` + `add_child` sequence), the five special signatures (`attach_entry`, `attach_lift`, `attach_dawn`/`attach_placenta`, and the `args` for `remains`/`tribe`/`temple`/`citadel`), and the `needs: "progression"` guards on L16/L17/L19/L20 (matching the old `progression != null` blocks; `progression` is still assigned at `act2_map.gd:192`, before the late attach). The early/late split in `act2_map.gd` (`attach_all(..., "early")` before region visibility, `"late"` after) matches the old code positions, and `_attached.has(i)` prevents double-attach across the two phases.
+
+  **Face claims — holds, verified script by script.** I grepped every owner in the ten lists for `static func owns`/`owns_collision`: the set is exactly the legacy claim set per level (L10: oil/emperor + entry_owns; L12: glacier/rafts/crevasse/bow; L13: 7; L14: 18; L16: arrival_elevator + the two `static: []` overrides for terrace_lips/dragon_tapestry; L8: tree/tree_bridge/straw_trap + `cover`). No owner outside the legacy lists carries an `owns` method, so the registry's "default to `owns`" rule cannot claim extra faces. L10/L9 literal assembly lists moved verbatim into the list files (including the L10 source-67 entrance carve-out and the L12 glacier `owns_upper` collision pair).
+
+  **Restores — holds.** 21 load / 7 arrival calls: every restored owner has `RESTORE_ON` matching its legacy occasions (`["load"]` for act2_map's 14, `["load","arrival"]` for L8's 5 and L9's 2), `restore_order` values reproduce the exact legacy call sequence (fences 0 → dawn_elevator 13, L8 clubhouse 0 → cache_ladder 4, L9 escape 0 → statue_walk 1), and L9 Escape's `restore(true)` survives as `restore_args: [true]`. All 21 attach functions return the node, so `_attached` capture can't silently drop a restore. The 41 never-restored owners stay off. I also checked the new error-propagation: no restored `restore()` returns a String, so `restore_all` can't newly abort a load. `act2_map.apply_area_handoff`'s new `restore_all("arrival")` is a genuine no-op (no act2 owner declares `arrival`).
+
+  **Inheritance — holds.** The two scripted-parent cases are handled explicitly: L13 Elevator (`extends l13_eggs`) gets `key: "l13_elevator"`, `validate: "validate_lift"`, explicit `restore_on: ["load"]`; L10 EmperorEntry (`extends l10_oil`) gets `key: "l10_ankh"`, `validate: ""`, `restore_on: []` — so neither inherits a colliding KEY, the wrong validator, or an unearned restore. No other owner has a scripted parent, and no KEY duplicates exist within any list (checked all consts).
+
+  **Saves — holds.** No write path changed; the new `validate_all_quests` tail in `act2_save.gd:19` only adds checks after the retained aggregates, missing keys stay optional, and the fixture tests (`area_owner_validation_test.gd`) pin acceptance of the ten legacy packets plus five Plan1 writer fixtures.
+
+  **Incidental safety:** the new `AreaOwners` child is inert to every `get_children()` consumer (all type-filtered), and `include_collision_face` can only run after `_ready` creates the registry.
+
+  No real defects found.
+
+  APPROVE
