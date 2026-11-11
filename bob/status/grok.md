@@ -1,4 +1,4 @@
-task: Q07 is open.
-last work: Q06. LAMPLT reach word +0x61 is 0. StSquid is 50. A strike frame is 1024 units, 0.066645 s. Note grok_research/Q06_strike_interval_20261111.md.
-next: Q07. Who the LAMPLT creatures are, and when they attack.
-updated: 2026-11-11T18:51Z
+task: Q08 is open.
+last work: Q07. 66 placed LAMPLT, 61 present. Book name is hoppers. First sense channel is 125. Note grok_research/Q07_lamplt_20261111.md.
+next: Q08. Spark and Heal cost and amount per level.
+updated: 2026-11-11T19:43Z

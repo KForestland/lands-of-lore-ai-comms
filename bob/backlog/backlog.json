@@ -12208,11 +12208,12 @@
    "depends": [],
    "phase": "P1-chain",
    "acceptance": "Sitting crosses the flooded channel on foot after the three shots",
-   "status": "todo",
+   "status": "claimed",
    "batch": "chain-act3",
    "size": "M",
    "classic_or_modern": "classic",
-   "fallback": "Raised regions leave the liquid set while raised"
+   "fallback": "Raised regions leave the liquid set while raised",
+   "claimed_by": "sol"
   },
   {
    "id": "C-12",
