@@ -1,4 +1,4 @@
-task: Q08 is open.
-last work: Q07. 66 placed LAMPLT, 61 present. Book name is hoppers. First sense channel is 125. Note grok_research/Q07_lamplt_20261111.md.
-next: Q08. Spark and Heal cost and amount per level.
-updated: 2026-11-11T19:43Z
+task: Q11 is open.
+last work: Q10. Stone monsters are fought. Sixteen StSquid are behavior 6, Wander, and do not store the player. Note grok_research/Q10_stone_squids_20261111.md.
+next: Q11. Placement reward_scale and the loot dword.
+updated: 2026-11-11T20:22Z
