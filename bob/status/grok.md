@@ -1,4 +1,4 @@
-task: OF11 is posted. OF12 is next, then Q01.
-last work: E lifts a cave crate and E sets it down. Five medium crates reach the lip, and a save keeps the stack. Commit 9ad612f1355880c302f0c9cce12006e584c8854c on grok/of9. Piece 0517. Note grok_research/OF11_cave_crate_lift_20261111.md.
-next: OF12, compare the Museum with the owner screenshots and fix the small differences.
-updated: 2026-11-11T07:59Z
+task: Q01 is open. OF12 is posted.
+last work: Gallery bars show resources 431 and 433. The orange lock plate no longer draws. Commit cdac6d89051fbba02c7b7cb2b263b2908dfd045f on grok/of9. Piece 0518. Note grok_research/OF12_museum_20261111.md.
+next: Q01. The creature strike does not write context+0x16. It stores definition byte +0x83, or 1, at context+0x1A. The formula uses +0x16.
+updated: 2026-11-11T08:19Z
