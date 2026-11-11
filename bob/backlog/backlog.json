@@ -11950,11 +11950,12 @@
    ],
    "phase": "P0-foundations",
    "acceptance": "Tests: entering a map writes the autosave; ten minutes of play writes it; a dead or drowning Luther is never autosaved; loading it puts Luther alive where it was taken",
-   "status": "todo",
+   "status": "claimed",
    "batch": "save",
    "size": "S",
    "classic_or_modern": "modern",
-   "fallback": "none. The 10-minute timer is an owner-set modern feature with a ledger row, not an invented cap. Rules to keep: the clock counts play time only (not pause, menus, movies); no autosave while dead, drowning, falling, in a movie or in a conversation - it waits for the next safe moment"
+   "fallback": "none. The 10-minute timer is an owner-set modern feature with a ledger row, not an invented cap. Rules to keep: the clock counts play time only (not pause, menus, movies); no autosave while dead, drowning, falling, in a movie or in a conversation - it waits for the next safe moment",
+   "claimed_by": "sol"
   },
   {
    "id": "F-19",
