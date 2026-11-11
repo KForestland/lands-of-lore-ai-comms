@@ -30,3 +30,5 @@ Player hit is `0xD03B8`. It writes player byte +`0x161` at context+`0x1A` and th
 `0x67820` does write context+`0x16`, from the target's own slot +`0xE4`, then calls the target's slot +`0x80`. On a creature that amount is byte +`0x83` scaled by the preset kind (kind 5 times 5, kind 6 times 10, kind 9 the byte, kind `0x0B` the byte divided by 5). The attacker field is 0. That is a preset effect on the creature, not the creature striking Luther. Kind `0x0D` is the guck arm already posted in BK13.
 
 Script handlers at `0x96942`, `0x96B06`, `0x9822C`, and `0x82280` store a constant 1, 0, or `0x14` and call `0xD03B8`. `0x988B0` stores a sum of the dwords at `0x236DC`, `0x236E4`, `0x236EC`, `0x236F4`, and the high byte at `0x2372C`. None of those reads a creature definition.
+
+`0xF28E0` stores a frame-event record at `[0xDB598 + kind*4]`. `0xF28F8` returns the record for a kind. Its only direct caller, `0xA40FB`, asks for kind 3, copies byte +2 of that record to actor+`0x8E`, and calls `0xA7E4C`. That is not the outgoing blow.
