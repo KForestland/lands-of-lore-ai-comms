@@ -12189,11 +12189,12 @@
    "depends": [],
    "phase": "P1-chain",
    "acceptance": "Sitting l19a walks arrival -> horn -> bars with zero teleports",
-   "status": "todo",
+   "status": "claimed",
    "batch": "chain-act3",
    "size": "L",
    "classic_or_modern": "classic, modern fallback",
-   "fallback": "Decision B1 of 2026-11-09 is already the modern fallback"
+   "fallback": "Decision B1 of 2026-11-09 is already the modern fallback",
+   "claimed_by": "sol"
   },
   {
    "id": "C-11",

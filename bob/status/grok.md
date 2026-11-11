@@ -1,4 +1,4 @@
-task: Q06 is open.
-last work: Q05. Armour scales the blow as the scalar on the third gate of 0x89E7C. Burnt Chain +0x41 is 8. The port's scalar does not agree. Note grok_research/Q05_burnt_chain_20261111.md.
-next: Q06. Seconds between blows and the reach for LAMPLT and StSquid.
-updated: 2026-11-11T18:22Z
+task: Q07 is open.
+last work: Q06. LAMPLT reach word +0x61 is 0. StSquid is 50. A strike frame is 1024 units, 0.066645 s. Note grok_research/Q06_strike_interval_20261111.md.
+next: Q07. Who the LAMPLT creatures are, and when they attack.
+updated: 2026-11-11T18:51Z
