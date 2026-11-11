@@ -1,6 +1,6 @@
 # Lands of Lore — Master Plan
 
-Owner: Kevin (KForestland). Updated: 2026-11-05.
+Owner: Kevin (KForestland). Updated: 2026-11-11.
 Fan project, non-commercial. Lands of Lore is © Westwood Studios / Electronic Arts. No original game files are
 distributed: the remakes read the data from the player's own copy of the games.
 
@@ -29,41 +29,28 @@ effort ("if it takes 10 years, we will do it").
 | 5 | LoL1 Enhanced, then the other Enhanced editions | After LoL2 and LoL3 are finished |
 | 6 | 3D characters/items/creatures for the Enhanced editions | Not before 1–2 years from now; LoL1 assets first |
 
-## LoL2 Classic: phases and status (2026-11-06)
+## LoL2 Classic: status (2026-11-11)
 
-Order (owner, 2026-11-06): **maps → the main quest chain complete A to Z → then refine until the full game** (edge
-cases, scene order, puzzle nuance, items, RPG, dialog, sound). Refinement does not start before the chain is complete.
-A passing test is not a cleared area: only the owner's playtest clears one. Quality comes before speed; estimates are
-for orientation.
+Full roadmap with the eight phases, what each needs, and where help is welcome: **[LOL2_ROADMAP.md](LOL2_ROADMAP.md)**.
 
-| Area | Done | Notes |
-|---|---|---|
-| Maps / world | ~93% | Every Brady/Prima map point in 14 areas checked against the original data and the longplay: nothing the original shows is missing. "Draw only what can be seen through doorways" (like the original engine) fixed most clipping; owner: Huline Jungle "much better" (r16). Open: the Huline Temple interior (parked for the next builder lane), L8 ladder/tree bridge/platform and Museum crouch/niche in the next build |
-| Act 1 | ~92% | Playable start to finish, certified as one campaign chain. Owner playtests r14/r16 confirmed escort, routes, drowning, voices |
-| Act 2 story | ~75% | Steps 7–65 built and tested; owner r16 playtest found the first Huline Temple scene must trigger by walking in (book), not by a button: fix in the next build |
-| Act 3 story | ~25% | 4 of 28 steps built; all 28 drafted as one save chain from the greenhouse to the final scene, under review and test |
-| Good/evil branches | drafted | All branches drafted with both outcomes, under review |
-| Items | ~25% | All 170 original items placed and carriable; effects hosted one by one; Luther's book (Items/Creatures/Characters/Lore) data generated |
-| Creatures / combat / spells / RPG | ~10% | Act 1 combat works; creature/spell tables collected |
-| NPCs / dialog | ~20% | Act 1 conversations, first Act 2 encounters |
-| Sound / music | ~20% | Act 1 mostly |
-| Polish / Enhanced | ~5% | Plan approved (below) |
+- **About 20% complete (give or take five points).** Earlier versions of this page said about 60%. That number counted
+  pieces that were built; the new one measures what a player can actually do, against all the work still planned
+  (137 tasks, 74 to 130 agent-weeks). The world and the main quest are far along; combat, items, spells, dialog, music
+  and the game's menus are the larger share and have barely started.
+- **Act 1** is playable start to finish. **Act 2** is built to the Claw Mountains and was walked there with real input,
+  but not yet without help; Kevin's latest playtest stopped in the Dracoid Cemetery. **Act 3** is partly built.
+- **When:** most likely **July 2027**; earliest late April 2027; August 2027 or later if the big unknowns go badly.
+  These are estimates, not promises.
+- **Next checkpoint:** mid-December 2026, a player finishes the main quest from New Game to the ending.
 
-Overall LoL2 Classic: **about 60%**. Latest playtest build: r16 (2026-11-06).
+Order (owner): maps, then the main quest from A to Z, then everything else; classic first, modernised only where the
+original is too hard to rebuild, and every difference is logged. A passing test is not a cleared area: only Kevin's
+playtest clears one.
 
 Other projects:
-- **LoL1 Classic in Godot**: a full draft of the game in nine chunks (save/load, hero select, combat, opening, the keep
-  to the burned nests, the mine, the White Tower and Cimmeria to the ending, sound) exists; ten draft tests pass in the
-  research lane's run. Lead review and owner playtests come after LoL2's chain.
-- **LoL3 Classic**: research done (walkthroughs per guild path, story cards, known bugs and patches, longplay index, a
-  first build plan); texture colour decoding is the main open blocker.
-
-Rough timeline (orientation only; depends on AI usage limits and playtests):
-- Next playtest build r17: about 1–2 days (L8 ladder/tree bridge/platform, the first Huline Temple scene on walk-in, drowning
-  feedback, Atlas improvements, the first Act 3 chain pieces).
-- Classic playable A to Z (every story step, start to end): mid-December 2026.
-- Classic with all systems (items, creatures, spells, RPG, dialog, sound): February–March 2027.
-- Enhanced editions (gray box first, then art): after LoL1 and LoL3 Classic, see the order of work above.
+- **LoL1 Classic in Godot**: a full draft exists; lead review and owner playtests come after LoL2's main quest.
+- **LoL3 Classic**: research done; texture colour decoding is the main open blocker.
+- **Enhanced editions**: after the Classic editions (see the order of work above).
 
 ### Future workflow for the Enhanced editions (approved 2026-11-05; starts after LoL3 Classic)
 
