@@ -3,6 +3,8 @@
 Fable, 2026-11-11. Plan only, no game code. All anchors are `scripts/lol2/<file>:<line>` on r19-work **d5da60a**.
 Method: Fable plans, Sol builds, Kimi reviews. These land after Thursday's r19 playtest build is cut.
 
+**Revision 2 (2026-11-11, after Kimi's audit K85, `grok_research/kimi_K85.md`).** All 11 items were checked against d5da60a and accepted, plus one point Sol raised while building (health writes are raw, not clamped). Changed places are marked **[K85-n]** or **[Sol]**. The designs stand; the corrections are to facts, lists and the Cave path in plan 3.
+
 Grades: PROVEN = I read the line. LIKELY = inferred. UNKNOWN = not checked.
 
 | Plan | Tasks | State |
@@ -20,7 +22,7 @@ Grades: PROVEN = I read the line. LIKELY = inferred. UNKNOWN = not checked.
 - This is structure, not balance. **Every number, every refusal and every save key stays as it is today**, including the interim Act 2 scale (DEVIATIONS 0558) and the debug kill key.
 - Today the strike rule is written out in 19 places and differs between them in five small ways (table 1.2). The module does not smooth those differences away: it makes each one a named option, so the later combat work (R-01, I-03) changes one file.
 - Health lives in three stores, picked by an if-chain in `player_starting_magic.gd:82-89`. The plan puts it in one node and turns the three old stores into forwarding properties, so no test, save or caller has to change on day one.
-- Eight commits. Commit 0 adds tests that pin today's behaviour before anything moves; each later commit must leave them green.
+- Ten commits. Commit 0 adds tests that pin today's behaviour before anything moves; each later commit must leave them green.
 - Old saves keep loading because **no save key is renamed, added or removed** in this plan.
 
 ## 1.1 What exists today (PROVEN)
@@ -44,7 +46,7 @@ Columns: **Bonus** = adds the item bonus. **Empty hand** = what a human with no 
 | 3 | Cave roach population | `cave_roach_population.gd:263-282` | **no** | hits for 4 | cone: 96, dot ≥ 0.9, clear ray | Cave model clock `:281` |
 | 4 | Cave single roach | `cave_roach.gd:78-83`, model `cave_encounter_state.gd:38-48` | **no** | hits for 4 | cone: 96, dot ≥ 0.9, clear ray | Cave model clock, **saved** (`cave_roach.gd:173`, validator `:189`) |
 | 5 | Cave encounter prototype | `cave_encounter.gd:139-146`, reach `:6` | no (default 8) | n/a | cone 96 | Cave model clock |
-| 6 | Hive: guardians, return population, executioner | `hive_warriors.gd:66-92`, aim `:107-111`, click `:112-116` | yes | hits for 4 | ray 96, mask 7 | own `cooldown` `:9`, literal 0.45 `:68` |
+| 6 | Hive: guardians, return population, executioner | `hive_warriors.gd:66-92`, aim `:107-111`, click `:112-116` | yes | hits for 4 | ray 96, mask 7 | own `cooldown` `:9`, literal 0.45 `:68`, **saved** in `hive_encounter` (`:161`) **[K85-3]** |
 | 7 | Jungle confidante | `jungle_confidante.gd:168-173`, click `:184` | yes | **refused** | own `_aimed()` | none |
 | 8 | Jungle river dam | `jungle_river_dam.gd:261-265`, reach 140 `:20`, click `:364` | yes | refused | ray 140, mask 1 | none |
 | 9 | Jungle bramble | `jungle_bramble.gd:185-191`, click `:274` | **no** | refused | own `aimed_id()` | none |
@@ -69,12 +71,12 @@ Also striking but with no damage number at all (they only ask "was I clicked whi
 | Weapon poison coat is spent | `scripted_creature_population.gd:375` | site 1 only |
 | Item hit recorded | `item_handlers.gd` `record_hit`, called at `scripted_creature_population.gd:376`, `jungle_dino_population.gd:256`, `hive_warriors.gd:78` | sites 1, 2, 6 (return population only) |
 | Net of Exile, Prism | `net_hit` / `prism_hit` (`scripted_creature_population.gd:381-398`, dino `:262-`) | sites 1, 2, 6 |
-| Melee reward (experience) | `cave_melee_reward.gd` via `cave_roach.gd:90`; `hive_live_melee_reward.gd` via `hive_return_population.gd:121` | sites 4, 6 |
+| Melee reward (experience) | `cave_melee_reward.gd` via `cave_roach.gd:90`, `scripted_creature_population.gd:347` and `cave_roach_population.gd:252`; `hive_live_melee_reward.gd` via `hive_return_population.gd:121`. All inside the receivers' `receive_damage`, so outside the module's `after_landed` tail | sites 1, 3, 4, 6 **[K85-5]** |
 
 ### The interim Act 2 scale and the debug key
 
 - `act2_creatures.gd:132-141`: `INTERIM_SCALE := 4`, six areas, two excluded actors (Daniel 23, Belial 90).
-- Outgoing: `act2_creatures.gd:160` multiplies the amount **on the receiving side**. Incoming: `scripted_creature_population.gd:134` (hook, returns 1.0) overridden at `act2_creatures.gd:140-141`, applied at `scripted_creature_population.gd:201-203`.
+- Outgoing: `act2_creatures.gd:160` multiplies the amount **on the receiving side**. Incoming: `scripted_creature_population.gd:134` (hook, returns 1.0) overridden at `act2_creatures.gd:141-142`, applied at `scripted_creature_population.gd:201-203`.
 - Debug kill: `debug_kill.gd:26-51` calls `pop.aimed()`, `pop.receive_damage()`, `pop.peaceful_actor()`, `pop.state.actors`, `pop.bodies`. Attached at `act2_map.gd:208` and `darker_jungle.gd:255`.
 - So both sit on the creature side. **The module must not touch them**; it only has to hand `receive_damage` the same amount as today and leave those five population members in place.
 
@@ -86,7 +88,7 @@ Also striking but with no damage number at all (they only ask "was I clicked whi
 | B. `Warriors.health` | `hive_warriors.gd:6` | Hive |
 | C. `host.health` | `jungle_walkthrough.gd:52`, `museum_walkthrough.gd:67` | Museum, Jungle, Dark Halls, all of Act 2/3 (they extend `jungle_walkthrough.gd`) |
 
-- The switch: `player_starting_magic.gd:82-89` (`health()`, `set_health()`). A copy of it: `player_form_rules.gd:17-22` (full health on a form change). A third reader: `dev_diagnostics.gd:126-127`.
+- The switch: `player_starting_magic.gd:82-89` (`health()`, `set_health()`). A copy of it: `player_form_rules.gd:17-22` (full health on a form change). A third reader: `dev_diagnostics.gd:126-128`.
 - With no store present `health()` answers 30 (`:85`), and `set_health()` would fail on `host.health` (`:89`). LIKELY only reachable in the Cave before the roach exists.
 - Maximum 30 is a literal in at least: `player_starting_magic.gd:154`, `:164`; `player_item_controller.gd:158`; `player_form_rules.gd:20`, `:22`; `cave_encounter_state.gd:5`; `hive_warriors.gd:6`; `hive_review.gd:217`; `scripted_creature_population.gd:405`; `jungle_dino_population.gd:286`; `museum_inventory.gd:464`; `liquid_drowning.gd:147`; validators `cave_roach.gd:186`, `museum_walkthrough.gd:30`, `act_one_quest_state.gd:35`.
 
@@ -101,19 +103,24 @@ Also striking but with no damage number at all (they only ask "was I clicked whi
 | Hive return population | `hive_return_population.gd:171`, `:183` |
 | Hive boulders | `hive_boulders.gd:155-158` |
 | Hive R retry | `hive_review.gd:216-217` |
+| Hive guardians' own blow, the main Hive damage to Luther **[K85-1]** | `hive_warriors.gd:156` |
+| Hive executioner's live blow (writes `guards.health`) **[K85-1]** | `hive_executioner_live.gd:115` |
+| Monastery: Morgan orb heal (writes `get_parent().health`, store C) **[K85-1]** | `monastery_rooms.gd:335` |
 
-**Writers through the switch:** 23 `set_health` calls in 20 files (creatures `scripted_creature_population.gd:203`, `jungle_dino_population.gd:147`; revive `:405`, `:286`; Heal `player_starting_magic.gd:164`; aloe `player_item_controller.gd:163`; and traps, bosses, drowning, poison: `l14_belial.gd:68`, `l13_belial.gd:45`, `player_dragon_blood.gd:56`, `dawn_player_damage.gd:82`, `dawn_modern_combat.gd:107`, `:130`, `l10_oil.gd:114`, `thieves_den_rooms.gd:228`, `player_spark_aura.gd:31`, `cave_cfall_room.gd:159`, `l9_flood.gd:45`, `l14_trap_route.gd:57`, `jungle_village_alarm.gd:173`, `museum_key_locks.gd:300`, `act2_creatures.gd:123`, `liquid_drowning.gd:188`).
+**Writers through the switch:** 23 `set_health` invocation sites in **20 files** **[K85-2, Sol executable-site recount]**; one is made by name and does not show in a `set_health(` search: `dark_halls_crates.gd:365` (`magic.call("set_health", …)`). The rest (creatures `scripted_creature_population.gd:203`, `jungle_dino_population.gd:147`; revive `:405`, `:286`; Heal `player_starting_magic.gd:164`; aloe `player_item_controller.gd:163`; and traps, bosses, drowning, poison: `l14_belial.gd:68`, `l13_belial.gd:45`, `player_dragon_blood.gd:56`, `dawn_player_damage.gd:82`, `dawn_modern_combat.gd:107`, `:130`, `l10_oil.gd:114`, `thieves_den_rooms.gd:228`, `player_spark_aura.gd:31`, `cave_cfall_room.gd:159`, `l9_flood.gd:45`, `l14_trap_route.gd:57`, `jungle_village_alarm.gd:173`, `museum_key_locks.gd:300`, `act2_creatures.gd:123`, `liquid_drowning.gd:188`).
 
 **Where health is saved (keys must not change):**
 
 | Key | Written at |
 |---|---|
 | `player_health` inside the roach snapshot | `cave_roach.gd:173`, restored `:213`, validated `:186` |
-| `health` in the Cave save | `cave_walkthrough.gd:809` |
+| `health` in the **Cave→Museum transfer packet** (`_completion_state()`, put into meta `lol2_cave_completion` at `:788`). The Cave quicksave itself (`_save_state`, `:1177-1233`) carries health only inside the roach snapshot, the row above **[K85-4]** | `cave_walkthrough.gd:809` |
 | `health` in the Museum checkpoint and transfer | `museum_walkthrough.gd:13`, `:186`, `:196`, `:457`, `:1001`, validated `:30` (1..30) |
 | `health` in the Jungle / Act 2 inventory packet | `jungle_walkthrough.gd:436`, read `:455` |
 | `health` in the Hive inventory state (living only; erased at 0) | `hive_review.gd:289-290`, `player_continuity.gd:25-27` |
-| `health` in `hive_encounter` | `act_one_quest_state.gd:31-35` |
+| `health` and `cooldown` in `hive_encounter` (checkpoint built at `hive_warriors.gd:161`, stored at `hive_review.gd:248`) | `act_one_quest_state.gd:31-45` |
+
+**Census definition:** the 23 invocations include 22 direct calls (one local Healing call) and one dynamic crate call. A raw `set_health` text search reaches 21 files because `hive_review.gd` defines the separate `executioner_set_health` adapter; that is not a call to this facade. The pinned 23-site inventory and executable census test are `tests/fixtures/player_health_callers_d5da60a.json` and `foundation_health_census_test`.
 
 ### Tests that reach into these internals
 
@@ -126,7 +133,7 @@ This is why the plan keeps every one of those names alive as a forwarder. Rewrit
 2. **Empty hand.** Creatures take 4 from a bare fist; props and the confidante refuse a weaponless human; the Museum hourglass and wall want a carried weapon-slot item; Daniel wants human form.
 3. **"Armed" has three definitions.** `equipped_item != ""` (most), `player_equipment.weapon(...)` (Hive, `hive_warriors.gd:74`), and "carried and in the weapon slot" (Museum `melee_ready`).
 4. **Reach.** Ray 110 (creatures), cone 96 with dot 0.9 (Cave), ray 96 (Hive), ray 140 (dam, movers), plus each prop's own test.
-5. **Cooldown.** 0.45 s everywhere it exists, but on four separate clocks (Cave model, shared host, dinosaurs, Hive), two of them saved; props have none. It starts on any attempt in the Cave model and the Hive, and only on an aimed attempt in the two population hosts (`scripted_creature_population.gd:403` checks `aimed()` first).
+5. **Cooldown.** 0.45 s everywhere it exists, but on four separate clocks (Cave model, shared host, dinosaurs, Hive), **three of them saved** (Cave roach snapshot, dinosaur state, Hive `hive_encounter.cooldown`) **[K85-3]**; props have none. It starts on any attempt in the Cave model and the Hive, and only on an aimed attempt in the two population hosts (`scripted_creature_population.gd:403` checks `aimed()` first).
 
 ## 1.3 Contract
 
@@ -157,23 +164,24 @@ static func after_landed(host, owner, id: String, opts: Dictionary) -> bool   # 
 **C2. Each strike site becomes one call with its options spelled out.** Example, site 1:
 `PlayerCombat.damage(host, true)`; site 3: `PlayerCombat.damage(host, false)`. The option values are table 1.1, read across. A reviewer can check the whole migration against that table.
 
-**C3. Storage of cooldown clocks does not move.** The four clocks stay where they are saved; only the arithmetic and the 0.45 come from the module. (Merging them is a behaviour change; see 1.8 Q1.)
+**C3. Storage of cooldown clocks does not move.** The four clocks stay where they are; three are saved (Cave, dinosaurs, Hive) and their saved keys do not change; only the arithmetic and the 0.45 come from the module. (Merging them is a behaviour change; see 1.8 Q1.)
 
 **C4. One health owner.** `scripts/lol2/player_health.gd`, a `Node` named `PlayerHealth`, one per playable scene, reachable as `host.player_health_owner`.
 
 ```
 const MAXIMUM := 30
-var current: int            # 0..MAXIMUM, clamped on write
+var current: int            # stored exactly as written: NO clamp on write [Sol]
 signal changed(before: int, after: int)
 func value() -> int
-func set_value(v: int) -> void
-func lose(amount: int) -> int        # returns the new value; never below 0
-func heal(amount: int) -> int        # never above MAXIMUM
+func set_value(v: int) -> void       # raw assignment, as player_starting_magic.gd:86-89 does today
+func lose(amount: int) -> int        # maxi(0, current - amount), the arithmetic the callers do today
+func heal(amount: int) -> int        # mini(MAXIMUM, current + amount), likewise
 func restore_full() -> void
 func fallen() -> bool
 ```
 
-- `player_starting_magic.health()` and `set_health()` stay, as one-line forwarders. All 23 callers and 48 tests keep working untouched.
+- **[Sol]** Today's setter is a raw assignment; every caller clamps for itself. The owner keeps that: a negative or over-30 write is stored as given, and commit 0 pins it. `lose()` and `heal()` are only used in commit 8 where a call site already does exactly that arithmetic.
+- `player_starting_magic.health()` and `set_health()` stay, as one-line forwarders. All 23 callers (the by-name call in `dark_halls_crates.gd:365` included) and 48 tests keep working untouched.
 - The three old stores stay **as names** and become forwarding properties:
   - `cave_encounter_state.gd:16` `player_health`: property; forwards to a bound owner when one is bound, else keeps its own integer (unit tests build the model alone).
   - `hive_warriors.gd:6` `health`: property forwarding to the scene's owner.
@@ -197,8 +205,8 @@ One commit each. After every commit: the commit-0 tests, the affected-tests set,
 | 5 | `after_landed` replaces the copied tail at sites 1, 2, 6 | 3 files | Flags reproduce each site's set |
 | 6 | Museum `melee_ready` (site 14) and sword skeleton (15) call `may_strike` with `CARRIED_WEAPON_SLOT` / `EQUIPPED_NAME`. Sites 16, 17 and the "no number" list stay as they are | 1 file | Two predicates |
 | 7 | **Health owner.** Add `player_health.gd`; attach it in the three scene bases; turn stores A, B, C into forwarding properties; `player_starting_magic.gd:82-89`, `player_form_rules.gd:17-22` and `dev_diagnostics.gd:126-127` use the owner | about 9 files | Every old name still reads and writes the same number |
-| 8 | Replace the literal 30s listed in 1.1 with `PlayerHealth.MAXIMUM`, and the bypass writers' arithmetic with `lose()` / `restore_full()`. Save validators keep the bound 30 through the same constant | about 14 files | Mechanical; value identical |
-| 9 | A source-scan test that fails if a damage number, `0.45`, or a `melee_damage(` call appears outside the module, and if any file other than `player_health.gd` assigns to a health store. Remove the alias consts from commit 2 where no test uses them | tests + cleanup | Keeps the 20th copy from appearing |
+| 8 | Replace the literal 30s listed in 1.1 with `PlayerHealth.MAXIMUM`, and the bypass writers' arithmetic with `lose()` / `heal()` / `restore_full()`: all ten in the bypass table, including `hive_warriors.gd:156`, `hive_executioner_live.gd:115` and `monastery_rooms.gd:335` **[K85-1]**. Save validators keep the bound 30 through the same constant | about 17 files | Mechanical; value identical |
+| 9 | A source-scan test that fails if a damage number, `0.45`, or a `melee_damage(` call appears outside the module, and if any file other than `player_health.gd` assigns to a health store (`.health =`, `player_health =`, `guards.health`, `get_parent().health`). The scan must also know the by-name form `call("set_health"` **[K85-2]**. Remove the alias consts from commit 2 where no test uses them | tests + cleanup | Keeps the 20th copy from appearing |
 
 Commits 1 to 6 are F-14; 7 and 8 are F-15; 9 closes both. If the Act 1 hosts fight back, the fallback from the task sheet holds: land commits 2 to 5 for sites 1, 2, 6, 10 first, and the Cave sites after.
 
@@ -210,7 +218,7 @@ Commits 1 to 6 are F-14; 7 and 8 are F-15; 9 closes both. If the Act 1 hosts fig
 - Loads still assign to `health`, `player_health` and `Warriors.health`. Those names now forward to the owner, so a file written on d5da60a restores to the same number.
 - Saved cooldown clocks (`strike_remaining` in the roach snapshot and the dinosaur state) are untouched (C3).
 - The Hive rule "a living health travels, a death checkpoint keeps zero in `hive_encounter`" (`hive_review.gd:287-290`) is two different keys read from the same property; it holds as long as the reads stay where they are.
-- Proof, not argument: commit 0 stores one save per area written by d5da60a under `tests/fixtures/saves_d5da60a/`, and a test loads each after every commit and compares health, form, equipped item and (where saved) the cooldown.
+- Proof, not argument: commit 0 stores one save per area written by d5da60a under `tests/fixtures/saves_d5da60a/`, and a test loads each after every commit and compares health, form, equipped item and the cooldown in each of the three places it is saved (Cave roach snapshot, dinosaur state, `hive_encounter`) **[K85-3]**.
 
 ## 1.6 Tests
 
@@ -226,8 +234,10 @@ Commits 1 to 6 are F-14; 7 and 8 are F-15; 9 closes both. If the Act 1 hosts fig
 | `combat_act2_real_click_test` | real input | L8 roaming creature of 200 health falls to 7 armed clicks (8 × 4 = 32 a blow); its blow costs Luther a quarter. Daniel (excluded) takes unscaled blows |
 | `combat_prop_real_click_test` | real input | Bramble: empty hand does nothing, armed click cuts |
 | `health_one_value_test` | headless | In each of the five scene types, write through each old name and read through every other: all agree |
-| `health_saved_fixture_test` | headless | The d5da60a fixture saves load to the recorded values |
-| existing, must stay green | | `act2_interim_combat_scale_test`, `debug_kill_test`, `area_health_handoff_test`, `player_continuity_*` (8), `act1_recovery_*` (5), `cave_defeat_recovery_anchor_test`, `cave_melee_reward_test`, `hive_live_melee_reward_test`, `cave_fighting_handoff_test`, `playtest_start_full_health_test`, `l8_tribe_serum_earned_test`, `combat_feedback_inventory_test`, `l19_bars_strike_test` |
+| `health_saved_fixture_test` | headless | The d5da60a fixture saves load to the recorded values, including all **three** saved player clocks (Cave, dinosaur and Hive); Cave save/transfer key separation is explicit |
+| `foundation_health_census_test` | headless | All 23 direct/local/dynamic facade invocation sites in 20 files, including the crate call |
+| `foundation_melee_reward_owners_test` | headless | Actual site1 and site3 receivers award hit/kill once with the unchanged shared reward RNG and disk rollback |
+| existing, must stay green | | `act2_interim_combat_scale_test`, `debug_kill_test`, `area_health_handoff_test`, `player_continuity_*` (8), `act1_recovery_*` (5), `cave_defeat_recovery_anchor_test`, `cave_melee_reward_test`, `hive_live_melee_reward_test`, `cave_fighting_handoff_test`, `playtest_start_full_health_test`, `l8_tribe_serum_earned_test`, `combat_feedback_inventory_test`, `l19_bars_strike_test`, `hive_executioner_live_test`, `morgan_blessing_test`, `dark_halls_crates_earned_test` |
 
 - The real-input tests can use the rig in `lol2_bj12/tmp/bj14/` (`run.sh`, `bot.gd`: private Xvfb, really captured mouse, events through `Input.parse_input_event`). Sol's own BJ14 note applies: send discrete keys from a process frame, not a physics callback.
 - Test aids must be declared in the registry row (checkpoint start, health top-up). None of these tests may set a position during the fight.
@@ -250,7 +260,7 @@ Commits 1 to 6 are F-14; 7 and 8 are F-15; 9 closes both. If the Act 1 hosts fig
 
 ## 1.8 Open questions for the lead (none blocks the build)
 
-- **Q1. One cooldown clock per scene?** Today four clocks let a player strike two owners inside 0.45 s (for example a creature of the shared host and a Hive guardian are never in one scene, but a dinosaur and a shared-host creature LIKELY can be). Merging is cleaner and changes behaviour slightly, and two clocks are saved. My advice: keep them apart now, merge in R-01.
+- **Q1. One cooldown clock per scene?** Today four clocks let a player strike two owners inside 0.45 s (for example a creature of the shared host and a Hive guardian are never in one scene, but a dinosaur and a shared-host creature LIKELY can be). Merging is cleaner and changes behaviour slightly, and three clocks are saved under three different keys. My advice: keep them apart now, merge in R-01.
 - **Q2. The bonus difference (1.2 item 1).** Seven sites ignore the Champion Stone. Keep for now; decide in R-01.
 - **Q3. One click dispatcher.** 19 owners each listen for the left button and rely on scene-tree order to decide who wins. A single dispatcher with registered targets is the right end state and belongs with plan 2 (owners registering themselves), not here. This plan leaves every click handler where it is.
 
@@ -267,6 +277,9 @@ Commits 1 to 6 are F-14; 7 and 8 are F-15; 9 closes both. If the Act 1 hosts fig
 
 ---
 
+
+Sol, K85 items1–5 folded in 2026-11-11: three omitted direct writer families, dynamic crate census, third saved Hive clock, Cave transfer label and reward sites1/3. Recount distinguishes executable calls from raw text matches. C4 raw-write correction follows the owner's unchanged-behaviour instruction: original `set_health` does not clamp; baseline pins46 and-3. Plans2/3 unchanged by Sol.
+
 # PLAN 2: area host base, owners register themselves (F-16)
 
 ## 2.0 The short version
@@ -281,7 +294,7 @@ Commits 1 to 6 are F-14; 7 and 8 are F-15; 9 closes both. If the Act 1 hosts fig
 
 | Host | Levels | Attach list | Restore list (load) | Restore list (level arrival) |
 |---|---|---|---|---|
-| `act2_map.gd` | L10, L12, L13, L14, L16, L17, L19, L20 | `:106`, `:207-316`, 95 calls under nine `if area_id==` blocks | `apply_save` `:420-446`, 14 owners by node name | `apply_area_handoff` `:448-456`, **no owner restores** |
+| `act2_map.gd` | L10, L12, L13, L14, L16, L17, L19, L20 | `:106`, `:207-316`: 93 attach lines (88 of them owner preloads) under **eight** `if area_id==` blocks (`:212`, `:225`, `:247`, `:251`, `:267`, `:294`, `:303`, `:310`) **[K85-6]** | `apply_save` `:420-446`, 14 owners by node name | `apply_area_handoff` `:448-456`, **no owner restores** |
 | `darker_jungle.gd` | L8 | `:254-275` | `apply_save` `:277-288`, 5 owners | `apply_area_handoff` `:290-`, same 5 |
 | `dragon_level.gd` | L9 | `:135-149` | `apply_save` `:151-159`, 2 owners | `apply_area_handoff` `:161-170`, same 2 |
 
@@ -289,16 +302,16 @@ Commits 1 to 6 are F-14; 7 and 8 are F-15; 9 closes both. If the Act 1 hosts fig
 
 **The five hand-written lists in `act2_map.gd`:**
 
-1. Attach: `:207-316`. Order matters: some run only `if progression != null` (L16 `:251`, L17 `:247`, L19 `:294`, L20 `:303`), and two blocks exist for L16 (`:251` and the tail near `:262`).
+1. Attach: `:207-316`. Order matters: some run only `if progression != null` (L16 `:251`, L17 `:247`, L19 `:294`, L20 `:303`). L16 is one block, `:251-266` **[K85-6]**.
 2. Faces kept out of the static mesh before the base builds it: `:126-142`, per level, calling each owner's static `owns(face)`.
-3. Faces kept out of collision: `include_collision_face` `:323-336`, again `owns(face)` per level, plus literal source-index lists for L10 (`:332-336`).
+3. Faces kept out of collision: `include_collision_face` `:323-336`, again `owns(face)` per level, plus literal source-index lists for L10 (`:332-336`); the mesh-side L10 list is at `:130` **[K85-7]**.
 4. Restore after load: `:431-445`.
 5. Special set-up arguments: `:183` (assembly ids per level).
 
 **Owner conventions (counted by grep over `scripts/lol2/l<N>_*.gd`):**
 
 - 110 owner files have a static `attach`. 106 take `(map)`; the others: `(map, area)` ×2, `(map, level)`, `(map, which = "tribe")`, `(map, which = "citadel")`, `attach_lift`, `attach_entry`; plus `placed_vqa_billboard.gd` `attach_dawn` / `attach_placenta`.
-- Each sets a literal node name (`l10_fences.gd:10` "L10Fences", `l12_frozen_bow.gd:28` "L12FrozenBow") and keeps its state in `host.quest_state[KEY]` (85 files have a `KEY` const).
+- Each sets a literal node name (`l10_fences.gd:10` "L10Fences", `l12_frozen_bow.gd:28` "L12FrozenBow") and keeps its state in `host.quest_state[KEY]` (90 files have a `KEY` const, 86 use it against `quest_state`) **[K85-8]**.
 - 62 have `restore()`. 100 have a static `validate`; at least eight of those are called by name from `act_one_quest_state.gd:51-72`.
 - 36 distinct `owns`-style calls appear in `act2_map.gd`.
 - **112 lookups by node name** (`has_node("L…")`, `get_node("L…")`) exist outside the three hosts: owners find each other by name. Names are therefore part of the contract.
@@ -355,9 +368,9 @@ func validate_quests(quests) -> String          # calls each listed script's sta
 |---|---|---|---|
 | 0 | **Pin today.** A test that loads each of the ten levels and records the ordered list of owner node names, the set of face indices excluded from the mesh, and the set excluded from collision. Golden files under `tests/fixtures/area_owners_d5da60a/` | tests | Golden data from unchanged code |
 | 1 | Add the registry and the ten list files, generated from `act2_map.gd:207-316`, `darker_jungle.gd:254-275`, `dragon_level.gd:135-149`. Nothing uses them. A test checks each list against the commit-0 golden order | new files | Dead code, checked against golden |
-| 2 | `act2_map.gd` attaches through the registry; the 95 hand calls go. Golden order test must be identical | 1 host | Same calls, same order |
+| 2 | `act2_map.gd` attaches through the registry; the 93 hand lines go. Golden order test must be identical | 1 host | Same calls, same order |
 | 3 | Same for `darker_jungle.gd` and `dragon_level.gd` | 2 hosts | Same |
-| 4 | Face claims: `:126-142` and the owner half of `:323-336` ask the registry. The literal L10 source-index lists (`:128-129`, `:332-336`) move into the L10 list file as data, not into owners | 1 host + 1 list | Golden face sets must be identical |
+| 4 | Face claims: `:126-142` and the owner half of `:323-336` ask the registry. The literal L10 source-index lists (`:130`, `:332-336`) move into the L10 list file as data, not into owners | 1 host + 1 list | Golden face sets must be identical |
 | 5 | Restore: the three `apply_save` lists and the two handoff lists become `restore_all("load")` / `restore_all("arrival")`. The owners in today's lists get `RESTORE_ON` matching exactly where they are called now (so `act2_map` owners get `["load"]` only) | 3 hosts, about 20 owners | Same owners, same order, same occasions |
 | 6 | Validation: `act2_save.quests_error` (`act2_save.gd:7-18`) also runs `registry.validate_quests`. The eight by-name calls in `act_one_quest_state.gd:51-72` stay until a test shows the registry covers them | 2 files | Adds checks; removes none |
 | 7 | **The 41.** One commit per level: for each unlisted owner, a test saves mid-state, reloads and compares what the player sees or can do. If it already passes, set `RESTORE_ON := ["load"]` anyway (harmless, uniform). If it fails, that is a found bug: set it and note it in WHATS_NEW | owners + tests | Per level, each with its own proof |
@@ -380,7 +393,7 @@ Nothing in this plan writes, renames or removes a saved key. Commit 6 adds valid
 | `area_restore_<level>_test` (commit 7) | **real input where the state is visible**: open/cut/take something on real keys, F5, change it, F9, look and use | The 41, one level at a time |
 | `bj14_sol_input_walk.gd` and the Act 2 earned tests | as they are | The chain still walks |
 
-`act2_map.gd` selects 797 of 1,077 tests (plan section 1.2 of the master plan). Commits 2, 4 and 5 touch it, so batch them for one wide gate if the lead agrees; the golden tests give fast feedback in between.
+`act2_map.gd` selects most of the suite (the master plan measured 797 of 1,077 on an earlier commit; d5da60a has 1,112 registry rows, so re-measure) **[K85]**. Commits 2, 4 and 5 touch it, so batch them for one wide gate if the lead agrees; the golden tests give fast feedback in between.
 
 ## 2.6 Risks
 
@@ -397,7 +410,7 @@ Nothing in this plan writes, renames or removes a saved key. Commit 6 adds valid
 
 - Whether each of the 41 is a real defect; I matched names only and ran nothing.
 - That attach order matters at each point; I assume it does everywhere.
-- The exact line range of the second L16 block and every `owns` call (lines longer than my read width were cut at 230 to 260 characters; Sol should generate the lists by script from the file, not from this text).
+- Every `owns` call (lines longer than my read width were cut at 230 to 260 characters; Sol should generate the lists by script from the file, not from this text).
 - Whether `dark_halls.gd` and `act2_jungle_return.gd` have owner lists of the same shape.
 - Whether any test depends on the host having no child named `AreaOwners`.
 
@@ -407,7 +420,7 @@ Nothing in this plan writes, renames or removes a saved key. Commit 6 adds valid
 
 ## 3.0 The short version
 
-- Today there are 15 separate one-file quicksaves, one per area, each in its own format with `version == 1` hard-coded. The opening screen has five separate Resume buttons and none for L9 to L20.
+- Today there are 15 separate one-file quicksaves, one per area, each in its own format. Fourteen accept only `version == 1`; **the Cave save is version 2, accepts version 1 and migrates it** (`walkthrough_save.gd:6`, `:91`, `:241-242`) **[K85-9]**. The opening screen has five separate Resume buttons and none for the Cave or L9 to L20.
 - **The native script state of every level is never written to disk (PROVEN).** It lives in a scene-tree meta that dies with the process. So F-07 is confirmed, and it is worse than the task sheet said: it is lost for the level you stand in too, not only for the others.
 - The plan does not rewrite the 15 area formats. It adds **one slot file** that wraps the current area's save exactly as that area writes it today, plus the native bank for all levels, plus the few values that today travel between scenes in memory. Ten slots and one autosave slot.
 - Old quicksaves keep loading through the code that loads them now, and appear in the load list as "old save".
@@ -429,7 +442,7 @@ Nothing in this plan writes, renames or removes a saved key. Commit 6 adds valid
 
 - The Act 2/3 shape (`act2_save.gd:52-66`): `{format, version: 1, inventory, quests, atlas_explored, player: {position, yaw, pitch, region?}}`.
 - `quests` is the host's whole `quest_state`. It already carries every Act 2/3 owner's state for every level (plan 2), the creature packets `act2_creatures_<AREA>` (`act2_save.gd:9-14`), the item packet `act2_items`, and a partial native record store `act2_struck` (`act2_progression.gd:41`, written near `:1297`, restored `:1299-`).
-- Version: `jungle_save.gd:38` rejects anything but `version == 1`. No migration code exists. One helper, `atlas_explored.gd` `migrate`, reshapes old atlas data.
+- Version **[K85-9]**: the jungle family rejects anything but `version == 1` (`jungle_save.gd:38`). The Cave is different: `walkthrough_save.gd:6` `VERSION := 2`, the validator accepts 1 or 2 (`:91`), and a version-1 file is migrated on read (`:241-242`, sets the version and an empty `collected`). So one area migration already exists, and inner versions already differ between areas. `atlas_explored.gd` `migrate` also reshapes old atlas data.
 - Writing is already careful: temp file, re-read and validate, then rename (`act2_save.gd:37-51`), 4 MiB cap (`:6`).
 - A save is refused while paused or flying (`act2_save.gd:53-54`).
 
@@ -441,14 +454,18 @@ Nothing in this plan writes, renames or removes a saved key. Commit 6 adds valid
 | `lol2_act2_handoff` | `act2_progression.gd:383`, read `:213-216`, `act2_jungle_return.gd:21-24` | The pack and quests for the next level (transient) |
 | `lol2_adapter_exit_seeds` | `act2_progression.gd:387` | A flag |
 | `lol2_darker_handoff`, `lol2_jungle_handoff`, `lol2_cave_completion` | `act_one_departure.gd:103`, `museum_walkthrough.gd:1081`, `cave_walkthrough.gd:788` | Act 1 one-way transfers (transient) |
+| `lol2_hive_route_handoff` **[K85-10]** | const `hive_route.gd:3`, set `:78`, consumed `:20-32` | A full `area_handoff` (pack + quests) plus arrival pose, Jungle ↔ Hive (transient) |
+| `lol2_dark_halls_route_handoff` **[K85-10]** | const `dark_halls_route.gd:6`, set `:92` | The same for the Dark Halls route (transient) |
+| `lol2_museum_checkpoint` **[K85-10]** | const `museum_walkthrough.gd:7`, set `:450` | A same-scene session cache of the Museum checkpoint |
 
-`act2_save.save_host` writes none of the first row. The native host itself has the fields (`native_script_host.gd:146-153`) and a `reset_state()` (`:331`), but no snapshot or restore function.
+The two route metas are set through a constant, so a search for `set_meta("lol2_` does not find them; that is how I missed them. `act2_save.save_host` writes none of the first row. The native host itself has the fields (`native_script_host.gd:146-153`) and a `reset_state()` (`:331`), but no snapshot or restore function.
 
 **Loading from the opening screen**
 
 - `original_game_gate.gd:77-99`: five buttons, Resume museum / jungle / Hive / darker jungle / Dark Halls. Each reads its file and sets a meta (`:291`, `:301`, `:311`, `:322`, `:352`).
 - The host applies it in `_ready`: `museum_walkthrough.gd:382-384`, `jungle_walkthrough.gd:361-363`, `hive_review.gd:186-189`, `darker_jungle.gd:249-251`, `dark_halls.gd:118-120`.
-- No resume path for the Cave, L9 or L10 to L20 (LIKELY: I saw no meta for them).
+- No resume path for the Cave, L9 or L10 to L20. For the Cave this is PROVEN and goes further **[K85-11]**: it has no `apply_save(state)` at all. Its load is `_quickload_unrecorded(path)` (`cave_walkthrough.gd:1273-`), which reads the file and applies the state inline; its save builds the dictionary in `_save_state()` (`:1177-1233`) and refuses while the cavern is loading, a scene plays, or Luther has drowned or fallen (`:1262-1267`).
+- The Museum's `apply_save(state)` exists but returns nothing (`museum_walkthrough.gd:923`), unlike the jungle family's, which returns an error string.
 
 **In-game save UI:** `museum_interface.gd:143-149` (buttons "Save · F5", "Load · F9"), action at `:665`, path at `:52` and `jungle_walkthrough.gd:210`.
 
@@ -469,7 +486,7 @@ Nothing in this plan writes, renames or removes a saved key. Commit 6 adds valid
 ```
 
 - `native_bank` holds every visited level **including the current one**, snapshotted at save time with the same five fields the level change writes (`act2_progression.gd:378-381`).
-- `area_save` is not reinterpreted. Its inner validator stays the judge of it.
+- `area_save` is not reinterpreted. Its inner validator stays the judge of it, and its inner `version` is whatever that area writes today: 2 for the Cave, 1 for the others **[K85-9]**.
 - Same write discipline as today: temp file, validate, rename; the previous file is kept as `.bak`. Cap 8 MiB (4 for the area save as now, 4 for the bank; UNKNOWN real size, measure in commit 0).
 
 **C2. One module** `scripts/lol2/game_save.gd` (static):
@@ -488,15 +505,15 @@ static func migrate(doc) -> Dictionary               # runs steps from doc.versi
 
 | Call | Today |
 |---|---|
-| `area_snapshot() -> Dictionary` | New thin function. The dictionary each `_quicksave_unrecorded` builds before writing (Act 2/3: `act2_save.gd:56-66`; Jungle `jungle_walkthrough.gd:474-477`; Museum `:900-`; Hive `:428-`; Cave `:1262-`) |
-| `apply_save(state) -> String` | Exists on every host of the jungle family; Museum, Cave to be checked |
-| `can_save() -> String` | New. "" or the reason: paused, flying, fallen (health 0), a movie or conversation running, a level change pending |
+| `area_snapshot() -> Dictionary` | New thin function. The dictionary each `_quicksave_unrecorded` builds before writing (Act 2/3: `act2_save.gd:56-66`; Jungle `jungle_walkthrough.gd:474-477`; Museum `:900-`; Hive `:428-`; Cave: `_save_state()` `:1177-1233` already is this) |
+| `apply_slot_state(state) -> String` **[K85-11]** | New uniform name, because today's functions differ. Jungle family (Act 2/3, L8, L9, Jungle, Dark Halls, Hive): forwards to `apply_save(state)`, which already returns a string. Museum: validates with `museum_save.gd`'s validator, calls the void `apply_save(state)` (`:923`), returns "". **Cave: new code.** Split `_quickload_unrecorded` (`:1273-`) after its read: everything from "Validation completes before any live state changes" on becomes `_apply_save_state(state) -> String`; the path version calls it, and `apply_slot_state` first runs `WalkthroughSave`'s validator on the dictionary (with `_checkpoint_count()`, as `read_save` does) and then calls it |
+| `can_save() -> String` | New. "" or the reason: paused, flying, fallen (health 0), a movie or conversation running, a level change pending. The Cave's existing refusals (`:1263-1267`: still loading, scene playing, drowned, fallen) are its `can_save()` |
 
 Fallback if splitting a host's save function proves risky: the slot writer calls the host's existing `_quicksave_unrecorded(path)` with a work file and embeds the parsed result. Same bytes, no refactor.
 
 **C4. Native state (F-07).** `native_script_host.gd` gets `snapshot() -> Dictionary` and `restore(d) -> String` for `state`, `locals`, `locals_e58`, `record_state`, with a validator (keys are strings, values integers or dictionaries of integers; finite; bounded count). `act2_progression.gd` uses them in the three places it now copies fields by hand (`:219-220`, `:378-379`, and the struck overlay `:1211-1218`), and the bank moves from the raw tree meta into the session holder of C5. `act2_struck` in `quest_state` stays as it is and keeps working for old saves; when both are present the bank wins (it is the fuller copy), and a test shows they agree.
 
-**C5. One session holder.** An autoload `GameSession` (`scripts/lol2/game_session.gd`) holds `native_bank`, `adapter_exit_seeds`, `play_seconds`, `last_slot`, and the pending resume. The tree metas of 3.1 row 1 and 3 are read and written through it. (Rows 2 and 4, the transient handoffs, stay as metas in this plan.)
+**C5. One session holder.** An autoload `GameSession` (`scripts/lol2/game_session.gd`) holds `native_bank`, `adapter_exit_seeds`, `play_seconds`, `last_slot`, and the pending resume. The tree metas of 3.1 row 1 and 3 are read and written through it. (The transient handoffs stay as metas in this plan: `lol2_act2_handoff`, the three Act 1 one-way transfers, and the two route handoffs `lol2_hive_route_handoff` and `lol2_dark_halls_route_handoff` **[K85-10]**. They are consumed on arrival, and `can_save()` refuses while a level change is pending, so none can be alive when a slot is written. `lol2_museum_checkpoint` is a same-scene cache; a slot load must clear it before the Museum scene starts, or the Museum could prefer the stale cache over the slot: Sol checks `:382-384` and `:450` for which wins.)
 
 **C6. Autosave (owner decision D3).**
 - Every 10 minutes of unpaused play, and on entering a map once the arrival has settled (after `apply_area_handoff` has run and the first physics frame has passed).
@@ -509,7 +526,7 @@ Fallback if splitting a host's save function proves risky: the slot writer calls
 - The Tab interface's two buttons (`museum_interface.gd:143-149`) open a plain list of the ten slots plus autosave: label, area, date, play time. Pick to save or load; saving over a used slot asks once.
 - The opening screen gets "Continue" (newest of all slots and the autosave) and "Load" (the same list, plus old saves). The five Resume buttons stay until the shell phase removes the developer screen.
 
-**C8. Versions and migrations.** `game_save.gd` holds `CURRENT := 1` and an ordered list of steps `{from, to, apply(doc) -> doc}`. A step may change anything inside the document, including `area_save.quests`. A document with a higher version than the game knows is refused with a clear message. From this plan on, **a change to any saved shape comes with a step and a fixture of the old shape**; that becomes a review rule.
+**C8. Versions and migrations.** `game_save.gd` holds `CURRENT := 1` and an ordered list of steps `{from, to, apply(doc) -> doc}`. A step may change anything inside the document, including `area_save.quests`. Inner area versions are separate and already differ (Cave 2, others 1) **[K85-9]**: an area's own migration, like the Cave's 1→2, keeps running inside that area's reader, and the slot's steps run before it. The slot validator must therefore call each area's own validator, never compare the inner version itself. A document with a higher version than the game knows is refused with a clear message. From this plan on, **a change to any saved shape comes with a step and a fixture of the old shape**; that becomes a review rule.
 
 ## 3.3 Migration order
 
@@ -518,9 +535,9 @@ Fallback if splitting a host's save function proves risky: the slot writer calls
 | 0 | **Fixtures and measurements.** One real save per area written by d5da60a (15 files) under `tests/fixtures/saves_d5da60a/` (shared with plan 1). A test loads each through today's path. Measure the native bank size after visiting L8, L10, L9 | tests | Unchanged code |
 | 1 | `native_script_host.snapshot()/restore()` + validator + unit test (round trip on all 15 loaded levels; restore of a hand-broken snapshot is refused) | 1 file + test | New functions only |
 | 2 | `GameSession` autoload; `act2_progression.gd` reads and writes the bank and the exit-seed flag through it, using commit 1. The tree meta stays mirrored for one commit so tests that set it still work, then goes in commit 8 | 2 files + project.godot | Same data, one holder |
-| 3 | `area_snapshot()` and `can_save()` on each host family (jungle family first: Act 2/3, L8, L9, Jungle, Dark Halls; then Hive; then Museum; then Cave). `_quicksave_unrecorded` becomes "snapshot, then write": same file out | 4 to 7 files | Each host's own save test compares bytes before and after |
+| 3 | `area_snapshot()` and `can_save()` on each host family (jungle family first: Act 2/3, L8, L9, Jungle, Dark Halls; then Hive; then Museum; then Cave, where `cave_walkthrough.gd` `_save_state()` is already the snapshot and only `can_save()` is new). `_quicksave_unrecorded` becomes "snapshot, then write": same file out. While here, trace the two route handoffs (`hive_route.gd`, `dark_halls_route.gd`) and add anything they keep beyond arrival to `session` **[K85-10]** | 4 to 7 files | Each host's own save test compares bytes before and after |
 | 4 | `game_save.gd`: `save`, `validate`, `slots`, `migrate` (no steps yet). Writing only; nothing loads a slot | 1 new file + tests | Additive |
-| 5 | `game_save.load`: sets the session, sets one meta `lol2_slot_resume`, changes scene. Every host family reads that meta in `_ready` beside its existing resume meta (anchors in 3.1) and calls `apply_save`. `act2_map.gd` and `dragon_level.gd` gain the resume read they lack. The native bank is in the session before the scene loads, so `act2_progression.gd:217-220` restores the level as it does after a level change | about 8 files | Reuses each host's own apply path |
+| 5 | `game_save.load`: sets the session, sets one meta `lol2_slot_resume`, changes scene. Every host family reads that meta in `_ready` beside its existing resume meta (anchors in 3.1) and calls `apply_slot_state`. `act2_map.gd`, `dragon_level.gd` **and `cave_walkthrough.gd`** gain the resume read they lack **[K85-11]**. The Cave's read must wait until `walkthrough_ready` is true (its load refuses before that, `:1274-1275`), and needs the `_apply_save_state` split of C3; a Cave slot saved at version 2 and a fixture at version 1 both go through it. The native bank is in the session before the scene loads, so `act2_progression.gd:217-220` restores the level as it does after a level change | about 8 files | Reuses each host's own apply path |
 | 6 | F5/F9 and the Tab buttons go to the slot; the list panel; "Continue" and "Load" on the opening screen; old saves listed and loaded through the unchanged resume metas | `museum_interface.gd`, `original_game_gate.gd`, hosts' key handling | Old path still present underneath |
 | 7 | Autosave: timer and arrival hook, HUD note, `.bak` rotation | `game_session.gd`, host base | Additive; off under `--no-autosave` for tests |
 | 8 | Migration proof: a deliberate version 2 with one real step (move the exit-seed flag, or fold `act2_struck` into the bank if the lead wants it), with the version-1 fixture kept. Remove the mirrored tree meta of commit 2 | `game_save.gd`, tests | Fixture test |
@@ -534,13 +551,14 @@ Commits 1, 2 and 5 together are F-07; the rest is F-06. If F-06 has to be cut sh
 - `legacy_saves()` lists the ones that exist; the load list shows them under the slots as "Old save: <area>, <date>". Loading one runs today's path exactly (`original_game_gate.gd:291-352` style). For L9 and L10 to L20, which have no resume button today, commit 5's new `_ready` read gives them one.
 - An old save has no native bank. It loads with fresh native state for every level, **which is what it does today**; the list row says "level puzzles on other maps may be reset". Nothing gets worse.
 - The first F5 after loading an old save writes a slot. From then on the player is on the new format.
-- Inside a slot, `area_save` is today's shape with today's `version: 1`, so every inner validator and every fixture keeps working. Future shape changes go through C8.
+- Inside a slot, `area_save` is today's shape with that area's own version (Cave 2, others 1) **[K85-9]**, so every inner validator, the Cave's 1→2 migration and every fixture keep working. Future shape changes go through C8.
 
 ## 3.5 Tests
 
 | Test | Kind | Shows |
 |---|---|---|
-| `legacy_save_fixture_test` (commit 0) | headless | All 15 d5da60a saves still load, at every commit |
+| `legacy_save_fixture_test` (commit 0) | headless | All 15 d5da60a saves still load, at every commit; plus one **version-1 Cave save**, which must still migrate to version 2 on read **[K85-9]** |
+| `cave_slot_resume_test` **[K85-11]** | two processes, real input in the first | Save in the Cave to a slot (roach fought, a chain broken), quit, Continue: position, roach snapshot, chain and pack as left. The Cave has never had a resume, so this is new behaviour, not a regression check |
 | `native_snapshot_roundtrip_test` | headless | Snapshot, reset, restore gives equal state on each level |
 | `game_save_roundtrip_test` | headless, per host family | Save to a slot, read back, the inner area save equals what the old quicksave writes |
 | `game_save_slots_test` | headless | Ten slots and the autosave are written and read independently; a damaged file shows as a row with an error and does not break the list; `.bak` is offered |
@@ -561,7 +579,8 @@ Process-restart tests need a private `user://` per test (the trap recorded on 20
 | Size: ten levels of native state on every autosave | Measured in commit 0; write off the main thread only if it shows a hitch (do not build that first) |
 | A crash while writing | Temp file + rename + `.bak`, as today |
 | Autosave at a bad moment (mid-jump over a pit, drowning) locks the player | `can_save()` also requires the player on the floor and not in liquid; the autosave is one of eleven slots, and `.bak` holds the one before |
-| Act 1 areas have different save shapes (Museum uses a `checkpoint`) | The slot never reads inside `area_save`; only the host does |
+| Act 1 areas have different save shapes, versions and load functions (Museum uses a `checkpoint` and a void `apply_save`; the Cave is version 2 with no dictionary load) | The slot never reads inside `area_save`; each host answers `apply_slot_state` in its own way (C3) |
+| The Cave split changes a load path the owner has played through | It is a cut-and-call split with no logic change; the Cave's existing F5/F9 tests and the version-1 fixture run before and after |
 | Jungle ↔ Hive ↔ rooms: state of the area you are not in may live in a meta I did not find | 3.7; Sol traces each pair in commit 3 and adds what he finds to `session` |
 | Test selection: commit 3 and 5 touch every host base | Batch them for one wide gate each |
 | Save scumming or R recovery rules change later (owner D6: game over + reload) | Not here. `Continue` and `load` are the hooks that work will call |
@@ -569,10 +588,9 @@ Process-restart tests need a private `user://` per test (the trap recorded on 20
 ## 3.7 What I could not confirm
 
 - I ran nothing. No size, timing or load was measured.
-- That the native bank is the only cross-level state outside `quest_state`. I listed every `set_meta("lol2_…")` in `scripts/lol2`; a static var or an autoload holding state would not show up in that search.
+- That the native bank is the only cross-level state outside `quest_state`. My first search was for the literal `set_meta("lol2_…")` and missed three metas set through constants; Kimi found them (3.1) **[K85-10]**. I have not repeated the search for every `set_meta(` with a constant or variable name, so Sol should (`grep -n 'set_meta(' scripts/lol2`), and a static var or an autoload holding state would not show up in either search.
 - Whether Act 1 areas keep each other's state anywhere between visits (Jungle while in the Hive, the rooms, the monastery). The one-way transfers are in 3.1; the round trips I did not trace.
 - Whether `atlas_explored` in an area save covers all levels or only the current one (`atlas_explored.gd:96-100` reads one host field).
-- Whether the Museum and Cave hosts have an `apply_save(state)` that takes a dictionary, or only a path-based load.
 - Whether fixture saves for all 15 areas can be produced without playing to each (dev checkpoints exist for Act 1 and my BJ14 `ck_before_*.json` files cover L8, L9, L10 on bf8b21f, not d5da60a).
 - The exact lines of the Museum, Hive and Cave save builders beyond the function heads I cite.
 - Whether play time is counted anywhere today (I assume not).
