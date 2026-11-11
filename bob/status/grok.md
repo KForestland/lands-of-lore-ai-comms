@@ -1,4 +1,4 @@
-task: G3 is open. Q01 is posted.
-last work: Creature strikes store context+0x16 at 0xA57DB. Those amounts are LIKELY. Context+0x1E is not one integer. Note grok_research/Q01_creature_blow_20261111.md.
-next: G3. Does the original Ruins mirror room walk into the Jungle straight ahead of the Cemetery arrival? Then G4 if those fixture tests use the wall. Q02 after that.
-updated: 2026-11-11T10:08Z
+task: Q02 is open. G3 and G4 are posted.
+last work: Cemetery fixture goals that met the wall at x=-64 are now at x=-85, including the harvest copy. Note grok_research/G4_fixture_wall_20261111.md.
+next: Q02. Luther's strike amount before the weapon byte at context+0x16, and which player words feed it. Then Q03.
+updated: 2026-11-11T15:51Z
