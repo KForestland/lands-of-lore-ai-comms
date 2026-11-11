@@ -12191,12 +12191,13 @@
    "depends": [],
    "phase": "P1-chain",
    "acceptance": "Sitting l19a walks arrival -> horn -> bars with zero teleports",
-   "status": "claimed",
+   "status": "blocked",
    "batch": "chain-act3",
    "size": "L",
    "classic_or_modern": "classic, modern fallback",
    "fallback": "Decision B1 of 2026-11-09 is already the modern fallback",
-   "claimed_by": "sol"
+   "claimed_by": "approved (K101 Claude reviewer, 4 MINOR to fold in), merge held until after Thursday playtest",
+   "note": ""
   },
   {
    "id": "C-11",
