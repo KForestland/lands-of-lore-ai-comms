@@ -11950,12 +11950,13 @@
    ],
    "phase": "P0-foundations",
    "acceptance": "Tests: entering a map writes the autosave; ten minutes of play writes it; a dead or drowning Luther is never autosaved; loading it puts Luther alive where it was taken",
-   "status": "claimed",
+   "status": "blocked",
    "batch": "save",
    "size": "S",
    "classic_or_modern": "modern",
    "fallback": "none. The 10-minute timer is an owner-set modern feature with a ledger row, not an invented cap. Rules to keep: the clock counts play time only (not pause, menus, movies); no autosave while dead, drowning, falling, in a movie or in a conversation - it waits for the next safe moment",
-   "claimed_by": "sol"
+   "claimed_by": "approved (K100 Claude reviewer), merge held until after Thursday playtest",
+   "note": ""
   },
   {
    "id": "F-19",
@@ -12285,11 +12286,13 @@
    ],
    "phase": "P1-chain",
    "acceptance": "Owner can start each of the 10 Act 2/3 levels from F2; a test starts three of them",
-   "status": "todo",
+   "status": "blocked",
    "batch": "chain-survey",
    "size": "M",
    "classic_or_modern": "modern",
-   "fallback": "none"
+   "fallback": "none",
+   "claimed_by": "approved (Kimi K97), merge held until after Thursday playtest",
+   "note": ""
   },
   {
    "id": "C-16",

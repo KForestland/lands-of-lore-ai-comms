@@ -1,16 +1,16 @@
 # ITEM GRANT PLAN: one path for every item that enters the pack (F-08)
 
-Fable, 2026-11-11. **Revision 2** (after Kimi's audit K95; the changes are listed in section 10). Plan only, no game code. For Sol, after F-17.
-All anchors are `scripts/lol2/<file>:<line>` on Sol's Plan 3 head **742dcab** (branch `sol/foundation-whole-game-save-20261111`), because F-08 will be built on top of that stack. If F-17 or a rebase moves lines, the function names in the tables are the stable key.
+Fable, 2026-11-11. **Revision 3** (after Kimi's audits K95 and K98; the changes are listed in sections 10 and 11). Plan only, no game code. For Sol, after F-17.
+All anchors are `scripts/lol2/<file>:<line>` and hold on **fde4d19** (branch `sol/c15-act23-starts-20261111`, worktree `lol2_sol_playtest_starts`). They were taken on 742dcab; `git diff 742dcab fde4d19 -- scripts/lol2` changes eight files (`game_areas.gd`, `game_save.gd`, `game_session.gd`, `indexed_cave_wall_review.gd`, `museum_interface.gd`, `original_game_gate.gd`, `playtest_starts.gd`, `playtest_starts.json`), none of which this plan cites, so every line number is the same on both commits. The lines changed in revision 3 were re-read on fde4d19. If F-17 or a rebase moves lines, the function names in the tables are the stable key.
 
 Grades: PROVEN = I read the line. LIKELY = inferred or machine-derived. UNKNOWN = not checked.
 
 ## 0. The short version
 
 - This is structure, not design. **Every item id, every refusal text, every capacity check (and every missing one), every save key stays as it is today.** The plan flags the inconsistencies it finds; it does not smooth them.
-- Today an item reaches the pack in six different ways (section 1.3), written out in **62 functions in 53 files** that append, **31 functions in 26 files** that replace the whole pack with a transaction result, and the Cave, which has no pack at all (it derives one from ten owners). 12 more functions in 12 files only remove items.
+- Today an item reaches the pack in six different ways (section 1.3), written out in **61 functions in 52 files** that append, **31 functions in 26 files** that replace the whole pack with a transaction result, and the Cave, which has no pack at all (it derives one from ten owners). 12 more functions in 12 files remove items from the live pack.
 - The original scripts carry **876 "give item" commands** (opcode 3, kind 1) over the 15 levels. The Act 2 host turns each into an `item_request` signal that is only written to a log (`act2_progression.gd:211`). Nothing reaches the pack from it.
-- The plan adds one static module, `item_grants.gd`. The pack arrays stay where they are and keep their names, so the 295 test files that read them and the 85 that write them keep working. The module becomes the only **production** writer.
+- The plan adds one static module, `item_grants.gd`. The pack arrays stay where they are and keep their names, so the tests that name them keep working (299 test files name a pack store; between 96 and 132 of them contain a write-shaped line, depending on the pattern used. LIKELY, a grep count, and nothing in the plan depends on the number). The module becomes the only **production** writer.
 - Native grants go through a per-level table, **default "log only" as today**, because the command's argument byte (values 4, 1, 0, 3, 5) is not decoded. A row is switched on only with evidence.
 - Eleven commits. Commit 0 pins today's behaviour; each later commit keeps it green.
 - **Old saves keep loading because no save key is added, renamed or removed.** The pack, the Act 2 item packet and the world-item histories stay in their present fields.
@@ -37,7 +37,7 @@ Related stores that travel with the pack: `hand_item` (written in 25 files, not 
 | `item_catalog.gd` (Act 1 and shared) | fixed names, per-owner ids, `item:defNNN` generic ids in scope "world" (`:33`, `:220`) | `item_definitions.gd:45` `by_identity(identity) -> index` | `validate_carried` `:302` (no duplicates, admitted in scope, at most `MAX_CARRIED := 64` `:55`) |
 | `act2_items_catalog.gd` (Act 2/3) | placement ids `act2:<AREA>:itemN`, about 30 hand-written special ids in `row()` `:36-91`, `:charged:<colour>` variants | each row carries `identity` | `validate` `:95-106`: carried at most 64, no duplicate base id, **every carried id must be in the `collected` history** |
 
-The Act 2 packet lives at `quest_state.act2_items = {version, carried, collected}` (`:94`). `sync(host)` `:107-110` rebuilds `carried` from the pack; `restore(host)` `:111-118` rebuilds the pack from it. The combined limit (old items plus Act 2 items at most 64) is checked at `:116`, `act2_map.gd:324` and `darker_jungle.gd:274`.
+The Act 2 packet lives at `quest_state.act2_items = {version, carried, collected}` (`:94`). `sync(host)` `:107-110` rebuilds `carried` from the pack; `restore(host)` `:111-118` rebuilds the pack from it. The combined limit (old items plus Act 2 items at most 64) is checked at `:116`, `act2_map.gd:324`, `darker_jungle.gd:274`, `dragon_level.gd:161`, `act2_jungle_return.gd:37`, and at `act2_save.gd:25`, which is the one that guards saves on disk and old loads.
 
 ### 1.3 The six ways an item enters the pack
 
@@ -64,9 +64,9 @@ The Act 2 packet lives at `quest_state.act2_items = {version, carried, collected
 How it was made: the tree at 742dcab was searched for every line that appends to, erases from, assigns or aliases `carried_collected`, `carried_inventory.collected`, `carried_items()`, `carried()`, or a local named `inventory`, `carried`, `pack`, `collected`, `bag`; each hit was put under its function. The side-effect columns are a **text search of that function's body** (LIKELY, not read line by line): Cap = mentions `MAX_CARRIED`, `capacity`, `>= 64` or `LIMIT`; Dup guard = a "not in" test; History = writes a history or `collected` list; Sync = `Items.sync`; Text = `save_feedback`; Journal = Journal call; Equip/HUD = touches equipment, the hand or the HUD. A "-" under Cap can mean the caller checks.
 Kimi: the raw line list is 166 lines in 88 files; `.orig` files were left out (`museum_walkthrough.gd.orig` repeats six Museum lines).
 
-### 2.1 Functions that add to a pack or a history (62 functions, 53 files)
+### 2.1 Functions that add to a pack or a history (61 functions, 52 files)
 
-Includes rule functions that append to an array handed to them (way B) and three `restore` functions that rebuild a history from the pack. `player_dragon_blood.gd:29` `place` was listed here in revision 1; it only appends to the spent history and **erases** from the live pack, so it now sits in 2.7.
+Includes rule functions that append to an array handed to them (way B) and three `restore` functions that rebuild a history from the pack. `player_dragon_blood.gd:29` `place` was listed here in revision 1; it only appends to the spent history and **erases** from the live pack, so it now sits in 2.7. `l8_herbalist.gd:32` `pick` was also listed here; it appends to a copy (`:31` `inventory.duplicate()`) and is a pure builder, listed under 2.3.
 
 | File:lines | Function | Cap | Dup guard | History | Sync | Text | Journal | Equip/HUD |
 |---|---|---|---|---|---|---|---|---|
@@ -109,7 +109,6 @@ Includes rule functions that append to an array handed to them (way B) and three
 | `l16_fountain_ball.gd:85,86` | `take` | yes | - | yes | yes | - | - | - |
 | `l19_belial_horn.gd:65,69` | `take` | yes | yes | yes | yes | - | - | - |
 | `l19_dawn_curse.gd:242,245` | `_grant_ruby` | yes | yes | yes | yes | - | - | - |
-| `l8_herbalist.gd:32` | `pick` | yes | - | yes | - | - | - | - |
 | `l8_journey_state.gd:44,52,71` | `act` | yes | yes | - | - | - | - | - |
 | `magic_shop_rooms.gd:221` | `grant` | - | - | - | - | - | - | - |
 | `monastery_rooms.gd:233` | `grant` | - | yes | - | - | - | - | - |
@@ -150,7 +149,6 @@ Includes rule functions that append to an array handed to them (way B) and three
 | `hive_rune_entry.gd:259` | `hive_rune_transaction.gd:59-60` `copy_wax` (erases the wax, appends the copy) |
 | `hive_rune_entry.gd:246`, `:278` | `hive_ancient_stone.gd:14-17` `begin`, `:19-29` `advance` (appends the Ancient Stone at `:27` to the parameter `items`). **Not in table 2.1**: the search did not look for a parameter of that name. Found by a second sweep for calls that pass the live pack as an argument; that sweep found no other case |
 | `magic_shop_rooms.gd:217-221`, `monastery_rooms.gd:226-233`, `:411-417`, `:463-468`, `thieves_den_rooms.gd:238-241` | append through the alias `carried` of `get_parent().carried_collected` |
-| `l8_herbalist.gd:32` | appends to the `carried` it is given |
 
 ### 2.3 Functions that replace the whole pack with a result (31 functions, 26 files)
 
@@ -188,9 +186,9 @@ These both add and remove. The new pack is computed by `mechanism_transaction.gd
 | `l8_tribe.gd:100,101` | `offer_shaman` | - | - | yes | yes | - | - | - |
 | `l9_pyre.gd:72,74` | `urn` | - | - | yes | yes | - | - | - |
 | `l9_statue.gd:46` | `offer` | - | - | - | yes | - | - | - |
-| `player_item_controller.gd:68,75,96,105,113,124,130,131` | `use` | - | yes | yes | - | yes | - | - |
+| `player_item_controller.gd:130,131` | `use` (the write-back of `Effects.use`'s result; the six `carried().erase(id)` lines of the same function are removals, see 2.7) | - | yes | yes | - | yes | - | - |
 
-Pure functions that build the new pack for those owners (PROVEN): `l10_emperor_state.gd:61-67`, `l10_priest.gd:47-53`, `l10_silverleaf_harvest.gd:24-25`, `l13_altar_state.gd:34-36`, `l13_dawn_release.gd:21-35`, `l8_journey_state.gd:44-71`, `l8_dawn_state.gd:22`, `l8_shaman_trade.gd:23`, `l8_tribe_state.gd:37`, `l9_statue_state.gd:15`, `l10_tomb_state.gd:31`, and the insert/retrieve pairs in `l8_temple_door_state.gd:9,21`, `l8_tree_slot_state.gd:9,21`, `l13_exit_lock_state.gd:9,21`. `l8_herbalist.gd:30-33` `pick` and `mechanism_transaction.gd:72`, `:104` (inside `occupy` and `retrieve`) are builders of the same kind.
+Pure functions that build the new pack for those owners (PROVEN): `l10_emperor_state.gd:61-67`, `l10_priest.gd:47-53`, `l10_silverleaf_harvest.gd:24-25`, `l13_altar_state.gd:34-36`, `l13_dawn_release.gd:21-35`, `l8_journey_state.gd:44-71`, `l8_dawn_state.gd:22`, `l8_shaman_trade.gd:23`, `l8_tribe_state.gd:37`, `l9_statue_state.gd:15`, `l10_tomb_state.gd:31`, and the insert/retrieve pairs in `l8_temple_door_state.gd:9,21`, `l8_tree_slot_state.gd:9,21`, `l13_exit_lock_state.gd:9,21`. `l8_herbalist.gd:24-33` `pick` (copy at `:31`, append at `:32`; its live write is the caller's `host.carried_collected=taken.inventory` at `l8_journey.gd:92`, which is in the table above), `player_item_effects.gd:71-82` `use` (copy at `:71`, `remove_at` on the copy at `:82`; its live write is `player_item_controller.gd:130-131`) and `mechanism_transaction.gd:72`, `:104` (inside `occupy` and `retrieve`) are builders of the same kind.
 
 **These builders stay as they are, for good.** They append to and erase from a fresh copy (`inventory.duplicate()`), never the live store, and they have their own tests. The source guard of commit 9 must not match them (section 4, commit 9).
 
@@ -221,7 +219,7 @@ Read from the generated `scripts/lol2/native_scripts/<AREA>.json` in my worktree
 - The task's own example: `prop:99` in L8 has one event, kind 4 (use), group 2530; that group's command is definition 119 "117-Amaranth sr", identity 77237872, argument 1. A second serum command sits in group 12234 with argument 4.
 - Which of the 276 pairs already have a hand-written owner is **UNKNOWN** as a whole. Known from catalog grades (`act2_items_catalog.gd:64-90`): L19 horn (prop 222), L12 Kenneth's picture (prop 4), L8 control token (prop 102, group 4340), L8 vapors (actor 115), L13 altar awards (sources 174, 175, 326), L14 trial idols (groups 15150, 15210, 15378), L14 post shard (group 16904).
 
-### 2.7 Functions that only remove (12 functions, 12 files; listed, see commit 10)
+### 2.7 Functions that remove from the live pack (12 functions, 12 files; listed, see commit 10)
 
 | File:lines | Function | Cap | Dup guard | History | Sync | Text | Journal | Equip/HUD |
 |---|---|---|---|---|---|---|---|---|
@@ -233,14 +231,14 @@ Read from the generated `scripts/lol2/native_scripts/<AREA>.json` in my worktree
 | `monastery_rooms.gd:489,502` | `offer_item` | - | yes | - | - | - | - | - |
 | `museum_scroll_state.gd:34` | `record_consumption` | - | - | - | - | - | - | - |
 | `player_dragon_blood.gd:29` | `place` (`controller.carried().erase(id)`: a live-pack removal through the accessor; also appends the id to `saved.spent`) | - | yes | spent | - | - | - | - |
-| `player_item_effects.gd:82` | `use` | - | yes | - | - | - | - | - |
+| `player_item_controller.gd:68,75,96,105,113,124` | `use`: six `carried().erase(id)` after `current.spent.append(id)`. `:68` sap, Vels fruit; `:75` dampen charm; `:96` Ancient Stone charge (`ancient_charges`); `:105`, `:113`, `:124` only when the host has no `carried_items` method, because the Cave's derived pack filters spent ids itself | - | yes | spent | - | yes | - | - |
 | `thieves_den_rooms.gd:215` | `_apply` | - | yes | - | - | yes | yes | yes |
 | `weapon_poison.gd:70` | `use` | - | yes | - | - | - | - | yes |
 | `weapon_shop_rooms.gd:112` | `offer_item` | - | - | - | - | - | - | - |
 
 Also PROVEN removals inside the lists above: `jungle_walkthrough.gd:750` `_consume_hand_item`, `museum_broken_thohan.gd:89-90`, `museum_key_locks_state.gd:51,79`, `museum_scroll_state.gd:34`, `l8_journey_state.gd:44`, `hive_rune_transaction.gd:59`.
 
-Revision 1 listed `jungle_walkthrough.gd:504` `apply_save` and `:592` `apply_area_handoff` here. Both lines are `inventory.erase("fighting")`, a dictionary-key erase on a copied transport packet, not an item removal. They are loaders and are now in 2.8.
+Revision 1 listed `jungle_walkthrough.gd:504` `apply_save` and `:592` `apply_area_handoff` here. Both lines are `inventory.erase("fighting")`, a dictionary-key erase on a copied transport packet, not an item removal. They are loaders and are now in 2.8. It also listed `player_item_effects.gd:82`; that line removes from a copy, so the function is a builder (2.3) and commit 10 does not touch it.
 
 ### 2.8 Loaders and validators (not grants; they must keep working unchanged)
 
@@ -254,31 +252,33 @@ Revision 1 listed `jungle_walkthrough.gd:504` `apply_save` and `:592` `apply_are
 | `jungle_walkthrough.gd:504` | `apply_save` (erases the dictionary key "fighting" from a copied packet; no item is touched) | - | - | - | - | - | - | - |
 | `jungle_walkthrough.gd:592` | `apply_area_handoff` (same key erase) | - | - | - | - | - | - | - |
 | `jungle_world_items.gd:60` | `carried` | - | - | yes | - | - | - | - |
-| `l9_pyre.gd:109,111` | `_unhandled_input` | - | - | - | - | yes | - | - |
 | `museum_broken_thohan.gd:131` | `_carried` | - | - | - | - | - | - | - |
 | `museum_walkthrough.gd:23` | `validate_cave_transfer` | - | yes | - | - | - | - | yes |
 | `museum_walkthrough.gd:183,204` | `_ready` | - | yes | - | - | - | - | yes |
 | `museum_walkthrough.gd:963` | `apply_save` | - | yes | - | - | yes | - | yes |
+
+Revision 2 listed `l9_pyre.gd:109,111` `_unhandled_input` here. Those lines are the E-key dispatch that calls `urn("retrieve")` / `urn("insert", ...)`; they write nothing, and the grant is the way-C `urn` at `:72-75` in table 2.3. The census fixture gives them no row.
 
 Save serializers and history normalizations (PROVEN; they write a **save copy or a history list**, never the live pack, and must not trip the guard):
 
 | File:line | What it writes |
 |---|---|
 | `act2_map.gd:338`, `darker_jungle.gd:292`, `dragon_level.gd:175`, `act2_jungle_return.gd:49` | `inventory_state()`: `result.collected = result.collected.filter(...)` on the dictionary returned by `super.inventory_state()` |
-| `area_world_items.gd:79`, `jungle_world_items.gd:53` | `history()`: `host.quest_state[key].collected = ....map(int)` (a world-item history of row numbers, not a pack) |
+| `area_world_items.gd:81`, `jungle_world_items.gd:53` | `history()`: `host.quest_state[key].collected = ....map(int)` (a world-item history of row numbers, not a pack) |
 | `act2_items_catalog.gd:107-110` | `sync`: rebuilds `packet.carried` from the pack |
-| `act2_world_items.gd:89` | `packet.carried = host.carried_collected.filter(...)` on a copied packet |
+| `act2_world_items.gd:89` | `packet.carried = host.carried_collected.filter(...)` on a copied packet. It filters by `Source.valid` only, without the `legacy_equipment` exclusion that `sync` has; the next `sync` (every save runs one) rewrites the field. Kept as it is |
+| `walkthrough_save.gd:242-247` | `migrate_loaded`: `state.collected = []` at `:246` for a version 1 Cave save. A write to a loaded save copy. It empties the collected list of a version 1 save; that is today's behaviour and outside this task. No version 1 Cave save was found in the tests or fixtures |
 
 Save validators that bound the pack: `jungle_save.gd:24-25`, `museum_save.gd:35-36`, `walkthrough_save.gd:155-159` (Cave: a consumed id must have been picked up; it erases from a local validation copy), `act2_items_catalog.gd:95-106`. Transfer check: `player_continuity.gd:13-38`.
 
 ### 2.9 Act 2 history writes, site by site (PROVEN, read line by line)
 
-`collected` here is `quest_state.act2_items.collected`. "Guard" = today's spelling: **always** (appends without looking) or **once** (appends only if absent). "Packet" = **in place** (mutates the live dictionary; fails if the key is missing), **copy** (deep copy, append, assign back; several start from `Items.initial()` when the key is missing), **builder** (a pure function returns the new packet and the owner assigns it).
+`collected` here is `quest_state.act2_items.collected`. "Guard" = today's spelling: **always** (appends without looking) or **once** (appends only if absent). "Packet" = **in place** (mutates the live dictionary; fails if the key is missing), **copy** (deep copy, append, assign back; "no fallback" marks the copies that read `host.quest_state.act2_items` directly and fail if the key is missing, the others start from `Items.initial()`), **builder** (a pure function returns the new packet and the owner assigns it).
 
 | Site | Function | Guard | Packet | Order on the line(s) |
 |---|---|---|---|---|
 | `l12_citadel.gd:25` | `search_body` | always | in place | pack, history, sync |
-| `l12_citadel.gd:40` | `throw_picture` | always | in place | state, pack assign, history (the charm) |
+| `l12_citadel.gd:40-42` | `throw_picture` | always | in place | state, pack assign, history (the charm), hand cleared `:41`, sync `:42` |
 | `l12_frozen_bow.gd:56` | `take` | always | copy | history, assign, pack, sync |
 | `l12_niche_armor.gd:43-44` | `take` | always | copy | history, assign, pack, sync, equip |
 | `l13_altar.gd:39` | `enchant` | always | in place | pack assign, history, sync |
@@ -287,20 +287,20 @@ Save validators that bound the pack: `jungle_save.gd:24-25`, `museum_save.gd:35-
 | `l14_hopper_platform.gd:78-79` | `take` | always | copy | pack, history, assign, sync |
 | `l14_post_shard.gd:33-34` | `take` | always | copy | history, assign, pack, sync |
 | `l14_trials.gd:64-65` | `take` | always | copy | history, assign, pack, sync |
-| `l8_dawn.gd:26-28` | `interact` | always | copy | history, pack assign, packet assign |
-| `l8_tribe.gd:100-101` | `offer_shaman` | always | copy | history, pack assign, packet assign, sync |
-| `l8_larkhon.gd:56-57` | `mix` | always | copy | history, packet assign, pack assign, state |
+| `l8_dawn.gd:26-30` | `interact` | always | copy, no fallback | history, pack assign, packet assign, state, bracers unequipped `:29`, sync `:30` |
+| `l8_tribe.gd:100-101` | `offer_shaman` | always | copy, no fallback | history, pack assign, state, packet assign, sync |
+| `l8_larkhon.gd:56-59` | `mix` | always | copy, no fallback | history, packet assign, pack assign, state, hand cleared `:58`, sync `:59` |
 | `act2_world_items.gd:86-90` | `take` | always (but `:82` refuses an id already carried) | copy | history, pack, `carried` rebuilt by hand, assign; no `sync` call |
 | `l10_priest.gd:52` | `grant` (builder for `speak` `:43-45`) | always (but `:49` refuses when the urn is already in `collected`) | builder | - |
 | `l10_silverleaf_harvest.gd:24-25` | `pick` (builder for `l10_silverleaf.gd:54-56`) | always | builder | owner: state, pack, packet, sync |
-| `l16_dry_fountain.gd:156-158` | `take` | once | in place | pack, (line 157), history |
+| `l16_dry_fountain.gd:156-158` | `take` | once | in place | pack `:156`, **sync `:157`, then history `:158`** |
 | `l16_fountain_ball.gd:85-86` | `take` | once | in place | pack, **sync, then history** |
-| `l10_emperor.gd:66-70` | `interact` | once | copy | state, pack assign, history, packet assign |
-| `l10_emperor.gd:126` | `collect_remains` | once | copy | same pattern |
-| `l10_priest.gd:78` | `exchange_ashes` | once | copy | same pattern |
+| `l10_emperor.gd:66-71` | `interact` | once | copy, no fallback | state, pack assign, history, packet assign, sync `:71` |
+| `l10_emperor.gd:125-127` | `collect_remains` | once | copy, no fallback | history, packet assign, sync `:127` |
+| `l10_priest.gd:77-79` | `exchange_ashes` | once | copy, no fallback | history, packet assign, sync `:79` |
 | `l9_pyre.gd:72-75` | `urn` | once | copy (from `Items.initial()` if missing) | state, pack assign, history, packet assign, sync |
-| `l19_belial_horn.gd:62-69` | `take` | once (history and pack each guarded) | read, append, assign | history, pack |
-| `l19_dawn_curse.gd:239-245` | `_grant_ruby` | once | read, append, assign | history, pack |
+| `l19_belial_horn.gd:62-70` | `take` | once (history and pack each guarded) | read, append, assign | history, pack, sync `:70` |
+| `l19_dawn_curse.gd:239-246` | `_grant_ruby` | once | read, append, assign | history, pack, sync `:246` |
 
 Whether an "always" site can fire twice for the same id was **not** proven site by site (most are behind a "taken" state check on the same function). The plan therefore does not rely on it: each site keeps its own spelling through the migration (section 3, step 5).
 
@@ -328,8 +328,8 @@ ItemGrants.native(host, source: Dictionary) -> Dictionary   # way F, through the
    - `"act2_once"`: append **only if absent** (today's 8 "once" sites, and every native grant);
    - `"none"` (default): the API does not touch the packet. Used by Act 1 sites, by world-item owners (they keep writing their own history row), and by the two **builder** sites (`l10_priest.gd:43-45`, `l10_silverleaf.gd:54-56`), where the owner keeps assigning the packet its pure function returned.
 
-   For both "act2" modes the API reads the packet with `host.quest_state.get("act2_items", Items.initial())`, deep-copies it, appends, and assigns it back. For the "in place" sites this is a **flagged normalization**: the end state is equal field by field, but a missing packet no longer raises an error there (it is created). Commit 0 pins the packet contents after each site, so a difference shows.
-   `opts.sync` (default false): call `Items.sync(host)`. `opts.sync_first` (default false) calls it **before** the history write; only `l16_fountain_ball.gd:85-86` needs it. `sync` only rebuilds `carried` from the pack (`act2_items_catalog.gd:107-110`), so the order does not change the result as far as I can read, but the site keeps its order anyway.
+   For both "act2" modes the API reads the packet with `host.quest_state.get("act2_items", Items.initial())`, deep-copies it, appends, and assigns it back. For the "in place" sites and the "copy, no fallback" sites of table 2.9 this is a **flagged normalization**: the end state is equal field by field, but a missing packet no longer raises an error there (it is created). Commit 0 pins the packet contents after each site, so a difference shows.
+   `opts.sync` (default false): call `Items.sync(host)`. `opts.sync_first` (default false) calls it **before** the history write; two sites need it, `l16_fountain_ball.gd:85-86` and `l16_dry_fountain.gd:156-158`. Where a site does something between its history write and its `sync` (the hand or equipment lines marked in table 2.9), the owner keeps its own `Items.sync(host)` call in place and passes `sync:false`. `sync` only rebuilds `carried` from the pack (`act2_items_catalog.gd:107-110`), so the order does not change the result as far as I can read, but each site keeps its order anyway.
 6. **Text.** `opts.text` non-empty -> `host.save_feedback(text)` (Cave: `_save_feedback`).
 7. **Journal.** `opts.note` non-empty -> `MyJournal.discover(host, note)`.
 8. **HUD.** `opts.hud` true -> `interface_hud.refresh_equipment()` when the host has one.
@@ -338,7 +338,13 @@ ItemGrants.native(host, source: Dictionary) -> Dictionary   # way F, through the
 
 The rule functions in 2.2 and the pure builders in 2.3 stay as they are (they have their own tests). Callers of the 2.2 rule functions pass `ItemGrants.pack(host)` instead of naming the store.
 
-**Save.** Nothing new is saved. The pack is written where it is today (`inventory.collected` in each area's save, inside the slot file's `area_save` from Plan 3), the Act 2 packet in `quest_state.act2_items`, world-item histories in their owners' keys.
+**Save.** Nothing new is saved. The pack is written where each host writes it today, inside the slot file's `area_save` from Plan 3:
+- Jungle-family hosts: `inventory.collected` (`jungle_walkthrough.gd` `inventory_state()`).
+- Act 2/3 hosts: **two fields.** `inventory_state()` (`act2_map.gd:335-339`, `darker_jungle.gd:289-293`, `dragon_level.gd:172-176`, `act2_jungle_return.gd:46-50`) filters the Act 2 ids out of `inventory.collected`; they are saved in `quests.act2_items.carried`. On load `restore` (`act2_items_catalog.gd:111-118`) rebuilds the live pack as old items first, then `packet.carried`. So **the order of the live pack after a load is not the order before the save.** That is today's behaviour.
+- Museum: `checkpoint.collected` (`museum_walkthrough.gd:474`); its area save (`:921-926`) has no `inventory` key.
+- Cave: no pack list; each of the ten owners saves its own key.
+- Hive: inside its own save; I did not read which field.
+World-item histories stay in their owners' keys.
 
 ### 3.1 The native path
 
@@ -350,12 +356,15 @@ Three small additions, all additive:
    `{file_offset, group, object, event, identity, definition, arg, action, id, text, note, grade}`.
    `action` is `"log"` (default for every row; today's behaviour), `"owner"` (a hand-written owner already gives this item; names the owner file) or `"grant"`.
 
-For a `"grant"` row, `native` builds the pack id `act2:<AREA>:grant<file_offset>` and calls `grant` with `history:"act2_once"`, after refusing when the base id is already in `collected`. `act2_items_catalog.gd` `row()` gets one new prefix rule beside the Silverleaf and lichen ones (`:51-62`): for `act2:<AREA>:grant<N>` it looks N up in that level's table and returns a row built from the definition (name, label, icon, handler from `item_definitions.gd`, identity from the command). Because of that refusal, a script that fires twice cannot give the item twice, also after the player has used the item up.
+For a `"grant"` row, `native` builds the pack id `act2:<AREA>:grant<file_offset>` and calls `grant` with `history:"act2_once"`, after refusing when the base id is already in `collected` **or when the row's `blocked_by` list names an id that is in `collected`** (see the fourth condition below). `act2_items_catalog.gd` `row()` gets one new prefix rule beside the Silverleaf and lichen ones (`:51-62`): for `act2:<AREA>:grant<N>` it looks N up in that level's table and returns a row built from the definition (name, label, icon, handler from `item_definitions.gd`, identity from the command). Because of that refusal, a script that fires twice cannot give the item twice, also after the player has used the item up.
 
 A row may be set to `"grant"` only when all of these hold; the row's `grade` says which evidence was used:
 - the group is reached by a player event on a visible object (kind 4 use, or a region entry) and not only from another group;
 - no hand-written owner gives the same item at the same place (search the owner files for the identity and the definition);
-- the book or the longplay shows the player receiving that item there.
+- the book or the longplay shows the player receiving that item there;
+- **no second copy by another id.** `validate` only refuses two entries with the same base id, so a native grant id and a placement or special id of the same item definition can sit in the pack together. The table tool therefore fills a column `same_definition` with every other Act 2 id of that definition in the same level (placements, special ids, other grant rows). A row goes live only if that list is empty, or the evidence shows the original gives both, or the row lists the rivals in `blocked_by` so `native` refuses once any of them has been collected.
+
+I did not add a catalog rule that refuses two carried items of one definition: the player legitimately carries several (nine Silverleaves, the lichen clumps), so that would change behaviour.
 
 The argument byte stays undecoded in this task (question Q3). No rule may read meaning into it.
 
@@ -366,24 +375,24 @@ Reserve the next free ledger and registry numbers on the board before commit 0. 
 **Commit 0. Pin today.** No production change.
 - `tests/item_grant_census_test.gd`: a source scan that pins the lists of section 2 as a fixture (`tests/fixtures/item_grant_census_742dcab.json`: file, function, kind; kinds: add, rule, transaction, builder, cave, reader, remove, loader, serializer, validator; for the 24 rows of table 2.9 also guard and packet spelling). It fails when a writer appears or disappears, so every later commit must update the fixture on purpose.
 - `tests/item_grant_site_fixture_test.gd`: for one site of each way A-E in each host family (Museum prism, Museum aloe rule, Jungle world item, Kityara's knife, Hive wax, Dark Halls loot, L8 tree slot, L10 priest urn, L12 frozen bow, L14 trials idol, L16 fountain ball, L19 horn, Cave guard 38 loot), record before and after: pack, Act 2 packet, the owner's state, the feedback text, the Journal list. Also the refusal with a pack of 64 where the site has a check, and the success with 64 where it has none.
-- `tests/item_grant_history_spelling_test.gd`: for every row of table 2.9, the packet after the grant; and for each "always" site that can be reached twice from a test (call the function again on a state where its own guard lets it through, if one exists), the packet after the second call. This is what makes "act2" against "act2_once" a tested difference and not a guess.
+- `tests/item_grant_history_spelling_test.gd`: for every row of table 2.9, the packet after the grant; and for each "always" site that can be reached twice from a test (call the function again on a state where its own guard lets it through, if one exists), the packet after the second call. The fixture carries one entry for **every** "always" row: either `second_call` (how the test reaches the function twice, and the pinned packet) or `second_call_blocked` (the file:line of the site's own guard that refuses the second call, which the test then asserts by calling twice and checking the refusal and an unchanged packet). A row with neither fails the test, so no row passes by having no case. The migration does not rest on this test for its correctness: each site keeps its own mode whatever the test finds.
 - A save written by each host after those grants, kept as bytes, for commit 9.
 
 **Commit 1. The module, unused.** `item_grants.gd` with `pack`, `room`, `known`, `grant`, `commit`. Unit test `tests/item_grants_test.gd` on a bare host stub for each of the four stores: every step of 3, each option, refusals change nothing.
 
-**Commit 2. Act 2/3 owners that append (way A).** The `l10_`-`l19_` and `l8_`/`l9_` rows of table 2.1 that append directly: `l12_citadel.gd:25`, `l12_frozen_bow.gd:56`, `l12_niche_armor.gd:43-44`, `l14_hopper_platform.gd:78-79`, `l14_post_shard.gd:33-34`, `l14_trials.gd:64-65`, `l16_dry_fountain.gd:156-158`, `l16_fountain_ball.gd:85-86`, `l19_belial_horn.gd:65-69`, `l19_dawn_curse.gd:242-245`. Each keeps its own state write and passes the history mode of its row in table 2.9 (`"act2"` for the L12 and L14 sites, `"act2_once"` for the L16 and L19 sites, `sync_first` for the fountain ball), its exact text, and `cap:false` where it has no check today.
+**Commit 2. Act 2/3 owners that append (way A).** The `l10_`-`l19_` and `l8_`/`l9_` rows of table 2.1 that append directly: `l12_citadel.gd:25`, `l12_frozen_bow.gd:56`, `l12_niche_armor.gd:43-44`, `l14_hopper_platform.gd:78-79`, `l14_post_shard.gd:33-34`, `l14_trials.gd:64-65`, `l16_dry_fountain.gd:156-158`, `l16_fountain_ball.gd:85-86`, `l19_belial_horn.gd:65-69`, `l19_dawn_curse.gd:242-245`. Each keeps its own state write and passes the history mode of its row in table 2.9 (`"act2"` for the L12 and L14 sites, `"act2_once"` for the L16 and L19 sites, `sync_first` for **both** L16 sites, the fountain ball and the dry fountain), its exact text, and `cap:false` where it has no check today.
 
 **Commit 3. World-item pickups.** `act2_world_items.gd:81-90`, `area_world_items.gd:163-174`, `jungle_world_items.gd:92-101`, `hive_world_items.gd:88-94`, `jungle_river_dam.gd:353-357`, `jungle_source_pickups.gd:63-68`, `dark_halls_loot.gd:50-61`, `dark_halls_rix.gd:44-54`, `jungle_kelsrick.gd:303-307`. Their own history rows stay. `act2_world_items.gd` passes `history:"act2"` and keeps its own `packet.carried` line (it does not call `sync`).
 
 **Commit 4. Museum.** Host functions `museum_walkthrough.gd:541`, `:1039`, `:1051`; owners `museum_blood_loot.gd:71`, `museum_crystal.gd:60`, `museum_dragon_heart.gd:104`, `museum_lightning_crystal.gd:32`, `museum_prism.gd:83`, `museum_broken_thohan.gd:78`; and the way-B callers `museum_aloe.gd:54`, `museum_scrolls.gd:54`, `museum_ivory.gd:84`, `museum_long_arm.gd:134`, `museum_key_locks.gd:367-369` (pass `ItemGrants.pack(host)`).
 
-**Commit 5. Transactions (way C).** The 31 functions of table 2.3 call `ItemGrants.commit(host, result.inventory, {...})` in place of the assignment; the hand-written `act2_items.collected.append` beside them (`l13_altar.gd:39,48`, `l13_dawn_prison.gd:88`, `l12_citadel.gd:40`, `l10_emperor.gd:69,126`, `l10_priest.gd:78`, `l9_pyre.gd:74`, `l8_dawn.gd:27`, `l8_larkhon.gd:56`, `l8_tribe.gd:100`) moves into the history option with the mode of table 2.9: `"act2"` for `l13_altar.gd:39,48`, `l13_dawn_prison.gd:88`, `l12_citadel.gd:40`, `l8_dawn.gd:27`, `l8_larkhon.gd:56`, `l8_tribe.gd:100`; `"act2_once"` for `l10_emperor.gd:69,126`, `l10_priest.gd:78`, `l9_pyre.gd:74`; `"none"` for the two builder sites, which keep their packet assignment. The pure builders are not edited. `player_item_controller.gd:130-131` (item use writes back a pack) is in this commit too.
+**Commit 5. Transactions (way C).** The 31 functions of table 2.3 call `ItemGrants.commit(host, result.inventory, {...})` in place of the assignment; the hand-written `act2_items.collected.append` beside them (`l13_altar.gd:39,48`, `l13_dawn_prison.gd:88`, `l12_citadel.gd:40`, `l10_emperor.gd:69,126`, `l10_priest.gd:78`, `l9_pyre.gd:74`, `l8_dawn.gd:27`, `l8_larkhon.gd:56`, `l8_tribe.gd:100`) moves into the history option with the mode of table 2.9: `"act2"` for `l13_altar.gd:39,48`, `l13_dawn_prison.gd:88`, `l12_citadel.gd:40`, `l8_dawn.gd:27`, `l8_larkhon.gd:56`, `l8_tribe.gd:100`; `"act2_once"` for `l10_emperor.gd:69,126`, `l10_priest.gd:78`, `l9_pyre.gd:74`; `"none"` for the two builder sites, which keep their packet assignment. The pure builders are not edited. `l8_journey.gd:92` (the herbalist's jars; builder `l8_herbalist.gd` `pick`) passes `history:"none"`: its ids are Act 1 style `jungle:herb:...` ids with their own state key. `player_item_controller.gd:130-131` (item use writes back a pack) is in this commit too; the six erase lines of that function wait for commit 10.
 
-**Commit 6. Hive, Act 1 shops and characters.** `hive_wax.gd:35`, `hive_net_exile.gd:75-78`, `hive_reaver_amber.gd:214`, `hive_flute_floor.gd:213-214`, `hive_rune_entry.gd:246`, `:259`, `:278`; `jungle_walkthrough.gd:886-890`; `jungle_beehives.gd:95`, `jungle_harvest.gd:125`; `magic_shop_rooms.gd:214-221`, `monastery_rooms.gd:225-233`, `:411-417`, `:463-468`, `thieves_den_rooms.gd:235-241`, `weapon_shop_rooms.gd:141`; `l8_herbalist.gd:32`.
+**Commit 6. Hive, Act 1 shops and characters.** `hive_wax.gd:35`, `hive_net_exile.gd:75-78`, `hive_reaver_amber.gd:214`, `hive_flute_floor.gd:213-214`, `hive_rune_entry.gd:246`, `:259`, `:278`; `jungle_walkthrough.gd:886-890`; `jungle_beehives.gd:95`, `jungle_harvest.gd:125`; `magic_shop_rooms.gd:214-221`, `monastery_rooms.gd:225-233`, `:411-417`, `:463-468`, `thieves_den_rooms.gd:235-241`, `weapon_shop_rooms.gd:141`. (`l8_herbalist.gd` is **not** in this commit: it is a builder and is not edited; its caller is in commit 5.)
 
 **Commit 7. Native table tool and tables, all rows "log".** `tools/build_item_grant_tables.py` reads the generated native script files and the definitions and writes the fifteen tables with `object` and `event` filled from the objects' event lists. Test: counts per level equal the tool's own summary; every identity resolves; with all rows "log" a fired group changes nothing in the pack (same as today). Mark rows `"owner"` for the known owners in 2.6.
 
-**Commit 8. Native path live for four rows.** Host signal, progression context, `ItemGrants.native`, the catalog prefix rule. Switch on L8 `prop:99` (group 2530, serum) and three more rows that pass the three conditions of 3.1. Candidates to check first, from the census: L8 "112-Lamplt eggs" (argument 1, groups 6442-6882; check for an existing egg owner), L8 "113-Brook flou" (argument 4, groups 8762-9226), and one argument-1 row in L10 or L9 that the book confirms. Each gets a rendered real-input test: walk to the object, press E, the item is in the pack, the Journal or screen says so, save, reload, press E again, still one copy.
+**Commit 8. Native path live for four rows.** Host signal, progression context, `ItemGrants.native`, the catalog prefix rule. Switch on L8 `prop:99` (group 2530, serum) and three more rows that pass the three conditions of 3.1. Candidates to check first, from the census: L8 "112-Lamplt eggs" (argument 1, groups 6442-6882; check for an existing egg owner), L8 "113-Brook flou" (argument 4, groups 8762-9226), and one argument-1 row in L10 or L9 that the book confirms. Each gets a rendered real-input test: walk to the object, press E, the item is in the pack, the Journal or screen says so, save, reload, press E again, still one copy. For a row with a non-empty `same_definition` list there is a second case: collect the rival id first, press E, no second copy arrives (or two arrive, where the evidence says the original gives both). A unit test asserts that no live row has a non-empty `same_definition` without either a `blocked_by` list or an evidence note.
 
 **Commit 9. Source guard and old saves.** `tests/item_grant_source_guard_test.gd` matches **writes to the live store only**, by three rules:
 1. *Direct.* A line where `carried_collected`, `carried_inventory.collected` (or `carried_inventory =`), `carried()` or `get_parent().carried_collected` is followed by `.append`, `.push_back`, `.insert`, `.erase`, `.remove_at`, `.assign`, `.clear`, `.append_array`, `=` or `+=`. (Erase and its relatives are only enforced after commit 10; before that they are reported, not failed.)
@@ -392,11 +401,11 @@ Reserve the next free ledger and registry numbers on the board before commit 0. 
 
 Allowed by name (file and function): `item_grants.gd`; the loaders of 2.8; the rule functions of 2.2 as callees for rule 3; the Cave owners of 2.4 (they write their own state, not a pack, and are listed so the census test keeps them known).
 
-**Not matched, by construction**, and the test asserts each of these still exists and is clean so the rule cannot drift into them: the pure builders (`l10_emperor_state.gd:67`, `l13_altar_state.gd:36`, `l13_dawn_release.gd:35`, `l10_silverleaf_harvest.gd:25`, `l10_priest.gd:53`, `l8_journey_state.gd:52,71`, `l8_herbalist.gd:32`, the state files named under table 2.3), `mechanism_transaction.gd:72,104`, the four `inventory_state()` serializers (`act2_map.gd:338`, `darker_jungle.gd:292`, `dragon_level.gd:175`, `act2_jungle_return.gd:49`), the world-item history normalizations (`area_world_items.gd:79`, `jungle_world_items.gd:53`), `act2_world_items.gd:89`, `walkthrough_save.gd:155-159`, and the two key erases `jungle_walkthrough.gd:504,592`. All of them write a duplicate, a result, a save dictionary or a history list.
+**Not matched, by construction**, and the test asserts each of these still exists and is clean so the rule cannot drift into them: the pure builders (`l10_emperor_state.gd:67`, `l13_altar_state.gd:36`, `l13_dawn_release.gd:35`, `l10_silverleaf_harvest.gd:25`, `l10_priest.gd:53`, `l8_journey_state.gd:52,71`, `l8_herbalist.gd:32`, `player_item_effects.gd:82`, the state files named under table 2.3), `mechanism_transaction.gd:72,104`, the four `inventory_state()` serializers (`act2_map.gd:338`, `darker_jungle.gd:292`, `dragon_level.gd:175`, `act2_jungle_return.gd:49`), the world-item history normalizations (`area_world_items.gd:81`, `jungle_world_items.gd:53`), `walkthrough_save.gd:246`, `act2_world_items.gd:89`, `walkthrough_save.gd:155-159`, and the two key erases `jungle_walkthrough.gd:504,592`. All of them write a duplicate, a result, a save dictionary or a history list.
 
-Mutation probes, one per rule: a direct append in a throwaway owner; an alias append; a live pack passed to an unlisted function. Each must fail the test. A fourth probe adds `x.duplicate().append(id)` in a throwaway builder and must **pass**. Old-save test: every save from commit 0 and the fifteen golden saves from Plan 3 load, and the pack, packet and histories are equal field by field.
+Mutation probes, one per rule: a direct append in a throwaway owner; an alias append; a live pack passed to an unlisted function. Each must fail the test. A fourth probe adds `x.duplicate().append(id)` in a throwaway builder and must **pass**. Old-save test, like for like: at commit 0 every commit-0 save and each of the fifteen golden saves from Plan 3 is loaded on the unchanged code and the **loaded** state is recorded (live pack in its loaded order, Act 2 packet, world-item histories, owner states). At commit 9 the same files are loaded and the loaded state must equal that record field by field. The comparison is never against the bytes of the save file: on Act 2 hosts the load reorders the pack, and several restores add history rows.
 
-**Commit 10. Removals (optional in this task; say on the board if it is left for I-01).** `ItemGrants.remove` and the 12 functions of 2.7 (among them `player_dragon_blood.gd:29`, which goes through `controller.carried()`) plus the removals listed under it. No behaviour change; the guard then covers erase as well.
+**Commit 10. Removals (optional in this task; say on the board if it is left for I-01).** `ItemGrants.remove` and the 12 functions of 2.7 (among them `player_dragon_blood.gd:29` and the six `carried().erase(id)` lines of `player_item_controller.gd` `use` at `:68,75,96,105,113,124`, all through the `carried()` accessor) plus the removals listed under it. The three conditional erases keep their `if not host.has_method("carried_items")` test in the owner; `remove` on a Cave host is refused with a `push_error`. After this commit no `carried().erase` is left outside `item_grants.gd`, so guard rule 1 can enforce erase. No behaviour change; the guard then covers erase as well.
 
 Not in this task: the Cave's derived pack (it becomes a real pack with the unified item core, I-01), the `hand_item` writers, one refusal text, one capacity rule.
 
@@ -413,7 +422,7 @@ Not in this task: the Cave's derived pack (it becomes a real pack with the unifi
 | `item_grant_census_test` | source scan | the writer lists of section 2 are complete and stay known |
 | `item_grant_site_fixture_test` | scene, one site per way and host family | pack, history, text, Journal, refusal identical before and after each commit |
 | `item_grants_test` | unit | each step and option of the contract; refusals change nothing |
-| existing owner tests (the 85 files that write the pack, the 295 that read it) | unchanged | the stores kept their names and shape |
+| existing owner tests (the 299 files that name a pack store) | unchanged | the stores kept their names and shape |
 | four native grant tests | rendered, real E | the item arrives once, survives save and reload, is not given twice |
 | `item_grant_history_spelling_test` | scene, the 24 rows of table 2.9 | each site's history spelling (always or once) is unchanged |
 | `item_grant_source_guard_test` | source scan, three rules, four mutation probes | nothing outside the allow-list writes the **live** pack; builders and serializers stay free |
@@ -458,5 +467,31 @@ All four gaps were checked against the source at 742dcab and are right.
 Counts after the moves: 62 functions in 53 files add; 12 functions in 12 files only remove.
 
 Still not confirmed beyond section 9: whether any "always" site can in fact fire twice (the plan no longer depends on it).
+
+## 11. Revision 3: what changed after Kimi's re-audit (K98)
+
+Re-anchored on fde4d19 (see the header: no cited file differs from 742dcab). Every finding was checked against the source there.
+
+MAJOR, all three accepted:
+1. **`player_item_controller.gd:68,75,96,105,113,124`** are live-pack erases through `carried()`. Table 2.3 now lists only `:130,131`; the six lines are a row in 2.7 and are in commit 10, so the erase guard can be switched on.
+2. **`l16_dry_fountain.gd:157`** syncs before its history write, like the fountain ball. `sync_first` now names both sites (section 3 step 5, commit 2, table 2.9).
+3. **`l8_herbalist.gd` `pick`** is a pure builder. It left tables 2.1 and 2.2 and commit 6; its live write `l8_journey.gd:92` is in commit 5.
+
+MINOR, accepted:
+- Save paragraph (section 3) now says where each host saves its pack, and that Act 2 hosts split it over two fields and reorder it on load. The old-save test compares loaded state before and after, never save bytes.
+- Section 1.2 lists all six places that check the combined limit, `act2_save.gd:25` among them.
+- `player_item_effects.gd:82` is a builder: moved from 2.7 to 2.3, not in commit 10.
+- `l9_pyre.gd:109,111` is an E-key dispatch: removed from 2.8.
+- Table 2.9 marks the copies with no `Items.initial()` fallback (the flagged normalization applies to them too) and shows the trailing `sync` and what sits between it and the history write.
+- The history spelling test can no longer pass empty: every "always" row needs a second-call case or a named guard that the test asserts.
+- Native grants: a fourth condition and the `same_definition` / `blocked_by` columns guard against a second copy under another id; test added.
+- `walkthrough_save.gd:246` listed under serializers; `area_world_items.gd` line corrected to `:81`.
+- The test-file counts in section 0 are restated as a grep range, graded LIKELY.
+
+Rejected, in part:
+- **A catalog-level check that refuses two carried items of the same definition** (one reading of the double-grant finding). Not added: several items are legitimately carried in numbers, so it would change behaviour. The guard is per native row instead.
+- **Treating the version 1 Cave save wipe (`walkthrough_save.gd:246`) as something F-08 must cure.** It is existing behaviour of a save migration, no such save was found, and this task changes no save. It is listed and left.
+
+Counts now: 61 functions in 52 files add; 31 in 26 files replace the pack; 12 functions in 12 files remove from the live pack.
 
 PLAN READY
