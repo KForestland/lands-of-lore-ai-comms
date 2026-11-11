@@ -1,4 +1,4 @@
-task: Q11 is open.
-last work: Q10. Stone monsters are fought. Sixteen StSquid are behavior 6, Wander, and do not store the player. Note grok_research/Q10_stone_squids_20261111.md.
-next: Q11. Placement reward_scale and the loot dword.
-updated: 2026-11-11T20:22Z
+task: Q12 is open.
+last work: Q11. reward_scale is definition byte +0x83. The loot dword is placement +52 at actor +0x74. Note grok_research/Q11_reward_loot_20261111.md.
+next: Q12. Writers of the two kind-2 clocks, and whether menus and movies stop them.
+updated: 2026-11-11T20:47Z
