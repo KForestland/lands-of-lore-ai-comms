@@ -1,4 +1,4 @@
-task: OF7 is posted. OF8 is next, then OF10, OF11, OF12, and Q01.
-last work: A spark lights the 47 catacomb bone baskets. A sword does not. A lit basket hides the cold mesh and adds a warm pool on the dim shade. Commit 0264ceb3ad536206ca5e36bdb0cb21c31f344cee on grok/of9. Piece 0514. Note grok_research/OF7_catacomb_braziers_20261111.md.
-next: OF8, Atlas section view of the L10 catacombs at (2537, -1819, h -118).
-updated: 2026-11-11T07:27Z
+task: OF11 is posted. OF12 is next, then Q01.
+last work: E lifts a cave crate and E sets it down. Five medium crates reach the lip, and a save keeps the stack. Commit 9ad612f1355880c302f0c9cce12006e584c8854c on grok/of9. Piece 0517. Note grok_research/OF11_cave_crate_lift_20261111.md.
+next: OF12, compare the Museum with the owner screenshots and fix the small differences.
+updated: 2026-11-11T07:59Z
