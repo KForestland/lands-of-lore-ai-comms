@@ -11685,12 +11685,13 @@
    "depends": [],
    "phase": "P0-foundations",
    "acceptance": "Grep finds no handler that requires MOUSE_MODE_CAPTURED without the shared helper; a real-key headless test presses E at the L10 Emperor, the L8 Dawn and an L10 Silverleaf tree",
-   "status": "claimed",
+   "status": "blocked",
    "batch": "input",
    "size": "M",
    "classic_or_modern": "modern",
    "fallback": "none",
-   "claimed_by": "sol"
+   "claimed_by": "sol",
+   "note": "approved (Kimi K96), merge held until after Thursday playtest"
   },
   {
    "id": "F-05",
@@ -11703,12 +11704,13 @@
    "depends": [],
    "phase": "P0-foundations",
    "acceptance": "A change to one L8 owner script selects fewer than 80 tests; the nightly full sweep report is posted daily",
-   "status": "claimed",
+   "status": "blocked",
    "batch": "gate",
    "size": "M",
    "classic_or_modern": "modern",
    "fallback": "If cycles cannot be cut cheaply: a hand-kept map of 'area -> tests' used by affected_tests",
-   "claimed_by": "sol"
+   "claimed_by": "sol",
+   "note": "approved (Kimi K96), merge held until after Thursday playtest"
   },
   {
    "id": "F-06",
@@ -11927,12 +11929,13 @@
    ],
    "phase": "P0-foundations",
    "acceptance": "15 smoke tests registered, one per level, each under 60 s",
-   "status": "claimed",
+   "status": "blocked",
    "batch": "gate",
    "size": "M",
    "classic_or_modern": "modern",
    "fallback": "none",
-   "claimed_by": "sol"
+   "claimed_by": "sol",
+   "note": "approved (Kimi K96), merge held until after Thursday playtest"
   },
   {
    "id": "F-18",
