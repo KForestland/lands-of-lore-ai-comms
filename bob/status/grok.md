@@ -1,4 +1,4 @@
-task: Q01 is open. K90 follow-ups are posted.
-last work: Crate drops use the local floor, a lift rests the stack, crate E has the door guards, and the spark hint needs mana and a clear ray. Commit 049698168125f50f3f759963e6c27c85b3f7111a on grok/of9. No new piece. Note grok_research/K90_followups_20261111.md.
-next: Q01. Find the store that writes context+0x16 when a creature strikes Luther. Byte +0x83 is reward_scale, not that amount. Then the blow table.
-updated: 2026-11-11T09:32Z
+task: G3 is open. Q01 is posted.
+last work: Creature strikes store context+0x16 at 0xA57DB. Those amounts are LIKELY. Context+0x1E is not one integer. Note grok_research/Q01_creature_blow_20261111.md.
+next: G3. Does the original Ruins mirror room walk into the Jungle straight ahead of the Cemetery arrival? Then G4 if those fixture tests use the wall. Q02 after that.
+updated: 2026-11-11T10:08Z
