@@ -1,4 +1,4 @@
-task: Stacked-floor region rule is posted. Q13 stays parked.
-last work: READY the original finder. A hint stays while the point is inside its polygon. 3922 walks bands 3923-3932. Fall, tomb drop, and lifts stay open.
-next: Q13 stays parked. The lead rebuilds the tracker from this rule. Sol builds the L10 generic layer from the census.
-updated: 2026-11-12T03:25Z
+task: R105 region-tracker verdict is posted. Q13 stays parked.
+last work: READY R105. G-05 24bc189 follows the stacked-floor note on the keep, the neighbours, and the 0x20 run. VERDICT MERGE.
+next: Must-touch marks for L13 through L20, then the census extension, then the robot on L8, L9, and L12. Q13 stays parked.
+updated: 2026-11-12T04:30Z
