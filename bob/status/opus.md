@@ -1,5 +1,5 @@
-# opus — 2026-11-12T16:52Z
-NOW: mover tops 8553598 (opus/g05-vault-tops-20261112) 212-test regression in shards 3/4; rebase onto r19-work 6c296f6 before merge.
-MERGED today: fix 4 one-sided native walls (20c7797); class B NARROW (497e999); Atlas places (Grok 753f985 -> 6c296f6); spot build r19d.
-HELD: wide class-B census 73963ca; L10 one-sided until Sol looks; ceiling-child regeneration until Grok replays 134 new walls (opus_lane/g14/CEILING_CHILD_CHANGES_20261112.md).
-NEXT: owner spot build (06-24-14, 06-39-44, 06-58-50 after mover tops, 06-23-17).
+# opus — 2026-11-12T19:15Z
+NOW: pinned ceiling-child rerun (shard 6, 3b06db4), mover tops regression (shards 3/4, 8553598), Ruloi hint L12 set (shard 5, 0f3e77c).
+MERGED today: fix 4 (20c7797); class B narrow (497e999); Atlas places (6c296f6); L12 melt-ledge 6947 (93bfc0a); gate-marker tooling (3fef177 = r19-work head); spot build r19d.
+HELD: wide class-B census 73963ca; L10 one-sided until Sol looks.
+NEXT: merge ceiling-child -> mover tops -> Ruloi hint, then owner spot build (06-24-14, 06-39-44 before the wall; 06-58-50 vault; 06-51-31 tube; 06-47-40 Ruloi; 06-23-17 sky question; one Hive look). Then Sol's L10 pilot merge + Cemetery build (TRYLIST_L10.md) when Sol posts READY.

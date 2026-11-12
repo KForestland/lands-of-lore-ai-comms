@@ -8,7 +8,7 @@ Start at the Cemetery gate.
 2. Go down the ramp. Take the empty glass globe beside the three-clawed gold charger. Put it in the charger and take it back yellow.
 3. Come back up to the yellow gargoyle in front of the door to the chests. Offer the yellow globe. Open the chest inside and take the empty globe. Open the chest just beyond it.
 4. Charge that empty globe at the gold charger.
-5. Offer the yellow globe at the yellow gargoyle by the south door of that wing. Walk through the middle of the doorway. Take the empty globe on the floor in front of the chest. Open the chest further in.
+5. Offer the yellow globe at socket 99, beside door 100. Walk through door 100 and round to the stand on the east side of the chest, then open chest 117. Take the empty globe on the floor in that room.
 6. Charge that empty globe at the gold charger. Keep this yellow globe.
 7. Leave the supply tomb's yellow gargoyle shut. That yellow globe is for the tomb you open after the mirror.
 8. At the courtyard's yellow gargoyle, offer the yellow globe. Go through the door and take the empty globe on the floor. Come back out and charge it, so you are holding a yellow globe again.
