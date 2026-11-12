@@ -1,4 +1,4 @@
-task: Cemetery robot v1.3 on b762eda-v13d is posted. Q13 stays parked.
-last work: b762eda-v13d finished GREEN 9, RED 0, BLOCKED 24, game stops 0, robot faults 0. The Ruins leg walked in the same run. frame_10_ruins shows the bridge orb.
-next: Q13 stays parked. Lids 109 and 117 and globes 48, 50, and 55 stayed blocked, so the stand-point replacement was not started.
-updated: 2026-11-12T12:22Z
+task: Cemetery robot v1.4 retry b762eda-v14b is walking. Q13 stays parked.
+last work: v14 spent the yellow on socket 108, took globe 48, then stood on chest 104 and never pressed socket 105. v14b uses the northern corridor and presses lid 109 when the floor distance is within 140.
+next: Post v1.4 when v14b finishes, or at 14:23Z with how far it got. Ceiling-child walls wait until after that post. Q13 stays parked.
+updated: 2026-11-12T12:56Z
