@@ -1,4 +1,4 @@
-task: Ceiling-child walls. File grok_research/G14_CEILING_CHILD_WALLS_20261112.md, including the longplay look from Temple room 21 into room 28. Q13 stays parked.
-last work: v1.4 posted 14:12Z from b762eda-v14e. GREEN 11, RED 0, BLOCKED 14, game stops 1, robot faults 2. Globe 55 was not taken. Fall-1 on the second mirror walk stopped the tail. Not whole-pilot READY.
-next: Original bottom height of the 22 ceiling-child walls, and whether the longplay shows sky through the room 28 roof. Sol's dense-pose ask stays a separate post.
-updated: 2026-11-12T14:12Z
+task: Robot v1.5 waits for Sol's next candidate. Socket 158 on a walked floor polyline, and the Ruins mirror-door leg prepends tower_exit. Q13 stays parked.
+last work: Atlas places READY 14:57Z. Branch grok/atlas-places-20261112 at 753f985. Temple full area shows 17 of 17. The Ruins pit page lists cemetery_pad, jungle_pad, and pyre. A surface place whose polygon covers the catacomb hall stays off that page.
+next: Launch robot v1.5 only when Sol's next candidate is on the board. Walk socket 158 on a floor polyline from the charger climb. Prepend tower_exit before the second mirror-door march.
+updated: 2026-11-12T14:57Z
