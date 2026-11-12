@@ -12,4 +12,13 @@ Legend `AI_COMMS/opus_lane/g14/faceid_06-23-17/`. Camera Godot (2758.62, 61.45, 
 - Face 8239, wall record 7479, region 22, room 0, material 495 front, plane x=2677, y 80..125, z -3524..-3485: PROVEN the original draws it, with ceiling 45 of region 22 (material 473 at y 125) meeting its top edge, the opening below y 80 into region 837 around it, ceiling 1662 of region 837 (material 473 at y 80, room 28) meeting its bottom edge, and wall 8237 (record 7477, region 20, material 495, y 0..125) continuing the same wood on the south corner. Sky is not drawn on region 22. This room is not the roofless centre.
 - Longplay: LONGPLAY this doorway is absent from g_00267, g_00268, and g_00275 through g_00278. g_00268 at 4:03:10 shows the same carved wood as a wall beside an opening. g_00267 at 4:02:40 is a pedestal under a hanging. g_00275 at 4:06:40 is the three-door room under a dark sky. g_00276 through g_00278 are the black ledge maze.
 
+## 06-23-17 appearance
+
+The 09:02Z question: does the original lintel look like the beige band with a blue edge.
+
+- Faces 8238 and 8239, material 495 front, file `aae3b5f537e69dbcf911.png`, 128 by 128: PROVEN the original texture is the dark carved-wood panel. Across the UV window the pixels average about rgb 65, 48, 41. The file has no beige band and no blue stripe. Face 8238 UV is u 0.30..2.26 and v 0.14..0.84, so the panel repeats about twice across the lintel. Face 8239 UV is u 0.29..0.90 over the same v, one panel.
+- The owner's 06-23-17 frame shows that carved wood on the side wall. The floating band is beige stone, about rgb 140, 135, 100, close to material 473, with a flat blue stripe about rgb 12, 30, 89. Neither color is a row of material 495. Ceiling 1632, in the same face-id rect, is material 473.
+- LONGPLAY this doorway is still absent from g_00267, g_00268, and g_00275 through g_00278. g_00268 shows the carved wood as a wall.
+- Differs. The original lintel is the carved-wood panel. It is not the beige band with a blue edge.
+
 ## Later legends

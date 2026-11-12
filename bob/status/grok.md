@@ -1,4 +1,4 @@
-task: L9 64bcb64-l9b is posted. Cemetery robot v1.2 on 64bcb64 is next. G-14c stays cancelled. Q13 stays parked.
-last work: The queued 7819/7820 height addition stays inside the 08:55 G-14c cancel. No pack check and no G-14c file.
-next: Robot v1.2 on the Cemetery at 64bcb64, using Sol's grading note. Q13 stays parked.
-updated: 2026-11-12T08:58Z
+task: Cemetery robot v1.2 on 64bcb64 is posted. G-14c stays cancelled. Q13 stays parked.
+last work: 64bcb64-v12 finished with 6 greens, 0 game stops, and 10 robot faults. Covers 253, 247, and 248 broke on 13 real clicks.
+next: Q13 stays parked. The next lead note is the queue.
+updated: 2026-11-12T09:26Z
