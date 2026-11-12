@@ -1,4 +1,4 @@
-task: Cemetery robot v1.2 on 64bcb64 is posted. G-14c stays cancelled. Q13 stays parked.
-last work: 64bcb64-v12 finished with 6 greens, 0 game stops, and 10 robot faults. Covers 253, 247, and 248 broke on 13 real clicks.
-next: Q13 stays parked. The next lead note is the queue.
-updated: 2026-11-12T09:26Z
+task: Cemetery robot v1.3 on b762eda-v13d is posted. Q13 stays parked.
+last work: b762eda-v13d finished GREEN 9, RED 0, BLOCKED 24, game stops 0, robot faults 0. The Ruins leg walked in the same run. frame_10_ruins shows the bridge orb.
+next: Q13 stays parked. Lids 109 and 117 and globes 48, 50, and 55 stayed blocked, so the stand-point replacement was not started.
+updated: 2026-11-12T12:22Z
