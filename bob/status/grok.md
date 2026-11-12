@@ -1,4 +1,4 @@
-task: The 15:12Z order is posted. Robot v1.5 on 817aaf9, the Cemetery try-list, and the Act 1 plus L17 must-touch fold.
-last work: v15d exit 0. GREEN 11, RED 0, BLOCKED 13, game stops 0, robot faults 2, deaths 0, lowest health 14, fights 16. Socket 158 green on the floor walk. Globe 55 robot fault at [1326.1, 42.0, -1855.2]. The chain stopped after the first mirror return, before tomb 91. Try-list AI_COMMS/status/TRYLIST_L10.md. Census 1000 rows, in_162 162, in_57 55.
-next: Q13 stays parked. The owner Cemetery walk waits for a robot pass that takes globe 55 and finishes the chain.
-updated: 2026-11-12T16:33Z
+task: Robot v1.6 on 7501c30 and the ceiling-child replay of the 134 walls are posted.
+last work: v16 exit 0. GREEN 12, RED 0, BLOCKED 13, game stops 0, robot faults 2, deaths 0, lowest health 14, fights 17. Globe 55 green from the builder stand. Lid 117 robot fault at the builder stand. Tower-exit walk stopped at [-3243.8, 32.0, -1528.6] before the second mirror doors. All 134 ceiling-child walls have the original draw byte set.
+next: Q13 stays parked. The Cemetery chain waits on the tower-exit stop and lid 117. Nothing regenerated on the ceiling-child producer.
+updated: 2026-11-12T17:07Z

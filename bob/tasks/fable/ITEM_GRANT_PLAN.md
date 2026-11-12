@@ -518,4 +518,13 @@ Two MAJORs fixed in the plan text:
 
 Counts unchanged from revision 3. Nothing was run for this revision either.
 
+## 13. Correction after review R108 of commits 0 and 1 (lead, 12 November 2026)
+
+One point of the contract in section 3 was wrong as I wrote it, and the build followed it faithfully:
+
+- **`duplicate:"skip"` must not return before steps 5 to 8.** Today's "append only if absent" sites still run their effects when the item is already in the pack: `jungle_walkthrough.gd:889-890` refreshes the HUD either way; `l19_belial_horn.gd:63-70` writes history-if-absent and syncs even when the horn is carried. So on "skip" the module skips only step 4 (the append) and still runs history, sync, text, Journal and HUD as the options say; the result carries `added: true|false` so an owner whose effect must depend on it can decide. A site that today does nothing at all when the item is present keeps its own early return in front of the call.
+- `sync:true` with `history:"none"` must work without a packet check failing after the append; `sync_first` without `sync` is an error, not silently ignored.
+
+Commit 0 is not complete until the three things section 4 lists exist: `item_grant_site_fixture_test`, `item_grant_history_spelling_test`, and a save per host with its loaded-state record. No migration commit (2 onward) merges before them.
+
 PLAN READY

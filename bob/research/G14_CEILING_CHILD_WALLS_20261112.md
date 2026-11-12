@@ -68,3 +68,57 @@ Opened in full: g_00266, g_00268, g_00269, g_00270, g_00275, g_00282. Sheeted g_
 - g_00282 at 4:10:10 is a carved-wood corridor with a stone-block ceiling. No sky.
 
 The Citadel tube was not on that grid either. g_00187 at 3:22:40 is the pillared hall with Remaining Ruloi 19/19. g_00205 at 3:31:40 is a rough rock wall. g_00216 at 3:37:10 is the green barred opening. None is the round tube. The tube grade above stands on the replay.
+
+## The 134 walls the child-flag height turns on
+
+2026-11-12, append. Read-only. Same LOLG.DAT. The re-export at `lol2_out/all_maps_20261112_ceilingchild` was read and was not written again. Opus's list is `opus_lane/g14/CEILING_CHILD_CHANGES_20261112.json`: 142 rows, the 8 already proved and 134 new. Each new row was replayed through original 0x115250 (`ChildWallReplay`, draw byte at object +0x44). The caller height is the wall region's own flag 0x20. That flag is clear on all 134, so the caller reads owner word 11.
+
+PROVEN. The same call on the eight already proved records repeats the accepted result. L13 1813 and 1815 keep the draw byte clear, corners at 137 and 147. L5 2492 through 2497 keep the draw byte set, span Y 0..10.
+
+The walk back to the owner passes earlier children whose flag 0x20 is set. The height used here is the wall region's own flag, and the eight-record check above is what shows that this is the same word as the accepted proof.
+
+The draw byte is set on all 134. The corner span is the child surface, word 10, through the caller height. Replaying the same 134 with owner word 10, the September choice, clears the draw byte on every one. That is the height that left them out of the September export. The spans below match Opus's new spans on all 134 rows.
+
+### L13, 112 walls
+
+Draw byte set. Two caller heights.
+
+Stack, caller 160. That is owner word 11 on owners 0, 15, 30, 94, 109, and 124. Owner word 10 is −40.
+
+| Span | Walls | Regions |
+|---|---|---|
+| 61..160 | 36 | 8, 14, 23, 29, 38, 44, 102, 108, 117, 123, 132, 138 |
+| 104..160 | 20 | 9, 24, 39, 43, 103, 107, 118, 122, 133, 137 |
+| 107..160 | 4 | 13, 28 |
+| 127..160 | 24 | 10, 12, 25, 27, 40, 42, 104, 106, 119, 121, 134, 136 |
+| 135..160 | 12 | 11, 26, 41, 105, 120, 135 |
+
+Region 8 is in the first row. Records 1613, 1615, and 1616, span 61..160. These 96 walls are the stack end caps.
+
+Tube, caller 147. That is owner 468 word 11. Owner word 10 is −40.
+
+| Span | Walls | Region | Records |
+|---|---|---|---|
+| 60..147 | 3 | 482 | 1828, 1829, 1830 |
+| 62..147 | 3 | 476 | 1819, 1820, 1822 |
+| 104..147 | 2 | 481 | 1825, 1826 |
+| 109..147 | 2 | 477 | 1816, 1818 |
+| 127..147 | 2 | 480 | 1567, 1568 |
+| 129..147 | 2 | 478 | 1469, 1470 |
+| 137..147 | 2 | 479 | 1809, 1811 |
+
+These 16 walls are the tube end caps. Records 1809 and 1811 are codes 10 and 8 of region 479. The draw byte is set and the band is Y 137..147. Records 1813 and 1815 of that same region stay the accepted clear draw byte.
+
+### L5 Hive, 22 walls
+
+Draw byte set on all 22. Records 95 through 116. Caller height 0, owner 188 word 11. Owner word 10 is −235. Child surface is −104. Span Y −104..0 on every wall. Regions 205, 206, 207, 208, 209, 210, 211, 212, 213, 216, 217, 218, 219, and 220. Regions 214 and 215 stay the accepted band Y 0..10.
+
+Owner 188 has floor −235 and ceiling 0. Its footprint is x −1146..−712, map y 7480..7623. These 22 walls are the ceiling-child faces inside that footprint.
+
+### Act 1 longplay, Hive regions 205–220
+
+LONGPLAY. The 5-second grid stores no player position. Opened in full: f_00489 at 40:40, f_00522 at 43:25, and f_01100 at 91:35. Sheeted f_00481 through f_00530 (40:00–44:05), f_00551 through f_00559 (45:50–46:30), and f_01093 through f_01104 (91:00–91:55).
+
+f_00489 is the red cracked floor and a soft red cloud, with a black opening ahead. f_00522 is that hall with a bright yellow patch on the floor and the blue curse flash. f_01100 is the step from the lava floor onto the green patterned tile. f_00551 through f_00558 stay in the red hall, and f_00559 is the jungle mouth.
+
+Owner 188 is interior. The four Hive arrivals are regions 676, 463, 832, and 642. The opened frames show the lava hall and the tile step. The region 188 footprint is absent from them, so none of these frames is a view of regions 205–220.
