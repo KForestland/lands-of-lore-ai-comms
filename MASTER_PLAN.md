@@ -29,19 +29,21 @@ effort ("if it takes 10 years, we will do it").
 | 5 | LoL1 Enhanced, then the other Enhanced editions | After LoL2 and LoL3 are finished |
 | 6 | 3D characters/items/creatures for the Enhanced editions | Not before 1–2 years from now; LoL1 assets first |
 
-## LoL2 Classic: status (2026-11-11)
+## LoL2 Classic: status (2026-11-12)
 
-Full roadmap with the eight phases, what each needs, and where help is welcome: **[LOL2_ROADMAP.md](LOL2_ROADMAP.md)**.
+Full roadmap with the phases, what changed, the dates and where help is welcome: **[LOL2_ROADMAP.md](LOL2_ROADMAP.md)**.
 
-- **About 20% complete (give or take five points).** Earlier versions of this page said about 60%. That number counted
-  pieces that were built; the new one measures what a player can actually do, against all the work still planned
-  (137 tasks, 74 to 130 agent-weeks). The world and the main quest are far along; combat, items, spells, dialog, music
-  and the game's menus are the larger share and have barely started.
-- **Act 1** is playable start to finish. **Act 2** is built to the Claw Mountains and was walked there with real input,
-  but not yet without help; Kevin's latest playtest stopped in the Dracoid Cemetery. **Act 3** is partly built.
-- **When:** most likely **July 2027**; earliest late April 2027; August 2027 or later if the big unknowns go badly.
-  These are estimates, not promises.
-- **Next checkpoint:** mid-December 2026, a player finishes the main quest from New Game to the ending.
+- **Still about 20% complete.** Two days finished roughly one agent-week of tasks, and a review added about as much
+  newly found work. The percentages measure what a player can do today, not counts of finished tasks.
+- **What the review found:** the Dracoid Cemetery was not passable for a real player (one shared object behaviour of
+  the original, covering 219 objects game-wide, was missing); the big maps are rooms stacked above rooms, not
+  impossible spaces; and automated tests had passed where a player was stopped. A robot player now walks each level
+  with real input before Kevin does.
+- **Merged:** one save for the whole game with autosave, a common base for all levels, and playtest starts for every
+  level of Act 2 and Act 3.
+- **When (estimates, not promises):** Cemetery passes for a player late November to early December 2026; all of Act 2
+  mid to late December; Kevin plays from New Game to the ending **late January 2027** (earliest early January);
+  **version 1.0 July to August 2027**.
 
 Order (owner): maps, then the main quest from A to Z, then everything else; classic first, modernised only where the
 original is too hard to rebuild, and every difference is logged. A passing test is not a cleared area: only Kevin's
