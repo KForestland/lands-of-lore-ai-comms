@@ -38,7 +38,7 @@ The use function is vtable slot `+0x64`, address `0x641B0`. PROVEN:
 - Otherwise it switches on the state byte `+0x55` (table at `0x641A0`). State 0 becomes state 2 and copies the span word into the travel word. State 1 becomes state 3 and clears the travel word. State 2 becomes state 1. State 3 becomes state 0. States 2 and 3 also raise kind 6 with caller `0x11` (`0xADDE0`). An object with no rows has nothing for that hook to run.
 - It then always calls `0x5DA48`. Earlier work showed that call only runs kind-4 script rows. These objects have no rows, so the call matches nothing. The state change has already happened.
 
-The matching call site found in this pass is `0x110ACD`: `call [vtable+0x64]`, and only when the context byte `+0x33` is not 2, byte `+0x32` is 4, dword `+0x28` is at most `0x1000000`, and the object's flags lack bit `0x4000000`. PROVEN as that call. Which player button writes byte `+0x32` is UNKNOWN. It was not traced to the E key.
+The matching call site found in this pass is `0x110ACD`: `call [vtable+0x64]`, and only when the context byte `+0x33` is not 2, byte `+0x32` is 4, dword `+0x28` is at most `0x1000000`, and the object's flags lack bit `0x4000000`. PROVEN as that call. Byte `+0x32` is written by the pick, and the input that runs that pick is queue code `0x41`. The section below names the key.
 
 The tick is vtable slot `+0x38`, address `0x63260`. The arm at `0x63732` adds a step to the position until it reaches the travel distance, then sets the state to 1 and raises kind 6 with caller `0x0F`, then `0x11`. A second arm at `0x63880` subtracts and finishes at state 5 with caller `0x10`. PROVEN as those arms. Which state number enters which arm was not the question this pass closed.
 
@@ -150,13 +150,43 @@ That is 11 of the 162. The cemetery lids, crypt tops, crypt covers, secret-crypt
 
 Hosted through the original click or the original break test: 0 of 162, and 0 of 57.
 
+The click that requires context byte `+0x32` equal to 4 runs from queue code `0x41`. That code is written when the keyboard map returns byte `0x63`, the ASCII letter c. The letter e is not a compared byte, and no mouse button writes the code. A socket then accepts the use when the straight-line length is at most `0x1000000`. The port's socket test is a length of 140 and a facing dot of 0.8.
+
 ## Grades
 
-PROVEN: the use function, the placement-byte copies, the quarter-turn conversion, the tick's add and subtract arms, the height and sideways publish, the strike's durability update, the mode-3 compare, the cemetery byte values, and the counts above.
+PROVEN: the use function, the placement-byte copies, the quarter-turn conversion, the tick's add and subtract arms, the height and sideways publish, the strike's durability update, the mode-3 compare, the cemetery byte values, the counts above, queue code `0x41` as the input that reaches the use, byte `0x63` as the map value that writes that code, and the length test `0x1000000` on context `+0x28`.
 
-LIKELY: template names, carried forward from the globe-loop note. Bit `0x1000` set means the row starts absent, carried forward from earlier notes. `0x5DA48` only runs kind-4 rows, from the earlier use-slot report. The sound call `0xE3924` inside the use function was not re-opened.
+LIKELY: template names, carried forward from the globe-loop note. Bit `0x1000` set means the row starts absent, carried forward from earlier notes. `0x5DA48` only runs kind-4 rows, from the earlier use-slot report. The sound call `0xE3924` inside the use function was not re-opened. The physical keycap for byte `0x63` is C. The length limit `0x1000000` is 256 in 16.16 units.
 
-UNKNOWN: which button writes context byte `+0x32`. The names of context `+0xC` and `+0x28`. Where the 60-byte movable template table pointed at by global `0x22D4C` lives in the level file. The draw code that reads globals `0xB7C68`, `0xB7C6C`, and `0xB7C70` was not entered, so this note says what is published, not which polygon moves on screen.
+UNKNOWN: the name of context `+0xC`. Where the 60-byte movable template table pointed at by global `0x22D4C` lives in the level file. The draw code that reads globals `0xB7C68`, `0xB7C6C`, and `0xB7C70` was not entered, so this note says what is published, not which polygon moves on screen. The bytes inside the scancode map at driver `+0x1C9`, so the physical keycap that becomes byte `0x63` stays LIKELY rather than read from a table in the file. Whether ray `0xE2E40` can reject a socket because a wall is in the way.
+
+## Which input runs the click
+
+Context byte `+0x32` is not a key code. Two functions store the constant 4 there: `0x11112C` and `0x111198`. They run while the pick is choosing an object. The use gate then calls vtable `+0x64` only when that byte is already 4.
+
+The input that reaches the use is queue code `0x41`. The dispatcher at `0x7508B` compares the low byte with `0x41` and with `0x42`. Equal `0x41` sets a flag and later calls `0x75D98` at `0x75120`. Equal `0x42` takes the same mouse-position call and then returns without `0x75D98`. Any other low byte returns. `0x75D98` is the function that runs the pick and then the use gate. Its only direct caller is `0x75120`. PROVEN.
+
+Code `0x41` is written by the keyboard translator `0x15B21C`. After the scancode map, it compares the byte:
+
+- Byte `0x63` becomes `0x41` (`0x15B27C`). `0x63` is the ASCII letter c.
+- When driver dword `+4` has bit `0x2000` set, bytes `0x2B`, `0x3D`, and `0x6C` (`+`, `=`, and `l`) also become `0x41`.
+- Byte `0x68` (`h`) becomes `0x42`. Byte `0x64` (`d`) becomes `0x43`. Byte `0x65`, the letter e, is not one of these compares.
+
+The map read is `mov al, [driver + scancode + 0x1C9]` at `0x15B84D`. The driver is the block at `[0x1890D]`. That table is filled into the driver at runtime. A set-1 ASCII table with `e` at scancode `0x12` and `c` at scancode `0x2E` is not present in the file image, so the physical keycap is LIKELY the C key and was not read off a stored map. PROVEN the compared byte. LIKELY the keycap.
+
+The translator's only direct caller is `0x15B962`, inside the keyboard handler that just performed that map read. The enqueue of the queue word has three call sites, all inside the translator. A search of object-2 code found no other `mov al, 0x41` that enters this queue. The mouse x and y are copied onto the event after the key is translated (`driver +0x379` and `+0x381` snapshotted at `0x15B22D`). They do not select code `0x41`. PROVEN.
+
+A press and a release both leave the low byte as `0x41`. The handler sets bit 8 of the high byte on a break code (`0x15B80A`). The translator still stores `0x41` and still enqueues, and on the break it clears bit 0 of driver `+0x3C8` (`0x15B292`). The dispatcher compares only the low byte, so the release enters `0x75D98` as well. PROVEN.
+
+## Socket reach
+
+The T6 gargoyle is control 158, class `0x10`. Its use slot is vtable `+0x64` = `0x5DA48` (object-5 `0x5484`). The gate calls that slot when byte `+0x32` is 4, byte `+0x33` is not 2, the object flags lack bit `0x4000000`, and the length at context `+0x28` is at most `0x1000000`. `0x5DA48` repeats the length test on its second argument `+0x28` (`0x5DA61`) and returns before the script call when object byte `+0x15` has bit `0x80`. PROVEN.
+
+The length is the return of `0x136594`. That function subtracts the two pairs, squares them, adds them, and takes the integer square root (`fild` / `fimul` / `fsqrt` / `fistp` at `0x1365AB`). The pick `0xE1050` passes the controller `0x227A4`: the standing pair is dword `+0x19` and dword `+0x1D`, and the target pair is context `+0` and context `+4`. The result is stored at context `+0x28` (`0xE1194`). PROVEN. LIKELY those dwords are 16.16 positions, which makes `0x1000000` equal 256. A plain-integer limit of 16777216 would sit far outside a cemetery coordinate, and the movable position dword is already stored shifted up by 16. The shift on this pair was not re-read.
+
+The gate and `0x5DA48` do not compare a facing dot. The ray that chooses the object is `0xE2E40`. Its wall test was not entered, so whether a wall can keep the gargoyle out of the pick stays UNKNOWN.
+
+The port's test is `l10_tombs.gd` `reachable`, lines 70–76. It rejects a length over 140, a length under 0.01, or a facing dot under 0.8, and the ray mask is `1|AIM_LAYER`. Success is an empty ray or a hit on that receptacle. That is the port's test. Sol's T6 report is that this ray hits ProjectileWalls, so `reachable` stays false.
 
 ## Left for review
 

@@ -12,6 +12,8 @@ The original writes one file per level. The writer is `0xE7F68`. It reads the le
 
 The slot then copies twenty of those per-level `.lsv` files (levels 1 through `0x14`, suffix object-5 `0x3149`) into the named save. The function that makes the just-written `.lsv` show up under that second suffix was not entered. LIKELY they are the same blob. UNKNOWN which function links them.
 
+A dead creature stays in the actor element. The death function stores 0 in the health word and `0x0F` in byte `+0xA8`. Both sit inside the saved stride, and the pool count is left as it was. The 68 section arms were listed in full. None is sized as the 37-byte placement table, so the byte that remembers a taken item stays UNKNOWN.
+
 ## What the per-level file stores
 
 The section switch is `0xE8914`. Index `0` through `0x43` are 68 sections. Each arm returns a pointer, a size, a second value, and flags. Flag bit 1 (value 2) selects the mix with the `.img`. Flag bit 2 (value 4) sends that buffer through `0xEB6A0`, which writes a counted series of chunks. With neither bit set, `0x118864` writes the live pointer. PROVEN from `0xE8192`, `0xE820E`, `0xE8283`, `0xE82AE`, and `0xE82D0`.
@@ -26,8 +28,10 @@ The element size of a class pool is `[header+0xC]`, written by `0x5F724`. The po
 | Script locals | Section 24. Pointer is the dword at object-5 `0x26E54`. Size is the dword at `0x26E5C`. Second value 1. Flags 7. Opcode 198 at `0x64887` stores command byte 5 at that buffer plus command byte 4. | PROVEN |
 | Script flags, the other array | Global section 1, in the slot header, outside the per-level file. Pointer is the dword at object-5 `0x26E58`. Size is the dword at `0x26E60`. Second value 1. Flags 7. Switch `0xE867C`, arm at `0xE86BD`. Opcode 199 writes this array (prior note). | PROVEN this section copies that buffer. |
 | Timers | Kind-2 list: section 61 is the `0xC` bytes at object-5 `0xB7DA4` (flags 3). Section 62 is the buffer that dword points at, length `[0xB7DA8]<<2`, flags 1, so a direct copy. Sections 63 and 64 are the same pair at `0xB7DB0` / `[0xB7DB4]`. The count used by older notes at `0xB7DAC` is a different cell. Clock bytes: section 67 copies object-5 `0x22C40` through `0x22C91` (`0x51` bytes, flags 3). The clock word `0x22C58` and dword `0x22C5A` sit in that range (Q12). | PROVEN the bytes are copied. LIKELY the `0xB7DA4` pair is the kind-2 timer list, from the earlier list note. |
-| Dead creatures | Section 21 copies each class-2 actor. Header at object-5 `0x9696C`. Stride `0xBC` (setup push `0x9D2A7`). Flags 7. | PROVEN the actor element is in the file. UNKNOWN which byte means dead. |
-| Taken items | No section in this pass is an inventory or a taken bit. The `0x5B` stride in the directory filler `0xE5C48` is the item-definition stride. | UNKNOWN |
+| Dead creatures | Section 21, the same class-2 element. Header at object-5 `0x9696C`, stride `0xBC`. Death `0xA7544` stores word `+0x88` as 0 (`0xA77EB`) and byte `+0xA8` as `0x0F` (`0xA77DF`). It also stores byte `+0xA9` as `0x0F`, byte `+0xAA` as `0x0F`, and byte `+0xAB` as `0x10`, and it clears bit `0x40` of byte `+0x15`. None of those stores changes the pool count. | PROVEN the stores. The element remains the saved record. |
+| Taken items | All 68 arms of `0xE8914` were read. None sizes its buffer as count times 37. The level geometry file, as the port readers decode it, stores placements at header field `0x20` with count field `0x6C` and stride 37. That table is not one of the 68 sections. | UNKNOWN which saved byte records a take. |
+
+`0xA7A74` is the health setter. When byte `+0xA8` is already `0x0F` it stores word `+0x88` as 0 and returns. When the amount is 0, definition byte `+0x3C` has bit `0x10` clear, and actor byte `+0xB5` has bit 0 clear, it calls `0xA7544` instead of the normal health store. A set bit `0x10` forces the amount to 1 and takes the normal store. A set bit 0 of `+0xB5` returns without a store. If `0xA7544` finds `+0xA8` already `0x0F`, it returns at `0xA6359` without writing. PROVEN from those arms.
 
 The follow-up before the write is `0xE96EC`, switched by section index. The short arm `0xE97AC` stores nothing. Sections 24 and 67 use it. Section 22 (movables) arm `0xE9C59` calls `0xEB2C8` at element offsets `+0xC`, `+0x10`, `+0x2C`, and `+0x30`. Section 19 (controls) arm `0xE9AAE` calls it at the same four offsets. `+0x48`, `+0x55`, and `+0x26` are not among them. `0xEB2C8` rewrites one dword when that dword falls inside one of 26 ranges, and returns without a store when it does not. Section 12's arm `0xE9923` calls the helper once per stride step. The helper's source pointer on that arm was not reduced, so the height word staying intact is LIKELY.
 
@@ -66,8 +70,8 @@ From Sol's slot, beyond F9: `locals`, `locals_e58`, `record_state`, `state`, and
 
 ## Grades
 
-PROVEN: the 68-section switch, the mix with the level `.img` for flag bit 1, the chunked write for flag bit 2, stride `0x58` for movables, stride `0x40` for controls, stride `0xBC` for actors, section 12's 44-byte records, section 24 as the opcode-198 buffer, global section 1 as the `0x26E58` buffer, sections 61–64 and 67 as the timer and clock bytes, and the F9 and slot field lists above.
+PROVEN: the 68-section switch, the mix with the level `.img` for flag bit 1, the chunked write for flag bit 2, stride `0x58` for movables, stride `0x40` for controls, stride `0xBC` for actors, section 12's 44-byte records, section 24 as the opcode-198 buffer, global section 1 as the `0x26E58` buffer, sections 61–64 and 67 as the timer and clock bytes, the F9 and slot field lists above, and the death stores of health 0 and byte `+0xA8` = `0x0F` inside that actor element.
 
 LIKELY: the floor height survives the per-record helper. The `0xB7DA4` / `0xB7DB0` pair is the kind-2 timer list. The `.lsv` just written and the `.lsv` the slot copies are the same blob.
 
-UNKNOWN: which actor byte means dead. Which section, if any, is a taken item. The helper's source pointer in the region arm. The function that links suffix `0x3158` to suffix `0x3149`.
+UNKNOWN: which saved byte records a taken placement. The helper's source pointer in the region arm. The function that links suffix `0x3158` to suffix `0x3149`.
