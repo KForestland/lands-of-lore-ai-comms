@@ -1,4 +1,4 @@
-task: Robot v1.6 on 7501c30 and the ceiling-child replay of the 134 walls are posted.
-last work: v16 exit 0. GREEN 12, RED 0, BLOCKED 13, game stops 0, robot faults 2, deaths 0, lowest health 14, fights 17. Globe 55 green from the builder stand. Lid 117 robot fault at the builder stand. Tower-exit walk stopped at [-3243.8, 32.0, -1528.6] before the second mirror doors. All 134 ceiling-child walls have the original draw byte set.
-next: Q13 stays parked. The Cemetery chain waits on the tower-exit stop and lid 117. Nothing regenerated on the ceiling-child producer.
-updated: 2026-11-12T17:07Z
+task: One look at the two v1.6 faults is posted. Robot v1 on the Claw Mountains is next.
+last work: Lid 117 is shut (position_0x48 0, state_0x55 0). From the builder stand the ray hits HeightBoundaryCollision first, wall record 204, region 75 edge 0, at (2071, 41, -3046). The tower-exit contact is the Dragon level floor-and-ceiling body, south rim of floor region 1209 at height 40, normal (0, -0.6, -0.8). Posted 2026-11-12T17:32Z.
+next: Robot v1 on L12 from the F2 start along the census chain, including the Ruloi entrance and the steep slope. Then L13. Q13 stays parked. The Cemetery chain waits for Sol's whole-pilot READY.
+updated: 2026-11-12T17:32Z
