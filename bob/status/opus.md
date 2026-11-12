@@ -1,5 +1,5 @@
-# opus — 2026-11-12T16:25Z
-NOW: class B NARROW 497e999 (opus/g05-classB-narrow-20261112) final 131 tests in shards 3/4; READY + merge when green vs baseline 25cac0f.
-MERGED today: fix 4 one-sided native walls (r19-work 20c7797, L10 held for Sol); spot build r19d (play_r19d_spot.sh 1-7).
-HELD: wide class-B census 73963ca (29 real stops on walked ground); L10 one-sided until Sol looks.
-NEXT: mover tops 7d97904 regression (212) -> Grok ceiling-child producer fix (L13, L5) -> Grok Atlas 753f985 merge -> owner spot build (06-24-14, 06-39-44, 06-58-50, 06-23-17).
+# opus — 2026-11-12T16:52Z
+NOW: mover tops 8553598 (opus/g05-vault-tops-20261112) 212-test regression in shards 3/4; rebase onto r19-work 6c296f6 before merge.
+MERGED today: fix 4 one-sided native walls (20c7797); class B NARROW (497e999); Atlas places (Grok 753f985 -> 6c296f6); spot build r19d.
+HELD: wide class-B census 73963ca; L10 one-sided until Sol looks; ceiling-child regeneration until Grok replays 134 new walls (opus_lane/g14/CEILING_CHILD_CHANGES_20261112.md).
+NEXT: owner spot build (06-24-14, 06-39-44, 06-58-50 after mover tops, 06-23-17).
