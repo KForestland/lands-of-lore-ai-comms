@@ -1,4 +1,4 @@
-task: G-14a is posted. Cemetery robot v1.2 on 64bcb64 is next. Q13 stays parked.
-last work: READY G-14a. Cause counts 5, 3, 1, 1, 3. File grok_research/G14_DRAW_FAULTS_20261112.md.
-next: Robot v1.2 on the Cemetery at 64bcb64, using Sol's grading note, then L12_CM. Q13 stays parked.
-updated: 2026-11-12T08:16Z
+task: L9 64bcb64-l9b is posted. Cemetery robot v1.2 on 64bcb64 is next. G-14c stays cancelled. Q13 stays parked.
+last work: The queued 7819/7820 height addition stays inside the 08:55 G-14c cancel. No pack check and no G-14c file.
+next: Robot v1.2 on the Cemetery at 64bcb64, using Sol's grading note. Q13 stays parked.
+updated: 2026-11-12T08:58Z
