@@ -60,3 +60,5 @@ Format (newest at the bottom):
 - Decision: pending lead prioritization; overlaps existing ENGINE-NAV-HEIGHT and ENGINE-OWNER-REGISTRY.
 
 - [Astra 2026-11-03, evidence for IMP001/006] Ownership audit should reject a declared nonempty geometry owner that selects zero faces and normalize JSON numeric IDs before membership tests. STORY059/060 exposed float-vs-int Array membership silently omitting grates/pedestal faces; explicit cast and physical floor assertions fixed it (af2ae0a). This is a proposed audit guard, not new gameplay scope.
+
+- 2026-11-13 [owner, via fable/lead] ENHANCED EDITION idea: a real village in the Claw Mountains where the brutes are, perhaps with some quests there. Parked with the Enhanced edition (after Classic start-to-end). Lead: accepted as an Enhanced backlog item, no Classic work.

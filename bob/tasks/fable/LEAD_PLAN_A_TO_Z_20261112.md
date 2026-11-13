@@ -78,3 +78,7 @@ Proposal that needs the owner's yes: **Opus keeps integration** (merging, cuttin
 - What the Act 3 levels hide. Only the Cemetery has been examined at this depth; the others have had automated walks with aids.
 - Act 1 was not re-examined; I rely on the owner's statement that it is largely done.
 - Usage limits of the lanes (Kimi is out for the month; Grok and Sol have their own limits) can stall a week.
+
+## 7. Milestone log
+- **13 November 2026: M1 met.** The owner played r19g normally and called it "a great success": a full walk from the start of the game to the Ruloi Citadel now exists (Cemetery layer, rails, ashes, statue, Larkhon). The robot pressed the ankh on r19g with 0 game stops. Planned for late November to early December; reached 13 November.
+- **Next milestone, set by the owner (M2b):** get the Dreamstone in the Ruloi Citadel (L13) and return to the Huline Temple (L14) with it, through the Temple chain (priest ritual, pews, doors 92/93, spider wall, headboard). Bars as before: robot first, then the owner's normal play. Open on the way: the owner's full Claw Mountains run (he names 2 issues there), the Temple upper-floor way (Opus), T3/T14 confirmation, spell core (Sol).
