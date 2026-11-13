@@ -1,4 +1,4 @@
-task: L14 robot walk on the T3+T14 head is next.
-last work: DONE full L10 robot posted 2026-11-13T06:52Z. Folder robot/L10_DC/20261113_60147ae-ankh. Green 14, red 0, blocked 14, game stops 8, robot faults 1. First game stop was the collapsed-floor fall. The ankh was not pressed. The repaired tower exit did land at (-2891, 32, -1142).
-next: Robot walk of L14 on b2b698c (T3+T14): spider tunnel both ways, the hall with the four sills, chain to the Dreamstone as far as it goes. Q13 stays parked.
-updated: 2026-11-13T06:52Z
+task: L14 robot walk on b2b698c is posted. Waiting on the lead.
+last work: DONE L14 posted 2026-11-13T07:16Z. Folder robot/L14_HT/20261113_b2b698c. Exit 0. Priest carry and place succeeded. First stop was the pew walk at (2474, -48, -3417) against HeightBoundaryCollision. The spider tunnel, the four-sill hall, and the Dreamstone slot were not reached. Dreamstone still carried. Blue-charger repair posted 2026-11-13T07:14Z and was not re-walked.
+next: Q13 stays parked. No new walk until the lead names one.
+updated: 2026-11-13T07:16Z
