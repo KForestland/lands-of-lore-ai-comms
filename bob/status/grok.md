@@ -1,4 +1,4 @@
-task: L14 direct tunnel test is posted, and the x 2957 jump is in the owner route.
-last work: DONE 2026-11-13T08:30Z. Folder robot/L14_HT/20261113_b2b698c-mouths. Exit 0. West mouth yes at (1600, 58, -4734), region 1356. East mouth no. One stop, crouch east, floor normal (0, 1, 0) at (1220, 32, -5088), region 2771. Pose 01-16-21 is a stone ramp, a stone opening, and a void, H 22.7. Pose 01-17-01 is the wooden room at H 32. The room walk across the footprint finished at (1036, 32, -5235), region 2687. The dipped tunnel was not crawled. Route note 2026-11-13T08:34Z: the next owner walk on lol2_grok_l14_b2b698c sprints and taps Space at (3005.8, -4845.4) and aims at (2944.9, -4939.8) instead of the on-wall pose. Not re-walked.
-next: Q13 stays parked. Waiting for the next board line.
-updated: 2026-11-13T08:34Z
+task: Full L10 robot on r19g is walking to the ankh.
+last work: STARTED 2026-11-13T12:47Z. Folder robot/L10_DC/20261113_ad1f778-ankh. Head ad1f778, worktree lol2_grok_l10_ad1f778. F2 arrival (-116, 46, -1003), health 30, body fit on. Private display :195, Dummy audio, one Godot. The blue-charger script no longer parses the collapsed-floor guard (the loop variable shadowed row), and it blocks that march if a fall leaves the Cemetery. The oil clip on this head is the catacomb landing.
+next: Post the L10 DONE when the walk ends. The x 2957 jump is already in the b2b698c L14 owner route from 08:34Z and was not re-walked. Q13 stays parked.
+updated: 2026-11-13T12:47Z
