@@ -1,4 +1,4 @@
-task: Waiting on r19h. Sunday facts are posted. The L14 Dreamstone robot, then L13 again, waits until r19h is posted and, for L13, until Opus's headroom fix lands. No merge and no geometry patch from this lane.
-last work: Facts for Sunday 15 Nov written to fable_lane/review_20261115/FACTS.md and posted 2026-11-13T20:31Z MATCH. Recipe section 1 only. Window 12 Nov 00:01Z through the 20:16Z order.
-next: Wait for r19h before the L14 robot. Pink headroom stays with Opus. Q13 stays parked.
-updated: 2026-11-13T20:31Z
+task: r19h robots are posted. Pink ledges stay with Opus. No merge and no geometry patch from this lane.
+last work: L13 teleporter and vault posted 2026-11-13T21:25Z MATCH. Folder robot/L13_RC/20261113_890108b-pad on playtest/r19h 890108b. GREEN 13 RED 0 BLOCKED 0, deaths 0, stops 0. Pad lands (-3258, 32, 5589) region 1166, again after F5/F9. Vault hinge opens on aimed E and aimed click, stays shut from far and off-aim.
+next: Wait for the next board line. Q13 stays parked.
+updated: 2026-11-13T21:25Z

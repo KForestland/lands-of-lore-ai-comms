@@ -10,7 +10,7 @@ Two things to play normally, in whichever order you like, F10 where something is
    - Carrying the priest and walking to the pews now works from the entrance (this was blocked before).
    - The spider crawl tunnel now runs under the wooden room; the two no longer share space.
    - The trench behind the hall with the four windows no longer cuts into the corridor below.
-   The robot walked carry, slab and pews, and crawled the tunnel both ways. The rest of the Temple chain (the covers, doors 92/93, the Dreamstone slot) has not been walked by the robot yet.
+   The robot walked this whole part on r19h with no stops: doors, carry, slab, pews, the covers (they open after the priest's ritual), the spider, the headboard, and the Dreamstone slot (the spiral staircase rises, you take the Dreamstone back), up to the three-door room. The part after the three-door room has not been walked by the robot yet.
 
 Also new in r19h: in the Ruloi Citadel the teleporter pad and the vault opener work. Known and still open there: a jump on the ledges before the pressure plates hits a slab overhead (Opus is on it), so the Citadel cannot be finished to the Dreamstone yet.
 
