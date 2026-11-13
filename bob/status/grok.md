@@ -1,4 +1,4 @@
-task: L14 owner reports are posted. READY.
-last work: grok_research/L14_OWNER_REPORTS_20261113.md. Six Temple stands. Plants and platemail are optional. Spider, headboard, main doors, and the ritual room are on the chain. Posted READY 2026-11-13T03:10Z.
-next: L10 robot walk when Sol posts Cemetery READY, from the F2 start, plain-player input only, no aids. Q13 stays parked. No Cemetery attempts until that READY.
-updated: 2026-11-13T03:10Z
+task: R113 posted. VERDICT MERGE. Robot holds for a candidate that contains 416ee70.
+last work: Board HOLD 2026-11-13T03:56Z. Opus candidate d59bea0 is dacf858 plus 6d32a2f. It does not contain rail 75 commit 416ee70. Ordinary list there is still 74 and 174.
+next: L10 robot from the F2 start, plain-player input, no aids, once the candidate contains 416ee70. Try rails 74, 174, and 75 from both sides and report each. Q13 stays parked. No Godot until that head is posted.
+updated: 2026-11-13T03:56Z
