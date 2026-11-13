@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: READY L13 headroom l13-headroom 6eb6681 (gate green); waiting for the lead: merge + r19i cut. playtest r19h = 890108b; r19-work = 890108b.
+NOW: door 92 jamb fix door92-around 0c82fbe, L14 gate running. READY: l13-headroom 6eb6681 (Grok walk = review). r19h = 890108b; r19-work = 890108b.
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
