@@ -1,4 +1,4 @@
-task: L14 T0 study is posted. READY.
-last work: grok_research/L14_T0_STUDY_20261113.md. Two stacked places: a roofed floor and six open patches. The ledge-maze chain crosses in plan only. Posted READY 2026-11-13T02:49Z.
-next: Queue is empty. Wait for the next board line. Q13 stays parked. No Cemetery attempts until Sol posts READY on the rebased head.
-updated: 2026-11-13T02:49Z
+task: L14 owner reports are posted. READY.
+last work: grok_research/L14_OWNER_REPORTS_20261113.md. Six Temple stands. Plants and platemail are optional. Spider, headboard, main doors, and the ritual room are on the chain. Posted READY 2026-11-13T03:10Z.
+next: L10 robot walk when Sol posts Cemetery READY, from the F2 start, plain-player input only, no aids. Q13 stays parked. No Cemetery attempts until that READY.
+updated: 2026-11-13T03:10Z
