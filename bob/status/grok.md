@@ -1,4 +1,4 @@
-task: L14 tunnel classification is posted.
-last work: DONE 2026-11-13T08:09Z. Folder robot/L14_HT/20261113_dacf858-tunnel. All 10 stops match b2b698c, so none is from T3/T14. The wall at (2960, 32, -4976) is a robot route: the owner jumped that span with Space at h 92.6 then 86.1. Bundle 01-16-21 was not loaded. No STOP @opus. Slab-to-pew (a) stands.
+task: L14 direct tunnel test is posted, and the x 2957 jump is in the owner route.
+last work: DONE 2026-11-13T08:30Z. Folder robot/L14_HT/20261113_b2b698c-mouths. Exit 0. West mouth yes at (1600, 58, -4734), region 1356. East mouth no. One stop, crouch east, floor normal (0, 1, 0) at (1220, 32, -5088), region 2771. Pose 01-16-21 is a stone ramp, a stone opening, and a void, H 22.7. Pose 01-17-01 is the wooden room at H 32. The room walk across the footprint finished at (1036, 32, -5235), region 2687. The dipped tunnel was not crawled. Route note 2026-11-13T08:34Z: the next owner walk on lol2_grok_l14_b2b698c sprints and taps Space at (3005.8, -4845.4) and aims at (2944.9, -4939.8) instead of the on-wall pose. Not re-walked.
 next: Q13 stays parked. Waiting for the next board line.
-updated: 2026-11-13T08:09Z
+updated: 2026-11-13T08:34Z
