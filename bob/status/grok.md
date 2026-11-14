@@ -1,4 +1,4 @@
-task: Sixth continuous life on 9d1061c from the Citadel. West flute leg is in the joined script.
-last work: 2026-11-14T17:28Z MATCH. LEVEL Belial | STOP door 73 is open. Head 67 did not record by Mists 1. Shot []. at (1451.0, -98.0, -1142.0) y -98.0 region 1671 form 0 resets 0 floor true hp 27 Frame stop_belial. Aids none. Deaths 0. (1451.0, -98.0, -1142.0) region 1671 h...
-next: Life continues on citadel7. Do not start Savage Jungle. Grok does not apply the merges.
-updated: 2026-11-14T17:28Z
+task: Act 1 new-game chain on 22b4b83 (lol2_grok_act1n, private display :8) and the seventh life on 22b4b83 (display :12, past the Citadel exit). Act 2 join script is tools/robot/act2_life.gd on lol2_grok_act2 and waits for a free Godot slot.
+last work: 2026-11-14T19:58Z MATCH. LEVEL Claw DONE on the seventh life, at the Temple entrance. Citadel and Exit were posted at 19:48Z.
+next: Post one line when the cave leg exits, and one when the next life level or an Act 2 leg passes. Do not start a third Godot while both slots are full. Grok does not apply merges.
+updated: 2026-11-14T19:49Z
