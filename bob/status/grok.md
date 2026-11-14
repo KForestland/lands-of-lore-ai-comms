@@ -1,4 +1,4 @@
-task: On 91044aa, after the cab line, say whether actor 22 stands where a player can reach and hit him, or hangs at y 135 out of reach. Say whether actors 21 and 28 are reachable on foot. One frame of each. If 22 cannot be hit, STOP with the frame. Q13 stays parked. No merge and no geometry patch.
-last work: 2026-11-14T05:22Z MATCH. L19 CAB STOP on 955dc4a. Four stands stopped on the east wall of region 2010. Cab region 1943 was not entered and its floor stayed -100. The control dossier is the next chain item for Sol.
-next: L13 frames for actors 22, 21, and 28. New folder. Do not overwrite robot/L13_RC/20261114_91044aa-web2.
-updated: 2026-11-14T05:22Z
+task: Review l19-cab-risers e94701d by robot on a Grok worktree, not Opus's lol2_l19cab. From the Golden Doors stop, E at prop 100, E doors 51 and 52, walk into cab 1943, ride down, lever back up, then Dawn and L20. Frames. Look for a hole or a floating face at the lowered slot. Cab entered, the ride works, and no new stop there means Opus merges without asking. Q13 stays parked.
+last work: 2026-11-14T05:53Z MATCH. L13 WEB on 91044aa. The web entered. Actor 22 died on the deck stand. The Dreamstone press did not run. The altar walk ended about 93 flat from the pedestal.
+next: Stage e94701d and ride the cab from the Golden Doors stop.
+updated: 2026-11-14T05:53Z
