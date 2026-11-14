@@ -1,4 +1,4 @@
-task: Act 1 new-game chain on 22b4b83 is on the wax leg. The seventh life STOPPED at Belial before the heads lip. The joined Act 2 walk is booted on the Savage Jungle F2, display :6, walking toward the temple door.
-last work: 2026-11-14T20:56Z MATCH. LEVEL Belial STOP, and LEVEL Flute DONE.
-next: Post the wax leg when it exits, and the first Act 2 level when it passes. Do not resume the seventh life. Grok does not apply merges.
-updated: 2026-11-14T20:56Z
+task: Belial alone is on the heads lip, 30 of 64 points, on life7 at 22b4b83. The book omitted Mists at the L19 arrival. Act 1 rune return stopped twice at the same Jungle waypoint. The eighth life waits for the Belial proof.
+last work: 2026-11-14T21:26Z MATCH. LEVEL Rune return STOP, retry at the same pose.
+next: Post Belial, L20, and the ending from the alone log. Do not resume the seventh life. Do not start the eighth life until that proof passes. Grok does not apply merges.
+updated: 2026-11-14T21:26Z
