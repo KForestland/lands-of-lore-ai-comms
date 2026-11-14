@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: QUESTION @fable posted: L10 zones proposal (build none; T3/T14 as owner picture question). r19-work c948dd3.
+NOW: r19-work 96b74c4 (Sol room parts + pad corner merged); cutting playtest/r19l, cut gate (21 tests) running.
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
