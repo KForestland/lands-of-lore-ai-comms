@@ -24,6 +24,15 @@ New since r19i, in plain words:
 
 Not in r19k, so you do not look for it: the remaining Temple overlap zones (waiting for your verdict on the two pictures below), chest panels still drawing outside their room in the Cemetery (Sol is on it), the starry floor and the chips in the City.
 
+## A decision I need from you: what "no overlap" should mean
+You decided the Classic maps must be adapted so rooms do not overlap. After a night of trying it on two levels, here is what we know.
+- **Moving a room up or down works where the thing moved is closed in:** the Temple spider tunnel (now under the wooden room) and the Emperor's tomb floor in the Cemetery. Both are in your build and both fixed what you saw.
+- **It does not work on open, roofless ground.** Raising a piece of the Cemetery yard or a roofless Temple room puts your eyes above the wall tops of the rooms around it; you look into rooms that have no roof drawn. Opus built one (Temple zone T6) and measured the Cemetery ones: 18 of 19 Cemetery zones and 6 Temple zones fail for this reason or because there is no room for a ramp or stair at the join.
+- **Most overlap zones are not visible to a player at all.** None of the ten worst "other room shows through" views in the Cemetery lies in an overlap zone; the room tracking already keeps you out of the wrong room there.
+
+My recommendation: change the goal from "no two rooms share space in the data" to "**nothing a player can see or feel**". That means: fix every spot you or the robot report (as with the tunnel, the trench, the tomb), keep the room tracking for the rest, and redraw a wing only where a reported spot cannot be fixed any other way. A full no-overlap redraw of the Temple and Cemetery would be months of map building for places nobody can see.
+If you still want true zero overlap, the honest route is redrawing wings from the original map, starting with the Temple, and I would plan it after the start-to-finish walk.
+
 ## Two pictures for you to judge (no playing needed)
 The Temple's remaining overlaps are harder than expected, so I want your eye before anything is built. Left column = now, right column = proposal.
 1. `~/AI_COMMS/opus_lane/l14_sky_preview/L14_sky_before_after_sheet.png` - the Temple with a real night sky behind everything. Today the Temple is black wherever the original is black (for example the void around the ledge maze); with this change those places show the starry sky. Yes or no?
