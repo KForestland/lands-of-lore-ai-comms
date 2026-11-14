@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: y20 sheet fix l14-door-sheet 8309f01, L14 gate running. READY playtest r19i 91044aa (play_r19i.sh); r19-work = 91044aa.
+NOW: T6 pilot t6-stair-pilot 62b73c6 (branch only), L14 gate running; then stop on zones. r19-work = 84d1fbc.
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
