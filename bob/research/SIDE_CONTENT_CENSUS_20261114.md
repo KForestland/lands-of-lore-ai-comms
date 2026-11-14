@@ -5,7 +5,7 @@ Port checked read-only. Marks use `~/opus_work/lol2_grok_tombposes/scripts/lol2`
 ## Guides on disk
 
 - Prima, *Lands of Lore: Guardians of Destiny Unauthorized Game Secrets* (Edward Carmien): `~/AI_COMMS/reference_hintbook/hintbook.txt` and `lol2-hintbook.pdf`.
-- BradyGames *Official Guide* (Keith / Barton), tesseract OCR: `~/AI_COMMS/reference_hintbook/brady_guide.txt` and `brady_lol2_official_guide.pdf`. The OCR header says printed page = PDF page − 1. This census quotes only the cave-hint sentences that were read (chapter 4 hints). Brady chapters 7–9 (maps and answers) were not mined, so Brady-only secrets outside those sentences are not rows.
+- BradyGames *Official Guide* (Keith / Barton), tesseract OCR: `~/AI_COMMS/reference_hintbook/brady_guide.txt` and `brady_lol2_official_guide.pdf`. The OCR header says printed page = PDF page − 1. Chapter 4 cave hints are in the level tables. Chapters 7–9 (maps and answers, file lines 6254–9250) were read for named side areas, puzzles, secrets, and items. A sentence that repeats a row already in a level table was not copied. Map-legend coordinates the OCR did not turn into a sentence are not rows.
 - German secrets guide *Schon gewusst? – Lands of Lore II* (Onkel Dave): `~/AI_COMMS/reference_schon_gewusst_lol2/schon-gewusst-lol2.txt` and `schon-gewusst-lol2.pdf`. Every numbered section is a row. The guide says these quests do not finish the game.
 
 Prima chapters 7–14 were not read line by line. Contents titles that were not matched to a sentence already in the tables are listed at the end and marked unknown in the data. No page numbers were assigned.
@@ -209,24 +209,56 @@ Marked unknown in the data. A same-area owner is noted only so it is not mistake
 | Three Statues and Another Puzzler | unknown in the data | `l14_idol_pedestals.gd` not matched. |
 | The Faux-Belial (temple chapter) | unknown in the data | `l14_belial.gd` is the Hive Lord, not read against this title. |
 | Secret Storeroom | unknown in the data | No storeroom string in `l16*.gd`. |
-| Dragon Special Scene Area | unknown in the data | `l16_dragon_room.gd` not read against this title. |
-| Silverleaf Chasm | unknown in the data | Not `l16_greenhouse.gd`. |
-| Chip Quest: Water Torture, Leap of Faith, Dancing in the Fountain, Be a Blockhead | unknown in the data | Not matched to `l16_sw_chips.gd`. |
-| Starry Tower | unknown in the data | No starry-tower owner read. |
+| Dragon Special Scene Area | partly | Prima chapter body not read. Brady chapter 9 says an edged weapon on the living dragon opens a secret door into the caverns. `l16_dragon_room.gd` chops prop 241 and then the telepad exits to L17. No door id is stored. |
+| Silverleaf Chasm | missing | Prima chapter body not read. Brady chapter 9 names a southwest hallway that ends in a drop, with silverleaf inside, and an ivory chip that makes a path and comes back out. No such room owner in `l16*.gd`. `l16_greenhouse.gd` is the glass pyramid, a different row. |
+| Chip Quest: Water Torture, Leap of Faith, Dancing in the Fountain, Be a Blockhead | partly | Prima chapter body not read. Brady chapter 9 names four ivory chips, the fountain chip, the goblin-room chip, two trapped chips, and the southwest cylinder. `l16_sw_chips.gd` sets pedestals 173–176 and leaves pyramid 604 and doors 89–91 shut. `l16_nw_traps.gd` breaks the brick, the fireball, and the ice. A fourth L16 ivory placement is still unnamed there. |
+| Starry Tower | partly | Prima chapter body not read. Brady chapter 9 raises four tower sections by dragging a dragon box through each teleporter. `l16_ne_tower.gd` and `l16_centre_tower.gd` host the NE arrival and the mantle bars. Both say the box and the yellow figure have zero placements, and `SECTIONS` stays 0. `atlas_places.gd` names the starry tower at that NE arrival. |
 | The Last Faux-Belial | unknown in the data | Chapter body not read. |
+
+## Brady chapters 7–9, side finds not already a row
+
+| Level | Thing (Brady name) | Mark | Evidence |
+|---|---|---|---|
+| L1_DC | Secret room before the bridge: Guardian Sphere, Pyra Pod, and a Light Crossbow, after Kenneth escapes | missing | No `Pyra`, Guardian Sphere, or Light Crossbow placement in `cave*.gd`. `item_handlers.gd` leaves the Pyrapod handler UNKNOWN. |
+| L3_DH | Bypass the Museum on the Shining Path by a switch that lowers bars | partly | `museum_mirror_route.gd`: walking into region 1419 travels to the jungle. The header does not name a bar-lowering switch. |
+| L3_DH | Switch behind the painting of Gladstone, if the Skeleton Key is lost | partly | `museum_gallery.gd` moves painting 54 and pulls lever 53 to open grate 51. No Gladstone string, and the header does not name the Time Travel exhibit. |
+| L4_HJ | Ironwood sap from the trees, with the cave aloe | in the port | `jungle_harvest_state.gd`: ironwood sap trees are props 261–267 and 310. |
+| L5_HC | Plate armor in the Executioner's nest; Spark it | missing | `hive_nest.gd` is the nest visual. No plate grant in `hive*.gd`. |
+| L7_DH | Bookcases that open secret doors | partly | `dark_halls_bookcases.gd` toggles panels 51, 58, and 59. The header does not name loot behind them. |
+| L8_SJ | Shaman's Treasure Cache: kill him for a Crystal Shard, or bring one from the Temple; Circlet, War Blade, a scroll, Dampen Charm, and Amaranth Serum; skull torches raise the stairs | partly | `l8_cache_ladder.gd` is only the climb. `l8_shaman_trade.gd` gives the serum for another Silverleaf, not for a kill. `l8_tree.gd` slots a shard in the tree. `l8_night.gd` lights skull torches and does not raise stairs. |
+| L8_SJ | Lamplight Lairs, the Queen, and her eggs | missing | No lamplight string in `l8*.gd`. |
+| L8_SJ | Wild One trap; attack the rope to get out | partly | `l8_straw_trap.gd` is the straw pit on the Larkhon approach. No rope attack in that header. |
+| L9_DR | Gauntlets of Might in the Mage's Tower | missing | No gauntlet string in `l9*.gd`. |
+| L9_DR | Gorgonite nodules, up to three clicks on a dead Stone Squid | missing | No gorgonite placement in `l9*.gd`. |
+| L9_DR | Iron rod in the southeast ruined houses; it deflects a spark | missing | No iron-rod owner in `l9*.gd`. |
+| L9_DR | Stone of the Cobra, above a crate shove | missing | No cobra owner in `l9*.gd`. |
+| L10_DC | Knock down bone piles or skulls in the catacombs | missing | `l10_braziers.gd` is template 23 bone braziers, not a knock-down pile. |
+| L12_CM | Bracers of Valor, hidden in a barbarian house | missing | No valor string in `l12*.gd`. |
+| L12_CM | Tar crystals from the bubbling pools | missing | No tar-crystal owner in `l12*.gd`. |
+| L12_CM | Ice seeds from the stalactites | missing | No ice-seed owner in `l12*.gd`. |
+| L12_CM | Greater Bezoar Ring in the ice-floe cave | missing | `l12_niche_armor.gd` is the obsidian mail only. No bezoar string in `l12*.gd`. |
+| L13_RC | Brain switches open a secret passage to a teleport, plus a slave-cavern cache of Silverleaf, aloe, and Lamplight eggs | partly | `l13_elevator.gd` uses one brain as a Spark receiver for the lift. `l13_eggs.gd` eye switch opens the side irises. No cache and no secret teleport passage in those headers. |
+| L14_HT | Quill pen opens a secret passage | in the port | `l14_quill.gd`, prop 344. |
+| L14_HT | Kneel before the God of Life or the God of Death for an aloe leaf or a poison plant | missing | No kneel or god-of-life string in `l14*.gd`. |
+| L14_HT | Room with an aloe bush | missing | No aloe-bush owner in `l14*.gd`. |
+| L16_CA | Dark Bow, taken while the oil fountain burns | in the port | `l16_se_oil.gd`: prop 392 burns, then dormant item row 24 shows as the Dark Bow. |
+| L17_HC | Hive Mother valve, then the decaying organ that a guardian replaces | missing | `l17_cavern_run.gd` records the run and says killing is optional and nothing is spawned. No mother, valve, or organ. |
+| L19_BC | Three levers across the acid, then a floor rises in the pool | partly | `l19_drain_path.gd` switches 50, 71, and 72 can drain the guck, and leaving it is allowed. No acid string and no ranged-shot gate in that header. |
+| L19_BC | Kill the imp and drag the body onto the mark to open a hidden door | partly | `l19_ghostly_heads.gd`: Mists, imp actor 31, and a drag onto a circle. The circle and the fountain are adapters. The header does not name a hidden door. |
+| L19_BC | Ruby of Truth from Dawn | in the port | `l19_dawn_curse.gd` grants `act2:L19_BC:ruby_of_truth`, definition 69, into the pack. |
 
 ## Counts
 
-German sections: 96. Other rows: 9 read Prima or Brady sentences that are not the same German section (pillar shove, crate maces, dishes stone, bridge lever, three cemetery charger rows counted as one, barrel, oil, silverleaf, greenhouse) plus 15 unread Prima titles.
+German sections: 96. Other rows before this Brady pass: 9 read Prima or Brady sentences that are not the same German section, plus 15 Prima titles. This pass adds 27 Brady side rows and re-marks four of those Prima titles from the chapter 9 sentences.
 
 | Mark | Count |
 |---|---|
-| in the port | 14 |
-| partly | 30 |
-| missing | 41 |
-| unknown in the data | 35 |
-| Total rows | 120 |
+| in the port | 18 |
+| partly | 41 |
+| missing | 57 |
+| unknown in the data | 31 |
+| Total rows | 147 |
 
-in the port: entrance deaths, pillar-trap ceiling, museum curtain, skeleton key, ivory chips, lightning crystal, summon-corridor niche loot, Ruloi basin weapons, cemetery globe chargers, barrel, oil, silverleaf trees, greenhouse, armory.
+in the port, added this pass: ironwood sap, the quill passage, the Dark Bow, and the Ruby of Truth. The earlier fourteen stay: entrance deaths, pillar-trap ceiling, museum curtain, skeleton key, ivory chips, lightning crystal, summon-corridor niche loot, Ruloi basin weapons, cemetery globe chargers, barrel, oil, silverleaf trees, greenhouse, armory.
 
-Brady chapters 7–9 were not mined. Those pages can add rows this file does not have.
+Brady chapters 7–9 were mined for named side finds. A map coordinate with no readable sentence is still not a row.
