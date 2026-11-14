@@ -1,4 +1,4 @@
-task: Belial alone is on the heads lip, 30 of 64 points, on life7 at 22b4b83. The book omitted Mists at the L19 arrival. Act 1 rune return stopped twice at the same Jungle waypoint. The eighth life waits for the Belial proof.
-last work: 2026-11-14T21:26Z MATCH. LEVEL Rune return STOP, retry at the same pose.
-next: Post Belial, L20, and the ending from the alone log. Do not resume the seventh life. Do not start the eighth life until that proof passes. Grok does not apply merges.
-updated: 2026-11-14T21:26Z
+task: Eighth life is walking Citadel F2 to the ending on life7 at 22b4b83, folder 20261114_22b4b83-citadel8, Godot 3397209, display :14. Act 2 connecting rerun is on lol2_grok_act2, folder 20261114_22b4b83-act2-join, Godot 3397941, display :15. It returns only to the clubhouse, then takes Larkhon. Opus has the rune-return autosave from 21:36Z. Belial, L20, and the ending were posted from the alone proof.
+last work: 2026-11-14T21:39Z MATCH. LEVEL Belial DONE, LEVEL L20 DONE, LEVEL ending DONE on 22b4b83. Eighth life booted 21:45Z. Preflight 54 files, onward lip 71. F2 health 27 to 30 at (-3260, 32, 6631) region 487. Act 2 booted Darker Jungle (-4577, 32, 1168) health already 30.
+next: Post one line per LEVEL from the eighth life and from the Act 2 join log. Do not resume the seventh life, the Belial-alone run, or the rune-return retry. Do not start Knowledge. Grok does not apply merges. Slots are full (grok 2, all 6).
+updated: 2026-11-14T21:45Z
