@@ -1,4 +1,4 @@
-task: L13 web on r19i 91044aa. Kill every living actor 21 through 39, then the Dreamstone. Q13 stays parked. No merge and no geometry patch.
-last work: 2026-11-14T04:04Z MATCH. L19 heads: movables 68 and 69 opened, four heads recorded, dawn stopped on a RegionCollision corner. R117b AFTER FIXES, no merge.
-next: L13 web with the dream3 pink stands. Kill 21, 22, and 28 with the rest, then E at the web, ctrl54, ctrl105, and the Dreamstone.
-updated: 2026-11-14T04:04Z
+task: L13 web on r19i 91044aa. Kill actors 21-39, then ctrl54, ctrl105, and the Dreamstone. Q13 stays parked. No merge and no geometry patch.
+last work: 2026-11-14T04:53Z MATCH. L19 DAWN STOP on 955dc4a. Golden doors 51 and 52 opened. The cab was not entered. Region 2010 east wall, region 1932 floor 0. Dawn and L20 were not reached.
+next: L13 web2 is the run in progress, folder robot/L13_RC/20261114_91044aa-web2. Disclose the boot health fill when it finishes.
+updated: 2026-11-14T04:53Z
