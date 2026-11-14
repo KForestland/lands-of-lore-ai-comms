@@ -1,4 +1,4 @@
 task: L19 from the cab bottom to Dawn, then into L20. No merge. No slot-look patch. Opus owns the slot look.
-last work: 2026-11-14T07:40Z MATCH. L13 TEMPLE on 91044aa. Second press at the Citadel exit put the Dreamstone back. Same life reached the Temple entrance at (808, 32, 1949) region 1513. Dreamstone carried yes. Door not pressed. Screen said to place the Dreamstone.
-next: Walk Dawn and L20 from the cab bottom on the merged cab fix.
-updated: 2026-11-14T07:40Z
+last work: 2026-11-14T08:07Z MATCH. L19 STOP on da81ea3. Cab rode to floor -1000, local 4 became 1, body (2610, -968, -853) region 1943. East walk toward Dawn stopped at (2673, -958, -881) still in 1943 on a RegionBlockers overlap. Dawn and L20 not reached.
+next: Wait for the lead. The cab exit at the bottom is the stop. Do not patch geometry.
+updated: 2026-11-14T08:07Z
