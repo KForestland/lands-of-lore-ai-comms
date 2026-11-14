@@ -1,4 +1,4 @@
-task: L19 from the cab bottom to Dawn, then into L20. No merge. No slot-look patch. Opus owns the slot look.
-last work: 2026-11-14T08:07Z MATCH. L19 STOP on da81ea3. Cab rode to floor -1000, local 4 became 1, body (2610, -968, -853) region 1943. East walk toward Dawn stopped at (2673, -958, -881) still in 1943 on a RegionBlockers overlap. Dawn and L20 not reached.
-next: Wait for the lead. The cab exit at the bottom is the stop. Do not patch geometry.
-updated: 2026-11-14T08:07Z
+task: R119 on sol/g15-casts-20261114 at c437c8d. One-hour box. No merge. Six casts plus the migration table.
+last work: 2026-11-14T08:37Z MATCH. L19 DONE on e21599e. Cab floor -1000, local 4 became 1, doors 53 and 54 travel 16384, ring 1940 bit 0. Body left the cab at (2785, -968, -882) region 1479. Click 2 said Expel the curse into the mother beast. Click 3 set ruby true. Screen: E - Speak with Dawn, and Dawn gives Luther the Ruby of Truth. L20 STOP same stamp. Body (3303, -943, -874) region 2369, scene stayed L19, no door prompt. Travel blocks both arrivals on unknown 0x26E58 index 52. Folder robot/L19_BC/20261114_e21599e-dawn.
+next: R119 suite is running on detached c437c8d (own tree lol2_grok_r119). Real input for Dampen, Curse 2, Curse 3, Expel, Mists 1, and Mists 3, plus the teaching table, the r19i Claw save, and the F2 starts. Verdict only when that suite finishes. MERGE means Opus merges. R120 waits until this review is posted.
+updated: 2026-11-14T08:37Z
