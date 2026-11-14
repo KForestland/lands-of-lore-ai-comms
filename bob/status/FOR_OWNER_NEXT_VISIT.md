@@ -1,4 +1,4 @@
-# For your next visit (lead, written 13 November 2026, evening)
+# For your next visit (lead, updated 14 November 2026, 15:00)
 
 ## News first (14 November, morning)
 - **The robot reached the ending.** With real keyboard input it has now walked every level from the Ruloi Citadel to the end of the game: Citadel, Dreamstone, back to the Temple, City of the Ancients, Hidden Caverns, Belial's caverns, Dawn, the final level, Expel into the mother beast, Belial, the ending. This was done in separate sittings from set-up starts, not yet as one continuous life; that run is ordered next.
@@ -6,9 +6,9 @@
 - **All eight main-quest spells are built** (Dampen, Curse 2, 3 and 5, Mists 1 and 3, Prism 5, Summon 3). The "press E" stand-ins at the crevasse, the ghostly heads, the mother beast and the false Scotia are gone: you cast now. Number keys pick a school, Q casts, Ctrl+Q and Shift+Q are the stronger charges.
 - **A question on the stored spells:** what was built is scrolls for Spark, Mists and Prism (first use teaches the spell, later scrolls cast it and are used up). The Cemetery chargers and glass globes are unchanged. Is that what you meant by "the orbs are stored spells", or should a charged orb itself cast when used?
 
-## Play this: build r19k (newest)
+## Play this: build r19l (newest)
 ```
-~/lol2_playtests/play_r19k.sh
+~/lol2_playtests/play_r19l.sh
 ```
 Play normally, F10 where something is wrong. In the order I would find most useful:
 1. **Huline Temple** from its arrival start (F2). The robot walks all of it now; your walk is the other half of your milestone.
@@ -21,8 +21,10 @@ New since r19i, in plain words:
 - **Belial's caverns:** corridor door 73 opens after you raise the channel. At the end of the long corridor the switch opens the way into the lift to Dawn; the lift opens its doors at both ends; saving while riding keeps the ride going; the door to the final level works.
 - **Magic:** one spell book with the school pages; eight main-quest casts; scrolls that store a spell; old saves keep the spells they should have.
 - **Claw Mountains:** turning into the lizard works right where you arrive (it was refused on sloped ground).
+- **Cemetery objects:** chest panels, lids and crypt fronts are drawn only with their own room. One crypt doorway that showed a red void with floating blocks now shows the stone room. Tell me if your "chest panels outside the rooms" is gone; if not, F10 at that view.
+- **Citadel:** the teleporter pad works when you step further onto it from its corner.
 
-Not in r19k, so you do not look for it: the remaining Temple overlap zones (waiting for your verdict on the two pictures below), chest panels still drawing outside their room in the Cemetery (Sol is on it), the starry floor and the chips in the City.
+Not in r19l, so you do not look for it: the remaining Temple overlap zones (see the decision below), the starry floor and the chips in the City, the tiger-cave switch and the jungle shaft flood (Sol is building those from your words).
 
 ## A decision I need from you: what "no overlap" should mean
 You decided the Classic maps must be adapted so rooms do not overlap. After a night of trying it on two levels, here is what we know.
@@ -39,15 +41,12 @@ The Temple's remaining overlaps are harder than expected, so I want your eye bef
 2. `~/AI_COMMS/opus_lane/t6_on_sky/T6_on_sky_sheet.png` - one overlapping room raised by 90 with three new short stairs, on top of that sky. Does a raised room with added stairs look acceptable to you as a way to end overlaps?
 (For comparison, the same raised room WITHOUT the sky change, which I rejected: `~/AI_COMMS/opus_lane/t6_pilot/T6_before_after_sheet.png`.)
 
-## What happened on 13 November
-- You walked from the start of the game to the Ruloi Citadel on r19g: milestone 1 met for walking and quests. The Cemetery still looks wrong in places (rooms showing through, chest panels outside rooms); that is queued as look work.
-- Next milestone, yours: the Dreamstone in the Citadel and back to the Temple.
-- Your decision: the Classic maps are adapted so no rooms overlap. A study of how to do it best is running (Grok); the plan comes to you before any large rebuild.
-
-## In work while you are away
-- Opus: merge of the Cemetery work, the Temple upper-floor way (the pew blocker), the tunnel and trench fixes, then build r19h.
-- Sol: spell core (Dampen, Expel, Mists, Prism, Summon and the three orbs); object parts hidden with their room.
-- Grok: robot walk of the Ruloi Citadel to the Dreamstone; overlap count on all 15 levels; method study.
+## In work while you play
+- Sol: what a save keeps on every Act 2/3 level (already found and fixed: raised Temple floors were lost on load), then the tiger-cave switch, the jungle shaft flood and the Temple plant bed from your words. Item grants are built and waiting for review.
+- Grok: one continuous life from the Citadel to the ending on r19k/r19l (three attempts stopped on the robot's own route in the Temple; the fourth is next), and three reviews.
+- Opus: the general "loading a save does not replay a room's entry event" rule is built and waits for Grok's review.
 
 ## Sunday 15 November
 The weekly review. I will ask you for the usage screenshots.
+
+One-screen status per level: `~/AI_COMMS/status/STATUS.md`.

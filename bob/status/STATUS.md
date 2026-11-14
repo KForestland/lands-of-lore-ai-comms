@@ -1,6 +1,6 @@
 # LoL2 status, 2026-11-14 13:30Z (G-07, hand refresh from the robot's runs)
 
-**Build to play: r19k** (`~/lol2_playtests/play_r19k.sh`). r19l (room parts + pad corner) comes after Grok's R121.
+**Build to play: r19l** (`~/lol2_playtests/play_r19l.sh`) = r19k + Cemetery object parts drawn with their rooms + Citadel pad corner.
 
 | Level | F2 start | Robot walked to | Known stops | Ready for you? |
 |---|---|---|---|---|
