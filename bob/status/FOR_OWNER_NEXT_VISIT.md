@@ -1,4 +1,4 @@
-# For your next visit (lead, updated 14 November 2026, 19:20)
+# For your next visit (lead, updated 14 November 2026, 22:00)
 
 ## News first (14 November, morning)
 - **The robot reached the ending.** With real keyboard input it has now walked every level from the Ruloi Citadel to the end of the game: Citadel, Dreamstone, back to the Temple, City of the Ancients, Hidden Caverns, Belial's caverns, Dawn, the final level, Expel into the mother beast, Belial, the ending. This was done in separate sittings from set-up starts, not yet as one continuous life; that run is ordered next.
@@ -6,13 +6,13 @@
 - **All eight main-quest spells are built** (Dampen, Curse 2, 3 and 5, Mists 1 and 3, Prism 5, Summon 3). The "press E" stand-ins at the crevasse, the ghostly heads, the mother beast and the false Scotia are gone: you cast now. Number keys pick a school, Q casts, Ctrl+Q and Shift+Q are the stronger charges.
 - **A question on the stored spells:** what was built is scrolls for Spark, Mists and Prism (first use teaches the spell, later scrolls cast it and are used up). The Cemetery chargers and glass globes are unchanged. Is that what you meant by "the orbs are stored spells", or should a charged orb itself cast when used?
 
-## Play this: build r19m (newest)
+## Play this: build r19n (newest)
 ```
-~/lol2_playtests/play_r19m.sh
+~/lol2_playtests/play_r19n.sh
 ```
 **For your full playthrough: play from wherever you like, normally, F10 where you stop or something is wrong.**
 
-**One warning for this build (r19m):** in Belial's caverns the four ghostly heads need the Mists of Doom spell (key 4, then Q). It is only taught by picking up and using a Mists of Doom scroll in the Temple or the City. If you reach the heads without it you are stuck. A build that teaches it at the heads (r19n) is in review; if this note says r19n above, ignore this warning.
+**Spells you need are taught where you first need them.** If you reach a place that needs a spell you never picked up (for example Mists of Doom at the four ghostly heads in Belial's caverns), a line on screen names the spell and the keys, stays up for six seconds and is written in the Journal. Pressing E on the thing that needs the spell shows the line again. A spell that cannot work yet still tells you why.
 
 If you prefer single levels, in the order I would find most useful:
 1. **Huline Temple** from its arrival start (F2). The robot walks all of it now; your walk is the other half of your milestone.

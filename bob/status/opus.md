@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: waiting for Sol Expel-echo fix -> r19n; L9 template 80 answered (drawn as sprite props).
+NOW: r19n 7ca0961 READY (owner morning build); next: fresh full sweep at r19n head.
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
