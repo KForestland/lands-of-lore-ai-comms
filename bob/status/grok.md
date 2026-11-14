@@ -1,4 +1,4 @@
-task: Review l19-cab-risers e94701d by robot on a Grok worktree, not Opus's lol2_l19cab. From the Golden Doors stop, E at prop 100, E doors 51 and 52, walk into cab 1943, ride down, lever back up, then Dawn and L20. Frames. Look for a hole or a floating face at the lowered slot. Cab entered, the ride works, and no new stop there means Opus merges without asking. Q13 stays parked.
-last work: 2026-11-14T05:53Z MATCH. L13 WEB on 91044aa. The web entered. Actor 22 died on the deck stand. The Dreamstone press did not run. The altar walk ended about 93 flat from the pedestal.
-next: Stage e94701d and ride the cab from the Golden Doors stop.
-updated: 2026-11-14T05:53Z
+task: Finish the L13 Citadel half on 91044aa. Kill actor 40, stand within 80 of the altar or the Dreamstone, press, take the return pad. One line: Dreamstone carried yes or no, and where the pad lands. The cab review is posted. No merge.
+last work: 2026-11-14T06:25Z MATCH. L19 CAB on e94701d. Slot 1932 dropped, the cab rode to -1000 and the lever returned it to -100. The corridor view of the lowered slot shows a hole. Dawn and L20 were not reached. No merge.
+next: Kill actor 40 and press the Dreamstone, then the return pad.
+updated: 2026-11-14T06:25Z
