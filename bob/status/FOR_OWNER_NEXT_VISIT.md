@@ -1,4 +1,4 @@
-# For your next visit (lead, updated 14 November 2026, 15:00)
+# For your next visit (lead, updated 14 November 2026, 19:20)
 
 ## News first (14 November, morning)
 - **The robot reached the ending.** With real keyboard input it has now walked every level from the Ruloi Citadel to the end of the game: Citadel, Dreamstone, back to the Temple, City of the Ancients, Hidden Caverns, Belial's caverns, Dawn, the final level, Expel into the mother beast, Belial, the ending. This was done in separate sittings from set-up starts, not yet as one continuous life; that run is ordered next.
@@ -6,14 +6,24 @@
 - **All eight main-quest spells are built** (Dampen, Curse 2, 3 and 5, Mists 1 and 3, Prism 5, Summon 3). The "press E" stand-ins at the crevasse, the ghostly heads, the mother beast and the false Scotia are gone: you cast now. Number keys pick a school, Q casts, Ctrl+Q and Shift+Q are the stronger charges.
 - **A question on the stored spells:** what was built is scrolls for Spark, Mists and Prism (first use teaches the spell, later scrolls cast it and are used up). The Cemetery chargers and glass globes are unchanged. Is that what you meant by "the orbs are stored spells", or should a charged orb itself cast when used?
 
-## Play this: build r19l (newest)
+## Play this: build r19m (newest)
 ```
-~/lol2_playtests/play_r19l.sh
+~/lol2_playtests/play_r19m.sh
 ```
-Play normally, F10 where something is wrong. In the order I would find most useful:
+**For your full playthrough: play from wherever you like, normally, F10 where you stop or something is wrong.**
+
+**One warning for this build (r19m):** in Belial's caverns the four ghostly heads need the Mists of Doom spell (key 4, then Q). It is only taught by picking up and using a Mists of Doom scroll in the Temple or the City. If you reach the heads without it you are stuck. A build that teaches it at the heads (r19n) is in review; if this note says r19n above, ignore this warning.
+
+If you prefer single levels, in the order I would find most useful:
 1. **Huline Temple** from its arrival start (F2). The robot walks all of it now; your walk is the other half of your milestone.
 2. **Claw Mountains** (F2), your full run with the two issues you know of. Changing form is now a spell: press 3, then Ctrl+Q.
 3. **Ruloi Citadel** (F2) to the Dreamstone, if you have time: globe, eye, elevator, vault, light the spires with Spark, the 21 steps, the plates, kill every Ruloi before the web opens, the boss, the altar, the Dreamstone.
+
+New since r19l (14 Nov evening):
+- **F5 and F9** no longer fail with "An autosave is finishing"; they wait a moment and then save or load.
+- **Loading a save** no longer repeats what happens when you walk into the spot you stand in.
+- **The world is saved:** a lit spire, the placed flute, gate halves, part-open doors, raised floors and lifts keep their state.
+- **Your three gaps:** the tiger-cave platform (E on the lever, running jump, the Blizzard Axe), the water in the Savage Jungle shaft after the Belial statue, the aloe bed in the Temple. Tell me if the first two match what you remember.
 
 New since r19i, in plain words:
 - **Temple:** no floor sheet sticks up in front of the closed doors 92/93.
@@ -24,7 +34,7 @@ New since r19i, in plain words:
 - **Cemetery objects:** chest panels, lids and crypt fronts are drawn only with their own room. One crypt doorway that showed a red void with floating blocks now shows the stone room. Tell me if your "chest panels outside the rooms" is gone; if not, F10 at that view.
 - **Citadel:** the teleporter pad works when you step further onto it from its corner.
 
-Not in r19l, so you do not look for it: the remaining Temple overlap zones (see the decision below), the starry floor and the chips in the City, the tiger-cave switch and the jungle shaft flood (Sol is building those from your words).
+Not in r19l, so you do not look for it: the remaining Temple overlap zones (see the decision below), the starry floor and the chips in the City, the objects (chests, lids, breakables) on the levels after the Cemetery, which Sol is building now.
 
 ## A decision I need from you: what "no overlap" should mean
 You decided the Classic maps must be adapted so rooms do not overlap. After a night of trying it on two levels, here is what we know.
