@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: L10 islands l10-islands b4e4406, L10 gate running. Parked previews: l14-sky-preview c95002a, l14-sky-t6 fc1990d, t6-stair-pilot 62b73c6. r19-work = 84d1fbc.
+NOW: L10 islands l10-islands b4e4406, L10 gate 46/76 green. Parked previews: l14-sky-preview c95002a, l14-sky-t6 fc1990d, t6-stair-pilot 62b73c6. r19-work = 8290ac1 (door 73 merged).
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.

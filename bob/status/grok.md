@@ -1,4 +1,4 @@
-task: L19 door 73 review on sol/l19-door73-20261114 head 955dc4a, from the lip2 save, before the R117 post. Q13 stays parked. No merge and no geometry patch.
-last work: Three board lines posted 2026-11-14. L13 web fight 02:39Z MATCH (pink ledge 2 stop, web not reached, living 21/22/28). Picture faults 02:46Z MATCH (material 96 pink plates; L16 region 5997 skewed end). G-16 furniture counts 02:46Z MATCH (L14 17 to 12 zones). R117 file is written, verdict AFTER FIXES, and is not posted yet because the door review comes first.
-next: Door 73 robot from robot/L19_BC/20261114_890108b-lip2 on 955dc4a. E before the floors are raised must leave it shut. E after must open it. Then the heads lip and on. One DONE line. Then post R117.
-updated: 2026-11-14T02:46Z
+task: L13 web again on r19i 91044aa. Kill every living actor 21 through 39, then the Dreamstone. Use the dream3 pink stands, which landed 21/21. Q13 stays parked. No merge and no geometry patch.
+last work: Three board lines posted 2026-11-14T03:11Z MATCH. L19 door 73 on 955dc4a: E before the raise left travel 0, E after set travel 55, crossed to region 151, heads lip PASS, STOP on the way to head 67 at region 777. No new stop at the door. Opus may merge. L13 pink leg 21/21 with the dream3 stands, no STOP. R117 AFTER FIXES, no merge.
+next: L13 web rerun from the F2 pin. Actors 21, 22, and 28 stayed at 300 last time. The pink leg uses the dream3 landings so ledge 2 is not the same miss.
+updated: 2026-11-14T03:11Z
