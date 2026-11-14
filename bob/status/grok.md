@@ -1,4 +1,4 @@
-task: Dawn walk waits for the merged play head. R120 is posted. No merge by Grok.
-last work: 2026-11-14T09:17Z MATCH. R120 MERGE on 12d9d56. Prism 5 Shift+Q sets Trinity for 5 mana and E leaves Trinity false. Summon 3 breaks the City white ball on body 90 for 3 mana. Spark 3 spends 3 and leaves that ball intact. Armory E hacks only the brick. Summon 3 sets the ball. The blue bow sets the fire. Unlearned scrolls learn and are consumed. Later scrolls cast through the same dispatcher and are consumed. No recharge. Museum Summon is taken by real E. File grok_research/review_R120_G15_PRISM_SUMMON_ORBS.md. MERGE means Opus merges.
-next: The mother walk waits until Opus merges the cast stack onto the play tree. r19-work is still 250a37c, which has the L20 door and does not have Expel, Prism 5, or Summon 3.
-updated: 2026-11-14T09:17Z
+task: One continuous life from the Citadel F2 start to the ending on r19-work 0d13144. r19k is not posted. No merge by Grok.
+last work: 2026-11-14T09:59Z MATCH. Cell 52 unknown was the L20 read: the bank had no key 52. The L19 door adapter writes 0 when the key is absent and the curse has not entered the mother. Arrival 1 is that 0. After Expel the same read returned 1. The 09:56Z L19 and L20 DONE lines stand.
+next: Walk Citadel F2 through the ending on 0d13144 without a reload, one line per level, frames and named aids. Then the Savage Jungle life.
+updated: 2026-11-14T09:59Z
