@@ -1,6 +1,8 @@
 # For your next visit (lead, updated 14 November 2026, 22:00)
 
-## News first (14 November, morning)
+## News first (14 November)
+- **One unbroken life from the Citadel to the ending** (23:14Z, on the code of your build r19n): no reload, no aids, no deaths. Seven earlier lives stopped, six on the robot's own route and one on a real fault: Mists of Doom was only taught by an optional scroll, so a player could get stuck at the four ghostly heads. That is fixed in r19n.
+- **Act 1 from New Game** is walked by the robot through the Cave, the Museum, the Jungle, the flute route, the wax and the runes; it stalls on the walk back with the runes, which only happens in the robot's long run (a clean test of the same path passes). Opus is finding out what stands in the way.
 - **The robot reached the ending.** With real keyboard input it has now walked every level from the Ruloi Citadel to the end of the game: Citadel, Dreamstone, back to the Temple, City of the Ancients, Hidden Caverns, Belial's caverns, Dawn, the final level, Expel into the mother beast, Belial, the ending. This was done in separate sittings from set-up starts, not yet as one continuous life; that run is ordered next.
 - **Your milestone "the Dreamstone and back to the Temple" is walked by the robot** in one life. Your own walk is the other half.
 - **All eight main-quest spells are built** (Dampen, Curse 2, 3 and 5, Mists 1 and 3, Prism 5, Summon 3). The "press E" stand-ins at the crevasse, the ghostly heads, the mother beast and the false Scotia are gone: you cast now. Number keys pick a school, Q casts, Ctrl+Q and Shift+Q are the stronger charges.
