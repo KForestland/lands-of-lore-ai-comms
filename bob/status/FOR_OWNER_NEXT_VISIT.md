@@ -18,6 +18,12 @@ The robot has also walked on from the Temple through the City of the Ancients an
 
 **A question for you:** in the original, must you raise the four tower sections in the City (the starry floor) before you can go on? If yes, we move it back onto the main quest.
 
+## Two pictures for you to judge (no playing needed)
+The Temple's remaining overlaps are harder than expected, so I want your eye before anything is built. Left column = now, right column = proposal.
+1. `~/AI_COMMS/opus_lane/l14_sky_preview/L14_sky_before_after_sheet.png` - the Temple with a real night sky behind everything. Today the Temple is black wherever the original is black (for example the void around the ledge maze); with this change those places show the starry sky. Yes or no?
+2. `~/AI_COMMS/opus_lane/t6_on_sky/T6_on_sky_sheet.png` - one overlapping room raised by 90 with three new short stairs, on top of that sky. Does a raised room with added stairs look acceptable to you as a way to end overlaps?
+(For comparison, the same raised room WITHOUT the sky change, which I rejected: `~/AI_COMMS/opus_lane/t6_pilot/T6_before_after_sheet.png`.)
+
 ## What happened on 13 November
 - You walked from the start of the game to the Ruloi Citadel on r19g: milestone 1 met for walking and quests. The Cemetery still looks wrong in places (rooms showing through, chest panels outside rooms); that is queued as look work.
 - Next milestone, yours: the Dreamstone in the Citadel and back to the Temple.
