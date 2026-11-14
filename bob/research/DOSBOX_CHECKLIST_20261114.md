@@ -1,0 +1,31 @@
+# DOSBox checklist, 2026-11-14
+
+One sitting. Source: `UNKNOWN_ORIGINAL_BEHAVIOUR.md`. No patch. Stands are that note's. Owner stands are (x, z) plus height. A printed triple is copied as printed. No named DOSBox save, cheat, or level select is in that note or the research notes it cites.
+
+Start at L8 and take the levels in order (L8, L10, L12, L13, L14, L16, L17, L19, L20). If time runs out, skip the optional L14 aloe bed and the L16 side content the note parks as not gating L17: the starry floor, the southwest chip placement, and the fourth-chip hunt.
+
+Closed in the source, not rows: control 53, the R116 landing, Dawn's hintbook talk, and the temple doors east of door 92. The L8 shaft-timing bullet and the L12 handler-84 bullet are the same checks as the shaft and tiger rows. The pyramid and doors 89-91 question is the southwest-chips row; the fourth-chip row does not repeat it.
+
+| Level | Where to stand | What to do | What to watch for | Fastest way there |
+| --- | --- | --- | --- | --- |
+| L8 | Jungle shaft after the Belial statue. (1560, -1340), height 32, region 396, floor 0. The pit atlas point is (1245, -1392). | After the statue destroys the worm, look down this shaft before the wake-up on the Savage Jungle shore, and again after it. | Whether water stands in the shaft, how high, and when the fill starts. The note leaves the trigger and the timing unread. | not in the note |
+| L10 | Cemetery wall. (468, -1805), height -88. | Stand at that wall and use whatever fixture is on it. | What is mounted there, and what using it does, including which stored spell, if it gives one. | not in the note |
+| L12 | Tiger-cave lake deck. (3895, -8899), height -240, feet about -272. Region 1899, floor -275. | Enter the snow tiger's lair as the lizard. Use the control in the small cave. | Whether a square or a tower rises at this stand, and what weapon is on it. The same check still has the original switch, the region 1899 writer, the reward placement, and handler 84's cold effect unread. Prima's globe and Brady's switch stay two controls. | not in the note |
+| L12 | Ruloi entrance. (3063, -18712), height -1198. | At the entrance he means, try the nearby object and the farther gate. | Whether the original plays a movie, opens a door, or changes level, and which of those two is the control. | not in the note |
+| L13 | Vault opener. (-4576, 1765), height -1008. | Use the opener. | Which piece moves, and whether it is a short slide at this stand or a door farther along the vault. | not in the note |
+| L14 | Spider floor. (2993, -5231), height 31. | Stand on that floor and trigger it. | Whether the floor opens, and whether spiders spawn. | not in the note |
+| L14 | Aloe bed. (651, -4143). Height is not in the note. | Use the bed. The note's open question is the harvest; it does not name an original verb or a regrowth schedule. | Which object answers (prop 82 or controls 52-54), and whether and when the leaf regrows. Optional in the note. | not in the note |
+| L16 | Gas toward three doors. (2198, -869), height 32. | At the gas, trigger it. | Whether the gas travels to the three doors, and what those doors do. | not in the note |
+| L16 | Box and slot. (15946, 3923), height 132. | Push the box. | Whether it leaves the stand, and where it stops. | not in the note |
+| L16 | Ivory chip in the hands. (-4260, 1533), height 82. | Use the gargoyle. | Whether a chip is given, and whether the floor moves. | not in the note |
+| L16 | Puzzle box. (-3896, 1399), height 2. | Use the box. The note does not name the verb. It is a different set from the corner-tower box. | What the box does at this stand. | not in the note |
+| L16 | Southwest ivory chips. (-9499, 12902), height 32. | Place the chips. | What opens or breaks, including prop 604 (the pyramid) and doors 89-91. That is the rest of group 48818. The note parks this as side content that does not gate L17. | not in the note |
+| L16 | Starry floor. (15556, 32, 4123) as printed, region 7669, after the northeast lift. | From the northeast tower, do the four visits. | What the box, the disk, and the yellow figure are, and what each click raises. Side content; it does not gate L17. | not in the note |
+| L16 | Fourth ivory chip. The chain stood at (-2489, 27, 12858) as printed, region 3663, hand empty. | Find the fourth chip. The note already names three world sprites and not a fourth: item12 (-5644, -35, 4532), item22 (5491, 0, 10096), item23 (-2853, 0, -1534). Do not repeat the placement watch; that is the southwest-chips row. | Where the fourth ivory chip is. Side content; it does not gate L17. | not in the note |
+| L17 | (-4953, 6455), height 32. | Stand there. | What moves. | not in the note |
+| L19 | Laboratory load. (882, -1494), height -98. | Step through the load he means. | The destination map, and the spot it puts him. | not in the note |
+| L19 | Laboratory door. (958, -2453), height -93. | Open the door. | Whether a floor sits in the doorway. | not in the note |
+| L19 | Blood altar. (1973, -888), height -93. | Use the altar he means. | Whose health changes, and by what. | not in the note |
+| L19 | Door 73, corridor door after the three channel switches. A player stand is not in the note. | Open that door by the guide's click. Prop 223, template 9 at (39, 0, 526), is source context, not a struck-pipe task. | What emits door 73 caller 2 (a click, proximity, or list 25 byte 09 becoming 1), and whether the list 25 mark is involved. | not in the note |
+| L19 | Dawn-shaft cab, end of the ride. A player stand is not in the note. Cab 1943 is the cab the note names. | Ride the cab to the top and to the bottom. | What runs group 1118 at the top (ring 1935-1942 bit 0, doors 51/52) and group 1200 at the bottom (doors 53/54, prop 4), and what enqueues prop 97. The note does not record an original caller; the port's floor-stop is only marked LIKELY. | not in the note |
+| L20 | The mother, prop 242 (Frank's Placenta). A player stand is not in the note. | See what emits caller 21. The note does not locate it and only marks a curse cast into the mother as LIKELY. | Whether that use is what hits her, and whether the L19 door (region 2369) then takes L20 arrival 2. Opcode 2 arms 0x23, 0x25, and 0x35 stay unread; do not fill in what they do. | not in the note |
