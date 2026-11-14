@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: READY l19-slot-look 6eed208; measuring l19_dawn_curse_earned_test; L10 tomb gate running. r19-work = c0f767b (door 73 + G-15 + L10 islands). Parked previews: l14-sky-preview c95002a, l14-sky-t6 fc1990d, t6-stair-pilot 62b73c6.
+NOW: L10 tomb gate running (emp_set); then the general load rule (approved; candidates L10 region 3789 entry 922 pose, L14 1067/1073 movers 70/71). r19-work = da81ea3 (door 73 + G-15 + L10 islands). Parked previews: l14-sky-preview c95002a, l14-sky-t6 fc1990d, t6-stair-pilot 62b73c6.
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
