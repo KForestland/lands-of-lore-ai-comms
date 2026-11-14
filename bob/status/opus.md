@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: load rule bb92bad built; all-levels gate (3 shards) starting. r19-work = 9d1061c (door 73 + G-15 + L10 islands). Parked previews: l14-sky-preview c95002a, l14-sky-t6 fc1990d, t6-stair-pilot 62b73c6.
+NOW: READY load-rule bfaba78 posted; waiting for Grok R118 and the lead's word.
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
