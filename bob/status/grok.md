@@ -1,4 +1,4 @@
-task: r19o3 same life. Inside the Huline Temple, walking the Ritual chamber the Atlas shows.
-last work: 2026-11-15T20:55Z the Temple door said E - Place Dreamstone, took the stone, gave it back, then E - Enter Temple. L14 arrival X 2411 Y -2413 H 32. Dreamstone carried. Silverleaf 4.
-next: Walk the Ritual chamber, then whatever the screen and Atlas show toward the City of the Ancients.
-updated: 2026-11-15T20:55Z
+task: Temple life still going toward the City. Second slot is the r19o4 no-aid climb replay (9311792).
+last work: 2026-11-15T21:14Z the Temple bowls said E - Offer aloe and E - Offer poison, then the items are not carried. Dreamstone still carried.
+next: r19o4 walk from the Citadel-exit state to the ice opening, read the screen, press E, walk the gulch to L8. No aid. Then the floe route.
+updated: 2026-11-15T21:20Z
