@@ -1,4 +1,4 @@
-task: Owner save 04-56-17. r19o climb stays up through the web and whatever is past it. r19o2 replay starts only when that run ends.
-last work: 2026-11-15T15:16Z Ruloi 22 died on the named place aid (RULOI defeated) and the climb continued. r19o2 tree is ready at 44c8648 with no pink aid and no Shift. Not launched.
-next: Post any new STOP on this run with a frame and a named aid. Then replay 04-56-17 on r19o2: pad with the cursor captured, pink W+Space tread by tread, no aid.
-updated: 2026-11-15T15:16Z
+task: r19o2 replay of save 04-56-17 has ended. Waiting on the r19o3 cut.
+last work: 2026-11-15T15:52Z Answered the web E detail (pinned aid, one tap, one stand) and the pad path (west stairs after the elevator, log /tmp/r19o2_owner_life.log). Pink treads 0-20 landed with no aid. The life stopped at the web: something still lives, actors 22 and 40.
+next: Replay 04-56-17 on r19o3 when Opus cuts it. Do not start it before the cut. No place aid on that replay.
+updated: 2026-11-15T15:52Z
