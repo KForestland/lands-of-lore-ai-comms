@@ -29,3 +29,23 @@ Closed in the source, not rows: control 53, the R116 landing, Dawn's hintbook ta
 | L19 | Door 73, corridor door after the three channel switches. A player stand is not in the note. | Open that door by the guide's click. Prop 223, template 9 at (39, 0, 526), is source context, not a struck-pipe task. | What emits door 73 caller 2 (a click, proximity, or list 25 byte 09 becoming 1), and whether the list 25 mark is involved. | not in the note |
 | L19 | Dawn-shaft cab, end of the ride. A player stand is not in the note. Cab 1943 is the cab the note names. | Ride the cab to the top and to the bottom. | What runs group 1118 at the top (ring 1935-1942 bit 0, doors 51/52) and group 1200 at the bottom (doors 53/54, prop 4), and what enqueues prop 97. The note does not record an original caller; the port's floor-stop is only marked LIKELY. | not in the note |
 | L20 | The mother, prop 242 (Frank's Placenta). A player stand is not in the note. | See what emits caller 21. The note does not locate it and only marks a curse cast into the mother as LIKELY. | Whether that use is what hits her, and whether the L19 door (region 2369) then takes L20 arrival 2. Opcode 2 arms 0x23, 0x25, and 0x35 stay unread; do not fill in what they do. | not in the note |
+
+## No level in the note, appended 2026-11-15
+
+The WO4 table and the weapon paragraph name no map, no stand, and no original verb. They are not evening place checks, so they sit after L20.
+
+Each definition row says the exact original player action or native callback is unproved. Current treatment is in parentheses. Do not invent an effect.
+
+- 22 23-Hrn Belial (stand-in). Belial's horn is a named chain artifact. Its generic weapon callback is not decoded.
+- 34 35-N valk crsbw (nothing). Alternate native Valkyrie definition. Relation to the player weapon is not established.
+- 56 56b-Ltng c brnt (nothing). Burnt lightning crystal. Recharging details are not pinned.
+- 67 65b-Storm brnt (nothing). Burnt storm crystal. Recharge identity, maximum, and maintenance are unknown.
+- 69 67-Ruby of trth (nothing). Dawn's chain gift. The generic worn effect is not decoded.
+- 104 102-Runestone (nothing). Named progression artifact. No generic consume action is established.
+- 108 106-Jkar idol (nothing). Named worn artifact. The native worn bit is unknown.
+- 152 Kieran ghost, 153 Axe Ghost, 154 Plas ghost, 155 Dag ghost, 156 Hand ghost (nothing). Internal rows with no inventory icon. Created-object identity is not proved. The port keeps them out of inventory.
+- 157 R-ch stone, 158 R-p paint, 159 R-Warcl, 160 R-Acidsac, 161 R-Deathsac, 162 R-Pyrapod, 163 R-Mindcl, 164 R-Manafoil, 165 R-StGorgon (nothing). R-prefixed recharge or recipe rows. Do not treat them as new collectables.
+- 167 Cocos Cap (nothing). Equipable by the source slot mask. The guide effect is not established.
+- 169 Scroll (nothing). Generic scroll or recharge record. The player purpose is not identified.
+
+Weapon paragraph, still no stand: the 91-byte per-item damage and attack-timing table is not decoded. Signed protection at +0x41 is recovered. Where that table is unavailable, the owner authorizes one flat damage fallback per item, and the implementation must label it a fallback. Stone Cube size and duration, Gorgon petrification duration, Guardian sword damage, crystal recharge maximums, and the shared scroll charge selection stay unknown. Do not supply a number the note does not have.

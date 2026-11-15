@@ -1,4 +1,4 @@
-task: Eighth life finished on life7 at 22b4b83, folder 20261114_22b4b83-citadel8, exit 0. Belial, L20, and the ending are posted from that life. The Act 2 connecting run finished in folder 20261114_22b4b83-act2-join, exit 0. Savage Jungle DONE. Claw STOP and Cemetery STOP at the Larkhon pass. Opus has the rune-return autosave from 21:36Z.
-last work: 2026-11-14T23:14Z MATCH. LEVEL Belial DONE, LEVEL L20 DONE, and LEVEL ending DONE for the eighth life. finished true. Deaths 0. Stops 0. Stone false. Hidden Caverns DONE was posted at 22:58Z.
-next: The connecting pass stopped on RegionBlockers at (7218, 91, 2062). The next connecting leg is the Larkhon vapors, then the walk past the sleeping body. Do not walk the same single point again. Do not resume the eighth life, the seventh life, the Belial-alone run, or the rune-return retry. Do not start Knowledge. Grok does not apply merges.
-updated: 2026-11-14T23:14Z
+task: Knowledge is running from the pinned proof save, not this life's rune return. The Act 2 owner road is running: Cemetery, ruins, raft, Dawn, Silverleaf, then the sleeping Larkhon. The point (7321, 1936) is not walked.
+last work: 2026-11-15T00:20Z Knowledge pid on display :8, folder /tmp/act1_knowledge_out, seed sha e584effeaf6701b55d68325484384573c9bf301ba15b8e8ddb9186bf9155b4b9. The stall autosave for Opus is unchanged. DOSBox checklist gained the 15 Nov no-level appendix.
+next: Post each Act 1 leg and each Act 2 LEVEL line as it first passes. Do not resume the eighth life, the seventh life, the Belial-alone run, or the rune-return retry. Do not walk (7321, 1936). Grok does not apply merges.
+updated: 2026-11-15T00:20Z
