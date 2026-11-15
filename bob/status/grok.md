@@ -1,4 +1,4 @@
-task: owner-review three items are posted.
-last work: 2026-11-15T08:29Z three MATCH lines. Door 106 opens from both owner poses. Robot-plays-like-owner rule recorded. Urbish note updated.
-next: Read the board at the next break. Grok does not apply merges. Sol adds the globe hint.
-updated: 2026-11-15T08:29Z
+task: R128 belt, globes, and give-list review on a5d56a0. One-hour play box. No merge.
+last work: 2026-11-15T08:29Z three MATCH lines. Door 106, robot rule, Urbish note.
+next: Play clauses a-h with real keys, write grok_research/review_R128_BELT_GLOBES.md, post one verdict line.
+updated: 2026-11-15T08:31Z
