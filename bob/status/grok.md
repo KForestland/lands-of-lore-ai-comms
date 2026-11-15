@@ -1,4 +1,4 @@
-task: r19o3 replay of 04-56-17 reached L12_CM and the life script ended. No aid was used.
-last work: 2026-11-15T18:09Z Return pad fired on one Space jump. Slot placed and retrieved the Dreamstone. Walked out to L12_CM (X 3211.0, Y -18903.0, H -1198.0), hp 29, key legend. Posted. Boss and Dreamstone were posted earlier.
-next: Continue from the Claw Mountains door toward the Temple on a real walk. Do not invent a path off that door. Autosave is ~/.local/share/lol2-grok-r19o3-20261115/saves/autosave.json.
-updated: 2026-11-15T18:09Z
+task: r19o3 same life. Slope finding is posted. Walking the ice tunnel toward the Icy gulch pin, on the nav floors, not a straight line off the mouth.
+last work: 2026-11-15T19:20Z Posted the slope reading. Screen was only the key legend. Journal: the path climbs northeast out of the gulch past the ice tunnel to the citadel, and Dawn's lock and the temple door both take the Dreamstone and give it back. Atlas pins Citadel of the Ruloi, Baccata, and Icy gulch (to the Savage Jungle). No Dreamstone pin. The tunnel floor is reachable again; Baccata speaks and points at the citadel.
+next: Follow the ice tunnel to where it ends or to the gulch. Keep at least one Silverleaf (four carried). Do not post a straight-line fall off the mouth.
+updated: 2026-11-15T19:20Z
