@@ -64,3 +64,22 @@ Format (newest at the bottom):
 - 2026-11-13 [owner, via fable/lead] ENHANCED EDITION idea: a real village in the Claw Mountains where the brutes are, perhaps with some quests there. Parked with the Enhanced edition (after Classic start-to-end). Lead: accepted as an Enhanced backlog item, no Classic work.
 - 2026-11-13 [owner, via fable/lead] Where the original's behaviour is missing or misread in our data (examples 13 Nov: tiger-cave switch and platform on L12, flood in the jungle shaft after the Belial statue, missing orb holder on L10): work around it now with a modern replacement from the owner's description and the guides; "perhaps DOSBox later when we have time" to check the real behaviour. Lead: accepted; keep a list of such spots (grok_research/UNKNOWN_ORIGINAL_BEHAVIOUR.md, Grok to start it) so a later DOSBox session can check them in one sitting.
 - 2026-11-15 [owner, via fable/lead] ENHANCED EDITION idea: reuse the LoL1 Urbish Mines 'punch the wall' mechanic (strike a weak wall, it breaks) on Enhanced-edition blocks. Lead: Grok does a light research note (grok_research/LOL1_URBISH_WALL_PUNCH_20261115.md); Enhanced backlog, no Classic work.
+
+## 2026-11-15 Enhanced soundtrack: owner's remixes (owner idea, noted by the lead)
+- The owner converts original tracks (local MP3s of all 33 in ~/Music/lol2_original_tracks/, never to the repo) and makes remixes with an AI music tool. Done so far: Huline Jungle, Caverns ("turned out extremely good").
+- Use: candidate ENHANCED edition soundtrack, later. In Classic only through the optional local music-pack folder (SOUND-MUSIC-PACK).
+- Before anything is published: a remix that keeps the original melody stays a derivative of the original compositions; the publishable version needs its own melody (same instruments and mood). Decide per track in the sound phase.
+- Which original track number is which level/combat piece: the owner is naming them by ear; record the list here when he has it (the game data does not give the names).
+
+## 2026-11-15 Art for the Enhanced edition: prepare now, build years later (owner direction, noted by the lead)
+Owner: environments tolerate one-off AI art; items and NPCs must be CONSISTENT (same look in every frame and angle), and AI generation drifts. "If you do not prepare it will go badly."
+Cheap preparation that falls out of work already being done (no new lane time now):
+- One list of every thing that will need art, with a stable id: characters/NPCs, creatures, items (the 170-row item census exists), objects (G-03 tables), per level. Keep it current as levels are finished.
+- For each: original sprite size, anchor point, number of angles and animation frames (measured from the game files; the Blender test notes have the method).
+- One record of where each is used (level, quest step), so art can be ordered by what the main quest shows first.
+- The game loads art by id from a replaceable pack folder (same idea as the music pack), so Classic art and Enhanced art are swapped without code changes.
+Route to try first when the time comes: one 3D model per character, sprites rendered from it (consistency from the model); AI for concept and textures only. Re-test AI consistency with whatever models exist then.
+Not before: the main quest plays start to end and the gray-box method is settled.
+
+## 2026-11-15 Gray-box test map: one Draracle cavern entrance for all three games (owner idea, future)
+Test map, not to keep: the cavern entrance, from the LoL2 and LoL3 maps, changed to serve LoL1, LoL2 and LoL3 as one place. Owner leans to ONE map with overlays per time period (skins, erosion) instead of three maps; for Chronicles of Time. Questions to answer in the test: what differs between periods (geometry or only surface), how an overlay is stored and switched, what erosion changes for collision. Not before LoL2 plays start to end.
