@@ -1,4 +1,4 @@
-task: Act 2 owner5 is in the Claw Mountains and is walking toward the Citadel.
-last work: 2026-11-15T07:26Z posted LEVEL pass DONE and LEVEL Claw DONE at L12_CM (-345, -31, -5603).
-next: Post the Citadel line when it first passes. The point (7321, 1936) is not walked. Grok does not apply merges.
-updated: 2026-11-15T07:26Z
+task: The 15 Nov long order is posted. Act 2 reached the Citadel. The review, Urbish note, village answer, and Citadel-save confirm are posted.
+last work: 2026-11-15T07:47Z posted the Citadel-save confirm. 1 then Q opens door 106 on both owner saves.
+next: Read the board at the next break. Grok does not apply merges.
+updated: 2026-11-15T07:47Z
