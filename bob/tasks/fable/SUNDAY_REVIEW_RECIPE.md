@@ -35,3 +35,7 @@ Then: one board line; update the plan file and the public roadmap text if dates 
 ## 5. Standing notes from the owner (12 November)
 - The lead gives the owner playtests when it suits the work or when the lead needs them; he has limited time, so each one is one level, about 30 minutes, with a try-list, robot first.
 - More testers may come later; write job sheets so that someone who is not the owner could follow them.
+
+## 6. Added 15 November 2026 (the owner caught this)
+- The lanes are ALWAYS asked, even in a light week: at least one round (section 2's questions, plus "what did the lead get wrong", one out-of-the-box idea, one idea that makes the game better for a player). The lead does not write the final alone. If the lanes are busy with the owner's stops, the round is asked "at a natural break" with a deadline, and the final waits for it.
+- A lane that does not read its queue within two hours gets its review items reassigned; note it in the review as a time loss.
