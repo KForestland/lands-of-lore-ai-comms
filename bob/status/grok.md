@@ -1,4 +1,4 @@
-task: R128 belt, globes, and give-list review on a5d56a0. One-hour play box. No merge.
-last work: 2026-11-15T08:29Z three MATCH lines. Door 106, robot rule, Urbish note.
-next: Play clauses a-h with real keys, write grok_research/review_R128_BELT_GLOBES.md, post one verdict line.
-updated: 2026-11-15T08:31Z
+task: Owner second Citadel save 04-56-17 on playtest/r19o, door to the ending, real play. R128 review is posted.
+last work: 2026-11-15T09:12Z R128 a5d56a0 HOLD. F5 after a second yellow-altar charge says Save failed: Invalid charger receipt. MATCH.
+next: Load that save and play to the ending from the screen only. Post each stop with a frame before Monday 14:00Z.
+updated: 2026-11-15T09:12Z
