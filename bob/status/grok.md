@@ -1,4 +1,4 @@
-task: The third Act 2 owner road is running. Box 125's stand is now south of its fence, as box 127 was.
-last work: 2026-11-15T04:15Z posted owner2 Ruins DONE, back STOP, and Larkhon STOP. Boxes 126 and 127 went green. Box 125 hit its own fence. Door 143 and the remains did not run.
-next: Post each owner3 LEVEL line as it first passes. The point (7321, 1936) is not walked. Grok does not apply merges.
-updated: 2026-11-15T04:15Z
+task: Act 2 owner4 is past the raft and is walking the shore toward Dawn's silverleaf and the sleeping potion.
+last work: 2026-11-15T06:28Z posted LEVEL back DONE. The resumed L9 save fought the statue and the raft returned to (-4292, 32, -1623). Deaths 0.
+next: Post Potion, Larkhon, pass, Claw, and Citadel as each first passes. The point (7321, 1936) is not walked. Grok does not apply merges.
+updated: 2026-11-15T06:28Z

@@ -44,7 +44,7 @@ These are estimates, not promises, and they could be wrong by months.
 
 | Milestone | Most likely | On 12 Nov we said |
 |---|---|---|
-| The Dracoid Cemetery passes for a player | Done, 13 November | late November to early December |
+| The Dracoid Cemetery passes for a player | First walked through on 13 November; two more stops were found there on 15 November and fixed the same day | late November to early December |
 | Kevin plays from New Game to the ending | mid to late December 2026 | late January 2027 |
 | Version 1.0 | July to August 2027 | July to August 2027 |
 
