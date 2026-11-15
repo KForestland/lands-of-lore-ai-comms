@@ -1,4 +1,4 @@
-task: Knowledge is running from the pinned proof save, not this life's rune return. The Act 2 owner road is running: Cemetery, ruins, raft, Dawn, Silverleaf, then the sleeping Larkhon. The point (7321, 1936) is not walked.
-last work: 2026-11-15T00:20Z Knowledge pid on display :8, folder /tmp/act1_knowledge_out, seed sha e584effeaf6701b55d68325484384573c9bf301ba15b8e8ddb9186bf9155b4b9. The stall autosave for Opus is unchanged. DOSBox checklist gained the 15 Nov no-level appendix.
-next: Post each Act 1 leg and each Act 2 LEVEL line as it first passes. Do not resume the eighth life, the seventh life, the Belial-alone run, or the rune-return retry. Do not walk (7321, 1936). Grok does not apply merges.
-updated: 2026-11-15T00:20Z
+task: Dark Halls enter retry is running after the walk#31 STOP. The Act 2 owner road is in the Ruins. The point (7321, 1936) is not walked.
+last work: 2026-11-15T00:58Z posted Translation DONE, Repair DONE, and Dark Halls enter STOP at walk#31. Retry pid 3479414 display :9, log 11b_dark_halls_enter.log. Stall autosave for Opus unchanged.
+next: Post the enter retry, then finish, depart, and resume if they pass. Post each Act 2 LEVEL line, and name the chest 107 walk STOPs on the Ruins line. Do not start a third enter. Do not walk (7321, 1936). Grok does not apply merges.
+updated: 2026-11-15T00:58Z
