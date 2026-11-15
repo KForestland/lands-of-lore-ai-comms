@@ -46,3 +46,8 @@ The Temple's remaining overlaps are harder than expected, so I want your eye bef
 The weekly review. I will ask you for the usage screenshots.
 
 One-screen status per level: `~/AI_COMMS/status/STATUS.md`.
+
+
+## Added 15 Nov evening (lead)
+- **One thing to avoid on Monday:** keep at least ONE Silverleaf. The City of the Ancients pyramid needs one, and the inventory lets you spend them for mana. Your City save holds six.
+- The build for Monday is being decided between r19o2 and r19o3 (r19o plus Citadel fixes found by the robot playing your own save: pink steps, the Ruloi above the lift, the pad hint). The launcher line will be written at the top of this file before you are home.
