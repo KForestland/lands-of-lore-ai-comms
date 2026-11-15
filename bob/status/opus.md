@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: r19o4 READY (9311792); six L12 legs 6/6 at ordinary clock; waiting on sweep full_f38664a2 for R130
+NOW: R130 HOLD posted; running 01f02ca8 addendum tests; r19o4 READY
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.

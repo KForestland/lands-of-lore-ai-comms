@@ -12,7 +12,7 @@ r19o4 is r19o plus fixes found by the robot playing YOUR OWN Citadel save, witho
 - **At the web:** E starts a movie of about 70 seconds. The game is paused during it; wait, it has not hung.
 - **Pads:** the two step-on pads say what they do and work by walking on.
 - **After the Dreamstone:** the Journal tells you to carry it to the Huline Temple. Walking straight out of the Citadel door no longer drops you off the level.
-- **Way back through the Claw Mountains:** at the ice opening the screen offers two ways: jump onto an ice floe on the river (the original way: floe, ice bridge, logs), or **E - Climb down to the icy gulch** (a shortcut we added). Use E if you just want to get on.
+- **Way back through the Claw Mountains:** at the ice opening the screen offers two ways: jump onto an ice floe on the river (the original way: floe, ice bridge, logs), or **E - Climb down to the icy gulch** (a shortcut we added). Use E if you just want to get on. The robot has done both by real keys: the floe way takes one or two tries per jump and about twenty jumps up the logs.
 - **Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
 
 Walked by the robot on your save so far: Citadel (boss dies to the sword in six blows) -> Dreamstone -> Claw Mountains -> Darker Jungle -> Temple door takes the stone and gives it back -> inside the Huline Temple. From the Temple ritual onward it is still walking; I add what it finds below before you are home.

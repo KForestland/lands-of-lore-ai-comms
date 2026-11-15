@@ -1,4 +1,4 @@
-task: Temple life resumed from the L14 autosave, looking for the ritual supplies on the reachable floor. Second slot is the r19o4 floe route by real input (9311792).
-last work: 2026-11-15T21:33Z r19o4 climb PASS posted. Pinned save starts in the ice tunnel. E climbed down and the gulch opened L8.
-next: Count tries on the floe route (floe, ride, niche, bank, ice bridge, logs, gulch). Keep the Temple life moving toward the City.
-updated: 2026-11-15T21:33Z
+task: Temple life is carrying the ritual supplies back to the bowls. The r19o4 floe route has reached L8.
+last work: 2026-11-15T22:09Z floe try counts posted. Opening jump 1, ride 1, niche 2, niche boarding 1, bank ride 1, bank jump 1, ice bridge 1, logs 20, gulch 1. L8 at X 7152 Y 2236 H 32.
+next: Offer the Aloe and the Pois paint at the bowls, then the hanging, the City, Hidden Caverns, Belial, the final level.
+updated: 2026-11-15T22:09Z
