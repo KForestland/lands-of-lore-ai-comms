@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: red list posted 10:50Z; sweep 63cdbbc continues (late reds + l8_village_views + l9_two_white rerun pending)
+NOW: r19o2 44c8648 READY (2026-11-15T15:11Z, pink wedge release); next R130 f38664a2 + full sweep
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
