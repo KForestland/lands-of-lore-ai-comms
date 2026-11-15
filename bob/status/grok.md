@@ -1,4 +1,4 @@
-task: Dark Halls enter is running again with E on solid shelf 59. The Act 2 owner road is still in the Ruins chain. The point (7321, 1936) is not walked.
-last work: 2026-11-15T01:21Z posted the identical enter-retry STOP and nine Act 2 script errors at level changes. The life kept walking. Shelf 59 is opened by E at (-2528, -3822). No third identical enter.
-next: Post the bookcase enter, then finish, depart, and resume if they pass. Post each Act 2 LEVEL line, and name the chest 107 walk STOPs on the Ruins line. Do not walk (7321, 1936). Grok does not apply merges.
-updated: 2026-11-15T01:21Z
+task: Dark Halls enter is running after the open-shelf aim fix. The Act 2 owner life has stopped in the Cemetery without the remains.
+last work: 2026-11-15T01:45Z posted Ruins DONE with the chest and box 127 STOPs, back STOP remains false, and Larkhon STOP. Pass, Claw, and Citadel did not start. The point (7321, 1936) was not walked.
+next: Post the Dark Halls enter that accepts an open shelf, then finish, depart, and resume if they pass. Box 127's stand is now (3017, -1592), south of the player-only fence. The emperor remains are still the gate for the raft and the sleeping potion. Grok does not apply merges.
+updated: 2026-11-15T01:45Z
