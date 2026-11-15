@@ -29,21 +29,21 @@ effort ("if it takes 10 years, we will do it").
 | 5 | LoL1 Enhanced, then the other Enhanced editions | After LoL2 and LoL3 are finished |
 | 6 | 3D characters/items/creatures for the Enhanced editions | Not before 1–2 years from now; LoL1 assets first |
 
-## LoL2 Classic: status (2026-11-12)
+## LoL2 Classic: status (2026-11-15)
 
 Full roadmap with the phases, what changed, the dates and where help is welcome: **[LOL2_ROADMAP.md](LOL2_ROADMAP.md)**.
 
-- **Still about 20% complete.** Two days finished roughly one agent-week of tasks, and a review added about as much
-  newly found work. The percentages measure what a player can do today, not counts of finished tasks.
-- **What the review found:** the Dracoid Cemetery was not passable for a real player (one shared object behaviour of
-  the original, covering 219 objects game-wide, was missing); the big maps are rooms stacked above rooms, not
-  impossible spaces; and automated tests had passed where a player was stopped. A robot player now walks each level
-  with real input before Kevin does.
-- **Merged:** one save for the whole game with autosave, a common base for all levels, and playtest starts for every
-  level of Act 2 and Act 3.
-- **When (estimates, not promises):** Cemetery passes for a player late November to early December 2026; all of Act 2
-  mid to late December; Kevin plays from New Game to the ending **late January 2027** (earliest early January);
-  **version 1.0 July to August 2027**.
+- **About 27% complete** (it was about 20% on 12 November). The percentages measure what a player can do today, not
+  counts of finished tasks.
+- **What changed:** Kevin played from New Game to the Ruloi Citadel in one sitting; a robot player using real
+  keyboard and mouse input walked every level from the Ruloi Citadel to the end of the game in one unbroken life; the
+  Dracoid Cemetery is playable; the eight spells the main quest needs are built and taught where they are first needed;
+  saving keeps the world.
+- **What we learned about the maps:** the original only draws and collides with the room the player stands in and the
+  rooms connected to it, so its designers could put two rooms in the same place. The goal is now nothing a player can
+  see or feel; reported spots are fixed one by one.
+- **When (estimates, not promises):** Kevin plays from New Game to the ending most likely **mid to late December 2026**
+  (on 12 November: late January 2027); **version 1.0 July to August 2027** (unchanged).
 
 Order (owner): maps, then the main quest from A to Z, then everything else; classic first, modernised only where the
 original is too hard to rebuild, and every difference is logged. A passing test is not a cleared area: only Kevin's

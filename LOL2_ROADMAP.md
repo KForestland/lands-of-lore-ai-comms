@@ -1,66 +1,78 @@
-# Lands of Lore 2 Classic: roadmap, 12 November 2026
+# Lands of Lore 2 Classic: roadmap, 15 November 2026
 
 Lands of Lore 2 Classic is a fan rebuild of *Lands of Lore: Guardians of Destiny* in the Godot engine. It will need the player's own copy of the original game. Kevin owns and playtests the project; AI agents write the code.
 
-This replaces the roadmap of 11 November. The overall number has not moved, and this page says why.
+This replaces the roadmap of 12 November.
 
-## What changed since yesterday
+## What changed in three days
 
-We stopped building for a night and reviewed how the project works. Three findings:
+- **Kevin played from New Game to the Ruloi Citadel in one sitting** (15 November, about three hours). He was stopped four times; two of those were fixed while he was still playing.
+- **A robot player reached the ending.** It plays with real keyboard and mouse input. It has walked every level from the Ruloi Citadel to the end of the game in one unbroken life: the Dreamstone, back to the Huline Temple, the City of the Ancients, the Hidden Caverns, Belial's caverns and the final level.
+- **The Dracoid Cemetery is playable.** Chests, crypt tops, doors and breakable fronts work; the orb chargers and globes work; the lower rails can be crossed; the oil blast opens the tomb floor.
+- **The eight spells the main quest needs are built**, and the game now teaches a needed spell at the place where the player first needs it, if they never picked up the optional scroll.
+- **Saving keeps the world:** lit spires, placed items, part-open doors, raised floors and lifts. Loading a save no longer repeats what happens when you walk into a room.
+- **Objects on nine more levels and the first item classes** (food and healing, keys and quest items, scrolls, thrown items, light sources, equipment) are built and reviewed, and merge next.
 
-- **The Dracoid Cemetery was not passable for a real player.** Chest lids, crypt tops, some doors and breakable fronts did nothing. The original opens and breaks these through one shared engine behaviour, and our rebuild never had it. It covers 219 objects across the game, 85 of them in the Cemetery.
-- **The big maps are not impossible spaces.** They are mostly rooms stacked above rooms. In the Cemetery 37% of the floor has another room above or below it, in the Huline Temple 9%; at most about 1.5% is two rooms at the same height. Rooms appeared to cut into each other because the rebuild treated every room as solid at once, while the original only handles the rooms connected to where the player stands.
-- **Our automated tests passed where a player was stopped.** They used prepared saves, teleports or another route.
+## What we learned about the maps
 
-What we are doing about it:
+The original engine only draws and collides with the room the player stands in and the rooms connected to it, so its designers could put two rooms in the same place. A modern engine keeps the whole level in the world at once, and those rooms cut into each other.
 
-- Building the missing object behaviour once, for all 219 objects, Cemetery first.
-- Saving the state of the world (opened lids, broken fronts, moved floors), not only the player.
-- Rebuilding room tracking the way the original does it, now that the rule has been read from the original program.
-- **A robot player walks each level with real keyboard and mouse input before Kevin does.** A level counts as ready only when the robot finds no stops and Kevin has walked it himself.
-- Research into the original program now starts only when a build task needs a specific answer, with a two-hour limit and a modern replacement ready.
+We tried moving rooms apart. It works where the moved piece is closed in (a crawl tunnel that ran through a wooden room in the Huline Temple now runs under it; the floor of the Emperor's tomb in the Cemetery was lowered). It does not work on open, roofless ground: raise a piece of an open yard and the player looks over the wall tops of the rooms around it.
 
-Finished since yesterday and merged: one combat module and one health owner for the whole game, a common base for all levels, one save for the whole game with autosave, and playtest starts for every level of Act 2 and Act 3.
+So the goal is now **nothing a player can see or feel**, not "no two rooms share space in the data". Reported spots are fixed one by one; the original's own rule (handle only connected rooms) covers the rest.
 
 ## Where it stands
 
-| Phase | Goal | Today |
-|---|---|---|
-| 0. Foundations | One save, one combat core, one way to give items, one object behaviour, tests based on real input | 35% (was 15%; several pieces merged, and two new pieces added to the list) |
-| 1. Main quest | A player finishes the game from New Game to the ending | 45% (was 50%; the Cemetery finding lowered it) |
-| 2. Maps and side content | Every level looks right; every optional area and puzzle is in | 35% |
-| 3. Items | Every item works | 15% |
-| 4. Role-playing systems | Real combat, spells, creatures, bosses, shape-changing | 10% |
-| 5. Story and dialogue | Every line, both moral paths, both endings, every movie | 15% |
-| 6. Game shell and sound | Title, menus, options, save slots, music | 5% |
-| 7. Release | A stranger can install it and finish it | 5% |
+These are judgments from what a player can do today, not counts of finished tasks.
 
-**Overall: still about 20%.** Two days of work finished roughly one lane-week of tasks, and the review added about as much newly discovered work. The percentages are judgments from what a player can do today, not counts of finished tasks.
+| Phase | Goal | 12 Nov | Today |
+|---|---|---|---|
+| 0. Foundations | One save, one way to give items, one object behaviour, tests based on real input | 35% | about 60% |
+| 1. Main quest | A player finishes the game from New Game to the ending | 45% | about 65% |
+| 2. Maps and side content | Every level looks right; every optional area and puzzle is in | 35% | about 40% |
+| 3. Items | Every item works | 15% | about 25% |
+| 4. Role-playing systems | Real combat, spells, creatures, bosses, shape-changing | 10% | about 15% |
+| 5. Story and dialogue | Every line, both moral paths, both endings, every movie | 15% | 15% |
+| 6. Game shell and sound | Title, menus, options, save slots, music | 5% | 5% |
+| 7. Release | A stranger can install it and finish it | 5% | 5% |
+
+**Overall: about 27%** (it was about 20%).
 
 ## When
 
 These are estimates, not promises, and they could be wrong by months.
 
-| Milestone | Most likely |
-|---|---|
-| The Dracoid Cemetery passes for a player | late November to early December 2026 |
-| All of Act 2 passes | mid to late December 2026 |
-| Kevin plays from New Game to the ending | late January 2027 (earliest: early January) |
-| Version 1.0 | July to August 2027 |
+| Milestone | Most likely | On 12 Nov we said |
+|---|---|---|
+| The Dracoid Cemetery passes for a player | First walked through on 13 November; two more stops were found there on 15 November and fixed the same day | late November to early December |
+| Kevin plays from New Game to the ending | mid to late December 2026 | late January 2027 |
+| Version 1.0 | July to August 2027 | July to August 2027 |
 
-The start-to-end date moved by about a month from the earlier "mid-December" checkpoint, as that roadmap said it would if the checkpoint slipped. The 1.0 date moved less, because the missing pieces would have surfaced later anyway.
+The start-to-end date moved forward because the stretch from the Citadel to the ending already walks for the robot. The 1.0 date has not moved: combat, most items, side content, story branches, music and the installer are still ahead.
 
-Not being built until Kevin has played start to end once: real combat numbers, spells beyond the main quest, side areas, music, the installer, the good and evil branches, and an enhanced edition. Classic comes first.
+## Not working yet
+
+- A real player has not gone past the Ruloi Citadel in one run. On 15 November Kevin was stopped there by a door that opens when you cast a spell at a globe, with nothing on screen saying so. Hints for that are being built.
+- Combat is basic. Most of the 170 items do nothing yet.
+- Side content is parked until the main quest plays through: the starry floor and the ivory chips in the City of the Ancients, most optional puzzles.
+- The good and evil branches are not being worked on until the game is playable start to end.
+- Some levels still show other rooms through walls in places.
+
+## How we work now
+
+- A robot player walks each level before Kevin does. From now on it plays like he does: it walks into a level from the previous one, picks up nothing optional, and knows only what the screen tells it.
+- Every stop Kevin reports is fixed and then checked across the whole level for the same kind of fault.
+- A builder never reviews its own work.
 
 ## Where outside help is welcome
 
 None of this needs game files from us; your own memory, your own copy or public sources are enough.
 
-- **Which key or button is "use" in the original.** Our reading of the program suggests the keyboard letter C for opening chests and lids, with no mouse path. Can anyone confirm from the manual or from play?
-- **Which music plays where:** a list of level or scene against soundtrack track.
-- **Side content knowledge:** the City of the Ancients side rooms and ivory chip quests, secrets in the Dracoid Ruins, anything optional the printed guides skip.
+- **City of the Ancients:** must you raise all four tower sections (the starry floor, the box and the yellow figure) before you can go on? We cannot find those objects in the game data.
+- **The glass orbs charged at the Cemetery altars:** which colour stores which spell, and what does the white one do?
+- **The Claw Mountains tiger cave:** how the switch and the rising platform work.
 - **Numbers from the original:** creature health, weapon and spell damage, what the difficulty setting changes.
-- **Good and evil:** which actions shift Luther's moral standing, and what changes afterwards.
+- **Which music plays where.**
 - **Later, in 2027:** playtesters on Windows and Linux.
 
 Post findings as an issue on this repository, with where the information comes from.
