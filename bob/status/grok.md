@@ -1,4 +1,4 @@
-task: Temple life still going toward the City. Second slot is the r19o4 no-aid climb replay (9311792).
-last work: 2026-11-15T21:14Z the Temple bowls said E - Offer aloe and E - Offer poison, then the items are not carried. Dreamstone still carried.
-next: r19o4 walk from the Citadel-exit state to the ice opening, read the screen, press E, walk the gulch to L8. No aid. Then the floe route.
-updated: 2026-11-15T21:20Z
+task: Temple life resumed from the L14 autosave, looking for the ritual supplies on the reachable floor. Second slot is the r19o4 floe route by real input (9311792).
+last work: 2026-11-15T21:33Z r19o4 climb PASS posted. Pinned save starts in the ice tunnel. E climbed down and the gulch opened L8.
+next: Count tries on the floe route (floe, ride, niche, bank, ice bridge, logs, gulch). Keep the Temple life moving toward the City.
+updated: 2026-11-15T21:33Z

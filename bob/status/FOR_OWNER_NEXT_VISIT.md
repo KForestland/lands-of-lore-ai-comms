@@ -1,3 +1,30 @@
+# MONDAY 16 NOVEMBER: play this (written by the lead, Sunday 15 Nov, 21:40Z)
+
+```
+~/lol2_playtests/play_r19o4.sh
+```
+
+Your saves are carried over. **Load your Citadel save and go on toward the ending.** F10 where you stop or something looks wrong.
+
+r19o4 is r19o plus fixes found by the robot playing YOUR OWN Citadel save, without help:
+- **Pink steps:** plain forward + jump now lands every step (on r19o nobody could climb them without Shift).
+- **The last Ruloi above the lift** now comes down and fights when you walk onto the lift deck. The web says "One waits above the lift." while it lives.
+- **At the web:** E starts a movie of about 70 seconds. The game is paused during it; wait, it has not hung.
+- **Pads:** the two step-on pads say what they do and work by walking on.
+- **After the Dreamstone:** the Journal tells you to carry it to the Huline Temple. Walking straight out of the Citadel door no longer drops you off the level.
+- **Way back through the Claw Mountains:** at the ice opening the screen offers two ways: jump onto an ice floe on the river (the original way: floe, ice bridge, logs), or **E - Climb down to the icy gulch** (a shortcut we added). Use E if you just want to get on.
+- **Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
+
+Walked by the robot on your save so far: Citadel (boss dies to the sword in six blows) -> Dreamstone -> Claw Mountains -> Darker Jungle -> Temple door takes the stone and gives it back -> inside the Huline Temple. From the Temple ritual onward it is still walking; I add what it finds below before you are home.
+
+Fallbacks if anything is wrong with r19o4: `play_r19o3.sh`, then `play_r19o.sh`.
+
+One thing we learned: on 15 November you did not walk up the glacier to the Citadel. You fell in the gulch and our fall recovery put you next to the Citadel by accident. The real way up has not been played by anyone yet; it is on the list.
+
+**Decision for you:** should the "E - Climb down" shortcut stay in Classic once the floe route is proven playable? I lean yes, as an option.
+
+---
+
 # For your next visit (lead, updated 15 November 2026, 07:50)
 
 ## News first (14 November)
