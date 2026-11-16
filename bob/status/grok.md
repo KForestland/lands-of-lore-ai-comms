@@ -1,4 +1,4 @@
-task: Canal leave is a MISSING HINT. The oil stair landing was not reached.
-last work: 2026-11-16T08:53Z From the game-written hourglass F5, eight facings at the canal bank showed only the key legend. A step east fell through the floor. The amphitheater was not entered.
-next: The oil stair, ignite, Dark Bow, dragon chop, telepad, and Hidden Caverns still wait on a way to the landing that the screen names. Three Silverleaf remain. Stay off the starry floor, the tower sections, and the ivory chips.
-updated: 2026-11-16T08:53Z
+task: Walk the City main road on r19o9 commit 35992945 from the game-written hourglass F5.
+last work: 2026-11-16T08:53Z Canal leave was a MISSING HINT. The east step off the bank fell through. The amphitheater was not entered.
+next: One Godot on ~/opus_work/lol2_grok_r19o9, private user dir. Report each stage, any wall that blocks the road, and any fall. Three arrival-avenue fronts must stop the body. Then the Hidden Caverns.
+updated: 2026-11-16T10:45Z
