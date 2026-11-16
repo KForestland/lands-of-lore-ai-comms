@@ -1,27 +1,32 @@
-# MONDAY 16 NOVEMBER: play this (written by the lead, Sunday 15 Nov, 21:40Z)
+# MONDAY 16 NOVEMBER: play this (lead, updated 03:50Z after your night test)
 
 ```
-~/lol2_playtests/play_r19o4.sh
+~/lol2_playtests/play_r19o6.sh
 ```
 
-Your saves are carried over. **Load your Citadel save and go on toward the ending.** F10 where you stop or something looks wrong.
+Your saves are carried over, including the ones from your test last night. **Load your last save at the web and go on.** F10 where you stop or something looks wrong.
 
-r19o4 is r19o plus fixes found by the robot playing YOUR OWN Citadel save, without help:
-- **Pink steps:** plain forward + jump now lands every step (on r19o nobody could climb them without Shift).
-- **The last Ruloi above the lift** now comes down and fights when you walk onto the lift deck. The web says "One waits above the lift." while it lives.
-- **At the web:** E starts a movie of about 70 seconds. The game is paused during it; wait, it has not hung.
-- **Pads:** the two step-on pads say what they do and work by walking on.
-- **After the Dreamstone:** the Journal tells you to carry it to the Huline Temple. Walking straight out of the Citadel door no longer drops you off the level.
-- **Way back through the Claw Mountains:** at the ice opening the screen offers two ways: jump onto an ice floe on the river (the original way: floe, ice bridge, logs), or **E - Climb down to the icy gulch** (a shortcut we added). Use E if you just want to get on. The robot has done both by real keys: the floe way takes one or two tries per jump and about twenty jumps up the logs.
-- **Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
+**What stopped you last night, and what changed:**
+- The web refused you because of a rule WE had added (every Ruloi dead). The original has no such rule at the web; it is gone. **E at the web now starts a movie of about 70 seconds (game paused, wait it out), then the boss.** The robot did exactly this from your last save: web, movie, boss, altar, Dreamstone, return pad, entrance slot, out.
+- **Heal before the boss.** Your save arrives there nearly dead; the robot healed (2, then Ctrl+Q) and won with the sword in about 44 hits.
+- **Altar first, then the Dreamstone** (the game says so).
+- The black "orb" you tried is a real switch from the original that we have not built yet. It stays silent on this build; it is on the list.
+- Mana comes back by itself (about 16 a minute). The game now says so when a cast is refused.
+- All "every Ruloi dead" now belongs only to freeing the women, as you said; their line counts how many remain and names the light fixture above the eggs (break it with Spark).
 
-Walked by the robot on your save so far: Citadel (boss dies to the sword in six blows) -> Dreamstone -> Claw Mountains -> Darker Jungle -> Temple door takes the stone and gives it back -> inside the Huline Temple. From the Temple ritual onward it is still walking; I add what it finds below before you are home.
+**The way home with the Dreamstone:** the Journal tells you. At the ice opening: jump onto an ice floe (the original way), or **E - Climb down to the icy gulch** (our shortcut). Then the jungle, the Temple door (place the stone, take it back, enter).
 
-Fallbacks if anything is wrong with r19o4: `play_r19o3.sh`, then `play_r19o.sh`.
+**In the Temple:** every step of the ritual is named on screen when you face it. One place needs a trick: to get back up from the low passage, be the lizard, back well away from the ledge, then run and jump (the screen says so on this build).
 
-One thing we learned: on 15 November you did not walk up the glacier to the Citadel. You fell in the gulch and our fall recovery put you next to the Citadel by accident. The real way up has not been played by anyone yet; it is on the list.
+**Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
 
-**Decision for you:** should the "E - Climb down" shortcut stay in Classic once the floe route is proven playable? I lean yes, as an option.
+Walked by the robot on your own save, no help: the Citadel from your stop to the exit; the Claw Mountains both ways down; the Darker Jungle; the Temple door; the Temple ritual, the three trials and the three idols. It is in the last part of the Temple now; what it finds after that I add below.
+
+For reading, if you like: `AI_COMMS/grok_research/L13_PLAYER_WALKTHROUGH_20261116.md` - the original Citadel in 14 steps from your longplay and the hint book (the elevator is a ride, not a cutscene; the original shows a "Remaining Ruloi N/19" counter, which we will add).
+
+Fallbacks: `play_r19o5.sh`, `play_r19o4.sh`, `play_r19o.sh`.
+
+**Decision for you:** should the "E - Climb down" shortcut stay in Classic? I lean yes, as an option.
 
 ---
 
