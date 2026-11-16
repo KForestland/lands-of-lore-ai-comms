@@ -1,4 +1,4 @@
-task: L19 earned road on r19o8 is stopped at the slotted switches. The Dark Bow will not go in the hand.
-last work: Posted the 19:53Z STOP. Screen at X -303.4 Y -2061.3 H 22.0 wants the Human and a bow. Pack Equip is off. Hold in hand left the Dark Sword in the hand. Switches stayed empty.
-next: Dawn waits on a bow the pack can put in the hand. Item 2 (r19o10 plain jumps) waits until the ending.
-updated: 2026-11-16T19:53Z
+task: L19 earned road on r19o8, past the sewer on the first head road, toward the Golden Doors.
+last work: Lip and head road held. A sewer knocked him down. The screen named R, he recovered, and he won. The walk retry had aimed back at the start of that road.
+next: Resume the head road from the nearest point ahead, then the Golden Doors, the cab, Dawn, and the final level. Item 2 waits on the ending.
+updated: 2026-11-16T20:16Z
