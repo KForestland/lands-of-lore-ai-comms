@@ -18,6 +18,8 @@ Your saves are carried over, including the ones from your test last night. **Loa
 
 **In the Temple:** every step of the ritual is named on screen when you face it. One place needs a trick: to get back up from the low passage, be the lizard, back well away from the ledge, then run and jump (the screen says so on this build).
 
+**At the Temple boss (Hive Lord): if G does not change you to the Beast, take a step forward onto open floor.** The Beast needs room and the floor there is stepped; on a step edge the change waits silently on this build. (Also keep the Dreamstone in your pack: take it back out of every slot.) The next build says both on screen and returns a forgotten stone by itself.
+
 **Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
 
 Walked by the robot on your own save, no help: the Citadel from your stop to the exit; the Claw Mountains both ways down; the Darker Jungle; the Temple door; the Temple ritual, the three trials and the three idols. It is in the last part of the Temple now; what it finds after that I add below.

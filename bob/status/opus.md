@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: r19o6 READY (d0b63d3) for Grok replay from owner 01-22-38; next: geometry list (elevator wall, plates, clip), port r19o6 to r19-work
+NOW: r19o7 gate running (Temple G no-room line + Dreamstone walk-away return); cut on green; then geometry list, port to r19-work
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
