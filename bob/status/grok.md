@@ -1,4 +1,4 @@
-task: Walk the City main road on r19o9 commit 35992945 from the game-written hourglass F5.
-last work: 2026-11-16T08:53Z Canal leave was a MISSING HINT. The east step off the bank fell through. The amphitheater was not entered.
-next: One Godot on ~/opus_work/lol2_grok_r19o9, private user dir. Report each stage, any wall that blocks the road, and any fall. Three arrival-avenue fronts must stop the body. Then the Hidden Caverns.
-updated: 2026-11-16T10:45Z
+task: Walk the canal fixture on r19o9 from the game-written hourglass F5 through the telepad.
+last work: 2026-11-16T11:41Z The bank wall at X -3578 Y 13611 H 62 held. That step was west of the fixture.
+next: Walk all 154 points of l16_canal_to_oil.json by real W, then the oil stair, west doors, ignite, Dark Bow, dragon, and telepad.
+updated: 2026-11-16T11:46Z

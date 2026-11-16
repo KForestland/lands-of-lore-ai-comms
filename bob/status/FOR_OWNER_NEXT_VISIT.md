@@ -1,7 +1,7 @@
 # MONDAY 16 NOVEMBER: play this (lead, updated 03:50Z after your night test)
 
 ```
-~/lol2_playtests/play_r19o7.sh
+~/lol2_playtests/play_r19o8.sh
 ```
 
 Your saves are carried over, including the ones from your test last night. **Load your last save at the web and go on.** F10 where you stop or something looks wrong.
@@ -20,7 +20,7 @@ Your saves are carried over, including the ones from your test last night. **Loa
 
 **At the Temple boss (Hive Lord):** G changes you to the Beast; if you stand on a step edge the screen now tells you to move onto open floor, and the change comes. Five hits as the Beast. A Dreamstone left in a slot comes back to your pack by itself when you walk away.
 
-**In the City of the Ancients (state 07:00Z, still being walked):** the main road is: south-avenue fountain (strike the floating ball) -> glass pyramid (one Silverleaf) and hourglass -> then TURN AWAY from the tower doors it opens -> the canal -> the oil stair -> ignite the oil -> take the Dark Bow -> the dragon room (chop the dragon) -> the telepad to the Hidden Caverns. **Do not go up the tower lift to the starry floor** (not finished: nothing to do there and the floor ends in a fall), and leave the four tower sections and the ivory chips. **Keep to the streets in the City: do not walk into building fronts, terraces or the amphitheater tiers.** On this level the drawn walls did not stop the body, so you could walk through a facade and fall into the void (you wake at the arrival lift). The amphitheater and the bank terrace are fixed; the rest of the level is being closed and I say below whether tonight's build has it.
+**In the City of the Ancients (state 07:00Z, still being walked):** the main road is: south-avenue fountain (strike the floating ball) -> glass pyramid (one Silverleaf) and hourglass -> then TURN AWAY from the tower doors it opens -> the canal -> the oil stair -> ignite the oil -> take the Dark Bow -> the dragon room (chop the dragon) -> the telepad to the Hidden Caverns. **Do not go up the tower lift to the starry floor** (not finished: nothing to do there and the floor ends in a fall), and leave the four tower sections and the ivory chips. **In the City, keep to the streets, and step up onto raised walkways head-on.** On this level the drawn walls did not stop the body, and a low step onto an arcade can let you slip under its floor; either way you fall into the void and the game now says "You fall and wake at the arrival lift." Tonight's build closes the amphitheater and the bank terrace. A second build, `play_r19o9.sh`, closes about 5,400 more walls in the City; if you keep falling there, quit and start that one (your saves are copied). I say at the top if it has become the main one.
 
 **Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
 
@@ -28,9 +28,11 @@ Walked by the robot on your own save, no help (state 05:00Z): the Citadel from y
 
 For reading, if you like: `AI_COMMS/grok_research/L13_PLAYER_WALKTHROUGH_20261116.md` - the original Citadel in 14 steps from your longplay and the hint book (the elevator is a ride, not a cutscene; the original shows a "Remaining Ruloi N/19" counter, which we will add).
 
-Fallbacks: `play_r19o6.sh`, `play_r19o5.sh`, `play_r19o4.sh`, `play_r19o.sh`.
+Fallbacks: `play_r19o7.sh`, `play_r19o6.sh`, `play_r19o5.sh`, `play_r19o4.sh`, `play_r19o.sh`.
 
 **Decision for you:** should the "E - Climb down" shortcut stay in Classic? I lean yes, as an option.
+
+**A job only you can do (security, 10 minutes, not urgent tonight):** the folder `~/AI_COMMS` is a git repository whose remote address contains a GitHub access token in plain text (in `.git/config`). Nothing of yours has been pushed from it, and we have now excluded your F10 bundles and saves from that repository. But the token should be replaced: on GitHub, revoke that token and make a new one; then set the remote without the token and let a credential helper hold it. Ask me and I walk you through it step by step.
 
 ---
 

@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: r19o9 (35992945) L16 gate running, ETA 11:15Z; r19o8 cut; then dev-text list
+NOW: r19o8+r19o9 cut; next R132 Sol recorder 2fb16bf6, then R131 f1/f2 spot-check
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
