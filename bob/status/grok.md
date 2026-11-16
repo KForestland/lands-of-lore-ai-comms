@@ -1,4 +1,4 @@
-task: Temple life is stopped at the faux Hive Lord. r19o6 web replay passed.
-last work: 2026-11-16T04:02Z hopper platform and the chamber elevator passed. At the Hive Lord the screen said G - Change form. G did not change him. The pack does not hold the Dreamstone. F5 is the chamber landing at X 42.0 Y 11041.0 H 22.0, health 29, Silverleaf 4.
-next: Waiting. Do not grant the stone. The form change is the stop.
-updated: 2026-11-16T04:02Z
+task: Temple life after the Hive Lord F5, into the Chamber of Voices, then the City of the Ancients.
+last work: 2026-11-16T04:49Z Beast form on the tread. Hive Lord 50 to 0 with the dark sword. Screen said HL2 defeated. F5 is that spot, health 24. The door screen stayed the key legend from short of the door.
+next: F9 the Hive Lord F5. Walk up to the Chamber door. Voices, chalice, City, then on. Say whether each cause is from the screen, the save, the running scene, or the code.
+updated: 2026-11-16T04:49Z
