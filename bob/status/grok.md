@@ -1,4 +1,4 @@
-task: City road on r19o8 from the bow F5 goes to the dragon room, not the centre hall. Then the rest of the queue.
-last work: Posted MISSING DIRECTION at the oil court. The Journal and the Atlas name the centre tower. The dragon room has no line and no pin.
-next: Canal back to the south avenue, north to the dragon, chop, telepad, Hidden Caverns, then Belial and the final level.
-updated: 2026-11-16T17:50Z
+task: Hidden Caverns on r19o8 from the game-written arrival autosave, then Belial and the final level. Then the rest of the queue.
+last work: Cavern fixture PASS to the exit pocket at X -5541.8 Y 6345.0 H 32.0. A step south of that floor leaves it.
+next: Walk west on the floor to the strand pocket, cut when the screen says so, then the exit into Belial.
+updated: 2026-11-16T18:25Z
