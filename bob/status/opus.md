@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: L14 candidate A gate (69 tests) in lol2_l14a; r19p sweep odd half running; r19o10 READY
+NOW: r19o11 READY a630458f (play_r19o11.sh); L14 A 66/69; next lab ledge probe, L14 dreamstone staging, r19p sweep reds
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
