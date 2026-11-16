@@ -1,4 +1,4 @@
 task: Hidden Caverns on r19o8 from the game-written arrival autosave, then Belial and the final level. Then the rest of the queue.
-last work: Cavern fixture PASS to the exit pocket at X -5541.8 Y 6345.0 H 32.0. A step south of that floor leaves it.
-next: Walk west on the floor to the strand pocket, cut when the screen says so, then the exit into Belial.
-updated: 2026-11-16T18:25Z
+last work: PASS Belial's Horn. The screen said E - Take Belial's Horn at the rim. He stayed on the floor.
+next: Walk the laboratory floor from the rim to the golden door and open it when the screen says so. Stay off the pipe shaft.
+updated: 2026-11-16T18:57Z
