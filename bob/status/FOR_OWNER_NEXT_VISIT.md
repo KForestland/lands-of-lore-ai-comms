@@ -22,7 +22,7 @@ Your saves are carried over, including the ones from your test last night. **Loa
 
 **Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
 
-Walked by the robot on your own save, no help: the Citadel from your stop to the exit; the Claw Mountains both ways down; the Darker Jungle; the Temple door; the Temple ritual, the three trials and the three idols. It is in the last part of the Temple now; what it finds after that I add below.
+Walked by the robot on your own save, no help (state 05:00Z): the Citadel from your stop to the exit; the Claw Mountains both ways down; the Darker Jungle; the Temple door; the whole Huline Temple - ritual, three trials, three idols, the hopper platform, the Hive Lord (five hits as the Beast, you end at 24 health), the chalice - and the arrival in the City of the Ancients. The City, the Hidden Caverns, Belial's caverns and the final level are still ahead of it; what it finds there I add below.
 
 For reading, if you like: `AI_COMMS/grok_research/L13_PLAYER_WALKTHROUGH_20261116.md` - the original Citadel in 14 steps from your longplay and the hint book (the elevator is a ride, not a cutscene; the original shows a "Remaining Ruloi N/19" counter, which we will add).
 
