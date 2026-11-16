@@ -1,4 +1,4 @@
-task: Centre hall STOP on r19o8 is posted. The chop and the telepad were not reached.
-last work: 2026-11-16T17:27Z Mantle walk stopped at X 5517.4 Y 9122.0 H 32.0 in a leaf slit. Screen is the key legend. No fall. Health 30, three Silverleaf.
-next: Wait. The life ended at the centre hall. The dragon chop and the telepad are still ahead of that slit.
-updated: 2026-11-16T17:27Z
+task: City road on r19o8 from the bow F5 goes to the dragon room, not the centre hall. Then the rest of the queue.
+last work: Posted MISSING DIRECTION at the oil court. The Journal and the Atlas name the centre tower. The dragon room has no line and no pin.
+next: Canal back to the south avenue, north to the dragon, chop, telepad, Hidden Caverns, then Belial and the final level.
+updated: 2026-11-16T17:50Z
