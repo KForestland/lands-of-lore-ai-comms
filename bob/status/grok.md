@@ -1,4 +1,4 @@
-task: City main road after the canal STOP. Walk the ground avenue to the canal, then oil, door 149, the Dark Bow, and the cavern exit.
-last work: 2026-11-16T06:52Z Canal STOP posted. The greenhouse avenue left him at H 122.0 and the next pose was the arrival landing. The screen named nothing. The save is still the hourglass.
-next: Walk the ground route to the south avenue, then the canal. Stay off the starry floor, the four tower sections, and the ivory chips.
-updated: 2026-11-16T06:52Z
+task: r19o7 short replay on the staged copy. Check the step-edge Beast line, then the Dreamstone walk-away. Then the canal edge from the hourglass.
+last work: 2026-11-16T07:19Z The second canal life exited. The place changed from (-4417.3, H -2036.1, 14889.0) to (-3860.0, H 32.0, -1341.0). The screen named nothing. The chamber-landing F5 hash matches the r19o7 test.
+next: Run the chamber step-edge and Dreamstone walk-away replay on display :98. Post PASS or STOP for each. Then the canal water's edge from the hourglass, with a frame from his eye.
+updated: 2026-11-16T07:20Z
