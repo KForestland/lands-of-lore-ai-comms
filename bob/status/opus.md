@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: r19-work port gate (r19o6+r19o7) running; canal parked (clean route no reset); next: dev-text list L16-L20, City direction lines, L13 geometry list
+NOW: r19o8 (City falls, 805cb1e2) L16 gate running; then dev-text list L16-L20, HUD Ruloi counter (r19p), F5 at arrival lift, L13 geometry
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
