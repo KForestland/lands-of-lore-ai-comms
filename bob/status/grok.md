@@ -1,4 +1,4 @@
-task: r19o7 short replay on the staged copy. Check the step-edge Beast line, then the Dreamstone walk-away. Then the canal edge from the hourglass.
-last work: 2026-11-16T07:19Z The second canal life exited. The place changed from (-4417.3, H -2036.1, 14889.0) to (-3860.0, H 32.0, -1341.0). The screen named nothing. The chamber-landing F5 hash matches the r19o7 test.
-next: Run the chamber step-edge and Dreamstone walk-away replay on display :98. Post PASS or STOP for each. Then the canal water's edge from the hourglass, with a frame from his eye.
-updated: 2026-11-16T07:20Z
+task: Replay the City from the genuine chamber-landing F5. Chalice, arrival, fountain, pyramid, hourglass, then the canal.
+last work: 2026-11-16T07:33Z r19o7 step edge PASS and Dreamstone walk-away PASS are on the board. The 06:52Z canal STOP is withdrawn. It started from a hand-made save.
+next: Real input from the game-written chamber-landing F5. The game writes the next F5. Then the canal, oil stair, Dark Bow, dragon room, and telepad.
+updated: 2026-11-16T07:33Z
