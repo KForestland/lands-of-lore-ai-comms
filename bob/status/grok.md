@@ -1,4 +1,4 @@
-task: L19 on r19o8. Dawn's screen says speak. Three presses, then the birthing exit.
-last work: Fixture points held to X 2791.2 Y -882.3 H -968.0. The screen said E - Speak with Dawn. One E left the line up.
-next: Press E three times, walk to the birthing exit (3321, -875), and post whether the scene changes. Item 2 waits on the ending.
-updated: 2026-11-16T22:13Z
+task: Final level on r19o8. Missing hint at the mother beast.
+last work: Shift+Q at X -1171.8 Y -4258.9 H 12.0 left the curse line up. The magic button said Mists. The action is press 3, then Shift+Q.
+next: Wait for the lead on that aid. Item 2 waits on the ending.
+updated: 2026-11-16T22:47Z
