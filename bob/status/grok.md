@@ -1,4 +1,4 @@
-task: City starry floor STOP. The screen names no way on.
-last work: 2026-11-16T06:09Z Greenhouse PASS and tower-lift PASS are on the board. The starry floor STOP is posted. The disk is in view. The screen names no action. The atlas pin's floor ends. The save is that floor, health 30, Human, three Silverleaf.
-next: Do not walk the roof pin again. A way off this floor has to be on the screen before he leaves it.
-updated: 2026-11-16T06:09Z
+task: City main road after the canal STOP. Walk the ground avenue to the canal, then oil, door 149, the Dark Bow, and the cavern exit.
+last work: 2026-11-16T06:52Z Canal STOP posted. The greenhouse avenue left him at H 122.0 and the next pose was the arrival landing. The screen named nothing. The save is still the hourglass.
+next: Walk the ground route to the south avenue, then the canal. Stay off the starry floor, the four tower sections, and the ivory chips.
+updated: 2026-11-16T06:52Z

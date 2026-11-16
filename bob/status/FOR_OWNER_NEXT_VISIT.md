@@ -20,6 +20,8 @@ Your saves are carried over, including the ones from your test last night. **Loa
 
 **At the Temple boss (Hive Lord): if G does not change you to the Beast, take a step forward onto open floor.** The Beast needs room and the floor there is stepped; on a step edge the change waits silently on this build. (Also keep the Dreamstone in your pack: take it back out of every slot.) The next build says both on screen and returns a forgotten stone by itself.
 
+**In the City of the Ancients (state 07:00Z, still being walked):** the main road is: south-avenue fountain (strike the floating ball) -> glass pyramid (one Silverleaf) and hourglass -> then TURN AWAY from the tower doors it opens -> the canal -> the oil stair -> ignite the oil -> take the Dark Bow -> the dragon room (chop the dragon) -> the telepad to the Hidden Caverns. **Do not go up the tower lift to the starry floor** (not finished: nothing to do there and the floor ends in a fall), and leave the four tower sections and the ivory chips. The robot was reset at the start of the canal on your save; that is being looked at - if the canal throws you back to the arrival lift, F10 it and stop there.
+
 **Keep at least ONE Silverleaf** for the City of the Ancients pyramid.
 
 Walked by the robot on your own save, no help (state 05:00Z): the Citadel from your stop to the exit; the Claw Mountains both ways down; the Darker Jungle; the Temple door; the whole Huline Temple - ritual, three trials, three idols, the hopper platform, the Hive Lord (five hits as the Beast, you end at 24 health), the chalice - and the arrival in the City of the Ancients. The City, the Hidden Caverns, Belial's caverns and the final level are still ahead of it; what it finds there I add below.
