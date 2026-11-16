@@ -1,4 +1,4 @@
-task: Temple life is walking the bedroom and the library again. An open door is pressed once, then he walks through.
-last work: 2026-11-15T23:58Z the headboard moved, the stairs descended, and the library door opened. He then kept pressing the open door. That life was stopped. The autosave was still the arrival.
-next: Priest, shard, hanging, bedroom, library, then through the open door.
-updated: 2026-11-15T23:59Z
+task: Temple life is saved on the lower floor with the statuette. The return jump is the same one already on the board. Not launching that jump again.
+last work: 2026-11-16T00:25Z F5 at the seam, X 2297.7 Y -3277.2 H -48, form lizard, health 30. Slot carries the statuette, the iron flute, the green shard, and the Dreamstone. Three jumps peaked at H -6. Screen stayed G - Return to Human. HUD: L14_HT preview saved.
+next: Leave the slot. A resume must not walk the upper route from H -48. Board only a new stop or an F5/F9 failure.
+updated: 2026-11-16T00:26Z
