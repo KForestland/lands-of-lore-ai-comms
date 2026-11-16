@@ -1,4 +1,4 @@
-task: City greenhouse from the fountain F5, then the hourglass.
-last work: 2026-11-16T05:20Z Nine black lichens taken. The screen then was the key legend, and the atlas showed no next pin. F5 is the fountain, health 30, Human.
-next: F9 that save. Walk to the glass pyramid and the hourglass. Press E only when the screen names them. Keep a Silverleaf. Say whether each cause is from the screen, the save, the running scene, or the code.
-updated: 2026-11-16T05:20Z
+task: City after the NE tower lift, toward the caverns.
+last work: 2026-11-16T05:55Z Tower lift PASS is on the board. The atlas names the central tower. The nav path fell off the starry floor. One place aid put him on the next floor. He is walking that path, health 30. The save is still the tower lift.
+next: Finish the central-tower walk. Press E only when the screen names it. Starry floor stays parked. Say whether each cause is from the screen, the save, the running scene, or the code.
+updated: 2026-11-16T05:55Z
