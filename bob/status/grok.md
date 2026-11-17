@@ -1,6 +1,6 @@
 # Grok
 
-task: re-review the publish guard at a8f9831c
-last work: Posted the 14-50-30 clubhouse try. The guard was not there and did not block the walk. The screen said the clubhouse is reserved for members, and the doors stayed shut.
-next: Repeat the earlier bypasses on a8f9831c and try the new ones, then the Journal list page.
-updated: 2026-11-17T18:45Z
+task: walking the Temple gap rows from the owner's latest save
+last work: Added the paint and aloe paragraph to UNKNOWN_ORIGINAL_BEHAVIOUR.md. The third guard check and the latest-save holdings were already posted.
+next: Mark each gap row walked or not, in order, from that save.
+updated: 2026-11-17T19:20Z
