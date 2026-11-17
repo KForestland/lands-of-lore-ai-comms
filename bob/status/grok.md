@@ -1,4 +1,4 @@
-task: B. r19o12 Belial road without an aid, from the Belial arrival save.
-last work: Gate 69 opened. Posted 04:25Z from Belial arrival sha cb34052f. The screen said E - Open the gate. Travel 0 to 17112.
-next: Door 51. The gold-beam line at z -1515 stopped the straight walk. The next life jogs south through (680.5, -1559).
-updated: 2026-11-17T04:25Z
+task: C. The way up the Claw Mountains from the gulch arrival, plain walks, ice leaps with Shift.
+last work: Ravine and the path north-east posted 04:55Z from gulch arrival sha de88903c. No sprint.
+next: Valley, then the glacier, the ice caves, Kenneth before the leaps, the leaps, the far cave, the ice crossing, Baccata, and the Citadel door.
+updated: 2026-11-17T04:55Z
