@@ -3,23 +3,25 @@
 **Build to play: r19p2** (launcher `play_r19p2.sh`; your saves are copied from your r19p play today). Fallback: r19p.
 
 ## What r19p2 changes after your r19p play
-- **Darker Jungle frame rate:** the belt looked up every carried item by name on every frame; it now remembers them. A new speed test fails if the game's own work per frame grows again.
+- **Darker Jungle frame rate:** the belt looked up every carried item by name on every frame; it now remembers them. A new test fails if the game's own script work per frame grows again. It measures script time on a short walk from your saved spot, not the frame time you see (that includes drawing); the full frame where you stood is measured next.
 - **The Atlas uncovers about three times as much as you walk** in the Jungle, the Hive and the Dark Halls. The Cave and the Museum keep the old rule (the wider one opened the Cave map too far out and left nothing to discover in the Museum).
 - **The wrong Huline voice line is gone;** that line is silent until its sound is checked.
 - **The clubhouse guard** appears only once you are a tribe member. Before that the doors say the clubhouse is reserved for members of the tribe. A dead guard stays dead.
 
 ## How r19p2 was checked
 - **Targeted gates:** 153 item and level tests, then the new tests. Every level family has at least one item test.
-- **Full sweep of every test (1425): still running.** This page gets the result when it ends.
-  - Failing so far, the same way as on r19p, with their owners: the tower descent on the Dracoid Ruins, where the fall recovery moves you (Opus finds the cause); one belt refusal test on the Cemetery (Sol); the item-grant census, which needs re-pinning after the quest-protection work (Sol).
-  - One test-side failure is ours and already fixed for the next build: a Hive recovery test did not know the new Atlas rule.
+- **Full sweep of every test (1425) on r19p2, head e44f9f26: two of three parts finished, the last still running** (night of 17 November). This page gets the final count when it ends. r19p itself (head 3e2e65c5) had no full sweep, only targeted gates; the last full sweep before this one ran on head f38664a2 (r19-work, 15 November) and had 27 failing tests.
+  - **Caused by r19p2, and fixed for the next build:** a Hive recovery test that did not know the new Atlas rule; the record of deviations, which needed one file per row; and a quest-protection check that keeps a fingerprint of the item list and had to learn the new one. None of the three changes the game.
+  - **Already failing before r19p2, with owners:** the tower descent on the Dracoid Ruins, where the fall recovery moves you (Opus finds the cause); one belt refusal test on the Cemetery (Sol); the item-grant census, which needs re-pinning after the quest-protection work (Sol).
+  - **Older failures found by the sweep, not caused by r19p2** (they fail the same way on r19p): a Hive screen test that expects an old save message; four tests from the Claw Mountains, City, Belial's Laboratory and Museum work of the last days. Opus finds which change caused each.
 - **Grok's replay on r19p2 by real keys:** the Atlas and the silent voice line pass. Frame time where you stood in the Darker Jungle: 196 ms on r19p, 139 ms on r19p2, on the same virtual display. That is better but still slow on that display. Opus is measuring what the frame is spent on there. The clubhouse guard check is still open.
 - **States:** READY and reviewed (in part). Not merged into r19-work. Not owner-played.
 
+## Next build, r19p3 (being checked now)
+Candidate head 17ec1001 = r19p2 plus: Sol's **Dark Halls crates** (E exposes the crystals; Dragon's Blood only when it can reach an exposed crate) and the **brown-dirt floor** (the garden beds hold you), Sol's **Hive locks**, the clubhouse doors no longer offering "Open the door" to a non-member, and the fixes above. All three Sol changes passed independent review. The Dark Halls, Hive and item tests are running on it now; it becomes your next build when they pass. Not owner-played.
+
 ## Dark Halls (Sol)
-- **Chests and crates that cannot be primed:** Sol's fix was reviewed independently as "merge after fixes" (R141). The fixes are in work.
-- **The hole at the brown dirt:** the cause is found (the garden-bed floor had no collision). The fix is in work.
-- After those: Rix, then wax handed over from the belt.
+- After the crates and the floor: Rix, then wax handed over from the belt.
 
 ## Two questions for you
 - **Dark Halls, the three ghosts and the orb:** what do you remember? What releases the door, and does the orb keep pulling ghosts in? The original script names one ghost for the door, and we will not guess the rest.

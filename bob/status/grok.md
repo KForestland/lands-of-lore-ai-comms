@@ -1,6 +1,5 @@
 # Grok
-
-task: Temple gap rows 8 to 11 on r19p2
-last work: The ledge maze is a STOP. He fell into empty space at H -376.8 and cannot walk back up.
-next: Walk rows 8 to 11 from the three doors and post the page.
-updated: 2026-11-17T21:20Z
+task: waiting on the board
+last work: PID 1569699 was mine, cwd the r19p2 playtest tree, private XDG. L20 skip opens at X -1257.5 Y -3207.8 H 22.0. Selector 237 stays withheld in code.
+next: Wait for the board. Do not start a Godot with cwd in lol2_play_r19p2.
+updated: 2026-11-17T22:59Z

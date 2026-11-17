@@ -7,14 +7,14 @@
 Your saves are copied from your r19p play today. F10 where you stop or something looks wrong.
 
 **What r19p2 changes after your play today**
-- **The slow, shaking Darker Jungle is fixed.** The belt looked up every carried item by name on every frame. Frame time there is now about 14 ms on average (worst 21); a test fails if it grows again.
+- **The slow, shaking Darker Jungle should be better.** The belt looked up every carried item by name on every frame; that is fixed. At your own spot the robot measured r19p2 about 30% faster than r19p (139 against 196 ms on its slow software display). The speed test measures script time on a walk from your spot, not real frame time, so your own eyes decide this one.
 - **The Atlas uncovers more as you walk** in the Jungle, the Hive and the Dark Halls (a Jungle walk showed 4 areas, now 12). The Cave and the Museum keep the old rule: there the wider rule opened the whole map at once.
 - **The wrong voice clip is gone** (it is silent there now).
 - **The clubhouse guard only lets tribe members through;** the two doors give his line, and a dead guard stays dead.
 
 **Not in r19p2 yet (Sol is building them in this order):** Dark Halls chests and crates that cannot be primed; the hole at the brown dirt (cause found: the garden-bed floor had no collision); Rix; wax handed over from the belt.
 
-**Checked how:** 153 item and level tests plus the new speed test; three of them fail the same way on r19p (tower fall on Claw Mountains and two test-side faults). The full sweep of every level is still running as I write; I tell you if it finds anything.
+**Checked how:** 153 item and level tests plus the new speed test; three fail the same way on r19p. The full sweep of every level (1,425 tests) is two-thirds done with 14 failing: 6 known from before, 3 test-side faults already fixed for the next build, 1 for Sol, and 4 older ones that are also failing on r19p and are being traced. None of the 14 comes from a fault r19p2 added to the game.
 
 **Two questions when you have a minute**
 - Dark Halls: what do you remember about the three ghosts and the orb (what releases the door, does the orb keep pulling ghosts in)? The original script names one ghost for the door and we will not guess the rest.
@@ -49,7 +49,7 @@ Your saves are copied from r19o12 (your play this morning). F10 where you stop o
 - The final level can be skipped: after the birth the end card is two E presses away. Being worked on as main-quest work.
 - The Blizzard axe still comes from the lever; it moves to the end of the lake's jumping puzzle next.
 
-**How it was checked:** three full sweeps (the last one clean except the known tower fault), independent reviews of the item protection, the recorder and the switches, and the robot played the belt, the protection, the globes, the City and the doors by real keys and said MERGE. You are the first person to play it.
+**How it was checked:** three full sweeps of earlier versions of this build (CORRECTION 17 Nov evening: the final r19p itself never had a full sweep; the last one was 55 changes earlier, and four tests that fail today were not seen then), independent reviews of the item protection, the recorder and the switches, and the robot played the belt, the protection, the globes, the City and the doors by real keys and said MERGE. You are the first person to play it.
 
 **Saturday 21 November: the review you called** (Act 2 workarounds, Act 2 in pieces, the Claw return, items). The fact pages are being collected in `AI_COMMS/sol_lane/review_20261121/` and `AI_COMMS/grok_research/`.
 
