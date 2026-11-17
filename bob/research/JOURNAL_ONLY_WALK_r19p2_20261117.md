@@ -2,7 +2,7 @@
 
 Fact page for Saturday. Sol builds nothing from it before then. Header: X = Godot x, Y = Godot z, H = Godot y.
 
-Build r19p2 `e44f9f26`. Save: the owner's latest autosave, sha `863675d4f2bb9a065ac2e3b26f5c93cec3fc9644adc948ec2313d85fb8f55d01`, area L14_HT, health 30, Human. The arrival stand was on the screen at 18:40Z. A keyed walk from that same file, at 19:33Z, stood rows 1 to 3. The save file was not written. Rows 4 to 11 were not reached.
+Build r19p2 `e44f9f26`. Save: the owner's latest autosave, sha `863675d4f2bb9a065ac2e3b26f5c93cec3fc9644adc948ec2313d85fb8f55d01`, area L14_HT, health 30, Human. The arrival stand was on the screen at 18:40Z. A keyed walk from that same file, at 19:33Z, stood rows 1 to 3. A later keyed walk, at 20:34Z, stood rows 4 and 5. The owner's save file was not written. Rows 6 to 11 were not reached.
 
 The sheet he holds has two notes and no Temple note and no City note:
 
@@ -22,8 +22,8 @@ A gap is a stand where this Journal, and the Temple notes the build can add, do 
 | 1 | Huline Temple | Arrival court, region 864, X 2406.7 Y -2415.7 H 32.0. Played. Round stone court, a willow, blood on the floor. The screen showed Dampen charm, used, the belt line Broken Thohan, and the key legend. It named no action. E was not pressed. | The two side notes above. Neither says how to go on, or where the seller stands. | The door step is already in the save (BRADY printed 214, PDF PAGE 215, step 81). Next is the priest's body near the entrance: pick it up and take it to the low slab. HINTBOOK chapter 12, lines 4306-4344. | Main. The notes on the sheet are side. |
 | 2 | Huline Temple | Slab room, the two bowls. Walked. X 2424.6 Y -3600.9 H 30.5, health 30. The screen named carry, place, both supplies, both offerings, then The floor begins to descend. | Still the two side notes. No ritual note exists. | Aloe in the western bowl, poison in the eastern bowl, then a spark on the body. HINTBOOK 4348-4355. BRADY steps 82. | Main |
 | 3 | Huline Temple | Healing pool, the wooden post. Walked. X 3045.6 Y -5684.9 H 76.8, health 30. The screen named the green crystal shard and he took it. After that, the key legend only. | Still the two side notes. | The first crystal shard, from the wooden post by the pool. HINTBOOK 4376-4377. BRADY step 83. | Main |
-| 4 | Huline Temple | Lower halls, the two machines. Not walked. The hanging opened. The walk then stopped in the spider corridor at X 1345.8 Y -5378.2 H 32.0, health 29, against a hive warrior. The machines were not stood at. | Still the two side notes. | The button by the body, the red mulch into the second machine, the statuette. HINTBOOK 4455-4473. BRADY step 84. | Main |
-| 5 | Huline Temple | Bedroom, library, empty niche. Not walked. Not reached. | Still the two side notes. | The headboard, the two hallway buttons, the library button, the statuette in the empty niche, the second shard. HINTBOOK 4515-4527. BRADY steps 85-86. Step 85 is the coffin flute. | Main |
+| 4 | Huline Temple | Lower halls, the two machines. Walked at 20:34Z. The hanging opened. In the spider corridor the screen showed the hive warrior at 1500/1500 and said he struck. Health fell to 27 while a run past failed, then a mouse fight dropped the warrior and health was 20. The pedestal button said the body moves onto the grinder's belt, at X 2198.5 Y -3896.9 H -48.0. The trough slid in. The statuette was taken. The coffin flute was not named, so it was not taken. | Still the two side notes. | The button by the body, the red mulch into the second machine, the statuette. HINTBOOK 4455-4473. BRADY step 84. | Main |
+| 5 | Huline Temple | Bedroom and the hall buttons walked. Bedroom at X 2194.5 Y -5236.9 H 152.0, health 30. The screen said the headboard was pushed aside. One hall button said the stairs descend. The next said the library door opens. The empty niche was not reached. On the way there the walk was still moving at X 2297.1 Y -3830.3 H 52.0, and the screen named no action. | Still the two side notes. | The headboard, the two hallway buttons, the library button, the statuette in the empty niche, the second shard. HINTBOOK 4515-4527. BRADY steps 85-86. Step 85 is the coffin flute. | Main |
 | 6 | Huline Temple | Spiral, after the scale. Not walked. Not reached. | Still the two side notes. The scale note, once he is at the bowls with a shard, does not mention the spiral. | Click the Dreamstone on the receptacle to raise the steps. BRADY printed 203, PDF PAGE 204, line 8253, and printed 215, step 87. | Main |
 | 7 | Huline Temple | The three doors. Not walked. Not reached. | Still the two side notes. | The ledge path, the tilt room, and the fire paths, one idol from each. HINTBOOK 4536-4572. BRADY steps 88-90. | Main |
 | 8 | Huline Temple | Flute slot and the blade hall. Not walked. Not reached. | Still the two side notes. | The flute in the angled slot, then the right-hand passage around the blades. HINTBOOK 4576-4585. BRADY step 91. | Main |
@@ -39,7 +39,17 @@ The screen at the bowls named the next action. Carry, place, take aloe, take the
 
 The post named the green crystal shard. He took it. The screen after that was the key legend.
 
-The left hanging then said it was drawn aside. Past it, in the spider corridor, the screen showed a hive warrior at 1500/1500 and said the warrior struck him. Health 29. The walk stopped there. That is not a player stop: nothing on the screen failed, and the warrior was in the way. Rows 4 to 11 were not stood at.
+The left hanging then said it was drawn aside. Past it, in the spider corridor, the screen showed a hive warrior at 1500/1500 and said the warrior struck him. Health 29. The walk stopped there. That is not a player stop: nothing on the screen failed, and the warrior was in the way. Rows 4 to 11 were not stood at in that life.
+
+## Keyed walk, 20:34Z
+
+Same owner's file, sha unchanged, and the file was not written. The running scene. At every mark the Journal ids were still only `thohan_sword_broken` and `tavern_after_farewell`.
+
+The corridor warrior blocked a run past at X 1348.1 Y -5377.6 H 32.0, health 27, warrior 1500/1500. The screen had said he struck. One mouse fight then dropped him. Health 20. No reload. MISSING HINT: the screen did not name F5. Before the fight it said L14_HT preview saved. That slot is the game's own slot 1 from this walk, sha `7aa6c2e585de62038f8b9ba3316cf35a9ba41d927d0dce2c99beb2d3c5c8a956`, stand X 1344.0 Y -5207.4 H 32.0.
+
+The machines named the pedestal button, the filled trough, and the long edge. The button's line was that the body moves onto the grinder's belt. The statuette's line was Statuette taken, at X 3347.1 Y -3616.3 H -23.0.
+
+The bedroom named the headboard and said it was pushed aside, at X 2213.9 Y -5232.2 H 152.0. The hall button said the stairs descend, at X 2422.7 Y -5271.6 H 32.0. A later press said the library door opens. Further presses said the door is already open. The niche was not stood at. The screen there named no action. Rows 6 to 11 were not stood at.
 
 ## Where the Journal does name the next step
 
