@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: sweep 3 on r19p 96d07e39 running; r19o12 READY dad7fda4
+NOW: sweep 3 on 96d07e39 running (shard 1 + 3/5 queued); port reds fixed 9640df56; then red list + r19p cut
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
