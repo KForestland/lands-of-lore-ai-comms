@@ -39,3 +39,12 @@ Then: one board line; update the plan file and the public roadmap text if dates 
 ## 6. Added 15 November 2026 (the owner caught this)
 - The lanes are ALWAYS asked, even in a light week: at least one round (section 2's questions, plus "what did the lead get wrong", one out-of-the-box idea, one idea that makes the game better for a player). The lead does not write the final alone. If the lanes are busy with the owner's stops, the round is asked "at a natural break" with a deadline, and the final waits for it.
 - A lane that does not read its queue within two hours gets its review items reassigned; note it in the review as a time loss.
+
+## 7. Next review: SATURDAY 21 November 2026 (owner, 17 Nov)
+The owner's words: "we need to do some changes here from savage jungle to temple, I think the workarounds are getting out of hand, so Act 2 is too big to get at once, and since the return from Claw creates complications we need to reassess. And items need to be more understood."
+Themes to prepare BEFORE Saturday (facts, no decisions):
+1. A WORKAROUND LEDGER for Act 2 (Savage/Darker Jungle L8 -> Claw L12 -> Citadel L13 -> back -> Temple L14): every DEVIATIONS row, adapter, hint line and fence added since 12 Nov, per level, with why it was added and what the original does there if known. Count per level.
+2. ACT 2 IN PIECES: a proposal for cutting Act 2 into pieces that can each be understood, built, walked by the robot and played by the owner on their own (and in which order), instead of the whole act at once.
+3. THE RETURN FROM THE CLAW MOUNTAINS: what differs between the way up and the way back (routes, state, what the fall recovery hid), and what it costs to do both properly.
+4. ITEMS: one page a player could read - what each item class does today, where each quest item comes from and where it is used (the paint recipe, aloe, Silverleaf, the bows, the Dreamstone, orbs), what is unknown.
+The lanes are asked their round as always (section 6).
