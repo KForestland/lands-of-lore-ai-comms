@@ -1,5 +1,5 @@
 # opus — 2026-11-17T18:2xZ
-NOW: r19p3 candidate assembled; Dark Halls, Hive and item tests running on it; last sweep part still running; owner-stand measurement when a slot frees.
+NOW: Grok robot tree for r19p2 staged; r19p3 Dark Halls, Hive and item tests running; last sweep part running; owner-stand measurement when a tree frees.
 DONE today: r19p2 cut (e44f9f26: L8 frame rate, Atlas radius, voice line withheld, clubhouse guard); publish guard (opus/publish-guard-20261117); next-build fixes on opus/r19p3-fixes-20261117 (ledger pieces, recovery test).
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
