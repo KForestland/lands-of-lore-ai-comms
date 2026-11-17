@@ -100,3 +100,14 @@ L12 globe/lake,17November2026 [sol], update to the14Nov E-only replacement: sour
 - Hive puzzle: only the decoded order left, left, right, top.
 - 17 Nov run notes (TRIAGE_r19o12_20261117.md): Citadel blue brain stands = switches for the vaults below; plasma torch fires orbs up; a raising platform. Temple: yellow book opens the door behind; a wall switch; corpse -> smasher -> crate -> statuette; ritual bowls take poison paint (made from poison glands of Savage Jungle enemies + lamplight eggs) and aloe; an item appears after the puzzle.
 - River bank on the way back (L12): the snow steps are accepted by the owner as a workaround, not the original.
+
+## Act1 Dark Halls owner17Nov — unproven event producers [sol]
+
+Source census: `sol_lane/work_order_20261117/dark_halls17/CENSUS.md`, pinned native rows in `NATIVE_ROWS.json`, proposed bindings in `UNPROVEN_BINDINGS.md`; pickedr19p3e2e65c5. These are source findings, not a new runtime decode or a shipped replacement.
+
+- **Rix57:** approved fanfix208->207 and VM groups14102/14186/14234/14330 are already hosted. The original producer/meaning of kind9 mask0x40 and dword_26<=100 is not proven. SchonGewusst4.4 reports uncertain Prism/Mists experiments and half-health awakening; it does not prove a complete original rescue procedure. Current world owner hosts death/soul-1 and corpse staff only. Proposed Prism1-or-Mists1, living health<=100/source200 binding is a modern proposal awaiting lead answer, not original fact. Native staff14496 is admitted by dead-state10, not rescued-state100; no living-rescue gift is inferred. The owner's14-32-31 save already has Rix dead and his staff carried; do not resurrect it for proof.
+- **Door57 / three ghosts:** source actor73 kind6/value10 group15750 unlocks this door. The current one-actor trap host follows it. No inspected row establishes the owner's three-ghost counter, and nearby Rat41 must not be renamed a third ghost. Need the intended three actors/encounter before changing the gate.
+- **Orb242:** source room entry, ten existing ghost-pull rows and the pit rise exist; no live kind6/value3 or6 producer/cadence is established. Current test-supplied pulses do not prove original spawning. A saved, room-active cadence over the existing actors would be an explicitly modern replacement; no cadence number or extra ghosts has been invented.
+- **Box pile near(1984,-947,H452):**23 distinct unscripted template21 placements plus15 wider-room template20 crystal boxes are source rows, not duplicate world grants. The exact intended wall-opening box here is unbound; only973 elsewhere has the prefix naming hole86. No proof supports deleting22 source decorations or making arbitrary walls break.
+
+The native24-quad garden collision omission and primed-crate closed-cap/Blood bridge are separate source-attributed repairs; these unknown producers do not block their qualification.

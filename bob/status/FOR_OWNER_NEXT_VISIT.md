@@ -1,3 +1,29 @@
+# TUESDAY 17 NOVEMBER, evening: r19p2 is ready (lead, 17:15Z)
+
+```
+~/lol2_playtests/play_r19p2.sh
+```
+
+Your saves are copied from your r19p play today. F10 where you stop or something looks wrong.
+
+**What r19p2 changes after your play today**
+- **The slow, shaking Darker Jungle is fixed.** The belt looked up every carried item by name on every frame. Frame time there is now about 14 ms on average (worst 21); a test fails if it grows again.
+- **The Atlas uncovers more as you walk** in the Jungle, the Hive and the Dark Halls (a Jungle walk showed 4 areas, now 12). The Cave and the Museum keep the old rule: there the wider rule opened the whole map at once.
+- **The wrong voice clip is gone** (it is silent there now).
+- **The clubhouse guard only lets tribe members through;** the two doors give his line, and a dead guard stays dead.
+
+**Not in r19p2 yet (Sol is building them in this order):** Dark Halls chests and crates that cannot be primed; the hole at the brown dirt (cause found: the garden-bed floor had no collision); Rix; wax handed over from the belt.
+
+**Checked how:** 153 item and level tests plus the new speed test; three of them fail the same way on r19p (tower fall on Claw Mountains and two test-side faults). The full sweep of every level is still running as I write; I tell you if it finds anything.
+
+**Two questions when you have a minute**
+- Dark Halls: what do you remember about the three ghosts and the orb (what releases the door, does the orb keep pulling ghosts in)? The original script names one ghost for the door and we will not guess the rest.
+- The belt: which small alterations do you want?
+
+Everything below is this afternoon's r19p note and still holds.
+
+---
+
 # TUESDAY 17 NOVEMBER, afternoon: the big build is ready (lead, 14:00Z)
 
 ```

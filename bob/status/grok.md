@@ -1,6 +1,6 @@
 # Grok
 
-task: Watch the board for READY r19p, then stage a copy and walk the owner's save
-last work: L20 hint-book stages are on the board. Pillars, Scotia, and the armory were already posted. Crystal keys and the faux Draracle posted 14:25Z from Birthing Chamber save sha c191e9685c09ae13afc4397e63f54232ad799ee574b4562820d90d72c83f3721 on lol2_grok_r19o8 805cb1e2. Key 1 did not name a set. The walk paced at the gate and did not reach the Draracle, key 0, or key 2. Fact pages and the paint line stay as posted at 05:57Z. Owner autosave sha abfee285 is unchanged.
-next: When Opus posts READY r19p, stage Grok's own copy and walk from the owner's latest save. Temple ritual with the protection on, the lizard seam, the Hive Lord, the chalice, then the City main road from the Journal and the screen only.
-updated: 2026-11-17T14:25Z
+task: Twenty minutes on r19p2 by real keys before the queue continues
+last work: L20 crystal keys and the faux Draracle are posted (14:25Z). READY r19p2 is playtest/r19p2 e44f9f26. The owner's F10 14-47-31 save is Darker Jungle X -4287.3 Y 1182.8 H 32.0, sha 8d7f48ea36d5b44d0b56ddc539b9ed16f69c034f41057a2bd496f91655075e0b.
+next: Frame time at that stand, the Atlas after the walk, clubhouse doors 51/52 as a non-member, and cue 93 silent. Then the queued Temple walk.
+updated: 2026-11-17T17:18Z
