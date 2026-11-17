@@ -1,31 +1,34 @@
-# TUESDAY 17 NOVEMBER: play this (lead, written Monday 18:20Z)
+# TUESDAY 17 NOVEMBER, afternoon: the big build is ready (lead, 14:00Z)
 
 ```
-~/lol2_playtests/play_r19o12.sh
+~/lol2_playtests/play_r19p.sh
 ```
 
-Your saves from Monday evening are carried over. F10 where you stop or something looks wrong.
+Your saves are copied from r19o12 (your play this morning). F10 where you stop or something looks wrong.
 
-**What Monday's run found, and what this build does about it**
-- **The freeze at the lake switch (Claw Mountains):** fixed. Pulling it started ten floor pieces that each re-read the whole level; the longest frame went from 2.6 seconds to 23 milliseconds, from your own save.
-- **The river:** you had jumped from the floe at the bank five times, fallen short and dropped into the river bed with no way out. Now: the screen tells you where to step off the floe; snow steps lead from the river bed up onto the bank (hold forward); and the "E - Climb down to the icy gulch" line stays on screen while you stand at the ice opening (it had shown for one second).
-- **The ice lake drawn wrong:** the platforms the switch raises were bare slabs over a hole. They are solid ice columns now. No frame of your longplay shows them raised, so the look is our best reading; say if it is wrong.
-- **The Dreamstone holder** is empty once you have taken the stone.
-- **The Dark Bow can now be held.** The robot, playing on from your state, reached Belial's Laboratory and found that the three slotted switches want a bow, and the Dark Bow from the City could not be put in the hand. Fixed: hold or equip either bow and shoot the three switches. After Belial's Horn the screen now names the corridor back to the barred door. In the Laboratory the ramp on the road has a fence on its open side (every step off it used to fall) and the gate and the Golden Door on the road now say "E - Open the gate" / "E - Open the door".
-- **City of the Ancients:** this build has the wall rule (about 5,400 walls that used to let you fall through). Press E at the silent canal doors and **walk through the middle of the opened pair** (the sides are too narrow on this build). Stay off the starry floor.
-- **Temple:** you clipped through a wall by the left wall hanging and stood outside the room. That is the same fault class as the City; the Temple's walls are being checked the same way. Not fixed in this build.
+**What is new for you in r19p**
+- **The item belt:** five slots at the bottom, the middle one is active; roll through it; **F uses the active item on yourself**; E at a target uses the item it needs from your pack even if it is not the active one.
+- **Quest items are protected:** the game will not let you eat, throw, drop, give or sell the last copy of something the main quest still needs, and it says why. Nothing is used up when it would do nothing (aloe at full health).
+- **Glass globes** charged at the Cemetery altars are stored spells: cast, recharge, save in between.
+- **Every closed door or gate that E opens says so,** on every level.
+- **Journal directions** along the City main road and through the Caverns, Belial's Laboratory and the last level.
+- **The Citadel's original switches** work, including the black one (it wakes the bridge; ours starts by itself, so it tells you that).
+- **City of the Ancients:** walls and low steps hold; the canal doors fold back to the frame.
+- Everything from r19o9-r19o12: lake switch, river steps, climb-down line, ice columns, empty Dreamstone holder, Dark Bow, the Laboratory ramp fence.
 
-**Still true from before:** at the web press E and wait out the 70-second movie; heal before the boss; altar before the Dreamstone; at the Temple Hive Lord step onto open floor if G does nothing; lizard and a run-up to jump back up from the Temple's low passage; keep one Silverleaf.
+**Known, not fixed in this build**
+- Claw Mountains tower descent: a fall can still move you across the level.
+- The Temple: clipping and the "overlapping" look (walls and ceilings are being closed; not in this build).
+- The river bank steps are a workaround, as you said.
+- The final level can be skipped: after the birth the end card is two E presses away. Being worked on as main-quest work.
+- The Blizzard axe still comes from the lever; it moves to the end of the lake's jumping puzzle next.
 
-**The robot reached the ending from your own save (Tuesday 02:16Z).** Starting from your save at the Citadel web, with real keys and only saves the game wrote: Citadel, Claw Mountains, Darker Jungle, the whole Temple, the City, the Hidden Caverns, Belial's Laboratory, the Birthing Chamber, the end card. Where it needed help on the way (the Dark Bow, two silent doors, the ice opening), that is fixed in this build. One thing I am checking: the very last stretch looked short (two E presses to the end card), so the final level may be thinner than it should be.
+**How it was checked:** three full sweeps (the last one clean except the known tower fault), independent reviews of the item protection, the recorder and the switches, and the robot played the belt, the protection, the globes, the City and the doors by real keys and said MERGE. You are the first person to play it.
 
-**The big build (r19p)** with the belt, items, quest-item protection and the Citadel switches is not for today: its second full sweep showed eight new failures in the first half; they are being traced.
+**Saturday 21 November: the review you called** (Act 2 workarounds, Act 2 in pieces, the Claw return, items). The fact pages are being collected in `AI_COMMS/sol_lane/review_20261121/` and `AI_COMMS/grok_research/`.
 
 **Jobs only you can do**
-- Security, ten minutes: the `AI_COMMS` folder's git settings hold a GitHub token in plain text. Revoke it on GitHub, make a new one, let a credential helper hold it. Ask me and I walk you through it.
-- Decision: should the "E - Climb down" shortcut stay in Classic? I lean yes.
-- Decision, later: the finale shows captions that narrate what happens. Keep them or not, once you have seen the ending.
+- Security, ten minutes: the `AI_COMMS` folder's git settings hold a GitHub token in plain text. Ask me and I walk you through replacing it.
+- Decisions: should the "E - Climb down" shortcut stay in Classic (I lean yes); the brazier in the Hive alcove (what belongs there); finale captions, once you have seen the ending.
 
-Fallbacks: `play_r19o11.sh`, `play_r19o10.sh`, `play_r19o8.sh` (Monday's build), `play_r19o7.sh`.
-
-Monday evening's note is kept as `FOR_OWNER_20261116_evening.md`.
+Fallback: `play_r19o12.sh` (what you played this morning). The morning's note is kept as `FOR_OWNER_20261117_r19o12.md`.

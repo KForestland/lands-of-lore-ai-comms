@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: r19p cut waits on Sol (1) Expel road line, (2) amaranth bisect; head bb59b64e
+NOW: L14 C1 00bea3f6 gate running (opus/l14-a-c1-r19p-20261117); then Grok walk
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
