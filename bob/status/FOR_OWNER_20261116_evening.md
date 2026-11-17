@@ -34,7 +34,7 @@ Fallbacks: `play_r19o7.sh`, `play_r19o6.sh`, `play_r19o5.sh`, `play_r19o4.sh`, `
 
 **Decision for you:** should the "E - Climb down" shortcut stay in Classic? I lean yes, as an option.
 
-**A job only you can do (security, 10 minutes, not urgent tonight):** the folder `~/AI_COMMS` is a git repository whose remote address contains a GitHub access token in plain text (in `.git/config`). Nothing of yours has been pushed from it, and we have now excluded your F10 bundles and saves from that repository. But the token should be replaced: on GitHub, revoke that token and make a new one; then set the remote without the token and let a credential helper hold it. Ask me and I walk you through it step by step.
+Security, ten minutes, a job only you can do: ask me in the chat and I walk you through it. (Details are not written here because this folder is mirrored publicly.)
 
 ---
 

@@ -54,7 +54,7 @@ Your saves are copied from r19o12 (your play this morning). F10 where you stop o
 **Saturday 21 November: the review you called** (Act 2 workarounds, Act 2 in pieces, the Claw return, items). The fact pages are being collected in `AI_COMMS/sol_lane/review_20261121/` and `AI_COMMS/grok_research/`.
 
 **Jobs only you can do**
-- Security, ten minutes: the `AI_COMMS` folder's git settings hold a GitHub token in plain text. Ask me and I walk you through replacing it.
+- Security, ten minutes, a job only you can do: ask me in the chat and I walk you through it. (Details are not written here because this folder is mirrored publicly.)
 - Decisions: should the "E - Climb down" shortcut stay in Classic (I lean yes); the brazier in the Hive alcove (what belongs there); finale captions, once you have seen the ending.
 
 Fallback: `play_r19o12.sh` (what you played this morning). The morning's note is kept as `FOR_OWNER_20261117_r19o12.md`.

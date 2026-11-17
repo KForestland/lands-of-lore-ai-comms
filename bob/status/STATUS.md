@@ -1,4 +1,36 @@
-# LoL2 status, 2026-11-15 23:5xZ (hand refresh, Opus for the lead)
+# LoL2 status, 2026-11-17 evening (Opus for the lead)
+
+**Build to play: r19p2** (launcher `play_r19p2.sh`; your saves are copied from your r19p play today). Fallback: r19p.
+
+## What r19p2 changes after your r19p play
+- **Darker Jungle frame rate:** the belt looked up every carried item by name on every frame; it now remembers them. A new speed test fails if the game's own work per frame grows again.
+- **The Atlas uncovers about three times as much as you walk** in the Jungle, the Hive and the Dark Halls. The Cave and the Museum keep the old rule (the wider one opened the Cave map too far out and left nothing to discover in the Museum).
+- **The wrong Huline voice line is gone;** that line is silent until its sound is checked.
+- **The clubhouse guard** appears only once you are a tribe member. Before that the doors say the clubhouse is reserved for members of the tribe. A dead guard stays dead.
+
+## How r19p2 was checked
+- **Targeted gates:** 153 item and level tests, then the new tests. Every level family has at least one item test.
+- **Full sweep of every test (1425): still running.** This page gets the result when it ends.
+  - Failing so far, the same way as on r19p, with their owners: the tower descent on the Dracoid Ruins, where the fall recovery moves you (Opus finds the cause); one belt refusal test on the Cemetery (Sol); the item-grant census, which needs re-pinning after the quest-protection work (Sol).
+  - One test-side failure is ours and already fixed for the next build: a Hive recovery test did not know the new Atlas rule.
+- **Grok's replay on r19p2 by real keys:** the Atlas and the silent voice line pass. Frame time where you stood in the Darker Jungle: 196 ms on r19p, 139 ms on r19p2, on the same virtual display. That is better but still slow on that display. Opus is measuring what the frame is spent on there. The clubhouse guard check is still open.
+- **States:** READY and reviewed (in part). Not merged into r19-work. Not owner-played.
+
+## Dark Halls (Sol)
+- **Chests and crates that cannot be primed:** Sol's fix was reviewed independently as "merge after fixes" (R141). The fixes are in work.
+- **The hole at the brown dirt:** the cause is found (the garden-bed floor had no collision). The fix is in work.
+- After those: Rix, then wax handed over from the belt.
+
+## Two questions for you
+- **Dark Halls, the three ghosts and the orb:** what do you remember? What releases the door, and does the orb keep pulling ghosts in? The original script names one ghost for the door, and we will not guess the rest.
+- **The belt:** which small alterations do you want?
+
+## Also done today
+- A publish check now refuses any code export that holds your saves or recordings, machine paths, or private details. Nothing has been published.
+
+---
+
+# Earlier: LoL2 status, 2026-11-15 23:5xZ (hand refresh, Opus for the lead)
 
 **Build to play Monday: r19o4** (`~/lol2_playtests/play_r19o4.sh`, 9311792). Fallbacks: r19o3, r19o.
 
