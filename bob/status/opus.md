@@ -1,5 +1,5 @@
 # opus — 2026-11-13T22:5xZ
-NOW: r19o12 gate (25/77); port head 9432cb5e posted; next r19o12 cut, door-prompt rule on r19p, third sweep
+NOW: sweep 3 on r19p 96d07e39 running; r19o12 READY dad7fda4
 MERGED today: fix 4 one-sided walls; class B narrow (L14 pocket edge, L12 6181/7371/6947, L9 16343); Atlas places; gate-marker tooling; Ruloi corridor hint; ceiling-child producer fix + regenerated L13/Hive packs; mover tops. r19-work = 8a53cce.
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
