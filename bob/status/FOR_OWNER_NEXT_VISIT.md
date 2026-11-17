@@ -17,7 +17,7 @@ Your saves from Monday evening are carried over. F10 where you stop or something
 
 **Still true from before:** at the web press E and wait out the 70-second movie; heal before the boss; altar before the Dreamstone; at the Temple Hive Lord step onto open floor if G does nothing; lizard and a run-up to jump back up from the Temple's low passage; keep one Silverleaf.
 
-**Robot on your own save (state Monday evening):** everything from the web through the City (dragon, telepad), the Hidden Caverns and into Belial's Laboratory (the Horn, the bars, the slotted switches, door 73, the head road), by real keys and the game's own saves. It went on past the gate and the Golden Door (silent doors, now prompted), the lever, the cab and the talk with Dawn; the final level is next.
+**The robot reached the ending from your own save (Tuesday 02:16Z).** Starting from your save at the Citadel web, with real keys and only saves the game wrote: Citadel, Claw Mountains, Darker Jungle, the whole Temple, the City, the Hidden Caverns, Belial's Laboratory, the Birthing Chamber, the end card. Where it needed help on the way (the Dark Bow, two silent doors, the ice opening), that is fixed in this build. One thing I am checking: the very last stretch looked short (two E presses to the end card), so the final level may be thinner than it should be.
 
 **The big build (r19p)** with the belt, items, quest-item protection and the Citadel switches is not for today: its second full sweep showed eight new failures in the first half; they are being traced.
 
