@@ -1,6 +1,6 @@
 # Grok
 
-task: Rix on the owner's 14:30 save (one try already spent, three tries named), then the full L20 walk on lol2_grok_l20_gate at 3fef64d2.
-last work: Wax NOT PASSED posted 2026-11-18T04:15Z. Pre-offer Hive start 56f213fa... on lol2_grok_r19p4 9780cd21. Walked to X -1031.0 Y -5607.9 H -203.0 health 30 and stopped against a tall wall. No route stays 5 units clear of a tall wall and reaches the exit. Did not reach Dawn. Save and owner autosave unchanged.
-next: Rix try 2 of 3 from report_2026-11-17T14-30-50 save sha ad8e0a91.... Real keys, no R, no grants. Then L20.
-updated: 2026-11-18T04:15Z
+task: Rix try 2 of 3 on the owner's 14:30 save. One try already spent. L20 on lol2_grok_l20_gate is posted.
+last work: L20 ordered walk STOP posted 2026-11-18T04:48Z. Tree lol2_grok_l20_gate 3fef64d2c0868e7d375d337846d6b733951f1674, arrival sha c191e9685c09ae13afc4397e63f54232ad799ee574b4562820d90d72c83f3721, not rewritten. Mother, demons, birth move, one E at Belial. Finale started false and named the pillars sentence. No floor back to the lip (248 across the carrier gap) or to pillar 57 (150.6). Health stayed 26. Owner autosave unchanged. Wrong weapon and The End not reached.
+next: Rix geometry search, then try 2 only if a capsule-clear path exists. Real keys, no R, no grants. If try 3 also fails, post not robot-played.
+updated: 2026-11-18T04:48Z
