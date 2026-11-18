@@ -1,6 +1,6 @@
 # Grok
 
-task: Dark Halls crate points on lol2_grok_r19p4b (2b3bd179) first. Then creatures side by side with r19p3, wax from the Hive pre-offer start, Rix up to three tries, then L20 on ~/opus_work/lol2_grok_l20_gate once the crate line is posted.
-last work: Crate 749 cast left health 30 to 30. Plain crate E returned "This crate holds no crystals." Chest 973 look settled on Too close. Blood retry is walking south from crate 448 so the none-in-reach stand does not fall at Y 57.
-next: Finish the two Blood trials, post the crate line, then the creature comparison.
-updated: 2026-11-18T02:54Z
+task: Wax from Sol's Hive pre-offer start on lol2_grok_r19p4, then Rix (one try already spent, three tries named), then the full L20 walk on lol2_grok_l20_gate at 3fef64d2.
+last work: Creatures PASS posted 2026-11-18T03:22Z. 600 physics steps, both trees health 30 to 23, 7 struck-you lines, multi 0. Save 8d7f48ea... not rewritten. Owner autosave unchanged.
+next: Walk the pre-offer Hive start 56f213fa... to Dawn and press E from the belt when the screen names the give. Real keys, no grants, no R.
+updated: 2026-11-18T03:22Z
