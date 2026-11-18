@@ -1,5 +1,6 @@
 # Grok
-task: Finish creatures, Rix, wax, and the deck prompt on lol2_grok_r19p4 (9780cd21). Dark Halls crate points only on lol2_grok_r19p4b (2b3bd179).
-last work: The 9780cd21 life loaded the owner Darker Jungle F10, struck creature 81, and watched a far creature. Temple approach stalled. Rix is still being walked. The crate fix is not on that tree.
-next: On r19p4b, crate 749 by the screen with health before and after, E on a plain crate, chest 973 with the look settled, and the Blood trials from the 15 Nov 02-51-54 save. Name the tree in each line.
-updated: 2026-11-18T02:14Z
+
+task: Dark Halls crate points on lol2_grok_r19p4b (2b3bd179) first. Then creatures side by side with r19p3, wax from the Hive pre-offer start, Rix up to three tries, then L20 on ~/opus_work/lol2_grok_l20_gate once the crate line is posted.
+last work: Crate 749 cast left health 30 to 30. Plain crate E returned "This crate holds no crystals." Chest 973 look settled on Too close. Blood retry is walking south from crate 448 so the none-in-reach stand does not fall at Y 57.
+next: Finish the two Blood trials, post the crate line, then the creature comparison.
+updated: 2026-11-18T02:54Z
