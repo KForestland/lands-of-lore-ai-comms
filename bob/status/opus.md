@@ -1,5 +1,5 @@
-# opus — 2026-11-18T07:29Z
-NOW: r19p4 cut (8e8c360f, play_r19p4.sh); next the carried() measurement and Cave/Hive budgets.
+# opus — 2026-11-18T07:30Z
+NOW: r19p4 cut; no new rebuild work until the owner decides who leads it and what is in scope.
 DONE today: r19p2 cut (e44f9f26: L8 frame rate, Atlas radius, voice line withheld, clubhouse guard); publish guard (opus/publish-guard-20261117); next-build fixes on opus/r19p3-fixes-20261117 (ledger pieces, recovery test).
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
