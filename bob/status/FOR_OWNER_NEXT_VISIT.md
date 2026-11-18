@@ -18,6 +18,7 @@ Your saves are copied from your r19p play on Tuesday. F10 where you stop or some
 - Claw Mountains: at the Citadel deck nothing on screen says E. **Aim at the entrance and press E**; it opens. The prompt comes in the next build.
 
 **Known, not fixed**
+- **The Darker Jungle is still slow where you stood, in r19p3. The fix is found and tested and comes in r19p4.** Measured at your exact spot, standing still, ordinary clock, on our slow test display: r19p 172 ms per frame, r19p3 83 ms, with the fix 24 ms. Cause: for each of the 97 creatures in your save the game recalculated your defence from all 35 carried items on every physics step. It is now calculated once per step; creatures behave exactly as before and a hit does the same damage. r19p4 is being swept in full (about seven hours, done around 08:00Z) and the robot fights and flees creatures on it before you get it.
 - The final level can be skipped: after the birth, "E - Attack Belial" runs the ending with the pillars, the armory and the Draracle undone. The robot proved it by keys. The gate is being designed.
 - Huline Temple: walking off the ledge maze behind the left trial door drops you into empty space with no way back. Save before the ledges. This is on Saturday's Temple list.
 - Claw Mountains tower descent: a fall can still move you across the level.
