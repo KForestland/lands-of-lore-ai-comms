@@ -63,3 +63,26 @@ Output: your worktree; a READY line per item.
 GitHub cleanup of the LoL1 repo (owner approves the push), then the same pass for LoL2 (first job: collect what the rebuild lanes decoded into the RE docs), then LoL3.
 
 [fable/lead]
+
+## Added 13:45Z: the public repo must shine (owner)
+
+Owner: "want the github to shine and be understandable, perhaps tools". He has given the lead standing access to push the LoL1/2/3 repos after lead review. Quality bar for everything that goes public:
+
+- **Front page (README):** what the game is, what this repo gives you, one picture of a tool result (our own render of a level map or a format diagram, no game art dumps), a 5-minute quick start that works on a fresh clone with the user's own game files, and the status table.
+- **Tools are welcome and are part of the result.** Every tool: runs from a fresh clone, takes the game folder as an argument (no ~ paths), has --help that changes nothing, never writes outside the output folder it is given, and has one example command with its expected output in tools/README.md.
+- **One page per format**, readable alone, with a small layout diagram or table and a worked example (bytes -> meaning).
+- **A "how the game works" set** (scripts, rules, save format) written for a reader who has only the game.
+- **A glossary** (PAK, CMZ, EMC2, TIM, block, wall type...) and a "start here by goal" list (I want to read maps / decode text / understand scripts / mod a save).
+- No game assets, no raw game files, public name Kevin, plain English.
+
+OPUS owns this bar for LoL1 (it extends items 9a-9e); Sol and Grok write their pages to it.
+
+## Round 2 (lead, 13:58Z): open questions and the release branch
+
+Round 1 is complete and reviewed (Sol 7/8a/8b/8c PASS, Grok 1-6 PASS). The open list is `docs/OPEN_QUESTIONS.md` on branch opus/lol1-unknowns-20261118 (worktree ~/lol1_re_opus), Q1-Q18. Same rules as round 1. A question that cannot be closed gets a page saying what was measured, what was tried, and what would settle it; that counts as done.
+
+**GROK (file and script questions):** Q3 (Level 24 extra 5 bytes per block: find the reader in the executables and the level 24 scripts; note Opus's hint about wall types 46, 53-57), Q11, Q9, Q10, Q12, Q13, Q14, Q16, then Q1 for the demo only if a demo copy is on the Arikv drive (do not download one). One page per question in docs/unknowns/.
+
+**SOL (executable questions):** Q17 (native save fields ScummVM skips, from the save and load routines in both executables), Q18 (native in-memory item and monster records), Q7 remainder (magic effects, light, time, regeneration, monster mode transitions and the WLL flag bits and special types, each checked in the executables), Q8 (what the 0x7E routine changes), Q15 (ADL layout field by field; what C55 is). Also fix the review defects: cite upstream ScummVM line numbers (see Opus 13:42Z), emc2_scripts.md:283.
+
+**OPUS (release branch):** create branch `release/lol1-20261118` in your worktree from your branch; merge sol/lol1-unknowns-20261118 and grok/lol1-unknowns-20261118; one consistent tree (docs/unknowns linked from the format pages, no "being added" wording left, no lane names, no machine paths). Then the quality bar in full: final README.md, glossary, start-here-by-goal, a worked example on every format page, tools/README.md with one example and expected output per tool. Proof: a fresh `git clone` of the branch into a temp folder, `python3 tools/check_all.py --data <CD DATA>` passes, and a second stranger read. Check the asset policy (no game files; quoted game text only as short examples). Post READY for lead review; the lead reviews and pushes. After that, keep reviewing round 2 READY lines and fold PASSED answers into the release branch.
