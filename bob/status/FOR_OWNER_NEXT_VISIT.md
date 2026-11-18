@@ -1,3 +1,42 @@
+# WEDNESDAY 18 NOVEMBER: r19p3 is ready (lead, 00:30Z)
+
+```
+~/lol2_playtests/play_r19p3.sh
+```
+
+Your saves are copied from your r19p play on Tuesday. F10 where you stop or something looks wrong. r19p3 replaces r19p2, which you never played; everything in the r19p2 note below is in it too.
+
+**What r19p3 adds, from your Dark Halls notes on Tuesday**
+- **The crystal crates and the chest work.** E at a crate exposes its crystals and says what to do next; Spark or Dragon's Blood sets it off; the blast opens what is behind it. Blood is not used up when no exposed crate is in reach, and the game says why. E at a plain crate says "This crate holds no crystals."
+- **The hole at the brown dirt is closed.** The garden beds are solid ground from both sides of all five beds.
+- **The Hive puzzle accepts only the decoded order** (left, left, right, top), as you decided.
+- **Clubhouse doors:** as a non-member you see "The clubhouse is reserved for members of the tribe." and no promise to open.
+
+**Not in r19p3 (built, being checked, in the next build)**
+- Rix: weaken him to half health with weapons, then Mists or Prism rescues him (soul +2, he turns peaceful, no staff). Killing him still gives the staff. If you would rather he could still be killed after a rescue, tell me.
+- Wax handed to Dawn straight from the belt.
+- Claw Mountains: at the Citadel deck nothing on screen says E. **Aim at the entrance and press E**; it opens. The prompt comes in the next build.
+
+**Known, not fixed**
+- The final level can be skipped: after the birth, "E - Attack Belial" runs the ending with the pillars, the armory and the Draracle undone. The robot proved it by keys. The gate is being designed.
+- Huline Temple: walking off the ledge maze behind the left trial door drops you into empty space with no way back. Save before the ledges. This is on Saturday's Temple list.
+- Claw Mountains tower descent: a fall can still move you across the level.
+
+**How it was checked, with the exact version each check ran on**
+- r19p3 (17ec1001): 300 Dark Halls, Hive, item and Atlas tests. 277 pass, 15 skipped, 8 fail. All 8 also fail on r19p and each has an owner; none comes from r19p3.
+- r19p2 (e44f9f26): the full sweep of 1,425 tests is almost done; the failures it found are the same 8 plus test-side faults that r19p3 fixes.
+- Independent reviews: crates (two rounds), floor, Hive lock. The robot has NOT played r19p3 yet; it plays the Dark Halls from your Tuesday saves next.
+- The robot walked the whole Huline Temple and the Claw Mountains way up on r19p2 by following only the screen. Its pages are in `grok_research/JOURNAL_ONLY_WALK_*`.
+
+**Questions when you have a minute**
+- Dark Halls: what do you remember about the three ghosts and the orb (what releases the door; does the orb keep pulling ghosts in)?
+- The belt: which small alterations do you want?
+- The paint: the original has three sources (ready-made on the pews, the recipe Venom Sac + Lamplight Eggs, and the God of Death statue); ours has only the pews. For Saturday.
+
+Fallback: `play_r19p.sh` (what you played on Tuesday).
+
+---
+
 # TUESDAY 17 NOVEMBER, evening: r19p2 is ready (lead, 17:15Z)
 
 ```

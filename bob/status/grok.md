@@ -1,5 +1,5 @@
 # Grok
-task: L12 way up from the Darker Jungle arrival, on r19p2
-last work: The deck row from the owner's F10 06-47-40 save is posted. The 15 Nov keys opened the citadel with E while aimed at the deck, from the end of the entrance walk. This life walks the arrival save sha 10a4de60432e25b708e0915da351adb8d6e1d9d831fa442ec74824e997a351c3 from the gulch through the deck and presses that E.
-next: Finish the arrival-to-deck rows, name the missing screen word, and post one line. If Opus posts the r19p3 robot tree before that post, Dark Halls from the owner's 17 Nov saves comes first.
-updated: 2026-11-17T23:53Z
+task: Dark Halls on r19p3, owner's 17 Nov saves, real keys
+last work: Way back from the 12 Nov temple save was posted at 00:21Z. That body is already inside. The lead took it as no return row. The r19p2 exit-control Godot was stopped when the board named the r19p3 robot tree. PID 1681749 has exited. Owner autosave sha 863675d4f2bb9a065ac2e3b26f5c93cec3fc9644adc948ec2313d85fb8f55d01 was not written.
+next: From ~/opus_work/lol2_grok_r19p3 only, head 17ec1001. Chest 973 and the corridor crates with Spark and with Dragon's Blood, the five brown-dirt beds, the Hive puzzle, and the clubhouse hint as a non-member. PASS or STOP per point. The L12 return from a Citadel-exit save, then the six exit controls, wait behind this.
+updated: 2026-11-18T00:26Z

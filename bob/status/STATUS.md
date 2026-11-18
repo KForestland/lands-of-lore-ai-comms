@@ -1,6 +1,6 @@
-# LoL2 status, 2026-11-17 evening (Opus for the lead)
+# LoL2 status, 2026-11-18 night (Opus for the lead)
 
-**Build to play: r19p2** (launcher `play_r19p2.sh`; your saves are copied from your r19p play today). Fallback: r19p.
+**Build to play: r19p3** (launcher `play_r19p3.sh`, head 17ec1001; your saves are copied from your last play). Fallback: r19p2 (`play_r19p2.sh`).
 
 ## What r19p2 changes after your r19p play
 - **Darker Jungle frame rate:** the belt looked up every carried item by name on every frame; it now remembers them. A new test fails if the game's own script work per frame grows again. It measures script time on a short walk from your saved spot, not the frame time you see (that includes drawing); the full frame where you stood is measured next.
@@ -17,8 +17,10 @@
 - **Grok's replay on r19p2 by real keys:** the Atlas and the silent voice line pass. Frame time where you stood in the Darker Jungle: 196 ms on r19p, 139 ms on r19p2, on the same virtual display. That is better but still slow on that display. Opus is measuring what the frame is spent on there. The clubhouse guard check is still open.
 - **States:** READY and reviewed (in part). Not merged into r19-work. Not owner-played.
 
-## Next build, r19p3 (being checked now)
-Candidate head 17ec1001 = r19p2 plus: Sol's **Dark Halls crates** (E exposes the crystals; Dragon's Blood only when it can reach an exposed crate) and the **brown-dirt floor** (the garden beds hold you), Sol's **Hive locks**, the clubhouse doors no longer offering "Open the door" to a non-member, and the fixes above. All three Sol changes passed independent review. The Dark Halls, Hive and item tests are running on it now; it becomes your next build when they pass. Not owner-played.
+## r19p3, ready to play (head 17ec1001)
+r19p2 plus: Sol's **Dark Halls crates** (E exposes the crystals; Dragon's Blood only when it can reach an exposed crate), the **brown-dirt floor** (the garden beds hold you), Sol's **Hive locks**, the clubhouse doors no longer offering "Open the door" to a non-member, and the test and record fixes above. All three Sol changes passed independent review.
+- **Checked on head 17ec1001:** 300 Dark Halls, Hive, item, Atlas and recovery tests. All pass except 8 known failures that already failed on r19p, each with an owner (Opus: the four older ones; Sol: the item census and one belt refusal; two older Hive tests). The 14 Sol tests that use your saves passed once those saves were in place. Not owner-played.
+- **Known, not fixed in r19p3:** at the Claw Mountains Citadel deck the screen does not name E. Aim at the deck and press E. The line "E — Enter the Citadel" comes in the next build.
 
 ## Dark Halls (Sol)
 - After the crates and the floor: Rix, then wax handed over from the belt.
@@ -34,7 +36,7 @@ Candidate head 17ec1001 = r19p2 plus: Sol's **Dark Halls crates** (E exposes the
 
 # Earlier: LoL2 status, 2026-11-15 23:5xZ (hand refresh, Opus for the lead)
 
-**Build to play Monday: r19o4** (`~/lol2_playtests/play_r19o4.sh`, 9311792). Fallbacks: r19o3, r19o.
+**Build to play Monday: r19o4** (`play_r19o4.sh`, 9311792). Fallbacks: r19o3, r19o.
 
 Four separate states (rule of 15 Nov): **READY** = a lane says it is built and names what was not run; **reviewed** = a second lane read or replayed it; **merged** = it is in r19-work; **owner-played** = you played it. A PASS is not "owner-played".
 
