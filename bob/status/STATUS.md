@@ -1,6 +1,6 @@
-# LoL2 status, 2026-11-18 night (Opus for the lead)
+# LoL2 status, 2026-11-18 morning (Opus for the lead)
 
-**Build to play: r19p3** (launcher `play_r19p3.sh`, head 17ec1001; your saves are copied from your last play). Fallback: r19p2 (`play_r19p2.sh`).
+**Build to play: r19p4** (launcher `play_r19p4.sh`, head 8e8c360f; your saves are copied from your r19p3 user data). Fallback: r19p3 (`play_r19p3.sh`).
 
 ## What r19p2 changes after your r19p play
 - **Darker Jungle frame rate:** the belt looked up every carried item by name on every frame; it now remembers them. A new test fails if the game's own script work per frame grows again. It measures script time on a short walk from your saved spot, not the frame time you see (that includes drawing); The full frame where you stood is measured below.
@@ -17,10 +17,21 @@
 - **Grok's replay on r19p2 by real keys:** the Atlas and the silent voice line pass. Frame time where you stood in the Darker Jungle: 196 ms on r19p, 139 ms on r19p2, on Grok's virtual display. Opus measured the same spot on another virtual display: 172 ms on r19p, 83 ms on r19p2, so about 12 frames a second, still slow. Drawing takes about 22 ms of that. Most of the rest is the 97 Darker Jungle creatures, all moved on every physics step even when far away. The lead decides whether that is fixed next. The clubhouse guard check is still open.
 - **States:** READY and reviewed (in part). Not merged into r19-work. Not owner-played.
 
+## r19p4, ready to play (head 8e8c360f)
+r19p3 plus: the **Darker Jungle speed fix** (the creatures read your defence once per physics step instead of once each); the **Citadel deck** naming its E ("E — Enter the Citadel"); Sol's **safe crate Spark guidance** in the Dark Halls (Spark is only suggested outside the blast; at chest 973's slot the screen says what the blast would cost you and that Dragon's Blood through the slot gives you time to get clear); Sol's optional **Rix rescue** in the Dark Halls; Sol's **Wax from the belt** (Dawn takes carried Wax runes through the item belt); test and record fixes.
+- **Full sweep of every test (1458) on head 9780cd21** (r19p4 before the two Dark Halls guidance changes), finished 18 November: **1385 pass, 16 fail, 57 skipped** (they need inputs not on this machine). Against the r19p2 sweep (e44f9f26), three failures are fixed and two are new:
+  - an item-ownership check that did not yet know two read-only uses of your carried items by the Rix and Wax work. Fixed in the build (tools only; the check passes on 8e8c360f);
+  - a magic shop test whose voice check right after a quick load failed once and passed when rerun on the same head. It is now on the list of unstable tests.
+  - The other 14 failures already failed on e44f9f26, each with an owner.
+- **Final head 8e8c360f** = 9780cd21 plus the safe crate Spark guidance, the chest 973 sentence and the ownership-check fix. Checked there: the Dark Halls tests on head ca271ea7 (the same game code as 8e8c360f), 45 of 45 pass, 14 skipped for missing inputs as in every sweep; the ownership check on 8e8c360f passes.
+- **Speed at your Darker Jungle stand** (the owner's stand, ordinary clock, on our virtual display, not your machine): 83 ms a frame on r19p3; 28 ms mean (47 ms p95) on 9780cd21 in the full sweep with three shards running at once.
+- **Grok, by real keys:** the Citadel deck prompt and the creatures pass (the same hits per 600 physics steps on r19p3 and r19p4); crate 749, the plain crate and both Dragon's Blood trials pass. Not robot-played: the Rix rescue and Wax from the belt. Not owner-played.
+- **Known, not fixed in r19p4:** on the Dragon tower descent the fall recovery can move you (as on r19p).
+
 ## r19p3, ready to play (head 17ec1001)
 r19p2 plus: Sol's **Dark Halls crates** (E exposes the crystals; Dragon's Blood only when it can reach an exposed crate), the **brown-dirt floor** (the garden beds hold you), Sol's **Hive locks**, the clubhouse doors no longer offering "Open the door" to a non-member, and the test and record fixes above. All three Sol changes passed independent review.
 - **Checked on head 17ec1001:** 300 Dark Halls, Hive, item, Atlas and recovery tests. All pass except 8 known failures that already failed on r19p, each with an owner (Opus: the four older ones; Sol: the item census and one belt refusal; two older Hive tests). The 14 Sol tests that use your saves passed once those saves were in place. Not owner-played.
-- **Known, not fixed in r19p3:** at the Claw Mountains Citadel deck the screen does not name E. Aim at the deck and press E. The line "E — Enter the Citadel" comes in the next build.
+- **Known, not fixed in r19p3:** at the Claw Mountains Citadel deck the screen does not name E. Aim at the deck and press E. The line "E — Enter the Citadel" is in r19p4.
 
 ## Dark Halls (Sol)
 - After the crates and the floor: Rix, then wax handed over from the belt.
