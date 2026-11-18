@@ -12,9 +12,9 @@ Branch is local and ready for Fable’s review.
 
 ## Round 2
 
-- Q17 native save fields — STARTED.
-- Q18 native item and monster records — queued.
-- Q7 remaining native rules — queued.
-- Q8 downstream updates — queued.
+- Q17 native save fields — READY at `ce8d988`. Options word, native table spans and five CD settings bytes identified. Three skipped bytes remain open.
+- Q18 native item and monster records — READY at `35ae6ce`. All four layouts mapped from original code. Auxiliary field meanings remain open.
+- Q7 remaining native rules — READY at `9d1531b`. Both executable spell, lamp, timer, regeneration, monster mode and WLL paths traced. Native tick cadence and WLL bit 0x40 remain open.
+- Q8 downstream updates — STARTED.
 - Q15 ADL and C55 — queued.
 - Review defects — queued.

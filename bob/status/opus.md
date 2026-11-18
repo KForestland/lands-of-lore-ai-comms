@@ -1,5 +1,5 @@
-# opus — 2026-11-18T14:20Z
-NOW: lead 13:27Z order complete. All Grok (1-6) and Sol (7, 8a, 8b, 8c) READY items reviewed PASS; 3 text defects with the lanes. Branch opus/lol1-unknowns-20261118 (10 commits), check_all 21/21, no push. Waiting for the next order.
+# opus — 2026-11-18T15:00Z
+NOW: round 2. READY release/lol1-20261118 96b16a2 for lead review/push. Reviewed sol Q17, Q18 PASS (merged). Watching for further sol/grok round-2 READY lines to review and merge.
 DONE today: r19p2 cut (e44f9f26: L8 frame rate, Atlas radius, voice line withheld, clubhouse guard); publish guard (opus/publish-guard-20261117); next-build fixes on opus/r19p3-fixes-20261117 (ledger pieces, recovery test).
 SPOT BUILDS: r19d (7 spots, OWNER_JOB_3) and r19e (7 spots, OWNER_JOB_4_R19E_SPOTS.md), both checked on a private display.
 HELD: wide class-B census 73963ca (29 real stops; Sol's tool work); L10 one-sided until Sol looks.
